@@ -203,7 +203,7 @@ public class AbilityInfo {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    public let supportWindowModes: Array<SupportWindowMode>
+    public let public let supportedWindowModes: Array<SupportedWindowMode>
 
     /**
      * Indicates window size.

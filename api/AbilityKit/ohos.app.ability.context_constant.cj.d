@@ -26,7 +26,7 @@ import ohos.labels.*
     since: "22",
     syscap: "SystemCapability.Ability.AbilityRuntime.Core"
 ]
-public enum AreaMode <: ToString & Equatable<AreaMode> {
+public enum AreaMode {
     /**
      * System level device encryption area
      */
