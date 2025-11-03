@@ -2262,7 +2262,7 @@ public class Stat {
         since: "22",
         syscap: "SystemCapability.FileManagement.File.FileIO"
     ]
-    public func isFIFO(): Bool
+    public func isFifo(): Bool
 
     /**
      * Checks whether this file is a regular file.
