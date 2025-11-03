@@ -2626,7 +2626,7 @@ public class PixelMap {
         syscap: "SystemCapability.Multimedia.Image.Core",
         throwexception: true
     ]
-    public func createAlphaPixelmap(): PixelMap
+    public func createAlphaPixelMap(): PixelMap
 
     /**
      * Image zoom in width and height.
