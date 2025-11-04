@@ -24,7 +24,7 @@ public import ohos.common_event_publish_data.CommonEventPublishData
 public import ohos.common_event_subscribe_info.CommonEventSubscribeInfo
 public import ohos.common_event_subscriber.CommonEventSubscriber
 import ohos.labels.APILevel
-public import ohos.value_type.ValueType
+public import ohos.value_type.CommonEventValueType
 
 /**
  * The CommonEventManager module provides common event capabilities, including the capabilities to publish, subscribe

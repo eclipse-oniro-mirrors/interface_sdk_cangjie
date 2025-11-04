@@ -18,7 +18,7 @@
 package ohos.common_event_data
 
 import ohos.labels.APILevel
-import ohos.value_type.ValueType
+import ohos.value_type.CommonEventValueType
 import std.collection.HashMap
 
 /**
