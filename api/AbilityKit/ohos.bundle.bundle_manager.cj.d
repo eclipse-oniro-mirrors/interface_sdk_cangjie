@@ -1567,7 +1567,7 @@ public enum ExtensionAbilityType {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    EmbeddedUi
+    EmbeddedUI
     | 
     /**
      * Indicates extension info with type of insight intent UI.
@@ -1576,7 +1576,7 @@ public enum ExtensionAbilityType {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    InsightIntentUi
+    InsightIntentUI
     | 
     /**
      * Indicates extension info with type of unspecified.

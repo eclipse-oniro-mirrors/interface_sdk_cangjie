@@ -120,7 +120,7 @@ public class WebCookieManager {
         since: "22",
         syscap: "SystemCapability.Web.Webview.Core"
     ]
-    public static func putAcceptCookieEnabled(accept: Bool): Unit
+    public static func setAcceptCookiesEnabled(accept: Bool): Unit
 
     /**
      * Get whether the instance can send and accept cookies.
