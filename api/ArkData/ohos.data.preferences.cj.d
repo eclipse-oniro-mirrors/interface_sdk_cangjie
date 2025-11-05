@@ -53,10 +53,10 @@ public enum PreferencesEvent {
 
 /**
  * Provides interfaces to obtain and modify preferences data.
- * <p>The preferences data is stored in a file, which matches only one {@link Preferences} instance in the memory.
- * You can use getPreferences to obtain the {@link Preferences} instance matching
+ * The preferences data is stored in a file, which matches only one Preferences instance in the memory.
+ * You can use getPreferences to obtain the Preferences instance matching
  * the file that stores preferences data, and use movePreferencesFromCache
- * to remove the {@link Preferences} instance from the memory.
+ * to remove the Preferences instance from the memory.
  */
 @!APILevel[
     since: "22",

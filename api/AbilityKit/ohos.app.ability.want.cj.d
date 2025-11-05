@@ -37,9 +37,8 @@ public class Want {
     /**
      * ID of the device running the ability.
      * 
-     * <p>**NOTE**:
-     * <br>If this field is unspecified, the local device is used.
-     * </p>
+     * NOTE:
+     * If this field is unspecified, the local device is used.
      */
     @!APILevel[
         since: "22",
@@ -60,9 +59,8 @@ public class Want {
     * Name of the ability.
     * If both bundleName and abilityName are specified in a Want object, the Want object can match a specific ability.
     * 
-    * <p>**NOTE**:
-    * <br>The value of abilityName must be unique in an application.
-    * </p>
+    * NOTE:
+    * The value of abilityName must be unique in an application.
      */
     @!APILevel[
         since: "22",
@@ -73,10 +71,9 @@ public class Want {
     /**
      * Name of the module to which the ability belongs.
      * 
-     * <p>**NOTE**:
-     * <br>If the ability belongs to a HAR module, moduleName must be set to the name of the HAP or HSP module that
+     * NOTE:
+     * If the ability belongs to a HAR module, moduleName must be set to the name of the HAP or HSP module that
      * depends on this HAR.
-     * </p>
      */
     @!APILevel[
         since: "22",
@@ -140,8 +137,8 @@ public class Want {
     /**
      * List of parameters in the Want object.
      * 
-     * <p>**NOTE**:
-     * <br>1. The values of the following keys are assigned by the system. Manual settings do not take effect, since the
+     * NOTE:
+     * 1. The values of the following keys are assigned by the system. Manual settings do not take effect, since the
      * system automatically changes the values to the actual values during data transfer.
      * -ohos.aafwk.param.callerPid: PID of the caller. The value is a string.
      * -ohos.aafwk.param.callerBundleName: bundle name of the caller. The value is a string.
@@ -183,21 +180,19 @@ public class Want {
      * -ohos.ability.params.asssertFaultSessionId: session ID of the fault assertion. The value is a string. This key
      * is involved only in system applications.
      * 
-     * <br>2. The following keys are defined by the system, and their values need to be manually assigned.
+     * 2. The following keys are defined by the system, and their values need to be manually assigned.
      * -ability.params.stream: File URIs to be authorized to the target ability. The value is a file URI array of the
      * string type.
      * -ohos.extra.param.key.appCloneIndex: index of the application clone.
      * 
-     * <br>3. In addition to the foregoing cases, applications may further agree on the key-value pairs to transfer.
-     * </p>
+     * 3. In addition to the foregoing cases, applications may further agree on the key-value pairs to transfer.
      * 
-     * <p>**NOTE**:
-     * <br>For details about the constants of Params in want, see wantConstant.
-     * <br>Note that a maximum of 200 KB data that can be transferred by using WantParams. If the data volume exceeds
+     * NOTE:
+     * For details about the constants of Params in want, see wantConstant.
+     * Note that a maximum of 200 KB data that can be transferred by using WantParams. If the data volume exceeds
      * 200 KB, transfer data in WriteRawDataBuffer or uri mode.
-     * <br>The values of parameters must be of the following basic data types: String, Number, Boolean, Object,
+     * The values of parameters must be of the following basic data types: String, Number, Boolean, Object,
      * undefined, and null. Functions in an object cannot be transferred.
-     * </p>
      */
     @!APILevel[
         since: "22",

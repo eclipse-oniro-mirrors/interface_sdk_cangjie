@@ -147,7 +147,7 @@ public class AtManager {
      * Requests certain permissions from the user.
      *
      * @param { UIAbilityContext } context - The context that initiates the permission request.
-     * <br> The context must belong to the Stage model and only supports UIAbilityContext and UIExtensionContext.
+     * The context must belong to the Stage model and only supports UIAbilityContext and UIExtensionContext.
      * @param { Array<Permissions> } permissionList - Indicates the list of permissions to be requested. This parameter
      * cannot be null or empty.
      * @param { AsyncCallback<PermissionRequestResult> } requestCallback - Callback for the result from requesting
