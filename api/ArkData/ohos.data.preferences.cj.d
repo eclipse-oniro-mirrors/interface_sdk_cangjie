@@ -32,7 +32,7 @@ import std.collection.*
 ]
 public enum PreferencesEvent {
     /**
-     * change
+     * PreferencesEvent change enum instance
      */
     @!APILevel[
         since: "22",
@@ -41,7 +41,7 @@ public enum PreferencesEvent {
     PreferencesChange
     | 
     /**
-     * multiProcessChange
+     * PreferencesEvent multiProcessChange enum instance
      */
     @!APILevel[
         since: "22",

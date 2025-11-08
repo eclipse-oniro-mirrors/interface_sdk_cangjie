@@ -45,7 +45,6 @@ public open class AbilityStage {
     /**
      * Called when the application is created.
      * 
-     * NOTE:
      * This API returns the result synchronously and does not support asynchronous callbacks.
      */
     @!APILevel[

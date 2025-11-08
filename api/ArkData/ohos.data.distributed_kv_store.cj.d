@@ -755,7 +755,7 @@ public class Query {
 /**
  * Provides methods related to single-version distributed databases.
  * To create a SingleKVStore database,
- * you can use the data.distributed.common.KVManager#getKVStore​(KVOptions, String) method
+ * you can use the getKVStore​(KVOptions, String) method
  * with KVStoreType set to SingleVersion for the input parameter KVOptions.
  * This database synchronizes data to other databases in time sequence.
  * The SingleKVStore database does not support

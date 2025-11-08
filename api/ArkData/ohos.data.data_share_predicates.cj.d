@@ -31,6 +31,7 @@ import ohos.labels.*
 public class DataSharePredicates {
     /**
      * DataSharePredicates constructor.
+     * Currently, only used for RDB and KVDB(schema).
      */
     @!APILevel[
         since: "22",

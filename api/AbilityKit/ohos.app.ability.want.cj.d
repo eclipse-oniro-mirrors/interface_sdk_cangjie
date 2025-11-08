@@ -37,7 +37,6 @@ public class Want {
     /**
      * ID of the device running the ability.
      * 
-     * NOTE:
      * If this field is unspecified, the local device is used.
      */
     @!APILevel[
@@ -59,7 +58,6 @@ public class Want {
     * Name of the ability.
     * If both bundleName and abilityName are specified in a Want object, the Want object can match a specific ability.
     * 
-    * NOTE:
     * The value of abilityName must be unique in an application.
      */
     @!APILevel[
@@ -71,7 +69,6 @@ public class Want {
     /**
      * Name of the module to which the ability belongs.
      * 
-     * NOTE:
      * If the ability belongs to a HAR module, moduleName must be set to the name of the HAP or HSP module that
      * depends on this HAR.
      */
@@ -137,7 +134,6 @@ public class Want {
     /**
      * List of parameters in the Want object.
      * 
-     * NOTE:
      * 1. The values of the following keys are assigned by the system. Manual settings do not take effect, since the
      * system automatically changes the values to the actual values during data transfer.
      * -ohos.aafwk.param.callerPid: PID of the caller. The value is a string.
@@ -187,7 +183,6 @@ public class Want {
      * 
      * 3. In addition to the foregoing cases, applications may further agree on the key-value pairs to transfer.
      * 
-     * NOTE:
      * For details about the constants of Params in want, see wantConstant.
      * Note that a maximum of 200 KB data that can be transferred by using WantParams. If the data volume exceeds
      * 200 KB, transfer data in WriteRawDataBuffer or uri mode.
