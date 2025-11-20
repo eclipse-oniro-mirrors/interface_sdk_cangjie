@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "kit.PerformanceAnalysisKit",
-  pkgDepInfo: "{\"package\":\"kit.PerformanceAnalysisKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.hi_trace_meter\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":36}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":27}}]},{\"package\":\"ohos.hiviewdfx.hi_app_event\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":44}}]}]}",
+  pkgDepInfo: "{\"package\":\"kit.PerformanceAnalysisKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.hi_trace_meter\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":36}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":27}}]},{\"package\":\"ohos.hiviewdfx.hi_app_event\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":44}}]}],\"features\":[]}",
   imports: [
     "ohos.hi_trace_meter",
     "ohos.hiviewdfx.hi_app_event",
@@ -22,14 +22,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 36,
             ignore: false
           },
@@ -45,14 +45,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 44,
             ignore: false
           },
@@ -69,14 +69,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 27,
             ignore: false
           },

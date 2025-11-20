@@ -6,7 +6,7 @@
     patch_num: 0
   },
   fullPkgName: "ohos.arkui.component.scroll",
-  pkgDepInfo: "{\"package\":\"ohos.arkui.component.scroll\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":48}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":50},\"end\":{\"line\":20,\"column\":54}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":56},\"end\":{\"line\":20,\"column\":61}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":63},\"end\":{\"line\":20,\"column\":79}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":81},\"end\":{\"line\":20,\"column\":96}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":98},\"end\":{\"line\":20,\"column\":106}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":108},\"end\":{\"line\":20,\"column\":120}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":52}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":18,\"column\":54},\"end\":{\"line\":18,\"column\":65}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":18,\"column\":67},\"end\":{\"line\":18,\"column\":79}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":58}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":60},\"end\":{\"line\":18,\"column\":68}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":70},\"end\":{\"line\":18,\"column\":81}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":83},\"end\":{\"line\":18,\"column\":95}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":59}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":61},\"end\":{\"line\":18,\"column\":72}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":74},\"end\":{\"line\":18,\"column\":86}}]},{\"package\":\"ohos.arkui.component.native_struct\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":21,\"column\":44},\"end\":{\"line\":21,\"column\":60}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":22,\"column\":35},\"end\":{\"line\":22,\"column\":66}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":22,\"column\":68},\"end\":{\"line\":22,\"column\":92}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":19,\"column\":35},\"end\":{\"line\":19,\"column\":59}}]},{\"package\":\"ohos.arkui.shape\",\"isStd\":false,\"imports\":[{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":24,\"column\":26},\"end\":{\"line\":24,\"column\":35}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":22,\"column\":26},\"end\":{\"line\":22,\"column\":35}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":19},\"end\":{\"line\":23,\"column\":38}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":40},\"end\":{\"line\":23,\"column\":57}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":59},\"end\":{\"line\":23,\"column\":65}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":67},\"end\":{\"line\":23,\"column\":80}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":82},\"end\":{\"line\":23,\"column\":89}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":91},\"end\":{\"line\":23,\"column\":101}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":103},\"end\":{\"line\":23,\"column\":111}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":40}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":20,\"column\":42},\"end\":{\"line\":20,\"column\":52}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":40}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":49}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":49}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":18},\"end\":{\"line\":24,\"column\":30}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":32},\"end\":{\"line\":24,\"column\":46}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":48},\"end\":{\"line\":24,\"column\":62}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":64},\"end\":{\"line\":24,\"column\":78}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":80},\"end\":{\"line\":24,\"column\":94}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":96},\"end\":{\"line\":24,\"column\":110}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":112},\"end\":{\"line\":24,\"column\":126}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":128},\"end\":{\"line\":24,\"column\":142}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":21,\"column\":18},\"end\":{\"line\":21,\"column\":32}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":21,\"column\":34},\"end\":{\"line\":21,\"column\":48}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":28}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":25,\"column\":23},\"end\":{\"line\":25,\"column\":34}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":25,\"column\":36},\"end\":{\"line\":25,\"column\":53}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":22,\"column\":23},\"end\":{\"line\":22,\"column\":34}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":21,\"column\":23},\"end\":{\"line\":21,\"column\":34}}]},{\"package\":\"std.convert\",\"isStd\":true,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":28,\"column\":21},\"end\":{\"line\":28,\"column\":29}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":29,\"column\":1},\"end\":{\"line\":29,\"column\":27}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":27}}]}],\"features\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.arkui.component.scroll\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":48}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":50},\"end\":{\"line\":20,\"column\":54}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":56},\"end\":{\"line\":20,\"column\":61}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":63},\"end\":{\"line\":20,\"column\":79}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":81},\"end\":{\"line\":20,\"column\":96}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":98},\"end\":{\"line\":20,\"column\":106}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":20,\"column\":108},\"end\":{\"line\":20,\"column\":120}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":52}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":18,\"column\":54},\"end\":{\"line\":18,\"column\":65}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":18,\"column\":67},\"end\":{\"line\":18,\"column\":79}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":58}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":60},\"end\":{\"line\":18,\"column\":68}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":70},\"end\":{\"line\":18,\"column\":81}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":18,\"column\":83},\"end\":{\"line\":18,\"column\":95}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":59}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":61},\"end\":{\"line\":18,\"column\":72}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":18,\"column\":74},\"end\":{\"line\":18,\"column\":86}}]},{\"package\":\"ohos.arkui.component.native_struct\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":21,\"column\":44},\"end\":{\"line\":21,\"column\":60}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":22,\"column\":35},\"end\":{\"line\":22,\"column\":66}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":22,\"column\":68},\"end\":{\"line\":22,\"column\":92}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":22,\"column\":94},\"end\":{\"line\":22,\"column\":108}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":19,\"column\":35},\"end\":{\"line\":19,\"column\":59}}]},{\"package\":\"ohos.arkui.shape\",\"isStd\":false,\"imports\":[{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":24,\"column\":26},\"end\":{\"line\":24,\"column\":35}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":22,\"column\":26},\"end\":{\"line\":22,\"column\":35}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":19},\"end\":{\"line\":23,\"column\":38}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":40},\"end\":{\"line\":23,\"column\":57}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":59},\"end\":{\"line\":23,\"column\":65}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":67},\"end\":{\"line\":23,\"column\":80}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":82},\"end\":{\"line\":23,\"column\":89}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":91},\"end\":{\"line\":23,\"column\":101}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":23,\"column\":103},\"end\":{\"line\":23,\"column\":111}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":40}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":20,\"column\":42},\"end\":{\"line\":20,\"column\":52}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":40}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":49}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":49}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":18},\"end\":{\"line\":24,\"column\":30}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":32},\"end\":{\"line\":24,\"column\":46}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":48},\"end\":{\"line\":24,\"column\":62}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":64},\"end\":{\"line\":24,\"column\":78}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":80},\"end\":{\"line\":24,\"column\":94}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":96},\"end\":{\"line\":24,\"column\":110}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":112},\"end\":{\"line\":24,\"column\":126}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":24,\"column\":128},\"end\":{\"line\":24,\"column\":142}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":21,\"column\":18},\"end\":{\"line\":21,\"column\":32}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":21,\"column\":34},\"end\":{\"line\":21,\"column\":48}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":28}},{\"file\":\"scroll_attr.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":25,\"column\":23},\"end\":{\"line\":25,\"column\":34}},{\"file\":\"scroll.cj\",\"begin\":{\"line\":25,\"column\":36},\"end\":{\"line\":25,\"column\":53}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":22,\"column\":23},\"end\":{\"line\":22,\"column\":34}},{\"file\":\"scrollable_common_method.cj\",\"begin\":{\"line\":21,\"column\":23},\"end\":{\"line\":21,\"column\":34}}]},{\"package\":\"std.convert\",\"isStd\":true,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":28,\"column\":21},\"end\":{\"line\":28,\"column\":29}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"scroll.cj\",\"begin\":{\"line\":29,\"column\":1},\"end\":{\"line\":29,\"column\":27}},{\"file\":\"scrollable_common_component.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":27}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.arkui.component.native_struct",
@@ -264,6 +264,30 @@
             "util"
           ],
           identifier: "transAppResourceToLength",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 94,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 108,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "arkui",
+            "component",
+            "util"
+          ],
+          identifier: "EMPTY_FUNCTION",
           asIdentifier: ""
         },
         {
@@ -2786,6 +2810,18 @@
     {
       kind: "Enum",
       typeArgs: [
+        117
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6OptionIG_E"
+        }
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
 
       ],
       info_type: "CompositeTyInfo",
@@ -2799,7 +2835,7 @@
     {
       kind: "Func",
       typeArgs: [
-        118
+        119
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -2809,7 +2845,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        119
+        120
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -2844,7 +2880,7 @@
     {
       kind: "Func",
       typeArgs: [
-        122
+        123
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -2866,16 +2902,6 @@
     {
       kind: "Func",
       typeArgs: [
-        102
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 107
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
         125
       ],
       info_type: "FuncTyInfo",
@@ -2886,7 +2912,29 @@
     {
       kind: "Enum",
       typeArgs: [
-        126
+        102
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6OptionIG_E"
+        }
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        127
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 107
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+        128
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -2911,7 +2959,7 @@
     {
       kind: "Func",
       typeArgs: [
-        128
+        130
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -2921,7 +2969,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        129
+        131
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -2946,7 +2994,7 @@
     {
       kind: "Func",
       typeArgs: [
-        131
+        133
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -2968,7 +3016,7 @@
     {
       kind: "Func",
       typeArgs: [
-        133
+        135
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -2990,7 +3038,7 @@
     {
       kind: "Func",
       typeArgs: [
-        135
+        137
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -3055,7 +3103,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 138
+        retType: 140
       }
     },
     {
@@ -3107,7 +3155,7 @@
       typeArgs: [
         42,
         42,
-        145
+        147
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -3142,7 +3190,7 @@
       kind: "Func",
       typeArgs: [
         60,
-        148
+        150
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -3199,7 +3247,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 153
+        retType: 155
       }
     },
     {
@@ -3219,12 +3267,12 @@
       typeArgs: [
         12,
         27,
-        155,
-        156
+        157,
+        158
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 157
+        retType: 14
       }
     },
     {
@@ -3252,20 +3300,6 @@
       }
     },
     {
-      kind: "Class",
-      typeArgs: [
-
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          pkgId: -2,
-          index: 268
-        },
-        isThisTy: true
-      }
-    },
-    {
       kind: "Func",
       typeArgs: [
         12
@@ -3283,7 +3317,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 155
+        retType: 157
       }
     },
     {
@@ -3291,11 +3325,11 @@
       typeArgs: [
         12,
         27,
-        155
+        157
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 156
+        retType: 158
       }
     },
     {
@@ -3311,7 +3345,7 @@
     {
       kind: "Func",
       typeArgs: [
-        163
+        164
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -3348,37 +3382,27 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 137
+        retType: 139
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        125
+        127
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 137
+        retType: 139
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        128
+        130
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 137
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        131
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 137
+        retType: 139
       }
     },
     {
@@ -3388,7 +3412,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 137
+        retType: 139
       }
     },
     {
@@ -3398,13 +3422,23 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 137
+        retType: 139
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        137
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 139
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        137
+        139
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3417,7 +3451,7 @@
     {
       kind: "Class",
       typeArgs: [
-        173
+        174
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3447,7 +3481,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 172
+        retType: 173
       }
     },
     {
@@ -3457,29 +3491,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 172
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        177
-      ],
-      info_type: "FuncTyInfo",
-      info: {
         retType: 173
-      }
-    },
-    {
-      kind: "Enum",
-      typeArgs: [
-        116
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          decl: "_CNat6OptionIG_E"
-        }
       }
     },
     {
@@ -3489,17 +3501,17 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        118
+        119
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3509,17 +3521,17 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        122
+        123
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3529,7 +3541,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3539,7 +3551,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3549,60 +3561,28 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Func",
       typeArgs: [
+        125
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 174
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        27,
         186
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
-      }
-    },
-    {
-      kind: "Enum",
-      typeArgs: [
-        102
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          decl: "_CNat6OptionIG_E"
-        }
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        102
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 173
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        4
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 173
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        27,
-        190
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3625,17 +3605,17 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        193
+        189
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3653,17 +3633,17 @@
     {
       kind: "Func",
       typeArgs: [
-        195
+        191
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        196
+        192
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3688,21 +3668,21 @@
     {
       kind: "Func",
       typeArgs: [
-        196
+        192
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        199
+        195
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3720,17 +3700,17 @@
     {
       kind: "Func",
       typeArgs: [
-        201
+        197
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        202
+        198
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3754,11 +3734,11 @@
     {
       kind: "Func",
       typeArgs: [
-        204
+        200
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
@@ -3780,13 +3760,13 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 173
+        retType: 174
       }
     },
     {
       kind: "Class",
       typeArgs: [
-        173
+        174
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3799,7 +3779,7 @@
     {
       kind: "Interface",
       typeArgs: [
-        208
+        204
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3825,21 +3805,21 @@
     {
       kind: "Func",
       typeArgs: [
-        177
+        116
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        118
+        119
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
@@ -3849,17 +3829,17 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        122
+        123
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
@@ -3869,7 +3849,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
@@ -3879,7 +3859,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
@@ -3889,38 +3869,48 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        186
+        125
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Func",
       typeArgs: [
         27,
-        190
+        186
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        193
+        189
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        191
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 204
       }
     },
     {
@@ -3930,43 +3920,33 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        199
+        197
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        201
+        200
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 208
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        204
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 208
+        retType: 204
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        208
+        204
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -18527,7 +18507,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 1003,
+        line: 1007,
         column: 2,
         ignore: false
       },
@@ -18568,13 +18548,13 @@
         virt: 0,
         sig: 8360288095876304566,
         srcUse: 0,
-        bodyHash: 4019124755788409671
+        bodyHash: 6887495482110877419
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          136,
-          137
+          138,
+          139
         ],
         body: [
           264,
@@ -18891,14 +18871,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1033,
+        line: 1037,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1321,
+        line: 1324,
         column: 2,
         ignore: false
       },
@@ -18906,7 +18886,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1033,
+        line: 1037,
         column: 14,
         ignore: false
       },
@@ -18939,7 +18919,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 18063379407110510019
+        bodyHash: 10841451266277195109
       },
       info_type: "ClassInfo",
       info: {
@@ -19554,15 +19534,15 @@
 
       ],
       type: 115,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll14scrollBarInnerHNN27ohos.arkui.component.common8BarStateE",
-      exportId: "_CN27ohos.arkui.component.scroll6Scroll14scrollBarInnerHNN27ohos.arkui.component.common8BarStateE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC14scrollBarInnerF8BarState$$H",
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll14scrollBarInnerHNNat6OptionINN27ohos.arkui.component.common8BarStateEE",
+      exportId: "_CN27ohos.arkui.component.scroll6Scroll14scrollBarInnerHNNat6OptionINN27ohos.arkui.component.common8BarStateEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC14scrollBarInnerFO1_8BarState$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 3643254758345857559
+        bodyHash: 10367615081133160504
       },
       info_type: "FuncInfo",
       info: {
@@ -19595,7 +19575,7 @@
         file: 1,
         pkgId: 0,
         line: 796,
-        column: 53,
+        column: 54,
         ignore: false
       },
       identifier: "barState",
@@ -19614,7 +19594,7 @@
 
       ],
       type: 116,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll14scrollBarInnerHNN27ohos.arkui.component.common8BarStateEE8barStateE",
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll14scrollBarInnerHNNat6OptionINN27ohos.arkui.component.common8BarStateEEE8barStateIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -19664,7 +19644,7 @@
       annotations: [
 
       ],
-      type: 117,
+      type: 118,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll19scrollBarColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll19scrollBarColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC19scrollBarColorInnerFO1_13ResourceColor$$H",
@@ -19724,7 +19704,7 @@
       annotations: [
 
       ],
-      type: 118,
+      type: 119,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll19scrollBarColorInnerHNNat6OptionICN9ohos.base13ResourceColorEEE5colorIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19775,7 +19755,7 @@
       annotations: [
 
       ],
-      type: 120,
+      type: 121,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll19scrollBarWidthInnerHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll19scrollBarWidthInnerHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC19scrollBarWidthInnerFO1_6Length$$H",
@@ -19886,7 +19866,7 @@
       annotations: [
 
       ],
-      type: 121,
+      type: 122,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll17nestedScrollInnerHNNat6OptionICNY_19NestedScrollOptionsEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll17nestedScrollInnerHNNat6OptionICNY_19NestedScrollOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC17nestedScrollInnerFO1_19NestedScrollOptions$$H",
@@ -19946,7 +19926,7 @@
       annotations: [
 
       ],
-      type: 122,
+      type: 123,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll17nestedScrollInnerHNNat6OptionICNY_19NestedScrollOptionsEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19978,7 +19958,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 833,
+        line: 834,
         column: 6,
         ignore: false
       },
@@ -19997,16 +19977,16 @@
       annotations: [
 
       ],
-      type: 123,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onReachStartInnerHF0uE",
-      exportId: "_CN27ohos.arkui.component.scroll6Scroll17onReachStartInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC17onReachStartInnerFFu$$H",
+      type: 124,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onReachStartInnerHNNat6OptionIF0uEE",
+      exportId: "_CN27ohos.arkui.component.scroll6Scroll17onReachStartInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC17onReachStartInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 8259164128503749343
+        bodyHash: 14643595078750287158
       },
       info_type: "FuncInfo",
       info: {
@@ -20039,7 +20019,7 @@
         file: 1,
         pkgId: 0,
         line: 828,
-        column: 58,
+        column: 59,
         ignore: false
       },
       identifier: "callback",
@@ -20057,8 +20037,8 @@
       annotations: [
 
       ],
-      type: 102,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onReachStartInnerHF0uEE8callbackE",
+      type: 125,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onReachStartInnerHNNat6OptionIF0uEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -20082,14 +20062,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 835,
+        line: 836,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 840,
+        line: 842,
         column: 6,
         ignore: false
       },
@@ -20097,7 +20077,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 835,
+        line: 836,
         column: 20,
         ignore: false
       },
@@ -20108,16 +20088,16 @@
       annotations: [
 
       ],
-      type: 123,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll15onReachEndInnerHF0uE",
-      exportId: "_CN27ohos.arkui.component.scroll6Scroll15onReachEndInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC15onReachEndInnerFFu$$H",
+      type: 124,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll15onReachEndInnerHNNat6OptionIF0uEE",
+      exportId: "_CN27ohos.arkui.component.scroll6Scroll15onReachEndInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC15onReachEndInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 5431344536280690405
+        bodyHash: 8944474238296858634
       },
       info_type: "FuncInfo",
       info: {
@@ -20142,22 +20122,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 835,
+        line: 836,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 835,
-        column: 56,
+        line: 836,
+        column: 57,
         ignore: false
       },
       identifier: "callback",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 835,
+        line: 836,
         column: 36,
         ignore: false
       },
@@ -20168,8 +20148,8 @@
       annotations: [
 
       ],
-      type: 102,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll15onReachEndInnerHF0uEE8callbackE",
+      type: 125,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll15onReachEndInnerHNNat6OptionIF0uEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -20193,14 +20173,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 859,
+        line: 861,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 875,
+        line: 877,
         column: 6,
         ignore: false
       },
@@ -20208,7 +20188,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 859,
+        line: 861,
         column: 17,
         ignore: false
       },
@@ -20232,7 +20212,7 @@
           ]
         }
       ],
-      type: 124,
+      type: 126,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll12onWillScrollHNNat6OptionIF0CNY_12OffsetResultEddNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll12onWillScrollHNNat6OptionIF0CNY_12OffsetResultEddNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC12onWillScrollFO1_F12OffsetResultdd11ScrollState12ScrollSource$$H",
@@ -20241,7 +20221,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10470048795963963206
+        bodyHash: 9805597442500912335
       },
       info_type: "FuncInfo",
       info: {
@@ -20266,14 +20246,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 859,
+        line: 861,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 859,
+        line: 861,
         column: 101,
         ignore: false
       },
@@ -20281,7 +20261,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 859,
+        line: 861,
         column: 30,
         ignore: false
       },
@@ -20292,7 +20272,7 @@
       annotations: [
 
       ],
-      type: 125,
+      type: 127,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll12onWillScrollHNNat6OptionIF0CNY_12OffsetResultEddNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEEE7handlerIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -20317,14 +20297,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 894,
+        line: 896,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 902,
+        line: 904,
         column: 6,
         ignore: false
       },
@@ -20332,7 +20312,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 894,
+        line: 896,
         column: 17,
         ignore: false
       },
@@ -20356,7 +20336,7 @@
           ]
         }
       ],
-      type: 127,
+      type: 129,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll12onWillScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateENNY8_12ScrollSourceEEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll12onWillScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateENNY8_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC12onWillScrollFO1_Fudd11ScrollState12ScrollSource$$H",
@@ -20365,7 +20345,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14690328280824193605
+        bodyHash: 16984677536428613261
       },
       info_type: "FuncInfo",
       info: {
@@ -20390,14 +20370,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 894,
+        line: 896,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 894,
+        line: 896,
         column: 93,
         ignore: false
       },
@@ -20405,7 +20385,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 894,
+        line: 896,
         column: 30,
         ignore: false
       },
@@ -20416,7 +20396,7 @@
       annotations: [
 
       ],
-      type: 128,
+      type: 130,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll12onWillScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateENNY8_12ScrollSourceEEEE7handlerIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -20441,14 +20421,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 921,
+        line: 923,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 933,
+        line: 935,
         column: 6,
         ignore: false
       },
@@ -20456,7 +20436,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 921,
+        line: 923,
         column: 17,
         ignore: false
       },
@@ -20480,7 +20460,7 @@
           ]
         }
       ],
-      type: 130,
+      type: 132,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll11onDidScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateEEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll11onDidScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC11onDidScrollFO1_22ScrollOnScrollCallback$$H",
@@ -20489,7 +20469,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2877692599328187521
+        bodyHash: 1628810863843104992
       },
       info_type: "FuncInfo",
       info: {
@@ -20514,14 +20494,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 921,
+        line: 923,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 921,
+        line: 923,
         column: 62,
         ignore: false
       },
@@ -20529,7 +20509,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 921,
+        line: 923,
         column: 29,
         ignore: false
       },
@@ -20540,7 +20520,7 @@
       annotations: [
 
       ],
-      type: 131,
+      type: 133,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll11onDidScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -20565,14 +20545,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 935,
+        line: 937,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 940,
+        line: 943,
         column: 6,
         ignore: false
       },
@@ -20580,7 +20560,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 935,
+        line: 937,
         column: 20,
         ignore: false
       },
@@ -20591,16 +20571,16 @@
       annotations: [
 
       ],
-      type: 123,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll18onScrollStartInnerHF0uE",
-      exportId: "_CN27ohos.arkui.component.scroll6Scroll18onScrollStartInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC18onScrollStartInnerFFu$$H",
+      type: 124,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll18onScrollStartInnerHNNat6OptionIF0uEE",
+      exportId: "_CN27ohos.arkui.component.scroll6Scroll18onScrollStartInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC18onScrollStartInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 3162764864608217768
+        bodyHash: 17695280005483479855
       },
       info_type: "FuncInfo",
       info: {
@@ -20625,22 +20605,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 935,
+        line: 937,
         column: 39,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 935,
-        column: 59,
+        line: 937,
+        column: 60,
         ignore: false
       },
       identifier: "callback",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 935,
+        line: 937,
         column: 39,
         ignore: false
       },
@@ -20651,8 +20631,8 @@
       annotations: [
 
       ],
-      type: 102,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll18onScrollStartInnerHF0uEE8callbackE",
+      type: 125,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll18onScrollStartInnerHNNat6OptionIF0uEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -20676,14 +20656,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 942,
+        line: 945,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 947,
+        line: 951,
         column: 6,
         ignore: false
       },
@@ -20691,7 +20671,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 942,
+        line: 945,
         column: 20,
         ignore: false
       },
@@ -20702,16 +20682,16 @@
       annotations: [
 
       ],
-      type: 123,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onScrollStopInnerHF0uE",
-      exportId: "_CN27ohos.arkui.component.scroll6Scroll17onScrollStopInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC17onScrollStopInnerFFu$$H",
+      type: 124,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onScrollStopInnerHNNat6OptionIF0uEE",
+      exportId: "_CN27ohos.arkui.component.scroll6Scroll17onScrollStopInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC17onScrollStopInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 17428604981888437380
+        bodyHash: 11968497973443960862
       },
       info_type: "FuncInfo",
       info: {
@@ -20736,22 +20716,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 942,
+        line: 945,
         column: 38,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 942,
-        column: 58,
+        line: 945,
+        column: 59,
         ignore: false
       },
       identifier: "callback",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 942,
+        line: 945,
         column: 38,
         ignore: false
       },
@@ -20762,8 +20742,8 @@
       annotations: [
 
       ],
-      type: 102,
-      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onScrollStopInnerHF0uEE8callbackE",
+      type: 125,
+      mangledName: "_CN27ohos.arkui.component.scroll6Scroll17onScrollStopInnerHNNat6OptionIF0uEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -20787,14 +20767,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 959,
+        line: 963,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 969,
+        line: 973,
         column: 6,
         ignore: false
       },
@@ -20802,7 +20782,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 959,
+        line: 963,
         column: 17,
         ignore: false
       },
@@ -20826,7 +20806,7 @@
           ]
         }
       ],
-      type: 132,
+      type: 134,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll18onScrollFrameBeginHNNat6OptionIF0ddNN27ohos.arkui.component.common11ScrollStateEEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll18onScrollFrameBeginHNNat6OptionIF0ddNN27ohos.arkui.component.common11ScrollStateEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC18onScrollFrameBeginFO1_26OnScrollFrameBeginCallback$$H",
@@ -20835,7 +20815,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16302444323529509847
+        bodyHash: 15693436181194770878
       },
       info_type: "FuncInfo",
       info: {
@@ -20860,14 +20840,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 959,
+        line: 963,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 959,
+        line: 963,
         column: 70,
         ignore: false
       },
@@ -20875,7 +20855,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 959,
+        line: 963,
         column: 36,
         ignore: false
       },
@@ -20886,7 +20866,7 @@
       annotations: [
 
       ],
-      type: 133,
+      type: 135,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll18onScrollFrameBeginHNNat6OptionIF0ddNN27ohos.arkui.component.common11ScrollStateEEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -20911,14 +20891,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 989,
+        line: 993,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1002,
+        line: 1006,
         column: 6,
         ignore: false
       },
@@ -20926,7 +20906,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 989,
+        line: 993,
         column: 17,
         ignore: false
       },
@@ -20950,7 +20930,7 @@
           ]
         }
       ],
-      type: 134,
+      type: 136,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll12onScrollEdgeHNNat6OptionIF0uNN27ohos.arkui.component.common4EdgeEEE",
       exportId: "_CN27ohos.arkui.component.scroll6Scroll12onScrollEdgeHNNat6OptionIF0uNN27ohos.arkui.component.common4EdgeEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll6ScrollC12onScrollEdgeFO1_20OnScrollEdgeCallback$$H",
@@ -20959,7 +20939,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 9789101501085206846
+        bodyHash: 14149683864622800707
       },
       info_type: "FuncInfo",
       info: {
@@ -20984,14 +20964,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 989,
+        line: 993,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 989,
+        line: 993,
         column: 58,
         ignore: false
       },
@@ -20999,7 +20979,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 989,
+        line: 993,
         column: 30,
         ignore: false
       },
@@ -21010,7 +20990,7 @@
       annotations: [
 
       ],
-      type: 135,
+      type: 137,
       mangledName: "_CN27ohos.arkui.component.scroll6Scroll12onScrollEdgeHNNat6OptionIF0uNN27ohos.arkui.component.common4EdgeEEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -21083,21 +21063,21 @@
           ]
         }
       ],
-      type: 172,
+      type: 173,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C",
       hash: {
         instVar: 0,
-        virt: 787612946265393568,
+        virt: 18182227042385535649,
         sig: 17097451799356733490,
         srcUse: 313184535967830658,
-        bodyHash: 7762955736630948198
+        bodyHash: 14536256291765387877
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          206
+          202
         ],
         body: [
           375,
@@ -21195,7 +21175,7 @@
           ]
         }
       ],
-      type: 137,
+      type: 139,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttributeE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollAttributeE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollAttributeI",
@@ -21209,7 +21189,7 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          171
+          172
         ],
         body: [
           361,
@@ -21232,14 +21212,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1005,
+        line: 1009,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1013,
+        line: 1017,
         column: 2,
         ignore: false
       },
@@ -21247,7 +21227,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1005,
+        line: 1009,
         column: 7,
         ignore: false
       },
@@ -21258,7 +21238,7 @@
       annotations: [
 
       ],
-      type: 138,
+      type: 140,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollerHandlerE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollerHandlerE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollerHandlerC",
@@ -21272,7 +21252,7 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          140
+          142
         ],
         body: [
           308,
@@ -21290,14 +21270,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1006,
+        line: 1010,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1008,
+        line: 1012,
         column: 6,
         ignore: false
       },
@@ -21305,7 +21285,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1006,
+        line: 1010,
         column: 5,
         ignore: false
       },
@@ -21316,7 +21296,7 @@
       annotations: [
 
       ],
-      type: 139,
+      type: 141,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollerHandler6<init>Hl",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollerHandler6<init>Hl",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollerHandlerC6<init>Fl$$",
@@ -21325,7 +21305,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 10339599094544312424
+        bodyHash: 10507019926466328206
       },
       info_type: "FuncInfo",
       info: {
@@ -21340,7 +21320,7 @@
               ]
             }
           ],
-          retType: 138
+          retType: 140
         }
       }
     },
@@ -21350,14 +21330,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1006,
+        line: 1010,
         column: 10,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1006,
+        line: 1010,
         column: 19,
         ignore: false
       },
@@ -21365,7 +21345,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1006,
+        line: 1010,
         column: 10,
         ignore: false
       },
@@ -21401,14 +21381,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1010,
+        line: 1014,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1012,
+        line: 1016,
         column: 6,
         ignore: false
       },
@@ -21416,7 +21396,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1010,
+        line: 1014,
         column: 5,
         ignore: false
       },
@@ -21436,7 +21416,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 10036060655108110578
+        bodyHash: 10155883075796059231
       },
       info_type: "FuncInfo",
       info: {
@@ -21461,14 +21441,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1034,
+        line: 1038,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1034,
+        line: 1038,
         column: 33,
         ignore: false
       },
@@ -21476,7 +21456,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1034,
+        line: 1038,
         column: 9,
         ignore: false
       },
@@ -21487,7 +21467,7 @@
       annotations: [
 
       ],
-      type: 138,
+      type: 140,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller7handlerK_E",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC7handlerV$$15ScrollerHandler",
@@ -21512,14 +21492,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1043,
+        line: 1047,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1047,
+        line: 1051,
         column: 6,
         ignore: false
       },
@@ -21527,7 +21507,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1043,
+        line: 1047,
         column: 12,
         ignore: false
       },
@@ -21551,7 +21531,7 @@
           ]
         }
       ],
-      type: 141,
+      type: 143,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller6<init>Hv",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller6<init>Hv",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC6<init>F$$",
@@ -21560,7 +21540,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12518206881951063125
+        bodyHash: 14280254355940322147
       },
       info_type: "FuncInfo",
       info: {
@@ -21589,14 +21569,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1049,
+        line: 1053,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1051,
+        line: 1055,
         column: 6,
         ignore: false
       },
@@ -21604,7 +21584,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1049,
+        line: 1053,
         column: 20,
         ignore: false
       },
@@ -21615,7 +21595,7 @@
       annotations: [
 
       ],
-      type: 142,
+      type: 144,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller5getIDHv",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller5getIDHv",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC5getIDF$$l",
@@ -21624,7 +21604,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 17601271735593623992
+        bodyHash: 18225354478520504889
       },
       info_type: "FuncInfo",
       info: {
@@ -21653,14 +21633,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1071,
+        line: 1075,
         column: 6,
         ignore: false
       },
@@ -21668,7 +21648,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 17,
         ignore: false
       },
@@ -21692,7 +21672,7 @@
           ]
         }
       ],
-      type: 143,
+      type: 145,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller8scrollToHCN9ohos.base6LengthEY3_",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller8scrollToHCN9ohos.base6LengthEY3_",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC8scrollToF6Length!7xOffset6Length!7yOffset$$u",
@@ -21701,7 +21681,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11096993280389337773
+        bodyHash: 14000102730454098249
       },
       info_type: "FuncInfo",
       info: {
@@ -21728,14 +21708,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 42,
         ignore: false
       },
@@ -21743,7 +21723,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 26,
         ignore: false
       },
@@ -21776,14 +21756,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 44,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 60,
         ignore: false
       },
@@ -21791,7 +21771,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1064,
+        line: 1068,
         column: 44,
         ignore: false
       },
@@ -21828,14 +21808,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1096,
+        line: 1100,
         column: 6,
         ignore: false
       },
@@ -21843,7 +21823,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 17,
         ignore: false
       },
@@ -21867,7 +21847,7 @@
           ]
         }
       ],
-      type: 144,
+      type: 146,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller8scrollToHCN9ohos.base6LengthEY3_NNat6OptionICNY_22ScrollAnimationOptionsEE",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller8scrollToHCN9ohos.base6LengthEY3_NNat6OptionICNY_22ScrollAnimationOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC8scrollToF6Length!7xOffset6Length!7yOffsetO1_22ScrollAnimationOptions!9animation$$u",
@@ -21876,7 +21856,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2920198373730302677
+        bodyHash: 6294569223849693735
       },
       info_type: "FuncInfo",
       info: {
@@ -21905,14 +21885,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 42,
         ignore: false
       },
@@ -21920,7 +21900,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 26,
         ignore: false
       },
@@ -21953,14 +21933,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 44,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 60,
         ignore: false
       },
@@ -21968,7 +21948,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 44,
         ignore: false
       },
@@ -22001,14 +21981,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 62,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 97,
         ignore: false
       },
@@ -22016,7 +21996,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1085,
+        line: 1089,
         column: 62,
         ignore: false
       },
@@ -22027,7 +22007,7 @@
       annotations: [
 
       ],
-      type: 145,
+      type: 147,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller8scrollToHCN9ohos.base6LengthEY3_NNat6OptionICNY_22ScrollAnimationOptionsEEE9animationIY9_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -22053,14 +22033,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1118,
+        line: 1122,
         column: 6,
         ignore: false
       },
@@ -22068,7 +22048,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 17,
         ignore: false
       },
@@ -22092,7 +22072,7 @@
           ]
         }
       ],
-      type: 146,
+      type: 148,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller8scrollToHCN9ohos.base6LengthEY3_NNat6OptionIbE",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller8scrollToHCN9ohos.base6LengthEY3_NNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC8scrollToF6Length!7xOffset6Length!7yOffsetO1_b!9animation$$u",
@@ -22101,7 +22081,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 15222313815959701121
+        bodyHash: 5134665657131168612
       },
       info_type: "FuncInfo",
       info: {
@@ -22130,14 +22110,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 42,
         ignore: false
       },
@@ -22145,7 +22125,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 26,
         ignore: false
       },
@@ -22178,14 +22158,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 44,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 60,
         ignore: false
       },
@@ -22193,7 +22173,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 44,
         ignore: false
       },
@@ -22226,14 +22206,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 62,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 79,
         ignore: false
       },
@@ -22241,7 +22221,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1110,
+        line: 1114,
         column: 62,
         ignore: false
       },
@@ -22278,14 +22258,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1138,
+        line: 1142,
         column: 6,
         ignore: false
       },
@@ -22293,7 +22273,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 17,
         ignore: false
       },
@@ -22317,7 +22297,7 @@
           ]
         }
       ],
-      type: 143,
+      type: 145,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller8scrollByHCN9ohos.base6LengthEY3_",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller8scrollByHCN9ohos.base6LengthEY3_",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC8scrollByF6Length!7xOffset6Length!7yOffset$$u",
@@ -22326,7 +22306,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4275881600697561427
+        bodyHash: 8917766050612013052
       },
       info_type: "FuncInfo",
       info: {
@@ -22353,14 +22333,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 42,
         ignore: false
       },
@@ -22368,7 +22348,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 26,
         ignore: false
       },
@@ -22401,14 +22381,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 44,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 60,
         ignore: false
       },
@@ -22416,7 +22396,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1131,
+        line: 1135,
         column: 44,
         ignore: false
       },
@@ -22453,14 +22433,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1150,
+        line: 1154,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1154,
+        line: 1158,
         column: 6,
         ignore: false
       },
@@ -22468,7 +22448,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1150,
+        line: 1154,
         column: 17,
         ignore: false
       },
@@ -22501,7 +22481,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17304693475030759767
+        bodyHash: 4448334633309235753
       },
       info_type: "FuncInfo",
       info: {
@@ -22526,14 +22506,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1150,
+        line: 1154,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1150,
+        line: 1154,
         column: 39,
         ignore: false
       },
@@ -22541,7 +22521,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1150,
+        line: 1154,
         column: 28,
         ignore: false
       },
@@ -22577,14 +22557,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1172,
+        line: 1176,
         column: 6,
         ignore: false
       },
@@ -22592,7 +22572,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 17,
         ignore: false
       },
@@ -22616,7 +22596,7 @@
           ]
         }
       ],
-      type: 147,
+      type: 149,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller10scrollEdgeHNN27ohos.arkui.component.common4EdgeENNat6OptionICNY_17ScrollEdgeOptionsEE",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller10scrollEdgeHNN27ohos.arkui.component.common4EdgeENNat6OptionICNY_17ScrollEdgeOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC10scrollEdgeF4EdgeO1_17ScrollEdgeOptions$$u",
@@ -22625,7 +22605,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2543580825640987138
+        bodyHash: 17868348709306567184
       },
       info_type: "FuncInfo",
       info: {
@@ -22652,14 +22632,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 39,
         ignore: false
       },
@@ -22667,7 +22647,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 28,
         ignore: false
       },
@@ -22699,14 +22679,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 68,
         ignore: false
       },
@@ -22714,7 +22694,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1167,
+        line: 1171,
         column: 41,
         ignore: false
       },
@@ -22725,7 +22705,7 @@
       annotations: [
 
       ],
-      type: 148,
+      type: 150,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller10scrollEdgeHNN27ohos.arkui.component.common4EdgeENNat6OptionICNY_17ScrollEdgeOptionsEEE7optionsIY9_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -22750,14 +22730,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1187,
+        line: 1191,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1191,
+        line: 1195,
         column: 6,
         ignore: false
       },
@@ -22765,7 +22745,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1187,
+        line: 1191,
         column: 17,
         ignore: false
       },
@@ -22789,7 +22769,7 @@
           ]
         }
       ],
-      type: 149,
+      type: 151,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller5flingHd",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller5flingHd",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC5flingFd$$u",
@@ -22798,7 +22778,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16319841074757664292
+        bodyHash: 12884091458716148894
       },
       info_type: "FuncInfo",
       info: {
@@ -22823,14 +22803,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1187,
+        line: 1191,
         column: 23,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1187,
+        line: 1191,
         column: 40,
         ignore: false
       },
@@ -22838,7 +22818,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1187,
+        line: 1191,
         column: 23,
         ignore: false
       },
@@ -22874,14 +22854,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1207,
+        line: 1211,
         column: 6,
         ignore: false
       },
@@ -22889,7 +22869,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 17,
         ignore: false
       },
@@ -22913,7 +22893,7 @@
           ]
         }
       ],
-      type: 150,
+      type: 152,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller10scrollPageHbNNat6OptionIbE",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller10scrollPageHbNNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC10scrollPageFbO1_b!9animation=$$u",
@@ -22922,7 +22902,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16515604126039747587
+        bodyHash: 1271069395496647628
       },
       info_type: "FuncInfo",
       info: {
@@ -22949,14 +22929,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 38,
         ignore: false
       },
@@ -22964,7 +22944,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 28,
         ignore: false
       },
@@ -22996,14 +22976,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 40,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 64,
         ignore: false
       },
@@ -23011,7 +22991,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 40,
         ignore: false
       },
@@ -23048,14 +23028,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 60,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 64,
         ignore: false
       },
@@ -23074,7 +23054,7 @@
       annotations: [
 
       ],
-      type: 151,
+      type: 153,
       mangledName: "_CPI27ohos.arkui.component.scroll8Scroller10scrollPageHbNNat6OptionIbEE9animationHb",
       exportId: "",
       mangledBeforeSema: "",
@@ -23108,14 +23088,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 38,
         ignore: false
       },
@@ -23123,7 +23103,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1203,
+        line: 1207,
         column: 28,
         ignore: false
       },
@@ -23159,14 +23139,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1218,
+        line: 1222,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1222,
+        line: 1226,
         column: 6,
         ignore: false
       },
@@ -23174,7 +23154,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1218,
+        line: 1222,
         column: 17,
         ignore: false
       },
@@ -23198,7 +23178,7 @@
           ]
         }
       ],
-      type: 152,
+      type: 154,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller13currentOffsetHv",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller13currentOffsetHv",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC13currentOffsetF$$6Option<12OffsetResult>",
@@ -23207,7 +23187,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10943892837327435454
+        bodyHash: 7901346702110016537
       },
       info_type: "FuncInfo",
       info: {
@@ -23222,7 +23202,7 @@
               ]
             }
           ],
-          retType: 153
+          retType: 155
         }
       }
     },
@@ -23236,14 +23216,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1238,
+        line: 1242,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1255,
+        line: 1258,
         column: 6,
         ignore: false
       },
@@ -23251,7 +23231,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1238,
+        line: 1242,
         column: 17,
         ignore: false
       },
@@ -23275,16 +23255,16 @@
           ]
         }
       ],
-      type: 154,
+      type: 156,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEE",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC13scrollToIndexFiO1_b!6smooth=O1_11ScrollAlign!5align=O1_20ScrollToIndexOptions!7options=$$H",
+      mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC13scrollToIndexFiO1_b!6smooth=O1_11ScrollAlign!5align=O1_20ScrollToIndexOptions!7options=$$u",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11030194044635146708
+        bodyHash: 16379354177579910905
       },
       info_type: "FuncInfo",
       info: {
@@ -23305,7 +23285,7 @@
               ]
             }
           ],
-          retType: 157
+          retType: 14
         }
       }
     },
@@ -23315,14 +23295,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 21,
         ignore: false
       },
@@ -23330,7 +23310,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
@@ -23362,14 +23342,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 30,
         ignore: false
       },
@@ -23377,7 +23357,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 9,
         ignore: false
       },
@@ -23414,14 +23394,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 26,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 30,
         ignore: false
       },
@@ -23440,7 +23420,7 @@
       annotations: [
 
       ],
-      type: 158,
+      type: 159,
       mangledName: "_CPI27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEEE6smoothHi",
       exportId: "",
       mangledBeforeSema: "",
@@ -23474,14 +23454,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 21,
         ignore: false
       },
@@ -23489,7 +23469,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
@@ -23521,14 +23501,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 36,
         ignore: false
       },
@@ -23536,7 +23516,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 9,
         ignore: false
       },
@@ -23547,7 +23527,7 @@
       annotations: [
 
       ],
-      type: 155,
+      type: 157,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEEE5alignIY7_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -23573,14 +23553,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 32,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 36,
         ignore: false
       },
@@ -23599,7 +23579,7 @@
       annotations: [
 
       ],
-      type: 159,
+      type: 160,
       mangledName: "_CPI27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEEE5alignHiY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -23625,7 +23605,7 @@
               ]
             }
           ],
-          retType: 155
+          retType: 157
         }
       }
     },
@@ -23635,14 +23615,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 21,
         ignore: false
       },
@@ -23650,7 +23630,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
@@ -23682,14 +23662,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 30,
         ignore: false
       },
@@ -23697,7 +23677,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 9,
         ignore: false
       },
@@ -23729,14 +23709,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1242,
+        line: 1246,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1242,
+        line: 1246,
         column: 47,
         ignore: false
       },
@@ -23744,7 +23724,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1242,
+        line: 1246,
         column: 9,
         ignore: false
       },
@@ -23755,7 +23735,7 @@
       annotations: [
 
       ],
-      type: 156,
+      type: 158,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEEE7optionsIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -23781,14 +23761,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1242,
+        line: 1246,
         column: 43,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1242,
+        line: 1246,
         column: 47,
         ignore: false
       },
@@ -23807,7 +23787,7 @@
       annotations: [
 
       ],
-      type: 160,
+      type: 161,
       mangledName: "_CPI27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEEE7optionsHiY3_Y6_",
       exportId: "",
       mangledBeforeSema: "",
@@ -23835,7 +23815,7 @@
               ]
             }
           ],
-          retType: 156
+          retType: 158
         }
       }
     },
@@ -23845,14 +23825,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 21,
         ignore: false
       },
@@ -23860,7 +23840,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1239,
+        line: 1243,
         column: 9,
         ignore: false
       },
@@ -23892,14 +23872,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 30,
         ignore: false
       },
@@ -23907,7 +23887,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1240,
+        line: 1244,
         column: 9,
         ignore: false
       },
@@ -23939,14 +23919,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 36,
         ignore: false
       },
@@ -23954,7 +23934,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1241,
+        line: 1245,
         column: 9,
         ignore: false
       },
@@ -23965,7 +23945,7 @@
       annotations: [
 
       ],
-      type: 155,
+      type: 157,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller13scrollToIndexHiNNat6OptionIbENNatY5_INNY_11ScrollAlignEENNatY5_ICNY_20ScrollToIndexOptionsEEE9options.3HiY3_Y6_E5alignIY7_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -23990,14 +23970,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1269,
+        line: 1272,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1273,
+        line: 1276,
         column: 6,
         ignore: false
       },
@@ -24005,7 +23985,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1269,
+        line: 1272,
         column: 17,
         ignore: false
       },
@@ -24029,7 +24009,7 @@
           ]
         }
       ],
-      type: 161,
+      type: 162,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller7isAtEndHv",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller7isAtEndHv",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC7isAtEndF$$b",
@@ -24038,7 +24018,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11185659835287632554
+        bodyHash: 10405861502684932767
       },
       info_type: "FuncInfo",
       info: {
@@ -24067,14 +24047,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1292,
+        line: 1295,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1296,
+        line: 1299,
         column: 6,
         ignore: false
       },
@@ -24082,7 +24062,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1292,
+        line: 1295,
         column: 17,
         ignore: false
       },
@@ -24106,7 +24086,7 @@
           ]
         }
       ],
-      type: 162,
+      type: 163,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller11getItemRectHNNat6OptionIiE",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller11getItemRectHNNat6OptionIiE",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC11getItemRectFO1_i$$10RectResult",
@@ -24115,7 +24095,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11172182091736988997
+        bodyHash: 11859072602915572309
       },
       info_type: "FuncInfo",
       info: {
@@ -24140,14 +24120,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1292,
+        line: 1295,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1292,
+        line: 1295,
         column: 42,
         ignore: false
       },
@@ -24155,7 +24135,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1292,
+        line: 1295,
         column: 29,
         ignore: false
       },
@@ -24166,7 +24146,7 @@
       annotations: [
 
       ],
-      type: 163,
+      type: 164,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller11getItemRectHNNat6OptionIiEE5indexIiE",
       exportId: "",
       mangledBeforeSema: "",
@@ -24191,14 +24171,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1320,
+        line: 1323,
         column: 6,
         ignore: false
       },
@@ -24206,7 +24186,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 17,
         ignore: false
       },
@@ -24230,7 +24210,7 @@
           ]
         }
       ],
-      type: 164,
+      type: 165,
       mangledName: "_CN27ohos.arkui.component.scroll8Scroller12getItemIndexHdd",
       exportId: "_CN27ohos.arkui.component.scroll8Scroller12getItemIndexHdd",
       mangledBeforeSema: "27ohos.arkui.component.scroll8ScrollerC12getItemIndexFdd$$i",
@@ -24239,7 +24219,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4606117328250654895
+        bodyHash: 12023358623580945893
       },
       info_type: "FuncInfo",
       info: {
@@ -24266,14 +24246,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 40,
         ignore: false
       },
@@ -24281,7 +24261,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 30,
         ignore: false
       },
@@ -24313,14 +24293,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 42,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 52,
         ignore: false
       },
@@ -24328,7 +24308,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 1313,
+        line: 1316,
         column: 42,
         ignore: false
       },
@@ -24403,7 +24383,7 @@
           ]
         }
       ],
-      type: 165,
+      type: 166,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute10scrollableHNNat6OptionINN27ohos.arkui.component.common15ScrollDirectionEE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollAttribute10scrollableHNNat6OptionINN27ohos.arkui.component.common15ScrollDirectionEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollAttributeI10scrollableFO1_15ScrollDirection$$15ScrollAttribute",
@@ -24427,7 +24407,7 @@
               ]
             }
           ],
-          retType: 137
+          retType: 139
         }
       }
     },
@@ -24527,7 +24507,7 @@
           ]
         }
       ],
-      type: 166,
+      type: 167,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onWillScrollHNNat6OptionIF0CNY_12OffsetResultEddNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onWillScrollHNNat6OptionIF0CNY_12OffsetResultEddNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollAttributeI12onWillScrollFO1_F12OffsetResultdd11ScrollState12ScrollSource$$15ScrollAttribute",
@@ -24551,7 +24531,7 @@
               ]
             }
           ],
-          retType: 137
+          retType: 139
         }
       }
     },
@@ -24587,7 +24567,7 @@
       annotations: [
 
       ],
-      type: 125,
+      type: 127,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onWillScrollHNNat6OptionIF0CNY_12OffsetResultEddNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEEE7handlerIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -24651,7 +24631,7 @@
           ]
         }
       ],
-      type: 167,
+      type: 168,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onWillScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateENNY8_12ScrollSourceEEE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onWillScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateENNY8_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollAttributeI12onWillScrollFO1_Fudd11ScrollState12ScrollSource$$15ScrollAttribute",
@@ -24675,7 +24655,7 @@
               ]
             }
           ],
-          retType: 137
+          retType: 139
         }
       }
     },
@@ -24711,7 +24691,7 @@
       annotations: [
 
       ],
-      type: 128,
+      type: 130,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onWillScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateENNY8_12ScrollSourceEEEE7handlerIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -24775,7 +24755,7 @@
           ]
         }
       ],
-      type: 168,
+      type: 169,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute11onDidScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateEEE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollAttribute11onDidScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollAttributeI11onDidScrollFO1_22ScrollOnScrollCallback$$15ScrollAttribute",
@@ -24799,7 +24779,7 @@
               ]
             }
           ],
-          retType: 137
+          retType: 139
         }
       }
     },
@@ -24835,7 +24815,7 @@
       annotations: [
 
       ],
-      type: 131,
+      type: 133,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute11onDidScrollHNNat6OptionIF0uddNN27ohos.arkui.component.common11ScrollStateEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -24899,7 +24879,7 @@
           ]
         }
       ],
-      type: 169,
+      type: 170,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute18onScrollFrameBeginHNNat6OptionIF0ddNN27ohos.arkui.component.common11ScrollStateEEE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollAttribute18onScrollFrameBeginHNNat6OptionIF0ddNN27ohos.arkui.component.common11ScrollStateEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollAttributeI18onScrollFrameBeginFO1_26OnScrollFrameBeginCallback$$15ScrollAttribute",
@@ -24923,7 +24903,7 @@
               ]
             }
           ],
-          retType: 137
+          retType: 139
         }
       }
     },
@@ -24959,7 +24939,7 @@
       annotations: [
 
       ],
-      type: 133,
+      type: 135,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute18onScrollFrameBeginHNNat6OptionIF0ddNN27ohos.arkui.component.common11ScrollStateEEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -25023,7 +25003,7 @@
           ]
         }
       ],
-      type: 170,
+      type: 171,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onScrollEdgeHNNat6OptionIF0uNN27ohos.arkui.component.common4EdgeEEE",
       exportId: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onScrollEdgeHNNat6OptionIF0uNN27ohos.arkui.component.common4EdgeEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll15ScrollAttributeI12onScrollEdgeFO1_20OnScrollEdgeCallback$$15ScrollAttribute",
@@ -25047,7 +25027,7 @@
               ]
             }
           ],
-          retType: 137
+          retType: 139
         }
       }
     },
@@ -25083,7 +25063,7 @@
       annotations: [
 
       ],
-      type: 135,
+      type: 137,
       mangledName: "_CN27ohos.arkui.component.scroll15ScrollAttribute12onScrollEdgeHNNat6OptionIF0uNN27ohos.arkui.component.common4EdgeEEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -25156,7 +25136,7 @@
           ]
         }
       ],
-      type: 207,
+      type: 203,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I",
@@ -25170,7 +25150,7 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          223
+          219
         ],
         body: [
           459,
@@ -25227,7 +25207,7 @@
       annotations: [
 
       ],
-      type: 173,
+      type: 174,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -25275,7 +25255,7 @@
       annotations: [
 
       ],
-      type: 174,
+      type: 175,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E6<init>Hl",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C6<init>Fl$$",
@@ -25299,7 +25279,7 @@
               ]
             }
           ],
-          retType: 172
+          retType: 173
         }
       }
     },
@@ -25386,7 +25366,7 @@
       annotations: [
 
       ],
-      type: 175,
+      type: 176,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E6<init>Hv",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C6<init>F$$",
@@ -25410,7 +25390,7 @@
               ]
             }
           ],
-          retType: 172
+          retType: 173
         }
       }
     },
@@ -25591,7 +25571,7 @@
           ]
         }
       ],
-      type: 176,
+      type: 177,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E9scrollBarHNNat6OptionINN27ohos.arkui.component.common8BarStateEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C9scrollBarFO1_8BarState$$1T",
@@ -25600,7 +25580,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 673981229468435351
+        bodyHash: 2976783311948837871
       },
       info_type: "FuncInfo",
       info: {
@@ -25615,7 +25595,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -25651,7 +25631,7 @@
       annotations: [
 
       ],
-      type: 177,
+      type: 116,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -25684,7 +25664,7 @@
         file: 3,
         pkgId: 0,
         line: 66,
-        column: 57,
+        column: 58,
         ignore: false
       },
       identifier: "scrollBarInner",
@@ -25702,10 +25682,10 @@
       annotations: [
 
       ],
-      type: 178,
+      type: 177,
       mangledName: "",
-      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E14scrollBarInnerHNN27ohos.arkui.component.common8BarStateE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C14scrollBarInnerF8BarState$$1T",
+      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E14scrollBarInnerHNNat6OptionINN27ohos.arkui.component.common8BarStateEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C14scrollBarInnerFO1_8BarState$$1T",
       hash: {
         instVar: 0,
         virt: 0,
@@ -25726,7 +25706,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -25744,7 +25724,7 @@
         file: 3,
         pkgId: 0,
         line: 66,
-        column: 53,
+        column: 54,
         ignore: false
       },
       identifier: "barState",
@@ -25826,7 +25806,7 @@
           ]
         }
       ],
-      type: 179,
+      type: 178,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E14scrollBarColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C14scrollBarColorFO1_13ResourceColor$$1T",
@@ -25850,7 +25830,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -25886,7 +25866,7 @@
       annotations: [
 
       ],
-      type: 118,
+      type: 119,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -25937,7 +25917,7 @@
       annotations: [
 
       ],
-      type: 179,
+      type: 178,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E19scrollBarColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C19scrollBarColorInnerFO1_13ResourceColor$$1T",
@@ -25961,7 +25941,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -25997,7 +25977,7 @@
       annotations: [
 
       ],
-      type: 118,
+      type: 119,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -26061,7 +26041,7 @@
           ]
         }
       ],
-      type: 180,
+      type: 179,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E14scrollBarWidthHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C14scrollBarWidthFO1_6Length$$1T",
@@ -26085,7 +26065,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -26172,7 +26152,7 @@
       annotations: [
 
       ],
-      type: 180,
+      type: 179,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E19scrollBarWidthInnerHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C19scrollBarWidthInnerFO1_6Length$$1T",
@@ -26196,7 +26176,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -26296,7 +26276,7 @@
           ]
         }
       ],
-      type: 181,
+      type: 180,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E12nestedScrollHNNat6OptionICNY_19NestedScrollOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C12nestedScrollFO1_19NestedScrollOptions$$1T",
@@ -26320,7 +26300,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -26356,7 +26336,7 @@
       annotations: [
 
       ],
-      type: 122,
+      type: 123,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -26407,7 +26387,7 @@
       annotations: [
 
       ],
-      type: 181,
+      type: 180,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E17nestedScrollInnerHNNat6OptionICNY_19NestedScrollOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C17nestedScrollInnerFO1_19NestedScrollOptions$$1T",
@@ -26431,7 +26411,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -26467,7 +26447,7 @@
       annotations: [
 
       ],
-      type: 122,
+      type: 123,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -26531,7 +26511,7 @@
           ]
         }
       ],
-      type: 182,
+      type: 181,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E23enableScrollInteractionHNNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C23enableScrollInteractionFO1_b$$1T",
@@ -26555,7 +26535,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -26642,7 +26622,7 @@
       annotations: [
 
       ],
-      type: 182,
+      type: 181,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E28enableScrollInteractionInnerHNNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C28enableScrollInteractionInnerFO1_b$$1T",
@@ -26666,7 +26646,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -26766,7 +26746,7 @@
           ]
         }
       ],
-      type: 183,
+      type: 182,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E8frictionHNNat6OptionIdE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C8frictionFO1_d$$1T",
@@ -26790,7 +26770,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -26877,7 +26857,7 @@
       annotations: [
 
       ],
-      type: 183,
+      type: 182,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E13frictionInnerHNNat6OptionIdE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C13frictionInnerFO1_d$$1T",
@@ -26901,7 +26881,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27001,7 +26981,7 @@
           ]
         }
       ],
-      type: 184,
+      type: 183,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E8frictionHNNat6OptionICN13ohos.resource11AppResourceEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C8frictionFO1_11AppResource$$1T",
@@ -27025,7 +27005,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27112,7 +27092,7 @@
       annotations: [
 
       ],
-      type: 184,
+      type: 183,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E13frictionInnerHNNat6OptionICN13ohos.resource11AppResourceEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C13frictionInnerFO1_11AppResource$$1T",
@@ -27136,7 +27116,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27236,7 +27216,7 @@
           ]
         }
       ],
-      type: 185,
+      type: 184,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E12onReachStartHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C12onReachStartFO1_Fu$$1T",
@@ -27245,7 +27225,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7202651772850629608
+        bodyHash: 1025456264384367845
       },
       info_type: "FuncInfo",
       info: {
@@ -27260,7 +27240,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27296,7 +27276,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -27329,7 +27309,7 @@
         file: 3,
         pkgId: 0,
         line: 184,
-        column: 59,
+        column: 60,
         ignore: false
       },
       identifier: "onReachStartInner",
@@ -27347,10 +27327,10 @@
       annotations: [
 
       ],
-      type: 187,
+      type: 184,
       mangledName: "",
-      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E17onReachStartInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C17onReachStartInnerFFu$$1T",
+      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E17onReachStartInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C17onReachStartInnerFO1_Fu$$1T",
       hash: {
         instVar: 0,
         virt: 0,
@@ -27371,7 +27351,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27389,7 +27369,7 @@
         file: 3,
         pkgId: 0,
         line: 184,
-        column: 55,
+        column: 56,
         ignore: false
       },
       identifier: "event",
@@ -27407,7 +27387,7 @@
       annotations: [
 
       ],
-      type: 102,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -27471,7 +27451,7 @@
           ]
         }
       ],
-      type: 185,
+      type: 184,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E10onReachEndHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C10onReachEndFO1_Fu$$1T",
@@ -27480,7 +27460,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 18141065761679772789
+        bodyHash: 5744505029843586108
       },
       info_type: "FuncInfo",
       info: {
@@ -27495,7 +27475,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27531,7 +27511,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -27564,7 +27544,7 @@
         file: 3,
         pkgId: 0,
         line: 200,
-        column: 57,
+        column: 58,
         ignore: false
       },
       identifier: "onReachEndInner",
@@ -27582,10 +27562,10 @@
       annotations: [
 
       ],
-      type: 187,
+      type: 184,
       mangledName: "",
-      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E15onReachEndInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C15onReachEndInnerFFu$$1T",
+      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E15onReachEndInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C15onReachEndInnerFO1_Fu$$1T",
       hash: {
         instVar: 0,
         virt: 0,
@@ -27606,7 +27586,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27624,7 +27604,7 @@
         file: 3,
         pkgId: 0,
         line: 200,
-        column: 53,
+        column: 54,
         ignore: false
       },
       identifier: "event",
@@ -27642,7 +27622,7 @@
       annotations: [
 
       ],
-      type: 102,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -27706,7 +27686,7 @@
           ]
         }
       ],
-      type: 185,
+      type: 184,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E13onScrollStartHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C13onScrollStartFO1_Fu$$1T",
@@ -27715,7 +27695,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14682743563109126831
+        bodyHash: 15645812297930485686
       },
       info_type: "FuncInfo",
       info: {
@@ -27730,7 +27710,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27766,7 +27746,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -27799,7 +27779,7 @@
         file: 3,
         pkgId: 0,
         line: 216,
-        column: 60,
+        column: 61,
         ignore: false
       },
       identifier: "onScrollStartInner",
@@ -27817,10 +27797,10 @@
       annotations: [
 
       ],
-      type: 187,
+      type: 184,
       mangledName: "",
-      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E18onScrollStartInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C18onScrollStartInnerFFu$$1T",
+      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E18onScrollStartInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C18onScrollStartInnerFO1_Fu$$1T",
       hash: {
         instVar: 0,
         virt: 0,
@@ -27841,7 +27821,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -27859,7 +27839,7 @@
         file: 3,
         pkgId: 0,
         line: 216,
-        column: 56,
+        column: 57,
         ignore: false
       },
       identifier: "event",
@@ -27877,7 +27857,7 @@
       annotations: [
 
       ],
-      type: 102,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -27941,7 +27921,7 @@
           ]
         }
       ],
-      type: 185,
+      type: 184,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E12onScrollStopHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C12onScrollStopFO1_Fu$$1T",
@@ -27950,7 +27930,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13517996106923876216
+        bodyHash: 15542942255371684233
       },
       info_type: "FuncInfo",
       info: {
@@ -27965,7 +27945,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28001,7 +27981,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -28034,7 +28014,7 @@
         file: 3,
         pkgId: 0,
         line: 236,
-        column: 59,
+        column: 60,
         ignore: false
       },
       identifier: "onScrollStopInner",
@@ -28052,10 +28032,10 @@
       annotations: [
 
       ],
-      type: 187,
+      type: 184,
       mangledName: "",
-      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E17onScrollStopInnerHF0uE",
-      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C17onScrollStopInnerFFu$$1T",
+      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E17onScrollStopInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C17onScrollStopInnerFO1_Fu$$1T",
       hash: {
         instVar: 0,
         virt: 0,
@@ -28076,7 +28056,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28094,7 +28074,7 @@
         file: 3,
         pkgId: 0,
         line: 236,
-        column: 55,
+        column: 56,
         ignore: false
       },
       identifier: "event",
@@ -28112,7 +28092,7 @@
       annotations: [
 
       ],
-      type: 102,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -28176,7 +28156,7 @@
           ]
         }
       ],
-      type: 183,
+      type: 182,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E15flingSpeedLimitHNNat6OptionIdE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C15flingSpeedLimitFO1_d$$1T",
@@ -28185,7 +28165,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4931578234536666319
+        bodyHash: 2762355122229679045
       },
       info_type: "FuncInfo",
       info: {
@@ -28200,7 +28180,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28287,16 +28267,16 @@
       annotations: [
 
       ],
-      type: 188,
+      type: 182,
       mangledName: "",
-      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E20flingSpeedLimitInnerHd",
-      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C20flingSpeedLimitInnerFd$$1T",
+      exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E20flingSpeedLimitInnerHNNat6OptionIdE",
+      mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C20flingSpeedLimitInnerFO1_d$$1T",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 2232245258096878124
+        bodyHash: 9871305790547568013
       },
       info_type: "FuncInfo",
       info: {
@@ -28311,7 +28291,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28329,7 +28309,7 @@
         file: 3,
         pkgId: 0,
         line: 252,
-        column: 60,
+        column: 61,
         ignore: false
       },
       identifier: "speedLimit",
@@ -28347,7 +28327,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 20,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -28411,7 +28391,7 @@
           ]
         }
       ],
-      type: 182,
+      type: 181,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E10fadingEdgeHNNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C10fadingEdgeF6Option<b>$$1T",
@@ -28435,7 +28415,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28522,7 +28502,7 @@
       annotations: [
 
       ],
-      type: 182,
+      type: 181,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E15fadingEdgeInnerHNNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C15fadingEdgeInnerF6Option<b>$$1T",
@@ -28546,7 +28526,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28646,7 +28626,7 @@
           ]
         }
       ],
-      type: 189,
+      type: 185,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E10fadingEdgeHNNat6OptionIbENNatY7_ICNY_17FadingEdgeOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C10fadingEdgeF6Option<b>O1_17FadingEdgeOptions$$1T",
@@ -28672,7 +28652,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28755,7 +28735,7 @@
       annotations: [
 
       ],
-      type: 190,
+      type: 186,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -28806,7 +28786,7 @@
       annotations: [
 
       ],
-      type: 191,
+      type: 187,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E15fadingEdgeInnerHNNat6OptionIbECNY_17FadingEdgeOptionsE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C15fadingEdgeInnerF6Option<b>17FadingEdgeOptions$$1T",
@@ -28832,7 +28812,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -28979,7 +28959,7 @@
           ]
         }
       ],
-      type: 192,
+      type: 188,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E11clipContentHNNat6OptionINNY_15ContentClipModeEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C11clipContentFO1_15ContentClipMode$$1T",
@@ -29003,7 +28983,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29039,7 +29019,7 @@
       annotations: [
 
       ],
-      type: 193,
+      type: 189,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29090,7 +29070,7 @@
       annotations: [
 
       ],
-      type: 192,
+      type: 188,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E16clipContentInnerHNNat6OptionINNY_15ContentClipModeEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C16clipContentInnerFO1_15ContentClipMode$$1T",
@@ -29114,7 +29094,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29150,7 +29130,7 @@
       annotations: [
 
       ],
-      type: 193,
+      type: 189,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29214,7 +29194,7 @@
           ]
         }
       ],
-      type: 194,
+      type: 190,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E11clipContentHNNat6OptionICN16ohos.arkui.shape9RectShapeEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C11clipContentFO1_9RectShape$$1T",
@@ -29238,7 +29218,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29274,7 +29254,7 @@
       annotations: [
 
       ],
-      type: 195,
+      type: 191,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29325,7 +29305,7 @@
       annotations: [
 
       ],
-      type: 197,
+      type: 193,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E16clipContentInnerHCN16ohos.arkui.shape9RectShapeE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C16clipContentInnerF9RectShape$$1T",
@@ -29349,7 +29329,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29385,7 +29365,7 @@
       annotations: [
 
       ],
-      type: 196,
+      type: 192,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29449,7 +29429,7 @@
           ]
         }
       ],
-      type: 198,
+      type: 194,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E12onWillScrollHNNat6OptionIF0CNY_12ScrollResultEdNN27ohos.arkui.component.common11ScrollStateENNYC_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C12onWillScrollF6Option<F12ScrollResultd11ScrollState12ScrollSource>$$1T",
@@ -29473,7 +29453,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29509,7 +29489,7 @@
       annotations: [
 
       ],
-      type: 199,
+      type: 195,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29560,7 +29540,7 @@
       annotations: [
 
       ],
-      type: 198,
+      type: 194,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E17onWillScrollInnerHNNat6OptionIF0CNY_12ScrollResultEdNN27ohos.arkui.component.common11ScrollStateENNYC_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C17onWillScrollInnerF6Option<F12ScrollResultd11ScrollState12ScrollSource>$$1T",
@@ -29584,7 +29564,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29620,7 +29600,7 @@
       annotations: [
 
       ],
-      type: 199,
+      type: 195,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29684,7 +29664,7 @@
           ]
         }
       ],
-      type: 200,
+      type: 196,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E12onWillScrollHNNat6OptionIF0udNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C12onWillScrollF6Option<Fud11ScrollState12ScrollSource>$$1T",
@@ -29708,7 +29688,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29744,7 +29724,7 @@
       annotations: [
 
       ],
-      type: 201,
+      type: 197,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29795,7 +29775,7 @@
       annotations: [
 
       ],
-      type: 200,
+      type: 196,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E17onWillScrollInnerHNNat6OptionIF0udNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C17onWillScrollInnerF6Option<Fud11ScrollState12ScrollSource>$$1T",
@@ -29819,7 +29799,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29855,7 +29835,7 @@
       annotations: [
 
       ],
-      type: 201,
+      type: 197,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -29919,7 +29899,7 @@
           ]
         }
       ],
-      type: 203,
+      type: 199,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E11onDidScrollHNNat6OptionIF0udNN27ohos.arkui.component.common11ScrollStateEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C11onDidScrollFO1_16OnScrollCallBack$$1T",
@@ -29943,7 +29923,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -29979,7 +29959,7 @@
       annotations: [
 
       ],
-      type: 204,
+      type: 200,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -30030,7 +30010,7 @@
       annotations: [
 
       ],
-      type: 205,
+      type: 201,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll31ScrollableCommonMethodComponentIG_E16onDidScrollInnerHF0udNN27ohos.arkui.component.common11ScrollStateEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll31ScrollableCommonMethodComponent<1>C16onDidScrollInnerF16OnScrollCallBack$$1T",
@@ -30054,7 +30034,7 @@
               ]
             }
           ],
-          retType: 173
+          retType: 174
         }
       }
     },
@@ -30137,7 +30117,7 @@
       annotations: [
 
       ],
-      type: 208,
+      type: 204,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E_TG1T",
       mangledBeforeSema: "",
@@ -30198,7 +30178,7 @@
           ]
         }
       ],
-      type: 209,
+      type: 205,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E9scrollBarHNNat6OptionINN27ohos.arkui.component.common8BarStateEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I9scrollBarFO1_8BarState$$1T",
@@ -30222,7 +30202,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -30258,7 +30238,7 @@
       annotations: [
 
       ],
-      type: 177,
+      type: 116,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -30322,7 +30302,7 @@
           ]
         }
       ],
-      type: 210,
+      type: 206,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E14scrollBarColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I14scrollBarColorFO1_13ResourceColor$$1T",
@@ -30346,7 +30326,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -30382,7 +30362,7 @@
       annotations: [
 
       ],
-      type: 118,
+      type: 119,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -30446,7 +30426,7 @@
           ]
         }
       ],
-      type: 211,
+      type: 207,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E14scrollBarWidthHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I14scrollBarWidthFO1_6Length$$1T",
@@ -30470,7 +30450,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -30570,7 +30550,7 @@
           ]
         }
       ],
-      type: 212,
+      type: 208,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E12nestedScrollHNNat6OptionICNY_19NestedScrollOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I12nestedScrollFO1_19NestedScrollOptions$$1T",
@@ -30594,7 +30574,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -30630,7 +30610,7 @@
       annotations: [
 
       ],
-      type: 122,
+      type: 123,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -30694,7 +30674,7 @@
           ]
         }
       ],
-      type: 213,
+      type: 209,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E23enableScrollInteractionHNNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I23enableScrollInteractionFO1_b$$1T",
@@ -30718,7 +30698,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -30818,7 +30798,7 @@
           ]
         }
       ],
-      type: 214,
+      type: 210,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E8frictionHNNat6OptionIdE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I8frictionFO1_d$$1T",
@@ -30842,7 +30822,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -30942,7 +30922,7 @@
           ]
         }
       ],
-      type: 215,
+      type: 211,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E8frictionHNNat6OptionICN13ohos.resource11AppResourceEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I8frictionFO1_11AppResource$$1T",
@@ -30966,7 +30946,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31066,7 +31046,7 @@
           ]
         }
       ],
-      type: 216,
+      type: 212,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E12onReachStartHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I12onReachStartFO1_Fu$$1T",
@@ -31090,7 +31070,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31126,7 +31106,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -31190,7 +31170,7 @@
           ]
         }
       ],
-      type: 216,
+      type: 212,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E10onReachEndHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I10onReachEndFO1_Fu$$1T",
@@ -31214,7 +31194,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31250,7 +31230,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -31314,7 +31294,7 @@
           ]
         }
       ],
-      type: 216,
+      type: 212,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E13onScrollStartHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I13onScrollStartFO1_Fu$$1T",
@@ -31338,7 +31318,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31374,7 +31354,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -31438,7 +31418,7 @@
           ]
         }
       ],
-      type: 216,
+      type: 212,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E12onScrollStopHNNat6OptionIF0uEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I12onScrollStopFO1_Fu$$1T",
@@ -31462,7 +31442,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31498,7 +31478,7 @@
       annotations: [
 
       ],
-      type: 186,
+      type: 125,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -31562,7 +31542,7 @@
           ]
         }
       ],
-      type: 214,
+      type: 210,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E15flingSpeedLimitHNNat6OptionIdE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I15flingSpeedLimitFO1_d$$1T",
@@ -31586,7 +31566,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31686,7 +31666,7 @@
           ]
         }
       ],
-      type: 213,
+      type: 209,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E10fadingEdgeHNNat6OptionIbE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I10fadingEdgeF6Option<b>$$1T",
@@ -31710,7 +31690,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31810,7 +31790,7 @@
           ]
         }
       ],
-      type: 217,
+      type: 213,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E10fadingEdgeHNNat6OptionIbENNatY7_ICNY_17FadingEdgeOptionsEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I10fadingEdgeF6Option<b>O1_17FadingEdgeOptions$$1T",
@@ -31836,7 +31816,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -31919,7 +31899,7 @@
       annotations: [
 
       ],
-      type: 190,
+      type: 186,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -31983,7 +31963,7 @@
           ]
         }
       ],
-      type: 218,
+      type: 214,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E11clipContentHNNat6OptionINNY_15ContentClipModeEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I11clipContentFO1_15ContentClipMode$$1T",
@@ -32007,7 +31987,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -32043,7 +32023,7 @@
       annotations: [
 
       ],
-      type: 193,
+      type: 189,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -32107,7 +32087,7 @@
           ]
         }
       ],
-      type: 219,
+      type: 215,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E11clipContentHNNat6OptionICN16ohos.arkui.shape9RectShapeEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I11clipContentFO1_9RectShape$$1T",
@@ -32131,7 +32111,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -32167,7 +32147,7 @@
       annotations: [
 
       ],
-      type: 195,
+      type: 191,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -32231,7 +32211,7 @@
           ]
         }
       ],
-      type: 220,
+      type: 216,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E12onWillScrollHNNat6OptionIF0CNY_12ScrollResultEdNN27ohos.arkui.component.common11ScrollStateENNYC_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I12onWillScrollF6Option<F12ScrollResultd11ScrollState12ScrollSource>$$1T",
@@ -32255,7 +32235,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -32291,7 +32271,7 @@
       annotations: [
 
       ],
-      type: 199,
+      type: 195,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -32355,7 +32335,7 @@
           ]
         }
       ],
-      type: 221,
+      type: 217,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E12onWillScrollHNNat6OptionIF0udNN27ohos.arkui.component.common11ScrollStateENNYA_12ScrollSourceEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I12onWillScrollF6Option<Fud11ScrollState12ScrollSource>$$1T",
@@ -32379,7 +32359,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -32415,7 +32395,7 @@
       annotations: [
 
       ],
-      type: 201,
+      type: 197,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -32479,7 +32459,7 @@
           ]
         }
       ],
-      type: 222,
+      type: 218,
       mangledName: "",
       exportId: "_CN27ohos.arkui.component.scroll22ScrollableCommonMethodIG_E11onDidScrollHNNat6OptionIF0udNN27ohos.arkui.component.common11ScrollStateEEE",
       mangledBeforeSema: "27ohos.arkui.component.scroll22ScrollableCommonMethod<1>I11onDidScrollFO1_16OnScrollCallBack$$1T",
@@ -32503,7 +32483,7 @@
               ]
             }
           ],
-          retType: 208
+          retType: 204
         }
       }
     },
@@ -32539,7 +32519,7 @@
       annotations: [
 
       ],
-      type: 204,
+      type: 200,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -34631,14 +34611,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 856,
+        line: 858,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 856,
+        line: 858,
         column: 20,
         ignore: false
       },
@@ -34654,14 +34634,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 857,
+        line: 859,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 857,
+        line: 859,
         column: 52,
         ignore: false
       },
@@ -34677,14 +34657,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 891,
+        line: 893,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 891,
+        line: 893,
         column: 20,
         ignore: false
       },
@@ -34700,14 +34680,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 892,
+        line: 894,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 892,
+        line: 894,
         column: 52,
         ignore: false
       },
@@ -34723,14 +34703,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 918,
+        line: 920,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 918,
+        line: 920,
         column: 20,
         ignore: false
       },
@@ -34746,14 +34726,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 919,
+        line: 921,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 919,
+        line: 921,
         column: 52,
         ignore: false
       },
@@ -34769,14 +34749,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 956,
+        line: 960,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 956,
+        line: 960,
         column: 20,
         ignore: false
       },
@@ -34792,14 +34772,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 957,
+        line: 961,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 957,
+        line: 961,
         column: 52,
         ignore: false
       },
@@ -34815,14 +34795,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 986,
+        line: 990,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 986,
+        line: 990,
         column: 20,
         ignore: false
       },
@@ -34838,14 +34818,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 987,
+        line: 991,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 987,
+        line: 991,
         column: 52,
         ignore: false
       },
@@ -34861,14 +34841,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1030,
+        line: 1034,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1030,
+        line: 1034,
         column: 16,
         ignore: false
       },
@@ -34884,14 +34864,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1031,
+        line: 1035,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1031,
+        line: 1035,
         column: 48,
         ignore: false
       },
@@ -34907,14 +34887,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1040,
+        line: 1044,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1040,
+        line: 1044,
         column: 20,
         ignore: false
       },
@@ -34930,14 +34910,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1041,
+        line: 1045,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1041,
+        line: 1045,
         column: 52,
         ignore: false
       },
@@ -34953,14 +34933,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1061,
+        line: 1065,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1061,
+        line: 1065,
         column: 20,
         ignore: false
       },
@@ -34976,14 +34956,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1062,
+        line: 1066,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1062,
+        line: 1066,
         column: 52,
         ignore: false
       },
@@ -34999,14 +34979,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1082,
+        line: 1086,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1082,
+        line: 1086,
         column: 20,
         ignore: false
       },
@@ -35022,14 +35002,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1083,
+        line: 1087,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1083,
+        line: 1087,
         column: 52,
         ignore: false
       },
@@ -35045,14 +35025,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1107,
+        line: 1111,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1107,
+        line: 1111,
         column: 20,
         ignore: false
       },
@@ -35068,14 +35048,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1108,
+        line: 1112,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1108,
+        line: 1112,
         column: 52,
         ignore: false
       },
@@ -35091,14 +35071,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1128,
+        line: 1132,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1128,
+        line: 1132,
         column: 20,
         ignore: false
       },
@@ -35114,14 +35094,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1129,
+        line: 1133,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1129,
+        line: 1133,
         column: 52,
         ignore: false
       },
@@ -35137,14 +35117,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1147,
+        line: 1151,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1147,
+        line: 1151,
         column: 20,
         ignore: false
       },
@@ -35160,14 +35140,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1148,
+        line: 1152,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1148,
+        line: 1152,
         column: 52,
         ignore: false
       },
@@ -35183,14 +35163,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1164,
+        line: 1168,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1164,
+        line: 1168,
         column: 20,
         ignore: false
       },
@@ -35206,14 +35186,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1165,
+        line: 1169,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1165,
+        line: 1169,
         column: 52,
         ignore: false
       },
@@ -35229,14 +35209,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1184,
+        line: 1188,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1184,
+        line: 1188,
         column: 20,
         ignore: false
       },
@@ -35252,14 +35232,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1185,
+        line: 1189,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1185,
+        line: 1189,
         column: 52,
         ignore: false
       },
@@ -35275,14 +35255,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1200,
+        line: 1204,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1200,
+        line: 1204,
         column: 20,
         ignore: false
       },
@@ -35298,14 +35278,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1201,
+        line: 1205,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1201,
+        line: 1205,
         column: 52,
         ignore: false
       },
@@ -35321,14 +35301,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1215,
+        line: 1219,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1215,
+        line: 1219,
         column: 20,
         ignore: false
       },
@@ -35344,14 +35324,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1216,
+        line: 1220,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1216,
+        line: 1220,
         column: 52,
         ignore: false
       },
@@ -35367,14 +35347,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1235,
+        line: 1239,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1235,
+        line: 1239,
         column: 20,
         ignore: false
       },
@@ -35390,14 +35370,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1236,
+        line: 1240,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1236,
+        line: 1240,
         column: 52,
         ignore: false
       },
@@ -35413,14 +35393,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1266,
+        line: 1269,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1266,
+        line: 1269,
         column: 20,
         ignore: false
       },
@@ -35436,14 +35416,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1267,
+        line: 1270,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1267,
+        line: 1270,
         column: 52,
         ignore: false
       },
@@ -35459,14 +35439,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1289,
+        line: 1292,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1289,
+        line: 1292,
         column: 20,
         ignore: false
       },
@@ -35482,14 +35462,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1290,
+        line: 1293,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1290,
+        line: 1293,
         column: 52,
         ignore: false
       },
@@ -35505,14 +35485,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1310,
+        line: 1313,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1310,
+        line: 1313,
         column: 20,
         ignore: false
       },
@@ -35528,14 +35508,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 1311,
+        line: 1314,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 1311,
+        line: 1314,
         column: 52,
         ignore: false
       },

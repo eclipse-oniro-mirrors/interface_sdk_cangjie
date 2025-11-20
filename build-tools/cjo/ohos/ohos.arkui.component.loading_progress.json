@@ -6,7 +6,7 @@
     patch_num: 0
   },
   fullPkgName: "ohos.arkui.component.loading_progress",
-  pkgDepInfo: "{\"package\":\"ohos.arkui.component.loading_progress\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":58}},{\"file\":\"loading_progress_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":21,\"column\":35},\"end\":{\"line\":21,\"column\":66}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":22,\"column\":19},\"end\":{\"line\":22,\"column\":32}},{\"file\":\"loading_progress_attr.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"loading_progress_attr.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]}],\"features\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.arkui.component.loading_progress\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":58}},{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":20,\"column\":60},\"end\":{\"line\":20,\"column\":76}},{\"file\":\"loading_progress_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":21,\"column\":35},\"end\":{\"line\":21,\"column\":66}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":22,\"column\":19},\"end\":{\"line\":22,\"column\":32}},{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":22,\"column\":34},\"end\":{\"line\":22,\"column\":39}},{\"file\":\"loading_progress_attr.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"loading_progress.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"loading_progress_attr.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.base",
@@ -41,6 +41,30 @@
             "common"
           ],
           identifier: "CommonMethodComponent",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 20,
+            column: 60,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 20,
+            column: 76,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "arkui",
+            "component",
+            "common"
+          ],
+          identifier: "ColoringStrategy",
           asIdentifier: ""
         },
         {
@@ -87,6 +111,28 @@
             "base"
           ],
           identifier: "ResourceColor",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 34,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 39,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "base"
+          ],
+          identifier: "Color",
           asIdentifier: ""
         },
         {
@@ -371,6 +417,41 @@
       }
     },
     {
+      kind: "Func",
+      typeArgs: [
+        17
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 15
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+        18
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6OptionIG_E"
+        }
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: 2,
+          decl: "_CN27ohos.arkui.component.common16ColoringStrategyE"
+        }
+      }
+    },
+    {
       kind: "Class",
       typeArgs: [
         9
@@ -392,7 +473,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 14
+          index: 18
         }
       }
     },
@@ -403,13 +484,13 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 17
+        retType: 20
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        17
+        20
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -952,7 +1033,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 94,
         column: 2,
         ignore: false
       },
@@ -993,17 +1074,19 @@
         virt: 0,
         sig: 1529266960115964797,
         srcUse: 0,
-        bodyHash: 17887209329724887259
+        bodyHash: 2703960653908757402
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          16,
-          17
+          19,
+          20
         ],
         body: [
           11,
-          12
+          12,
+          14,
+          16
         ]
       }
     },
@@ -1209,6 +1292,228 @@
       }
     },
     {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.arkui.component.loading_progress",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 74,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 80,
+        column: 6,
+        ignore: false
+      },
+      identifier: "foregroundColorInner",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 74,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        144678138297749536,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 12,
+      mangledName: "_CN37ohos.arkui.component.loading_progress15LoadingProgress20foregroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
+      exportId: "_CN37ohos.arkui.component.loading_progress15LoadingProgress20foregroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
+      mangledBeforeSema: "37ohos.arkui.component.loading_progress15LoadingProgressC20foregroundColorInnerFO1_13ResourceColor$$H",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 2687969717096398320,
+        srcUse: 0,
+        bodyHash: 527640523967212921
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                15
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 15
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.loading_progress",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 74,
+        column: 50,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 74,
+        column: 71,
+        ignore: false
+      },
+      identifier: "value",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 74,
+        column: 50,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 13,
+      mangledName: "_CN37ohos.arkui.component.loading_progress15LoadingProgress20foregroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.arkui.component.loading_progress",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 93,
+        column: 6,
+        ignore: false
+      },
+      identifier: "foregroundColorInner",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        144678138297749536,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 16,
+      mangledName: "_CN37ohos.arkui.component.loading_progress15LoadingProgress20foregroundColorInnerHNNat6OptionINN27ohos.arkui.component.common16ColoringStrategyEE",
+      exportId: "_CN37ohos.arkui.component.loading_progress15LoadingProgress20foregroundColorInnerHNNat6OptionINN27ohos.arkui.component.common16ColoringStrategyEE",
+      mangledBeforeSema: "37ohos.arkui.component.loading_progress15LoadingProgressC20foregroundColorInnerFO1_16ColoringStrategy$$H",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 2687969717096398320,
+        srcUse: 0,
+        bodyHash: 6085435928468427766
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                17
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 15
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.loading_progress",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 50,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 74,
+        ignore: false
+      },
+      identifier: "value",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 50,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 17,
+      mangledName: "_CN37ohos.arkui.component.loading_progress15LoadingProgress20foregroundColorInnerHNNat6OptionINN27ohos.arkui.component.common16ColoringStrategyEEE5valueIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
       kind: "InterfaceDecl",
       isTopLevel: true,
       fullPkgName: "ohos.arkui.component.loading_progress",
@@ -1258,7 +1563,7 @@
           ]
         }
       ],
-      type: 17,
+      type: 20,
       mangledName: "_CN37ohos.arkui.component.loading_progress24LoadingProgressAttributeE",
       exportId: "_CN37ohos.arkui.component.loading_progress24LoadingProgressAttributeE",
       mangledBeforeSema: "37ohos.arkui.component.loading_progress24LoadingProgressAttributeI",
@@ -1272,10 +1577,10 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          19
+          22
         ],
         body: [
-          15
+          19
         ]
       }
     },
@@ -1328,7 +1633,7 @@
           ]
         }
       ],
-      type: 18,
+      type: 21,
       mangledName: "_CN37ohos.arkui.component.loading_progress24LoadingProgressAttribute5colorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN37ohos.arkui.component.loading_progress24LoadingProgressAttribute5colorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "37ohos.arkui.component.loading_progress24LoadingProgressAttributeI5colorFO1_13ResourceColor$$24LoadingProgressAttribute",
@@ -1345,14 +1650,14 @@
           paramLists: [
             {
               params: [
-                16
+                20
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 17
+          retType: 20
         }
       }
     },

@@ -6,7 +6,7 @@
     patch_num: 0
   },
   fullPkgName: "ohos.arkui.component.column",
-  pkgDepInfo: "{\"package\":\"ohos.arkui.component.column\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":58}},{\"file\":\"column.cj\",\"begin\":{\"line\":20,\"column\":60},\"end\":{\"line\":20,\"column\":75}},{\"file\":\"column.cj\",\"begin\":{\"line\":20,\"column\":77},\"end\":{\"line\":20,\"column\":86}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":66}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":18,\"column\":68},\"end\":{\"line\":18,\"column\":77}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":21,\"column\":35},\"end\":{\"line\":21,\"column\":59}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":22,\"column\":19},\"end\":{\"line\":22,\"column\":25}},{\"file\":\"column.cj\",\"begin\":{\"line\":22,\"column\":27},\"end\":{\"line\":22,\"column\":37}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]}],\"features\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.arkui.component.column\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":58}},{\"file\":\"column.cj\",\"begin\":{\"line\":20,\"column\":60},\"end\":{\"line\":20,\"column\":75}},{\"file\":\"column.cj\",\"begin\":{\"line\":20,\"column\":77},\"end\":{\"line\":20,\"column\":86}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":66}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":18,\"column\":68},\"end\":{\"line\":18,\"column\":77}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":21,\"column\":35},\"end\":{\"line\":21,\"column\":59}},{\"file\":\"column.cj\",\"begin\":{\"line\":21,\"column\":61},\"end\":{\"line\":21,\"column\":73}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":22,\"column\":19},\"end\":{\"line\":22,\"column\":25}},{\"file\":\"column.cj\",\"begin\":{\"line\":22,\"column\":27},\"end\":{\"line\":22,\"column\":37}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"column.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"column_attr.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.base",
@@ -113,6 +113,30 @@
             "util"
           ],
           identifier: "transAppResourceToLength",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 21,
+            column: 61,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 21,
+            column: 73,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "arkui",
+            "component",
+            "util"
+          ],
+          identifier: "lessNotEqual",
           asIdentifier: ""
         },
         {
@@ -1535,7 +1559,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 134,
         column: 2,
         ignore: false
       },
@@ -2208,7 +2232,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 117,
         column: 6,
         ignore: false
       },
@@ -2236,7 +2260,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 2226128624510558879
+        bodyHash: 15469743897306128600
       },
       info_type: "FuncInfo",
       info: {
@@ -2312,14 +2336,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 119,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 133,
         column: 6,
         ignore: false
       },
@@ -2327,7 +2351,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 119,
         column: 29,
         ignore: false
       },
@@ -2347,7 +2371,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 10394813235356715774
+        bodyHash: 5976970791616370450
       },
       info_type: "FuncInfo",
       info: {
@@ -2372,14 +2396,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 119,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 119,
         column: 55,
         ignore: false
       },
@@ -2387,7 +2411,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 119,
         column: 41,
         ignore: false
       },

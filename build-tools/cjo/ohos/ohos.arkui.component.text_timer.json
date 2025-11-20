@@ -975,6 +975,17 @@
       }
     },
     {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 3,
+        isC: true
+      }
+    },
+    {
       kind: "Class",
       typeArgs: [
 
@@ -983,7 +994,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 63
+          index: 64
         }
       }
     },
@@ -1006,7 +1017,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 29
+        retType: 30
       }
     },
     {
@@ -1031,20 +1042,20 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 69
+          index: 70
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        35,
         36,
-        37
+        37,
+        38
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 33
+        retType: 34
       }
     },
     {
@@ -1074,7 +1085,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        29
+        30
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1090,23 +1101,12 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 35
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        35
-      ],
-      info_type: "FuncTyInfo",
-      info: {
         retType: 36
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        35,
         36
       ],
       info_type: "FuncTyInfo",
@@ -1117,17 +1117,28 @@
     {
       kind: "Func",
       typeArgs: [
-        42
+        36,
+        37
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 38
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        43
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        30
+        31
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1145,7 +1156,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 69
+          index: 70
         },
         isThisTy: true
       }
@@ -1153,17 +1164,17 @@
     {
       kind: "Func",
       typeArgs: [
-        45
+        46
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        46
+        47
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1186,17 +1197,17 @@
     {
       kind: "Func",
       typeArgs: [
-        48
+        49
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        49
+        50
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1221,17 +1232,17 @@
     {
       kind: "Func",
       typeArgs: [
-        51
+        52
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        52
+        53
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1256,17 +1267,17 @@
     {
       kind: "Func",
       typeArgs: [
-        54
+        55
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        55
+        56
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1291,17 +1302,17 @@
     {
       kind: "Func",
       typeArgs: [
-        57
+        58
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        58
+        59
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1326,17 +1337,17 @@
     {
       kind: "Func",
       typeArgs: [
-        60
+        61
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        61
+        62
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1361,17 +1372,17 @@
     {
       kind: "Func",
       typeArgs: [
-        63
+        64
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        64
+        65
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1383,7 +1394,7 @@
     {
       kind: "Struct",
       typeArgs: [
-        65
+        66
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1408,17 +1419,17 @@
     {
       kind: "Func",
       typeArgs: [
-        67
+        68
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        65
+        66
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1430,7 +1441,7 @@
     {
       kind: "Class",
       typeArgs: [
-        33
+        34
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1449,104 +1460,104 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 98
+          index: 99
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        42
+        43
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        45
+        46
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        48
+        49
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        51
+        52
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        54
+        55
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        57
+        58
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        60
+        61
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        63
+        64
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        67
+        68
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 69
+        retType: 70
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        69
+        70
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -4932,6 +4943,71 @@
       }
     },
     {
+      kind: "FuncDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.arkui.component.text_timer",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 109,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 109,
+        column: 60,
+        ignore: false
+      },
+      identifier: "FfiOHOSAceFrameworkTextTimerResetFontColor",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 109,
+        column: 10,
+        ignore: false
+      },
+      attributes: [
+        144968409101123632,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 29,
+      mangledName: "FfiOHOSAceFrameworkTextTimerResetFontColor",
+      exportId: "FfiOHOSAceFrameworkTextTimerResetFontColor",
+      mangledBeforeSema: "31ohos.arkui.component.text_timer42FfiOHOSAceFrameworkTextTimerResetFontColorF$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 7222278799635774413,
+        bodyHash: 0
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 3
+        }
+      }
+    },
+    {
       kind: "ClassDecl",
       isTopLevel: true,
       fullPkgName: "ohos.arkui.component.text_timer",
@@ -4942,14 +5018,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 117,
+        line: 119,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 179,
+        line: 181,
         column: 2,
         ignore: false
       },
@@ -4957,7 +5033,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 117,
+        line: 119,
         column: 14,
         ignore: false
       },
@@ -4981,7 +5057,7 @@
           ]
         }
       ],
-      type: 29,
+      type: 30,
       mangledName: "_CN31ohos.arkui.component.text_timer19TextTimerControllerE",
       exportId: "_CN31ohos.arkui.component.text_timer19TextTimerControllerE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer19TextTimerControllerC",
@@ -4995,14 +5071,14 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          32
+          33
         ],
         body: [
-          64,
           65,
           66,
           67,
-          68
+          68,
+          69
         ]
       }
     },
@@ -5016,14 +5092,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 127,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 129,
+        line: 131,
         column: 6,
         ignore: false
       },
@@ -5031,7 +5107,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 127,
         column: 12,
         ignore: false
       },
@@ -5055,7 +5131,7 @@
           ]
         }
       ],
-      type: 31,
+      type: 32,
       mangledName: "_CN31ohos.arkui.component.text_timer19TextTimerController6<init>Hv",
       exportId: "_CN31ohos.arkui.component.text_timer19TextTimerController6<init>Hv",
       mangledBeforeSema: "31ohos.arkui.component.text_timer19TextTimerControllerC6<init>F$$",
@@ -5064,7 +5140,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 1560150968988165841
+        bodyHash: 11527671960522902463
       },
       info_type: "FuncInfo",
       info: {
@@ -5079,7 +5155,7 @@
               ]
             }
           ],
-          retType: 29
+          retType: 30
         }
       }
     },
@@ -5093,14 +5169,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 131,
+        line: 133,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 133,
+        line: 135,
         column: 6,
         ignore: false
       },
@@ -5108,7 +5184,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 131,
+        line: 133,
         column: 5,
         ignore: false
       },
@@ -5128,7 +5204,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 4329989196120450585
+        bodyHash: 9314528621198889134
       },
       info_type: "FuncInfo",
       info: {
@@ -5157,14 +5233,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 146,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 6,
         ignore: false
       },
@@ -5172,7 +5248,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 146,
         column: 17,
         ignore: false
       },
@@ -5205,7 +5281,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8742856390740796474
+        bodyHash: 10169080928164748025
       },
       info_type: "FuncInfo",
       info: {
@@ -5234,14 +5310,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 161,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 6,
         ignore: false
       },
@@ -5249,7 +5325,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 161,
         column: 17,
         ignore: false
       },
@@ -5282,7 +5358,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8970967140277412159
+        bodyHash: 7896544674253142256
       },
       info_type: "FuncInfo",
       info: {
@@ -5311,14 +5387,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 174,
+        line: 176,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 178,
+        line: 180,
         column: 6,
         ignore: false
       },
@@ -5326,7 +5402,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 174,
+        line: 176,
         column: 17,
         ignore: false
       },
@@ -5359,7 +5435,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8859775118823024896
+        bodyHash: 1681092127692186450
       },
       info_type: "FuncInfo",
       info: {
@@ -5389,14 +5465,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 188,
+        line: 190,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 415,
+        line: 421,
         column: 2,
         ignore: false
       },
@@ -5404,7 +5480,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 188,
+        line: 190,
         column: 14,
         ignore: false
       },
@@ -5428,7 +5504,7 @@
           ]
         }
       ],
-      type: 33,
+      type: 34,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimerE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimerE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC",
@@ -5442,20 +5518,20 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          68,
-          69
+          69,
+          70
         ],
         body: [
-          70,
-          80,
-          82,
-          84,
-          86,
-          88,
-          90,
-          92,
-          94,
-          96
+          71,
+          81,
+          83,
+          85,
+          87,
+          89,
+          91,
+          93,
+          95,
+          97
         ]
       }
     },
@@ -5469,14 +5545,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 206,
+        line: 208,
         column: 6,
         ignore: false
       },
@@ -5484,7 +5560,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 12,
         ignore: false
       },
@@ -5508,7 +5584,7 @@
           ]
         }
       ],
-      type: 34,
+      type: 35,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer6<init>HNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer6<init>HNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC6<init>FO1_b!11isCountDown=O1_l!5count=O1_19TextTimerController!10controller=$$",
@@ -5517,7 +5593,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 5019030384595142036
+        bodyHash: 7596871017173350710
       },
       info_type: "FuncInfo",
       info: {
@@ -5525,18 +5601,18 @@
           paramLists: [
             {
               params: [
-                71,
-                73,
-                76
-              ],
-              desugars: [
                 72,
                 74,
                 77
+              ],
+              desugars: [
+                73,
+                75,
+                78
               ]
             }
           ],
-          retType: 33
+          retType: 34
         }
       }
     },
@@ -5546,14 +5622,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 43,
         ignore: false
       },
@@ -5561,7 +5637,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 17,
         ignore: false
       },
@@ -5572,7 +5648,7 @@
       annotations: [
 
       ],
-      type: 35,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE11isCountDownIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5598,14 +5674,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 39,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 43,
         ignore: false
       },
@@ -5624,7 +5700,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CPI31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE11isCountDownHv",
       exportId: "",
       mangledBeforeSema: "",
@@ -5648,7 +5724,7 @@
               ]
             }
           ],
-          retType: 35
+          retType: 36
         }
       }
     },
@@ -5658,14 +5734,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 45,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 66,
         ignore: false
       },
@@ -5673,7 +5749,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 45,
         ignore: false
       },
@@ -5684,7 +5760,7 @@
       annotations: [
 
       ],
-      type: 36,
+      type: 37,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE5countIlE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5710,14 +5786,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 62,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 66,
         ignore: false
       },
@@ -5736,7 +5812,7 @@
       annotations: [
 
       ],
-      type: 39,
+      type: 40,
       mangledName: "_CPI31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE5countHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -5753,14 +5829,14 @@
           paramLists: [
             {
               params: [
-                75
+                76
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 36
+          retType: 37
         }
       }
     },
@@ -5770,14 +5846,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 43,
         ignore: false
       },
@@ -5785,7 +5861,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 17,
         ignore: false
       },
@@ -5796,7 +5872,7 @@
       annotations: [
 
       ],
-      type: 35,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE7count.1HY3_E11isCountDownIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5817,14 +5893,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 201,
+        line: 203,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 201,
+        line: 203,
         column: 49,
         ignore: false
       },
@@ -5832,7 +5908,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 201,
+        line: 203,
         column: 9,
         ignore: false
       },
@@ -5843,7 +5919,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 38,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE10controllerIY8_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -5869,14 +5945,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 201,
+        line: 203,
         column: 45,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 201,
+        line: 203,
         column: 49,
         ignore: false
       },
@@ -5895,7 +5971,7 @@
       annotations: [
 
       ],
-      type: 40,
+      type: 41,
       mangledName: "_CPI31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE10controllerHY3_Y6_",
       exportId: "",
       mangledBeforeSema: "",
@@ -5912,8 +5988,8 @@
           paramLists: [
             {
               params: [
-                78,
-                79
+                79,
+                80
               ],
               desugars: [
                 0,
@@ -5921,7 +5997,7 @@
               ]
             }
           ],
-          retType: 37
+          retType: 38
         }
       }
     },
@@ -5931,14 +6007,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 43,
         ignore: false
       },
@@ -5946,7 +6022,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 17,
         ignore: false
       },
@@ -5957,7 +6033,7 @@
       annotations: [
 
       ],
-      type: 35,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE12controller.2HY3_Y6_E11isCountDownIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5978,14 +6054,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 45,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 66,
         ignore: false
       },
@@ -5993,7 +6069,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 202,
         column: 45,
         ignore: false
       },
@@ -6004,7 +6080,7 @@
       annotations: [
 
       ],
-      type: 36,
+      type: 37,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer4initHNNat6OptionIbENNatY5_IlENNatY5_ICNY_19TextTimerControllerEEE12controller.2HY3_Y6_E5countIlE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6029,14 +6105,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 226,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 233,
         column: 6,
         ignore: false
       },
@@ -6044,7 +6120,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 226,
         column: 17,
         ignore: false
       },
@@ -6068,7 +6144,7 @@
           ]
         }
       ],
-      type: 41,
+      type: 42,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer6formatHNNat6OptionIRNat6StringEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer6formatHNNat6OptionIRNat6StringEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC6formatFO1_6String$$H",
@@ -6077,7 +6153,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17143209224134774149
+        bodyHash: 4979269313643053321
       },
       info_type: "FuncInfo",
       info: {
@@ -6085,14 +6161,14 @@
           paramLists: [
             {
               params: [
-                81
+                82
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6102,14 +6178,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 226,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 226,
         column: 38,
         ignore: false
       },
@@ -6117,7 +6193,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 226,
         column: 24,
         ignore: false
       },
@@ -6128,7 +6204,7 @@
       annotations: [
 
       ],
-      type: 42,
+      type: 43,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer6formatHNNat6OptionIRNat6StringEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6153,14 +6229,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 249,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 254,
+        line: 256,
         column: 6,
         ignore: false
       },
@@ -6168,7 +6244,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 249,
         column: 17,
         ignore: false
       },
@@ -6192,7 +6268,7 @@
           ]
         }
       ],
-      type: 44,
+      type: 45,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer7onTimerHNNat6OptionIF0ullEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer7onTimerHNNat6OptionIF0ullEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC7onTimerFO1_Full$$H",
@@ -6201,7 +6277,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 148375964517590385
+        bodyHash: 3807359732671973292
       },
       info_type: "FuncInfo",
       info: {
@@ -6209,14 +6285,14 @@
           paramLists: [
             {
               params: [
-                83
+                84
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6226,14 +6302,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 249,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 249,
         column: 55,
         ignore: false
       },
@@ -6241,7 +6317,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 249,
         column: 25,
         ignore: false
       },
@@ -6252,7 +6328,7 @@
       annotations: [
 
       ],
-      type: 45,
+      type: 46,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer7onTimerHNNat6OptionIF0ullEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6277,14 +6353,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 269,
+        line: 271,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 275,
+        line: 277,
         column: 6,
         ignore: false
       },
@@ -6292,7 +6368,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 269,
+        line: 271,
         column: 17,
         ignore: false
       },
@@ -6316,7 +6392,7 @@
           ]
         }
       ],
-      type: 47,
+      type: 48,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC8fontSizeFO1_6Length$$H",
@@ -6325,7 +6401,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17794766076426898872
+        bodyHash: 15673056301030355202
       },
       info_type: "FuncInfo",
       info: {
@@ -6333,14 +6409,14 @@
           paramLists: [
             {
               params: [
-                85
+                86
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6350,14 +6426,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 269,
+        line: 271,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 269,
+        line: 271,
         column: 40,
         ignore: false
       },
@@ -6365,7 +6441,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 269,
+        line: 271,
         column: 26,
         ignore: false
       },
@@ -6376,7 +6452,7 @@
       annotations: [
 
       ],
-      type: 48,
+      type: 49,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer8fontSizeHNNat6OptionICN9ohos.base6LengthEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6401,14 +6477,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 288,
+        line: 289,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 300,
         column: 6,
         ignore: false
       },
@@ -6416,7 +6492,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 288,
+        line: 289,
         column: 17,
         ignore: false
       },
@@ -6440,7 +6516,7 @@
           ]
         }
       ],
-      type: 50,
+      type: 51,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC9fontColorFO1_13ResourceColor$$H",
@@ -6449,7 +6525,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 809199535406726635
+        bodyHash: 6864529883030559886
       },
       info_type: "FuncInfo",
       info: {
@@ -6457,14 +6533,14 @@
           paramLists: [
             {
               params: [
-                87
+                88
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6474,14 +6550,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 288,
+        line: 289,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 288,
+        line: 289,
         column: 48,
         ignore: false
       },
@@ -6489,7 +6565,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 288,
+        line: 289,
         column: 27,
         ignore: false
       },
@@ -6500,7 +6576,7 @@
       annotations: [
 
       ],
-      type: 51,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer9fontColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6525,14 +6601,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 307,
+        line: 313,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 313,
+        line: 319,
         column: 6,
         ignore: false
       },
@@ -6540,7 +6616,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 307,
+        line: 313,
         column: 17,
         ignore: false
       },
@@ -6564,7 +6640,7 @@
           ]
         }
       ],
-      type: 53,
+      type: 54,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC9fontStyleFO1_9FontStyle$$H",
@@ -6573,7 +6649,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8470602027215973897
+        bodyHash: 13408681946799933569
       },
       info_type: "FuncInfo",
       info: {
@@ -6581,14 +6657,14 @@
           paramLists: [
             {
               params: [
-                89
+                90
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6598,14 +6674,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 307,
+        line: 313,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 307,
+        line: 313,
         column: 44,
         ignore: false
       },
@@ -6613,7 +6689,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 307,
+        line: 313,
         column: 27,
         ignore: false
       },
@@ -6624,7 +6700,7 @@
       annotations: [
 
       ],
-      type: 54,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6649,14 +6725,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 333,
+        line: 339,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 347,
         column: 6,
         ignore: false
       },
@@ -6664,7 +6740,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 333,
+        line: 339,
         column: 17,
         ignore: false
       },
@@ -6688,7 +6764,7 @@
           ]
         }
       ],
-      type: 56,
+      type: 57,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC10fontWeightFO1_10FontWeight$$H",
@@ -6697,7 +6773,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 3254595754293225366
+        bodyHash: 15147766276071386087
       },
       info_type: "FuncInfo",
       info: {
@@ -6705,14 +6781,14 @@
           paramLists: [
             {
               params: [
-                91
+                92
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6722,14 +6798,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 333,
+        line: 339,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 333,
+        line: 339,
         column: 46,
         ignore: false
       },
@@ -6737,7 +6813,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 333,
+        line: 339,
         column: 28,
         ignore: false
       },
@@ -6748,7 +6824,7 @@
       annotations: [
 
       ],
-      type: 57,
+      type: 58,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6773,14 +6849,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 354,
+        line: 360,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 362,
+        line: 368,
         column: 6,
         ignore: false
       },
@@ -6788,7 +6864,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 354,
+        line: 360,
         column: 17,
         ignore: false
       },
@@ -6812,7 +6888,7 @@
           ]
         }
       ],
-      type: 59,
+      type: 60,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC10fontFamilyFO1_11ResourceStr$$H",
@@ -6821,7 +6897,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6058024096047375827
+        bodyHash: 1678449985616054938
       },
       info_type: "FuncInfo",
       info: {
@@ -6829,14 +6905,14 @@
           paramLists: [
             {
               params: [
-                93
+                94
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6846,14 +6922,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 354,
+        line: 360,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 354,
+        line: 360,
         column: 47,
         ignore: false
       },
@@ -6861,7 +6937,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 354,
+        line: 360,
         column: 28,
         ignore: false
       },
@@ -6872,7 +6948,7 @@
       annotations: [
 
       ],
-      type: 60,
+      type: 61,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6897,14 +6973,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 377,
+        line: 382,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 388,
+        line: 394,
         column: 6,
         ignore: false
       },
@@ -6912,7 +6988,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 377,
+        line: 382,
         column: 17,
         ignore: false
       },
@@ -6936,7 +7012,7 @@
           ]
         }
       ],
-      type: 62,
+      type: 63,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC10textShadowFO1_5Array<13ShadowOptions>$$H",
@@ -6945,7 +7021,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8871920379927963161
+        bodyHash: 7170925730734956860
       },
       info_type: "FuncInfo",
       info: {
@@ -6953,14 +7029,14 @@
           paramLists: [
             {
               params: [
-                95
+                96
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6970,14 +7046,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 377,
+        line: 382,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 377,
+        line: 382,
         column: 56,
         ignore: false
       },
@@ -6985,7 +7061,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 377,
+        line: 382,
         column: 28,
         ignore: false
       },
@@ -6996,7 +7072,7 @@
       annotations: [
 
       ],
-      type: 63,
+      type: 64,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7021,14 +7097,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 402,
+        line: 407,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 414,
+        line: 420,
         column: 6,
         ignore: false
       },
@@ -7036,7 +7112,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 402,
+        line: 407,
         column: 17,
         ignore: false
       },
@@ -7060,7 +7136,7 @@
           ]
         }
       ],
-      type: 66,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       exportId: "_CN31ohos.arkui.component.text_timer9TextTimer10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer9TextTimerC10textShadowFO1_13ShadowOptions$$H",
@@ -7069,7 +7145,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4938413511120468008
+        bodyHash: 5125181371057312613
       },
       info_type: "FuncInfo",
       info: {
@@ -7077,14 +7153,14 @@
           paramLists: [
             {
               params: [
-                97
+                98
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -7094,14 +7170,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 402,
+        line: 407,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 402,
+        line: 407,
         column: 49,
         ignore: false
       },
@@ -7109,7 +7185,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 402,
+        line: 407,
         column: 28,
         ignore: false
       },
@@ -7120,7 +7196,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 68,
       mangledName: "_CN31ohos.arkui.component.text_timer9TextTimer10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7185,7 +7261,7 @@
           ]
         }
       ],
-      type: 69,
+      type: 70,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttributeE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttributeE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI",
@@ -7199,18 +7275,18 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          79
+          80
         ],
         body: [
-          99,
-          101,
-          103,
-          105,
-          107,
-          109,
-          111,
-          113,
-          115
+          100,
+          102,
+          104,
+          106,
+          108,
+          110,
+          112,
+          114,
+          116
         ]
       }
     },
@@ -7263,7 +7339,7 @@
           ]
         }
       ],
-      type: 70,
+      type: 71,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute6formatHNNat6OptionIRNat6StringEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute6formatHNNat6OptionIRNat6StringEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI6formatFO1_6String$$18TextTimerAttribute",
@@ -7280,14 +7356,14 @@
           paramLists: [
             {
               params: [
-                100
+                101
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -7323,7 +7399,7 @@
       annotations: [
 
       ],
-      type: 42,
+      type: 43,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute6formatHNNat6OptionIRNat6StringEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7387,7 +7463,7 @@
           ]
         }
       ],
-      type: 71,
+      type: 72,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute7onTimerHNNat6OptionIF0ullEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute7onTimerHNNat6OptionIF0ullEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI7onTimerFO1_Full$$18TextTimerAttribute",
@@ -7404,14 +7480,14 @@
           paramLists: [
             {
               params: [
-                102
+                103
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -7447,7 +7523,7 @@
       annotations: [
 
       ],
-      type: 45,
+      type: 46,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute7onTimerHNNat6OptionIF0ullEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7511,7 +7587,7 @@
           ]
         }
       ],
-      type: 72,
+      type: 73,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI8fontSizeFO1_6Length$$18TextTimerAttribute",
@@ -7528,14 +7604,14 @@
           paramLists: [
             {
               params: [
-                104
+                105
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -7571,7 +7647,7 @@
       annotations: [
 
       ],
-      type: 48,
+      type: 49,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7635,7 +7711,7 @@
           ]
         }
       ],
-      type: 73,
+      type: 74,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI9fontColorFO1_13ResourceColor$$18TextTimerAttribute",
@@ -7652,14 +7728,14 @@
           paramLists: [
             {
               params: [
-                106
+                107
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -7695,7 +7771,7 @@
       annotations: [
 
       ],
-      type: 51,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7759,7 +7835,7 @@
           ]
         }
       ],
-      type: 74,
+      type: 75,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI9fontStyleFO1_9FontStyle$$18TextTimerAttribute",
@@ -7776,14 +7852,14 @@
           paramLists: [
             {
               params: [
-                108
+                109
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -7819,7 +7895,7 @@
       annotations: [
 
       ],
-      type: 54,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7883,7 +7959,7 @@
           ]
         }
       ],
-      type: 75,
+      type: 76,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI10fontWeightFO1_10FontWeight$$18TextTimerAttribute",
@@ -7900,14 +7976,14 @@
           paramLists: [
             {
               params: [
-                110
+                111
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -7943,7 +8019,7 @@
       annotations: [
 
       ],
-      type: 57,
+      type: 58,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8007,7 +8083,7 @@
           ]
         }
       ],
-      type: 76,
+      type: 77,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI10fontFamilyFO1_11ResourceStr$$18TextTimerAttribute",
@@ -8024,14 +8100,14 @@
           paramLists: [
             {
               params: [
-                112
+                113
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -8067,7 +8143,7 @@
       annotations: [
 
       ],
-      type: 60,
+      type: 61,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8131,7 +8207,7 @@
           ]
         }
       ],
-      type: 77,
+      type: 78,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI10textShadowFO1_5Array<13ShadowOptions>$$18TextTimerAttribute",
@@ -8148,14 +8224,14 @@
           paramLists: [
             {
               params: [
-                114
+                115
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -8191,7 +8267,7 @@
       annotations: [
 
       ],
-      type: 63,
+      type: 64,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8255,7 +8331,7 @@
           ]
         }
       ],
-      type: 78,
+      type: 79,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       exportId: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       mangledBeforeSema: "31ohos.arkui.component.text_timer18TextTimerAttributeI10textShadowFO1_13ShadowOptions$$18TextTimerAttribute",
@@ -8272,14 +8348,14 @@
           paramLists: [
             {
               params: [
-                116
+                117
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 69
+          retType: 70
         }
       }
     },
@@ -8315,7 +8391,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 68,
       mangledName: "_CN31ohos.arkui.component.text_timer18TextTimerAttribute10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8337,18 +8413,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 116,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 116,
         column: 16,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8360,18 +8436,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 117,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 117,
         column: 48,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8383,18 +8459,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 124,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 124,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8406,18 +8482,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 125,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 125,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8429,18 +8505,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 141,
+        line: 143,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 141,
+        line: 143,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8452,18 +8528,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 144,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 144,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8475,18 +8551,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 156,
+        line: 158,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 156,
+        line: 158,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8498,18 +8574,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 157,
+        line: 159,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 157,
+        line: 159,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8521,18 +8597,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 171,
+        line: 173,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 171,
+        line: 173,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8544,18 +8620,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 172,
+        line: 174,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 172,
+        line: 174,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8567,18 +8643,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 185,
+        line: 187,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 185,
+        line: 187,
         column: 16,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8590,18 +8666,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 186,
+        line: 188,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 186,
+        line: 188,
         column: 48,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8613,18 +8689,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 197,
+        line: 199,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 197,
+        line: 199,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8636,18 +8712,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 198,
+        line: 200,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 198,
+        line: 200,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8659,18 +8735,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 221,
+        line: 223,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 221,
+        line: 223,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8682,18 +8758,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 222,
+        line: 224,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 222,
+        line: 224,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8705,18 +8781,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 244,
+        line: 246,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 244,
+        line: 246,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8728,18 +8804,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 245,
+        line: 247,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 245,
+        line: 247,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8751,18 +8827,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 266,
+        line: 268,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 266,
+        line: 268,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8774,44 +8850,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 267,
+        line: 269,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 267,
+        line: 269,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 285,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 285,
-        column: 20,
-        ignore: false
-      },
-      type: 30,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
         constKind: "String"
       }
     },
@@ -8821,40 +8874,17 @@
         file: 1,
         pkgId: 0,
         line: 286,
-        column: 17,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 286,
-        column: 52,
-        ignore: false
-      },
-      type: 30,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.ArkUI.ArkUI.Full",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 304,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 304,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8866,18 +8896,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 305,
+        line: 287,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 305,
+        line: 287,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8889,18 +8919,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 330,
+        line: 310,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 330,
+        line: 310,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8912,18 +8942,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 311,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 311,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8935,18 +8965,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 336,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 336,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -8958,18 +8988,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 352,
+        line: 337,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 352,
+        line: 337,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -8981,18 +9011,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 374,
+        line: 357,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 374,
+        line: 357,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9004,18 +9034,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 375,
+        line: 358,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 375,
+        line: 358,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9027,18 +9057,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 399,
+        line: 379,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 399,
+        line: 379,
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9050,18 +9080,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 400,
+        line: 380,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 400,
+        line: 380,
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.ArkUI.ArkUI.Full",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 404,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 404,
+        column: 20,
+        ignore: false
+      },
+      type: 31,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 405,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 405,
+        column: 52,
+        ignore: false
+      },
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9084,7 +9160,7 @@
         column: 16,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9107,7 +9183,7 @@
         column: 48,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9130,7 +9206,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9153,7 +9229,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9176,7 +9252,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9199,7 +9275,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9222,7 +9298,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9245,7 +9321,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9268,7 +9344,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9291,7 +9367,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9314,7 +9390,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9337,7 +9413,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9360,7 +9436,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9383,7 +9459,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9406,7 +9482,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9429,7 +9505,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9452,7 +9528,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9475,7 +9551,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -9498,7 +9574,7 @@
         column: 20,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -9521,7 +9597,7 @@
         column: 52,
         ignore: false
       },
-      type: 30,
+      type: 31,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",

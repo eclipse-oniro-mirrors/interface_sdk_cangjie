@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.common_event_publish_data",
-  pkgDepInfo: "{\"package\":\"ohos.common_event_publish_data\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":21,\"column\":18},\"end\":{\"line\":21,\"column\":28}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":21,\"column\":30},\"end\":{\"line\":21,\"column\":43}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]},{\"package\":\"ohos.value_type\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":20,\"column\":25},\"end\":{\"line\":20,\"column\":34}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":20,\"column\":36},\"end\":{\"line\":20,\"column\":50}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":20,\"column\":52},\"end\":{\"line\":20,\"column\":63}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":20,\"column\":65},\"end\":{\"line\":20,\"column\":80}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":20,\"column\":82},\"end\":{\"line\":20,\"column\":97}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":30}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.common_event_publish_data\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":49}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":23,\"column\":18},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":23,\"column\":30},\"end\":{\"line\":23,\"column\":43}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]},{\"package\":\"ohos.value_type\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":22,\"column\":25},\"end\":{\"line\":22,\"column\":45}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":22,\"column\":47},\"end\":{\"line\":22,\"column\":61}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":22,\"column\":63},\"end\":{\"line\":22,\"column\":74}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":22,\"column\":76},\"end\":{\"line\":22,\"column\":91}},{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":22,\"column\":93},\"end\":{\"line\":22,\"column\":108}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"common_event_publish_data.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":30}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "std.collection",
@@ -23,14 +23,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 30,
             ignore: false
           },
@@ -45,14 +45,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 28,
             ignore: false
           },
@@ -67,37 +67,37 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 25,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 34,
+            line: 22,
+            column: 45,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "value_type"
           ],
-          identifier: "ValueType",
+          identifier: "CommonEventValueType",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 36,
+            line: 22,
+            column: 47,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 50,
+            line: 22,
+            column: 61,
             ignore: false
           },
           prefixPaths: [
@@ -111,15 +111,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 52,
+            line: 22,
+            column: 63,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 63,
+            line: 22,
+            column: 74,
             ignore: false
           },
           prefixPaths: [
@@ -133,15 +133,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 65,
+            line: 22,
+            column: 76,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 80,
+            line: 22,
+            column: 91,
             ignore: false
           },
           prefixPaths: [
@@ -155,15 +155,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 82,
+            line: 22,
+            column: 93,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 97,
+            line: 22,
+            column: 108,
             ignore: false
           },
           prefixPaths: [
@@ -177,14 +177,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 18,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 28,
             ignore: false
           },
@@ -199,14 +199,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 30,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 43,
             ignore: false
           },
@@ -215,6 +215,28 @@
             "ffi"
           ],
           identifier: "CTypeResource",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 49,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "business_exception"
+          ],
+          identifier: "BusinessException",
           asIdentifier: ""
         },
         {
@@ -309,7 +331,7 @@
       info: {
         declPtr: {
           pkgId: 2,
-          decl: "_CN15ohos.value_type9ValueTypeE"
+          decl: "_CN15ohos.value_type20CommonEventValueTypeE"
         }
       }
     },
@@ -533,7 +555,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 137,
+        line: 126,
         column: 2,
         ignore: false
       },
@@ -555,16 +577,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 1
             },
             {
-              name: "stagemodelonly",
-              expr: 2
-            },
-            {
               name: "syscap",
-              expr: 3
+              expr: 2
             }
           ]
         }
@@ -574,11 +592,11 @@
       exportId: "_CN30ohos.common_event_publish_data22CommonEventPublishDataE",
       mangledBeforeSema: "30ohos.common_event_publish_data22CommonEventPublishDataC",
       hash: {
-        instVar: 6777773282761645483,
+        instVar: 17583739708691620294,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "ClassInfo",
       info: {
@@ -603,14 +621,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 44,
+        line: 42,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 44,
+        line: 42,
         column: 34,
         ignore: false
       },
@@ -618,7 +636,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 44,
+        line: 42,
         column: 16,
         ignore: false
       },
@@ -632,16 +650,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 4
             }
           ]
         }
@@ -655,7 +669,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -668,79 +682,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 55,
+        line: 50,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 55,
-        column: 28,
-        ignore: false
-      },
-      identifier: "data",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 55,
-        column: 16,
-        ignore: false
-      },
-      attributes: [
-        144678138297713696,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
-              expr: 8
-            },
-            {
-              name: "syscap",
-              expr: 9
-            }
-          ]
-        }
-      ],
-      type: 2,
-      mangledName: "",
-      exportId: "_CN30ohos.common_event_publish_data22CommonEventPublishData4dataK_E",
-      mangledBeforeSema: "30ohos.common_event_publish_data22CommonEventPublishDataC4dataV$$6String",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
-      },
-      info_type: "VarInfo",
-      info: {
-        isVar: true
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.common_event_publish_data",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 66,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 66,
+        line: 50,
         column: 27,
         ignore: false
       },
@@ -748,7 +697,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 50,
         column: 16,
         ignore: false
       },
@@ -762,16 +711,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 10
-            },
-            {
-              name: "stagemodelonly",
-              expr: 11
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 12
+              expr: 6
             }
           ]
         }
@@ -785,7 +730,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -798,22 +743,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 58,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 77,
-        column: 52,
+        line: 58,
+        column: 28,
         ignore: false
       },
-      identifier: "subscriberPermissions",
+      identifier: "data",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 58,
         column: 16,
         ignore: false
       },
@@ -827,16 +772,73 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 8
+            }
+          ]
+        }
+      ],
+      type: 2,
+      mangledName: "",
+      exportId: "_CN30ohos.common_event_publish_data22CommonEventPublishData4dataK_E",
+      mangledBeforeSema: "30ohos.common_event_publish_data22CommonEventPublishDataC4dataV$$6String",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 17327286262165285715,
+        bodyHash: 17843393552120412191
+      },
+      info_type: "VarInfo",
+      info: {
+        isVar: true
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.common_event_publish_data",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 66,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 66,
+        column: 52,
+        ignore: false
+      },
+      identifier: "subscriberPermissions",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 66,
+        column: 16,
+        ignore: false
+      },
+      attributes: [
+        144678138297713696,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 9
+            },
+            {
+              name: "syscap",
+              expr: 10
             }
           ]
         }
@@ -850,7 +852,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -863,14 +865,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 74,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 74,
         column: 31,
         ignore: false
       },
@@ -878,7 +880,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 74,
         column: 16,
         ignore: false
       },
@@ -892,16 +894,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 16
-            },
-            {
-              name: "stagemodelonly",
-              expr: 17
+              name: "since",
+              expr: 11
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 12
             }
           ]
         }
@@ -915,7 +913,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -928,14 +926,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 83,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 83,
         column: 30,
         ignore: false
       },
@@ -943,7 +941,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 83,
         column: 16,
         ignore: false
       },
@@ -957,20 +955,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 19
-            },
-            {
-              name: "stagemodelonly",
-              expr: 20
-            },
-            {
-              name: "syscap",
-              expr: 21
+              name: "since",
+              expr: 13
             },
             {
               name: "permission",
-              expr: 22
+              expr: 14
+            },
+            {
+              name: "syscap",
+              expr: 15
             }
           ]
         }
@@ -984,7 +978,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 14068768918060422646
+        bodyHash: 5077773163753175401
       },
       info_type: "VarInfo",
       info: {
@@ -997,22 +991,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 91,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 111,
-        column: 54,
+        line: 91,
+        column: 65,
         ignore: false
       },
       identifier: "parameters",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 91,
         column: 16,
         ignore: false
       },
@@ -1026,16 +1020,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 23
-            },
-            {
-              name: "stagemodelonly",
-              expr: 24
+              name: "since",
+              expr: 16
             },
             {
               name: "syscap",
-              expr: 25
+              expr: 17
             }
           ]
         }
@@ -1043,13 +1033,13 @@
       type: 6,
       mangledName: "",
       exportId: "_CN30ohos.common_event_publish_data22CommonEventPublishData10parametersK_E",
-      mangledBeforeSema: "30ohos.common_event_publish_data22CommonEventPublishDataC10parametersV$$7HashMap<6String9ValueType>",
+      mangledBeforeSema: "30ohos.common_event_publish_data22CommonEventPublishDataC10parametersV$$7HashMap<6String20CommonEventValueType>",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -1066,14 +1056,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 136,
+        line: 125,
         column: 6,
         ignore: false
       },
@@ -1081,7 +1071,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 12,
         ignore: false
       },
@@ -1095,30 +1085,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 26
-            },
-            {
-              name: "stagemodelonly",
-              expr: 27
+              name: "since",
+              expr: 18
             },
             {
               name: "syscap",
-              expr: 28
+              expr: 19
             }
           ]
         }
       ],
       type: 8,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData6<init>HRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEE",
-      exportId: "_CN30ohos.common_event_publish_data22CommonEventPublishData6<init>HRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEE",
-      mangledBeforeSema: "30ohos.common_event_publish_data22CommonEventPublishDataC6<init>F6String!10bundleName=6String!4data=i!4code=5Array<6String>!21subscriberPermissions=b!9isOrdered=b!8isSticky=7HashMap<6String9ValueType>!10parameters=$$",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData6<init>HRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEE",
+      exportId: "_CN30ohos.common_event_publish_data22CommonEventPublishData6<init>HRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEE",
+      mangledBeforeSema: "30ohos.common_event_publish_data22CommonEventPublishDataC6<init>F6String!10bundleName=6String!4data=i!4code=5Array<6String>!21subscriberPermissions=b!9isOrdered=b!8isSticky=7HashMap<6String20CommonEventValueType>!10parameters=$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6535792007955673174
+        bodyHash: 9344449664965445755
       },
       info_type: "FuncInfo",
       info: {
@@ -1155,14 +1141,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -1170,7 +1156,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -1182,7 +1168,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10bundleNameE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10bundleNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1195,7 +1181,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 29
+        defaultVal: 20
       }
     },
     {
@@ -1208,14 +1194,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 31,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -1235,7 +1221,7 @@
 
       ],
       type: 9,
-      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10bundleNameHv",
+      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10bundleNameHv",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1268,14 +1254,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -1283,7 +1269,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
@@ -1295,7 +1281,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE4dataE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE4dataE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1308,7 +1294,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 30
+        defaultVal: 21
       }
     },
     {
@@ -1321,14 +1307,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 25,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -1348,7 +1334,7 @@
 
       ],
       type: 10,
-      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE4dataHY3_",
+      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE4dataHY3_",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1381,14 +1367,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -1396,7 +1382,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -1408,7 +1394,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE6data.1HY3_E10bundleNameE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE6data.1HY3_E10bundleNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1428,14 +1414,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 25,
         ignore: false
       },
@@ -1443,7 +1429,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
@@ -1455,7 +1441,7 @@
 
       ],
       type: 3,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE4codeE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE4codeE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1468,7 +1454,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 31
+        defaultVal: 22
       }
     },
     {
@@ -1481,14 +1467,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 24,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 25,
         ignore: false
       },
@@ -1508,7 +1494,7 @@
 
       ],
       type: 11,
-      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE4codeHY3_Y3_",
+      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE4codeHY3_Y3_",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1543,14 +1529,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -1558,7 +1544,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -1570,7 +1556,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE6code.2HY3_Y3_E10bundleNameE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE6code.2HY3_Y3_E10bundleNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1590,14 +1576,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -1605,7 +1591,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
@@ -1617,7 +1603,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE6code.2HY3_Y3_E4dataE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE6code.2HY3_Y3_E4dataE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1637,14 +1623,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 64,
         ignore: false
       },
@@ -1652,7 +1638,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
@@ -1664,7 +1650,7 @@
 
       ],
       type: 4,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE21subscriberPermissionsIY3_E",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE21subscriberPermissionsIY3_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1689,14 +1675,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 49,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 64,
         ignore: false
       },
@@ -1716,7 +1702,7 @@
 
       ],
       type: 12,
-      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE21subscriberPermissionsHY3_Y3_i",
+      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE21subscriberPermissionsHY3_Y3_i",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1753,14 +1739,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -1768,7 +1754,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -1780,7 +1766,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE23subscriberPermissions.3HY3_Y3_iE10bundleNameE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE23subscriberPermissions.3HY3_Y3_iE10bundleNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1800,14 +1786,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -1815,7 +1801,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
@@ -1827,7 +1813,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE23subscriberPermissions.3HY3_Y3_iE4dataE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE23subscriberPermissions.3HY3_Y3_iE4dataE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1847,14 +1833,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 25,
         ignore: false
       },
@@ -1862,7 +1848,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
@@ -1874,7 +1860,7 @@
 
       ],
       type: 3,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE23subscriberPermissions.3HY3_Y3_iE4codeE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE23subscriberPermissions.3HY3_Y3_iE4codeE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1894,14 +1880,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 33,
         ignore: false
       },
@@ -1909,7 +1895,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 9,
         ignore: false
       },
@@ -1921,7 +1907,7 @@
 
       ],
       type: 5,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE9isOrderedE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE9isOrderedE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1934,7 +1920,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 32
+        defaultVal: 23
       }
     },
     {
@@ -1947,14 +1933,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 28,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 33,
         ignore: false
       },
@@ -1974,7 +1960,7 @@
 
       ],
       type: 13,
-      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE9isOrderedHY3_Y3_iY6_",
+      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE9isOrderedHY3_Y3_iY6_",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2013,14 +1999,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -2028,7 +2014,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -2040,7 +2026,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE11isOrdered.4HY3_Y3_iY6_E10bundleNameE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE11isOrdered.4HY3_Y3_iY6_E10bundleNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2060,14 +2046,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -2075,7 +2061,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
@@ -2087,7 +2073,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE11isOrdered.4HY3_Y3_iY6_E4dataE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE11isOrdered.4HY3_Y3_iY6_E4dataE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2107,14 +2093,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 25,
         ignore: false
       },
@@ -2122,7 +2108,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
@@ -2134,7 +2120,7 @@
 
       ],
       type: 3,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE11isOrdered.4HY3_Y3_iY6_E4codeE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE11isOrdered.4HY3_Y3_iY6_E4codeE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2154,14 +2140,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 64,
         ignore: false
       },
@@ -2169,7 +2155,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
@@ -2181,7 +2167,7 @@
 
       ],
       type: 4,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE11isOrdered.4HY3_Y3_iY6_E21subscriberPermissionsIY3_E",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE11isOrdered.4HY3_Y3_iY6_E21subscriberPermissionsIY3_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2201,14 +2187,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 32,
         ignore: false
       },
@@ -2216,7 +2202,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 9,
         ignore: false
       },
@@ -2228,7 +2214,7 @@
 
       ],
       type: 5,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE8isStickyE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE8isStickyE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2241,7 +2227,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 33
+        defaultVal: 24
       }
     },
     {
@@ -2254,14 +2240,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 27,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 32,
         ignore: false
       },
@@ -2281,7 +2267,7 @@
 
       ],
       type: 14,
-      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE8isStickyHY3_Y3_iY6_b",
+      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE8isStickyHY3_Y3_iY6_b",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2322,14 +2308,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -2337,7 +2323,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -2349,7 +2335,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10isSticky.5HY3_Y3_iY6_bE10bundleNameE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10isSticky.5HY3_Y3_iY6_bE10bundleNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2369,14 +2355,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -2384,7 +2370,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
@@ -2396,7 +2382,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10isSticky.5HY3_Y3_iY6_bE4dataE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10isSticky.5HY3_Y3_iY6_bE4dataE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2416,14 +2402,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 25,
         ignore: false
       },
@@ -2431,7 +2417,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
@@ -2443,7 +2429,7 @@
 
       ],
       type: 3,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10isSticky.5HY3_Y3_iY6_bE4codeE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10isSticky.5HY3_Y3_iY6_bE4codeE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2463,14 +2449,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 64,
         ignore: false
       },
@@ -2478,7 +2464,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
@@ -2490,7 +2476,7 @@
 
       ],
       type: 4,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10isSticky.5HY3_Y3_iY6_bE21subscriberPermissionsIY3_E",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10isSticky.5HY3_Y3_iY6_bE21subscriberPermissionsIY3_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2510,14 +2496,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 33,
         ignore: false
       },
@@ -2525,7 +2511,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 9,
         ignore: false
       },
@@ -2537,7 +2523,7 @@
 
       ],
       type: 5,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10isSticky.5HY3_Y3_iY6_bE9isOrderedE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10isSticky.5HY3_Y3_iY6_bE9isOrderedE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2557,22 +2543,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 116,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 127,
-        column: 79,
+        line: 116,
+        column: 101,
         ignore: false
       },
       identifier: "parameters",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 116,
         column: 9,
         ignore: false
       },
@@ -2584,7 +2570,7 @@
 
       ],
       type: 6,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10parametersIY3_YB_E",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10parametersIY3_YB_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2609,15 +2595,15 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 127,
-        column: 51,
+        line: 116,
+        column: 62,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 127,
-        column: 79,
+        line: 116,
+        column: 101,
         ignore: false
       },
       identifier: "parameters.6",
@@ -2636,7 +2622,7 @@
 
       ],
       type: 15,
-      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE10parametersHY3_Y3_iY6_bb",
+      mangledName: "_CPI30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE10parametersHY3_Y3_iY6_bb",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2679,14 +2665,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -2694,7 +2680,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -2706,7 +2692,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE12parameters.6HY3_Y3_iY6_bbE10bundleNameE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE12parameters.6HY3_Y3_iY6_bbE10bundleNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2726,14 +2712,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -2741,7 +2727,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 9,
         ignore: false
       },
@@ -2753,7 +2739,7 @@
 
       ],
       type: 2,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE12parameters.6HY3_Y3_iY6_bbE4dataE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE12parameters.6HY3_Y3_iY6_bbE4dataE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2773,14 +2759,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 25,
         ignore: false
       },
@@ -2788,7 +2774,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 9,
         ignore: false
       },
@@ -2800,7 +2786,7 @@
 
       ],
       type: 3,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE12parameters.6HY3_Y3_iY6_bbE4codeE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE12parameters.6HY3_Y3_iY6_bbE4codeE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2820,14 +2806,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 64,
         ignore: false
       },
@@ -2835,7 +2821,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 113,
         column: 9,
         ignore: false
       },
@@ -2847,7 +2833,7 @@
 
       ],
       type: 4,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE12parameters.6HY3_Y3_iY6_bbE21subscriberPermissionsIY3_E",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE12parameters.6HY3_Y3_iY6_bbE21subscriberPermissionsIY3_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2867,14 +2853,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 33,
         ignore: false
       },
@@ -2882,7 +2868,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 9,
         ignore: false
       },
@@ -2894,7 +2880,7 @@
 
       ],
       type: 5,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE12parameters.6HY3_Y3_iY6_bbE9isOrderedE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE12parameters.6HY3_Y3_iY6_bbE9isOrderedE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2914,14 +2900,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 32,
         ignore: false
       },
@@ -2929,7 +2915,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 9,
         ignore: false
       },
@@ -2941,7 +2927,7 @@
 
       ],
       type: 5,
-      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type9ValueTypeEEE12parameters.6HY3_Y3_iY6_bbE8isStickyE",
+      mangledName: "_CN30ohos.common_event_publish_data22CommonEventPublishData4initHRNat6StringEY3_iRNat5ArrayIY3_EbbCNac7HashMapIY3_NN15ohos.value_type20CommonEventValueTypeEEE12parameters.6HY3_Y3_iY6_bbE8isStickyE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2966,14 +2952,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 140,
+        line: 129,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 187,
+        line: 180,
         column: 2,
         ignore: false
       },
@@ -2981,7 +2967,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 140,
+        line: 129,
         column: 18,
         ignore: false
       },
@@ -3001,7 +2987,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 251052717479441641
+        bodyHash: 635767029576218762
       },
       info_type: "StructInfo",
       info: {
@@ -3028,14 +3014,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 141,
+        line: 130,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 141,
+        line: 130,
         column: 50,
         ignore: false
       },
@@ -3043,7 +3029,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 141,
+        line: 130,
         column: 9,
         ignore: false
       },
@@ -3063,7 +3049,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 13846042626326384646
+        bodyHash: 521620651320850783
       },
       info_type: "VarInfo",
       info: {
@@ -3076,14 +3062,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 131,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 131,
         column: 44,
         ignore: false
       },
@@ -3091,7 +3077,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 131,
         column: 9,
         ignore: false
       },
@@ -3111,7 +3097,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 13795929621904275598
+        bodyHash: 16525052877756141421
       },
       info_type: "VarInfo",
       info: {
@@ -3124,14 +3110,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 132,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 132,
         column: 20,
         ignore: false
       },
@@ -3139,7 +3125,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 132,
         column: 9,
         ignore: false
       },
@@ -3171,14 +3157,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 133,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 133,
         column: 69,
         ignore: false
       },
@@ -3186,7 +3172,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 133,
         column: 9,
         ignore: false
       },
@@ -3206,7 +3192,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 12667334464124835105
+        bodyHash: 13157130594891970365
       },
       info_type: "VarInfo",
       info: {
@@ -3219,14 +3205,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 134,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 134,
         column: 24,
         ignore: false
       },
@@ -3234,7 +3220,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 134,
         column: 9,
         ignore: false
       },
@@ -3266,14 +3252,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 135,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 135,
         column: 23,
         ignore: false
       },
@@ -3281,7 +3267,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 135,
         column: 9,
         ignore: false
       },
@@ -3313,14 +3299,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 147,
+        line: 136,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 147,
+        line: 136,
         column: 80,
         ignore: false
       },
@@ -3328,7 +3314,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 147,
+        line: 136,
         column: 9,
         ignore: false
       },
@@ -3348,7 +3334,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 16968976668400727796
+        bodyHash: 14027232677196388534
       },
       info_type: "VarInfo",
       info: {
@@ -3365,14 +3351,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 141,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 170,
+        line: 163,
         column: 6,
         ignore: false
       },
@@ -3380,7 +3366,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 141,
         column: 15,
         ignore: false
       },
@@ -3400,7 +3386,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 7521668896745939427
+        bodyHash: 2992971665662311002
       },
       info_type: "FuncInfo",
       info: {
@@ -3425,14 +3411,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 141,
         column: 20,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 141,
         column: 45,
         ignore: false
       },
@@ -3440,7 +3426,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 141,
         column: 20,
         ignore: false
       },
@@ -3476,14 +3462,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 172,
+        line: 165,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 175,
         column: 6,
         ignore: false
       },
@@ -3491,7 +3477,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 172,
+        line: 165,
         column: 10,
         ignore: false
       },
@@ -3511,7 +3497,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 2331574627815174037
+        bodyHash: 4271659515276921951
       },
       info_type: "FuncInfo",
       info: {
@@ -3540,14 +3526,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 184,
+        line: 177,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 186,
+        line: 179,
         column: 6,
         ignore: false
       },
@@ -3555,7 +3541,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 184,
+        line: 177,
         column: 20,
         ignore: false
       },
@@ -3575,7 +3561,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 17745947356664155975
+        bodyHash: 3352450761269896153
       },
       info_type: "FuncInfo",
       info: {
@@ -3601,42 +3587,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 29,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
         line: 30,
-        column: 21,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 30,
-        column: 25,
+        column: 16,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3655,9 +3621,33 @@
         column: 56,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 39,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 39,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -3667,59 +3657,17 @@
         file: 1,
         pkgId: 0,
         line: 40,
-        column: 9,
+        column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 40,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 41,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 41,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 42,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 42,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -3731,20 +3679,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 51,
-        column: 9,
+        line: 47,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 51,
-        column: 11,
+        line: 47,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3752,39 +3702,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 52,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 52,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 53,
+        line: 48,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 53,
+        line: 48,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -3796,20 +3725,45 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 62,
-        column: 9,
+        line: 55,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 62,
-        column: 11,
+        line: 55,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 56,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 56,
+        column: 60,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Notification.CommonEvent",
+        constKind: "String"
       }
     },
     {
@@ -3818,20 +3772,21 @@
         file: 1,
         pkgId: 0,
         line: 63,
-        column: 25,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 63,
-        column: 29,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3850,6 +3805,7 @@
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -3861,20 +3817,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 73,
-        column: 9,
+        line: 71,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
-        column: 11,
+        line: 71,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3882,39 +3840,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 74,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 75,
+        line: 72,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 75,
+        line: 72,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -3926,63 +3863,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 84,
-        column: 9,
+        line: 79,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 84,
-        column: 11,
+        line: 79,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 85,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 85,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 86,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 86,
-        column: 60,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Notification.CommonEvent",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -3991,82 +3886,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 95,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 95,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 96,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 96,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 97,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 97,
-        column: 60,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Notification.CommonEvent",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 98,
+        line: 80,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 98,
+        line: 80,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "ohos.permission.COMMONEVENT_STICKY",
@@ -4078,60 +3909,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 107,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 107,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 108,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 108,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 109,
+        line: 81,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 81,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -4143,20 +3932,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 116,
-        column: 9,
+        line: 88,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 116,
-        column: 11,
+        line: 88,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4164,39 +3955,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 117,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 117,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 118,
+        line: 89,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 118,
+        line: 89,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -4208,14 +3978,60 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 106,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 106,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 107,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 107,
+        column: 60,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Notification.CommonEvent",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 110,
         column: 31,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 33,
         ignore: false
       },
@@ -4231,14 +4047,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 27,
         ignore: false
       },
@@ -4254,14 +4070,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 112,
         column: 25,
         ignore: false
       },
@@ -4276,14 +4092,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 114,
         column: 33,
         ignore: false
       },
@@ -4299,14 +4115,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 126,
+        line: 115,
         column: 32,
         ignore: false
       },

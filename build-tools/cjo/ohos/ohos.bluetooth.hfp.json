@@ -1,17 +1,17 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.bluetooth.hfp",
-  pkgDepInfo: "{\"package\":\"ohos.bluetooth.hfp\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.bluetooth\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":24}}]},{\"package\":\"ohos.bluetooth.base_profile\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":37}}]},{\"package\":\"ohos.bluetooth.constant\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":33}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":19,\"column\":34},\"end\":{\"line\":19,\"column\":51}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":19,\"column\":53},\"end\":{\"line\":19,\"column\":72}}]},{\"package\":\"ohos.callback_invoke\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":20,\"column\":31},\"end\":{\"line\":20,\"column\":45}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":20,\"column\":47},\"end\":{\"line\":20,\"column\":64}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":18}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":21}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":32}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.bluetooth.hfp\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.bluetooth\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":23,\"column\":24},\"end\":{\"line\":23,\"column\":32}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":23,\"column\":34},\"end\":{\"line\":23,\"column\":47}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":23,\"column\":49},\"end\":{\"line\":23,\"column\":60}}]},{\"package\":\"ohos.bluetooth.base_profile\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":24,\"column\":37},\"end\":{\"line\":24,\"column\":59}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":24,\"column\":61},\"end\":{\"line\":24,\"column\":77}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":24,\"column\":79},\"end\":{\"line\":24,\"column\":90}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":24,\"column\":92},\"end\":{\"line\":24,\"column\":111}}]},{\"package\":\"ohos.bluetooth.constant\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":54}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":21,\"column\":34},\"end\":{\"line\":21,\"column\":51}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":21,\"column\":53},\"end\":{\"line\":21,\"column\":72}}]},{\"package\":\"ohos.callback_invoke\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":22,\"column\":31},\"end\":{\"line\":22,\"column\":45}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":22,\"column\":47},\"end\":{\"line\":22,\"column\":64}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":26,\"column\":18},\"end\":{\"line\":26,\"column\":28}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":26,\"column\":30},\"end\":{\"line\":26,\"column\":40}},{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":26,\"column\":42},\"end\":{\"line\":26,\"column\":56}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":28}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"hands_free_audio_gateway_profile.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":32}}]}],\"features\":[]}",
   imports: [
     "ohos.ffi",
+    "std.core",
     "std.collection",
     "ohos.callback_invoke",
-    "std.core",
     "ohos.bluetooth.constant",
     "ohos.bluetooth.base_profile"
   ],
@@ -25,14 +25,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 32,
             ignore: false
           },
@@ -47,14 +47,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 34,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 51,
             ignore: false
           },
@@ -69,14 +69,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 53,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 72,
             ignore: false
           },
@@ -91,14 +91,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 31,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 45,
             ignore: false
           },
@@ -113,14 +113,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 47,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 64,
             ignore: false
           },
@@ -135,37 +135,81 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
-            column: 1,
+            line: 23,
+            column: 24,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
-            column: 24,
+            line: 23,
+            column: 32,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "bluetooth"
           ],
-          identifier: "*",
+          identifier: "checkRet",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 22,
-            column: 1,
+            line: 23,
+            column: 34,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 23,
+            column: 47,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "bluetooth"
+          ],
+          identifier: "BLUETOOTH_LOG",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 49,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 60,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "bluetooth"
+          ],
+          identifier: "getErrorMsg",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
             column: 37,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 59,
             ignore: false
           },
           prefixPaths: [
@@ -173,22 +217,91 @@
             "bluetooth",
             "base_profile"
           ],
-          identifier: "*",
+          identifier: "NativeStateChangeParam",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 24,
+            column: 61,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 77,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "bluetooth",
+            "base_profile"
+          ],
+          identifier: "StateChangeParam",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 79,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 90,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "bluetooth",
+            "base_profile"
+          ],
+          identifier: "BaseProfile",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 92,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 24,
+            column: 111,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "bluetooth",
+            "base_profile"
+          ],
+          identifier: "ProfileCallbackType",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 25,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 23,
-            column: 33,
+            line: 25,
+            column: 54,
             ignore: false
           },
           prefixPaths: [
@@ -196,51 +309,95 @@
             "bluetooth",
             "constant"
           ],
-          identifier: "*",
+          identifier: "ProfileConnectionState",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 24,
-            column: 1,
+            line: 26,
+            column: 18,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 24,
-            column: 18,
+            line: 26,
+            column: 28,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "ffi"
           ],
-          identifier: "*",
+          identifier: "cArr2cjArr",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 25,
+            line: 26,
+            column: 30,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 26,
+            column: 40,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "ffi"
+          ],
+          identifier: "CArrString",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 26,
+            column: 42,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 26,
+            column: 56,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "ffi"
+          ],
+          identifier: "Callback1Param",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 27,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 25,
-            column: 21,
+            line: 27,
+            column: 28,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
           asIdentifier: ""
         },
         {
@@ -358,17 +515,30 @@
       }
     },
     {
-      kind: "Bool"
-    },
-    {
-      kind: "Class",
+      kind: "Struct",
       typeArgs: [
-        14
+
       ],
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
           pkgId: 1,
+          decl: "_CNat6StringE"
+        }
+      }
+    },
+    {
+      kind: "Bool"
+    },
+    {
+      kind: "Class",
+      typeArgs: [
+        15
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: 2,
           decl: "_CNac9ArrayListIG_E"
         }
       }
@@ -381,7 +551,7 @@
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: 2,
+          pkgId: 3,
           decl: "_CN20ohos.callback_invoke14CallbackObjectE"
         }
       }
@@ -393,39 +563,26 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 16
+        retType: 17
       }
     },
     {
       kind: "Struct",
       typeArgs: [
-        17
+        12
       ],
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: 3,
+          pkgId: 1,
           decl: "_CNat5ArrayIG_E"
-        }
-      }
-    },
-    {
-      kind: "Struct",
-      typeArgs: [
-
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          pkgId: 3,
-          decl: "_CNat6StringE"
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        17
+        12
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -477,7 +634,7 @@
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: 2,
+          pkgId: 3,
           decl: "_CN20ohos.callback_invoke17Callback1ArgumentIG_E"
         }
       }
@@ -499,7 +656,7 @@
       kind: "Func",
       typeArgs: [
         21,
-        14
+        15
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -524,7 +681,7 @@
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: 3,
+          pkgId: 1,
           decl: "_CNat6ObjectE"
         }
       }
@@ -555,14 +712,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 82,
         ignore: false
       },
@@ -570,7 +727,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 10,
         ignore: false
       },
@@ -615,14 +772,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 45,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 69,
         ignore: false
       },
@@ -630,7 +787,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 45,
         ignore: false
       },
@@ -667,14 +824,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 95,
         ignore: false
       },
@@ -682,7 +839,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 10,
         ignore: false
       },
@@ -729,14 +886,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 44,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 61,
         ignore: false
       },
@@ -744,7 +901,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 44,
         ignore: false
       },
@@ -776,14 +933,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 63,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 87,
         ignore: false
       },
@@ -791,7 +948,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 63,
         ignore: false
       },
@@ -828,14 +985,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 91,
         ignore: false
       },
@@ -843,7 +1000,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 10,
         ignore: false
       },
@@ -892,14 +1049,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 47,
         ignore: false
       },
@@ -907,7 +1064,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 28,
         ignore: false
       },
@@ -939,14 +1096,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 49,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 58,
         ignore: false
       },
@@ -954,7 +1111,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 49,
         ignore: false
       },
@@ -986,14 +1143,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 60,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 84,
         ignore: false
       },
@@ -1001,7 +1158,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 60,
         ignore: false
       },
@@ -1067,16 +1224,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 1
             },
             {
-              name: "stagemodelonly",
-              expr: 2
-            },
-            {
               name: "syscap",
-              expr: 3
+              expr: 2
             }
           ]
         }
@@ -1090,7 +1243,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 15138519058860798279
+        bodyHash: 13909942930288906210
       },
       info_type: "FuncInfo",
       info: {
@@ -1120,14 +1273,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 57,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 233,
+        line: 207,
         column: 2,
         ignore: false
       },
@@ -1135,7 +1288,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 57,
         column: 14,
         ignore: false
       },
@@ -1149,16 +1302,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 4
             }
           ]
         }
@@ -1168,11 +1317,11 @@
       exportId: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileE",
       mangledBeforeSema: "18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileC",
       hash: {
-        instVar: 12854537726954957473,
+        instVar: 1599129746495191,
         virt: 0,
         sig: 39812661496118282,
         srcUse: 0,
-        bodyHash: 2022398315511569633
+        bodyHash: 4055862024590148966
       },
       info_type: "ClassInfo",
       info: {
@@ -1198,14 +1347,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 58,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 58,
         column: 38,
         ignore: false
       },
@@ -1213,55 +1362,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 61,
-        column: 17,
-        ignore: false
-      },
-      attributes: [
-        144678138297714976,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 12,
-      mangledName: "",
-      exportId: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile13registerStateK_E",
-      mangledBeforeSema: "18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileC13registerStateV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 13785781977040174648,
-        srcUse: 17327286262165285715,
-        bodyHash: 2397803173339796620
-      },
-      info_type: "VarInfo",
-      info: {
-        isVar: true
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.bluetooth.hfp",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 62,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 62,
-        column: 59,
-        ignore: false
-      },
-      identifier: "callbackList",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 62,
+        line: 58,
         column: 17,
         ignore: false
       },
@@ -1274,6 +1375,54 @@
       ],
       type: 13,
       mangledName: "",
+      exportId: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile13registerStateK_E",
+      mangledBeforeSema: "18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileC13registerStateV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 13785781977040174648,
+        srcUse: 17327286262165285715,
+        bodyHash: 12952381997204174749
+      },
+      info_type: "VarInfo",
+      info: {
+        isVar: true
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.bluetooth.hfp",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 59,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 59,
+        column: 59,
+        ignore: false
+      },
+      identifier: "callbackList",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 59,
+        column: 17,
+        ignore: false
+      },
+      attributes: [
+        144678138297714976,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 14,
+      mangledName: "",
       exportId: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile12callbackListK_E",
       mangledBeforeSema: "18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileC12callbackListV$$",
       hash: {
@@ -1281,7 +1430,7 @@
         virt: 0,
         sig: 13785781977040174648,
         srcUse: 1273861709373161920,
-        bodyHash: 16389662995516222378
+        bodyHash: 1864069955820842206
       },
       info_type: "VarInfo",
       info: {
@@ -1297,14 +1446,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 61,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 61,
         column: 24,
         ignore: false
       },
@@ -1312,7 +1461,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 61,
         column: 15,
         ignore: false
       },
@@ -1332,7 +1481,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 13782636349320272153
+        bodyHash: 18444276850077045397
       },
       info_type: "FuncInfo",
       info: {
@@ -1361,14 +1510,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 92,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 107,
+        line: 102,
         column: 6,
         ignore: false
       },
@@ -1376,7 +1525,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 92,
         column: 17,
         ignore: false
       },
@@ -1390,25 +1539,25 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
+              name: "since",
+              expr: 5
             },
             {
               name: "permission",
-              expr: 8
-            },
-            {
-              name: "stagemodelonly",
-              expr: 9
+              expr: 6
             },
             {
               name: "syscap",
-              expr: 10
+              expr: 7
+            },
+            {
+              name: "throwexception",
+              expr: 8
             }
           ]
         }
       ],
-      type: 15,
+      type: 16,
       mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile19getConnectedDevicesHv",
       exportId: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile19getConnectedDevicesHv",
       mangledBeforeSema: "18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileC19getConnectedDevicesF$$5Array<6String>",
@@ -1417,7 +1566,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2350765897612391972
+        bodyHash: 6102207589366996901
       },
       info_type: "FuncInfo",
       info: {
@@ -1432,7 +1581,7 @@
               ]
             }
           ],
-          retType: 16
+          retType: 17
         }
       }
     },
@@ -1446,14 +1595,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 122,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 140,
+        line: 132,
         column: 6,
         ignore: false
       },
@@ -1461,7 +1610,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 122,
         column: 17,
         ignore: false
       },
@@ -1475,20 +1624,20 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 11
+              name: "since",
+              expr: 9
             },
             {
               name: "permission",
-              expr: 12
-            },
-            {
-              name: "stagemodelonly",
-              expr: 13
+              expr: 10
             },
             {
               name: "syscap",
-              expr: 14
+              expr: 11
+            },
+            {
+              name: "throwexception",
+              expr: 12
             }
           ]
         }
@@ -1502,7 +1651,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10503060452787596364
+        bodyHash: 16609788000569022886
       },
       info_type: "FuncInfo",
       info: {
@@ -1527,14 +1676,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 122,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 122,
         column: 52,
         ignore: false
       },
@@ -1542,7 +1691,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 122,
         column: 36,
         ignore: false
       },
@@ -1553,7 +1702,7 @@
       annotations: [
 
       ],
-      type: 17,
+      type: 12,
       mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile18getConnectionStateHRNat6StringEE8deviceIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1578,14 +1727,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 179,
+        line: 165,
         column: 6,
         ignore: false
       },
@@ -1593,7 +1742,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 17,
         ignore: false
       },
@@ -1607,20 +1756,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 15
+              name: "since",
+              expr: 13
             },
             {
               name: "permission",
-              expr: 16
-            },
-            {
-              name: "stagemodelonly",
-              expr: 17
+              expr: 14
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 15
             }
           ]
         }
@@ -1634,7 +1779,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4843801507866381252
+        bodyHash: 1908518874347784804
       },
       info_type: "FuncInfo",
       info: {
@@ -1661,14 +1806,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 20,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 50,
         ignore: false
       },
@@ -1676,7 +1821,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 20,
         ignore: false
       },
@@ -1708,14 +1853,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 52,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 97,
         ignore: false
       },
@@ -1723,7 +1868,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 159,
+        line: 145,
         column: 52,
         ignore: false
       },
@@ -1736,6 +1881,183 @@
       ],
       type: 22,
       mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile2onHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke17Callback1ArgumentICNY4_16StateChangeParamEEE8callbackIY9_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.bluetooth.hfp",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 186,
+        column: 6,
+        ignore: false
+      },
+      identifier: "off",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 17,
+        ignore: false
+      },
+      attributes: [
+        144678138297713696,
+        16
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 16
+            },
+            {
+              name: "permission",
+              expr: 17
+            },
+            {
+              name: "syscap",
+              expr: 18
+            }
+          ]
+        }
+      ],
+      type: 24,
+      mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectE",
+      exportId: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectE",
+      mangledBeforeSema: "18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileC3offF19ProfileCallbackType14CallbackObject$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 0,
+        bodyHash: 12321883469922899085
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                22,
+                23
+              ],
+              desugars: [
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.bluetooth.hfp",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 21,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 51,
+        ignore: false
+      },
+      identifier: "eventType",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 21,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 21,
+      mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectEE9eventTypeE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.bluetooth.hfp",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 53,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 77,
+        ignore: false
+      },
+      identifier: "callback",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 178,
+        column: 53,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 15,
+      mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectEE8callbackE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1788,7 +2110,7 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 19
             },
             {
@@ -1796,193 +2118,8 @@
               expr: 20
             },
             {
-              name: "stagemodelonly",
+              name: "syscap",
               expr: 21
-            },
-            {
-              name: "syscap",
-              expr: 22
-            }
-          ]
-        }
-      ],
-      type: 24,
-      mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectE",
-      exportId: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectE",
-      mangledBeforeSema: "18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfileC3offF19ProfileCallbackType14CallbackObject$$u",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 0,
-        bodyHash: 15777457682250536153
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-                22,
-                23
-              ],
-              desugars: [
-                0,
-                0
-              ]
-            }
-          ],
-          retType: 9
-        }
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.bluetooth.hfp",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 51,
-        ignore: false
-      },
-      identifier: "eventType",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 21,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 21,
-      mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectEE9eventTypeE",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.bluetooth.hfp",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 53,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 77,
-        ignore: false
-      },
-      identifier: "callback",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 53,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 14,
-      mangledName: "_CN18ohos.bluetooth.hfp28HandsFreeAudioGatewayProfile3offHNN27ohos.bluetooth.base_profile19ProfileCallbackTypeECN20ohos.callback_invoke14CallbackObjectEE8callbackE",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.bluetooth.hfp",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 224,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 232,
-        column: 6,
-        ignore: false
-      },
-      identifier: "off",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 224,
-        column: 17,
-        ignore: false
-      },
-      attributes: [
-        144678138297713696,
-        16
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 23
-            },
-            {
-              name: "permission",
-              expr: 24
-            },
-            {
-              name: "stagemodelonly",
-              expr: 25
-            },
-            {
-              name: "syscap",
-              expr: 26
             }
           ]
         }
@@ -1996,7 +2133,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13497099073766991862
+        bodyHash: 8304127222914152924
       },
       info_type: "FuncInfo",
       info: {
@@ -2021,14 +2158,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 198,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 198,
         column: 51,
         ignore: false
       },
@@ -2036,7 +2173,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 198,
         column: 21,
         ignore: false
       },
@@ -2069,42 +2206,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 42,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 42,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
         line: 43,
-        column: 21,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 43,
-        column: 25,
+        column: 16,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2123,6 +2240,7 @@
         column: 60,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -2134,20 +2252,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 56,
-        column: 5,
+        line: 54,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 56,
-        column: 7,
+        line: 54,
+        column: 16,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2155,39 +2275,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 57,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 57,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 58,
+        line: 55,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 58,
+        line: 55,
         column: 60,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -2199,41 +2298,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 92,
-        column: 9,
+        line: 87,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 92,
-        column: 11,
+        line: 87,
+        column: 20,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 93,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 93,
-        column: 44,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "ohos.ACCESS_BLUETOOTH",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -2242,17 +2321,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 94,
+        line: 88,
+        column: 21,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 88,
+        column: 55,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "ohos.permission.ACCESS_BLUETOOTH",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 89,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 89,
+        column: 64,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Communication.Bluetooth.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 90,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 94,
+        line: 90,
         column: 29,
         ignore: false
       },
+      type: 13,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -2264,17 +2390,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 95,
+        line: 117,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 117,
+        column: 20,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 21,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 55,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "ohos.permission.ACCESS_BLUETOOTH",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 119,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 95,
+        line: 119,
         column: 64,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -2286,60 +2459,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 125,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 126,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 126,
-        column: 44,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "ohos.ACCESS_BLUETOOTH",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 127,
+        line: 120,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 120,
         column: 29,
         ignore: false
       },
+      type: 13,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -2351,20 +2482,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 128,
-        column: 17,
+        line: 141,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 128,
-        column: 64,
+        line: 141,
+        column: 20,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Communication.Bluetooth.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -2373,41 +2505,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 154,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 154,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 155,
+        line: 142,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 155,
-        column: 44,
+        line: 142,
+        column: 55,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "ohos.ACCESS_BLUETOOTH",
+        strValue: "ohos.permission.ACCESS_BLUETOOTH",
         constKind: "String"
       }
     },
@@ -2416,39 +2528,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 156,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 156,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 157,
+        line: 143,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 157,
+        line: 143,
         column: 64,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -2460,20 +2551,68 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 193,
-        column: 9,
+        line: 174,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 193,
-        column: 11,
+        line: 174,
+        column: 20,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 175,
+        column: 21,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 175,
+        column: 55,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "ohos.permission.ACCESS_BLUETOOTH",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 176,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 176,
+        column: 64,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Communication.Bluetooth.Core",
+        constKind: "String"
       }
     },
     {
@@ -2482,19 +2621,20 @@
         file: 1,
         pkgId: 0,
         line: 194,
-        column: 21,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 194,
-        column: 44,
+        column: 20,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "ohos.ACCESS_BLUETOOTH",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -2504,20 +2644,21 @@
         file: 1,
         pkgId: 0,
         line: 195,
-        column: 25,
+        column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 195,
-        column: 29,
+        column: 55,
         ignore: false
       },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "ohos.permission.ACCESS_BLUETOOTH",
+        constKind: "String"
       }
     },
     {
@@ -2536,93 +2677,7 @@
         column: 64,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Communication.Bluetooth.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 219,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 219,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 220,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 220,
-        column: 44,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "ohos.ACCESS_BLUETOOTH",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 221,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 221,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 222,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 222,
-        column: 64,
-        ignore: false
-      },
+      type: 12,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",

@@ -1,17 +1,17 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
-  fullPkgName: "ohos.measure",
-  pkgDepInfo: "{\"package\":\"ohos.measure\",\"isMacro\":false,\"accessLevel\":\"protected\",\"dependencies\":[]}",
+  fullPkgName: "ohos.application",
+  pkgDepInfo: "{\"package\":\"ohos.application\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[],\"features\":[]}",
   imports: [
 
   ],
   allFiles: [
-    "ohos.measure/cj_measure.cj"
+    "ohos.application/application.cj"
   ],
   allFileImports: [
     {
@@ -50,6 +50,5 @@
   allExprs: [
 
   ],
-  access: "Protected",
   moduleName: ""
 }

@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.bluetooth.connection",
-  pkgDepInfo: "{\"package\":\"ohos.bluetooth.connection\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.bluetooth.connection\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[],\"features\":[]}",
   imports: [
 
   ],
@@ -108,14 +108,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 84,
         ignore: false
       },
@@ -123,7 +123,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 10,
         ignore: false
       },
@@ -170,14 +170,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 38,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 51,
         ignore: false
       },
@@ -185,7 +185,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 38,
         ignore: false
       },
@@ -217,14 +217,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 53,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 77,
         ignore: false
       },
@@ -232,7 +232,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 53,
         ignore: false
       },

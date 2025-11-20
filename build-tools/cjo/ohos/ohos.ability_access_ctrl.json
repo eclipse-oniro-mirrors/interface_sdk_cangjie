@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.ability_access_ctrl",
-  pkgDepInfo: "{\"package\":\"ohos.ability_access_ctrl\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":53}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":18,\"column\":55},\"end\":{\"line\":18,\"column\":70}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":19,\"column\":33},\"end\":{\"line\":19,\"column\":50}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":19,\"column\":52},\"end\":{\"line\":19,\"column\":65}},{\"file\":\"cj_ability_access_ctrl_error.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":52}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":29}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":20,\"column\":31},\"end\":{\"line\":20,\"column\":39}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":20,\"column\":41},\"end\":{\"line\":20,\"column\":55}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":20,\"column\":57},\"end\":{\"line\":20,\"column\":71}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":20,\"column\":73},\"end\":{\"line\":20,\"column\":87}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":18}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":31}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":28}}]},{\"package\":\"ohos.security.permission_request_result\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":56}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":49}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"cj_ability_access_ctrl_error.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":30}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":27}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.ability_access_ctrl\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":53}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":20,\"column\":55},\"end\":{\"line\":20,\"column\":70}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":21,\"column\":33},\"end\":{\"line\":21,\"column\":50}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":21,\"column\":52},\"end\":{\"line\":21,\"column\":65}},{\"file\":\"cj_ability_access_ctrl_error.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":52}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":22,\"column\":19},\"end\":{\"line\":22,\"column\":29}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":22,\"column\":31},\"end\":{\"line\":22,\"column\":39}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":22,\"column\":41},\"end\":{\"line\":22,\"column\":55}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":22,\"column\":57},\"end\":{\"line\":22,\"column\":71}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":22,\"column\":73},\"end\":{\"line\":22,\"column\":87}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":31}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":28,\"column\":1},\"end\":{\"line\":28,\"column\":28}}]},{\"package\":\"ohos.security.permission_request_result\",\"isStd\":false,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":56}},{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":79}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"cj_ability_access_ctrl_error.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":30}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"cj_ability_access_ctrl.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":27}}]}],\"features\":[]}",
   imports: [
     "ohos.security.permission_request_result",
     "std.core",
@@ -28,14 +28,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 37,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 53,
             ignore: false
           },
@@ -52,14 +52,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 55,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 70,
             ignore: false
           },
@@ -76,14 +76,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 33,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 50,
             ignore: false
           },
@@ -98,14 +98,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 52,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 65,
             ignore: false
           },
@@ -120,14 +120,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 19,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 29,
             ignore: false
           },
@@ -142,14 +142,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 31,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 39,
             ignore: false
           },
@@ -164,14 +164,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 41,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 55,
             ignore: false
           },
@@ -186,14 +186,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 57,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 71,
             ignore: false
           },
@@ -208,14 +208,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 73,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 87,
             ignore: false
           },
@@ -230,14 +230,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 27,
             ignore: false
           },
@@ -252,36 +252,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 22,
-            column: 18,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "ffi"
-          ],
-          identifier: "*",
-          asIdentifier: ""
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 23,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 23,
+            line: 24,
             column: 31,
             ignore: false
           },
@@ -296,14 +274,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 24,
+            line: 25,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 24,
+            line: 25,
             column: 56,
             ignore: false
           },
@@ -320,15 +298,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 25,
+            line: 26,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 25,
-            column: 49,
+            line: 26,
+            column: 79,
             ignore: false
           },
           prefixPaths: [
@@ -336,21 +314,21 @@
             "security",
             "permission_request_result"
           ],
-          identifier: "*",
+          identifier: "RetDataCPermissionRequestResult",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 27,
+            line: 28,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 27,
+            line: 28,
             column: 28,
             ignore: false
           },
@@ -391,14 +369,14 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 52,
             ignore: false
           },
@@ -413,14 +391,14 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 30,
             ignore: false
           },
@@ -472,7 +450,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 4
+          index: 6
         }
       }
     },
@@ -498,7 +476,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 5
+          index: 7
         }
       }
     },
@@ -665,7 +643,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 49
+          index: 51
         }
       }
     },
@@ -737,7 +715,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 61
+          index: 63
         }
       }
     },
@@ -770,7 +748,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 64
+          index: 66
         }
       }
     },
@@ -790,9 +768,20 @@
     {
       kind: "Func",
       typeArgs: [
-        35,
+        2,
+        4
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 22
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
         36,
-        37
+        37,
+        38
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -828,8 +817,8 @@
     {
       kind: "Func",
       typeArgs: [
-        38,
-        40
+        39,
+        41
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -839,7 +828,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        39
+        40
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -865,7 +854,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        41
+        42
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -885,17 +874,6 @@
         declPtr: {
           decl: "_CN39ohos.security.permission_request_result23PermissionRequestResultE"
         }
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        2,
-        4
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 22
       }
     },
     {
@@ -931,14 +909,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 30,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 30,
         column: 37,
         ignore: false
       },
@@ -946,7 +924,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 30,
         column: 7,
         ignore: false
       },
@@ -966,7 +944,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 12820464909098194885,
-        bodyHash: 18253055460058178893
+        bodyHash: 11885796651530733251
       },
       info_type: "VarInfo",
       info: {
@@ -981,14 +959,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 39,
         ignore: false
       },
@@ -996,7 +974,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 7,
         ignore: false
       },
@@ -1016,7 +994,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 12820464909098194885,
-        bodyHash: 4972894654474694241
+        bodyHash: 17277950650729342986
       },
       info_type: "VarInfo",
       info: {
@@ -1066,12 +1044,112 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 12820464909098194885,
-        bodyHash: 14218531566626200928
+        bodyHash: 1872953952977049921
       },
       info_type: "VarInfo",
       info: {
         isConst: true,
         initializer: 3
+      }
+    },
+    {
+      kind: "VarDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.ability_access_ctrl",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 24,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 24,
+        column: 45,
+        ignore: false
+      },
+      identifier: "ACCESS_INVALID_PARAM",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 24,
+        column: 7,
+        ignore: false
+      },
+      attributes: [
+        144678138029293616,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 1,
+      mangledName: "",
+      exportId: "_CN24ohos.ability_access_ctrl20ACCESS_INVALID_PARAME",
+      mangledBeforeSema: "24ohos.ability_access_ctrl20ACCESS_INVALID_PARAMV$$i",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 12820464909098194885,
+        bodyHash: 6501875661773362842
+      },
+      info_type: "VarInfo",
+      info: {
+        isConst: true,
+        initializer: 4
+      }
+    },
+    {
+      kind: "VarDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.ability_access_ctrl",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 25,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 25,
+        column: 43,
+        ignore: false
+      },
+      identifier: "COMMON_INNER_ERROR",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 25,
+        column: 7,
+        ignore: false
+      },
+      attributes: [
+        144678138029293616,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 1,
+      mangledName: "",
+      exportId: "_CN24ohos.ability_access_ctrl18COMMON_INNER_ERRORE",
+      mangledBeforeSema: "24ohos.ability_access_ctrl18COMMON_INNER_ERRORV$$i",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 12820464909098194885,
+        bodyHash: 18282376436762833218
+      },
+      info_type: "VarInfo",
+      info: {
+        isConst: true,
+        initializer: 5
       }
     },
     {
@@ -1226,8 +1304,8 @@
           paramLists: [
             {
               params: [
-                7,
-                8
+                9,
+                10
               ],
               desugars: [
                 0,
@@ -1387,9 +1465,9 @@
           paramLists: [
             {
               params: [
-                10,
-                11,
-                12
+                12,
+                13,
+                14
               ],
               desugars: [
                 0,
@@ -1597,9 +1675,9 @@
           paramLists: [
             {
               params: [
-                14,
-                15,
-                16
+                16,
+                17,
+                18
               ],
               desugars: [
                 0,
@@ -1807,10 +1885,10 @@
           paramLists: [
             {
               params: [
-                18,
-                19,
                 20,
-                21
+                21,
+                22,
+                23
               ],
               desugars: [
                 0,
@@ -2066,10 +2144,10 @@
           paramLists: [
             {
               params: [
-                23,
-                24,
                 25,
-                26
+                26,
+                27,
+                28
               ],
               desugars: [
                 0,
@@ -2325,9 +2403,9 @@
           paramLists: [
             {
               params: [
-                28,
-                29,
-                30
+                30,
+                31,
+                32
               ],
               desugars: [
                 0,
@@ -2535,9 +2613,9 @@
           paramLists: [
             {
               params: [
-                32,
-                33,
-                34
+                34,
+                35,
+                36
               ],
               desugars: [
                 0,
@@ -2745,9 +2823,9 @@
           paramLists: [
             {
               params: [
-                36,
-                37,
-                38
+                38,
+                39,
+                40
               ],
               desugars: [
                 0,
@@ -2955,9 +3033,9 @@
           paramLists: [
             {
               params: [
-                40,
-                41,
-                42
+                42,
+                43,
+                44
               ],
               desugars: [
                 0,
@@ -3165,10 +3243,10 @@
           paramLists: [
             {
               params: [
-                44,
-                45,
                 46,
-                47
+                47,
+                48,
+                49
               ],
               desugars: [
                 0,
@@ -3412,7 +3490,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 6180332512979450206
+        bodyHash: 16780419480722851346
       },
       info_type: "VarInfo",
       info: {
@@ -3429,14 +3507,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 82,
+        line: 79,
         column: 11,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 107,
+        line: 102,
         column: 13,
         ignore: false
       },
@@ -3444,7 +3522,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 82,
+        line: 79,
         column: 23,
         ignore: false
       },
@@ -3458,16 +3536,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 6
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 7
             }
           ]
         }
@@ -3481,7 +3555,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16245013329402637267
+        bodyHash: 15330321332357423875
       },
       info_type: "EnumInfo",
       info: {
@@ -3489,16 +3563,16 @@
 
         ],
         body: [
-          50,
-          51,
-          52
+          52,
+          53,
+          54
         ],
         nonExhaustive: true,
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 77,
-          column: 668,
+          line: 75,
+          column: 584,
           ignore: false
         }
       }
@@ -3509,14 +3583,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 89,
+        line: 85,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 89,
+        line: 85,
         column: 32,
         ignore: false
       },
@@ -3524,7 +3598,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 89,
+        line: 85,
         column: 16,
         ignore: false
       },
@@ -3538,11 +3612,7 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
+              name: "since",
               expr: 8
             },
             {
@@ -3561,7 +3631,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 16245013329402637267
+        bodyHash: 15330321332357423875
       },
       info_type: "VarInfo",
       info: {
@@ -3573,14 +3643,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 97,
+        line: 92,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 97,
+        line: 92,
         column: 33,
         ignore: false
       },
@@ -3588,7 +3658,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 97,
+        line: 92,
         column: 16,
         ignore: false
       },
@@ -3602,16 +3672,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 10
             },
             {
-              name: "stagemodelonly",
-              expr: 11
-            },
-            {
               name: "syscap",
-              expr: 12
+              expr: 11
             }
           ]
         }
@@ -3625,7 +3691,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 16245013329402637267
+        bodyHash: 15330321332357423875
       },
       info_type: "VarInfo",
       info: {
@@ -3641,14 +3707,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 100,
+        line: 95,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 106,
+        line: 101,
         column: 17,
         ignore: false
       },
@@ -3656,7 +3722,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 100,
+        line: 95,
         column: 28,
         ignore: false
       },
@@ -3676,7 +3742,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 8035971499611947038,
-        bodyHash: 15860854068823382006
+        bodyHash: 6222153767642611966
       },
       info_type: "FuncInfo",
       info: {
@@ -3684,7 +3750,7 @@
           paramLists: [
             {
               params: [
-                53
+                55
               ],
               desugars: [
                 0
@@ -3701,14 +3767,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 100,
+        line: 95,
         column: 42,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 100,
+        line: 95,
         column: 53,
         ignore: false
       },
@@ -3716,7 +3782,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 100,
+        line: 95,
         column: 42,
         ignore: false
       },
@@ -3753,14 +3819,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 108,
+        line: 103,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 121,
+        line: 116,
         column: 13,
         ignore: false
       },
@@ -3768,12 +3834,12 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 108,
+        line: 103,
         column: 12,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
@@ -3796,7 +3862,7 @@
           24
         ],
         body: [
-          55
+          57
         ]
       }
     },
@@ -3810,14 +3876,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 109,
+        line: 104,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 120,
+        line: 115,
         column: 17,
         ignore: false
       },
@@ -3825,7 +3891,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 109,
+        line: 104,
         column: 28,
         ignore: false
       },
@@ -3845,7 +3911,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6203627219463422507
+        bodyHash: 3616934939506747636
       },
       info_type: "FuncInfo",
       info: {
@@ -3875,14 +3941,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 122,
+        line: 117,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 133,
+        line: 128,
         column: 13,
         ignore: false
       },
@@ -3890,12 +3956,12 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 122,
+        line: 117,
         column: 12,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
@@ -3910,7 +3976,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 16532009234028671988
+        bodyHash: 18212722749863034514
       },
       info_type: "ExtendInfo",
       info: {
@@ -3918,8 +3984,8 @@
           26
         ],
         body: [
-          57,
-          59
+          59,
+          61
         ]
       }
     },
@@ -3933,14 +3999,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 123,
+        line: 118,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 129,
+        line: 124,
         column: 17,
         ignore: false
       },
@@ -3948,7 +4014,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 123,
+        line: 118,
         column: 37,
         ignore: false
       },
@@ -3968,7 +4034,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 1277639889336162796
+        bodyHash: 16248666861026579304
       },
       info_type: "FuncInfo",
       info: {
@@ -3976,7 +4042,7 @@
           paramLists: [
             {
               params: [
-                58
+                60
               ],
               desugars: [
                 0
@@ -3994,14 +4060,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 123,
+        line: 118,
         column: 40,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 123,
+        line: 118,
         column: 58,
         ignore: false
       },
@@ -4009,7 +4075,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 123,
+        line: 118,
         column: 40,
         ignore: false
       },
@@ -4045,14 +4111,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 130,
+        line: 125,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 132,
+        line: 127,
         column: 17,
         ignore: false
       },
@@ -4060,7 +4126,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 130,
+        line: 125,
         column: 37,
         ignore: false
       },
@@ -4080,7 +4146,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6587961192718766421
+        bodyHash: 14936734599053196881
       },
       info_type: "FuncInfo",
       info: {
@@ -4088,7 +4154,7 @@
           paramLists: [
             {
               params: [
-                60
+                62
               ],
               desugars: [
                 0
@@ -4106,14 +4172,14 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 130,
+        line: 125,
         column: 40,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 130,
+        line: 125,
         column: 58,
         ignore: false
       },
@@ -4121,7 +4187,7 @@
       identifierPos: {
         file: 0,
         pkgId: 5,
-        line: 130,
+        line: 125,
         column: 40,
         ignore: false
       },
@@ -4158,14 +4224,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 128,
+        line: 116,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 130,
         column: 2,
         ignore: false
       },
@@ -4173,7 +4239,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 128,
+        line: 116,
         column: 14,
         ignore: false
       },
@@ -4187,16 +4253,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 12
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 13
             }
           ]
         }
@@ -4210,7 +4272,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6414151888546046381
+        bodyHash: 1113937382814492798
       },
       info_type: "ClassInfo",
       info: {
@@ -4218,8 +4280,8 @@
           33
         ],
         body: [
-          62,
-          63
+          64,
+          65
         ]
       }
     },
@@ -4233,14 +4295,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 129,
+        line: 117,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 129,
+        line: 117,
         column: 24,
         ignore: false
       },
@@ -4248,7 +4310,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 129,
+        line: 117,
         column: 15,
         ignore: false
       },
@@ -4268,7 +4330,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 2492172824707182326
+        bodyHash: 1803785509964545074
       },
       info_type: "FuncInfo",
       info: {
@@ -4297,14 +4359,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 140,
+        line: 127,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 129,
         column: 6,
         ignore: false
       },
@@ -4312,7 +4374,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 140,
+        line: 127,
         column: 24,
         ignore: false
       },
@@ -4326,16 +4388,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 16
-            },
-            {
-              name: "stagemodelonly",
-              expr: 17
+              name: "since",
+              expr: 14
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 15
             }
           ]
         }
@@ -4349,7 +4407,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 14825117624317475865
+        bodyHash: 3465653433242865524
       },
       info_type: "FuncInfo",
       info: {
@@ -4379,14 +4437,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 155,
+        line: 139,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 243,
+        line: 219,
         column: 2,
         ignore: false
       },
@@ -4394,7 +4452,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 155,
+        line: 139,
         column: 14,
         ignore: false
       },
@@ -4408,16 +4466,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 19
-            },
-            {
-              name: "stagemodelonly",
-              expr: 20
+              name: "since",
+              expr: 16
             },
             {
               name: "syscap",
-              expr: 21
+              expr: 17
             }
           ]
         }
@@ -4431,7 +4485,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16072473514246477660
+        bodyHash: 10503057770092640076
       },
       info_type: "ClassInfo",
       info: {
@@ -4439,9 +4493,9 @@
           33
         ],
         body: [
-          65,
-          66,
-          70
+          67,
+          68,
+          71
         ]
       }
     },
@@ -4455,14 +4509,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 156,
+        line: 140,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 156,
+        line: 140,
         column: 24,
         ignore: false
       },
@@ -4470,7 +4524,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 156,
+        line: 140,
         column: 15,
         ignore: false
       },
@@ -4490,7 +4544,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 7204085895898521849
+        bodyHash: 18178548599456529325
       },
       info_type: "FuncInfo",
       info: {
@@ -4519,240 +4573,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 180,
+        line: 158,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 210,
-        column: 6,
-        ignore: false
-      },
-      identifier: "requestPermissionsFromUser",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 17,
-        ignore: false
-      },
-      attributes: [
-        144678138297713696,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 22
-            },
-            {
-              name: "stagemodelonly",
-              expr: 23
-            },
-            {
-              name: "syscap",
-              expr: 24
-            }
-          ]
-        }
-      ],
-      type: 34,
-      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEE",
-      exportId: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEE",
-      mangledBeforeSema: "24ohos.ability_access_ctrl9AtManagerC26requestPermissionsFromUserF16UIAbilityContext5Array<11Permissions>13AsyncCallback<23PermissionRequestResult>$$u",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 0,
-        bodyHash: 6591594066201963474
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-                67,
-                68,
-                69
-              ],
-              desugars: [
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          retType: 7
-        }
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.ability_access_ctrl",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 44,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 69,
-        ignore: false
-      },
-      identifier: "context",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 44,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 35,
-      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEEE7contextE",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.ability_access_ctrl",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 71,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 105,
-        ignore: false
-      },
-      identifier: "permissionList",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 71,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 36,
-      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEEE14permissionListIY9_E",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.ability_access_ctrl",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 181,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 181,
-        column: 64,
-        ignore: false
-      },
-      identifier: "requestCallback",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 181,
-        column: 9,
-        ignore: false
-      },
-      attributes: [
-        562984313159712,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 37,
-      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEEE15requestCallbackE",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.ability_access_ctrl",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 231,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 242,
+        line: 169,
         column: 6,
         ignore: false
       },
@@ -4760,7 +4588,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 158,
         column: 17,
         ignore: false
       },
@@ -4774,21 +4602,21 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 25
-            },
-            {
-              name: "stagemodelonly",
-              expr: 26
+              name: "since",
+              expr: 18
             },
             {
               name: "syscap",
-              expr: 27
+              expr: 19
+            },
+            {
+              name: "throwexception",
+              expr: 20
             }
           ]
         }
       ],
-      type: 42,
+      type: 34,
       mangledName: "_CN24ohos.ability_access_ctrl9AtManager16checkAccessTokenHjRNat6StringE",
       exportId: "_CN24ohos.ability_access_ctrl9AtManager16checkAccessTokenHjRNat6StringE",
       mangledBeforeSema: "24ohos.ability_access_ctrl9AtManagerC16checkAccessTokenFj11Permissions$$11GrantStatus",
@@ -4797,7 +4625,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2445758873292350852
+        bodyHash: 4708734969300992126
       },
       info_type: "FuncInfo",
       info: {
@@ -4805,8 +4633,8 @@
           paramLists: [
             {
               params: [
-                71,
-                72
+                69,
+                70
               ],
               desugars: [
                 0,
@@ -4824,14 +4652,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 158,
         column: 34,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 158,
         column: 49,
         ignore: false
       },
@@ -4839,7 +4667,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 158,
         column: 34,
         ignore: false
       },
@@ -4871,14 +4699,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 158,
         column: 51,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 158,
         column: 78,
         ignore: false
       },
@@ -4886,7 +4714,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 231,
+        line: 158,
         column: 51,
         ignore: false
       },
@@ -4913,20 +4741,246 @@
       }
     },
     {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.ability_access_ctrl",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 218,
+        column: 6,
+        ignore: false
+      },
+      identifier: "requestPermissionsFromUser",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 17,
+        ignore: false
+      },
+      attributes: [
+        144678138297713696,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 21
+            },
+            {
+              name: "syscap",
+              expr: 22
+            },
+            {
+              name: "throwexception",
+              expr: 23
+            }
+          ]
+        }
+      ],
+      type: 35,
+      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEE",
+      exportId: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEE",
+      mangledBeforeSema: "24ohos.ability_access_ctrl9AtManagerC26requestPermissionsFromUserF16UIAbilityContext5Array<11Permissions>13AsyncCallback<23PermissionRequestResult>$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 0,
+        bodyHash: 3765338321928661865
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                72,
+                73,
+                74
+              ],
+              desugars: [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 7
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.ability_access_ctrl",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 44,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 69,
+        ignore: false
+      },
+      identifier: "context",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 44,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 36,
+      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEEE7contextE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.ability_access_ctrl",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 71,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 105,
+        ignore: false
+      },
+      identifier: "permissionList",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 188,
+        column: 71,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 37,
+      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEEE14permissionListIY9_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.ability_access_ctrl",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 189,
+        column: 9,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 189,
+        column: 64,
+        ignore: false
+      },
+      identifier: "requestCallback",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 189,
+        column: 9,
+        ignore: false
+      },
+      attributes: [
+        562984313159712,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 38,
+      mangledName: "_CN24ohos.ability_access_ctrl9AtManager26requestPermissionsFromUserHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat5ArrayIRNat6StringEEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYD_ICN39ohos.security.permission_request_result23PermissionRequestResultEEEE15requestCallbackE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
       kind: "VarDecl",
       isTopLevel: true,
       fullPkgName: "ohos.ability_access_ctrl",
       begin: {
         file: 2,
         pkgId: 0,
-        line: 22,
+        line: 27,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 37,
+        line: 42,
         column: 2,
         ignore: false
       },
@@ -4934,7 +4988,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 22,
+        line: 27,
         column: 5,
         ignore: false
       },
@@ -4954,7 +5008,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 10364170087358662199
+        bodyHash: 7789332261746845186
       },
       info_type: "VarInfo",
       info: {
@@ -4971,14 +5025,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 39,
+        line: 44,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 47,
+        line: 52,
         column: 2,
         ignore: false
       },
@@ -4986,7 +5040,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 39,
+        line: 44,
         column: 6,
         ignore: false
       },
@@ -5006,7 +5060,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 9330085175445821702
+        bodyHash: 398385922280615594
       },
       info_type: "FuncInfo",
       info: {
@@ -5014,7 +5068,7 @@
           paramLists: [
             {
               params: [
-                75
+                77
               ],
               desugars: [
                 0
@@ -5031,14 +5085,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 39,
+        line: 44,
         column: 19,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 39,
+        line: 44,
         column: 30,
         ignore: false
       },
@@ -5046,7 +5100,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 39,
+        line: 44,
         column: 19,
         ignore: false
       },
@@ -5079,14 +5133,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 30,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 30,
         column: 37,
         ignore: false
       },
@@ -5101,14 +5155,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 31,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 39,
         ignore: false
       },
@@ -5143,22 +5197,45 @@
     {
       kind: "LitConstExpr",
       begin: {
-        file: 0,
-        pkgId: 5,
-        line: 78,
-        column: 11,
+        file: 2,
+        pkgId: 0,
+        line: 24,
+        column: 37,
         ignore: false
       },
       end: {
-        file: 0,
-        pkgId: 5,
-        line: 78,
-        column: 13,
+        file: 2,
+        pkgId: 0,
+        line: 24,
+        column: 45,
         ignore: false
       },
+      type: 1,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "12100001"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 25,
+        column: 35,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 25,
+        column: 43,
+        ignore: false
+      },
+      type: 1,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "12100009"
       }
     },
     {
@@ -5166,21 +5243,22 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 79,
-        column: 27,
+        line: 76,
+        column: 18,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 79,
-        column: 31,
+        line: 76,
+        column: 22,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5188,17 +5266,18 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 80,
+        line: 77,
         column: 19,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 80,
+        line: 77,
         column: 58,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Security.AccessToken",
@@ -5210,20 +5289,22 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 85,
-        column: 15,
+        line: 82,
+        column: 22,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 85,
-        column: 17,
+        line: 82,
+        column: 26,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5231,21 +5312,22 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 86,
-        column: 32,
+        line: 83,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 86,
-        column: 36,
+        line: 83,
+        column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "SystemCapability.Security.AccessToken",
+        constKind: "String"
       }
     },
     {
@@ -5253,17 +5335,41 @@
       begin: {
         file: 0,
         pkgId: 5,
-        line: 87,
+        line: 89,
+        column: 23,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 5,
+        line: 89,
+        column: 27,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 5,
+        line: 90,
         column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 5,
-        line: 87,
+        line: 90,
         column: 63,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Security.AccessToken",
@@ -5273,65 +5379,69 @@
     {
       kind: "LitConstExpr",
       begin: {
-        file: 0,
-        pkgId: 5,
-        line: 93,
+        file: 1,
+        pkgId: 0,
+        line: 113,
+        column: 12,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 113,
+        column: 16,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 114,
+        column: 13,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 114,
+        column: 52,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Security.AccessToken",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 124,
         column: 16,
         ignore: false
       },
       end: {
-        file: 0,
-        pkgId: 5,
-        line: 93,
-        column: 18,
+        file: 1,
+        pkgId: 0,
+        line: 124,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 5,
-        line: 94,
-        column: 32,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 5,
-        line: 94,
-        column: 36,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 5,
-        line: 95,
-        column: 24,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 5,
-        line: 95,
-        column: 63,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Security.AccessToken",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -5340,60 +5450,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 124,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 124,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
         line: 125,
-        column: 21,
+        column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 125,
-        column: 25,
+        column: 56,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 126,
-        column: 13,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 126,
-        column: 52,
-        ignore: false
-      },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Security.AccessToken",
@@ -5406,62 +5474,20 @@
         file: 1,
         pkgId: 0,
         line: 136,
-        column: 9,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 136,
-        column: 11,
+        column: 16,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 137,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 137,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 138,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 138,
-        column: 56,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Security.AccessToken",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -5470,60 +5496,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 151,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 151,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 152,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 152,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 153,
+        line: 137,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 153,
+        line: 137,
         column: 52,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Security.AccessToken",
@@ -5535,20 +5519,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 176,
-        column: 9,
+        line: 154,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 176,
-        column: 11,
+        line: 154,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5556,17 +5542,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 177,
+        line: 155,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 155,
+        column: 56,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Security.AccessToken",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 156,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 177,
+        line: 156,
         column: 29,
         ignore: false
       },
+      type: 28,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -5578,17 +5588,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 178,
+        line: 184,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 184,
+        column: 20,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 185,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 178,
+        line: 185,
         column: 56,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Security.AccessToken",
@@ -5600,64 +5634,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 227,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 227,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 228,
+        line: 186,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 186,
         column: 29,
         ignore: false
       },
+      type: 28,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
         constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 229,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 229,
-        column: 56,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Security.AccessToken",
-        constKind: "String"
       }
     }
   ],

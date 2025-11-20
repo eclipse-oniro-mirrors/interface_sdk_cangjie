@@ -6,7 +6,7 @@
     patch_num: 0
   },
   fullPkgName: "ohos.arkui.component.grid",
-  pkgDepInfo: "{\"package\":\"ohos.arkui.component.grid\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":45}},{\"file\":\"grid.cj\",\"begin\":{\"line\":20,\"column\":47},\"end\":{\"line\":20,\"column\":63}}]},{\"package\":\"ohos.arkui.component.scroll\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":37},\"end\":{\"line\":21,\"column\":68}},{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":70},\"end\":{\"line\":21,\"column\":92}},{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":94},\"end\":{\"line\":21,\"column\":102}},{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":104},\"end\":{\"line\":21,\"column\":123}},{\"file\":\"grid_attr.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":59}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":22,\"column\":35},\"end\":{\"line\":22,\"column\":59}},{\"file\":\"grid.cj\",\"begin\":{\"line\":22,\"column\":61},\"end\":{\"line\":22,\"column\":92}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":19},\"end\":{\"line\":23,\"column\":25}},{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":27},\"end\":{\"line\":23,\"column\":40}},{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":42},\"end\":{\"line\":23,\"column\":52}},{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":54},\"end\":{\"line\":23,\"column\":62}},{\"file\":\"grid_attr.cj\",\"begin\":{\"line\":19,\"column\":19},\"end\":{\"line\":19,\"column\":25}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":49}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":24,\"column\":18},\"end\":{\"line\":24,\"column\":32}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":28}},{\"file\":\"grid_attr.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":28}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":26,\"column\":23},\"end\":{\"line\":26,\"column\":34}},{\"file\":\"grid.cj\",\"begin\":{\"line\":26,\"column\":36},\"end\":{\"line\":26,\"column\":53}}]},{\"package\":\"std.convert\",\"isStd\":true,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":28,\"column\":21},\"end\":{\"line\":28,\"column\":29}}]}],\"features\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.arkui.component.grid\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":45}},{\"file\":\"grid.cj\",\"begin\":{\"line\":20,\"column\":47},\"end\":{\"line\":20,\"column\":63}}]},{\"package\":\"ohos.arkui.component.scroll\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":37},\"end\":{\"line\":21,\"column\":68}},{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":70},\"end\":{\"line\":21,\"column\":92}},{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":94},\"end\":{\"line\":21,\"column\":102}},{\"file\":\"grid.cj\",\"begin\":{\"line\":21,\"column\":104},\"end\":{\"line\":21,\"column\":123}},{\"file\":\"grid_attr.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":59}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":22,\"column\":35},\"end\":{\"line\":22,\"column\":59}},{\"file\":\"grid.cj\",\"begin\":{\"line\":22,\"column\":61},\"end\":{\"line\":22,\"column\":92}},{\"file\":\"grid.cj\",\"begin\":{\"line\":22,\"column\":94},\"end\":{\"line\":22,\"column\":108}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":19},\"end\":{\"line\":23,\"column\":25}},{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":27},\"end\":{\"line\":23,\"column\":40}},{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":42},\"end\":{\"line\":23,\"column\":52}},{\"file\":\"grid.cj\",\"begin\":{\"line\":23,\"column\":54},\"end\":{\"line\":23,\"column\":62}},{\"file\":\"grid_attr.cj\",\"begin\":{\"line\":19,\"column\":19},\"end\":{\"line\":19,\"column\":25}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":49}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":24,\"column\":18},\"end\":{\"line\":24,\"column\":32}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":28}},{\"file\":\"grid_attr.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":28}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":26,\"column\":23},\"end\":{\"line\":26,\"column\":34}},{\"file\":\"grid.cj\",\"begin\":{\"line\":26,\"column\":36},\"end\":{\"line\":26,\"column\":53}}]},{\"package\":\"std.convert\",\"isStd\":true,\"imports\":[{\"file\":\"grid.cj\",\"begin\":{\"line\":28,\"column\":21},\"end\":{\"line\":28,\"column\":29}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.arkui.component.scroll",
@@ -211,6 +211,30 @@
             "util"
           ],
           identifier: "transAppResourceToResourceColor",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 94,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 108,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "arkui",
+            "component",
+            "util"
+          ],
+          identifier: "EMPTY_FUNCTION",
           asIdentifier: ""
         },
         {
@@ -906,6 +930,18 @@
     {
       kind: "Enum",
       typeArgs: [
+        38
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6OptionIG_E"
+        }
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
 
       ],
       info_type: "CompositeTyInfo",
@@ -919,7 +955,7 @@
     {
       kind: "Func",
       typeArgs: [
-        39
+        40
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -929,7 +965,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        40
+        41
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -964,7 +1000,7 @@
     {
       kind: "Func",
       typeArgs: [
-        43
+        44
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -974,7 +1010,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        44
+        45
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -999,7 +1035,7 @@
     {
       kind: "Func",
       typeArgs: [
-        46
+        47
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1021,7 +1057,7 @@
     {
       kind: "Func",
       typeArgs: [
-        48
+        49
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1031,7 +1067,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        49
+        50
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1056,11 +1092,23 @@
     {
       kind: "Func",
       typeArgs: [
-        23
+        52
       ],
       info_type: "FuncTyInfo",
       info: {
         retType: 28
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+        23
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6OptionIG_E"
+        }
       }
     },
     {
@@ -1096,7 +1144,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 52
+        retType: 54
       }
     },
     {
@@ -1106,7 +1154,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 52
+        retType: 54
       }
     },
     {
@@ -1116,7 +1164,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 52
+        retType: 54
       }
     },
     {
@@ -1127,13 +1175,13 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 52
+        retType: 54
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        52
+        54
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -5568,7 +5616,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 361,
+        line: 365,
         column: 2,
         ignore: false
       },
@@ -5609,13 +5657,13 @@
         virt: 0,
         sig: 12448069382589414815,
         srcUse: 0,
-        bodyHash: 16818404453255760417
+        bodyHash: 3973280086805173153
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          51,
-          52
+          53,
+          54
         ],
         body: [
           81,
@@ -6819,15 +6867,15 @@
 
       ],
       type: 36,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid14scrollBarInnerHNN27ohos.arkui.component.common8BarStateE",
-      exportId: "_CN25ohos.arkui.component.grid4Grid14scrollBarInnerHNN27ohos.arkui.component.common8BarStateE",
-      mangledBeforeSema: "25ohos.arkui.component.grid4GridC14scrollBarInnerF8BarState$$H",
+      mangledName: "_CN25ohos.arkui.component.grid4Grid14scrollBarInnerHNNat6OptionINN27ohos.arkui.component.common8BarStateEE",
+      exportId: "_CN25ohos.arkui.component.grid4Grid14scrollBarInnerHNNat6OptionINN27ohos.arkui.component.common8BarStateEE",
+      mangledBeforeSema: "25ohos.arkui.component.grid4GridC14scrollBarInnerFO1_8BarState$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 8499613330965398863
+        bodyHash: 5670817832175979616
       },
       info_type: "FuncInfo",
       info: {
@@ -6860,10 +6908,10 @@
         file: 1,
         pkgId: 0,
         line: 274,
-        column: 50,
+        column: 54,
         ignore: false
       },
-      identifier: "value",
+      identifier: "barState",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -6879,7 +6927,7 @@
 
       ],
       type: 37,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid14scrollBarInnerHNN27ohos.arkui.component.common8BarStateEE5valueE",
+      mangledName: "_CN25ohos.arkui.component.grid4Grid14scrollBarInnerHNNat6OptionINN27ohos.arkui.component.common8BarStateEEE8barStateIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -6929,7 +6977,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN25ohos.arkui.component.grid4Grid19scrollBarColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN25ohos.arkui.component.grid4Grid19scrollBarColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "25ohos.arkui.component.grid4GridC19scrollBarColorInnerFO1_13ResourceColor$$H",
@@ -6989,7 +7037,7 @@
       annotations: [
 
       ],
-      type: 39,
+      type: 40,
       mangledName: "_CN25ohos.arkui.component.grid4Grid19scrollBarColorInnerHNNat6OptionICN9ohos.base13ResourceColorEEE5colorIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7151,7 +7199,7 @@
       annotations: [
 
       ],
-      type: 41,
+      type: 42,
       mangledName: "_CN25ohos.arkui.component.grid4Grid28enableScrollInteractionInnerHNNat6OptionIbE",
       exportId: "_CN25ohos.arkui.component.grid4Grid28enableScrollInteractionInnerHNNat6OptionIbE",
       mangledBeforeSema: "25ohos.arkui.component.grid4GridC28enableScrollInteractionInnerFO1_b$$H",
@@ -7262,7 +7310,7 @@
       annotations: [
 
       ],
-      type: 42,
+      type: 43,
       mangledName: "_CN25ohos.arkui.component.grid4Grid17nestedScrollInnerHNNat6OptionICN27ohos.arkui.component.scroll19NestedScrollOptionsEE",
       exportId: "_CN25ohos.arkui.component.grid4Grid17nestedScrollInnerHNNat6OptionICN27ohos.arkui.component.scroll19NestedScrollOptionsEE",
       mangledBeforeSema: "25ohos.arkui.component.grid4GridC17nestedScrollInnerFO1_19NestedScrollOptions$$H",
@@ -7322,7 +7370,7 @@
       annotations: [
 
       ],
-      type: 43,
+      type: 44,
       mangledName: "_CN25ohos.arkui.component.grid4Grid17nestedScrollInnerHNNat6OptionICN27ohos.arkui.component.scroll19NestedScrollOptionsEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7373,7 +7421,7 @@
       annotations: [
 
       ],
-      type: 45,
+      type: 46,
       mangledName: "_CN25ohos.arkui.component.grid4Grid13frictionInnerHNNat6OptionIdE",
       exportId: "_CN25ohos.arkui.component.grid4Grid13frictionInnerHNNat6OptionIdE",
       mangledBeforeSema: "25ohos.arkui.component.grid4GridC13frictionInnerFO1_d$$H",
@@ -7433,7 +7481,7 @@
       annotations: [
 
       ],
-      type: 46,
+      type: 47,
       mangledName: "_CN25ohos.arkui.component.grid4Grid13frictionInnerHNNat6OptionIdEE5valueIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7484,7 +7532,7 @@
       annotations: [
 
       ],
-      type: 47,
+      type: 48,
       mangledName: "_CN25ohos.arkui.component.grid4Grid13frictionInnerHNNat6OptionICN13ohos.resource11AppResourceEE",
       exportId: "_CN25ohos.arkui.component.grid4Grid13frictionInnerHNNat6OptionICN13ohos.resource11AppResourceEE",
       mangledBeforeSema: "25ohos.arkui.component.grid4GridC13frictionInnerFO1_11AppResource$$H",
@@ -7544,7 +7592,7 @@
       annotations: [
 
       ],
-      type: 48,
+      type: 49,
       mangledName: "_CN25ohos.arkui.component.grid4Grid13frictionInnerHNNat6OptionICN13ohos.resource11AppResourceEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7576,7 +7624,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 339,
+        line: 340,
         column: 6,
         ignore: false
       },
@@ -7595,16 +7643,16 @@
       annotations: [
 
       ],
-      type: 50,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid17onReachStartInnerHF0uE",
-      exportId: "_CN25ohos.arkui.component.grid4Grid17onReachStartInnerHF0uE",
-      mangledBeforeSema: "25ohos.arkui.component.grid4GridC17onReachStartInnerFFu$$H",
+      type: 51,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid17onReachStartInnerHNNat6OptionIF0uEE",
+      exportId: "_CN25ohos.arkui.component.grid4Grid17onReachStartInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "25ohos.arkui.component.grid4GridC17onReachStartInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 9651170143589262971
+        bodyHash: 9906635131602580727
       },
       info_type: "FuncInfo",
       info: {
@@ -7637,7 +7685,7 @@
         file: 1,
         pkgId: 0,
         line: 334,
-        column: 55,
+        column: 56,
         ignore: false
       },
       identifier: "event",
@@ -7655,8 +7703,8 @@
       annotations: [
 
       ],
-      type: 23,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid17onReachStartInnerHF0uEE5eventE",
+      type: 52,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid17onReachStartInnerHNNat6OptionIF0uEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -7680,14 +7728,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 342,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 346,
+        line: 348,
         column: 6,
         ignore: false
       },
@@ -7695,7 +7743,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 342,
         column: 20,
         ignore: false
       },
@@ -7706,16 +7754,16 @@
       annotations: [
 
       ],
-      type: 50,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid15onReachEndInnerHF0uE",
-      exportId: "_CN25ohos.arkui.component.grid4Grid15onReachEndInnerHF0uE",
-      mangledBeforeSema: "25ohos.arkui.component.grid4GridC15onReachEndInnerFFu$$H",
+      type: 51,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid15onReachEndInnerHNNat6OptionIF0uEE",
+      exportId: "_CN25ohos.arkui.component.grid4Grid15onReachEndInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "25ohos.arkui.component.grid4GridC15onReachEndInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 15357850939046952909
+        bodyHash: 17638218678695833735
       },
       info_type: "FuncInfo",
       info: {
@@ -7740,22 +7788,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 342,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 341,
-        column: 53,
+        line: 342,
+        column: 54,
         ignore: false
       },
       identifier: "event",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 342,
         column: 36,
         ignore: false
       },
@@ -7766,8 +7814,8 @@
       annotations: [
 
       ],
-      type: 23,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid15onReachEndInnerHF0uEE5eventE",
+      type: 52,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid15onReachEndInnerHNNat6OptionIF0uEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -7791,14 +7839,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 348,
+        line: 350,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 353,
+        line: 356,
         column: 6,
         ignore: false
       },
@@ -7806,7 +7854,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 348,
+        line: 350,
         column: 20,
         ignore: false
       },
@@ -7817,16 +7865,16 @@
       annotations: [
 
       ],
-      type: 50,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid18onScrollStartInnerHF0uE",
-      exportId: "_CN25ohos.arkui.component.grid4Grid18onScrollStartInnerHF0uE",
-      mangledBeforeSema: "25ohos.arkui.component.grid4GridC18onScrollStartInnerFFu$$H",
+      type: 51,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid18onScrollStartInnerHNNat6OptionIF0uEE",
+      exportId: "_CN25ohos.arkui.component.grid4Grid18onScrollStartInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "25ohos.arkui.component.grid4GridC18onScrollStartInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 3833556172972486396
+        bodyHash: 4276306674993471259
       },
       info_type: "FuncInfo",
       info: {
@@ -7851,22 +7899,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 348,
+        line: 350,
         column: 39,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 348,
-        column: 56,
+        line: 350,
+        column: 57,
         ignore: false
       },
       identifier: "event",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 348,
+        line: 350,
         column: 39,
         ignore: false
       },
@@ -7877,8 +7925,8 @@
       annotations: [
 
       ],
-      type: 23,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid18onScrollStartInnerHF0uEE5eventE",
+      type: 52,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid18onScrollStartInnerHNNat6OptionIF0uEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -7902,14 +7950,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 355,
+        line: 358,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 360,
+        line: 364,
         column: 6,
         ignore: false
       },
@@ -7917,7 +7965,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 355,
+        line: 358,
         column: 20,
         ignore: false
       },
@@ -7928,16 +7976,16 @@
       annotations: [
 
       ],
-      type: 50,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid17onScrollStopInnerHF0uE",
-      exportId: "_CN25ohos.arkui.component.grid4Grid17onScrollStopInnerHF0uE",
-      mangledBeforeSema: "25ohos.arkui.component.grid4GridC17onScrollStopInnerFFu$$H",
+      type: 51,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid17onScrollStopInnerHNNat6OptionIF0uEE",
+      exportId: "_CN25ohos.arkui.component.grid4Grid17onScrollStopInnerHNNat6OptionIF0uEE",
+      mangledBeforeSema: "25ohos.arkui.component.grid4GridC17onScrollStopInnerFO1_Fu$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 13922572709971793680
+        bodyHash: 6147895686142432426
       },
       info_type: "FuncInfo",
       info: {
@@ -7962,22 +8010,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 355,
+        line: 358,
         column: 38,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 355,
-        column: 55,
+        line: 358,
+        column: 56,
         ignore: false
       },
       identifier: "event",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 355,
+        line: 358,
         column: 38,
         ignore: false
       },
@@ -7988,8 +8036,8 @@
       annotations: [
 
       ],
-      type: 23,
-      mangledName: "_CN25ohos.arkui.component.grid4Grid17onScrollStopInnerHF0uEE5eventE",
+      type: 52,
+      mangledName: "_CN25ohos.arkui.component.grid4Grid17onScrollStopInnerHNNat6OptionIF0uEEE5eventIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -8053,7 +8101,7 @@
           ]
         }
       ],
-      type: 52,
+      type: 54,
       mangledName: "_CN25ohos.arkui.component.grid13GridAttributeE",
       exportId: "_CN25ohos.arkui.component.grid13GridAttributeE",
       mangledBeforeSema: "25ohos.arkui.component.grid13GridAttributeI",
@@ -8067,7 +8115,7 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          57
+          59
         ],
         body: [
           123,
@@ -8128,7 +8176,7 @@
           ]
         }
       ],
-      type: 53,
+      type: 55,
       mangledName: "_CN25ohos.arkui.component.grid13GridAttribute15columnsTemplateHNNat6OptionIRNat6StringEE",
       exportId: "_CN25ohos.arkui.component.grid13GridAttribute15columnsTemplateHNNat6OptionIRNat6StringEE",
       mangledBeforeSema: "25ohos.arkui.component.grid13GridAttributeI15columnsTemplateFO1_6String$$13GridAttribute",
@@ -8152,7 +8200,7 @@
               ]
             }
           ],
-          retType: 52
+          retType: 54
         }
       }
     },
@@ -8252,7 +8300,7 @@
           ]
         }
       ],
-      type: 53,
+      type: 55,
       mangledName: "_CN25ohos.arkui.component.grid13GridAttribute12rowsTemplateHNNat6OptionIRNat6StringEE",
       exportId: "_CN25ohos.arkui.component.grid13GridAttribute12rowsTemplateHNNat6OptionIRNat6StringEE",
       mangledBeforeSema: "25ohos.arkui.component.grid13GridAttributeI12rowsTemplateFO1_6String$$13GridAttribute",
@@ -8276,7 +8324,7 @@
               ]
             }
           ],
-          retType: 52
+          retType: 54
         }
       }
     },
@@ -8376,7 +8424,7 @@
           ]
         }
       ],
-      type: 54,
+      type: 56,
       mangledName: "_CN25ohos.arkui.component.grid13GridAttribute10columnsGapHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN25ohos.arkui.component.grid13GridAttribute10columnsGapHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "25ohos.arkui.component.grid13GridAttributeI10columnsGapFO1_6Length$$13GridAttribute",
@@ -8400,7 +8448,7 @@
               ]
             }
           ],
-          retType: 52
+          retType: 54
         }
       }
     },
@@ -8500,7 +8548,7 @@
           ]
         }
       ],
-      type: 54,
+      type: 56,
       mangledName: "_CN25ohos.arkui.component.grid13GridAttribute7rowsGapHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN25ohos.arkui.component.grid13GridAttribute7rowsGapHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "25ohos.arkui.component.grid13GridAttributeI7rowsGapFO1_6Length$$13GridAttribute",
@@ -8524,7 +8572,7 @@
               ]
             }
           ],
-          retType: 52
+          retType: 54
         }
       }
     },
@@ -8624,7 +8672,7 @@
           ]
         }
       ],
-      type: 55,
+      type: 57,
       mangledName: "_CN25ohos.arkui.component.grid13GridAttribute11cachedCountHNNat6OptionIiE",
       exportId: "_CN25ohos.arkui.component.grid13GridAttribute11cachedCountHNNat6OptionIiE",
       mangledBeforeSema: "25ohos.arkui.component.grid13GridAttributeI11cachedCountFO1_i$$13GridAttribute",
@@ -8648,7 +8696,7 @@
               ]
             }
           ],
-          retType: 52
+          retType: 54
         }
       }
     },
@@ -8748,7 +8796,7 @@
           ]
         }
       ],
-      type: 56,
+      type: 58,
       mangledName: "_CN25ohos.arkui.component.grid13GridAttribute11cachedCountHNNat6OptionIiENNatY5_IbE",
       exportId: "_CN25ohos.arkui.component.grid13GridAttribute11cachedCountHNNat6OptionIiENNatY5_IbE",
       mangledBeforeSema: "25ohos.arkui.component.grid13GridAttributeI11cachedCountFO1_iO1_b$$13GridAttribute",
@@ -8774,7 +8822,7 @@
               ]
             }
           ],
-          retType: 52
+          retType: 54
         }
       }
     },

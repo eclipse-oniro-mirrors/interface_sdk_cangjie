@@ -1,21 +1,22 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.settings",
-  pkgDepInfo: "{\"package\":\"ohos.settings\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":53}},{\"file\":\"settings.cj\",\"begin\":{\"line\":18,\"column\":55},\"end\":{\"line\":18,\"column\":70}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":19,\"column\":33},\"end\":{\"line\":19,\"column\":50}},{\"file\":\"settings.cj\",\"begin\":{\"line\":19,\"column\":52},\"end\":{\"line\":19,\"column\":72}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":21}},{\"file\":\"settings_common.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":21}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":30}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.settings\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":53}},{\"file\":\"settings.cj\",\"begin\":{\"line\":20,\"column\":55},\"end\":{\"line\":20,\"column\":70}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":21,\"column\":33},\"end\":{\"line\":21,\"column\":50}},{\"file\":\"settings.cj\",\"begin\":{\"line\":21,\"column\":52},\"end\":{\"line\":21,\"column\":72}},{\"file\":\"settings_common.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":49}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"settings_log.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":31}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":28}},{\"file\":\"settings_common.cj\",\"begin\":{\"line\":20,\"column\":21},\"end\":{\"line\":20,\"column\":29}},{\"file\":\"settings_common.cj\",\"begin\":{\"line\":20,\"column\":31},\"end\":{\"line\":20,\"column\":35}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"settings.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":30}}]}],\"features\":[]}",
   imports: [
-    "std.collection",
     "std.core",
-    "ohos.app.ability.ui_ability"
+    "ohos.app.ability.ui_ability",
+    "ohos.hilog"
   ],
   allFiles: [
     "ohos.settings/settings.cj",
     "ohos.settings/settings_common.cj",
-    "ohos.settings/settings_ffi.cj"
+    "ohos.settings/settings_ffi.cj",
+    "ohos.settings/settings_log.cj"
   ],
   allFileImports: [
     {
@@ -24,14 +25,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 37,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 53,
             ignore: false
           },
@@ -48,14 +49,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 55,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 70,
             ignore: false
           },
@@ -72,14 +73,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 33,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 50,
             ignore: false
           },
@@ -94,14 +95,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 52,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 72,
             ignore: false
           },
@@ -116,36 +117,36 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 21,
+            line: 22,
+            column: 28,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 30,
             ignore: false
           },
@@ -186,22 +187,66 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
-            column: 1,
+            line: 20,
+            column: 21,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
-            column: 21,
+            line: 20,
+            column: 29,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 2,
+            pkgId: 0,
+            line: 20,
+            column: 31,
+            ignore: false
+          },
+          end: {
+            file: 2,
+            pkgId: 0,
+            line: 20,
+            column: 35,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "labels"
+          ],
+          identifier: "Hide",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 2,
+            pkgId: 0,
+            line: 21,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 2,
+            pkgId: 0,
+            line: 21,
+            column: 49,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "business_exception"
+          ],
+          identifier: "BusinessException",
           asIdentifier: ""
         },
         {
@@ -253,24 +298,72 @@
           asIdentifier: ""
         }
       ]
+    },
+    {
+      importSpecs: [
+        {
+          begin: {
+            file: 4,
+            pkgId: 0,
+            line: 20,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 4,
+            pkgId: 0,
+            line: 20,
+            column: 31,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "hilog"
+          ],
+          identifier: "HilogChannel",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 4,
+            pkgId: 0,
+            line: 0,
+            column: 0,
+            ignore: false
+          },
+          end: {
+            file: 4,
+            pkgId: 0,
+            line: 0,
+            column: 0,
+            ignore: false
+          },
+          prefixPaths: [
+            "std",
+            "core"
+          ],
+          identifier: "*",
+          asIdentifier: ""
+        }
+      ]
     }
   ],
   allTypes: [
     {
-      kind: "Int32"
+      kind: "UInt32"
     },
     {
-      kind: "Class",
+      kind: "Func",
       typeArgs: [
-        1,
         3
       ],
-      info_type: "CompositeTyInfo",
+      info_type: "FuncTyInfo",
       info: {
-        declPtr: {
-          decl: "_CNac7HashMapIG_G0_E"
-        }
+        retType: 4
       }
+    },
+    {
+      kind: "Int32"
     },
     {
       kind: "Struct",
@@ -280,7 +373,6 @@
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: 1,
           decl: "_CNat6StringE"
         }
       }
@@ -288,23 +380,13 @@
     {
       kind: "Func",
       typeArgs: [
-        1
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 3
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
         6,
         7,
-        3
+        4
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 3
+        retType: 4
       }
     },
     {
@@ -315,7 +397,7 @@
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: 2,
+          pkgId: 1,
           decl: "_CN27ohos.app.ability.ui_ability16UIAbilityContextE"
         }
       }
@@ -341,22 +423,24 @@
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: 1,
           decl: "_CNat8ToStringE"
         }
       }
     },
     {
+      kind: "Bool"
+    },
+    {
       kind: "Func",
       typeArgs: [
         6,
-        10,
-        3,
-        11
+        11,
+        4,
+        12
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 3
+        retType: 4
       }
     },
     {
@@ -405,7 +489,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 3
+        retType: 4
       }
     },
     {
@@ -417,7 +501,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 21
+          index: 22
         }
       }
     },
@@ -430,7 +514,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 27
+          index: 28
         }
       }
     },
@@ -443,14 +527,14 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 38
+          index: 41
         }
       }
     },
     {
       kind: "CPointer",
       typeArgs: [
-        18
+        19
       ]
     },
     {
@@ -458,15 +542,15 @@
     {
       kind: "Func",
       typeArgs: [
-        17,
-        20,
-        20,
-        20,
-        21
+        18,
+        21,
+        21,
+        21,
+        22
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 20,
+        retType: 21,
         isC: true
       }
     },
@@ -476,8 +560,21 @@
     {
       kind: "CPointer",
       typeArgs: [
-        1
+        3
       ]
+    },
+    {
+      kind: "Class",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: 2,
+          decl: "_CN10ohos.hilog12HilogChannelE"
+        }
+      }
     }
   ],
   allDecls: [
@@ -486,24 +583,24 @@
       isTopLevel: true,
       fullPkgName: "ohos.settings",
       begin: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 24,
+        line: 22,
         column: 1,
         ignore: false
       },
       end: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 24,
-        column: 46,
+        line: 22,
+        column: 27,
         ignore: false
       },
-      identifier: "SYSTEM_INTERNAL_ERROR",
+      identifier: "LOG_CORE",
       identifierPos: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 24,
+        line: 22,
         column: 7,
         ignore: false
       },
@@ -516,14 +613,14 @@
       ],
       type: 1,
       mangledName: "",
-      exportId: "_CN13ohos.settings21SYSTEM_INTERNAL_ERRORE",
-      mangledBeforeSema: "13ohos.settings21SYSTEM_INTERNAL_ERRORV$$i",
+      exportId: "_CN13ohos.settings8LOG_COREE",
+      mangledBeforeSema: "13ohos.settings8LOG_COREV$$j",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 12820464909098194885,
-        bodyHash: 17129447050631405820
+        bodyHash: 15807116581704436618
       },
       info_type: "VarInfo",
       info: {
@@ -536,47 +633,49 @@
       isTopLevel: true,
       fullPkgName: "ohos.settings",
       begin: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 25,
+        line: 23,
         column: 1,
         ignore: false
       },
       end: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 26,
-        column: 88,
+        line: 23,
+        column: 41,
         ignore: false
       },
-      identifier: "ERROR_CODE_MAP",
+      identifier: "SETTINGS_DOMAIN_ID",
       identifierPos: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 25,
-        column: 5,
+        line: 23,
+        column: 7,
         ignore: false
       },
       attributes: [
-        144678138029293872,
+        144678138029293616,
         0
       ],
       annotations: [
 
       ],
-      type: 2,
-      mangledName: "_CN13ohos.settings14ERROR_CODE_MAPE",
-      exportId: "_CN13ohos.settings14ERROR_CODE_MAPE",
-      mangledBeforeSema: "13ohos.settings14ERROR_CODE_MAPV$$",
+      type: 1,
+      mangledName: "",
+      exportId: "_CN13ohos.settings18SETTINGS_DOMAIN_IDE",
+      mangledBeforeSema: "13ohos.settings18SETTINGS_DOMAIN_IDV$$j",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 5194003724801928967
+        srcUse: 12820464909098194885,
+        bodyHash: 8691758236064249168
       },
       info_type: "VarInfo",
       info: {
+        isConst: true,
+        initializer: 2
       }
     },
     {
@@ -590,7 +689,7 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 26,
         column: 1,
         ignore: false
       },
@@ -605,7 +704,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 26,
         column: 6,
         ignore: false
       },
@@ -616,7 +715,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 2,
       mangledName: "_CN13ohos.settings11getErrorMsgHi",
       exportId: "_CN13ohos.settings11getErrorMsgHi",
       mangledBeforeSema: "13ohos.settings11getErrorMsgFi$$6String",
@@ -625,7 +724,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 16072810092557858410
+        bodyHash: 9603574825540674156
       },
       info_type: "FuncInfo",
       info: {
@@ -640,7 +739,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 4
         }
       }
     },
@@ -650,14 +749,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 26,
         column: 18,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 26,
         column: 29,
         ignore: false
       },
@@ -665,7 +764,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 26,
         column: 18,
         ignore: false
       },
@@ -676,7 +775,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 3,
       mangledName: "_CN13ohos.settings11getErrorMsgHiE4codeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -708,15 +807,15 @@
             begin: {
               file: 1,
               pkgId: 0,
-              line: 49,
-              column: 93,
+              line: 54,
+              column: 87,
               ignore: false
             },
             end: {
               file: 1,
               pkgId: 0,
-              line: 49,
-              column: 107,
+              line: 54,
+              column: 106,
               ignore: false
             },
             type: 7,
@@ -729,14 +828,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 70,
+        line: 75,
         column: 2,
         ignore: false
       },
@@ -744,7 +843,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 13,
         ignore: false
       },
@@ -758,16 +857,20 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 2
-            },
-            {
-              name: "stagemodelonly",
+              name: "since",
               expr: 3
             },
             {
               name: "syscap",
               expr: 4
+            },
+            {
+              name: "throwexception",
+              expr: 5
+            },
+            {
+              name: "workerthread",
+              expr: 6
             }
           ]
         }
@@ -779,9 +882,9 @@
       hash: {
         instVar: 0,
         virt: 0,
-        sig: 14624466861967514493,
+        sig: 2950251573950648781,
         srcUse: 0,
-        bodyHash: 4672635829377762879
+        bodyHash: 14900671659244032431
       },
       info_type: "FuncInfo",
       info: {
@@ -800,7 +903,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 4
         }
       }
     },
@@ -810,14 +913,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 22,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 23,
         ignore: false
       },
@@ -825,7 +928,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 22,
         ignore: false
       },
@@ -854,14 +957,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 50,
         ignore: false
       },
@@ -869,7 +972,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 25,
         ignore: false
       },
@@ -901,14 +1004,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 52,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 59,
         ignore: false
       },
@@ -916,7 +1019,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 52,
         ignore: false
       },
@@ -948,14 +1051,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 61,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 77,
         ignore: false
       },
@@ -963,7 +1066,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 54,
         column: 61,
         ignore: false
       },
@@ -974,7 +1077,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 4,
       mangledName: "",
       exportId: "",
       mangledBeforeSema: "",
@@ -1007,18 +1110,18 @@
             begin: {
               file: 1,
               pkgId: 0,
-              line: 84,
-              column: 111,
+              line: 94,
+              column: 105,
               ignore: false
             },
             end: {
               file: 1,
               pkgId: 0,
-              line: 84,
+              line: 94,
               column: 124,
               ignore: false
             },
-            type: 10,
+            type: 11,
             uppers: [
               8
             ]
@@ -1027,18 +1130,18 @@
             begin: {
               file: 1,
               pkgId: 0,
-              line: 85,
+              line: 95,
               column: 5,
               ignore: false
             },
             end: {
               file: 1,
               pkgId: 0,
-              line: 85,
-              column: 19,
+              line: 95,
+              column: 18,
               ignore: false
             },
-            type: 11,
+            type: 12,
             uppers: [
               8
             ]
@@ -1048,14 +1151,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 107,
+        line: 117,
         column: 2,
         ignore: false
       },
@@ -1063,7 +1166,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 13,
         ignore: false
       },
@@ -1077,30 +1180,34 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 5
-            },
-            {
-              name: "stagemodelonly",
-              expr: 6
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 7
+              expr: 8
+            },
+            {
+              name: "throwexception",
+              expr: 9
+            },
+            {
+              name: "workerthread",
+              expr: 10
             }
           ]
         }
       ],
-      type: 9,
+      type: 10,
       mangledName: "",
       exportId: "_CN13ohos.settings8getValueIG_G0_HCN27ohos.app.ability.ui_ability16UIAbilityContextEG_RNat6StringEG0_",
       mangledBeforeSema: "13ohos.settings8getValue<1T1P>F16UIAbilityContext1T6String1P$$6String",
       hash: {
         instVar: 0,
         virt: 0,
-        sig: 9335375171295733991,
+        sig: 10918753526874352416,
         srcUse: 0,
-        bodyHash: 573912329408252606
+        bodyHash: 15657035418758824632
       },
       info_type: "FuncInfo",
       info: {
@@ -1121,7 +1228,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 4
         }
       }
     },
@@ -1131,14 +1238,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 22,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 23,
         ignore: false
       },
@@ -1146,52 +1253,8 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 22,
-        ignore: false
-      },
-      attributes: [
-        562949953421312,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 10,
-      mangledName: "",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      }
-    },
-    {
-      kind: "GenericParamDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 26,
-        ignore: false
-      },
-      identifier: "P",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 25,
         ignore: false
       },
       attributes: [
@@ -1214,19 +1277,63 @@
       }
     },
     {
+      kind: "GenericParamDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 26,
+        ignore: false
+      },
+      identifier: "P",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 25,
+        ignore: false
+      },
+      attributes: [
+        562949953421312,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 12,
+      mangledName: "",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      }
+    },
+    {
       kind: "FuncParam",
       fullPkgName: "ohos.settings",
       begin: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 53,
         ignore: false
       },
@@ -1234,7 +1341,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 28,
         ignore: false
       },
@@ -1266,14 +1373,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 55,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 62,
         ignore: false
       },
@@ -1281,102 +1388,8 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 94,
         column: 55,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 10,
-      mangledName: "",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 64,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 80,
-        ignore: false
-      },
-      identifier: "defValue",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 64,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 3,
-      mangledName: "",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 82,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 95,
-        ignore: false
-      },
-      identifier: "domainName",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 84,
-        column: 82,
         ignore: false
       },
       attributes: [
@@ -1402,6 +1415,100 @@
       }
     },
     {
+      kind: "FuncParam",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 64,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 80,
+        ignore: false
+      },
+      identifier: "defValue",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 64,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 4,
+      mangledName: "",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 82,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 95,
+        ignore: false
+      },
+      identifier: "domainName",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 82,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 12,
+      mangledName: "",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
       kind: "EnumDecl",
       isTopLevel: true,
       fullPkgName: "ohos.settings",
@@ -1419,7 +1526,7 @@
       end: {
         file: 2,
         pkgId: 0,
-        line: 70,
+        line: 75,
         column: 2,
         ignore: false
       },
@@ -1441,30 +1548,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 8
-            },
-            {
-              name: "stagemodelonly",
-              expr: 9
+              name: "since",
+              expr: 11
             },
             {
               name: "syscap",
-              expr: 10
+              expr: 12
             }
           ]
         }
       ],
-      type: 12,
+      type: 13,
       mangledName: "_CN13ohos.settings10DomainNameE",
       exportId: "_CN13ohos.settings10DomainNameE",
       mangledBeforeSema: "13ohos.settings10DomainNameU",
       hash: {
-        instVar: 17406923358558832645,
+        instVar: 386211790040977856,
         virt: 0,
         sig: 16676675738088800124,
         srcUse: 0,
-        bodyHash: 15428055429972372394
+        bodyHash: 3328671998024438227
       },
       info_type: "EnumInfo",
       info: {
@@ -1474,14 +1577,15 @@
         body: [
           18,
           19,
-          20
+          20,
+          21
         ],
         nonExhaustive: true,
         ellipsisPos: {
           file: 2,
           pkgId: 0,
-          line: 53,
-          column: 7,
+          line: 58,
+          column: 6,
           ignore: false
         }
       }
@@ -1492,14 +1596,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 41,
+        line: 39,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 41,
+        line: 39,
         column: 17,
         ignore: false
       },
@@ -1507,7 +1611,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 41,
+        line: 39,
         column: 5,
         ignore: false
       },
@@ -1521,21 +1625,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 11
-            },
-            {
-              name: "stagemodelonly",
-              expr: 12
+              name: "since",
+              expr: 13
             },
             {
               name: "syscap",
-              expr: 13
+              expr: 14
             }
           ]
         }
       ],
-      type: 12,
+      type: 13,
       mangledName: "",
       exportId: "_CN13ohos.settings10DomainName12DeviceSharedKE",
       mangledBeforeSema: "13ohos.settings10DomainNameU12DeviceSharedV$$",
@@ -1544,7 +1644,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
       },
       info_type: "VarInfo",
       info: {
@@ -1556,14 +1656,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 52,
+        line: 49,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 52,
+        line: 49,
         column: 17,
         ignore: false
       },
@@ -1571,7 +1671,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 52,
+        line: 49,
         column: 5,
         ignore: false
       },
@@ -1585,11 +1685,7 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 14
-            },
-            {
-              name: "stagemodelonly",
+              name: "since",
               expr: 15
             },
             {
@@ -1599,7 +1695,7 @@
           ]
         }
       ],
-      type: 12,
+      type: 13,
       mangledName: "",
       exportId: "_CN13ohos.settings10DomainName12UserPropertyKE",
       mangledBeforeSema: "13ohos.settings10DomainNameU12UserPropertyV$$",
@@ -1608,7 +1704,60 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 57,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 57,
+        column: 17,
+        ignore: false
+      },
+      identifier: "UserSecurity",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 57,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 13,
+      mangledName: "",
+      exportId: "_CN13ohos.settings10DomainName12UserSecurityKE",
+      mangledBeforeSema: "13ohos.settings10DomainNameU12UserSecurityV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 278686036974424893
       },
       info_type: "VarInfo",
       info: {
@@ -1624,14 +1773,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 63,
+        line: 68,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 69,
+        line: 74,
         column: 6,
         ignore: false
       },
@@ -1639,7 +1788,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 63,
+        line: 68,
         column: 26,
         ignore: false
       },
@@ -1653,21 +1802,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 17
             },
             {
-              name: "stagemodelonly",
-              expr: 18
-            },
-            {
               name: "syscap",
-              expr: 19
+              expr: 18
             }
           ]
         }
       ],
-      type: 13,
+      type: 14,
       mangledName: "_CN13ohos.settings10DomainName8toStringHv",
       exportId: "_CN13ohos.settings10DomainName8toStringHv",
       mangledBeforeSema: "13ohos.settings10DomainNameU8toStringF$$6String",
@@ -1676,7 +1821,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4985026102781393080
+        bodyHash: 7800469425030160490
       },
       info_type: "FuncInfo",
       info: {
@@ -1691,7 +1836,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 4
         }
       }
     },
@@ -1706,14 +1851,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 82,
+        line: 84,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 147,
+        line: 146,
         column: 2,
         ignore: false
       },
@@ -1721,7 +1866,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 82,
+        line: 84,
         column: 13,
         ignore: false
       },
@@ -1735,21 +1880,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 20
-            },
-            {
-              name: "stagemodelonly",
-              expr: 21
+              name: "since",
+              expr: 19
             },
             {
               name: "syscap",
-              expr: 22
+              expr: 20
             }
           ]
         }
       ],
-      type: 14,
+      type: 15,
       mangledName: "_CN13ohos.settings4DateE",
       exportId: "_CN13ohos.settings4DateE",
       mangledBeforeSema: "13ohos.settings4DateU",
@@ -1758,7 +1899,7 @@
         virt: 0,
         sig: 16676675738088800124,
         srcUse: 0,
-        bodyHash: 15428055429972372394
+        bodyHash: 3328671998024438227
       },
       info_type: "EnumInfo",
       info: {
@@ -1766,17 +1907,17 @@
           8
         ],
         body: [
-          22,
           23,
           24,
           25,
-          26
+          26,
+          27
         ],
         nonExhaustive: true,
         ellipsisPos: {
           file: 2,
           pkgId: 0,
-          line: 128,
+          line: 127,
           column: 7,
           ignore: false
         }
@@ -1817,21 +1958,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 23
-            },
-            {
-              name: "stagemodelonly",
-              expr: 24
+              name: "since",
+              expr: 21
             },
             {
               name: "syscap",
-              expr: 25
+              expr: 22
             }
           ]
         }
       ],
-      type: 14,
+      type: 15,
       mangledName: "",
       exportId: "_CN13ohos.settings4Date10DateFormatKE",
       mangledBeforeSema: "13ohos.settings4DateU10DateFormatV$$",
@@ -1840,7 +1977,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
       },
       info_type: "VarInfo",
       info: {
@@ -1852,14 +1989,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 104,
+        line: 103,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 104,
+        line: 103,
         column: 15,
         ignore: false
       },
@@ -1867,7 +2004,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 104,
+        line: 103,
         column: 5,
         ignore: false
       },
@@ -1881,11 +2018,127 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 26
+              name: "since",
+              expr: 23
             },
             {
-              name: "stagemodelonly",
+              name: "syscap",
+              expr: 24
+            }
+          ]
+        }
+      ],
+      type: 15,
+      mangledName: "",
+      exportId: "_CN13ohos.settings4Date10TimeFormatKE",
+      mangledBeforeSema: "13ohos.settings4DateU10TimeFormatV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 115,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 115,
+        column: 17,
+        ignore: false
+      },
+      identifier: "AutoGainTime",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 115,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 25
+            },
+            {
+              name: "syscap",
+              expr: 26
+            }
+          ]
+        }
+      ],
+      type: 15,
+      mangledName: "",
+      exportId: "_CN13ohos.settings4Date12AutoGainTimeKE",
+      mangledBeforeSema: "13ohos.settings4DateU12AutoGainTimeV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 126,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 126,
+        column: 21,
+        ignore: false
+      },
+      identifier: "AutoGainTimeZone",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 126,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
               expr: 27
             },
             {
@@ -1895,135 +2148,7 @@
           ]
         }
       ],
-      type: 14,
-      mangledName: "",
-      exportId: "_CN13ohos.settings4Date10TimeFormatKE",
-      mangledBeforeSema: "13ohos.settings4DateU10TimeFormatV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 116,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 116,
-        column: 17,
-        ignore: false
-      },
-      identifier: "AutoGainTime",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 116,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        4429186080,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 29
-            },
-            {
-              name: "stagemodelonly",
-              expr: 30
-            },
-            {
-              name: "syscap",
-              expr: 31
-            }
-          ]
-        }
-      ],
-      type: 14,
-      mangledName: "",
-      exportId: "_CN13ohos.settings4Date12AutoGainTimeKE",
-      mangledBeforeSema: "13ohos.settings4DateU12AutoGainTimeV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 127,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 127,
-        column: 21,
-        ignore: false
-      },
-      identifier: "AutoGainTimeZone",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 127,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        4429186080,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 32
-            },
-            {
-              name: "stagemodelonly",
-              expr: 33
-            },
-            {
-              name: "syscap",
-              expr: 34
-            }
-          ]
-        }
-      ],
-      type: 14,
+      type: 15,
       mangledName: "",
       exportId: "_CN13ohos.settings4Date16AutoGainTimeZoneKE",
       mangledBeforeSema: "13ohos.settings4DateU16AutoGainTimeZoneV$$",
@@ -2032,7 +2157,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
       },
       info_type: "VarInfo",
       info: {
@@ -2048,14 +2173,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 138,
+        line: 137,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 146,
+        line: 145,
         column: 6,
         ignore: false
       },
@@ -2063,7 +2188,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 138,
+        line: 137,
         column: 26,
         ignore: false
       },
@@ -2077,21 +2202,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 35
-            },
-            {
-              name: "stagemodelonly",
-              expr: 36
+              name: "since",
+              expr: 29
             },
             {
               name: "syscap",
-              expr: 37
+              expr: 30
             }
           ]
         }
       ],
-      type: 13,
+      type: 14,
       mangledName: "_CN13ohos.settings4Date8toStringHv",
       exportId: "_CN13ohos.settings4Date8toStringHv",
       mangledBeforeSema: "13ohos.settings4DateU8toStringF$$6String",
@@ -2100,7 +2221,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 863537901775599767
+        bodyHash: 14225368652175274666
       },
       info_type: "FuncInfo",
       info: {
@@ -2115,7 +2236,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 4
         }
       }
     },
@@ -2130,14 +2251,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 160,
+        line: 156,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 287,
+        line: 294,
         column: 2,
         ignore: false
       },
@@ -2145,7 +2266,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 160,
+        line: 156,
         column: 13,
         ignore: false
       },
@@ -2159,30 +2280,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 38
-            },
-            {
-              name: "stagemodelonly",
-              expr: 39
+              name: "since",
+              expr: 31
             },
             {
               name: "syscap",
-              expr: 40
+              expr: 32
             }
           ]
         }
       ],
-      type: 15,
+      type: 16,
       mangledName: "_CN13ohos.settings7DisplayE",
       exportId: "_CN13ohos.settings7DisplayE",
       mangledBeforeSema: "13ohos.settings7DisplayU",
       hash: {
-        instVar: 11252121224901995898,
+        instVar: 9058646115061665706,
         virt: 0,
         sig: 16676675738088800124,
         srcUse: 0,
-        bodyHash: 15428055429972372394
+        bodyHash: 3328671998024438227
       },
       info_type: "EnumInfo",
       info: {
@@ -2190,7 +2307,6 @@
           8
         ],
         body: [
-          28,
           29,
           30,
           31,
@@ -2199,13 +2315,16 @@
           34,
           35,
           36,
-          37
+          37,
+          38,
+          39,
+          40
         ],
         nonExhaustive: true,
         ellipsisPos: {
           file: 2,
           pkgId: 0,
-          line: 263,
+          line: 270,
           column: 7,
           ignore: false
         }
@@ -2217,14 +2336,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 164,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 164,
         column: 14,
         ignore: false
       },
@@ -2232,7 +2351,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 164,
         column: 5,
         ignore: false
       },
@@ -2246,21 +2365,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 41
-            },
-            {
-              name: "stagemodelonly",
-              expr: 42
+              name: "since",
+              expr: 33
             },
             {
               name: "syscap",
-              expr: 43
+              expr: 34
             }
           ]
         }
       ],
-      type: 15,
+      type: 16,
       mangledName: "",
       exportId: "_CN13ohos.settings7Display9FontScaleKE",
       mangledBeforeSema: "13ohos.settings7DisplayU9FontScaleV$$",
@@ -2269,7 +2384,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
       },
       info_type: "VarInfo",
       info: {
@@ -2281,14 +2396,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 182,
+        line: 173,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 182,
+        line: 173,
         column: 27,
         ignore: false
       },
@@ -2296,7 +2411,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 182,
+        line: 173,
         column: 5,
         ignore: false
       },
@@ -2310,11 +2425,367 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 44
+              name: "since",
+              expr: 35
             },
             {
-              name: "stagemodelonly",
+              name: "syscap",
+              expr: 36
+            }
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "",
+      exportId: "_CN13ohos.settings7Display22ScreenBrightnessStatusKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU22ScreenBrightnessStatusV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 184,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 184,
+        column: 25,
+        ignore: false
+      },
+      identifier: "AutoScreenBrightness",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 184,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 37
+            },
+            {
+              name: "syscap",
+              expr: 38
+            }
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "",
+      exportId: "_CN13ohos.settings7Display20AutoScreenBrightnessKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU20AutoScreenBrightnessV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 190,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 190,
+        column: 29,
+        ignore: false
+      },
+      identifier: "AutoScreenBrightnessMode",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 190,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "",
+      exportId: "_CN13ohos.settings7Display24AutoScreenBrightnessModeKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU24AutoScreenBrightnessModeV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 278686036974424893
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 203,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 203,
+        column: 31,
+        ignore: false
+      },
+      identifier: "ManualScreenBrightnessMode",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 203,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        },
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 39
+            },
+            {
+              name: "syscap",
+              expr: 40
+            }
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "",
+      exportId: "_CN13ohos.settings7Display26ManualScreenBrightnessModeKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU26ManualScreenBrightnessModeV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 8981528235336786878
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 212,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 212,
+        column: 21,
+        ignore: false
+      },
+      identifier: "ScreenOffTimeout",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 212,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 41
+            },
+            {
+              name: "syscap",
+              expr: 42
+            }
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "",
+      exportId: "_CN13ohos.settings7Display16ScreenOffTimeoutKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU16ScreenOffTimeoutV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 227,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 227,
+        column: 26,
+        ignore: false
+      },
+      identifier: "DefaultScreenRotation",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 227,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 43
+            },
+            {
+              name: "syscap",
+              expr: 44
+            }
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "",
+      exportId: "_CN13ohos.settings7Display21DefaultScreenRotationKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU21DefaultScreenRotationV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 238,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 238,
+        column: 26,
+        ignore: false
+      },
+      identifier: "AnimatorDurationScale",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 238,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
               expr: 45
             },
             {
@@ -2324,16 +2795,16 @@
           ]
         }
       ],
-      type: 15,
+      type: 16,
       mangledName: "",
-      exportId: "_CN13ohos.settings7Display22ScreenBrightnessStatusKE",
-      mangledBeforeSema: "13ohos.settings7DisplayU22ScreenBrightnessStatusV$$",
+      exportId: "_CN13ohos.settings7Display21AnimatorDurationScaleKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU21AnimatorDurationScaleV$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
       },
       info_type: "VarInfo",
       info: {
@@ -2345,22 +2816,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 193,
+        line: 248,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 193,
-        column: 25,
+        line: 248,
+        column: 29,
         ignore: false
       },
-      identifier: "AutoScreenBrightness",
+      identifier: "TransitionAnimationScale",
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 193,
+        line: 248,
         column: 5,
         ignore: false
       },
@@ -2374,30 +2845,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 47
             },
             {
-              name: "stagemodelonly",
-              expr: 48
-            },
-            {
               name: "syscap",
-              expr: 49
+              expr: 48
             }
           ]
         }
       ],
-      type: 15,
+      type: 16,
       mangledName: "",
-      exportId: "_CN13ohos.settings7Display20AutoScreenBrightnessKE",
-      mangledBeforeSema: "13ohos.settings7DisplayU20AutoScreenBrightnessV$$",
+      exportId: "_CN13ohos.settings7Display24TransitionAnimationScaleKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU24TransitionAnimationScaleV$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
       },
       info_type: "VarInfo",
       info: {
@@ -2409,22 +2876,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 204,
+        line: 258,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 204,
-        column: 21,
+        line: 258,
+        column: 25,
         ignore: false
       },
-      identifier: "ScreenOffTimeout",
+      identifier: "WindowAnimationScale",
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 204,
+        line: 258,
         column: 5,
         ignore: false
       },
@@ -2438,11 +2905,67 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 50
+              name: "since",
+              expr: 49
             },
             {
-              name: "stagemodelonly",
+              name: "syscap",
+              expr: 50
+            }
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "",
+      exportId: "_CN13ohos.settings7Display20WindowAnimationScaleKE",
+      mangledBeforeSema: "13ohos.settings7DisplayU20WindowAnimationScaleV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 9727061524383018100
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 269,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 269,
+        column: 27,
+        ignore: false
+      },
+      identifier: "DisplayInversionStatus",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 269,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        4429186080,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
               expr: 51
             },
             {
@@ -2452,327 +2975,7 @@
           ]
         }
       ],
-      type: 15,
-      mangledName: "",
-      exportId: "_CN13ohos.settings7Display16ScreenOffTimeoutKE",
-      mangledBeforeSema: "13ohos.settings7DisplayU16ScreenOffTimeoutV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 215,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 215,
-        column: 26,
-        ignore: false
-      },
-      identifier: "DefaultScreenRotation",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 215,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        4429186080,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 53
-            },
-            {
-              name: "stagemodelonly",
-              expr: 54
-            },
-            {
-              name: "syscap",
-              expr: 55
-            }
-          ]
-        }
-      ],
-      type: 15,
-      mangledName: "",
-      exportId: "_CN13ohos.settings7Display21DefaultScreenRotationKE",
-      mangledBeforeSema: "13ohos.settings7DisplayU21DefaultScreenRotationV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 226,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 226,
-        column: 26,
-        ignore: false
-      },
-      identifier: "AnimatorDurationScale",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 226,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        4429186080,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 56
-            },
-            {
-              name: "stagemodelonly",
-              expr: 57
-            },
-            {
-              name: "syscap",
-              expr: 58
-            }
-          ]
-        }
-      ],
-      type: 15,
-      mangledName: "",
-      exportId: "_CN13ohos.settings7Display21AnimatorDurationScaleKE",
-      mangledBeforeSema: "13ohos.settings7DisplayU21AnimatorDurationScaleV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 238,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 238,
-        column: 29,
-        ignore: false
-      },
-      identifier: "TransitionAnimationScale",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 238,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        4429186080,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 59
-            },
-            {
-              name: "stagemodelonly",
-              expr: 60
-            },
-            {
-              name: "syscap",
-              expr: 61
-            }
-          ]
-        }
-      ],
-      type: 15,
-      mangledName: "",
-      exportId: "_CN13ohos.settings7Display24TransitionAnimationScaleKE",
-      mangledBeforeSema: "13ohos.settings7DisplayU24TransitionAnimationScaleV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 250,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 250,
-        column: 25,
-        ignore: false
-      },
-      identifier: "WindowAnimationScale",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 250,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        4429186080,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 62
-            },
-            {
-              name: "stagemodelonly",
-              expr: 63
-            },
-            {
-              name: "syscap",
-              expr: 64
-            }
-          ]
-        }
-      ],
-      type: 15,
-      mangledName: "",
-      exportId: "_CN13ohos.settings7Display20WindowAnimationScaleKE",
-      mangledBeforeSema: "13ohos.settings7DisplayU20WindowAnimationScaleV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.settings",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 262,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 262,
-        column: 27,
-        ignore: false
-      },
-      identifier: "DisplayInversionStatus",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 262,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        4429186080,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 65
-            },
-            {
-              name: "stagemodelonly",
-              expr: 66
-            },
-            {
-              name: "syscap",
-              expr: 67
-            }
-          ]
-        }
-      ],
-      type: 15,
+      type: 16,
       mangledName: "",
       exportId: "_CN13ohos.settings7Display22DisplayInversionStatusKE",
       mangledBeforeSema: "13ohos.settings7DisplayU22DisplayInversionStatusV$$",
@@ -2781,7 +2984,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 3861301843929900366
+        bodyHash: 9727061524383018100
       },
       info_type: "VarInfo",
       info: {
@@ -2797,14 +3000,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 273,
+        line: 280,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 286,
+        line: 293,
         column: 6,
         ignore: false
       },
@@ -2812,7 +3015,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 273,
+        line: 280,
         column: 26,
         ignore: false
       },
@@ -2826,21 +3029,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 68
-            },
-            {
-              name: "stagemodelonly",
-              expr: 69
+              name: "since",
+              expr: 53
             },
             {
               name: "syscap",
-              expr: 70
+              expr: 54
             }
           ]
         }
       ],
-      type: 13,
+      type: 14,
       mangledName: "_CN13ohos.settings7Display8toStringHv",
       exportId: "_CN13ohos.settings7Display8toStringHv",
       mangledBeforeSema: "13ohos.settings7DisplayU8toStringF$$6String",
@@ -2849,7 +3048,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6795798207122987254
+        bodyHash: 12359994244883001346
       },
       info_type: "FuncInfo",
       info: {
@@ -2864,7 +3063,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 4
         }
       }
     },
@@ -2875,14 +3074,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 1,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 35,
         ignore: false
       },
@@ -2890,7 +3089,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 6,
         ignore: false
       },
@@ -2901,7 +3100,7 @@
       annotations: [
 
       ],
-      type: 16,
+      type: 17,
       mangledName: "",
       exportId: "_CN13ohos.settings12StageContextE",
       mangledBeforeSema: "13ohos.settings12StageContextT",
@@ -2914,7 +3113,7 @@
       },
       info_type: "AliasInfo",
       info: {
-        aliasedTy: 17
+        aliasedTy: 18
       }
     },
     {
@@ -2928,14 +3127,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 39,
         ignore: false
       },
@@ -2943,7 +3142,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 10,
         ignore: false
       },
@@ -2954,7 +3153,7 @@
       annotations: [
 
       ],
-      type: 19,
+      type: 20,
       mangledName: "FfiSettingsGetValue",
       exportId: "FfiSettingsGetValue",
       mangledBeforeSema: "13ohos.settings19FfiSettingsGetValueF12StageContext7CString7CString7CString8CPointer<i>$$7CString",
@@ -2971,11 +3170,11 @@
           paramLists: [
             {
               params: [
-                40,
-                41,
-                42,
                 43,
-                44
+                44,
+                45,
+                46,
+                47
               ],
               desugars: [
                 0,
@@ -2986,7 +3185,7 @@
               ]
             }
           ],
-          retType: 20
+          retType: 21
         }
       }
     },
@@ -2996,14 +3195,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 30,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 51,
         ignore: false
       },
@@ -3011,7 +3210,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 30,
         ignore: false
       },
@@ -3022,7 +3221,7 @@
       annotations: [
 
       ],
-      type: 17,
+      type: 18,
       mangledName: "_CN13ohos.settings19FfiSettingsGetValueHPukkkPiE7contextIuE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3043,14 +3242,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 53,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 66,
         ignore: false
       },
@@ -3058,7 +3257,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 53,
         ignore: false
       },
@@ -3069,7 +3268,7 @@
       annotations: [
 
       ],
-      type: 20,
+      type: 21,
       mangledName: "_CN13ohos.settings19FfiSettingsGetValueHPukkkPiE4nameE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3090,14 +3289,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 68,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 82,
         ignore: false
       },
@@ -3105,7 +3304,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 68,
         ignore: false
       },
@@ -3116,7 +3315,7 @@
       annotations: [
 
       ],
-      type: 20,
+      type: 21,
       mangledName: "_CN13ohos.settings19FfiSettingsGetValueHPukkkPiE5valueE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3137,14 +3336,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 84,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 103,
         ignore: false
       },
@@ -3152,7 +3351,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 84,
         ignore: false
       },
@@ -3163,7 +3362,7 @@
       annotations: [
 
       ],
-      type: 20,
+      type: 21,
       mangledName: "_CN13ohos.settings19FfiSettingsGetValueHPukkkPiE10domainNameE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3184,14 +3383,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 29,
         ignore: false
       },
@@ -3199,7 +3398,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 9,
         ignore: false
       },
@@ -3210,7 +3409,7 @@
       annotations: [
 
       ],
-      type: 21,
+      type: 22,
       mangledName: "_CN13ohos.settings19FfiSettingsGetValueHPukkkPiE3retIiE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3224,29 +3423,99 @@
       info_type: "ParamInfo",
       info: {
       }
+    },
+    {
+      kind: "VarDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.settings",
+      begin: {
+        file: 4,
+        pkgId: 0,
+        line: 24,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 4,
+        pkgId: 0,
+        line: 24,
+        column: 77,
+        ignore: false
+      },
+      identifier: "SETTINGS_LOG",
+      identifierPos: {
+        file: 4,
+        pkgId: 0,
+        line: 24,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        144678138029293872,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 23,
+      mangledName: "_CN13ohos.settings12SETTINGS_LOGE",
+      exportId: "_CN13ohos.settings12SETTINGS_LOGE",
+      mangledBeforeSema: "13ohos.settings12SETTINGS_LOGV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 3074659342989441944
+      },
+      info_type: "VarInfo",
+      info: {
+      }
     }
   ],
   allExprs: [
     {
       kind: "LitConstExpr",
       begin: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 24,
-        column: 38,
+        line: 22,
+        column: 26,
         ignore: false
       },
       end: {
-        file: 1,
+        file: 4,
         pkgId: 0,
-        line: 24,
-        column: 46,
+        line: 22,
+        column: 27,
         ignore: false
       },
       type: 1,
       info_type: "LitConstInfo",
       info: {
-        strValue: "14700104"
+        strValue: "0"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 4,
+        pkgId: 0,
+        line: 23,
+        column: 36,
+        ignore: false
+      },
+      end: {
+        file: 4,
+        pkgId: 0,
+        line: 23,
+        column: 41,
+        ignore: false
+      },
+      type: 1,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "0x500"
       }
     },
     {
@@ -3254,20 +3523,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 45,
-        column: 5,
+        line: 49,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 45,
-        column: 7,
+        line: 49,
+        column: 16,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3275,39 +3546,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 46,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 46,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 47,
+        line: 50,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 50,
         column: 58,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3319,38 +3569,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 80,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 80,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 81,
+        line: 51,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 81,
+        line: 51,
         column: 25,
         ignore: false
       },
+      type: 9,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -3362,17 +3592,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 82,
+        line: 52,
+        column: 19,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 52,
+        column: 23,
+        ignore: false
+      },
+      type: 9,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 89,
+        column: 12,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 89,
+        column: 16,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 90,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 82,
+        line: 90,
         column: 58,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3382,22 +3659,47 @@
     {
       kind: "LitConstExpr",
       begin: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 26,
-        column: 5,
+        line: 91,
+        column: 21,
         ignore: false
       },
       end: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 26,
-        column: 7,
+        line: 91,
+        column: 25,
         ignore: false
       },
+      type: 9,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 92,
+        column: 19,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 92,
+        column: 23,
+        ignore: false
+      },
+      type: 9,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
       }
     },
     {
@@ -3406,20 +3708,21 @@
         file: 2,
         pkgId: 0,
         line: 27,
-        column: 21,
+        column: 12,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 27,
-        column: 25,
+        column: 16,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3438,9 +3741,33 @@
         column: 58,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 36,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 36,
+        column: 20,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -3450,59 +3777,17 @@
         file: 2,
         pkgId: 0,
         line: 37,
-        column: 9,
+        column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 37,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 38,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 38,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 39,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 39,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3514,20 +3799,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 48,
-        column: 9,
+        line: 46,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 48,
-        column: 11,
+        line: 46,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3535,39 +3822,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 49,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 49,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 50,
+        line: 47,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 50,
+        line: 47,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3579,20 +3845,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 59,
-        column: 9,
+        line: 65,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 59,
-        column: 11,
+        line: 65,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3600,39 +3868,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 60,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 60,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 61,
+        line: 66,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 61,
+        line: 66,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3644,20 +3891,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 78,
-        column: 5,
+        line: 81,
+        column: 12,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 78,
-        column: 7,
+        line: 81,
+        column: 16,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3665,39 +3914,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 79,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 79,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 80,
+        line: 82,
         column: 13,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 80,
+        line: 82,
         column: 58,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3709,42 +3937,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 89,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 89,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
         line: 90,
-        column: 25,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 90,
-        column: 29,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3763,6 +3971,7 @@
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3775,19 +3984,21 @@
         file: 2,
         pkgId: 0,
         line: 100,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 100,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3796,38 +4007,17 @@
         file: 2,
         pkgId: 0,
         line: 101,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 101,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 102,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 102,
+        line: 101,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3840,19 +4030,21 @@
         file: 2,
         pkgId: 0,
         line: 112,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 112,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3861,38 +4053,17 @@
         file: 2,
         pkgId: 0,
         line: 113,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 113,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 114,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 114,
+        line: 113,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3905,19 +4076,21 @@
         file: 2,
         pkgId: 0,
         line: 123,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 123,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3926,38 +4099,17 @@
         file: 2,
         pkgId: 0,
         line: 124,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 124,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 125,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 125,
+        line: 124,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -3970,19 +4122,21 @@
         file: 2,
         pkgId: 0,
         line: 134,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 134,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3991,38 +4145,17 @@
         file: 2,
         pkgId: 0,
         line: 135,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 135,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 136,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 136,
+        line: 135,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4034,20 +4167,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 156,
-        column: 5,
+        line: 153,
+        column: 12,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 156,
-        column: 7,
+        line: 153,
+        column: 16,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4055,39 +4190,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 157,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 157,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 158,
+        line: 154,
         column: 13,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 158,
+        line: 154,
         column: 58,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4099,20 +4213,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 167,
-        column: 9,
+        line: 161,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 167,
-        column: 11,
+        line: 161,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4120,39 +4236,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 168,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 168,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 169,
+        line: 162,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 169,
+        line: 162,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4164,20 +4259,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 178,
-        column: 9,
+        line: 170,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 178,
-        column: 11,
+        line: 170,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4185,39 +4282,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 179,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 179,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 180,
+        line: 171,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 180,
+        line: 171,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4229,20 +4305,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 189,
-        column: 9,
+        line: 181,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 189,
-        column: 11,
+        line: 181,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4250,39 +4328,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 190,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 190,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 191,
+        line: 182,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 191,
+        line: 182,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4295,19 +4352,21 @@
         file: 2,
         pkgId: 0,
         line: 200,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 200,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4316,38 +4375,17 @@
         file: 2,
         pkgId: 0,
         line: 201,
-        column: 25,
+        column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 201,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 202,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 202,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4359,63 +4397,21 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 211,
-        column: 9,
+        line: 209,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 211,
-        column: 11,
+        line: 209,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 212,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 212,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 213,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 213,
-        column: 62,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Applications.Settings.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -4424,42 +4420,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 222,
-        column: 9,
+        line: 210,
+        column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 222,
-        column: 11,
+        line: 210,
+        column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 223,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 223,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "SystemCapability.Applications.Settings.Core",
+        constKind: "String"
       }
     },
     {
@@ -4468,16 +4444,40 @@
         file: 2,
         pkgId: 0,
         line: 224,
-        column: 17,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 224,
+        column: 20,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 225,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 225,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4489,42 +4489,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 234,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 234,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
         line: 235,
-        column: 25,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 235,
-        column: 29,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4543,9 +4523,33 @@
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 245,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 245,
+        column: 20,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -4555,59 +4559,17 @@
         file: 2,
         pkgId: 0,
         line: 246,
-        column: 9,
+        column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 246,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 247,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 247,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 248,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 248,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4619,20 +4581,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 258,
-        column: 9,
+        line: 255,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 258,
-        column: 11,
+        line: 255,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4640,39 +4604,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 259,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 259,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 260,
+        line: 256,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 260,
+        line: 256,
         column: 62,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",
@@ -4684,20 +4627,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 269,
-        column: 9,
+        line: 266,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 269,
-        column: 11,
+        line: 266,
+        column: 20,
         ignore: false
       },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -4705,39 +4650,64 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 270,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 270,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 271,
+        line: 267,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 271,
+        line: 267,
         column: 62,
         ignore: false
       },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Applications.Settings.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 277,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 277,
+        column: 20,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 278,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 278,
+        column: 62,
+        ignore: false
+      },
+      type: 4,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Settings.Core",

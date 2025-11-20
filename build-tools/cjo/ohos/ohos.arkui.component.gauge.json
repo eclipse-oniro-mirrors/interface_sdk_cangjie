@@ -787,12 +787,23 @@
       kind: "Bool"
     },
     {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 3,
+        isC: true
+      }
+    },
+    {
       kind: "UInt32"
     },
     {
       kind: "Func",
       typeArgs: [
-        22,
+        23,
         6
       ],
       info_type: "FuncTyInfo",
@@ -809,7 +820,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 55
+          index: 56
         }
       }
     },
@@ -820,7 +831,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 24
+        retType: 25
       }
     },
     {
@@ -830,7 +841,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 24
+        retType: 25
       }
     },
     {
@@ -885,7 +896,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 66
+          index: 67
         }
       }
     },
@@ -896,7 +907,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 31
+        retType: 32
       }
     },
     {
@@ -906,7 +917,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 31
+        retType: 32
       }
     },
     {
@@ -929,7 +940,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 77
+          index: 78
         }
       }
     },
@@ -948,14 +959,14 @@
     {
       kind: "Func",
       typeArgs: [
-        38,
-        38,
-        38,
-        28
+        39,
+        39,
+        39,
+        29
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 35
+        retType: 36
       }
     },
     {
@@ -973,44 +984,44 @@
     {
       kind: "Func",
       typeArgs: [
-        38
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 38
+        retType: 39
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        38,
-        38
+        39,
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 38
+        retType: 39
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        38,
-        38,
-        38
+        39,
+        39,
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 28
+        retType: 29
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        38
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
@@ -1022,7 +1033,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 77
+          index: 78
         },
         isThisTy: true
       }
@@ -1030,17 +1041,17 @@
     {
       kind: "Func",
       typeArgs: [
-        45
+        46
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        46
+        47
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1052,7 +1063,7 @@
     {
       kind: "Struct",
       typeArgs: [
-        47
+        48
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1064,7 +1075,7 @@
     {
       kind: "Tuple",
       typeArgs: [
-        48,
+        49,
         10
       ]
     },
@@ -1084,17 +1095,17 @@
     {
       kind: "Func",
       typeArgs: [
-        50
+        51
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        51
+        52
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1106,7 +1117,7 @@
     {
       kind: "Struct",
       typeArgs: [
-        52
+        53
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1118,7 +1129,7 @@
     {
       kind: "Tuple",
       typeArgs: [
-        53,
+        54,
         10
       ]
     },
@@ -1138,17 +1149,17 @@
     {
       kind: "Func",
       typeArgs: [
-        55
+        56
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        48
+        49
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1160,17 +1171,17 @@
     {
       kind: "Func",
       typeArgs: [
-        57
+        58
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        53
+        54
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1181,18 +1192,18 @@
     },
     {
       kind: "Func",
-      typeArgs: [
-        59
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 43
-      }
-    },
-    {
-      kind: "Enum",
       typeArgs: [
         60
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 44
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+        61
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1217,13 +1228,13 @@
     {
       kind: "Func",
       typeArgs: [
-        38,
-        38,
-        38
+        39,
+        39,
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
@@ -1233,24 +1244,24 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 38
+        retType: 39
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        64,
-        59
+        65,
+        60
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        65
+        66
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1279,33 +1290,33 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 64
+        retType: 65
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        64
+        65
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 59
+        retType: 60
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        69
+        70
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 43
+        retType: 44
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        28
+        29
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1317,7 +1328,7 @@
     {
       kind: "Class",
       typeArgs: [
-        35
+        36
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1336,107 +1347,107 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 126
+          index: 127
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        38
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        45
+        46
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        50
+        51
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        55
+        56
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        57
+        58
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        59
+        60
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        38,
-        38,
-        38
+        39,
+        39,
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        64,
-        59
+        65,
+        60
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        69
+        70
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 71
+        retType: 72
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        71
+        72
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3250,14 +3261,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 70,
+        line: 72,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 75,
+        line: 77,
         column: 2,
         ignore: false
       },
@@ -3265,7 +3276,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 70,
+        line: 72,
         column: 8,
         ignore: false
       },
@@ -3293,9 +3304,9 @@
 
         ],
         body: [
-          50,
           51,
-          52
+          52,
+          53
         ]
       }
     },
@@ -4099,19 +4110,84 @@
       }
     },
     {
+      kind: "FuncDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.arkui.component.gauge",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 68,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 68,
+        column: 53,
+        ignore: false
+      },
+      identifier: "FfiOHOSAceFrameworkGaugeResetColors",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 68,
+        column: 10,
+        ignore: false
+      },
+      attributes: [
+        144968409101123632,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 22,
+      mangledName: "FfiOHOSAceFrameworkGaugeResetColors",
+      exportId: "FfiOHOSAceFrameworkGaugeResetColors",
+      mangledBeforeSema: "26ohos.arkui.component.gauge35FfiOHOSAceFrameworkGaugeResetColorsF$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 7222278799635774413,
+        bodyHash: 0
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 3
+        }
+      }
+    },
+    {
       kind: "VarDecl",
       fullPkgName: "ohos.arkui.component.gauge",
       begin: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 26,
         ignore: false
       },
@@ -4119,7 +4195,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 13,
         ignore: false
       },
@@ -4130,7 +4206,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 23,
       mangledName: "",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeColorStop5colorK_E",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeColorStopS5color$$j",
@@ -4152,14 +4228,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 75,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 75,
         column: 28,
         ignore: false
       },
@@ -4167,7 +4243,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 75,
         column: 13,
         ignore: false
       },
@@ -4204,14 +4280,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 71,
+        line: 73,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 76,
         column: 9,
         ignore: false
       },
@@ -4219,7 +4295,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 71,
+        line: 73,
         column: 5,
         ignore: false
       },
@@ -4230,7 +4306,7 @@
       annotations: [
 
       ],
-      type: 23,
+      type: 24,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeColorStop6<init>Hjd",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeColorStop6<init>Hjd",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeColorStopS14GaugeColorStopYj!L5colord!L6offset",
@@ -4247,8 +4323,8 @@
           paramLists: [
             {
               params: [
-                53,
-                54
+                54,
+                55
               ],
               desugars: [
                 0,
@@ -4266,14 +4342,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 26,
         ignore: false
       },
@@ -4281,7 +4357,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 13,
         ignore: false
       },
@@ -4292,7 +4368,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 23,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeColorStop4initHjdE5colorE",
       exportId: "",
       mangledBeforeSema: "",
@@ -4314,14 +4390,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 75,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 75,
         column: 28,
         ignore: false
       },
@@ -4329,7 +4405,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 75,
         column: 13,
         ignore: false
       },
@@ -4367,14 +4443,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 79,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 102,
         column: 2,
         ignore: false
       },
@@ -4382,7 +4458,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 79,
         column: 7,
         ignore: false
       },
@@ -4393,7 +4469,7 @@
       annotations: [
 
       ],
-      type: 24,
+      type: 25,
       mangledName: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientE",
       exportId: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientE",
       mangledBeforeSema: "26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientC",
@@ -4407,15 +4483,15 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          30
+          31
         ],
         body: [
-          56,
           57,
-          59,
-          61,
-          64,
-          65
+          58,
+          60,
+          62,
+          65,
+          66
         ]
       }
     },
@@ -4425,14 +4501,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 80,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 80,
         column: 65,
         ignore: false
       },
@@ -4440,7 +4516,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 80,
         column: 17,
         ignore: false
       },
@@ -4476,14 +4552,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 82,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 82,
+        line: 84,
         column: 6,
         ignore: false
       },
@@ -4491,7 +4567,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 82,
         column: 5,
         ignore: false
       },
@@ -4502,7 +4578,7 @@
       annotations: [
 
       ],
-      type: 25,
+      type: 26,
       mangledName: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient6<init>HPu",
       exportId: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient6<init>HPu",
       mangledBeforeSema: "26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientC6<init>F37VectorNativeGaugeLinearGradientHandle$$",
@@ -4511,7 +4587,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 9480003049918206075
+        bodyHash: 16157868384080505998
       },
       info_type: "FuncInfo",
       info: {
@@ -4519,14 +4595,14 @@
           paramLists: [
             {
               params: [
-                58
+                59
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 24
+          retType: 25
         }
       }
     },
@@ -4536,14 +4612,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 82,
         column: 10,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 82,
         column: 52,
         ignore: false
       },
@@ -4551,7 +4627,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 82,
         column: 10,
         ignore: false
       },
@@ -4587,14 +4663,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 86,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 86,
+        line: 88,
         column: 6,
         ignore: false
       },
@@ -4602,7 +4678,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 86,
         column: 5,
         ignore: false
       },
@@ -4613,7 +4689,7 @@
       annotations: [
 
       ],
-      type: 26,
+      type: 27,
       mangledName: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient6<init>Hl",
       exportId: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient6<init>Hl",
       mangledBeforeSema: "26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientC6<init>Fl$$",
@@ -4622,7 +4698,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 7907657780422072142
+        bodyHash: 8965017900063239049
       },
       info_type: "FuncInfo",
       info: {
@@ -4630,14 +4706,14 @@
           paramLists: [
             {
               params: [
-                60
+                61
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 24
+          retType: 25
         }
       }
     },
@@ -4647,14 +4723,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 86,
         column: 10,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 86,
         column: 21,
         ignore: false
       },
@@ -4662,7 +4738,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 86,
         column: 10,
         ignore: false
       },
@@ -4698,14 +4774,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 90,
+        line: 92,
         column: 6,
         ignore: false
       },
@@ -4713,7 +4789,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 10,
         ignore: false
       },
@@ -4724,7 +4800,7 @@
       annotations: [
 
       ],
-      type: 27,
+      type: 28,
       mangledName: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient10setElementHlPu",
       exportId: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient10setElementHlPu",
       mangledBeforeSema: "26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientC10setElementFl16VectorColorStops$$u",
@@ -4733,7 +4809,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 13662164449853356466
+        bodyHash: 11865466395841234913
       },
       info_type: "FuncInfo",
       info: {
@@ -4741,8 +4817,8 @@
           paramLists: [
             {
               params: [
-                62,
-                63
+                63,
+                64
               ],
               desugars: [
                 0,
@@ -4760,14 +4836,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 33,
         ignore: false
       },
@@ -4775,7 +4851,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 21,
         ignore: false
       },
@@ -4807,14 +4883,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 35,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 58,
         ignore: false
       },
@@ -4822,7 +4898,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 35,
         ignore: false
       },
@@ -4858,14 +4934,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 93,
+        line: 95,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 95,
+        line: 97,
         column: 6,
         ignore: false
       },
@@ -4873,7 +4949,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 93,
+        line: 95,
         column: 10,
         ignore: false
       },
@@ -4884,7 +4960,7 @@
       annotations: [
 
       ],
-      type: 28,
+      type: 29,
       mangledName: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient4freeHv",
       exportId: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient4freeHv",
       mangledBeforeSema: "26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientC4freeF$$u",
@@ -4893,7 +4969,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 11360302916961125795
+        bodyHash: 8910435924069630528
       },
       info_type: "FuncInfo",
       info: {
@@ -4922,14 +4998,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 99,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 99,
+        line: 101,
         column: 6,
         ignore: false
       },
@@ -4937,7 +5013,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 99,
         column: 10,
         ignore: false
       },
@@ -4948,7 +5024,7 @@
       annotations: [
 
       ],
-      type: 29,
+      type: 30,
       mangledName: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient15getNativeHandleHv",
       exportId: "_CN26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradient15getNativeHandleHv",
       mangledBeforeSema: "26ohos.arkui.component.gauge28FFIVectorGaugeLinearGradientC15getNativeHandleF$$37VectorNativeGaugeLinearGradientHandle",
@@ -4957,7 +5033,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 5979753768588707018
+        bodyHash: 8855293250714528350
       },
       info_type: "FuncInfo",
       info: {
@@ -4987,14 +5063,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 102,
+        line: 104,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 127,
         column: 2,
         ignore: false
       },
@@ -5002,7 +5078,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 102,
+        line: 104,
         column: 7,
         ignore: false
       },
@@ -5013,7 +5089,7 @@
       annotations: [
 
       ],
-      type: 31,
+      type: 32,
       mangledName: "_CN26ohos.arkui.component.gauge19FFIVectorColorStopsE",
       exportId: "_CN26ohos.arkui.component.gauge19FFIVectorColorStopsE",
       mangledBeforeSema: "26ohos.arkui.component.gauge19FFIVectorColorStopsC",
@@ -5027,15 +5103,15 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          30
+          31
         ],
         body: [
-          67,
           68,
-          70,
-          72,
-          75,
-          76
+          69,
+          71,
+          73,
+          76,
+          77
         ]
       }
     },
@@ -5045,14 +5121,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 103,
+        line: 105,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 103,
+        line: 105,
         column: 44,
         ignore: false
       },
@@ -5060,7 +5136,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 103,
+        line: 105,
         column: 17,
         ignore: false
       },
@@ -5096,14 +5172,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 105,
+        line: 107,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 107,
+        line: 109,
         column: 6,
         ignore: false
       },
@@ -5111,7 +5187,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 105,
+        line: 107,
         column: 5,
         ignore: false
       },
@@ -5122,7 +5198,7 @@
       annotations: [
 
       ],
-      type: 32,
+      type: 33,
       mangledName: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops6<init>HPu",
       exportId: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops6<init>HPu",
       mangledBeforeSema: "26ohos.arkui.component.gauge19FFIVectorColorStopsC6<init>F16VectorColorStops$$",
@@ -5131,7 +5207,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 12454578539346066017
+        bodyHash: 9652394220964107526
       },
       info_type: "FuncInfo",
       info: {
@@ -5139,14 +5215,14 @@
           paramLists: [
             {
               params: [
-                69
+                70
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 31
+          retType: 32
         }
       }
     },
@@ -5156,14 +5232,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 105,
+        line: 107,
         column: 10,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 105,
+        line: 107,
         column: 31,
         ignore: false
       },
@@ -5171,7 +5247,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 105,
+        line: 107,
         column: 10,
         ignore: false
       },
@@ -5207,14 +5283,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 111,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 113,
         column: 6,
         ignore: false
       },
@@ -5222,7 +5298,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 111,
         column: 5,
         ignore: false
       },
@@ -5233,7 +5309,7 @@
       annotations: [
 
       ],
-      type: 33,
+      type: 34,
       mangledName: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops6<init>Hl",
       exportId: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops6<init>Hl",
       mangledBeforeSema: "26ohos.arkui.component.gauge19FFIVectorColorStopsC6<init>Fl$$",
@@ -5242,7 +5318,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 1904019249968791780
+        bodyHash: 5323362067236885104
       },
       info_type: "FuncInfo",
       info: {
@@ -5250,14 +5326,14 @@
           paramLists: [
             {
               params: [
-                71
+                72
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 31
+          retType: 32
         }
       }
     },
@@ -5267,14 +5343,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 111,
         column: 10,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 111,
         column: 21,
         ignore: false
       },
@@ -5282,7 +5358,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 111,
         column: 10,
         ignore: false
       },
@@ -5318,14 +5394,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 117,
         column: 6,
         ignore: false
       },
@@ -5333,7 +5409,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 10,
         ignore: false
       },
@@ -5344,7 +5420,7 @@
       annotations: [
 
       ],
-      type: 34,
+      type: 35,
       mangledName: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops10setElementHlRNY_14GaugeColorStopE",
       exportId: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops10setElementHlRNY_14GaugeColorStopE",
       mangledBeforeSema: "26ohos.arkui.component.gauge19FFIVectorColorStopsC10setElementFl14GaugeColorStop$$u",
@@ -5353,7 +5429,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 14879456782797122834
+        bodyHash: 5192986828764566075
       },
       info_type: "FuncInfo",
       info: {
@@ -5361,8 +5437,8 @@
           paramLists: [
             {
               params: [
-                73,
-                74
+                74,
+                75
               ],
               desugars: [
                 0,
@@ -5380,14 +5456,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 33,
         ignore: false
       },
@@ -5395,7 +5471,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 21,
         ignore: false
       },
@@ -5427,14 +5503,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 35,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 56,
         ignore: false
       },
@@ -5442,7 +5518,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 115,
         column: 35,
         ignore: false
       },
@@ -5478,14 +5554,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 118,
+        line: 120,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 122,
         column: 6,
         ignore: false
       },
@@ -5493,7 +5569,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 118,
+        line: 120,
         column: 10,
         ignore: false
       },
@@ -5504,7 +5580,7 @@
       annotations: [
 
       ],
-      type: 28,
+      type: 29,
       mangledName: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops4freeHv",
       exportId: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops4freeHv",
       mangledBeforeSema: "26ohos.arkui.component.gauge19FFIVectorColorStopsC4freeF$$u",
@@ -5513,7 +5589,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 5195871353103376958
+        bodyHash: 17241724675108148252
       },
       info_type: "FuncInfo",
       info: {
@@ -5542,14 +5618,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 124,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 126,
         column: 6,
         ignore: false
       },
@@ -5557,7 +5633,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 124,
         column: 10,
         ignore: false
       },
@@ -5568,7 +5644,7 @@
       annotations: [
 
       ],
-      type: 29,
+      type: 30,
       mangledName: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops15getNativeHandleHv",
       exportId: "_CN26ohos.arkui.component.gauge19FFIVectorColorStops15getNativeHandleHv",
       mangledBeforeSema: "26ohos.arkui.component.gauge19FFIVectorColorStopsC15getNativeHandleF$$16VectorColorStops",
@@ -5577,7 +5653,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 12492946016901164405
+        bodyHash: 1598123604006356555
       },
       info_type: "FuncInfo",
       info: {
@@ -5607,14 +5683,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 134,
+        line: 136,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 397,
+        line: 407,
         column: 2,
         ignore: false
       },
@@ -5622,7 +5698,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 134,
+        line: 136,
         column: 14,
         ignore: false
       },
@@ -5646,7 +5722,7 @@
           ]
         }
       ],
-      type: 35,
+      type: 36,
       mangledName: "_CN26ohos.arkui.component.gauge5GaugeE",
       exportId: "_CN26ohos.arkui.component.gauge5GaugeE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC",
@@ -5660,22 +5736,22 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          70,
-          71
+          71,
+          72
         ],
         body: [
-          78,
-          92,
-          94,
-          96,
-          98,
-          100,
-          102,
-          104,
-          106,
-          108,
-          118,
-          124
+          79,
+          93,
+          95,
+          97,
+          99,
+          101,
+          103,
+          105,
+          107,
+          109,
+          119,
+          125
         ]
       }
     },
@@ -5689,14 +5765,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 153,
+        line: 155,
         column: 6,
         ignore: false
       },
@@ -5704,7 +5780,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 12,
         ignore: false
       },
@@ -5728,7 +5804,7 @@
           ]
         }
       ],
-      type: 37,
+      type: 38,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6<init>HNNat6OptionIdEY3_Y3_F0uE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge6<init>HNNat6OptionIdEY3_Y3_F0uE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC6<init>FO1_d!5valueO1_d!3min=O1_d!3max=Fu!5child=$$",
@@ -5737,7 +5813,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7707885927780564414
+        bodyHash: 11686003700415195981
       },
       info_type: "FuncInfo",
       info: {
@@ -5745,20 +5821,20 @@
           paramLists: [
             {
               params: [
-                79,
                 80,
-                83,
-                87
-              ],
-              desugars: [
-                0,
                 81,
                 84,
                 88
+              ],
+              desugars: [
+                0,
+                82,
+                85,
+                89
               ]
             }
           ],
-          retType: 35
+          retType: 36
         }
       }
     },
@@ -5768,14 +5844,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 33,
         ignore: false
       },
@@ -5783,7 +5859,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
@@ -5794,7 +5870,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE5valueIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5816,14 +5892,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 35,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 56,
         ignore: false
       },
@@ -5831,7 +5907,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 35,
         ignore: false
       },
@@ -5842,7 +5918,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE3minIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5868,14 +5944,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 52,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 56,
         ignore: false
       },
@@ -5894,7 +5970,7 @@
       annotations: [
 
       ],
-      type: 39,
+      type: 40,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE3minHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -5911,14 +5987,14 @@
           paramLists: [
             {
               params: [
-                82
+                83
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 38
+          retType: 39
         }
       }
     },
@@ -5928,14 +6004,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 33,
         ignore: false
       },
@@ -5943,7 +6019,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
@@ -5954,7 +6030,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE5min.1HY3_E5valueIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5975,14 +6051,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 58,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 79,
         ignore: false
       },
@@ -5990,7 +6066,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 58,
         ignore: false
       },
@@ -6001,7 +6077,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE3maxIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6027,14 +6103,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 75,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 79,
         ignore: false
       },
@@ -6053,7 +6129,7 @@
       annotations: [
 
       ],
-      type: 40,
+      type: 41,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE3maxHY3_Y3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -6070,8 +6146,8 @@
           paramLists: [
             {
               params: [
-                85,
-                86
+                86,
+                87
               ],
               desugars: [
                 0,
@@ -6079,7 +6155,7 @@
               ]
             }
           ],
-          retType: 38
+          retType: 39
         }
       }
     },
@@ -6089,14 +6165,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 33,
         ignore: false
       },
@@ -6104,7 +6180,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
@@ -6115,7 +6191,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE5max.2HY3_Y3_E5valueIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6136,14 +6212,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 35,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 56,
         ignore: false
       },
@@ -6151,7 +6227,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 35,
         ignore: false
       },
@@ -6162,7 +6238,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE5max.2HY3_Y3_E3minIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6183,14 +6259,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 81,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 108,
         ignore: false
       },
@@ -6198,7 +6274,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 81,
         ignore: false
       },
@@ -6209,7 +6285,7 @@
       annotations: [
 
       ],
-      type: 28,
+      type: 29,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE5childE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6235,14 +6311,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 102,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 108,
         ignore: false
       },
@@ -6261,7 +6337,7 @@
       annotations: [
 
       ],
-      type: 41,
+      type: 42,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE5childHY3_Y3_Y3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -6278,9 +6354,9 @@
           paramLists: [
             {
               params: [
-                89,
                 90,
-                91
+                91,
+                92
               ],
               desugars: [
                 0,
@@ -6289,7 +6365,7 @@
               ]
             }
           ],
-          retType: 28
+          retType: 29
         }
       }
     },
@@ -6299,14 +6375,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 33,
         ignore: false
       },
@@ -6314,7 +6390,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 17,
         ignore: false
       },
@@ -6325,7 +6401,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE7child.3HY3_Y3_Y3_E5valueIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6346,14 +6422,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 35,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 56,
         ignore: false
       },
@@ -6361,7 +6437,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 35,
         ignore: false
       },
@@ -6372,7 +6448,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE7child.3HY3_Y3_Y3_E3minIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6393,14 +6469,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 58,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 79,
         ignore: false
       },
@@ -6408,7 +6484,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 148,
+        line: 150,
         column: 58,
         ignore: false
       },
@@ -6419,7 +6495,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge4initHNNat6OptionIdEY3_Y3_F0uEE7child.3HY3_Y3_Y3_E3maxIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6444,14 +6520,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 167,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 170,
+        line: 172,
         column: 6,
         ignore: false
       },
@@ -6459,7 +6535,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 167,
         column: 17,
         ignore: false
       },
@@ -6483,7 +6559,7 @@
           ]
         }
       ],
-      type: 42,
+      type: 43,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge5valueHNNat6OptionIdE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge5valueHNNat6OptionIdE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC5valueFO1_d$$H",
@@ -6492,7 +6568,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12221469091537194849
+        bodyHash: 6461072783431568807
       },
       info_type: "FuncInfo",
       info: {
@@ -6500,14 +6576,14 @@
           paramLists: [
             {
               params: [
-                93
+                94
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6517,14 +6593,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 167,
         column: 23,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 167,
         column: 38,
         ignore: false
       },
@@ -6532,7 +6608,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 167,
         column: 23,
         ignore: false
       },
@@ -6543,7 +6619,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge5valueHNNat6OptionIdEEY2_IdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6568,14 +6644,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 184,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 187,
+        line: 189,
         column: 6,
         ignore: false
       },
@@ -6583,7 +6659,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 184,
         column: 17,
         ignore: false
       },
@@ -6607,7 +6683,7 @@
           ]
         }
       ],
-      type: 42,
+      type: 43,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge10startAngleHNNat6OptionIdE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge10startAngleHNNat6OptionIdE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC10startAngleFO1_d$$H",
@@ -6616,7 +6692,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14244376672493067691
+        bodyHash: 9081390395349110340
       },
       info_type: "FuncInfo",
       info: {
@@ -6624,14 +6700,14 @@
           paramLists: [
             {
               params: [
-                95
+                96
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6641,14 +6717,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 184,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 184,
         column: 43,
         ignore: false
       },
@@ -6656,7 +6732,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 184,
         column: 28,
         ignore: false
       },
@@ -6667,7 +6743,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge10startAngleHNNat6OptionIdEE5angleIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6692,14 +6768,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 201,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 204,
+        line: 206,
         column: 6,
         ignore: false
       },
@@ -6707,7 +6783,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 201,
         column: 17,
         ignore: false
       },
@@ -6731,7 +6807,7 @@
           ]
         }
       ],
-      type: 42,
+      type: 43,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge8endAngleHNNat6OptionIdE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge8endAngleHNNat6OptionIdE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC8endAngleFO1_d$$H",
@@ -6740,7 +6816,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8051819616674936820
+        bodyHash: 868108661776219675
       },
       info_type: "FuncInfo",
       info: {
@@ -6748,14 +6824,14 @@
           paramLists: [
             {
               params: [
-                97
+                98
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6765,14 +6841,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 201,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 201,
         column: 41,
         ignore: false
       },
@@ -6780,7 +6856,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 201,
         column: 26,
         ignore: false
       },
@@ -6791,7 +6867,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge8endAngleHNNat6OptionIdEE5angleIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6816,14 +6892,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 219,
+        line: 220,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 237,
+        line: 241,
         column: 6,
         ignore: false
       },
@@ -6831,7 +6907,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 219,
+        line: 220,
         column: 17,
         ignore: false
       },
@@ -6855,7 +6931,7 @@
           ]
         }
       ],
-      type: 44,
+      type: 45,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionIRNat5ArrayIT1_CN9ohos.base13ResourceColorEiEEE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionIRNat5ArrayIT1_CN9ohos.base13ResourceColorEiEEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC6colorsFO1_5Array<T2_13ResourceColori>$$H",
@@ -6864,7 +6940,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4641199384042209827
+        bodyHash: 9793584288912572546
       },
       info_type: "FuncInfo",
       info: {
@@ -6872,14 +6948,14 @@
           paramLists: [
             {
               params: [
-                99
+                100
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -6889,14 +6965,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 219,
+        line: 220,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 219,
+        line: 220,
         column: 61,
         ignore: false
       },
@@ -6904,7 +6980,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 219,
+        line: 220,
         column: 24,
         ignore: false
       },
@@ -6915,7 +6991,7 @@
       annotations: [
 
       ],
-      type: 45,
+      type: 46,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionIRNat5ArrayIT1_CN9ohos.base13ResourceColorEiEEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6940,14 +7016,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 250,
+        line: 253,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 283,
+        line: 289,
         column: 6,
         ignore: false
       },
@@ -6955,7 +7031,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 250,
+        line: 253,
         column: 17,
         ignore: false
       },
@@ -6979,7 +7055,7 @@
           ]
         }
       ],
-      type: 49,
+      type: 50,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionIRNat5ArrayIT1_CN31ohos.arkui.component.data_panel14LinearGradientEiEEE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionIRNat5ArrayIT1_CN31ohos.arkui.component.data_panel14LinearGradientEiEEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC6colorsFO1_5Array<T2_14LinearGradienti>$$H",
@@ -6988,7 +7064,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 3465301454394598045
+        bodyHash: 1668791086050736197
       },
       info_type: "FuncInfo",
       info: {
@@ -6996,14 +7072,14 @@
           paramLists: [
             {
               params: [
-                101
+                102
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -7013,14 +7089,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 250,
+        line: 253,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 250,
+        line: 253,
         column: 62,
         ignore: false
       },
@@ -7028,7 +7104,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 250,
+        line: 253,
         column: 24,
         ignore: false
       },
@@ -7039,7 +7115,7 @@
       annotations: [
 
       ],
-      type: 50,
+      type: 51,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionIRNat5ArrayIT1_CN31ohos.arkui.component.data_panel14LinearGradientEiEEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7064,14 +7140,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 296,
+        line: 301,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 301,
+        line: 309,
         column: 6,
         ignore: false
       },
@@ -7079,7 +7155,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 296,
+        line: 301,
         column: 17,
         ignore: false
       },
@@ -7103,7 +7179,7 @@
           ]
         }
       ],
-      type: 54,
+      type: 55,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC6colorsFO1_13ResourceColor$$H",
@@ -7112,7 +7188,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 774893975415849097
+        bodyHash: 13569555040608334519
       },
       info_type: "FuncInfo",
       info: {
@@ -7120,14 +7196,14 @@
           paramLists: [
             {
               params: [
-                103
+                104
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -7137,14 +7213,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 296,
+        line: 301,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 296,
+        line: 301,
         column: 45,
         ignore: false
       },
@@ -7152,7 +7228,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 296,
+        line: 301,
         column: 24,
         ignore: false
       },
@@ -7163,7 +7239,7 @@
       annotations: [
 
       ],
-      type: 55,
+      type: 56,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7188,14 +7264,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 314,
+        line: 321,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 319,
+        line: 329,
         column: 6,
         ignore: false
       },
@@ -7203,7 +7279,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 314,
+        line: 321,
         column: 17,
         ignore: false
       },
@@ -7227,7 +7303,7 @@
           ]
         }
       ],
-      type: 56,
+      type: 57,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionICN31ohos.arkui.component.data_panel14LinearGradientEE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionICN31ohos.arkui.component.data_panel14LinearGradientEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC6colorsFO1_14LinearGradient$$H",
@@ -7236,7 +7312,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 9481280113126587705
+        bodyHash: 1709252310882473598
       },
       info_type: "FuncInfo",
       info: {
@@ -7244,14 +7320,14 @@
           paramLists: [
             {
               params: [
-                105
+                106
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -7261,14 +7337,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 314,
+        line: 321,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 314,
+        line: 321,
         column: 46,
         ignore: false
       },
@@ -7276,7 +7352,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 314,
+        line: 321,
         column: 24,
         ignore: false
       },
@@ -7287,7 +7363,7 @@
       annotations: [
 
       ],
-      type: 57,
+      type: 58,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge6colorsHNNat6OptionICN31ohos.arkui.component.data_panel14LinearGradientEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7312,14 +7388,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 341,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 337,
+        line: 347,
         column: 6,
         ignore: false
       },
@@ -7327,7 +7403,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 341,
         column: 17,
         ignore: false
       },
@@ -7351,7 +7427,7 @@
           ]
         }
       ],
-      type: 58,
+      type: 59,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11strokeWidthHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge11strokeWidthHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC11strokeWidthFO1_6Length$$H",
@@ -7360,7 +7436,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13913969324990143162
+        bodyHash: 16605050180657477605
       },
       info_type: "FuncInfo",
       info: {
@@ -7368,14 +7444,14 @@
           paramLists: [
             {
               params: [
-                107
+                108
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -7385,14 +7461,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 341,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 341,
         column: 44,
         ignore: false
       },
@@ -7400,7 +7476,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 341,
         column: 29,
         ignore: false
       },
@@ -7411,7 +7487,7 @@
       annotations: [
 
       ],
-      type: 59,
+      type: 60,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11strokeWidthHNNat6OptionICN9ohos.base6LengthEEE6lengthIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7436,14 +7512,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 356,
+        line: 366,
         column: 6,
         ignore: false
       },
@@ -7451,7 +7527,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 17,
         ignore: false
       },
@@ -7475,7 +7551,7 @@
           ]
         }
       ],
-      type: 61,
+      type: 62,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC11trackShadowFO1_d!6radius=O1_d!7offsetX=O1_d!7offsetY=$$H",
@@ -7484,7 +7560,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4405914432942618566
+        bodyHash: 17237398221473615204
       },
       info_type: "FuncInfo",
       info: {
@@ -7492,18 +7568,18 @@
           paramLists: [
             {
               params: [
-                109,
-                111,
-                114
-              ],
-              desugars: [
                 110,
                 112,
                 115
+              ],
+              desugars: [
+                111,
+                113,
+                116
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -7513,14 +7589,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 53,
         ignore: false
       },
@@ -7528,7 +7604,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 29,
         ignore: false
       },
@@ -7539,7 +7615,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E6radiusIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7565,14 +7641,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 49,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 53,
         ignore: false
       },
@@ -7591,7 +7667,7 @@
       annotations: [
 
       ],
-      type: 62,
+      type: 63,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E6radiusHv",
       exportId: "",
       mangledBeforeSema: "",
@@ -7615,7 +7691,7 @@
               ]
             }
           ],
-          retType: 38
+          retType: 39
         }
       }
     },
@@ -7625,14 +7701,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 55,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 80,
         ignore: false
       },
@@ -7640,7 +7716,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 55,
         ignore: false
       },
@@ -7651,7 +7727,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E7offsetXIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7677,14 +7753,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 76,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 80,
         ignore: false
       },
@@ -7703,7 +7779,7 @@
       annotations: [
 
       ],
-      type: 39,
+      type: 40,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E7offsetXHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -7720,14 +7796,14 @@
           paramLists: [
             {
               params: [
-                113
+                114
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 38
+          retType: 39
         }
       }
     },
@@ -7737,14 +7813,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 53,
         ignore: false
       },
@@ -7752,7 +7828,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 29,
         ignore: false
       },
@@ -7763,7 +7839,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E9offsetX.1HY3_E6radiusIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7784,14 +7860,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 82,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 107,
         ignore: false
       },
@@ -7799,7 +7875,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 82,
         ignore: false
       },
@@ -7810,7 +7886,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E7offsetYIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7836,14 +7912,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 103,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 107,
         ignore: false
       },
@@ -7862,7 +7938,7 @@
       annotations: [
 
       ],
-      type: 40,
+      type: 41,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E7offsetYHY3_Y3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -7879,8 +7955,8 @@
           paramLists: [
             {
               params: [
-                116,
-                117
+                117,
+                118
               ],
               desugars: [
                 0,
@@ -7888,7 +7964,7 @@
               ]
             }
           ],
-          retType: 38
+          retType: 39
         }
       }
     },
@@ -7898,14 +7974,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 53,
         ignore: false
       },
@@ -7913,7 +7989,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 29,
         ignore: false
       },
@@ -7924,7 +8000,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E9offsetY.2HY3_Y3_E6radiusIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7945,14 +8021,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 55,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 80,
         ignore: false
       },
@@ -7960,7 +8036,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 351,
+        line: 361,
         column: 55,
         ignore: false
       },
@@ -7971,7 +8047,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11trackShadowHNNat6OptionIdEY3_Y3_E9offsetY.2HY3_Y3_E7offsetXIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7996,14 +8072,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 378,
+        line: 388,
         column: 6,
         ignore: false
       },
@@ -8011,7 +8087,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 17,
         ignore: false
       },
@@ -8035,7 +8111,7 @@
           ]
         }
       ],
-      type: 63,
+      type: 64,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC9indicatorFO1_11ResourceStr!4icon=O1_6Length!5space=$$H",
@@ -8044,7 +8120,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6663935615592000347
+        bodyHash: 6776696480688991515
       },
       info_type: "FuncInfo",
       info: {
@@ -8052,16 +8128,16 @@
           paramLists: [
             {
               params: [
-                119,
-                121
-              ],
-              desugars: [
                 120,
                 122
+              ],
+              desugars: [
+                121,
+                123
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -8071,14 +8147,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 53,
         ignore: false
       },
@@ -8086,7 +8162,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 27,
         ignore: false
       },
@@ -8097,7 +8173,7 @@
       annotations: [
 
       ],
-      type: 64,
+      type: 65,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEEE4iconIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8123,14 +8199,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 49,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 53,
         ignore: false
       },
@@ -8149,7 +8225,7 @@
       annotations: [
 
       ],
-      type: 66,
+      type: 67,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEEE4iconHv",
       exportId: "",
       mangledBeforeSema: "",
@@ -8173,7 +8249,7 @@
               ]
             }
           ],
-          retType: 64
+          retType: 65
         }
       }
     },
@@ -8183,14 +8259,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 55,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 77,
         ignore: false
       },
@@ -8198,7 +8274,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 55,
         ignore: false
       },
@@ -8209,7 +8285,7 @@
       annotations: [
 
       ],
-      type: 59,
+      type: 60,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEEE5spaceIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8235,14 +8311,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 73,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 77,
         ignore: false
       },
@@ -8261,7 +8337,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 68,
       mangledName: "_CPI26ohos.arkui.component.gauge5Gauge9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEEE5spaceHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -8278,14 +8354,14 @@
           paramLists: [
             {
               params: [
-                123
+                124
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 59
+          retType: 60
         }
       }
     },
@@ -8295,14 +8371,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 53,
         ignore: false
       },
@@ -8310,7 +8386,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 369,
+        line: 379,
         column: 27,
         ignore: false
       },
@@ -8321,7 +8397,7 @@
       annotations: [
 
       ],
-      type: 64,
+      type: 65,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEEE7space.1HY3_E4iconIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8346,14 +8422,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 390,
+        line: 400,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 396,
+        line: 406,
         column: 6,
         ignore: false
       },
@@ -8361,7 +8437,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 390,
+        line: 400,
         column: 17,
         ignore: false
       },
@@ -8385,7 +8461,7 @@
           ]
         }
       ],
-      type: 68,
+      type: 69,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11descriptionHNNat6OptionIF0uEE",
       exportId: "_CN26ohos.arkui.component.gauge5Gauge11descriptionHNNat6OptionIF0uEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge5GaugeC11descriptionFO1_13CustomBuilder$$H",
@@ -8394,7 +8470,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17613501249623750227
+        bodyHash: 11750379421994087092
       },
       info_type: "FuncInfo",
       info: {
@@ -8402,14 +8478,14 @@
           paramLists: [
             {
               params: [
-                125
+                126
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 43
+          retType: 44
         }
       }
     },
@@ -8419,14 +8495,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 390,
+        line: 400,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 390,
+        line: 400,
         column: 52,
         ignore: false
       },
@@ -8434,7 +8510,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 390,
+        line: 400,
         column: 29,
         ignore: false
       },
@@ -8445,7 +8521,7 @@
       annotations: [
 
       ],
-      type: 69,
+      type: 70,
       mangledName: "_CN26ohos.arkui.component.gauge5Gauge11descriptionHNNat6OptionIF0uEEE7builderIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8510,7 +8586,7 @@
           ]
         }
       ],
-      type: 71,
+      type: 72,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttributeE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttributeE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI",
@@ -8524,20 +8600,20 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          81
+          82
         ],
         body: [
-          127,
-          129,
-          131,
-          133,
-          135,
-          137,
-          139,
-          141,
-          143,
-          147,
-          150
+          128,
+          130,
+          132,
+          134,
+          136,
+          138,
+          140,
+          142,
+          144,
+          148,
+          151
         ]
       }
     },
@@ -8590,7 +8666,7 @@
           ]
         }
       ],
-      type: 72,
+      type: 73,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute5valueHNNat6OptionIdE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute5valueHNNat6OptionIdE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI5valueFO1_d$$14GaugeAttribute",
@@ -8607,14 +8683,14 @@
           paramLists: [
             {
               params: [
-                128
+                129
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -8650,7 +8726,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute5valueHNNat6OptionIdEEY2_IdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -8714,7 +8790,7 @@
           ]
         }
       ],
-      type: 72,
+      type: 73,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute10startAngleHNNat6OptionIdE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute10startAngleHNNat6OptionIdE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI10startAngleFO1_d$$14GaugeAttribute",
@@ -8731,14 +8807,14 @@
           paramLists: [
             {
               params: [
-                130
+                131
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -8774,7 +8850,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute10startAngleHNNat6OptionIdEE5angleIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -8838,7 +8914,7 @@
           ]
         }
       ],
-      type: 72,
+      type: 73,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute8endAngleHNNat6OptionIdE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute8endAngleHNNat6OptionIdE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI8endAngleFO1_d$$14GaugeAttribute",
@@ -8855,14 +8931,14 @@
           paramLists: [
             {
               params: [
-                132
+                133
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -8898,7 +8974,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute8endAngleHNNat6OptionIdEE5angleIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -8962,7 +9038,7 @@
           ]
         }
       ],
-      type: 73,
+      type: 74,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionIRNat5ArrayIT1_CN9ohos.base13ResourceColorEiEEE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionIRNat5ArrayIT1_CN9ohos.base13ResourceColorEiEEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI6colorsFO1_5Array<T2_13ResourceColori>$$14GaugeAttribute",
@@ -8979,14 +9055,14 @@
           paramLists: [
             {
               params: [
-                134
+                135
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -9022,7 +9098,7 @@
       annotations: [
 
       ],
-      type: 45,
+      type: 46,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionIRNat5ArrayIT1_CN9ohos.base13ResourceColorEiEEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9086,7 +9162,7 @@
           ]
         }
       ],
-      type: 74,
+      type: 75,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionIRNat5ArrayIT1_CN31ohos.arkui.component.data_panel14LinearGradientEiEEE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionIRNat5ArrayIT1_CN31ohos.arkui.component.data_panel14LinearGradientEiEEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI6colorsFO1_5Array<T2_14LinearGradienti>$$14GaugeAttribute",
@@ -9103,14 +9179,14 @@
           paramLists: [
             {
               params: [
-                136
+                137
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -9146,7 +9222,7 @@
       annotations: [
 
       ],
-      type: 50,
+      type: 51,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionIRNat5ArrayIT1_CN31ohos.arkui.component.data_panel14LinearGradientEiEEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9210,7 +9286,7 @@
           ]
         }
       ],
-      type: 75,
+      type: 76,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI6colorsFO1_13ResourceColor$$14GaugeAttribute",
@@ -9227,14 +9303,14 @@
           paramLists: [
             {
               params: [
-                138
+                139
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -9270,7 +9346,7 @@
       annotations: [
 
       ],
-      type: 55,
+      type: 56,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9334,7 +9410,7 @@
           ]
         }
       ],
-      type: 76,
+      type: 77,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionICN31ohos.arkui.component.data_panel14LinearGradientEE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionICN31ohos.arkui.component.data_panel14LinearGradientEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI6colorsFO1_14LinearGradient$$14GaugeAttribute",
@@ -9351,14 +9427,14 @@
           paramLists: [
             {
               params: [
-                140
+                141
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -9394,7 +9470,7 @@
       annotations: [
 
       ],
-      type: 57,
+      type: 58,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute6colorsHNNat6OptionICN31ohos.arkui.component.data_panel14LinearGradientEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9458,7 +9534,7 @@
           ]
         }
       ],
-      type: 77,
+      type: 78,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11strokeWidthHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute11strokeWidthHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI11strokeWidthFO1_6Length$$14GaugeAttribute",
@@ -9475,14 +9551,14 @@
           paramLists: [
             {
               params: [
-                142
+                143
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -9518,7 +9594,7 @@
       annotations: [
 
       ],
-      type: 59,
+      type: 60,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11strokeWidthHNNat6OptionICN9ohos.base6LengthEEE6lengthIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9582,7 +9658,7 @@
           ]
         }
       ],
-      type: 78,
+      type: 79,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11trackShadowHNNat6OptionIdEY3_Y3_",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute11trackShadowHNNat6OptionIdEY3_Y3_",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI11trackShadowFO1_d!6radiusO1_d!7offsetXO1_d!7offsetY$$14GaugeAttribute",
@@ -9599,9 +9675,9 @@
           paramLists: [
             {
               params: [
-                144,
                 145,
-                146
+                146,
+                147
               ],
               desugars: [
                 0,
@@ -9610,7 +9686,7 @@
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -9646,7 +9722,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11trackShadowHNNat6OptionIdEY3_Y3_E6radiusIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -9694,7 +9770,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11trackShadowHNNat6OptionIdEY3_Y3_E7offsetXIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -9742,7 +9818,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11trackShadowHNNat6OptionIdEY3_Y3_E7offsetYIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -9807,7 +9883,7 @@
           ]
         }
       ],
-      type: 79,
+      type: 80,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI9indicatorFO1_11ResourceStr!4iconO1_6Length!5space$$14GaugeAttribute",
@@ -9824,8 +9900,8 @@
           paramLists: [
             {
               params: [
-                148,
-                149
+                149,
+                150
               ],
               desugars: [
                 0,
@@ -9833,7 +9909,7 @@
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -9869,7 +9945,7 @@
       annotations: [
 
       ],
-      type: 64,
+      type: 65,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEEE4iconIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9917,7 +9993,7 @@
       annotations: [
 
       ],
-      type: 59,
+      type: 60,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute9indicatorHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_ICNY7_6LengthEEE5spaceIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9982,7 +10058,7 @@
           ]
         }
       ],
-      type: 80,
+      type: 81,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11descriptionHNNat6OptionIF0uEE",
       exportId: "_CN26ohos.arkui.component.gauge14GaugeAttribute11descriptionHNNat6OptionIF0uEE",
       mangledBeforeSema: "26ohos.arkui.component.gauge14GaugeAttributeI11descriptionFO1_Fu$$14GaugeAttribute",
@@ -9999,14 +10075,14 @@
           paramLists: [
             {
               params: [
-                151
+                152
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 71
+          retType: 72
         }
       }
     },
@@ -10042,7 +10118,7 @@
       annotations: [
 
       ],
-      type: 69,
+      type: 70,
       mangledName: "_CN26ohos.arkui.component.gauge14GaugeAttribute11descriptionHNNat6OptionIF0uEEE7builderIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -10064,18 +10140,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 131,
+        line: 133,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 131,
+        line: 133,
         column: 16,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10087,18 +10163,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 132,
+        line: 134,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 132,
+        line: 134,
         column: 48,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10110,18 +10186,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 147,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 147,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10133,18 +10209,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 148,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 148,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10156,18 +10232,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 162,
+        line: 164,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 162,
+        line: 164,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10179,18 +10255,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10202,18 +10278,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 179,
+        line: 181,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 179,
+        line: 181,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10225,18 +10301,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 180,
+        line: 182,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 180,
+        line: 182,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10248,18 +10324,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 198,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 198,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10271,44 +10347,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 197,
+        line: 199,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 197,
+        line: 199,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 216,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 216,
-        column: 20,
-        ignore: false
-      },
-      type: 36,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
         constKind: "String"
       }
     },
@@ -10318,40 +10371,17 @@
         file: 1,
         pkgId: 0,
         line: 217,
-        column: 17,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 217,
-        column: 52,
-        ignore: false
-      },
-      type: 36,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.ArkUI.ArkUI.Full",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 247,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 247,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10363,18 +10393,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 248,
+        line: 218,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 248,
+        line: 218,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10386,18 +10416,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 293,
+        line: 250,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 293,
+        line: 250,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10409,18 +10439,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 251,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 251,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10432,18 +10462,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 298,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 298,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10455,18 +10485,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 312,
+        line: 299,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 312,
+        line: 299,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10478,18 +10508,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 318,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 318,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10501,18 +10531,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 319,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 319,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10524,18 +10554,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 348,
+        line: 338,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 348,
+        line: 338,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10547,18 +10577,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 349,
+        line: 339,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 349,
+        line: 339,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10570,18 +10600,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 366,
+        line: 358,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 366,
+        line: 358,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10593,18 +10623,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 367,
+        line: 359,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 367,
+        line: 359,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10616,18 +10646,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 387,
+        line: 376,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 387,
+        line: 376,
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10639,18 +10669,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 388,
+        line: 377,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 388,
+        line: 377,
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.ArkUI.ArkUI.Full",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 397,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 397,
+        column: 20,
+        ignore: false
+      },
+      type: 37,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 398,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 398,
+        column: 52,
+        ignore: false
+      },
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10673,7 +10749,7 @@
         column: 16,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10696,7 +10772,7 @@
         column: 48,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10719,7 +10795,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10742,7 +10818,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10765,7 +10841,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10788,7 +10864,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10811,7 +10887,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10834,7 +10910,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10857,7 +10933,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10880,7 +10956,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10903,7 +10979,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10926,7 +11002,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10949,7 +11025,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -10972,7 +11048,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -10995,7 +11071,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -11018,7 +11094,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -11041,7 +11117,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -11064,7 +11140,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -11087,7 +11163,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -11110,7 +11186,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -11133,7 +11209,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -11156,7 +11232,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -11179,7 +11255,7 @@
         column: 20,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -11202,7 +11278,7 @@
         column: 52,
         ignore: false
       },
-      type: 36,
+      type: 37,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",

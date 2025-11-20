@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.system_date_time",
-  pkgDepInfo: "{\"package\":\"ohos.system_date_time\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":18,\"column\":34},\"end\":{\"line\":18,\"column\":51}},{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":18,\"column\":53},\"end\":{\"line\":18,\"column\":73}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":29}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":18,\"column\":19},\"end\":{\"line\":18,\"column\":26}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":18,\"column\":28},\"end\":{\"line\":18,\"column\":42}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":18,\"column\":44},\"end\":{\"line\":18,\"column\":54}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":24}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_common.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":28}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.system_date_time\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_common.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":49}},{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":51}},{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":20,\"column\":53},\"end\":{\"line\":20,\"column\":73}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":29}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":26}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":20,\"column\":28},\"end\":{\"line\":20,\"column\":42}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":20,\"column\":44},\"end\":{\"line\":20,\"column\":54}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_error.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":24}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"cj_date_time_common.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":28}},{\"file\":\"system_date_time.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.ffi"
@@ -23,14 +23,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 28,
             ignore: false
           },
@@ -39,6 +39,28 @@
             "labels"
           ],
           identifier: "APILevel",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 21,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 21,
+            column: 49,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "business_exception"
+          ],
+          identifier: "BusinessException",
           asIdentifier: ""
         },
         {
@@ -71,14 +93,14 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 34,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 51,
             ignore: false
           },
@@ -93,14 +115,14 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 53,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 73,
             ignore: false
           },
@@ -115,14 +137,14 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 29,
             ignore: false
           },
@@ -137,14 +159,14 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 24,
             ignore: false
           },
@@ -185,14 +207,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 19,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 26,
             ignore: false
           },
@@ -207,14 +229,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 28,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 42,
             ignore: false
           },
@@ -229,14 +251,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 44,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 54,
             ignore: false
           },
@@ -251,14 +273,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 28,
             ignore: false
           },
@@ -296,9 +318,6 @@
   ],
   allTypes: [
     {
-      kind: "Int32"
-    },
-    {
       kind: "Enum",
       typeArgs: [
 
@@ -307,31 +326,8 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 2
+          index: 1
         }
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 1
-      }
-    },
-    {
-      kind: "UInt32"
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        1
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 6
       }
     },
     {
@@ -349,7 +345,33 @@
     {
       kind: "Func",
       typeArgs: [
-        1
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 4
+      }
+    },
+    {
+      kind: "Int32"
+    },
+    {
+      kind: "UInt32"
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        4
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 2
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        4
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -365,7 +387,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 4,
         isC: true
       }
     },
@@ -402,7 +424,7 @@
     {
       kind: "Func",
       typeArgs: [
-        1,
+        4,
         12
       ],
       info_type: "FuncTyInfo",
@@ -418,7 +440,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 4,
         isC: true
       }
     },
@@ -458,7 +480,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 27
+          index: 26
         }
       }
     },
@@ -485,7 +507,7 @@
     {
       kind: "Func",
       typeArgs: [
-        2,
+        1,
         12
       ],
       info_type: "FuncTyInfo",
@@ -496,7 +518,7 @@
     {
       kind: "Func",
       typeArgs: [
-        2
+        1
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -510,7 +532,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 6
+        retType: 2
       }
     },
     {
@@ -538,56 +560,6 @@
   ],
   allDecls: [
     {
-      kind: "VarDecl",
-      isTopLevel: true,
-      fullPkgName: "ohos.system_date_time",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 23,
-        column: 1,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 23,
-        column: 31,
-        ignore: false
-      },
-      identifier: "SYSTEM_ERROR",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 23,
-        column: 7,
-        ignore: false
-      },
-      attributes: [
-        144678138029293616,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 1,
-      mangledName: "",
-      exportId: "_CN21ohos.system_date_time12SYSTEM_ERRORE",
-      mangledBeforeSema: "21ohos.system_date_time12SYSTEM_ERRORV$$i",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 12820464909098194885,
-        bodyHash: 15605145732018953180
-      },
-      info_type: "VarInfo",
-      info: {
-        isConst: true,
-        initializer: 1
-      }
-    },
-    {
       kind: "EnumDecl",
       isTopLevel: true,
       fullPkgName: "ohos.system_date_time",
@@ -605,7 +577,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 62,
+        line: 57,
         column: 2,
         ignore: false
       },
@@ -627,21 +599,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 2
-            },
-            {
-              name: "stagemodelonly",
-              expr: 3
+              name: "since",
+              expr: 1
             },
             {
               name: "syscap",
-              expr: 4
+              expr: 2
             }
           ]
         }
       ],
-      type: 2,
+      type: 1,
       mangledName: "_CN21ohos.system_date_time8TimeTypeE",
       exportId: "_CN21ohos.system_date_time8TimeTypeE",
       mangledBeforeSema: "21ohos.system_date_time8TimeTypeU",
@@ -650,7 +618,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14422868764972347644
+        bodyHash: 5155119595282953871
       },
       info_type: "EnumInfo",
       info: {
@@ -658,15 +626,15 @@
 
         ],
         body: [
+          2,
           3,
-          4,
-          5
+          4
         ],
         nonExhaustive: true,
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 53,
+          line: 48,
           column: 7,
           ignore: false
         }
@@ -678,14 +646,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 41,
+        line: 38,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 41,
+        line: 38,
         column: 12,
         ignore: false
       },
@@ -693,7 +661,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 41,
+        line: 38,
         column: 5,
         ignore: false
       },
@@ -707,21 +675,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 5
-            },
-            {
-              name: "stagemodelonly",
-              expr: 6
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 7
+              expr: 4
             }
           ]
         }
       ],
-      type: 2,
+      type: 1,
       mangledName: "",
       exportId: "_CN21ohos.system_date_time8TimeType7StartupKE",
       mangledBeforeSema: "21ohos.system_date_time8TimeTypeU7StartupV$$",
@@ -730,7 +694,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 14422868764972347644
+        bodyHash: 5155119595282953871
       },
       info_type: "VarInfo",
       info: {
@@ -742,14 +706,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 52,
+        line: 47,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 52,
+        line: 47,
         column: 11,
         ignore: false
       },
@@ -757,7 +721,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 52,
+        line: 47,
         column: 5,
         ignore: false
       },
@@ -771,21 +735,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 8
-            },
-            {
-              name: "stagemodelonly",
-              expr: 9
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 10
+              expr: 6
             }
           ]
         }
       ],
-      type: 2,
+      type: 1,
       mangledName: "",
       exportId: "_CN21ohos.system_date_time8TimeType6ActiveKE",
       mangledBeforeSema: "21ohos.system_date_time8TimeTypeU6ActiveV$$",
@@ -794,7 +754,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 14422868764972347644
+        bodyHash: 5155119595282953871
       },
       info_type: "VarInfo",
       info: {
@@ -810,14 +770,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 55,
+        line: 50,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 56,
         column: 6,
         ignore: false
       },
@@ -825,7 +785,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 55,
+        line: 50,
         column: 10,
         ignore: false
       },
@@ -845,7 +805,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 306690584616925710
+        bodyHash: 16660840243679407003
       },
       info_type: "FuncInfo",
       info: {
@@ -860,7 +820,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 4
         }
       }
     },
@@ -871,14 +831,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 51,
         ignore: false
       },
@@ -886,7 +846,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 5,
         ignore: false
       },
@@ -897,7 +857,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "_CN21ohos.system_date_time26SYSTEM_DATE_TIME_DOMAIN_IDE",
       exportId: "_CN21ohos.system_date_time26SYSTEM_DATE_TIME_DOMAIN_IDE",
       mangledBeforeSema: "21ohos.system_date_time26SYSTEM_DATE_TIME_DOMAIN_IDV$$j",
@@ -906,7 +866,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 17791247177496500808
+        bodyHash: 17917485352400288898
       },
       info_type: "VarInfo",
       info: {
@@ -923,14 +883,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 26,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 31,
+        line: 32,
         column: 2,
         ignore: false
       },
@@ -938,7 +898,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 26,
         column: 6,
         ignore: false
       },
@@ -949,7 +909,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN21ohos.system_date_time12getErrorInfoHi",
       exportId: "_CN21ohos.system_date_time12getErrorInfoHi",
       mangledBeforeSema: "21ohos.system_date_time12getErrorInfoFi$$6String",
@@ -958,7 +918,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 17577853279441161123
+        bodyHash: 13998269433353904609
       },
       info_type: "FuncInfo",
       info: {
@@ -966,14 +926,14 @@
           paramLists: [
             {
               params: [
-                8
+                7
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 6
+          retType: 2
         }
       }
     },
@@ -983,14 +943,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 26,
         column: 19,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 26,
         column: 30,
         ignore: false
       },
@@ -998,7 +958,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 26,
         column: 19,
         ignore: false
       },
@@ -1009,7 +969,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 4,
       mangledName: "_CN21ohos.system_date_time12getErrorInfoHiE4codeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1035,14 +995,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 41,
+        line: 42,
         column: 2,
         ignore: false
       },
@@ -1050,7 +1010,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 6,
         ignore: false
       },
@@ -1070,7 +1030,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 1156959306256767282
+        bodyHash: 14341107890000041387
       },
       info_type: "FuncInfo",
       info: {
@@ -1078,7 +1038,7 @@
           paramLists: [
             {
               params: [
-                10
+                9
               ],
               desugars: [
                 0
@@ -1095,14 +1055,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 24,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 35,
         ignore: false
       },
@@ -1110,7 +1070,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 24,
         ignore: false
       },
@@ -1121,7 +1081,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 4,
       mangledName: "_CN21ohos.system_date_time17throwIfNotSuccessHiE4codeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1147,14 +1107,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 57,
         ignore: false
       },
@@ -1162,7 +1122,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 10,
         ignore: false
       },
@@ -1190,14 +1150,14 @@
           paramLists: [
             {
               params: [
-                12
+                11
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 4
         }
       }
     },
@@ -1207,14 +1167,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 36,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 47,
         ignore: false
       },
@@ -1222,7 +1182,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 36,
         ignore: false
       },
@@ -1259,14 +1219,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 68,
         ignore: false
       },
@@ -1274,7 +1234,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 10,
         ignore: false
       },
@@ -1302,7 +1262,7 @@
           paramLists: [
             {
               params: [
-                14
+                13
               ],
               desugars: [
                 0
@@ -1319,14 +1279,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 43,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 55,
         ignore: false
       },
@@ -1334,7 +1294,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 43,
         ignore: false
       },
@@ -1371,14 +1331,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 71,
         ignore: false
       },
@@ -1386,7 +1346,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 10,
         ignore: false
       },
@@ -1414,7 +1374,7 @@
           paramLists: [
             {
               params: [
-                16
+                15
               ],
               desugars: [
                 0
@@ -1431,14 +1391,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 46,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 58,
         ignore: false
       },
@@ -1446,7 +1406,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 46,
         ignore: false
       },
@@ -1483,14 +1443,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 65,
         ignore: false
       },
@@ -1498,7 +1458,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 10,
         ignore: false
       },
@@ -1526,7 +1486,7 @@
           paramLists: [
             {
               params: [
-                18
+                17
               ],
               desugars: [
                 0
@@ -1543,14 +1503,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 40,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 52,
         ignore: false
       },
@@ -1558,7 +1518,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 40,
         ignore: false
       },
@@ -1595,14 +1555,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 61,
         ignore: false
       },
@@ -1610,7 +1570,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 10,
         ignore: false
       },
@@ -1638,7 +1598,7 @@
           paramLists: [
             {
               params: [
-                20
+                19
               ],
               desugars: [
                 0
@@ -1655,14 +1615,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 36,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 48,
         ignore: false
       },
@@ -1670,7 +1630,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 36,
         ignore: false
       },
@@ -1707,14 +1667,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 80,
         ignore: false
       },
@@ -1722,7 +1682,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 10,
         ignore: false
       },
@@ -1750,8 +1710,8 @@
           paramLists: [
             {
               params: [
-                22,
-                23
+                21,
+                22
               ],
               desugars: [
                 0,
@@ -1769,14 +1729,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 38,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 53,
         ignore: false
       },
@@ -1784,7 +1744,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 38,
         ignore: false
       },
@@ -1795,7 +1755,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 4,
       mangledName: "_CN21ohos.system_date_time27FfiOHOSSysDateTimeGetUptimeHibE8timeTypeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1816,14 +1776,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 55,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 67,
         ignore: false
       },
@@ -1831,7 +1791,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 55,
         ignore: false
       },
@@ -1868,14 +1828,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 59,
         ignore: false
       },
@@ -1883,7 +1843,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 10,
         ignore: false
       },
@@ -1911,14 +1871,14 @@
           paramLists: [
             {
               params: [
-                25
+                24
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 4
         }
       }
     },
@@ -1928,14 +1888,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 32,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 49,
         ignore: false
       },
@@ -1943,7 +1903,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 32,
         ignore: false
       },
@@ -1980,14 +1940,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 38,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 38,
         column: 49,
         ignore: false
       },
@@ -1995,7 +1955,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 38,
         column: 10,
         ignore: false
       },
@@ -2045,14 +2005,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 1,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 102,
         column: 2,
         ignore: false
       },
@@ -2060,7 +2020,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 14,
         ignore: false
       },
@@ -2074,16 +2034,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 11
-            },
-            {
-              name: "stagemodelonly",
-              expr: 12
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 13
+              expr: 8
             }
           ]
         }
@@ -2097,7 +2053,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 5256403560169182223
+        bodyHash: 11950379399340676273
       },
       info_type: "ClassInfo",
       info: {
@@ -2105,10 +2061,10 @@
           26
         ],
         body: [
-          28,
-          31,
-          36,
-          37
+          27,
+          30,
+          35,
+          36
         ]
       }
     },
@@ -2122,14 +2078,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 64,
+        line: 65,
         column: 6,
         ignore: false
       },
@@ -2137,7 +2093,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 24,
         ignore: false
       },
@@ -2151,16 +2107,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 14
-            },
-            {
-              name: "stagemodelonly",
-              expr: 15
+              name: "since",
+              expr: 9
             },
             {
               name: "syscap",
-              expr: 16
+              expr: 10
+            },
+            {
+              name: "throwexception",
+              expr: 11
             }
           ]
         }
@@ -2174,7 +2130,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 2164932970613837761
+        bodyHash: 15102689201664577121
       },
       info_type: "FuncInfo",
       info: {
@@ -2182,10 +2138,10 @@
           paramLists: [
             {
               params: [
-                29
+                28
               ],
               desugars: [
-                30
+                29
               ]
             }
           ],
@@ -2199,14 +2155,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 32,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 60,
         ignore: false
       },
@@ -2214,7 +2170,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 32,
         ignore: false
       },
@@ -2239,7 +2195,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 17
+        defaultVal: 12
       }
     },
     {
@@ -2252,14 +2208,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 55,
         ignore: true
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 60,
         ignore: false
       },
@@ -2345,16 +2301,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 18
-            },
-            {
-              name: "stagemodelonly",
-              expr: 19
+              name: "since",
+              expr: 13
             },
             {
               name: "syscap",
-              expr: 20
+              expr: 14
             }
           ]
         }
@@ -2368,7 +2320,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 11738257177358175673
+        bodyHash: 7669606163628037337
       },
       info_type: "FuncInfo",
       info: {
@@ -2376,12 +2328,12 @@
           paramLists: [
             {
               params: [
-                32,
-                33
+                31,
+                32
               ],
               desugars: [
                 0,
-                34
+                33
               ]
             }
           ],
@@ -2421,7 +2373,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 1,
       mangledName: "_CN21ohos.system_date_time14SystemDateTime9getUptimeHNNY_8TimeTypeEbE8timeTypeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2482,7 +2434,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 21
+        defaultVal: 15
       }
     },
     {
@@ -2538,7 +2490,7 @@
           paramLists: [
             {
               params: [
-                35
+                34
               ],
               desugars: [
                 0
@@ -2581,7 +2533,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 1,
       mangledName: "_CN21ohos.system_date_time14SystemDateTime9getUptimeHNNY_8TimeTypeEbE15isNanoseconds.1HY3_E8timeTypeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2606,14 +2558,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 94,
+        line: 95,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 100,
+        line: 101,
         column: 6,
         ignore: false
       },
@@ -2621,7 +2573,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 94,
+        line: 95,
         column: 24,
         ignore: false
       },
@@ -2635,16 +2587,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 22
-            },
-            {
-              name: "stagemodelonly",
-              expr: 23
+              name: "since",
+              expr: 16
             },
             {
               name: "syscap",
-              expr: 24
+              expr: 17
+            },
+            {
+              name: "throwexception",
+              expr: 18
             }
           ]
         }
@@ -2658,7 +2610,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 9353111569599884607
+        bodyHash: 13544131397222694607
       },
       info_type: "FuncInfo",
       info: {
@@ -2673,7 +2625,7 @@
               ]
             }
           ],
-          retType: 6
+          retType: 2
         }
       }
     },
@@ -2687,14 +2639,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 14,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 28,
         ignore: false
       },
@@ -2746,66 +2698,24 @@
     {
       kind: "LitConstExpr",
       begin: {
-        file: 2,
-        pkgId: 0,
-        line: 23,
-        column: 29,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 23,
-        column: 31,
-        ignore: false
-      },
-      type: 1,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "-1"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 26,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 26,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
         file: 1,
         pkgId: 0,
         line: 27,
-        column: 21,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 27,
-        column: 25,
+        column: 16,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2824,6 +2734,7 @@
         column: 49,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.MiscServices.Time",
@@ -2835,20 +2746,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 37,
-        column: 9,
+        line: 35,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 37,
-        column: 11,
+        line: 35,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2856,39 +2769,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 38,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 38,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 39,
+        line: 36,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 39,
+        line: 36,
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.MiscServices.Time",
@@ -2900,20 +2792,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 48,
-        column: 9,
+        line: 44,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 48,
-        column: 11,
+        line: 44,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2921,39 +2815,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 49,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 50,
+        line: 45,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 50,
+        line: 45,
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.MiscServices.Time",
@@ -2966,19 +2839,21 @@
         file: 3,
         pkgId: 0,
         line: 45,
-        column: 5,
+        column: 12,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
         line: 45,
-        column: 7,
+        column: 16,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2987,38 +2862,17 @@
         file: 3,
         pkgId: 0,
         line: 46,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 0,
-        line: 46,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 0,
-        line: 47,
         column: 13,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 47,
+        line: 46,
         column: 49,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.MiscServices.Time",
@@ -3030,42 +2884,22 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 56,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 0,
-        line: 56,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 0,
         line: 57,
-        column: 25,
+        column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
         line: 57,
-        column: 29,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3084,6 +2918,7 @@
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.MiscServices.Time",
@@ -3095,14 +2930,37 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 59,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 59,
+        column: 29,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 61,
         column: 55,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 60,
         ignore: false
       },
@@ -3118,42 +2976,22 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 74,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 0,
-        line: 74,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 0,
         line: 75,
-        column: 25,
+        column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
         line: 75,
-        column: 29,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3172,6 +3010,7 @@
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.MiscServices.Time",
@@ -3206,42 +3045,22 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 90,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 0,
-        line: 90,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 0,
         line: 91,
-        column: 25,
+        column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
         line: 91,
-        column: 29,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3260,10 +3079,34 @@
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.MiscServices.Time",
         constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 93,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 93,
+        column: 29,
+        ignore: false
+      },
+      type: 12,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
       }
     }
   ],

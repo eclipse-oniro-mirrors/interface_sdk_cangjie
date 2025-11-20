@@ -3274,14 +3274,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 165,
+        line: 176,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 189,
+        line: 200,
         column: 2,
         ignore: false
       },
@@ -3289,7 +3289,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 165,
+        line: 176,
         column: 8,
         ignore: false
       },
@@ -3965,14 +3965,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 87,
+        line: 90,
         column: 2,
         ignore: false
       },
@@ -3980,7 +3980,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 13,
         ignore: false
       },
@@ -4013,7 +4013,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2252991962994914036
+        bodyHash: 1069441847279391402
       },
       info_type: "FuncInfo",
       info: {
@@ -4052,7 +4052,7 @@
       end: {
         file: 2,
         pkgId: 0,
-        line: 162,
+        line: 173,
         column: 2,
         ignore: false
       },
@@ -4075,11 +4075,11 @@
           args: [
             {
               name: "since",
-              expr: 29
+              expr: 30
             },
             {
               name: "syscap",
-              expr: 30
+              expr: 31
             }
           ]
         }
@@ -4119,7 +4119,7 @@
         ellipsisPos: {
           file: 2,
           pkgId: 0,
-          line: 143,
+          line: 154,
           column: 7,
           ignore: false
         }
@@ -4136,14 +4136,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 99,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 338,
+        line: 340,
         column: 2,
         ignore: false
       },
@@ -4151,7 +4151,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 99,
         column: 14,
         ignore: false
       },
@@ -4215,14 +4215,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 39,
         ignore: false
       },
@@ -4230,7 +4230,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 25,
         ignore: false
       },
@@ -4262,14 +4262,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 76,
         ignore: false
       },
@@ -4277,7 +4277,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 41,
         ignore: false
       },
@@ -4314,14 +4314,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 72,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 76,
         ignore: false
       },
@@ -4374,14 +4374,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 39,
         ignore: false
       },
@@ -4389,7 +4389,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 77,
         column: 25,
         ignore: false
       },
@@ -4425,14 +4425,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 100,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 99,
+        line: 102,
         column: 6,
         ignore: false
       },
@@ -4440,7 +4440,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 100,
         column: 5,
         ignore: false
       },
@@ -4460,7 +4460,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 5844578783030785601
+        bodyHash: 13774961288197614594
       },
       info_type: "FuncInfo",
       info: {
@@ -4485,14 +4485,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 100,
         column: 10,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 100,
         column: 19,
         ignore: false
       },
@@ -4500,7 +4500,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 100,
         column: 10,
         ignore: false
       },
@@ -4536,14 +4536,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 101,
+        line: 104,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 103,
+        line: 106,
         column: 6,
         ignore: false
       },
@@ -4551,7 +4551,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 101,
+        line: 104,
         column: 5,
         ignore: false
       },
@@ -4571,7 +4571,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 14611853659363163914
+        bodyHash: 13997108149779572190
       },
       info_type: "FuncInfo",
       info: {
@@ -4600,14 +4600,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 118,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 119,
+        line: 122,
         column: 6,
         ignore: false
       },
@@ -4615,7 +4615,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 118,
         column: 17,
         ignore: false
       },
@@ -4648,7 +4648,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13995016798372801735
+        bodyHash: 7974143833548390688
       },
       info_type: "FuncInfo",
       info: {
@@ -4673,14 +4673,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 118,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 118,
         column: 38,
         ignore: false
       },
@@ -4688,7 +4688,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 118,
         column: 25,
         ignore: false
       },
@@ -4724,14 +4724,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 156,
+        line: 159,
         column: 6,
         ignore: false
       },
@@ -4739,7 +4739,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 17,
         ignore: false
       },
@@ -4772,7 +4772,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12112358471733407147
+        bodyHash: 12503880067404134168
       },
       info_type: "FuncInfo",
       info: {
@@ -4807,14 +4807,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 32,
         ignore: false
       },
@@ -4822,7 +4822,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
@@ -4854,14 +4854,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 46,
         ignore: false
       },
@@ -4869,7 +4869,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
@@ -4901,14 +4901,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 59,
         ignore: false
       },
@@ -4916,7 +4916,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
@@ -4948,14 +4948,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 61,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 81,
         ignore: false
       },
@@ -4963,7 +4963,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 61,
         ignore: false
       },
@@ -5000,14 +5000,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 77,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 81,
         ignore: false
       },
@@ -5064,14 +5064,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 32,
         ignore: false
       },
@@ -5079,7 +5079,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
@@ -5111,14 +5111,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 46,
         ignore: false
       },
@@ -5126,7 +5126,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
@@ -5158,14 +5158,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 59,
         ignore: false
       },
@@ -5173,7 +5173,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
@@ -5205,14 +5205,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 83,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 105,
         ignore: false
       },
@@ -5220,7 +5220,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 83,
         ignore: false
       },
@@ -5257,14 +5257,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 101,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 105,
         ignore: false
       },
@@ -5323,14 +5323,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 32,
         ignore: false
       },
@@ -5338,7 +5338,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
@@ -5370,14 +5370,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 46,
         ignore: false
       },
@@ -5385,7 +5385,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
@@ -5417,14 +5417,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 59,
         ignore: false
       },
@@ -5432,7 +5432,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
@@ -5464,14 +5464,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 61,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 81,
         ignore: false
       },
@@ -5479,7 +5479,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 61,
         ignore: false
       },
@@ -5511,14 +5511,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 107,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 129,
         ignore: false
       },
@@ -5526,7 +5526,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 107,
         ignore: false
       },
@@ -5563,14 +5563,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 125,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 129,
         ignore: false
       },
@@ -5631,14 +5631,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 32,
         ignore: false
       },
@@ -5646,7 +5646,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 21,
         ignore: false
       },
@@ -5678,14 +5678,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 46,
         ignore: false
       },
@@ -5693,7 +5693,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 34,
         ignore: false
       },
@@ -5725,14 +5725,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 59,
         ignore: false
       },
@@ -5740,7 +5740,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 48,
         ignore: false
       },
@@ -5772,14 +5772,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 61,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 81,
         ignore: false
       },
@@ -5787,7 +5787,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 61,
         ignore: false
       },
@@ -5819,14 +5819,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 83,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 105,
         ignore: false
       },
@@ -5834,7 +5834,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 138,
         column: 83,
         ignore: false
       },
@@ -5870,14 +5870,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 167,
+        line: 170,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 173,
+        line: 176,
         column: 6,
         ignore: false
       },
@@ -5885,7 +5885,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 167,
+        line: 170,
         column: 17,
         ignore: false
       },
@@ -5918,7 +5918,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10809606567328147610
+        bodyHash: 9190469837100655815
       },
       info_type: "FuncInfo",
       info: {
@@ -5943,14 +5943,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 167,
+        line: 170,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 167,
+        line: 170,
         column: 45,
         ignore: false
       },
@@ -5958,7 +5958,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 167,
+        line: 170,
         column: 29,
         ignore: false
       },
@@ -5994,14 +5994,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 184,
+        line: 187,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 191,
+        line: 194,
         column: 6,
         ignore: false
       },
@@ -6009,7 +6009,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 184,
+        line: 187,
         column: 17,
         ignore: false
       },
@@ -6042,7 +6042,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 1646725277376572860
+        bodyHash: 3824600902834243875
       },
       info_type: "FuncInfo",
       info: {
@@ -6071,14 +6071,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 202,
+        line: 205,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 206,
+        line: 209,
         column: 6,
         ignore: false
       },
@@ -6086,7 +6086,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 202,
+        line: 205,
         column: 17,
         ignore: false
       },
@@ -6119,7 +6119,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 3741770403810710427
+        bodyHash: 902782716606808913
       },
       info_type: "FuncInfo",
       info: {
@@ -6148,14 +6148,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 217,
+        line: 220,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 221,
+        line: 224,
         column: 6,
         ignore: false
       },
@@ -6163,7 +6163,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 217,
+        line: 220,
         column: 17,
         ignore: false
       },
@@ -6196,7 +6196,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 18244356300255302362
+        bodyHash: 1259934502117333035
       },
       info_type: "FuncInfo",
       info: {
@@ -6221,14 +6221,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 217,
+        line: 220,
         column: 35,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 217,
+        line: 220,
         column: 47,
         ignore: false
       },
@@ -6236,7 +6236,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 217,
+        line: 220,
         column: 35,
         ignore: false
       },
@@ -6272,14 +6272,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 232,
+        line: 235,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 236,
+        line: 239,
         column: 6,
         ignore: false
       },
@@ -6287,7 +6287,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 232,
+        line: 235,
         column: 17,
         ignore: false
       },
@@ -6320,7 +6320,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10525658891005349711
+        bodyHash: 9939377779180227088
       },
       info_type: "FuncInfo",
       info: {
@@ -6349,14 +6349,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 250,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 251,
+        line: 254,
         column: 6,
         ignore: false
       },
@@ -6364,7 +6364,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 250,
         column: 17,
         ignore: false
       },
@@ -6397,7 +6397,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17867639568779649858
+        bodyHash: 16516745457946091473
       },
       info_type: "FuncInfo",
       info: {
@@ -6422,14 +6422,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 250,
         column: 43,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 250,
         column: 55,
         ignore: false
       },
@@ -6437,7 +6437,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 247,
+        line: 250,
         column: 43,
         ignore: false
       },
@@ -6473,14 +6473,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 264,
+        line: 267,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 271,
+        line: 274,
         column: 6,
         ignore: false
       },
@@ -6488,7 +6488,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 264,
+        line: 267,
         column: 17,
         ignore: false
       },
@@ -6521,7 +6521,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7480247604396396716
+        bodyHash: 10880672932540213345
       },
       info_type: "FuncInfo",
       info: {
@@ -6546,14 +6546,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 264,
+        line: 267,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 264,
+        line: 267,
         column: 34,
         ignore: false
       },
@@ -6561,7 +6561,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 264,
+        line: 267,
         column: 21,
         ignore: false
       },
@@ -6597,14 +6597,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 284,
+        line: 287,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 293,
+        line: 296,
         column: 6,
         ignore: false
       },
@@ -6612,7 +6612,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 284,
+        line: 287,
         column: 17,
         ignore: false
       },
@@ -6645,7 +6645,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 1011918436172428208
+        bodyHash: 4435976296470360128
       },
       info_type: "FuncInfo",
       info: {
@@ -6670,14 +6670,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 284,
+        line: 287,
         column: 32,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 284,
+        line: 287,
         column: 46,
         ignore: false
       },
@@ -6685,7 +6685,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 284,
+        line: 287,
         column: 32,
         ignore: false
       },
@@ -6721,14 +6721,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 321,
+        line: 323,
         column: 6,
         ignore: false
       },
@@ -6736,7 +6736,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 17,
         ignore: false
       },
@@ -6756,6 +6756,10 @@
             {
               name: "syscap",
               expr: 26
+            },
+            {
+              name: "throwexception",
+              expr: 27
             }
           ]
         }
@@ -6769,7 +6773,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13757345735422234446
+        bodyHash: 9765843795543965611
       },
       info_type: "FuncInfo",
       info: {
@@ -6796,14 +6800,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 21,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 34,
         ignore: false
       },
@@ -6811,7 +6815,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 21,
         ignore: false
       },
@@ -6843,14 +6847,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 49,
         ignore: false
       },
@@ -6858,7 +6862,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 311,
+        line: 313,
         column: 36,
         ignore: false
       },
@@ -6894,14 +6898,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 333,
+        line: 335,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 337,
+        line: 339,
         column: 6,
         ignore: false
       },
@@ -6909,7 +6913,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 333,
+        line: 335,
         column: 17,
         ignore: false
       },
@@ -6924,11 +6928,11 @@
           args: [
             {
               name: "since",
-              expr: 27
+              expr: 28
             },
             {
               name: "syscap",
-              expr: 28
+              expr: 29
             }
           ]
         }
@@ -6942,7 +6946,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2262868934457870370
+        bodyHash: 10897011207825416738
       },
       info_type: "FuncInfo",
       info: {
@@ -7157,11 +7161,11 @@
           args: [
             {
               name: "since",
-              expr: 31
+              expr: 32
             },
             {
               name: "syscap",
-              expr: 32
+              expr: 33
             }
           ]
         }
@@ -7187,14 +7191,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 12,
         ignore: false
       },
@@ -7202,7 +7206,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 5,
         ignore: false
       },
@@ -7217,11 +7221,11 @@
           args: [
             {
               name: "since",
-              expr: 33
+              expr: 34
             },
             {
               name: "syscap",
-              expr: 34
+              expr: 35
             }
           ]
         }
@@ -7247,14 +7251,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 70,
+        line: 72,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 70,
+        line: 72,
         column: 11,
         ignore: false
       },
@@ -7262,7 +7266,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 70,
+        line: 72,
         column: 5,
         ignore: false
       },
@@ -7277,11 +7281,11 @@
           args: [
             {
               name: "since",
-              expr: 35
+              expr: 36
             },
             {
               name: "syscap",
-              expr: 36
+              expr: 37
             }
           ]
         }
@@ -7307,14 +7311,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 78,
+        line: 81,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 78,
+        line: 81,
         column: 13,
         ignore: false
       },
@@ -7322,7 +7326,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 78,
+        line: 81,
         column: 5,
         ignore: false
       },
@@ -7337,11 +7341,11 @@
           args: [
             {
               name: "since",
-              expr: 37
+              expr: 38
             },
             {
               name: "syscap",
-              expr: 38
+              expr: 39
             }
           ]
         }
@@ -7367,14 +7371,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 86,
+        line: 90,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 86,
+        line: 90,
         column: 11,
         ignore: false
       },
@@ -7382,7 +7386,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 86,
+        line: 90,
         column: 5,
         ignore: false
       },
@@ -7397,11 +7401,11 @@
           args: [
             {
               name: "since",
-              expr: 39
+              expr: 40
             },
             {
               name: "syscap",
-              expr: 40
+              expr: 41
             }
           ]
         }
@@ -7427,14 +7431,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 99,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 99,
         column: 12,
         ignore: false
       },
@@ -7442,7 +7446,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 99,
         column: 5,
         ignore: false
       },
@@ -7457,11 +7461,11 @@
           args: [
             {
               name: "since",
-              expr: 41
+              expr: 42
             },
             {
               name: "syscap",
-              expr: 42
+              expr: 43
             }
           ]
         }
@@ -7487,14 +7491,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 102,
+        line: 108,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 102,
+        line: 108,
         column: 11,
         ignore: false
       },
@@ -7502,7 +7506,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 102,
+        line: 108,
         column: 5,
         ignore: false
       },
@@ -7517,11 +7521,11 @@
           args: [
             {
               name: "since",
-              expr: 43
+              expr: 44
             },
             {
               name: "syscap",
-              expr: 44
+              expr: 45
             }
           ]
         }
@@ -7547,14 +7551,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 110,
+        line: 117,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 110,
+        line: 117,
         column: 17,
         ignore: false
       },
@@ -7562,7 +7566,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 110,
+        line: 117,
         column: 5,
         ignore: false
       },
@@ -7577,11 +7581,11 @@
           args: [
             {
               name: "since",
-              expr: 45
+              expr: 46
             },
             {
               name: "syscap",
-              expr: 46
+              expr: 47
             }
           ]
         }
@@ -7607,14 +7611,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 118,
+        line: 126,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 118,
+        line: 126,
         column: 16,
         ignore: false
       },
@@ -7622,7 +7626,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 118,
+        line: 126,
         column: 5,
         ignore: false
       },
@@ -7637,11 +7641,11 @@
           args: [
             {
               name: "since",
-              expr: 47
+              expr: 48
             },
             {
               name: "syscap",
-              expr: 48
+              expr: 49
             }
           ]
         }
@@ -7667,14 +7671,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 126,
+        line: 135,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 126,
+        line: 135,
         column: 20,
         ignore: false
       },
@@ -7682,7 +7686,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 126,
+        line: 135,
         column: 5,
         ignore: false
       },
@@ -7697,11 +7701,11 @@
           args: [
             {
               name: "since",
-              expr: 49
+              expr: 50
             },
             {
               name: "syscap",
-              expr: 50
+              expr: 51
             }
           ]
         }
@@ -7727,14 +7731,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 134,
+        line: 144,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 134,
+        line: 144,
         column: 13,
         ignore: false
       },
@@ -7742,7 +7746,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 134,
+        line: 144,
         column: 5,
         ignore: false
       },
@@ -7757,11 +7761,11 @@
           args: [
             {
               name: "since",
-              expr: 51
+              expr: 52
             },
             {
               name: "syscap",
-              expr: 52
+              expr: 53
             }
           ]
         }
@@ -7787,14 +7791,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 142,
+        line: 153,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 142,
+        line: 153,
         column: 12,
         ignore: false
       },
@@ -7802,7 +7806,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 142,
+        line: 153,
         column: 5,
         ignore: false
       },
@@ -7817,11 +7821,11 @@
           args: [
             {
               name: "since",
-              expr: 53
+              expr: 54
             },
             {
               name: "syscap",
-              expr: 54
+              expr: 55
             }
           ]
         }
@@ -7851,14 +7855,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 145,
+        line: 156,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 161,
+        line: 172,
         column: 6,
         ignore: false
       },
@@ -7866,7 +7870,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 145,
+        line: 156,
         column: 10,
         ignore: false
       },
@@ -7886,7 +7890,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 13781340933888662972
+        bodyHash: 10811734921563438580
       },
       info_type: "FuncInfo",
       info: {
@@ -7915,14 +7919,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 174,
+        line: 185,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 180,
+        line: 191,
         column: 6,
         ignore: false
       },
@@ -7930,7 +7934,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 174,
+        line: 185,
         column: 5,
         ignore: false
       },
@@ -7950,7 +7954,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 4898401504503768115
+        bodyHash: 5804819141039485731
       },
       info_type: "FuncInfo",
       info: {
@@ -7975,14 +7979,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 174,
+        line: 185,
         column: 10,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 174,
+        line: 185,
         column: 24,
         ignore: false
       },
@@ -7990,7 +7994,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 174,
+        line: 185,
         column: 10,
         ignore: false
       },
@@ -8026,14 +8030,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 182,
+        line: 193,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 188,
+        line: 199,
         column: 6,
         ignore: false
       },
@@ -8041,7 +8045,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 182,
+        line: 193,
         column: 5,
         ignore: false
       },
@@ -8061,7 +8065,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 14397835706495360508
+        bodyHash: 13469456112511148710
       },
       info_type: "FuncInfo",
       info: {
@@ -8086,14 +8090,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 167,
+        line: 178,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 167,
+        line: 178,
         column: 24,
         ignore: false
       },
@@ -8101,7 +8105,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 167,
+        line: 178,
         column: 13,
         ignore: false
       },
@@ -8134,14 +8138,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 168,
+        line: 179,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 168,
+        line: 179,
         column: 25,
         ignore: false
       },
@@ -8149,7 +8153,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 168,
+        line: 179,
         column: 13,
         ignore: false
       },
@@ -8182,14 +8186,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 169,
+        line: 180,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 169,
+        line: 180,
         column: 23,
         ignore: false
       },
@@ -8197,7 +8201,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 169,
+        line: 180,
         column: 13,
         ignore: false
       },
@@ -8230,14 +8234,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 170,
+        line: 181,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 170,
+        line: 181,
         column: 30,
         ignore: false
       },
@@ -8245,7 +8249,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 170,
+        line: 181,
         column: 13,
         ignore: false
       },
@@ -8278,14 +8282,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 182,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 182,
         column: 25,
         ignore: false
       },
@@ -8293,7 +8297,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 182,
         column: 13,
         ignore: false
       },
@@ -8330,14 +8334,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 166,
+        line: 177,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 172,
+        line: 183,
         column: 9,
         ignore: false
       },
@@ -8345,7 +8349,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 166,
+        line: 177,
         column: 5,
         ignore: false
       },
@@ -8398,14 +8402,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 167,
+        line: 178,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 167,
+        line: 178,
         column: 24,
         ignore: false
       },
@@ -8413,7 +8417,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 167,
+        line: 178,
         column: 13,
         ignore: false
       },
@@ -8446,14 +8450,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 168,
+        line: 179,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 168,
+        line: 179,
         column: 25,
         ignore: false
       },
@@ -8461,7 +8465,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 168,
+        line: 179,
         column: 13,
         ignore: false
       },
@@ -8494,14 +8498,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 169,
+        line: 180,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 169,
+        line: 180,
         column: 23,
         ignore: false
       },
@@ -8509,7 +8513,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 169,
+        line: 180,
         column: 13,
         ignore: false
       },
@@ -8542,14 +8546,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 170,
+        line: 181,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 170,
+        line: 181,
         column: 30,
         ignore: false
       },
@@ -8557,7 +8561,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 170,
+        line: 181,
         column: 13,
         ignore: false
       },
@@ -8590,14 +8594,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 182,
         column: 9,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 182,
         column: 25,
         ignore: false
       },
@@ -8605,7 +8609,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 171,
+        line: 182,
         column: 13,
         ignore: false
       },
@@ -8738,11 +8742,11 @@
           args: [
             {
               name: "since",
-              expr: 55
+              expr: 56
             },
             {
               name: "syscap",
-              expr: 56
+              expr: 57
             }
           ]
         }
@@ -8873,11 +8877,11 @@
           args: [
             {
               name: "since",
-              expr: 57
+              expr: 58
             },
             {
               name: "syscap",
-              expr: 58
+              expr: 59
             }
           ]
         }
@@ -8917,14 +8921,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 71,
+        line: 74,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 71,
+        line: 74,
         column: 16,
         ignore: false
       },
@@ -8940,14 +8944,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 75,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 75,
         column: 43,
         ignore: false
       },
@@ -8963,14 +8967,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 93,
+        line: 96,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 93,
+        line: 96,
         column: 16,
         ignore: false
       },
@@ -8986,14 +8990,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 94,
+        line: 97,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 94,
+        line: 97,
         column: 43,
         ignore: false
       },
@@ -9009,14 +9013,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 115,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 115,
         column: 20,
         ignore: false
       },
@@ -9032,14 +9036,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 116,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 116,
         column: 47,
         ignore: false
       },
@@ -9055,14 +9059,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 132,
+        line: 135,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 132,
+        line: 135,
         column: 20,
         ignore: false
       },
@@ -9078,14 +9082,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 133,
+        line: 136,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 133,
+        line: 136,
         column: 47,
         ignore: false
       },
@@ -9101,14 +9105,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 164,
+        line: 167,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 164,
+        line: 167,
         column: 20,
         ignore: false
       },
@@ -9124,14 +9128,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 168,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 168,
         column: 47,
         ignore: false
       },
@@ -9147,14 +9151,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 181,
+        line: 184,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 181,
+        line: 184,
         column: 20,
         ignore: false
       },
@@ -9170,14 +9174,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 185,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 182,
+        line: 185,
         column: 47,
         ignore: false
       },
@@ -9193,14 +9197,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 202,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 202,
         column: 20,
         ignore: false
       },
@@ -9216,14 +9220,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 203,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 203,
         column: 47,
         ignore: false
       },
@@ -9239,14 +9243,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 214,
+        line: 217,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 214,
+        line: 217,
         column: 20,
         ignore: false
       },
@@ -9262,14 +9266,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 215,
+        line: 218,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 215,
+        line: 218,
         column: 47,
         ignore: false
       },
@@ -9285,14 +9289,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 232,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 232,
         column: 20,
         ignore: false
       },
@@ -9308,14 +9312,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 230,
+        line: 233,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 230,
+        line: 233,
         column: 47,
         ignore: false
       },
@@ -9331,14 +9335,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 244,
+        line: 247,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 244,
+        line: 247,
         column: 20,
         ignore: false
       },
@@ -9354,14 +9358,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 245,
+        line: 248,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 245,
+        line: 248,
         column: 47,
         ignore: false
       },
@@ -9377,14 +9381,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 261,
+        line: 264,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 261,
+        line: 264,
         column: 20,
         ignore: false
       },
@@ -9400,14 +9404,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 262,
+        line: 265,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 262,
+        line: 265,
         column: 47,
         ignore: false
       },
@@ -9423,14 +9427,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 281,
+        line: 284,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 281,
+        line: 284,
         column: 20,
         ignore: false
       },
@@ -9446,14 +9450,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 282,
+        line: 285,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 282,
+        line: 285,
         column: 47,
         ignore: false
       },
@@ -9461,29 +9465,6 @@
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Global.I18n",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 308,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 308,
-        column: 20,
-        ignore: false
-      },
-      type: 24,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
         constKind: "String"
       }
     },
@@ -9493,36 +9474,13 @@
         file: 1,
         pkgId: 0,
         line: 309,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 309,
-        column: 47,
-        ignore: false
-      },
-      type: 24,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Global.I18n",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 330,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 330,
+        line: 309,
         column: 20,
         ignore: false
       },
@@ -9538,14 +9496,83 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 310,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 331,
+        line: 310,
+        column: 47,
+        ignore: false
+      },
+      type: 24,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Global.I18n",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 311,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 311,
+        column: 29,
+        ignore: false
+      },
+      type: 18,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 332,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 332,
+        column: 20,
+        ignore: false
+      },
+      type: 24,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 333,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 333,
         column: 47,
         ignore: false
       },
@@ -9653,60 +9680,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 59,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 59,
-        column: 20,
-        ignore: false
-      },
-      type: 24,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
         line: 60,
-        column: 17,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 60,
-        column: 47,
-        ignore: false
-      },
-      type: 24,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Global.I18n",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 67,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 67,
         column: 20,
         ignore: false
       },
@@ -9722,14 +9703,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 68,
+        line: 61,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 68,
+        line: 61,
         column: 47,
         ignore: false
       },
@@ -9745,14 +9726,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 75,
+        line: 69,
         column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 75,
+        line: 69,
         column: 20,
         ignore: false
       },
@@ -9768,14 +9749,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 76,
+        line: 70,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 76,
+        line: 70,
         column: 47,
         ignore: false
       },
@@ -9791,14 +9772,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 83,
+        line: 78,
         column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 83,
+        line: 78,
         column: 20,
         ignore: false
       },
@@ -9814,14 +9795,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 84,
+        line: 79,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 84,
+        line: 79,
         column: 47,
         ignore: false
       },
@@ -9837,14 +9818,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 91,
+        line: 87,
         column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 91,
+        line: 87,
         column: 20,
         ignore: false
       },
@@ -9860,14 +9841,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 92,
+        line: 88,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 92,
+        line: 88,
         column: 47,
         ignore: false
       },
@@ -9883,14 +9864,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 99,
+        line: 96,
         column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 99,
+        line: 96,
         column: 20,
         ignore: false
       },
@@ -9906,14 +9887,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 100,
+        line: 97,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 100,
+        line: 97,
         column: 47,
         ignore: false
       },
@@ -9929,14 +9910,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 107,
+        line: 105,
         column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 107,
+        line: 105,
         column: 20,
         ignore: false
       },
@@ -9952,14 +9933,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 108,
+        line: 106,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 108,
+        line: 106,
         column: 47,
         ignore: false
       },
@@ -9967,6 +9948,29 @@
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Global.I18n",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 114,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 114,
+        column: 20,
+        ignore: false
+      },
+      type: 24,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -9976,36 +9980,13 @@
         file: 2,
         pkgId: 0,
         line: 115,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 115,
-        column: 20,
-        ignore: false
-      },
-      type: 24,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 116,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 116,
+        line: 115,
         column: 47,
         ignore: false
       },
@@ -10067,14 +10048,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 131,
+        line: 132,
         column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 131,
+        line: 132,
         column: 20,
         ignore: false
       },
@@ -10090,14 +10071,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 132,
+        line: 133,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 132,
+        line: 133,
         column: 47,
         ignore: false
       },
@@ -10113,14 +10094,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 139,
+        line: 141,
         column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 139,
+        line: 141,
         column: 20,
         ignore: false
       },
@@ -10136,14 +10117,60 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 140,
+        line: 142,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 140,
+        line: 142,
+        column: 47,
+        ignore: false
+      },
+      type: 24,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Global.I18n",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 150,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 150,
+        column: 20,
+        ignore: false
+      },
+      type: 24,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 151,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 151,
         column: 47,
         ignore: false
       },

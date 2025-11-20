@@ -3025,7 +3025,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 9
+        retType: 44
       }
     },
     {
@@ -14367,13 +14367,13 @@
       type: 88,
       mangledName: "_CN37ohos.arkui.component.custom_component4bindHF0CNY_11ViewBuilderECNY_10CustomViewEEY5_",
       exportId: "_CN37ohos.arkui.component.custom_component4bindHF0CNY_11ViewBuilderECNY_10CustomViewEEY5_",
-      mangledBeforeSema: "37ohos.arkui.component.custom_component4bindFF11ViewBuilder10CustomView10CustomView$$u",
+      mangledBeforeSema: "37ohos.arkui.component.custom_component4bindFF11ViewBuilder10CustomView10CustomView$$Fu",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14554671315188299236
+        bodyHash: 1406627556699637720
       },
       info_type: "FuncInfo",
       info: {
@@ -14390,7 +14390,7 @@
               ]
             }
           ],
-          retType: 9
+          retType: 44
         }
       }
     },

@@ -6,7 +6,7 @@
     patch_num: 0
   },
   fullPkgName: "ohos.arkui.component.image_span",
-  pkgDepInfo: "{\"package\":\"ohos.arkui.component.image_span\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":58}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":20,\"column\":60},\"end\":{\"line\":20,\"column\":78}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":20,\"column\":80},\"end\":{\"line\":20,\"column\":88}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":69}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":18,\"column\":71},\"end\":{\"line\":18,\"column\":79}}]},{\"package\":\"ohos.arkui.component.image\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":36},\"end\":{\"line\":22,\"column\":51}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":53},\"end\":{\"line\":22,\"column\":64}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":66},\"end\":{\"line\":22,\"column\":87}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":89},\"end\":{\"line\":22,\"column\":107}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":109},\"end\":{\"line\":22,\"column\":119}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":19,\"column\":36},\"end\":{\"line\":19,\"column\":47}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":19,\"column\":49},\"end\":{\"line\":19,\"column\":70}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":19,\"column\":72},\"end\":{\"line\":19,\"column\":90}}]},{\"package\":\"ohos.arkui.component.native_struct\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":21,\"column\":44},\"end\":{\"line\":21,\"column\":59}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":21,\"column\":61},\"end\":{\"line\":21,\"column\":72}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":23,\"column\":19},\"end\":{\"line\":23,\"column\":38}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":23,\"column\":40},\"end\":{\"line\":23,\"column\":51}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":23,\"column\":53},\"end\":{\"line\":23,\"column\":69}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":24,\"column\":18},\"end\":{\"line\":24,\"column\":32}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":28}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":28}}]},{\"package\":\"ohos.multimedia.image\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":38}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":38}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":25,\"column\":23},\"end\":{\"line\":25,\"column\":34}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":25,\"column\":36},\"end\":{\"line\":25,\"column\":52}}]}],\"features\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.arkui.component.image_span\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":58}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":20,\"column\":60},\"end\":{\"line\":20,\"column\":78}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":20,\"column\":80},\"end\":{\"line\":20,\"column\":88}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":69}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":18,\"column\":71},\"end\":{\"line\":18,\"column\":79}}]},{\"package\":\"ohos.arkui.component.image\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":36},\"end\":{\"line\":22,\"column\":51}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":53},\"end\":{\"line\":22,\"column\":64}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":66},\"end\":{\"line\":22,\"column\":87}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":89},\"end\":{\"line\":22,\"column\":107}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":22,\"column\":109},\"end\":{\"line\":22,\"column\":119}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":19,\"column\":36},\"end\":{\"line\":19,\"column\":47}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":19,\"column\":49},\"end\":{\"line\":19,\"column\":70}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":19,\"column\":72},\"end\":{\"line\":19,\"column\":90}}]},{\"package\":\"ohos.arkui.component.native_struct\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":21,\"column\":44},\"end\":{\"line\":21,\"column\":59}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":21,\"column\":61},\"end\":{\"line\":21,\"column\":72}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":23,\"column\":19},\"end\":{\"line\":23,\"column\":38}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":23,\"column\":40},\"end\":{\"line\":23,\"column\":51}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":23,\"column\":53},\"end\":{\"line\":23,\"column\":69}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":23,\"column\":71},\"end\":{\"line\":23,\"column\":77}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":24,\"column\":18},\"end\":{\"line\":24,\"column\":32}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":28}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":28}}]},{\"package\":\"ohos.multimedia.image\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":38}},{\"file\":\"image_span_attr.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":38}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"image_span.cj\",\"begin\":{\"line\":25,\"column\":23},\"end\":{\"line\":25,\"column\":34}},{\"file\":\"image_span.cj\",\"begin\":{\"line\":25,\"column\":36},\"end\":{\"line\":25,\"column\":52}}]}],\"features\":[]}",
   imports: [
     "ohos.arkui.component.image",
     "ohos.arkui.component.native_struct",
@@ -326,6 +326,28 @@
             "base"
           ],
           identifier: "FFIVectorFloat32",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 71,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 77,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "base"
+          ],
+          identifier: "Length",
           asIdentifier: ""
         },
         {
@@ -839,6 +861,17 @@
       ]
     },
     {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 9,
+        isC: true
+      }
+    },
+    {
       kind: "Class",
       typeArgs: [
 
@@ -847,7 +880,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 46
+          index: 47
         }
       }
     },
@@ -867,17 +900,17 @@
     {
       kind: "Func",
       typeArgs: [
-        22
+        23
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 19
+        retType: 20
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        23
+        24
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -903,17 +936,17 @@
     {
       kind: "Func",
       typeArgs: [
-        25
+        26
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 19
+        retType: 20
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        26
+        27
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -939,17 +972,17 @@
     {
       kind: "Func",
       typeArgs: [
-        28
+        29
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 30
+        retType: 31
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        29
+        30
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -981,7 +1014,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 46
+          index: 47
         },
         isThisTy: true
       }
@@ -989,17 +1022,17 @@
     {
       kind: "Func",
       typeArgs: [
-        32
+        33
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 30
+        retType: 31
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        33
+        34
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1025,17 +1058,17 @@
     {
       kind: "Func",
       typeArgs: [
-        35
+        36
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 30
+        retType: 31
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        36
+        37
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1060,17 +1093,17 @@
     {
       kind: "Func",
       typeArgs: [
-        38
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 30
+        retType: 31
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        39
+        40
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1093,17 +1126,17 @@
     {
       kind: "Func",
       typeArgs: [
-        41
+        42
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 30
+        retType: 31
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        42
+        43
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1116,7 +1149,7 @@
     {
       kind: "Func",
       typeArgs: [
-        43
+        44
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1146,9 +1179,58 @@
       }
     },
     {
+      kind: "Func",
+      typeArgs: [
+        47
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 31
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+        48
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: 2,
+          decl: "_CNat6OptionIG_E"
+        }
+      }
+    },
+    {
+      kind: "Interface",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: 3,
+          decl: "_CN9ohos.base6LengthE"
+        }
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        47,
+        47,
+        47,
+        47
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 31
+      }
+    },
+    {
       kind: "Class",
       typeArgs: [
-        19
+        20
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1167,64 +1249,64 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 62
+          index: 70
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        28
+        29
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 46
+        retType: 51
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        32
+        33
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 46
+        retType: 51
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        35
+        36
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 46
+        retType: 51
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        38
+        39
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 46
+        retType: 51
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        41
+        42
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 46
+        retType: 51
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        46
+        51
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3627,6 +3709,71 @@
       }
     },
     {
+      kind: "FuncDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.arkui.component.image_span",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 70,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 70,
+        column: 57,
+        ignore: false
+      },
+      identifier: "FfiOHOSAceFrameworkImageSetBorderRadius",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 70,
+        column: 10,
+        ignore: false
+      },
+      attributes: [
+        144968409101123632,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 19,
+      mangledName: "FfiOHOSAceFrameworkImageSetBorderRadius",
+      exportId: "FfiOHOSAceFrameworkImageSetBorderRadius",
+      mangledBeforeSema: "31ohos.arkui.component.image_span39FfiOHOSAceFrameworkImageSetBorderRadiusF$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 7222278799635774413,
+        bodyHash: 0
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
       kind: "ClassDecl",
       isTopLevel: true,
       fullPkgName: "ohos.arkui.component.image_span",
@@ -3637,14 +3784,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 80,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 227,
+        line: 250,
         column: 2,
         ignore: false
       },
@@ -3652,7 +3799,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 80,
         column: 14,
         ignore: false
       },
@@ -3676,7 +3823,7 @@
           ]
         }
       ],
-      type: 19,
+      type: 20,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpanE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpanE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC",
@@ -3685,23 +3832,25 @@
         virt: 0,
         sig: 17336518483127001820,
         srcUse: 0,
-        bodyHash: 8280958798044699165
+        bodyHash: 2925977689286112579
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          45,
-          46
+          50,
+          51
         ],
         body: [
-          47,
-          49,
-          51,
-          53,
-          55,
-          57,
-          59,
-          61
+          48,
+          50,
+          52,
+          54,
+          56,
+          58,
+          60,
+          62,
+          63,
+          65
         ]
       }
     },
@@ -3715,14 +3864,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 99,
+        line: 101,
         column: 6,
         ignore: false
       },
@@ -3730,7 +3879,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 12,
         ignore: false
       },
@@ -3754,7 +3903,7 @@
           ]
         }
       ],
-      type: 21,
+      type: 22,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan6<init>HNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan6<init>HNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC6<init>FO1_11ResourceStr$$",
@@ -3763,7 +3912,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14812693258818551822
+        bodyHash: 524753294497206375
       },
       info_type: "FuncInfo",
       info: {
@@ -3771,14 +3920,14 @@
           paramLists: [
             {
               params: [
-                48
+                49
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 19
+          retType: 20
         }
       }
     },
@@ -3788,14 +3937,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 36,
         ignore: false
       },
@@ -3803,7 +3952,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 90,
         column: 17,
         ignore: false
       },
@@ -3814,7 +3963,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 23,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan4initHNNat6OptionICN9ohos.base11ResourceStrEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -3839,14 +3988,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 112,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 117,
         column: 6,
         ignore: false
       },
@@ -3854,7 +4003,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 112,
         column: 12,
         ignore: false
       },
@@ -3878,7 +4027,7 @@
           ]
         }
       ],
-      type: 24,
+      type: 25,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan6<init>HNNat6OptionICN21ohos.multimedia.image8PixelMapEE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan6<init>HNNat6OptionICN21ohos.multimedia.image8PixelMapEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC6<init>FO1_8PixelMap$$",
@@ -3887,7 +4036,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2418588705060546225
+        bodyHash: 17857713014130838344
       },
       info_type: "FuncInfo",
       info: {
@@ -3895,14 +4044,14 @@
           paramLists: [
             {
               params: [
-                50
+                51
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 19
+          retType: 20
         }
       }
     },
@@ -3912,14 +4061,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 112,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 112,
         column: 33,
         ignore: false
       },
@@ -3927,7 +4076,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 112,
         column: 17,
         ignore: false
       },
@@ -3938,7 +4087,7 @@
       annotations: [
 
       ],
-      type: 25,
+      type: 26,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan4initHNNat6OptionICN21ohos.multimedia.image8PixelMapEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -3963,14 +4112,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 129,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 133,
+        line: 135,
         column: 6,
         ignore: false
       },
@@ -3978,7 +4127,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 129,
         column: 17,
         ignore: false
       },
@@ -4002,7 +4151,7 @@
           ]
         }
       ],
-      type: 27,
+      type: 28,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan13verticalAlignHNNat6OptionINN27ohos.arkui.component.common18ImageSpanAlignmentEE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan13verticalAlignHNNat6OptionINN27ohos.arkui.component.common18ImageSpanAlignmentEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC13verticalAlignFO1_18ImageSpanAlignment$$H",
@@ -4011,7 +4160,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17398637289395360564
+        bodyHash: 4655248592648158764
       },
       info_type: "FuncInfo",
       info: {
@@ -4019,14 +4168,14 @@
           paramLists: [
             {
               params: [
-                52
+                53
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 30
+          retType: 31
         }
       }
     },
@@ -4036,14 +4185,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 129,
         column: 31,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 129,
         column: 57,
         ignore: false
       },
@@ -4051,7 +4200,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 127,
+        line: 129,
         column: 31,
         ignore: false
       },
@@ -4062,7 +4211,7 @@
       annotations: [
 
       ],
-      type: 28,
+      type: 29,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan13verticalAlignHNNat6OptionINN27ohos.arkui.component.common18ImageSpanAlignmentEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -4087,14 +4236,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 147,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 151,
+        line: 153,
         column: 6,
         ignore: false
       },
@@ -4102,7 +4251,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 147,
         column: 17,
         ignore: false
       },
@@ -4126,7 +4275,7 @@
           ]
         }
       ],
-      type: 31,
+      type: 32,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan9objectFitHNNat6OptionINN27ohos.arkui.component.common8ImageFitEE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan9objectFitHNNat6OptionINN27ohos.arkui.component.common8ImageFitEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC9objectFitFO1_8ImageFit$$H",
@@ -4135,7 +4284,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4509506900165317061
+        bodyHash: 11110326347737437571
       },
       info_type: "FuncInfo",
       info: {
@@ -4143,14 +4292,14 @@
           paramLists: [
             {
               params: [
-                54
+                55
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 30
+          retType: 31
         }
       }
     },
@@ -4160,14 +4309,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 147,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 147,
         column: 43,
         ignore: false
       },
@@ -4175,7 +4324,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 147,
         column: 27,
         ignore: false
       },
@@ -4186,7 +4335,7 @@
       annotations: [
 
       ],
-      type: 32,
+      type: 33,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan9objectFitHNNat6OptionINN27ohos.arkui.component.common8ImageFitEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -4211,14 +4360,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 174,
+        line: 176,
         column: 6,
         ignore: false
       },
@@ -4226,7 +4375,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 17,
         ignore: false
       },
@@ -4250,7 +4399,7 @@
           ]
         }
       ],
-      type: 34,
+      type: 35,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan11colorFilterHNNat6OptionICN26ohos.arkui.component.image11ColorFilterEE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan11colorFilterHNNat6OptionICN26ohos.arkui.component.image11ColorFilterEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC11colorFilterFO1_11ColorFilter$$H",
@@ -4259,7 +4408,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17064488537054251412
+        bodyHash: 9497573349598682524
       },
       info_type: "FuncInfo",
       info: {
@@ -4267,14 +4416,14 @@
           paramLists: [
             {
               params: [
-                56
+                57
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 30
+          retType: 31
         }
       }
     },
@@ -4284,14 +4433,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 49,
         ignore: false
       },
@@ -4299,7 +4448,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 165,
         column: 29,
         ignore: false
       },
@@ -4310,7 +4459,7 @@
       annotations: [
 
       ],
-      type: 35,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan11colorFilterHNNat6OptionICN26ohos.arkui.component.image11ColorFilterEEE6filterIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -4335,14 +4484,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 187,
+        line: 189,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 197,
+        line: 199,
         column: 6,
         ignore: false
       },
@@ -4350,7 +4499,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 187,
+        line: 189,
         column: 17,
         ignore: false
       },
@@ -4374,7 +4523,7 @@
           ]
         }
       ],
-      type: 37,
+      type: 38,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan10onCompleteHNNat6OptionIF0uCN26ohos.arkui.component.image15ImageLoadResultEEE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan10onCompleteHNNat6OptionIF0uCN26ohos.arkui.component.image15ImageLoadResultEEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC10onCompleteFO1_21ImageCompleteCallback$$H",
@@ -4383,7 +4532,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 9940283235475767849
+        bodyHash: 13570813987398331820
       },
       info_type: "FuncInfo",
       info: {
@@ -4391,14 +4540,14 @@
           paramLists: [
             {
               params: [
-                58
+                59
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 30
+          retType: 31
         }
       }
     },
@@ -4408,14 +4557,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 187,
+        line: 189,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 187,
+        line: 189,
         column: 60,
         ignore: false
       },
@@ -4423,7 +4572,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 187,
+        line: 189,
         column: 28,
         ignore: false
       },
@@ -4434,7 +4583,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan10onCompleteHNNat6OptionIF0uCN26ohos.arkui.component.image15ImageLoadResultEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -4459,14 +4608,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 210,
+        line: 212,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 223,
+        line: 225,
         column: 6,
         ignore: false
       },
@@ -4474,7 +4623,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 210,
+        line: 212,
         column: 17,
         ignore: false
       },
@@ -4498,7 +4647,7 @@
           ]
         }
       ],
-      type: 40,
+      type: 41,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan7onErrorHNNat6OptionIF0uCN26ohos.arkui.component.image10ImageErrorEEE",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan7onErrorHNNat6OptionIF0uCN26ohos.arkui.component.image10ImageErrorEEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC7onErrorFO1_18ImageErrorCallback$$H",
@@ -4507,7 +4656,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7810725231790848570
+        bodyHash: 1805549121793150303
       },
       info_type: "FuncInfo",
       info: {
@@ -4515,14 +4664,14 @@
           paramLists: [
             {
               params: [
-                60
+                61
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 30
+          retType: 31
         }
       }
     },
@@ -4532,14 +4681,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 210,
+        line: 212,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 210,
+        line: 212,
         column: 54,
         ignore: false
       },
@@ -4547,7 +4696,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 210,
+        line: 212,
         column: 25,
         ignore: false
       },
@@ -4558,7 +4707,7 @@
       annotations: [
 
       ],
-      type: 41,
+      type: 42,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan7onErrorHNNat6OptionIF0uCN26ohos.arkui.component.image10ImageErrorEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -4583,14 +4732,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 228,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 228,
         column: 34,
         ignore: false
       },
@@ -4598,7 +4747,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 228,
         column: 20,
         ignore: false
       },
@@ -4609,7 +4758,7 @@
       annotations: [
 
       ],
-      type: 44,
+      type: 45,
       mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan3popHv",
       exportId: "_CN31ohos.arkui.component.image_span9ImageSpan3popHv",
       mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC3popF$$u",
@@ -4618,7 +4767,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 15995802980491276611
+        bodyHash: 468864051359632705
       },
       info_type: "FuncInfo",
       info: {
@@ -4635,6 +4784,379 @@
           ],
           retType: 9
         }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.arkui.component.image_span",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 230,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 236,
+        column: 6,
+        ignore: false
+      },
+      identifier: "borderRadiusInner",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 230,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        144678138297749536,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 46,
+      mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEE",
+      exportId: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEE",
+      mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC17borderRadiusInnerFO1_6Length$$H",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 2687969717096398320,
+        srcUse: 0,
+        bodyHash: 12156428789929040842
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                64
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 31
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.image_span",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 230,
+        column: 47,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 230,
+        column: 62,
+        ignore: false
+      },
+      identifier: "radius",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 230,
+        column: 47,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 47,
+      mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEE6radiusIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.arkui.component.image_span",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 249,
+        column: 6,
+        ignore: false
+      },
+      identifier: "borderRadiusInner",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        144678138297749536,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 49,
+      mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
+      exportId: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
+      mangledBeforeSema: "31ohos.arkui.component.image_span9ImageSpanC17borderRadiusInnerFO1_6Length!7topLeftO1_6Length!8topRightO1_6Length!10bottomLeftO1_6Length!11bottomRight$$H",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 2687969717096398320,
+        srcUse: 0,
+        bodyHash: 12899843809741633614
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                66,
+                67,
+                68,
+                69
+              ],
+              desugars: [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 31
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.image_span",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 239,
+        column: 13,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 239,
+        column: 30,
+        ignore: false
+      },
+      identifier: "topLeft",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 239,
+        column: 13,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 47,
+      mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E7topLeftIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+        isNamedParam: true
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.image_span",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 240,
+        column: 13,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 240,
+        column: 31,
+        ignore: false
+      },
+      identifier: "topRight",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 240,
+        column: 13,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 47,
+      mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E8topRightIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+        isNamedParam: true
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.image_span",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 241,
+        column: 13,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 241,
+        column: 33,
+        ignore: false
+      },
+      identifier: "bottomLeft",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 241,
+        column: 13,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 47,
+      mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E10bottomLeftIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+        isNamedParam: true
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.image_span",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 242,
+        column: 13,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 242,
+        column: 34,
+        ignore: false
+      },
+      identifier: "bottomRight",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 242,
+        column: 13,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 47,
+      mangledName: "_CN31ohos.arkui.component.image_span9ImageSpan17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E11bottomRightIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+        isNamedParam: true
       }
     },
     {
@@ -4687,7 +5209,7 @@
           ]
         }
       ],
-      type: 46,
+      type: 51,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttributeE",
       exportId: "_CN31ohos.arkui.component.image_span18ImageSpanAttributeE",
       mangledBeforeSema: "31ohos.arkui.component.image_span18ImageSpanAttributeI",
@@ -4701,14 +5223,14 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          52
+          57
         ],
         body: [
-          63,
-          65,
-          67,
-          69,
-          71
+          71,
+          73,
+          75,
+          77,
+          79
         ]
       }
     },
@@ -4761,7 +5283,7 @@
           ]
         }
       ],
-      type: 47,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute13verticalAlignHNNat6OptionINN27ohos.arkui.component.common18ImageSpanAlignmentEE",
       exportId: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute13verticalAlignHNNat6OptionINN27ohos.arkui.component.common18ImageSpanAlignmentEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span18ImageSpanAttributeI13verticalAlignFO1_18ImageSpanAlignment$$18ImageSpanAttribute",
@@ -4778,14 +5300,14 @@
           paramLists: [
             {
               params: [
-                64
+                72
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 46
+          retType: 51
         }
       }
     },
@@ -4821,7 +5343,7 @@
       annotations: [
 
       ],
-      type: 28,
+      type: 29,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute13verticalAlignHNNat6OptionINN27ohos.arkui.component.common18ImageSpanAlignmentEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -4885,7 +5407,7 @@
           ]
         }
       ],
-      type: 48,
+      type: 53,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute9objectFitHNNat6OptionINN27ohos.arkui.component.common8ImageFitEE",
       exportId: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute9objectFitHNNat6OptionINN27ohos.arkui.component.common8ImageFitEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span18ImageSpanAttributeI9objectFitFO1_8ImageFit$$18ImageSpanAttribute",
@@ -4902,14 +5424,14 @@
           paramLists: [
             {
               params: [
-                66
+                74
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 46
+          retType: 51
         }
       }
     },
@@ -4945,7 +5467,7 @@
       annotations: [
 
       ],
-      type: 32,
+      type: 33,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute9objectFitHNNat6OptionINN27ohos.arkui.component.common8ImageFitEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -5009,7 +5531,7 @@
           ]
         }
       ],
-      type: 49,
+      type: 54,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute11colorFilterHNNat6OptionICN26ohos.arkui.component.image11ColorFilterEE",
       exportId: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute11colorFilterHNNat6OptionICN26ohos.arkui.component.image11ColorFilterEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span18ImageSpanAttributeI11colorFilterFO1_11ColorFilter$$18ImageSpanAttribute",
@@ -5026,14 +5548,14 @@
           paramLists: [
             {
               params: [
-                68
+                76
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 46
+          retType: 51
         }
       }
     },
@@ -5069,7 +5591,7 @@
       annotations: [
 
       ],
-      type: 35,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute11colorFilterHNNat6OptionICN26ohos.arkui.component.image11ColorFilterEEE6filterIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -5133,7 +5655,7 @@
           ]
         }
       ],
-      type: 50,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute10onCompleteHNNat6OptionIF0uCN26ohos.arkui.component.image15ImageLoadResultEEE",
       exportId: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute10onCompleteHNNat6OptionIF0uCN26ohos.arkui.component.image15ImageLoadResultEEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span18ImageSpanAttributeI10onCompleteFO1_21ImageCompleteCallback$$18ImageSpanAttribute",
@@ -5150,14 +5672,14 @@
           paramLists: [
             {
               params: [
-                70
+                78
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 46
+          retType: 51
         }
       }
     },
@@ -5193,7 +5715,7 @@
       annotations: [
 
       ],
-      type: 38,
+      type: 39,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute10onCompleteHNNat6OptionIF0uCN26ohos.arkui.component.image15ImageLoadResultEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -5257,7 +5779,7 @@
           ]
         }
       ],
-      type: 51,
+      type: 56,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute7onErrorHNNat6OptionIF0uCN26ohos.arkui.component.image10ImageErrorEEE",
       exportId: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute7onErrorHNNat6OptionIF0uCN26ohos.arkui.component.image10ImageErrorEEE",
       mangledBeforeSema: "31ohos.arkui.component.image_span18ImageSpanAttributeI7onErrorFO1_18ImageErrorCallback$$18ImageSpanAttribute",
@@ -5274,14 +5796,14 @@
           paramLists: [
             {
               params: [
-                72
+                80
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 46
+          retType: 51
         }
       }
     },
@@ -5317,7 +5839,7 @@
       annotations: [
 
       ],
-      type: 41,
+      type: 42,
       mangledName: "_CN31ohos.arkui.component.image_span18ImageSpanAttribute7onErrorHNNat6OptionIF0uCN26ohos.arkui.component.image10ImageErrorEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -5339,18 +5861,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 75,
+        line: 77,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 75,
+        line: 77,
         column: 16,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5362,18 +5884,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 78,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 78,
         column: 48,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5385,18 +5907,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 85,
+        line: 87,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 85,
+        line: 87,
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5408,18 +5930,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 86,
+        line: 88,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 86,
+        line: 88,
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5431,18 +5953,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 107,
+        line: 109,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 107,
+        line: 109,
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5454,18 +5976,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 108,
+        line: 110,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 108,
+        line: 110,
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5477,18 +5999,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 126,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 124,
+        line: 126,
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5500,18 +6022,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 127,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 125,
+        line: 127,
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5523,18 +6045,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 144,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 144,
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5546,18 +6068,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 145,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 145,
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5569,18 +6091,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 160,
+        line: 162,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 160,
+        line: 162,
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5592,18 +6114,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 161,
+        line: 163,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 161,
+        line: 163,
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5615,18 +6137,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 184,
+        line: 186,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 184,
+        line: 186,
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5638,18 +6160,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 185,
+        line: 187,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 185,
+        line: 187,
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5661,18 +6183,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 209,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 209,
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5684,18 +6206,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 208,
+        line: 210,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 208,
+        line: 210,
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5718,7 +6240,7 @@
         column: 16,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5741,7 +6263,7 @@
         column: 48,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5764,7 +6286,7 @@
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5787,7 +6309,7 @@
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5810,7 +6332,7 @@
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5833,7 +6355,7 @@
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5856,7 +6378,7 @@
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5879,7 +6401,7 @@
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5902,7 +6424,7 @@
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5925,7 +6447,7 @@
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
@@ -5948,7 +6470,7 @@
         column: 20,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "22",
@@ -5971,7 +6493,7 @@
         column: 52,
         ignore: false
       },
-      type: 20,
+      type: 21,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",

@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "kit.AbilityKit",
-  pkgDepInfo: "{\"package\":\"kit.AbilityKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.ability_access_ctrl\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":34,\"column\":1},\"end\":{\"line\":34,\"column\":41}}]},{\"package\":\"ohos.app.ability.ability_constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":50}}]},{\"package\":\"ohos.app.ability.ability_stage\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":47}}]},{\"package\":\"ohos.app.ability.app_recovery\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":46}}]},{\"package\":\"ohos.app.ability.common\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":40}}]},{\"package\":\"ohos.app.ability.completion_handler\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":52}}]},{\"package\":\"ohos.app.ability.configuration\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":47}}]},{\"package\":\"ohos.app.ability.context_constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":50}}]},{\"package\":\"ohos.app.ability.dialog_request\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":48}}]},{\"package\":\"ohos.app.ability.error_manager\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":47}}]},{\"package\":\"ohos.app.ability.open_link_options\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":51}}]},{\"package\":\"ohos.app.ability.start_options\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":28,\"column\":1},\"end\":{\"line\":28,\"column\":47}}]},{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":29,\"column\":1},\"end\":{\"line\":29,\"column\":44}}]},{\"package\":\"ohos.app.ability.want\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":30,\"column\":1},\"end\":{\"line\":30,\"column\":38}}]},{\"package\":\"ohos.app.ability.want_constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":31,\"column\":1},\"end\":{\"line\":31,\"column\":47}}]},{\"package\":\"ohos.bundle.bundle_manager\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":37,\"column\":1},\"end\":{\"line\":37,\"column\":43}}]}]}",
+  pkgDepInfo: "{\"package\":\"kit.AbilityKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.ability_access_ctrl\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":36,\"column\":1},\"end\":{\"line\":36,\"column\":41}}]},{\"package\":\"ohos.app.ability.ability_constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":50}}]},{\"package\":\"ohos.app.ability.ability_stage\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":47}}]},{\"package\":\"ohos.app.ability.app_recovery\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":46}}]},{\"package\":\"ohos.app.ability.common\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":40}}]},{\"package\":\"ohos.app.ability.completion_handler\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":52}}]},{\"package\":\"ohos.app.ability.configuration\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":47}}]},{\"package\":\"ohos.app.ability.context_constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":50}}]},{\"package\":\"ohos.app.ability.dialog_request\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":48}}]},{\"package\":\"ohos.app.ability.error_manager\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":28,\"column\":1},\"end\":{\"line\":28,\"column\":47}}]},{\"package\":\"ohos.app.ability.open_link_options\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":29,\"column\":1},\"end\":{\"line\":29,\"column\":51}}]},{\"package\":\"ohos.app.ability.start_options\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":30,\"column\":1},\"end\":{\"line\":30,\"column\":47}}]},{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":31,\"column\":1},\"end\":{\"line\":31,\"column\":44}}]},{\"package\":\"ohos.app.ability.want\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":32,\"column\":1},\"end\":{\"line\":32,\"column\":38}}]},{\"package\":\"ohos.app.ability.want_constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":33,\"column\":1},\"end\":{\"line\":33,\"column\":47}}]},{\"package\":\"ohos.bundle.bundle_manager\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":39,\"column\":1},\"end\":{\"line\":39,\"column\":43}}]}],\"features\":[]}",
   imports: [
     "ohos.app.ability.ability_constant",
     "ohos.app.ability.ability_stage",
@@ -35,14 +35,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 50,
             ignore: false
           },
@@ -60,14 +60,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 47,
             ignore: false
           },
@@ -85,14 +85,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 46,
             ignore: false
           },
@@ -110,14 +110,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 40,
             ignore: false
           },
@@ -135,14 +135,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 52,
             ignore: false
           },
@@ -160,14 +160,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 25,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 25,
             column: 47,
             ignore: false
           },
@@ -185,14 +185,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 24,
+            line: 26,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 24,
+            line: 26,
             column: 50,
             ignore: false
           },
@@ -210,14 +210,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 25,
+            line: 27,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 25,
+            line: 27,
             column: 48,
             ignore: false
           },
@@ -235,14 +235,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 26,
+            line: 28,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 26,
+            line: 28,
             column: 47,
             ignore: false
           },
@@ -260,14 +260,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 27,
+            line: 29,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 27,
+            line: 29,
             column: 51,
             ignore: false
           },
@@ -285,14 +285,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 28,
+            line: 30,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 28,
+            line: 30,
             column: 47,
             ignore: false
           },
@@ -310,14 +310,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 29,
+            line: 31,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 29,
+            line: 31,
             column: 44,
             ignore: false
           },
@@ -335,14 +335,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 30,
+            line: 32,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 30,
+            line: 32,
             column: 38,
             ignore: false
           },
@@ -360,14 +360,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 31,
+            line: 33,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 31,
+            line: 33,
             column: 47,
             ignore: false
           },
@@ -385,14 +385,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 34,
+            line: 36,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 34,
+            line: 36,
             column: 41,
             ignore: false
           },
@@ -408,14 +408,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 37,
+            line: 39,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 37,
+            line: 39,
             column: 43,
             ignore: false
           },

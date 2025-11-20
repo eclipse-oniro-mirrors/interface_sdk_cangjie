@@ -484,7 +484,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 84,
         column: 2,
         ignore: false
       },
@@ -722,14 +722,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 82,
+        line: 83,
         column: 6,
         ignore: false
       },
@@ -737,7 +737,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 24,
         ignore: false
       },
@@ -770,7 +770,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 16535000393930703750
+        bodyHash: 10765987924238658321
       },
       info_type: "FuncInfo",
       info: {
@@ -797,14 +797,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 48,
         ignore: false
       },
@@ -812,7 +812,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 36,
         ignore: false
       },
@@ -844,14 +844,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 50,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 63,
         ignore: false
       },
@@ -859,7 +859,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 50,
         ignore: false
       },
@@ -1048,14 +1048,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 74,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 74,
         column: 20,
         ignore: false
       },
@@ -1071,14 +1071,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 53,
         ignore: false
       },

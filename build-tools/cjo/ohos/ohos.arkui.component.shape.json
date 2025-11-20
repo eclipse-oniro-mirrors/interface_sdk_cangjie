@@ -6,7 +6,7 @@
     patch_num: 0
   },
   fullPkgName: "ohos.arkui.component.shape",
-  pkgDepInfo: "{\"package\":\"ohos.arkui.component.shape\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":58}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":18,\"column\":60},\"end\":{\"line\":18,\"column\":72}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":18,\"column\":74},\"end\":{\"line\":18,\"column\":87}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":63}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":18,\"column\":65},\"end\":{\"line\":18,\"column\":78}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":19,\"column\":35},\"end\":{\"line\":19,\"column\":66}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":19,\"column\":68},\"end\":{\"line\":19,\"column\":92}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":19,\"column\":35},\"end\":{\"line\":19,\"column\":66}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":19,\"column\":68},\"end\":{\"line\":19,\"column\":92}},{\"file\":\"shape.cj\",\"begin\":{\"line\":20,\"column\":35},\"end\":{\"line\":20,\"column\":66}},{\"file\":\"shape.cj\",\"begin\":{\"line\":20,\"column\":68},\"end\":{\"line\":20,\"column\":92}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":40}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":42},\"end\":{\"line\":20,\"column\":61}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":63},\"end\":{\"line\":20,\"column\":80}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":82},\"end\":{\"line\":20,\"column\":98}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":100},\"end\":{\"line\":20,\"column\":114}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":116},\"end\":{\"line\":20,\"column\":121}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":123},\"end\":{\"line\":20,\"column\":133}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":19},\"end\":{\"line\":21,\"column\":32}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":34},\"end\":{\"line\":21,\"column\":40}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":42},\"end\":{\"line\":21,\"column\":58}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":60},\"end\":{\"line\":21,\"column\":74}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":19},\"end\":{\"line\":21,\"column\":32}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":34},\"end\":{\"line\":21,\"column\":40}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":42},\"end\":{\"line\":21,\"column\":61}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":63},\"end\":{\"line\":21,\"column\":80}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":82},\"end\":{\"line\":21,\"column\":98}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":100},\"end\":{\"line\":21,\"column\":114}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":116},\"end\":{\"line\":21,\"column\":126}},{\"file\":\"shape_attr.cj\",\"begin\":{\"line\":19,\"column\":19},\"end\":{\"line\":19,\"column\":25}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":49}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":49}},{\"file\":\"shape.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":49}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":28}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":28}},{\"file\":\"shape_attr.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":28}}]},{\"package\":\"ohos.multimedia.image\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":38}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":38}},{\"file\":\"shape.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":38}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":21,\"column\":23},\"end\":{\"line\":21,\"column\":34}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":21,\"column\":36},\"end\":{\"line\":21,\"column\":53}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":22,\"column\":23},\"end\":{\"line\":22,\"column\":34}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":22,\"column\":36},\"end\":{\"line\":22,\"column\":53}}]}],\"features\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.arkui.component.shape\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.arkui.component.common\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":58}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":18,\"column\":60},\"end\":{\"line\":18,\"column\":72}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":18,\"column\":74},\"end\":{\"line\":18,\"column\":87}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":18,\"column\":37},\"end\":{\"line\":18,\"column\":49}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":18,\"column\":51},\"end\":{\"line\":18,\"column\":63}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":18,\"column\":65},\"end\":{\"line\":18,\"column\":78}},{\"file\":\"shape.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":53}}]},{\"package\":\"ohos.arkui.component.util\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":19,\"column\":35},\"end\":{\"line\":19,\"column\":66}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":19,\"column\":68},\"end\":{\"line\":19,\"column\":92}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":19,\"column\":94},\"end\":{\"line\":19,\"column\":106}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":19,\"column\":35},\"end\":{\"line\":19,\"column\":66}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":19,\"column\":68},\"end\":{\"line\":19,\"column\":92}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":35},\"end\":{\"line\":21,\"column\":66}},{\"file\":\"shape.cj\",\"begin\":{\"line\":21,\"column\":68},\"end\":{\"line\":21,\"column\":92}}]},{\"package\":\"ohos.base\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":19},\"end\":{\"line\":20,\"column\":32}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":40}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":42},\"end\":{\"line\":20,\"column\":61}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":63},\"end\":{\"line\":20,\"column\":80}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":82},\"end\":{\"line\":20,\"column\":98}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":100},\"end\":{\"line\":20,\"column\":114}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":116},\"end\":{\"line\":20,\"column\":121}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":20,\"column\":123},\"end\":{\"line\":20,\"column\":133}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":19},\"end\":{\"line\":21,\"column\":32}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":34},\"end\":{\"line\":21,\"column\":40}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":42},\"end\":{\"line\":21,\"column\":58}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":21,\"column\":60},\"end\":{\"line\":21,\"column\":74}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":19},\"end\":{\"line\":22,\"column\":32}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":34},\"end\":{\"line\":22,\"column\":40}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":42},\"end\":{\"line\":22,\"column\":61}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":63},\"end\":{\"line\":22,\"column\":80}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":82},\"end\":{\"line\":22,\"column\":98}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":100},\"end\":{\"line\":22,\"column\":114}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":116},\"end\":{\"line\":22,\"column\":126}},{\"file\":\"shape.cj\",\"begin\":{\"line\":22,\"column\":128},\"end\":{\"line\":22,\"column\":133}},{\"file\":\"shape_attr.cj\",\"begin\":{\"line\":19,\"column\":19},\"end\":{\"line\":19,\"column\":25}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":49}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":49}},{\"file\":\"shape.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":49}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":28}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"shape.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"shape_attr.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":28}}]},{\"package\":\"ohos.multimedia.image\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":38}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":38}},{\"file\":\"shape.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":38}}]},{\"package\":\"ohos.resource\",\"isStd\":false,\"imports\":[{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":21,\"column\":23},\"end\":{\"line\":21,\"column\":34}},{\"file\":\"common_shape_component.cj\",\"begin\":{\"line\":21,\"column\":36},\"end\":{\"line\":21,\"column\":53}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":22,\"column\":23},\"end\":{\"line\":22,\"column\":34}},{\"file\":\"common_shape_method.cj\",\"begin\":{\"line\":22,\"column\":36},\"end\":{\"line\":22,\"column\":53}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.base",
@@ -141,6 +141,30 @@
             "util"
           ],
           identifier: "transAppResourceToLength",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 19,
+            column: 94,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 19,
+            column: 106,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "arkui",
+            "component",
+            "util"
+          ],
+          identifier: "lessNotEqual",
           asIdentifier: ""
         },
         {
@@ -806,13 +830,37 @@
             file: 3,
             pkgId: 0,
             line: 20,
-            column: 35,
+            column: 37,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
             line: 20,
+            column: 53,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "arkui",
+            "component",
+            "common"
+          ],
+          identifier: "ColoringStrategy",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 3,
+            pkgId: 0,
+            line: 21,
+            column: 35,
+            ignore: false
+          },
+          end: {
+            file: 3,
+            pkgId: 0,
+            line: 21,
             column: 66,
             ignore: false
           },
@@ -829,14 +877,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 20,
+            line: 21,
             column: 68,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 20,
+            line: 21,
             column: 92,
             ignore: false
           },
@@ -853,14 +901,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 19,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 32,
             ignore: false
           },
@@ -875,14 +923,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 34,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 40,
             ignore: false
           },
@@ -897,14 +945,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 42,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 61,
             ignore: false
           },
@@ -919,14 +967,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 63,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 80,
             ignore: false
           },
@@ -941,14 +989,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 82,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 98,
             ignore: false
           },
@@ -963,14 +1011,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 100,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 114,
             ignore: false
           },
@@ -985,14 +1033,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 116,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 126,
             ignore: false
           },
@@ -1008,13 +1056,35 @@
             file: 3,
             pkgId: 0,
             line: 22,
-            column: 1,
+            column: 128,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
             line: 22,
+            column: 133,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "base"
+          ],
+          identifier: "Color",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 3,
+            pkgId: 0,
+            line: 23,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 3,
+            pkgId: 0,
+            line: 23,
             column: 28,
             ignore: false
           },
@@ -1029,14 +1099,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 23,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 23,
+            line: 24,
             column: 49,
             ignore: false
           },
@@ -1051,14 +1121,14 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 25,
+            line: 26,
             column: 1,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 25,
+            line: 26,
             column: 38,
             ignore: false
           },
@@ -1825,6 +1895,20 @@
       }
     },
     {
+      kind: "Func",
+      typeArgs: [
+        64
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 8,
+        isC: true
+      }
+    },
+    {
+      kind: "CString"
+    },
+    {
       kind: "Class",
       typeArgs: [
 
@@ -1833,7 +1917,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 134
+          index: 138
         }
       }
     },
@@ -1844,7 +1928,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 63
+        retType: 65
       }
     },
     {
@@ -1860,17 +1944,17 @@
     {
       kind: "Func",
       typeArgs: [
-        67
+        69
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 63
+        retType: 65
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        68
+        70
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1902,7 +1986,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 70
+        retType: 72
       }
     },
     {
@@ -1914,7 +1998,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 134
+          index: 138
         },
         isThisTy: true
       }
@@ -1965,19 +2049,19 @@
     {
       kind: "Func",
       typeArgs: [
-        76,
         78,
-        78
+        80,
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 70
+        retType: 72
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        77
+        79
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -2011,9 +2095,54 @@
       }
     },
     {
+      kind: "Func",
+      typeArgs: [
+        10
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 72
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        83
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 72
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+        84
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6OptionIG_E"
+        }
+      }
+    },
+    {
+      kind: "Enum",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: 3,
+          decl: "_CN27ohos.arkui.component.common16ColoringStrategyE"
+        }
+      }
+    },
+    {
       kind: "Class",
       typeArgs: [
-        63
+        65
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -2032,7 +2161,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 159
+          index: 167
         }
       }
     },
@@ -2046,25 +2175,25 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 80
+        retType: 86
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        76,
         78,
-        78
+        80,
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 80
+        retType: 86
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        80
+        86
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -2102,7 +2231,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 355,
+        line: 363,
         column: 2,
         ignore: false
       },
@@ -4151,7 +4280,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 327,
+        line: 331,
         column: 6,
         ignore: false
       },
@@ -4179,7 +4308,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 6626501808423053532
+        bodyHash: 13753861979271253614
       },
       info_type: "FuncInfo",
       info: {
@@ -4255,14 +4384,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 333,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 339,
+        line: 347,
         column: 6,
         ignore: false
       },
@@ -4270,7 +4399,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 333,
         column: 29,
         ignore: false
       },
@@ -4290,7 +4419,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 15941424709337776895
+        bodyHash: 10742898398360761345
       },
       info_type: "FuncInfo",
       info: {
@@ -4315,14 +4444,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 333,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 333,
         column: 55,
         ignore: false
       },
@@ -4330,7 +4459,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 333,
         column: 41,
         ignore: false
       },
@@ -4366,14 +4495,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 354,
+        line: 362,
         column: 6,
         ignore: false
       },
@@ -4381,7 +4510,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 29,
         ignore: false
       },
@@ -4401,7 +4530,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 6593380772621080262
+        bodyHash: 12218619735407712004
       },
       info_type: "FuncInfo",
       info: {
@@ -4428,14 +4557,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 39,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 53,
         ignore: false
       },
@@ -4443,7 +4572,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 39,
         ignore: false
       },
@@ -4475,14 +4604,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 55,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 70,
         ignore: false
       },
@@ -4490,7 +4619,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 341,
+        line: 349,
         column: 55,
         ignore: false
       },
@@ -6274,14 +6403,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 29,
         column: 1,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 39,
+        line: 40,
         column: 2,
         ignore: false
       },
@@ -6289,7 +6418,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 29,
         column: 8,
         ignore: false
       },
@@ -6335,14 +6464,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 25,
         ignore: false
       },
@@ -6350,7 +6479,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 13,
         ignore: false
       },
@@ -6383,14 +6512,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 32,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 32,
         column: 25,
         ignore: false
       },
@@ -6398,7 +6527,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 32,
         column: 13,
         ignore: false
       },
@@ -6431,14 +6560,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 33,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 33,
         column: 29,
         ignore: false
       },
@@ -6446,7 +6575,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 33,
         column: 13,
         ignore: false
       },
@@ -6479,14 +6608,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 30,
         ignore: false
       },
@@ -6494,7 +6623,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 13,
         ignore: false
       },
@@ -6527,14 +6656,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 35,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 35,
         column: 23,
         ignore: false
       },
@@ -6542,7 +6671,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 35,
         column: 13,
         ignore: false
       },
@@ -6575,14 +6704,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 36,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 36,
         column: 23,
         ignore: false
       },
@@ -6590,7 +6719,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 36,
         column: 13,
         ignore: false
       },
@@ -6623,14 +6752,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 37,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 37,
         column: 27,
         ignore: false
       },
@@ -6638,7 +6767,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 37,
         column: 13,
         ignore: false
       },
@@ -6671,14 +6800,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 28,
         ignore: false
       },
@@ -6686,7 +6815,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 13,
         ignore: false
       },
@@ -6723,14 +6852,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 30,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 38,
+        line: 39,
         column: 9,
         ignore: false
       },
@@ -6738,7 +6867,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 30,
         column: 5,
         ignore: false
       },
@@ -6797,14 +6926,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 25,
         ignore: false
       },
@@ -6812,7 +6941,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 31,
         column: 13,
         ignore: false
       },
@@ -6845,14 +6974,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 32,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 32,
         column: 25,
         ignore: false
       },
@@ -6860,7 +6989,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 32,
         column: 13,
         ignore: false
       },
@@ -6893,14 +7022,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 33,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 33,
         column: 29,
         ignore: false
       },
@@ -6908,7 +7037,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 33,
         column: 13,
         ignore: false
       },
@@ -6941,14 +7070,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 30,
         ignore: false
       },
@@ -6956,7 +7085,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 34,
         column: 13,
         ignore: false
       },
@@ -6989,14 +7118,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 35,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 35,
         column: 23,
         ignore: false
       },
@@ -7004,7 +7133,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 35,
         column: 13,
         ignore: false
       },
@@ -7037,14 +7166,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 36,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 36,
         column: 23,
         ignore: false
       },
@@ -7052,7 +7181,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 36,
         column: 13,
         ignore: false
       },
@@ -7085,14 +7214,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 37,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 37,
         column: 27,
         ignore: false
       },
@@ -7100,7 +7229,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 36,
+        line: 37,
         column: 13,
         ignore: false
       },
@@ -7133,14 +7262,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 28,
         ignore: false
       },
@@ -7148,7 +7277,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 13,
         ignore: false
       },
@@ -7186,14 +7315,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 42,
+        line: 43,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 42,
+        line: 43,
         column: 48,
         ignore: false
       },
@@ -7201,7 +7330,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 42,
+        line: 43,
         column: 10,
         ignore: false
       },
@@ -7251,14 +7380,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 44,
+        line: 45,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 44,
+        line: 45,
         column: 77,
         ignore: false
       },
@@ -7266,7 +7395,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 44,
+        line: 45,
         column: 10,
         ignore: false
       },
@@ -7311,14 +7440,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 44,
+        line: 45,
         column: 53,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 44,
+        line: 45,
         column: 70,
         ignore: false
       },
@@ -7326,7 +7455,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 44,
+        line: 45,
         column: 53,
         ignore: false
       },
@@ -7363,14 +7492,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 46,
+        line: 47,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 46,
+        line: 47,
         column: 77,
         ignore: false
       },
@@ -7378,7 +7507,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 46,
+        line: 47,
         column: 10,
         ignore: false
       },
@@ -7423,14 +7552,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 46,
+        line: 47,
         column: 46,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 46,
+        line: 47,
         column: 70,
         ignore: false
       },
@@ -7438,7 +7567,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 46,
+        line: 47,
         column: 46,
         ignore: false
       },
@@ -7475,14 +7604,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 48,
+        line: 49,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 48,
+        line: 49,
         column: 62,
         ignore: false
       },
@@ -7490,7 +7619,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 48,
+        line: 49,
         column: 10,
         ignore: false
       },
@@ -7535,14 +7664,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 48,
+        line: 49,
         column: 42,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 48,
+        line: 49,
         column: 55,
         ignore: false
       },
@@ -7550,7 +7679,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 48,
+        line: 49,
         column: 42,
         ignore: false
       },
@@ -7587,14 +7716,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 50,
+        line: 51,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 50,
+        line: 51,
         column: 76,
         ignore: false
       },
@@ -7602,7 +7731,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 50,
+        line: 51,
         column: 10,
         ignore: false
       },
@@ -7647,14 +7776,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 50,
+        line: 51,
         column: 49,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 50,
+        line: 51,
         column: 69,
         ignore: false
       },
@@ -7662,7 +7791,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 50,
+        line: 51,
         column: 49,
         ignore: false
       },
@@ -7699,14 +7828,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 52,
+        line: 53,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 52,
+        line: 53,
         column: 64,
         ignore: false
       },
@@ -7714,7 +7843,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 52,
+        line: 53,
         column: 10,
         ignore: false
       },
@@ -7759,14 +7888,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 52,
+        line: 53,
         column: 44,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 52,
+        line: 53,
         column: 57,
         ignore: false
       },
@@ -7774,7 +7903,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 52,
+        line: 53,
         column: 44,
         ignore: false
       },
@@ -7811,14 +7940,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 121,
         ignore: false
       },
@@ -7826,7 +7955,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 10,
         ignore: false
       },
@@ -7873,14 +8002,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 53,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 84,
         ignore: false
       },
@@ -7888,7 +8017,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 53,
         ignore: false
       },
@@ -7920,14 +8049,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 86,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 114,
         ignore: false
       },
@@ -7935,7 +8064,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 54,
+        line: 55,
         column: 86,
         ignore: false
       },
@@ -7972,14 +8101,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 95,
         ignore: false
       },
@@ -7987,7 +8116,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 10,
         ignore: false
       },
@@ -8034,14 +8163,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 54,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 69,
         ignore: false
       },
@@ -8049,7 +8178,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 54,
         ignore: false
       },
@@ -8081,14 +8210,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 71,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 88,
         ignore: false
       },
@@ -8096,7 +8225,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 56,
+        line: 57,
         column: 71,
         ignore: false
       },
@@ -8133,14 +8262,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 58,
+        line: 59,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 58,
+        line: 59,
         column: 72,
         ignore: false
       },
@@ -8148,7 +8277,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 58,
+        line: 59,
         column: 10,
         ignore: false
       },
@@ -8193,14 +8322,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 58,
+        line: 59,
         column: 51,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 58,
+        line: 59,
         column: 65,
         ignore: false
       },
@@ -8208,7 +8337,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 58,
+        line: 59,
         column: 51,
         ignore: false
       },
@@ -8245,14 +8374,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 74,
         ignore: false
       },
@@ -8260,7 +8389,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 10,
         ignore: false
       },
@@ -8305,14 +8434,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 52,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 67,
         ignore: false
       },
@@ -8320,7 +8449,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 60,
+        line: 61,
         column: 52,
         ignore: false
       },
@@ -8357,14 +8486,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 80,
         ignore: false
       },
@@ -8372,7 +8501,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 10,
         ignore: false
       },
@@ -8417,14 +8546,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 54,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 73,
         ignore: false
       },
@@ -8432,7 +8561,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 62,
+        line: 63,
         column: 54,
         ignore: false
       },
@@ -8469,14 +8598,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 64,
+        line: 65,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 64,
+        line: 65,
         column: 80,
         ignore: false
       },
@@ -8484,7 +8613,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 64,
+        line: 65,
         column: 10,
         ignore: false
       },
@@ -8529,14 +8658,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 64,
+        line: 65,
         column: 51,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 64,
+        line: 65,
         column: 73,
         ignore: false
       },
@@ -8544,7 +8673,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 64,
+        line: 65,
         column: 51,
         ignore: false
       },
@@ -8581,14 +8710,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 94,
         ignore: false
       },
@@ -8596,7 +8725,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 10,
         ignore: false
       },
@@ -8643,14 +8772,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 49,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 69,
         ignore: false
       },
@@ -8658,7 +8787,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 49,
         ignore: false
       },
@@ -8690,14 +8819,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 71,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 87,
         ignore: false
       },
@@ -8705,7 +8834,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 66,
+        line: 67,
         column: 71,
         ignore: false
       },
@@ -8742,14 +8871,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 68,
+        line: 69,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 68,
+        line: 69,
         column: 69,
         ignore: false
       },
@@ -8757,7 +8886,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 68,
+        line: 69,
         column: 10,
         ignore: false
       },
@@ -8802,14 +8931,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 68,
+        line: 69,
         column: 47,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 68,
+        line: 69,
         column: 62,
         ignore: false
       },
@@ -8817,7 +8946,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 68,
+        line: 69,
         column: 47,
         ignore: false
       },
@@ -8854,14 +8983,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 109,
         ignore: false
       },
@@ -8869,7 +8998,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 10,
         ignore: false
       },
@@ -8918,14 +9047,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 42,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 73,
         ignore: false
       },
@@ -8933,7 +9062,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 42,
         ignore: false
       },
@@ -8965,14 +9094,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 75,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 89,
         ignore: false
       },
@@ -8980,7 +9109,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 75,
         ignore: false
       },
@@ -9012,14 +9141,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 91,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 102,
         ignore: false
       },
@@ -9027,7 +9156,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 91,
         ignore: false
       },
@@ -9064,14 +9193,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 77,
         ignore: false
       },
@@ -9079,7 +9208,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 10,
         ignore: false
       },
@@ -9126,14 +9255,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 43,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 57,
         ignore: false
       },
@@ -9141,7 +9270,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 43,
         ignore: false
       },
@@ -9173,14 +9302,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 59,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 70,
         ignore: false
       },
@@ -9188,7 +9317,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 73,
         column: 59,
         ignore: false
       },
@@ -9225,14 +9354,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 79,
         ignore: false
       },
@@ -9240,7 +9369,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 10,
         ignore: false
       },
@@ -9287,14 +9416,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 44,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 59,
         ignore: false
       },
@@ -9302,7 +9431,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 44,
         ignore: false
       },
@@ -9334,14 +9463,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 61,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 72,
         ignore: false
       },
@@ -9349,7 +9478,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 74,
+        line: 75,
         column: 61,
         ignore: false
       },
@@ -9386,14 +9515,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 117,
         ignore: false
       },
@@ -9401,7 +9530,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 10,
         ignore: false
       },
@@ -9452,14 +9581,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 42,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 56,
         ignore: false
       },
@@ -9467,7 +9596,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 42,
         ignore: false
       },
@@ -9499,14 +9628,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 58,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 74,
         ignore: false
       },
@@ -9514,7 +9643,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 58,
         ignore: false
       },
@@ -9546,14 +9675,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 76,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 91,
         ignore: false
       },
@@ -9561,7 +9690,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 76,
         ignore: false
       },
@@ -9593,14 +9722,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 93,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 110,
         ignore: false
       },
@@ -9608,7 +9737,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 76,
+        line: 77,
         column: 93,
         ignore: false
       },
@@ -9645,14 +9774,238 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 78,
+        line: 79,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 78,
+        line: 79,
+        column: 75,
+        ignore: false
+      },
+      identifier: "FfiOHOSAceFrameworkShapeSetForegroundColorV2",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 79,
+        column: 10,
+        ignore: false
+      },
+      attributes: [
+        144968409101123632,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 53,
+      mangledName: "FfiOHOSAceFrameworkShapeSetForegroundColorV2",
+      exportId: "FfiOHOSAceFrameworkShapeSetForegroundColorV2",
+      mangledBeforeSema: "26ohos.arkui.component.shape44FfiOHOSAceFrameworkShapeSetForegroundColorV2Fj$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 7222278799635774413,
+        bodyHash: 3509254035188702284
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                133
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 8
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.shape",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 79,
+        column: 55,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 79,
+        column: 68,
+        ignore: false
+      },
+      identifier: "color",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 79,
+        column: 55,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 54,
+      mangledName: "_CN26ohos.arkui.component.shape44FfiOHOSAceFrameworkShapeSetForegroundColorV2HjE5colorE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.arkui.component.shape",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 81,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 81,
+        column: 85,
+        ignore: false
+      },
+      identifier: "FfiOHOSAceFrameworkShapeSetForegroundColorStrategy",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 81,
+        column: 10,
+        ignore: false
+      },
+      attributes: [
+        144968409101123632,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 63,
+      mangledName: "FfiOHOSAceFrameworkShapeSetForegroundColorStrategy",
+      exportId: "FfiOHOSAceFrameworkShapeSetForegroundColorStrategy",
+      mangledBeforeSema: "26ohos.arkui.component.shape50FfiOHOSAceFrameworkShapeSetForegroundColorStrategyF7CString$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 7222278799635774413,
+        bodyHash: 1560782396543161571
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                135
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 8
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.shape",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 81,
+        column: 61,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 81,
+        column: 78,
+        ignore: false
+      },
+      identifier: "strategy",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 81,
+        column: 61,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 64,
+      mangledName: "_CN26ohos.arkui.component.shape50FfiOHOSAceFrameworkShapeSetForegroundColorStrategyHkE8strategyE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.arkui.component.shape",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 83,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 83,
         column: 38,
         ignore: false
       },
@@ -9660,7 +10013,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 78,
+        line: 83,
         column: 10,
         ignore: false
       },
@@ -9710,14 +10063,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 80,
+        line: 85,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 80,
+        line: 85,
         column: 39,
         ignore: false
       },
@@ -9725,7 +10078,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 80,
+        line: 85,
         column: 10,
         ignore: false
       },
@@ -9775,14 +10128,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 90,
+        line: 95,
         column: 1,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 191,
+        line: 216,
         column: 2,
         ignore: false
       },
@@ -9790,7 +10143,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 90,
+        line: 95,
         column: 14,
         ignore: false
       },
@@ -9814,7 +10167,7 @@
           ]
         }
       ],
-      type: 63,
+      type: 65,
       mangledName: "_CN26ohos.arkui.component.shape5ShapeE",
       exportId: "_CN26ohos.arkui.component.shape5ShapeE",
       mangledBeforeSema: "26ohos.arkui.component.shape5ShapeC",
@@ -9823,19 +10176,21 @@
         virt: 0,
         sig: 17317098706739430628,
         srcUse: 0,
-        bodyHash: 9985879532030512814
+        bodyHash: 11368190077886272419
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          79,
-          80
+          85,
+          86
         ],
         body: [
-          135,
-          138,
-          140,
-          155
+          139,
+          142,
+          144,
+          159,
+          163,
+          165
         ]
       }
     },
@@ -9849,14 +10204,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 106,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 106,
+        line: 111,
         column: 6,
         ignore: false
       },
@@ -9864,7 +10219,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 106,
         column: 12,
         ignore: false
       },
@@ -9888,7 +10243,7 @@
           ]
         }
       ],
-      type: 64,
+      type: 66,
       mangledName: "_CN26ohos.arkui.component.shape5Shape6<init>HF0uE",
       exportId: "_CN26ohos.arkui.component.shape5Shape6<init>HF0uE",
       mangledBeforeSema: "26ohos.arkui.component.shape5ShapeC6<init>FFu!5child=$$",
@@ -9897,7 +10252,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8874687148445422753
+        bodyHash: 11240060004516139481
       },
       info_type: "FuncInfo",
       info: {
@@ -9905,14 +10260,14 @@
           paramLists: [
             {
               params: [
-                136
+                140
               ],
               desugars: [
-                137
+                141
               ]
             }
           ],
-          retType: 63
+          retType: 65
         }
       }
     },
@@ -9922,14 +10277,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 106,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 106,
         column: 44,
         ignore: false
       },
@@ -9937,7 +10292,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 106,
         column: 17,
         ignore: false
       },
@@ -9974,14 +10329,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 106,
         column: 38,
         ignore: true
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 101,
+        line: 106,
         column: 44,
         ignore: false
       },
@@ -10000,7 +10355,7 @@
       annotations: [
 
       ],
-      type: 65,
+      type: 67,
       mangledName: "_CPI26ohos.arkui.component.shape5Shape4initHF0uEE5childHv",
       exportId: "",
       mangledBeforeSema: "",
@@ -10038,14 +10393,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 117,
+        line: 122,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 125,
+        line: 130,
         column: 6,
         ignore: false
       },
@@ -10053,7 +10408,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 117,
+        line: 122,
         column: 12,
         ignore: false
       },
@@ -10077,7 +10432,7 @@
           ]
         }
       ],
-      type: 66,
+      type: 68,
       mangledName: "_CN26ohos.arkui.component.shape5Shape6<init>HNNat6OptionICN21ohos.multimedia.image8PixelMapEE",
       exportId: "_CN26ohos.arkui.component.shape5Shape6<init>HNNat6OptionICN21ohos.multimedia.image8PixelMapEE",
       mangledBeforeSema: "26ohos.arkui.component.shape5ShapeC6<init>FO1_8PixelMap!5value$$",
@@ -10086,7 +10441,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10911880238231717627
+        bodyHash: 8859502532737826043
       },
       info_type: "FuncInfo",
       info: {
@@ -10094,14 +10449,14 @@
           paramLists: [
             {
               params: [
-                139
+                143
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 63
+          retType: 65
         }
       }
     },
@@ -10111,14 +10466,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 117,
+        line: 122,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 117,
+        line: 122,
         column: 34,
         ignore: false
       },
@@ -10126,7 +10481,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 117,
+        line: 122,
         column: 17,
         ignore: false
       },
@@ -10137,7 +10492,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 69,
       mangledName: "_CN26ohos.arkui.component.shape5Shape4initHNNat6OptionICN21ohos.multimedia.image8PixelMapEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -10163,14 +10518,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 139,
+        line: 144,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 164,
+        line: 169,
         column: 6,
         ignore: false
       },
@@ -10178,7 +10533,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 139,
+        line: 144,
         column: 17,
         ignore: false
       },
@@ -10202,7 +10557,7 @@
           ]
         }
       ],
-      type: 69,
+      type: 71,
       mangledName: "_CN26ohos.arkui.component.shape5Shape8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
       exportId: "_CN26ohos.arkui.component.shape5Shape8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
       mangledBeforeSema: "26ohos.arkui.component.shape5ShapeC8viewPortFO1_6Length!1x=O1_6Length!1y=O1_6Length!5width=O1_6Length!6height=$$H",
@@ -10211,7 +10566,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 15714709023115483156
+        bodyHash: 8245675304465993834
       },
       info_type: "FuncInfo",
       info: {
@@ -10219,20 +10574,20 @@
           paramLists: [
             {
               params: [
-                141,
-                143,
-                146,
-                150
+                145,
+                147,
+                150,
+                154
               ],
               desugars: [
-                142,
-                144,
-                147,
-                151
+                146,
+                148,
+                151,
+                155
               ]
             }
           ],
-          retType: 70
+          retType: 72
         }
       }
     },
@@ -10242,14 +10597,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 27,
         ignore: false
       },
@@ -10257,7 +10612,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
@@ -10294,14 +10649,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 23,
         ignore: true
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 27,
         ignore: false
       },
@@ -10320,7 +10675,7 @@
       annotations: [
 
       ],
-      type: 71,
+      type: 73,
       mangledName: "_CPI26ohos.arkui.component.shape5Shape8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E1xHv",
       exportId: "",
       mangledBeforeSema: "",
@@ -10354,14 +10709,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 27,
         ignore: false
       },
@@ -10369,7 +10724,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 9,
         ignore: false
       },
@@ -10406,14 +10761,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 23,
         ignore: true
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 27,
         ignore: false
       },
@@ -10432,7 +10787,7 @@
       annotations: [
 
       ],
-      type: 72,
+      type: 74,
       mangledName: "_CPI26ohos.arkui.component.shape5Shape8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E1yHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -10449,7 +10804,7 @@
           paramLists: [
             {
               params: [
-                145
+                149
               ],
               desugars: [
                 0
@@ -10466,14 +10821,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 27,
         ignore: false
       },
@@ -10481,7 +10836,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
@@ -10513,14 +10868,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 31,
         ignore: false
       },
@@ -10528,7 +10883,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 9,
         ignore: false
       },
@@ -10565,14 +10920,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 27,
         ignore: true
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 31,
         ignore: false
       },
@@ -10591,7 +10946,7 @@
       annotations: [
 
       ],
-      type: 73,
+      type: 75,
       mangledName: "_CPI26ohos.arkui.component.shape5Shape8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E5widthHY3_Y3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -10608,8 +10963,8 @@
           paramLists: [
             {
               params: [
-                148,
-                149
+                152,
+                153
               ],
               desugars: [
                 0,
@@ -10627,14 +10982,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 27,
         ignore: false
       },
@@ -10642,7 +10997,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
@@ -10674,14 +11029,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 27,
         ignore: false
       },
@@ -10689,7 +11044,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 9,
         ignore: false
       },
@@ -10721,14 +11076,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 143,
+        line: 148,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 143,
+        line: 148,
         column: 32,
         ignore: false
       },
@@ -10736,7 +11091,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 143,
+        line: 148,
         column: 9,
         ignore: false
       },
@@ -10773,14 +11128,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 143,
+        line: 148,
         column: 28,
         ignore: true
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 143,
+        line: 148,
         column: 32,
         ignore: false
       },
@@ -10799,7 +11154,7 @@
       annotations: [
 
       ],
-      type: 74,
+      type: 76,
       mangledName: "_CPI26ohos.arkui.component.shape5Shape8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E6heightHY3_Y3_Y3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -10816,9 +11171,9 @@
           paramLists: [
             {
               params: [
-                152,
-                153,
-                154
+                156,
+                157,
+                158
               ],
               desugars: [
                 0,
@@ -10837,14 +11192,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 27,
         ignore: false
       },
@@ -10852,7 +11207,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 140,
+        line: 145,
         column: 9,
         ignore: false
       },
@@ -10884,14 +11239,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 27,
         ignore: false
       },
@@ -10899,7 +11254,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 141,
+        line: 146,
         column: 9,
         ignore: false
       },
@@ -10931,14 +11286,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 31,
         ignore: false
       },
@@ -10946,7 +11301,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 147,
         column: 9,
         ignore: false
       },
@@ -10982,14 +11337,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 190,
+        line: 195,
         column: 6,
         ignore: false
       },
@@ -10997,7 +11352,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 17,
         ignore: false
       },
@@ -11021,7 +11376,7 @@
           ]
         }
       ],
-      type: 75,
+      type: 77,
       mangledName: "_CN26ohos.arkui.component.shape5Shape4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_",
       exportId: "_CN26ohos.arkui.component.shape5Shape4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_",
       mangledBeforeSema: "26ohos.arkui.component.shape5ShapeC4meshFO1_5Array<d>O1_jO1_j$$H",
@@ -11030,7 +11385,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4215685565903278208
+        bodyHash: 8894862134932139001
       },
       info_type: "FuncInfo",
       info: {
@@ -11038,9 +11393,9 @@
           paramLists: [
             {
               params: [
-                156,
-                157,
-                158
+                160,
+                161,
+                162
               ],
               desugars: [
                 0,
@@ -11049,7 +11404,7 @@
               ]
             }
           ],
-          retType: 70
+          retType: 72
         }
       }
     },
@@ -11059,14 +11414,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 22,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 44,
         ignore: false
       },
@@ -11074,7 +11429,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 22,
         ignore: false
       },
@@ -11085,7 +11440,7 @@
       annotations: [
 
       ],
-      type: 76,
+      type: 78,
       mangledName: "_CN26ohos.arkui.component.shape5Shape4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_E5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11106,14 +11461,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 46,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 61,
         ignore: false
       },
@@ -11121,7 +11476,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 46,
         ignore: false
       },
@@ -11132,7 +11487,7 @@
       annotations: [
 
       ],
-      type: 78,
+      type: 80,
       mangledName: "_CN26ohos.arkui.component.shape5Shape4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_E6columnIjE",
       exportId: "",
       mangledBeforeSema: "",
@@ -11153,14 +11508,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 63,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 75,
         ignore: false
       },
@@ -11168,7 +11523,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 177,
+        line: 182,
         column: 63,
         ignore: false
       },
@@ -11179,8 +11534,230 @@
       annotations: [
 
       ],
-      type: 78,
+      type: 80,
       mangledName: "_CN26ohos.arkui.component.shape5Shape4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_E3rowIjE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.arkui.component.shape",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 197,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 204,
+        column: 6,
+        ignore: false
+      },
+      identifier: "foregroundColorInner",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 197,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        144678138297749536,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 81,
+      mangledName: "_CN26ohos.arkui.component.shape5Shape20foregroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
+      exportId: "_CN26ohos.arkui.component.shape5Shape20foregroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
+      mangledBeforeSema: "26ohos.arkui.component.shape5ShapeC20foregroundColorInnerFO1_13ResourceColor$$H",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 2687969717096398320,
+        srcUse: 0,
+        bodyHash: 8187014372061985351
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                164
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 72
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.shape",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 197,
+        column: 50,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 197,
+        column: 71,
+        ignore: false
+      },
+      identifier: "value",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 197,
+        column: 50,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN26ohos.arkui.component.shape5Shape20foregroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.arkui.component.shape",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 206,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 215,
+        column: 6,
+        ignore: false
+      },
+      identifier: "foregroundColorInner",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 206,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        144678138297749536,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 82,
+      mangledName: "_CN26ohos.arkui.component.shape5Shape20foregroundColorInnerHNNat6OptionINN27ohos.arkui.component.common16ColoringStrategyEE",
+      exportId: "_CN26ohos.arkui.component.shape5Shape20foregroundColorInnerHNNat6OptionINN27ohos.arkui.component.common16ColoringStrategyEE",
+      mangledBeforeSema: "26ohos.arkui.component.shape5ShapeC20foregroundColorInnerFO1_16ColoringStrategy$$H",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 2687969717096398320,
+        srcUse: 0,
+        bodyHash: 6797755675961462487
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                166
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 72
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.shape",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 206,
+        column: 50,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 206,
+        column: 74,
+        ignore: false
+      },
+      identifier: "value",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 206,
+        column: 50,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 83,
+      mangledName: "_CN26ohos.arkui.component.shape5Shape20foregroundColorInnerHNNat6OptionINN27ohos.arkui.component.common16ColoringStrategyEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -11244,7 +11821,7 @@
           ]
         }
       ],
-      type: 80,
+      type: 86,
       mangledName: "_CN26ohos.arkui.component.shape14ShapeAttributeE",
       exportId: "_CN26ohos.arkui.component.shape14ShapeAttributeE",
       mangledBeforeSema: "26ohos.arkui.component.shape14ShapeAttributeI",
@@ -11258,11 +11835,11 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          83
+          89
         ],
         body: [
-          160,
-          165
+          168,
+          173
         ]
       }
     },
@@ -11315,7 +11892,7 @@
           ]
         }
       ],
-      type: 81,
+      type: 87,
       mangledName: "_CN26ohos.arkui.component.shape14ShapeAttribute8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
       exportId: "_CN26ohos.arkui.component.shape14ShapeAttribute8viewPortHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
       mangledBeforeSema: "26ohos.arkui.component.shape14ShapeAttributeI8viewPortFO1_6Length!1xO1_6Length!1yO1_6Length!5widthO1_6Length!6height$$14ShapeAttribute",
@@ -11332,10 +11909,10 @@
           paramLists: [
             {
               params: [
-                161,
-                162,
-                163,
-                164
+                169,
+                170,
+                171,
+                172
               ],
               desugars: [
                 0,
@@ -11345,7 +11922,7 @@
               ]
             }
           ],
-          retType: 80
+          retType: 86
         }
       }
     },
@@ -11590,7 +12167,7 @@
           ]
         }
       ],
-      type: 82,
+      type: 88,
       mangledName: "_CN26ohos.arkui.component.shape14ShapeAttribute4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_",
       exportId: "_CN26ohos.arkui.component.shape14ShapeAttribute4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_",
       mangledBeforeSema: "26ohos.arkui.component.shape14ShapeAttributeI4meshFO1_5Array<d>O1_jO1_j$$14ShapeAttribute",
@@ -11607,9 +12184,9 @@
           paramLists: [
             {
               params: [
-                166,
-                167,
-                168
+                174,
+                175,
+                176
               ],
               desugars: [
                 0,
@@ -11618,7 +12195,7 @@
               ]
             }
           ],
-          retType: 80
+          retType: 86
         }
       }
     },
@@ -11654,7 +12231,7 @@
       annotations: [
 
       ],
-      type: 76,
+      type: 78,
       mangledName: "_CN26ohos.arkui.component.shape14ShapeAttribute4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_E5arrayIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11701,7 +12278,7 @@
       annotations: [
 
       ],
-      type: 78,
+      type: 80,
       mangledName: "_CN26ohos.arkui.component.shape14ShapeAttribute4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_E6columnIjE",
       exportId: "",
       mangledBeforeSema: "",
@@ -11748,7 +12325,7 @@
       annotations: [
 
       ],
-      type: 78,
+      type: 80,
       mangledName: "_CN26ohos.arkui.component.shape14ShapeAttribute4meshHNNat6OptionIRNat5ArrayIdEENNatY5_IjEY8_E3rowIjE",
       exportId: "",
       mangledBeforeSema: "",
@@ -13058,14 +13635,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 87,
+        line: 92,
         column: 12,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 87,
+        line: 92,
         column: 16,
         ignore: false
       },
@@ -13081,14 +13658,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 88,
+        line: 93,
         column: 13,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 88,
+        line: 93,
         column: 48,
         ignore: false
       },
@@ -13104,14 +13681,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 98,
+        line: 103,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 98,
+        line: 103,
         column: 20,
         ignore: false
       },
@@ -13127,14 +13704,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 99,
+        line: 104,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 99,
+        line: 104,
         column: 52,
         ignore: false
       },
@@ -13150,14 +13727,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 114,
+        line: 119,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 114,
+        line: 119,
         column: 20,
         ignore: false
       },
@@ -13173,14 +13750,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 115,
+        line: 120,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 115,
+        line: 120,
         column: 52,
         ignore: false
       },
@@ -13196,14 +13773,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 136,
+        line: 141,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 136,
+        line: 141,
         column: 20,
         ignore: false
       },
@@ -13219,14 +13796,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 137,
+        line: 142,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 137,
+        line: 142,
         column: 52,
         ignore: false
       },
@@ -13242,14 +13819,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 174,
+        line: 179,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 174,
+        line: 179,
         column: 20,
         ignore: false
       },
@@ -13265,14 +13842,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 175,
+        line: 180,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 175,
+        line: 180,
         column: 52,
         ignore: false
       },

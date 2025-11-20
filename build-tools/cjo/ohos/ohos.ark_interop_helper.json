@@ -1,5 +1,5 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
@@ -955,7 +955,7 @@
       }
     },
     {
-      kind: "Struct",
+      kind: "Class",
       typeArgs: [
 
       ],
@@ -1143,7 +1143,7 @@
       }
     },
     {
-      kind: "Struct",
+      kind: "Class",
       typeArgs: [
 
       ],
@@ -3795,7 +3795,7 @@
       ],
       type: 15,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper20arktsObjApiCallAsyncIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayIRNY4_7JSValueEEEF0G_CNY4_9JSContextERNY4_10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper20arktsObjApiCallAsyncIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayICNY4_7JSValueEEEF0G_CNY4_9JSContextECNY4_10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper20arktsObjApiCallAsync<1T>F8JSObject6StringF5Array<7JSValue>F1T9JSContext10JSCallInfo$$1T",
       hash: {
         instVar: 0,
@@ -4267,7 +4267,7 @@
       ],
       type: 24,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper23arktsGlobalApiCallAsyncIG_HRNat6StringENNat6OptionIY3_EY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEEEF0G_CNYC_9JSContextERNYC_10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper23arktsGlobalApiCallAsyncIG_HRNat6StringENNat6OptionIY3_EY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEEEF0G_CNYC_9JSContextECNYC_10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper23arktsGlobalApiCallAsync<1T>F6StringO1_6String6StringF5Array<7JSValue>F1T9JSContext10JSCallInfo$$1T",
       hash: {
         instVar: 0,
@@ -4627,7 +4627,7 @@
       ],
       type: 27,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper21hmsGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEEEF0G_CNYA_9JSContextERNYA_10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper21hmsGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEEEF0G_CNYA_9JSContextECNYA_10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper21hmsGlobalApiCallAsync<1T>F6String6StringF5Array<7JSValue>F1T9JSContext10JSCallInfo$$1T",
       hash: {
         instVar: 0,
@@ -4938,7 +4938,7 @@
       ],
       type: 30,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper22ohosGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEEEF0G_CNYA_9JSContextERNYA_10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper22ohosGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEEEF0G_CNYA_9JSContextECNYA_10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper22ohosGlobalApiCallAsync<1T>F6String6StringF5Array<7JSValue>F1T9JSContext10JSCallInfo$$1T",
       hash: {
         instVar: 0,
@@ -5268,7 +5268,7 @@
       ],
       type: 33,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper20arktsObjApiCallAsyncIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayIRNY4_7JSValueEEE",
+      exportId: "_CN23ohos.ark_interop_helper20arktsObjApiCallAsyncIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayICNY4_7JSValueEEE",
       mangledBeforeSema: "23ohos.ark_interop_helper20arktsObjApiCallAsync<1T>F8JSObject6StringF5Array<7JSValue>$$1T",
       hash: {
         instVar: 0,
@@ -5549,7 +5549,7 @@
       ],
       type: 36,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper21hmsGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEEE",
+      exportId: "_CN23ohos.ark_interop_helper21hmsGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEEE",
       mangledBeforeSema: "23ohos.ark_interop_helper21hmsGlobalApiCallAsync<1T>F6String6StringF5Array<7JSValue>$$1T",
       hash: {
         instVar: 0,
@@ -5830,7 +5830,7 @@
       ],
       type: 39,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper22ohosGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEEE",
+      exportId: "_CN23ohos.ark_interop_helper22ohosGlobalApiCallAsyncIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEEE",
       mangledBeforeSema: "23ohos.ark_interop_helper22ohosGlobalApiCallAsync<1T>F6String6StringF5Array<7JSValue>$$1T",
       hash: {
         instVar: 0,
@@ -6083,8 +6083,8 @@
 
       ],
       type: 42,
-      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0RNY3_7JSValueECNY3_9JSContextERNY3_10JSCallInfoEE",
-      exportId: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0RNY3_7JSValueECNY3_9JSContextERNY3_10JSCallInfoEE",
+      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0CNY3_7JSValueECNY3_9JSContextECNY3_10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0CNY3_7JSValueECNY3_9JSContextECNY3_10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper15bindFuncToJsObjF8JSObject6StringF7JSValue9JSContext10JSCallInfo$$u",
       hash: {
         instVar: 0,
@@ -6147,7 +6147,7 @@
 
       ],
       type: 16,
-      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0RNY3_7JSValueECNY3_9JSContextERNY3_10JSCallInfoEEE5jsObjE",
+      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0CNY3_7JSValueECNY3_9JSContextECNY3_10JSCallInfoEEE5jsObjE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -6194,7 +6194,7 @@
 
       ],
       type: 17,
-      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0RNY3_7JSValueECNY3_9JSContextERNY3_10JSCallInfoEEE8funcNameE",
+      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0CNY3_7JSValueECNY3_9JSContextECNY3_10JSCallInfoEEE8funcNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -6241,7 +6241,7 @@
 
       ],
       type: 43,
-      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0RNY3_7JSValueECNY3_9JSContextERNY3_10JSCallInfoEEE8callbackE",
+      mangledName: "_CN23ohos.ark_interop_helper15bindFuncToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0CNY3_7JSValueECNY3_9JSContextECNY3_10JSCallInfoEEE8callbackE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -6293,8 +6293,8 @@
 
       ],
       type: 44,
-      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextERNY3_10JSCallInfoEE",
-      exportId: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextERNY3_10JSCallInfoEE",
+      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextECNY3_10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextECNY3_10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper22bindFuncRetUnitToJsObjF8JSObject6StringFu9JSContext10JSCallInfo$$u",
       hash: {
         instVar: 0,
@@ -6357,7 +6357,7 @@
 
       ],
       type: 16,
-      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextERNY3_10JSCallInfoEEE5jsObjE",
+      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextECNY3_10JSCallInfoEEE5jsObjE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -6404,7 +6404,7 @@
 
       ],
       type: 17,
-      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextERNY3_10JSCallInfoEEE8funcNameE",
+      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextECNY3_10JSCallInfoEEE8funcNameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -6451,7 +6451,7 @@
 
       ],
       type: 45,
-      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextERNY3_10JSCallInfoEEE8callbackE",
+      mangledName: "_CN23ohos.ark_interop_helper22bindFuncRetUnitToJsObjHCN16ohos.ark_interop8JSObjectERNat6StringEF0uCNY3_9JSContextECNY3_10JSCallInfoEEE8callbackE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -6992,8 +6992,8 @@
 
       ],
       type: 56,
-      mangledName: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextERNY3_7JSValueE",
-      exportId: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextERNY3_7JSValueE",
+      mangledName: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextECNY3_7JSValueE",
+      exportId: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextECNY3_7JSValueE",
       mangledBeforeSema: "23ohos.ark_interop_helper11handleErrorF9JSContext7JSValue$$17BusinessException",
       hash: {
         instVar: 0,
@@ -7054,7 +7054,7 @@
 
       ],
       type: 19,
-      mangledName: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextERNY3_7JSValueEE3ctxE",
+      mangledName: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextECNY3_7JSValueEE3ctxE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -7101,7 +7101,7 @@
 
       ],
       type: 4,
-      mangledName: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextERNY3_7JSValueEE3errE",
+      mangledName: "_CN23ohos.ark_interop_helper11handleErrorHCN16ohos.ark_interop9JSContextECNY3_7JSValueEE3errE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -7162,7 +7162,7 @@
       ],
       type: 58,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper20asyncCallbackWrapperIG_HCN16ohos.ark_interop9JSContextEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY9_IG_EEF0G_Y3_RNY4_7JSValueEE",
+      exportId: "_CN23ohos.ark_interop_helper20asyncCallbackWrapperIG_HCN16ohos.ark_interop9JSContextEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY9_IG_EEF0G_Y3_CNY4_7JSValueEE",
       mangledBeforeSema: "23ohos.ark_interop_helper20asyncCallbackWrapper<1T>F9JSContextFuO1_17BusinessExceptionO1_1TF1T9JSContext7JSValue$$7JSValue",
       hash: {
         instVar: 0,
@@ -7866,7 +7866,7 @@
       ],
       type: 70,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper15jsGlobalApiCallIG_HRNat6StringENNat6OptionIY3_EY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYC_9JSContextEEF0G_YE_YB_E",
+      exportId: "_CN23ohos.ark_interop_helper15jsGlobalApiCallIG_HRNat6StringENNat6OptionIY3_EY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYC_9JSContextEEF0G_YE_YB_E",
       mangledBeforeSema: "23ohos.ark_interop_helper15jsGlobalApiCall<1T>F6StringO1_6String6StringF5Array<7JSValue>9JSContextF1T9JSContext7JSValue$$1T",
       hash: {
         instVar: 0,
@@ -8226,7 +8226,7 @@
       ],
       type: 73,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper12jsObjApiCallIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayIRNY4_7JSValueEECNY4_9JSContextEEF0G_YE_YC_E",
+      exportId: "_CN23ohos.ark_interop_helper12jsObjApiCallIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayICNY4_7JSValueEECNY4_9JSContextEEF0G_YE_YC_E",
       mangledBeforeSema: "23ohos.ark_interop_helper12jsObjApiCall<1T>F8JSObject6StringF5Array<7JSValue>9JSContextF1T9JSContext7JSValue$$1T",
       hash: {
         instVar: 0,
@@ -8537,7 +8537,7 @@
       ],
       type: 76,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper16hmsGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYA_9JSContextEEF0G_YC_Y9_E",
+      exportId: "_CN23ohos.ark_interop_helper16hmsGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYA_9JSContextEEF0G_YC_Y9_E",
       mangledBeforeSema: "23ohos.ark_interop_helper16hmsGlobalApiCall<1T>F6String6StringF5Array<7JSValue>9JSContextF1T9JSContext7JSValue$$1T",
       hash: {
         instVar: 0,
@@ -8848,7 +8848,7 @@
       ],
       type: 79,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper17ohosGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYA_9JSContextEEF0G_YC_Y9_E",
+      exportId: "_CN23ohos.ark_interop_helper17ohosGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYA_9JSContextEEF0G_YC_Y9_E",
       mangledBeforeSema: "23ohos.ark_interop_helper17ohosGlobalApiCall<1T>F6String6StringF5Array<7JSValue>9JSContextF1T9JSContext7JSValue$$1T",
       hash: {
         instVar: 0,
@@ -9178,7 +9178,7 @@
       ],
       type: 82,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper12jsObjApiCallIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayIRNY4_7JSValueEECNY4_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper12jsObjApiCallIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0RNat5ArrayICNY4_7JSValueEECNY4_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper12jsObjApiCall<1T>F8JSObject6StringF5Array<7JSValue>9JSContext$$1T",
       hash: {
         instVar: 0,
@@ -9459,7 +9459,7 @@
       ],
       type: 85,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper16hmsGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYA_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper16hmsGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYA_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper16hmsGlobalApiCall<1T>F6String6StringF5Array<7JSValue>9JSContext$$1T",
       hash: {
         instVar: 0,
@@ -9740,7 +9740,7 @@
       ],
       type: 88,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper17ohosGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYA_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper17ohosGlobalApiCallIG_HRNat6StringEY3_F0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYA_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper17ohosGlobalApiCall<1T>F6String6StringF5Array<7JSValue>9JSContext$$1T",
       hash: {
         instVar: 0,
@@ -10348,7 +10348,7 @@
       ],
       type: 95,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper19JsGlobalApiCallInfoIG_E6<init>HRNat6StringENNat6OptionIY5_EY5_F0uNNatY9_ICN23ohos.business_exception17BusinessExceptionEENNatY9_IG_EEF0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYK_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper19JsGlobalApiCallInfoIG_E6<init>HRNat6StringENNat6OptionIY5_EY5_F0uNNatY9_ICN23ohos.business_exception17BusinessExceptionEENNatY9_IG_EEF0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYK_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper19JsGlobalApiCallInfo<1>S6<init>F6StringO1_6String6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContext$$",
       hash: {
         instVar: 0,
@@ -10664,7 +10664,7 @@
       ],
       type: 96,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper22jsGlobalApiCallPromiseIG_HRNY_19JsGlobalApiCallInfoIG_EF0G_CN16ohos.ark_interop9JSContextERNY7_7JSValueEE",
+      exportId: "_CN23ohos.ark_interop_helper22jsGlobalApiCallPromiseIG_HRNY_19JsGlobalApiCallInfoIG_EF0G_CN16ohos.ark_interop9JSContextECNY7_7JSValueEE",
       mangledBeforeSema: "23ohos.ark_interop_helper22jsGlobalApiCallPromise<1T>F19JsGlobalApiCallInfo<1T>F1T9JSContext7JSValue$$u",
       hash: {
         instVar: 0,
@@ -10896,7 +10896,7 @@
       ],
       type: 100,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper22jsGlobalApiCallPromiseIG_HRNat6StringENNat6OptionIY3_EY3_F0uNNatY7_ICN23ohos.business_exception17BusinessExceptionEENNatY7_IG_EEF0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYI_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper22jsGlobalApiCallPromiseIG_HRNat6StringENNat6OptionIY3_EY3_F0uNNatY7_ICN23ohos.business_exception17BusinessExceptionEENNatY7_IG_EEF0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYI_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper22jsGlobalApiCallPromise<1T>F6StringO1_6String6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContext$$u",
       hash: {
         instVar: 0,
@@ -11256,7 +11256,7 @@
       ],
       type: 105,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper23hmsGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYH_9JSContextEEF0G_YJ_YG_E",
+      exportId: "_CN23ohos.ark_interop_helper23hmsGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYH_9JSContextEEF0G_YJ_YG_E",
       mangledBeforeSema: "23ohos.ark_interop_helper23hmsGlobalApiCallPromise<1T>F6String6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContextF1T9JSContext7JSValue$$u",
       hash: {
         instVar: 0,
@@ -11616,7 +11616,7 @@
       ],
       type: 110,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper24ohosGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYH_9JSContextEEF0G_YJ_YG_E",
+      exportId: "_CN23ohos.ark_interop_helper24ohosGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYH_9JSContextEEF0G_YJ_YG_E",
       mangledBeforeSema: "23ohos.ark_interop_helper24ohosGlobalApiCallPromise<1T>F6String6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContextF1T9JSContext7JSValue$$u",
       hash: {
         instVar: 0,
@@ -11995,7 +11995,7 @@
       ],
       type: 115,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper23hmsGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYH_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper23hmsGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYH_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper23hmsGlobalApiCallPromise<1T>F6String6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContext$$u",
       hash: {
         instVar: 0,
@@ -12325,7 +12325,7 @@
       ],
       type: 120,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper24ohosGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayIRN16ohos.ark_interop7JSValueEECNYH_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper24ohosGlobalApiCallPromiseIG_HRNat6StringEY3_F0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatY8_IG_EEF0RNat5ArrayICN16ohos.ark_interop7JSValueEECNYH_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper24ohosGlobalApiCallPromise<1T>F6String6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContext$$u",
       hash: {
         instVar: 0,
@@ -12636,7 +12636,7 @@
       ],
       type: 125,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper19jsObjApiCallPromiseIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYB_IG_EEF0RNat5ArrayIRNY4_7JSValueEECNY4_9JSContextEEF0G_YL_YJ_E",
+      exportId: "_CN23ohos.ark_interop_helper19jsObjApiCallPromiseIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYB_IG_EEF0RNat5ArrayICNY4_7JSValueEECNY4_9JSContextEEF0G_YL_YJ_E",
       mangledBeforeSema: "23ohos.ark_interop_helper19jsObjApiCallPromise<1T>F8JSObject6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContextF1T9JSContext7JSValue$$u",
       hash: {
         instVar: 0,
@@ -13015,7 +13015,7 @@
       ],
       type: 130,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper19jsObjApiCallPromiseIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYB_IG_EEF0RNat5ArrayIRNY4_7JSValueEECNY4_9JSContextEE",
+      exportId: "_CN23ohos.ark_interop_helper19jsObjApiCallPromiseIG_HCN16ohos.ark_interop8JSObjectERNat6StringEF0uNNat6OptionICN23ohos.business_exception17BusinessExceptionEENNatYB_IG_EEF0RNat5ArrayICNY4_7JSValueEECNY4_9JSContextEE",
       mangledBeforeSema: "23ohos.ark_interop_helper19jsObjApiCallPromise<1T>F8JSObject6StringFuO1_17BusinessExceptionO1_1TF5Array<7JSValue>9JSContext$$u",
       hash: {
         instVar: 0,
@@ -13558,7 +13558,7 @@
       ],
       type: 140,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper9toJSArrayIG_HCN16ohos.ark_interop9JSContextENNat6OptionIRNat5ArrayIG_EEF0RNY4_7JSValueEY3_G_E",
+      exportId: "_CN23ohos.ark_interop_helper9toJSArrayIG_HCN16ohos.ark_interop9JSContextENNat6OptionIRNat5ArrayIG_EEF0CNY4_7JSValueEY3_G_E",
       mangledBeforeSema: "23ohos.ark_interop_helper9toJSArray<1T>F9JSContextO1_5Array<1T>F7JSValue9JSContext1T$$7JSValue",
       hash: {
         instVar: 0,
@@ -13839,7 +13839,7 @@
       ],
       type: 145,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper11fromJSArrayIG_HCN16ohos.ark_interop9JSContextERNY4_7JSValueE",
+      exportId: "_CN23ohos.ark_interop_helper11fromJSArrayIG_HCN16ohos.ark_interop9JSContextECNY4_7JSValueE",
       mangledBeforeSema: "23ohos.ark_interop_helper11fromJSArray<1T>F9JSContext7JSValue$$5Array<1T>",
       hash: {
         instVar: 0,
@@ -14052,7 +14052,7 @@
       ],
       type: 149,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper11fromJSArrayIG_HCN16ohos.ark_interop9JSContextERNY4_7JSValueEF0G_Y3_Y6_E",
+      exportId: "_CN23ohos.ark_interop_helper11fromJSArrayIG_HCN16ohos.ark_interop9JSContextECNY4_7JSValueEF0G_Y3_Y6_E",
       mangledBeforeSema: "23ohos.ark_interop_helper11fromJSArray<1T>F9JSContext7JSValueF1T9JSContext7JSValue$$5Array<1T>",
       hash: {
         instVar: 0,
@@ -14333,7 +14333,7 @@
       ],
       type: 153,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper17fromJSArrayOptionIG_HCN16ohos.ark_interop9JSContextERNY4_7JSValueE",
+      exportId: "_CN23ohos.ark_interop_helper17fromJSArrayOptionIG_HCN16ohos.ark_interop9JSContextECNY4_7JSValueE",
       mangledBeforeSema: "23ohos.ark_interop_helper17fromJSArrayOption<1T>F9JSContext7JSValue$$6Option<5Array<1T>>",
       hash: {
         instVar: 0,
@@ -14546,7 +14546,7 @@
       ],
       type: 158,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper17fromJSArrayOptionIG_HCN16ohos.ark_interop9JSContextERNY4_7JSValueEF0G_Y3_Y6_E",
+      exportId: "_CN23ohos.ark_interop_helper17fromJSArrayOptionIG_HCN16ohos.ark_interop9JSContextECNY4_7JSValueEF0G_Y3_Y6_E",
       mangledBeforeSema: "23ohos.ark_interop_helper17fromJSArrayOption<1T>F9JSContext7JSValueF1T9JSContext7JSValue$$6Option<5Array<1T>>",
       hash: {
         instVar: 0,
@@ -16550,8 +16550,8 @@
         }
       ],
       type: 182,
-      mangledName: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuRN16ohos.ark_interop7JSValueE",
-      exportId: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuRN16ohos.ark_interop7JSValueE",
+      mangledName: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuCN16ohos.ark_interop7JSValueE",
+      exportId: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuCN16ohos.ark_interop7JSValueE",
       mangledBeforeSema: "23ohos.ark_interop_helper21arktsValuetoNapiValueF8napi_env7JSValue$$10napi_value",
       hash: {
         instVar: 0,
@@ -16612,7 +16612,7 @@
 
       ],
       type: 165,
-      mangledName: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuRN16ohos.ark_interop7JSValueEE3envIuE",
+      mangledName: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuCN16ohos.ark_interop7JSValueEE3envIuE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -16659,7 +16659,7 @@
 
       ],
       type: 4,
-      mangledName: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuRN16ohos.ark_interop7JSValueEE9ark_valueE",
+      mangledName: "_CN23ohos.ark_interop_helper21arktsValuetoNapiValueHPuCN16ohos.ark_interop7JSValueEE9ark_valueE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -16733,7 +16733,7 @@
       ],
       type: 183,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper12mapToJSValueIG_HCN16ohos.ark_interop9JSContextENNat6OptionICNac7HashMapIRNat6StringEG_EEF0RNY4_7JSValueEY3_G_E",
+      exportId: "_CN23ohos.ark_interop_helper12mapToJSValueIG_HCN16ohos.ark_interop9JSContextENNat6OptionICNac7HashMapIRNat6StringEG_EEF0CNY4_7JSValueEY3_G_E",
       mangledBeforeSema: "23ohos.ark_interop_helper12mapToJSValue<1T>F9JSContextO1_7HashMap<6String1T>F7JSValue9JSContext1T$$7JSValue",
       hash: {
         instVar: 0,
@@ -17008,7 +17008,7 @@
       ],
       type: 188,
       mangledName: "",
-      exportId: "_CN23ohos.ark_interop_helper14mapFromJSValueIG_HCN16ohos.ark_interop9JSContextERNY4_7JSValueEF0G_Y3_Y6_E",
+      exportId: "_CN23ohos.ark_interop_helper14mapFromJSValueIG_HCN16ohos.ark_interop9JSContextECNY4_7JSValueEF0G_Y3_Y6_E",
       mangledBeforeSema: "23ohos.ark_interop_helper14mapFromJSValue<1T>F9JSContext7JSValueF1T9JSContext7JSValue$$O1_7HashMap<6String1T>",
       hash: {
         instVar: 0,
@@ -17730,8 +17730,8 @@
 
       ],
       type: 199,
-      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEF0uCNY_Y0_EE",
-      exportId: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEF0uCNY_Y0_EE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEF0uCNY_Y0_EE",
+      exportId: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEF0uCNY_Y0_EE",
       mangledBeforeSema: "23ohos.ark_interop_helper7ConsoleC11consoleCallF9JSContext10JSCallInfoFu7Console$$7JSValue",
       hash: {
         instVar: 0,
@@ -17794,7 +17794,7 @@
 
       ],
       type: 19,
-      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEF0uCNY_Y0_EEE7contextE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEF0uCNY_Y0_EEE7contextE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -17841,7 +17841,7 @@
 
       ],
       type: 20,
-      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEF0uCNY_Y0_EEE8callInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEF0uCNY_Y0_EEE8callInfoE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -17888,7 +17888,7 @@
 
       ],
       type: 200,
-      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEF0uCNY_Y0_EEE8callbackE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console11consoleCallHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEF0uCNY_Y0_EEE8callbackE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -17939,8 +17939,8 @@
 
       ],
       type: 43,
-      mangledName: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
-      exportId: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
+      exportId: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
       mangledBeforeSema: "23ohos.ark_interop_helper7ConsoleC8jsAssertF9JSContext10JSCallInfo$$7JSValue",
       hash: {
         instVar: 0,
@@ -18001,7 +18001,7 @@
 
       ],
       type: 19,
-      mangledName: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE7contextE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE7contextE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18048,7 +18048,7 @@
 
       ],
       type: 20,
-      mangledName: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE8callInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console8jsAssertHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE8callInfoE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18099,8 +18099,8 @@
 
       ],
       type: 43,
-      mangledName: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
-      exportId: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
+      exportId: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
       mangledBeforeSema: "23ohos.ark_interop_helper7ConsoleC7jsClearF9JSContext10JSCallInfo$$7JSValue",
       hash: {
         instVar: 0,
@@ -18161,7 +18161,7 @@
 
       ],
       type: 19,
-      mangledName: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE7contextE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE7contextE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18208,7 +18208,7 @@
 
       ],
       type: 20,
-      mangledName: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE8callInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console7jsClearHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE8callInfoE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18259,8 +18259,8 @@
 
       ],
       type: 43,
-      mangledName: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
-      exportId: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
+      exportId: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
       mangledBeforeSema: "23ohos.ark_interop_helper7ConsoleC7jsCountF9JSContext10JSCallInfo$$7JSValue",
       hash: {
         instVar: 0,
@@ -18321,7 +18321,7 @@
 
       ],
       type: 19,
-      mangledName: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE7contextE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE7contextE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18368,7 +18368,7 @@
 
       ],
       type: 20,
-      mangledName: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE8callInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console7jsCountHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE8callInfoE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18419,8 +18419,8 @@
 
       ],
       type: 43,
-      mangledName: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
-      exportId: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
+      exportId: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoE",
       mangledBeforeSema: "23ohos.ark_interop_helper7ConsoleC12jsCountResetF9JSContext10JSCallInfo$$7JSValue",
       hash: {
         instVar: 0,
@@ -18481,7 +18481,7 @@
 
       ],
       type: 19,
-      mangledName: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE7contextE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE7contextE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18528,7 +18528,7 @@
 
       ],
       type: 20,
-      mangledName: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextERNY4_10JSCallInfoEE8callInfoE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console12jsCountResetHCN16ohos.ark_interop9JSContextECNY4_10JSCallInfoEE8callInfoE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -18579,8 +18579,8 @@
 
       ],
       type: 201,
-      mangledName: "_CN23ohos.ark_interop_helper7Console6isGoodHRN16ohos.ark_interop7JSValueE",
-      exportId: "_CN23ohos.ark_interop_helper7Console6isGoodHRN16ohos.ark_interop7JSValueE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console6isGoodHCN16ohos.ark_interop7JSValueE",
+      exportId: "_CN23ohos.ark_interop_helper7Console6isGoodHCN16ohos.ark_interop7JSValueE",
       mangledBeforeSema: "23ohos.ark_interop_helper7ConsoleC6isGoodF7JSValue$$b",
       hash: {
         instVar: 0,
@@ -18639,7 +18639,7 @@
 
       ],
       type: 4,
-      mangledName: "_CN23ohos.ark_interop_helper7Console6isGoodHRN16ohos.ark_interop7JSValueEE6targetE",
+      mangledName: "_CN23ohos.ark_interop_helper7Console6isGoodHCN16ohos.ark_interop7JSValueEE6targetE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -20781,8 +20781,8 @@
 
       ],
       type: 209,
-      mangledName: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0RN16ohos.ark_interop7JSValueERNY8_10JSCallInfoEE",
-      exportId: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0RN16ohos.ark_interop7JSValueERNY8_10JSCallInfoEE",
+      mangledName: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0CN16ohos.ark_interop7JSValueECNY8_10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0CN16ohos.ark_interop7JSValueECNY8_10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper5TimerC4wrapF6StringF7JSValue10JSCallInfo$$u",
       hash: {
         instVar: 0,
@@ -20843,7 +20843,7 @@
 
       ],
       type: 17,
-      mangledName: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0RN16ohos.ark_interop7JSValueERNY8_10JSCallInfoEEE4nameE",
+      mangledName: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0CN16ohos.ark_interop7JSValueECNY8_10JSCallInfoEEE4nameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -20890,7 +20890,7 @@
 
       ],
       type: 210,
-      mangledName: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0RN16ohos.ark_interop7JSValueERNY8_10JSCallInfoEEE8callbackE",
+      mangledName: "_CN23ohos.ark_interop_helper5Timer4wrapHRNat6StringEF0CN16ohos.ark_interop7JSValueECNY8_10JSCallInfoEEE8callbackE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -20941,8 +20941,8 @@
 
       ],
       type: 211,
-      mangledName: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uRN16ohos.ark_interop10JSCallInfoEE",
-      exportId: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uRN16ohos.ark_interop10JSCallInfoEE",
+      mangledName: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uCN16ohos.ark_interop10JSCallInfoEE",
+      exportId: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uCN16ohos.ark_interop10JSCallInfoEE",
       mangledBeforeSema: "23ohos.ark_interop_helper5TimerC5wrap0F6StringFu10JSCallInfo$$u",
       hash: {
         instVar: 0,
@@ -21003,7 +21003,7 @@
 
       ],
       type: 17,
-      mangledName: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uRN16ohos.ark_interop10JSCallInfoEEE4nameE",
+      mangledName: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uCN16ohos.ark_interop10JSCallInfoEEE4nameE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -21050,7 +21050,7 @@
 
       ],
       type: 212,
-      mangledName: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uRN16ohos.ark_interop10JSCallInfoEEE8callbackE",
+      mangledName: "_CN23ohos.ark_interop_helper5Timer5wrap0HRNat6StringEF0uCN16ohos.ark_interop10JSCallInfoEEE8callbackE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
