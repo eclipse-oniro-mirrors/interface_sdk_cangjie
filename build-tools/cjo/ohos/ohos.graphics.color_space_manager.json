@@ -619,9 +619,12 @@
       }
     },
     {
+      kind: "Bool"
+    },
+    {
       kind: "Func",
       typeArgs: [
-        24,
+        25,
         14
       ],
       info_type: "FuncTyInfo",
@@ -679,7 +682,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 29
+        retType: 30
       }
     },
     {
@@ -781,11 +784,8 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 38
+        retType: 23
       }
-    },
-    {
-      kind: "Bool"
     },
     {
       kind: "Func",
@@ -801,7 +801,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 24
+        retType: 25
       }
     },
     {
@@ -820,7 +820,7 @@
     {
       kind: "Func",
       typeArgs: [
-        24
+        25
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1344,14 +1344,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 533,
+        line: 505,
         column: 1,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 555,
+        line: 527,
         column: 2,
         ignore: false
       },
@@ -1359,7 +1359,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 533,
+        line: 505,
         column: 8,
         ignore: false
       },
@@ -2035,14 +2035,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 47,
+        line: 48,
         column: 1,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 58,
+        line: 59,
         column: 2,
         ignore: false
       },
@@ -2050,7 +2050,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 47,
+        line: 48,
         column: 13,
         ignore: false
       },
@@ -2070,6 +2070,10 @@
             {
               name: "syscap",
               expr: 2
+            },
+            {
+              name: "throwexception",
+              expr: 3
             }
           ]
         }
@@ -2083,7 +2087,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2728173695183651258
+        bodyHash: 10221578270783128153
       },
       info_type: "FuncInfo",
       info: {
@@ -2113,14 +2117,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 33,
+        line: 32,
         column: 11,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 326,
+        line: 325,
         column: 14,
         ignore: false
       },
@@ -2128,7 +2132,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 33,
+        line: 32,
         column: 23,
         ignore: false
       },
@@ -2143,11 +2147,11 @@
           args: [
             {
               name: "since",
-              expr: 13
+              expr: 18
             },
             {
               name: "syscap",
-              expr: 14
+              expr: 19
             }
           ]
         }
@@ -2157,7 +2161,7 @@
       exportId: "_CN33ohos.graphics.color_space_manager10ColorSpaceE",
       mangledBeforeSema: "33ohos.graphics.color_space_manager10ColorSpaceU",
       hash: {
-        instVar: 179258064578282388,
+        instVar: 13471391929970438283,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
@@ -2209,7 +2213,7 @@
         ellipsisPos: {
           file: 4,
           pkgId: 0,
-          line: 29,
+          line: 28,
           column: 6783,
           ignore: false
         }
@@ -2226,14 +2230,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 95,
+        line: 96,
         column: 1,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 162,
+        line: 166,
         column: 2,
         ignore: false
       },
@@ -2241,7 +2245,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 95,
+        line: 96,
         column: 14,
         ignore: false
       },
@@ -2256,11 +2260,11 @@
           args: [
             {
               name: "since",
-              expr: 5
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 8
             }
           ]
         }
@@ -2274,12 +2278,12 @@
         virt: 0,
         sig: 14226628559908992850,
         srcUse: 0,
-        bodyHash: 9754888093718613326
+        bodyHash: 16530798338613326546
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          31
+          32
         ],
         body: [
           31,
@@ -2296,22 +2300,22 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 47,
+        line: 48,
         column: 20,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 47,
+        line: 48,
         column: 46,
         ignore: false
       },
-      identifier: "colorSpaceName",
+      identifier: "colorSpaceType",
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 47,
+        line: 48,
         column: 20,
         ignore: false
       },
@@ -2323,7 +2327,7 @@
 
       ],
       type: 21,
-      mangledName: "_CN33ohos.graphics.color_space_manager6createHNNY_10ColorSpaceEE14colorSpaceNameE",
+      mangledName: "_CN33ohos.graphics.color_space_manager6createHNNY_10ColorSpaceEE14colorSpaceTypeE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -2348,14 +2352,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 1,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 85,
+        line: 87,
         column: 2,
         ignore: false
       },
@@ -2363,7 +2367,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 13,
         ignore: false
       },
@@ -2378,16 +2382,20 @@
           args: [
             {
               name: "since",
-              expr: 3
+              expr: 4
             },
             {
               name: "syscap",
-              expr: 4
+              expr: 5
+            },
+            {
+              name: "throwexception",
+              expr: 6
             }
           ]
         }
       ],
-      type: 23,
+      type: 24,
       mangledName: "_CN33ohos.graphics.color_space_manager6createHCNY_19ColorSpacePrimariesEf",
       exportId: "_CN33ohos.graphics.color_space_manager6createHCNY_19ColorSpacePrimariesEf",
       mangledBeforeSema: "33ohos.graphics.color_space_manager6createF19ColorSpacePrimariesf$$17ColorSpaceManager",
@@ -2396,7 +2404,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17483335777182975662
+        bodyHash: 16191564410276889575
       },
       info_type: "FuncInfo",
       info: {
@@ -2428,14 +2436,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 431,
+        line: 403,
         column: 1,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 530,
+        line: 502,
         column: 2,
         ignore: false
       },
@@ -2443,7 +2451,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 431,
+        line: 403,
         column: 14,
         ignore: false
       },
@@ -2458,16 +2466,16 @@
           args: [
             {
               name: "since",
-              expr: 77
+              expr: 82
             },
             {
               name: "syscap",
-              expr: 78
+              expr: 83
             }
           ]
         }
       ],
-      type: 24,
+      type: 25,
       mangledName: "_CN33ohos.graphics.color_space_manager19ColorSpacePrimariesE",
       exportId: "_CN33ohos.graphics.color_space_manager19ColorSpacePrimariesE",
       mangledBeforeSema: "33ohos.graphics.color_space_manager19ColorSpacePrimariesC",
@@ -2502,14 +2510,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 20,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 50,
         ignore: false
       },
@@ -2517,7 +2525,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 20,
         ignore: false
       },
@@ -2528,7 +2536,7 @@
       annotations: [
 
       ],
-      type: 24,
+      type: 25,
       mangledName: "_CN33ohos.graphics.color_space_manager6createHCNY_19ColorSpacePrimariesEfE9primariesE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2549,14 +2557,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 52,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 66,
         ignore: false
       },
@@ -2564,7 +2572,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 72,
+        line: 74,
         column: 52,
         ignore: false
       },
@@ -2600,14 +2608,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 96,
+        line: 97,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 98,
+        line: 99,
         column: 6,
         ignore: false
       },
@@ -2615,7 +2623,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 96,
+        line: 97,
         column: 15,
         ignore: false
       },
@@ -2626,7 +2634,7 @@
       annotations: [
 
       ],
-      type: 25,
+      type: 26,
       mangledName: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager6<init>Hl",
       exportId: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager6<init>Hl",
       mangledBeforeSema: "33ohos.graphics.color_space_manager17ColorSpaceManagerC6<init>Fl$$",
@@ -2635,7 +2643,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 15572225319186274670
+        bodyHash: 30015395489301759
       },
       info_type: "FuncInfo",
       info: {
@@ -2660,14 +2668,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 96,
+        line: 97,
         column: 20,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 96,
+        line: 97,
         column: 29,
         ignore: false
       },
@@ -2675,7 +2683,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 96,
+        line: 97,
         column: 20,
         ignore: false
       },
@@ -2711,14 +2719,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 100,
+        line: 101,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 102,
+        line: 103,
         column: 6,
         ignore: false
       },
@@ -2726,7 +2734,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 100,
+        line: 101,
         column: 5,
         ignore: false
       },
@@ -2737,7 +2745,7 @@
       annotations: [
 
       ],
-      type: 26,
+      type: 27,
       mangledName: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager5~initHv",
       exportId: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager5~initHv",
       mangledBeforeSema: "33ohos.graphics.color_space_manager17ColorSpaceManagerC5~initF$$",
@@ -2746,7 +2754,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 9951052923800719445
+        bodyHash: 406755626998879978
       },
       info_type: "FuncInfo",
       info: {
@@ -2775,22 +2783,22 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 114,
+        line: 116,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 121,
+        line: 123,
         column: 6,
         ignore: false
       },
-      identifier: "getColorSpaceName",
+      identifier: "getColorSpaceType",
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 114,
+        line: 116,
         column: 17,
         ignore: false
       },
@@ -2805,25 +2813,29 @@
           args: [
             {
               name: "since",
-              expr: 7
+              expr: 9
             },
             {
               name: "syscap",
-              expr: 8
+              expr: 10
+            },
+            {
+              name: "throwexception",
+              expr: 11
             }
           ]
         }
       ],
-      type: 27,
-      mangledName: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager17getColorSpaceNameHv",
-      exportId: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager17getColorSpaceNameHv",
-      mangledBeforeSema: "33ohos.graphics.color_space_manager17ColorSpaceManagerC17getColorSpaceNameF$$10ColorSpace",
+      type: 28,
+      mangledName: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager17getColorSpaceTypeHv",
+      exportId: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager17getColorSpaceTypeHv",
+      mangledBeforeSema: "33ohos.graphics.color_space_manager17ColorSpaceManagerC17getColorSpaceTypeF$$10ColorSpace",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 3902139653050149725
+        bodyHash: 7509885336898342462
       },
       info_type: "FuncInfo",
       info: {
@@ -2852,14 +2864,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 133,
+        line: 136,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 142,
+        line: 145,
         column: 6,
         ignore: false
       },
@@ -2867,7 +2879,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 133,
+        line: 136,
         column: 17,
         ignore: false
       },
@@ -2882,16 +2894,20 @@
           args: [
             {
               name: "since",
-              expr: 9
+              expr: 12
             },
             {
               name: "syscap",
-              expr: 10
+              expr: 13
+            },
+            {
+              name: "throwexception",
+              expr: 14
             }
           ]
         }
       ],
-      type: 28,
+      type: 29,
       mangledName: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager13getWhitePointHv",
       exportId: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager13getWhitePointHv",
       mangledBeforeSema: "33ohos.graphics.color_space_manager17ColorSpaceManagerC13getWhitePointF$$5Array<f>",
@@ -2900,7 +2916,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11370730638714314908
+        bodyHash: 12662077455244162356
       },
       info_type: "FuncInfo",
       info: {
@@ -2915,7 +2931,7 @@
               ]
             }
           ],
-          retType: 29
+          retType: 30
         }
       }
     },
@@ -2929,14 +2945,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 154,
+        line: 158,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 161,
+        line: 165,
         column: 6,
         ignore: false
       },
@@ -2944,7 +2960,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 154,
+        line: 158,
         column: 17,
         ignore: false
       },
@@ -2959,16 +2975,20 @@
           args: [
             {
               name: "since",
-              expr: 11
+              expr: 15
             },
             {
               name: "syscap",
-              expr: 12
+              expr: 16
+            },
+            {
+              name: "throwexception",
+              expr: 17
             }
           ]
         }
       ],
-      type: 30,
+      type: 31,
       mangledName: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager8getGammaHv",
       exportId: "_CN33ohos.graphics.color_space_manager17ColorSpaceManager8getGammaHv",
       mangledBeforeSema: "33ohos.graphics.color_space_manager17ColorSpaceManagerC8getGammaF$$f",
@@ -2977,7 +2997,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4602478383370195483
+        bodyHash: 2681095184647813101
       },
       info_type: "FuncInfo",
       info: {
@@ -3002,14 +3022,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 39,
+        line: 38,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 39,
+        line: 38,
         column: 23,
         ignore: false
       },
@@ -3017,7 +3037,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 39,
+        line: 38,
         column: 16,
         ignore: false
       },
@@ -3032,11 +3052,11 @@
           args: [
             {
               name: "since",
-              expr: 15
+              expr: 20
             },
             {
               name: "syscap",
-              expr: 16
+              expr: 21
             }
           ]
         }
@@ -3062,14 +3082,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 46,
+        line: 45,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 46,
+        line: 45,
         column: 28,
         ignore: false
       },
@@ -3077,7 +3097,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 46,
+        line: 45,
         column: 16,
         ignore: false
       },
@@ -3092,11 +3112,11 @@
           args: [
             {
               name: "since",
-              expr: 17
+              expr: 22
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 23
             }
           ]
         }
@@ -3122,14 +3142,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 53,
+        line: 52,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 53,
+        line: 52,
         column: 21,
         ignore: false
       },
@@ -3137,7 +3157,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 53,
+        line: 52,
         column: 16,
         ignore: false
       },
@@ -3152,11 +3172,11 @@
           args: [
             {
               name: "since",
-              expr: 19
+              expr: 24
             },
             {
               name: "syscap",
-              expr: 20
+              expr: 25
             }
           ]
         }
@@ -3182,14 +3202,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 60,
+        line: 59,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 60,
+        line: 59,
         column: 25,
         ignore: false
       },
@@ -3197,7 +3217,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 60,
+        line: 59,
         column: 16,
         ignore: false
       },
@@ -3212,11 +3232,11 @@
           args: [
             {
               name: "since",
-              expr: 21
+              expr: 26
             },
             {
               name: "syscap",
-              expr: 22
+              expr: 27
             }
           ]
         }
@@ -3242,14 +3262,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 67,
+        line: 66,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 67,
+        line: 66,
         column: 20,
         ignore: false
       },
@@ -3257,7 +3277,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 67,
+        line: 66,
         column: 16,
         ignore: false
       },
@@ -3272,11 +3292,11 @@
           args: [
             {
               name: "since",
-              expr: 23
+              expr: 28
             },
             {
               name: "syscap",
-              expr: 24
+              expr: 29
             }
           ]
         }
@@ -3302,74 +3322,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 74,
+        line: 73,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 74,
-        column: 22,
-        ignore: false
-      },
-      identifier: "Custom",
-      identifierPos: {
-        file: 3,
-        pkgId: 5,
-        line: 74,
-        column: 16,
-        ignore: false
-      },
-      attributes: [
-        279307093024,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "since",
-              expr: 25
-            },
-            {
-              name: "syscap",
-              expr: 26
-            }
-          ]
-        }
-      ],
-      type: 21,
-      mangledName: "",
-      exportId: "_CN33ohos.graphics.color_space_manager10ColorSpace6CustomKE",
-      mangledBeforeSema: "33ohos.graphics.color_space_manager10ColorSpaceU6CustomV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 3590305756502870495
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.graphics.color_space_manager",
-      begin: {
-        file: 3,
-        pkgId: 5,
-        line: 81,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 5,
-        line: 81,
+        line: 73,
         column: 21,
         ignore: false
       },
@@ -3377,7 +3337,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 81,
+        line: 73,
         column: 16,
         ignore: false
       },
@@ -3392,11 +3352,11 @@
           args: [
             {
               name: "since",
-              expr: 27
+              expr: 30
             },
             {
               name: "syscap",
-              expr: 28
+              expr: 31
             }
           ]
         }
@@ -3422,14 +3382,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 88,
+        line: 80,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 88,
+        line: 80,
         column: 24,
         ignore: false
       },
@@ -3437,7 +3397,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 88,
+        line: 80,
         column: 16,
         ignore: false
       },
@@ -3452,11 +3412,11 @@
           args: [
             {
               name: "since",
-              expr: 29
+              expr: 32
             },
             {
               name: "syscap",
-              expr: 30
+              expr: 33
             }
           ]
         }
@@ -3482,14 +3442,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 95,
+        line: 87,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 95,
+        line: 87,
         column: 27,
         ignore: false
       },
@@ -3497,7 +3457,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 95,
+        line: 87,
         column: 16,
         ignore: false
       },
@@ -3512,11 +3472,11 @@
           args: [
             {
               name: "since",
-              expr: 31
+              expr: 34
             },
             {
               name: "syscap",
-              expr: 32
+              expr: 35
             }
           ]
         }
@@ -3542,14 +3502,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 102,
+        line: 94,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 102,
+        line: 94,
         column: 25,
         ignore: false
       },
@@ -3557,7 +3517,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 102,
+        line: 94,
         column: 16,
         ignore: false
       },
@@ -3572,11 +3532,11 @@
           args: [
             {
               name: "since",
-              expr: 33
+              expr: 36
             },
             {
               name: "syscap",
-              expr: 34
+              expr: 37
             }
           ]
         }
@@ -3602,14 +3562,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 109,
+        line: 101,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 109,
+        line: 101,
         column: 24,
         ignore: false
       },
@@ -3617,7 +3577,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 109,
+        line: 101,
         column: 16,
         ignore: false
       },
@@ -3632,11 +3592,11 @@
           args: [
             {
               name: "since",
-              expr: 35
+              expr: 38
             },
             {
               name: "syscap",
-              expr: 36
+              expr: 39
             }
           ]
         }
@@ -3662,14 +3622,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 116,
+        line: 108,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 116,
+        line: 108,
         column: 21,
         ignore: false
       },
@@ -3677,7 +3637,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 116,
+        line: 108,
         column: 16,
         ignore: false
       },
@@ -3692,11 +3652,11 @@
           args: [
             {
               name: "since",
-              expr: 37
+              expr: 40
             },
             {
               name: "syscap",
-              expr: 38
+              expr: 41
             }
           ]
         }
@@ -3722,14 +3682,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 123,
+        line: 115,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 123,
+        line: 115,
         column: 20,
         ignore: false
       },
@@ -3737,7 +3697,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 123,
+        line: 115,
         column: 16,
         ignore: false
       },
@@ -3752,11 +3712,11 @@
           args: [
             {
               name: "since",
-              expr: 39
+              expr: 42
             },
             {
               name: "syscap",
-              expr: 40
+              expr: 43
             }
           ]
         }
@@ -3782,23 +3742,23 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 130,
-        column: 17,
+        line: 122,
+        column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 130,
-        column: 34,
+        line: 122,
+        column: 33,
         ignore: false
       },
       identifier: "AdobeRgb1998Limit",
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 130,
-        column: 17,
+        line: 122,
+        column: 16,
         ignore: false
       },
       attributes: [
@@ -3812,11 +3772,11 @@
           args: [
             {
               name: "since",
-              expr: 41
+              expr: 44
             },
             {
               name: "syscap",
-              expr: 42
+              expr: 45
             }
           ]
         }
@@ -3842,14 +3802,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 137,
+        line: 129,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 137,
+        line: 129,
         column: 31,
         ignore: false
       },
@@ -3857,7 +3817,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 137,
+        line: 129,
         column: 17,
         ignore: false
       },
@@ -3872,11 +3832,11 @@
           args: [
             {
               name: "since",
-              expr: 43
+              expr: 46
             },
             {
               name: "syscap",
-              expr: 44
+              expr: 47
             }
           ]
         }
@@ -3902,14 +3862,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 144,
+        line: 136,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 144,
+        line: 136,
         column: 26,
         ignore: false
       },
@@ -3917,7 +3877,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 144,
+        line: 136,
         column: 17,
         ignore: false
       },
@@ -3932,11 +3892,11 @@
           args: [
             {
               name: "since",
-              expr: 45
+              expr: 48
             },
             {
               name: "syscap",
-              expr: 46
+              expr: 49
             }
           ]
         }
@@ -3962,14 +3922,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 151,
+        line: 143,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 151,
+        line: 143,
         column: 27,
         ignore: false
       },
@@ -3977,7 +3937,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 151,
+        line: 143,
         column: 17,
         ignore: false
       },
@@ -3992,11 +3952,11 @@
           args: [
             {
               name: "since",
-              expr: 47
+              expr: 50
             },
             {
               name: "syscap",
-              expr: 48
+              expr: 51
             }
           ]
         }
@@ -4022,14 +3982,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 158,
+        line: 150,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 158,
+        line: 150,
         column: 30,
         ignore: false
       },
@@ -4037,7 +3997,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 158,
+        line: 150,
         column: 17,
         ignore: false
       },
@@ -4052,11 +4012,11 @@
           args: [
             {
               name: "since",
-              expr: 49
+              expr: 52
             },
             {
               name: "syscap",
-              expr: 50
+              expr: 53
             }
           ]
         }
@@ -4082,14 +4042,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 165,
+        line: 157,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 165,
+        line: 157,
         column: 33,
         ignore: false
       },
@@ -4097,7 +4057,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 165,
+        line: 157,
         column: 17,
         ignore: false
       },
@@ -4112,11 +4072,11 @@
           args: [
             {
               name: "since",
-              expr: 51
+              expr: 54
             },
             {
               name: "syscap",
-              expr: 52
+              expr: 55
             }
           ]
         }
@@ -4142,14 +4102,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 172,
+        line: 164,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 172,
+        line: 164,
         column: 31,
         ignore: false
       },
@@ -4157,7 +4117,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 172,
+        line: 164,
         column: 17,
         ignore: false
       },
@@ -4172,11 +4132,11 @@
           args: [
             {
               name: "since",
-              expr: 53
+              expr: 56
             },
             {
               name: "syscap",
-              expr: 54
+              expr: 57
             }
           ]
         }
@@ -4202,14 +4162,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 179,
+        line: 171,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 179,
+        line: 171,
         column: 30,
         ignore: false
       },
@@ -4217,7 +4177,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 179,
+        line: 171,
         column: 17,
         ignore: false
       },
@@ -4232,11 +4192,11 @@
           args: [
             {
               name: "since",
-              expr: 55
+              expr: 58
             },
             {
               name: "syscap",
-              expr: 56
+              expr: 59
             }
           ]
         }
@@ -4262,14 +4222,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 186,
+        line: 178,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 186,
+        line: 178,
         column: 27,
         ignore: false
       },
@@ -4277,7 +4237,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 186,
+        line: 178,
         column: 17,
         ignore: false
       },
@@ -4292,11 +4252,11 @@
           args: [
             {
               name: "since",
-              expr: 57
+              expr: 60
             },
             {
               name: "syscap",
-              expr: 58
+              expr: 61
             }
           ]
         }
@@ -4322,14 +4282,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 193,
+        line: 185,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 193,
+        line: 185,
         column: 26,
         ignore: false
       },
@@ -4337,7 +4297,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 193,
+        line: 185,
         column: 17,
         ignore: false
       },
@@ -4352,11 +4312,11 @@
           args: [
             {
               name: "since",
-              expr: 59
+              expr: 62
             },
             {
               name: "syscap",
-              expr: 60
+              expr: 63
             }
           ]
         }
@@ -4382,14 +4342,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 200,
+        line: 192,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 200,
+        line: 192,
         column: 25,
         ignore: false
       },
@@ -4397,7 +4357,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 200,
+        line: 192,
         column: 17,
         ignore: false
       },
@@ -4412,11 +4372,11 @@
           args: [
             {
               name: "since",
-              expr: 61
+              expr: 64
             },
             {
               name: "syscap",
-              expr: 62
+              expr: 65
             }
           ]
         }
@@ -4442,14 +4402,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 207,
+        line: 199,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 207,
+        line: 199,
         column: 27,
         ignore: false
       },
@@ -4457,7 +4417,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 207,
+        line: 199,
         column: 17,
         ignore: false
       },
@@ -4472,11 +4432,11 @@
           args: [
             {
               name: "since",
-              expr: 63
+              expr: 66
             },
             {
               name: "syscap",
-              expr: 64
+              expr: 67
             }
           ]
         }
@@ -4502,14 +4462,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 214,
+        line: 206,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 214,
+        line: 206,
         column: 28,
         ignore: false
       },
@@ -4517,7 +4477,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 214,
+        line: 206,
         column: 17,
         ignore: false
       },
@@ -4532,11 +4492,11 @@
           args: [
             {
               name: "since",
-              expr: 65
+              expr: 68
             },
             {
               name: "syscap",
-              expr: 66
+              expr: 69
             }
           ]
         }
@@ -4562,14 +4522,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 221,
+        line: 213,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 221,
+        line: 213,
         column: 29,
         ignore: false
       },
@@ -4577,7 +4537,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 221,
+        line: 213,
         column: 17,
         ignore: false
       },
@@ -4592,11 +4552,11 @@
           args: [
             {
               name: "since",
-              expr: 67
+              expr: 70
             },
             {
               name: "syscap",
-              expr: 68
+              expr: 71
             }
           ]
         }
@@ -4622,14 +4582,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 228,
+        line: 220,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 228,
+        line: 220,
         column: 28,
         ignore: false
       },
@@ -4637,7 +4597,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 228,
+        line: 220,
         column: 17,
         ignore: false
       },
@@ -4652,11 +4612,11 @@
           args: [
             {
               name: "since",
-              expr: 69
+              expr: 72
             },
             {
               name: "syscap",
-              expr: 70
+              expr: 73
             }
           ]
         }
@@ -4682,14 +4642,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 235,
+        line: 227,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 235,
+        line: 227,
         column: 30,
         ignore: false
       },
@@ -4697,7 +4657,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 235,
+        line: 227,
         column: 17,
         ignore: false
       },
@@ -4712,11 +4672,11 @@
           args: [
             {
               name: "since",
-              expr: 71
+              expr: 74
             },
             {
               name: "syscap",
-              expr: 72
+              expr: 75
             }
           ]
         }
@@ -4742,14 +4702,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 242,
+        line: 234,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 242,
+        line: 234,
         column: 29,
         ignore: false
       },
@@ -4757,7 +4717,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 242,
+        line: 234,
         column: 17,
         ignore: false
       },
@@ -4772,11 +4732,11 @@
           args: [
             {
               name: "since",
-              expr: 73
+              expr: 76
             },
             {
               name: "syscap",
-              expr: 74
+              expr: 77
             }
           ]
         }
@@ -4802,14 +4762,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 249,
+        line: 241,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 249,
+        line: 241,
         column: 28,
         ignore: false
       },
@@ -4817,7 +4777,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 249,
+        line: 241,
         column: 17,
         ignore: false
       },
@@ -4832,11 +4792,11 @@
           args: [
             {
               name: "since",
-              expr: 75
+              expr: 78
             },
             {
               name: "syscap",
-              expr: 76
+              expr: 79
             }
           ]
         }
@@ -4862,14 +4822,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 252,
+        line: 244,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 252,
+        line: 244,
         column: 21,
         ignore: false
       },
@@ -4877,7 +4837,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 252,
+        line: 244,
         column: 17,
         ignore: false
       },
@@ -4915,14 +4875,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 255,
+        line: 247,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 255,
+        line: 247,
         column: 34,
         ignore: false
       },
@@ -4930,7 +4890,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 255,
+        line: 247,
         column: 17,
         ignore: false
       },
@@ -4963,6 +4923,66 @@
       }
     },
     {
+      kind: "VarDecl",
+      fullPkgName: "ohos.graphics.color_space_manager",
+      begin: {
+        file: 3,
+        pkgId: 5,
+        line: 254,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 5,
+        line: 254,
+        column: 23,
+        ignore: false
+      },
+      identifier: "Custom",
+      identifierPos: {
+        file: 3,
+        pkgId: 5,
+        line: 254,
+        column: 17,
+        ignore: false
+      },
+      attributes: [
+        279307093024,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 80
+            },
+            {
+              name: "syscap",
+              expr: 81
+            }
+          ]
+        }
+      ],
+      type: 21,
+      mangledName: "",
+      exportId: "_CN33ohos.graphics.color_space_manager10ColorSpace6CustomKE",
+      mangledBeforeSema: "33ohos.graphics.color_space_manager10ColorSpaceU6CustomV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 3590305756502870495
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
       kind: "FuncDecl",
       fullPkgName: "ohos.graphics.color_space_manager",
       genericDecl: {
@@ -4972,14 +4992,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 258,
+        line: 257,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 293,
+        line: 292,
         column: 18,
         ignore: false
       },
@@ -4987,7 +5007,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 258,
+        line: 257,
         column: 32,
         ignore: false
       },
@@ -4998,7 +5018,7 @@
       annotations: [
 
       ],
-      type: 32,
+      type: 33,
       mangledName: "_CN33ohos.graphics.color_space_manager10ColorSpace8getValueHv",
       exportId: "_CN33ohos.graphics.color_space_manager10ColorSpace8getValueHv",
       mangledBeforeSema: "33ohos.graphics.color_space_manager10ColorSpaceU8getValueF$$j",
@@ -5007,7 +5027,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 7375312266606684201
+        bodyHash: 10872918838235473351
       },
       info_type: "FuncInfo",
       info: {
@@ -5036,14 +5056,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 295,
+        line: 294,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 325,
+        line: 324,
         column: 18,
         ignore: false
       },
@@ -5051,7 +5071,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 295,
+        line: 294,
         column: 39,
         ignore: false
       },
@@ -5062,7 +5082,7 @@
       annotations: [
 
       ],
-      type: 33,
+      type: 34,
       mangledName: "_CN33ohos.graphics.color_space_manager10ColorSpace5parseHj",
       exportId: "_CN33ohos.graphics.color_space_manager10ColorSpace5parseHj",
       mangledBeforeSema: "33ohos.graphics.color_space_manager10ColorSpaceU5parseFj$$10ColorSpace",
@@ -5071,7 +5091,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 8035971499611947038,
-        bodyHash: 7691525856215188269
+        bodyHash: 9305889702236629992
       },
       info_type: "FuncInfo",
       info: {
@@ -5096,14 +5116,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 295,
+        line: 294,
         column: 45,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 295,
+        line: 294,
         column: 55,
         ignore: false
       },
@@ -5111,7 +5131,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 295,
+        line: 294,
         column: 45,
         ignore: false
       },
@@ -5148,14 +5168,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 327,
+        line: 326,
         column: 13,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 402,
+        line: 401,
         column: 14,
         ignore: false
       },
@@ -5163,7 +5183,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 327,
+        line: 326,
         column: 13,
         ignore: false
       },
@@ -5188,7 +5208,7 @@
       info_type: "ExtendInfo",
       info: {
         inheritedTypes: [
-          34
+          35
         ],
         body: [
           74
@@ -5205,14 +5225,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 328,
+        line: 327,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 401,
+        line: 400,
         column: 18,
         ignore: false
       },
@@ -5220,7 +5240,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 328,
+        line: 327,
         column: 29,
         ignore: false
       },
@@ -5231,7 +5251,7 @@
       annotations: [
 
       ],
-      type: 35,
+      type: 36,
       mangledName: "_CN33ohos.graphics.color_space_managerXNNY_10ColorSpaceE8toStringHv",
       exportId: "_CN33ohos.graphics.color_space_managerXNNY_10ColorSpaceE8toStringHv",
       mangledBeforeSema: "33ohos.graphics.color_space_manager7Extend!10ColorSpace<:8ToStringX8toStringF$$6String",
@@ -5240,7 +5260,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2656660962930428104
+        bodyHash: 4995548738402190294
       },
       info_type: "FuncInfo",
       info: {
@@ -5270,14 +5290,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 403,
+        line: 402,
         column: 13,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 445,
+        line: 444,
         column: 14,
         ignore: false
       },
@@ -5285,7 +5305,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 403,
+        line: 402,
         column: 13,
         ignore: false
       },
@@ -5310,7 +5330,7 @@
       info_type: "ExtendInfo",
       info: {
         inheritedTypes: [
-          36
+          37
         ],
         body: [
           76,
@@ -5328,14 +5348,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 404,
+        line: 403,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 441,
+        line: 440,
         column: 18,
         ignore: false
       },
@@ -5343,7 +5363,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 404,
+        line: 403,
         column: 38,
         ignore: false
       },
@@ -5354,7 +5374,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 38,
       mangledName: "_CN33ohos.graphics.color_space_managerXNNY_10ColorSpaceEeqHY1_",
       exportId: "_CN33ohos.graphics.color_space_managerXNNY_10ColorSpaceEeqHY1_",
       mangledBeforeSema: "33ohos.graphics.color_space_manager7Extend!10ColorSpace<:9Equatable<10ColorSpace>X2==F10ColorSpace$$b",
@@ -5363,7 +5383,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6266954580081744781
+        bodyHash: 13628369906582574258
       },
       info_type: "FuncInfo",
       info: {
@@ -5378,7 +5398,7 @@
               ]
             }
           ],
-          retType: 38
+          retType: 23
         },
         op: "Equal"
       }
@@ -5389,14 +5409,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 404,
+        line: 403,
         column: 41,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 404,
+        line: 403,
         column: 58,
         ignore: false
       },
@@ -5404,7 +5424,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 404,
+        line: 403,
         column: 41,
         ignore: false
       },
@@ -5440,14 +5460,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 442,
+        line: 441,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 444,
+        line: 443,
         column: 18,
         ignore: false
       },
@@ -5455,7 +5475,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 442,
+        line: 441,
         column: 38,
         ignore: false
       },
@@ -5466,7 +5486,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 38,
       mangledName: "_CN33ohos.graphics.color_space_managerXNNY_10ColorSpaceEneHY1_",
       exportId: "_CN33ohos.graphics.color_space_managerXNNY_10ColorSpaceEneHY1_",
       mangledBeforeSema: "33ohos.graphics.color_space_manager7Extend!10ColorSpace<:9Equatable<10ColorSpace>X2!=F10ColorSpace$$b",
@@ -5475,7 +5495,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 15298986772407669398
+        bodyHash: 17288540847221751505
       },
       info_type: "FuncInfo",
       info: {
@@ -5490,7 +5510,7 @@
               ]
             }
           ],
-          retType: 38
+          retType: 23
         },
         op: "NotEqual"
       }
@@ -5501,14 +5521,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 442,
+        line: 441,
         column: 41,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 442,
+        line: 441,
         column: 58,
         ignore: false
       },
@@ -5516,7 +5536,7 @@
       identifierPos: {
         file: 3,
         pkgId: 5,
-        line: 442,
+        line: 441,
         column: 41,
         ignore: false
       },
@@ -5548,14 +5568,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 440,
+        line: 411,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 440,
+        line: 411,
         column: 29,
         ignore: false
       },
@@ -5563,7 +5583,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 440,
+        line: 411,
         column: 16,
         ignore: false
       },
@@ -5578,11 +5598,11 @@
           args: [
             {
               name: "since",
-              expr: 79
+              expr: 84
             },
             {
               name: "syscap",
-              expr: 80
+              expr: 85
             }
           ]
         }
@@ -5609,14 +5629,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 450,
+        line: 420,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 450,
+        line: 420,
         column: 29,
         ignore: false
       },
@@ -5624,7 +5644,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 450,
+        line: 420,
         column: 16,
         ignore: false
       },
@@ -5639,11 +5659,11 @@
           args: [
             {
               name: "since",
-              expr: 81
+              expr: 86
             },
             {
               name: "syscap",
-              expr: 82
+              expr: 87
             }
           ]
         }
@@ -5670,14 +5690,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 460,
+        line: 429,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 460,
+        line: 429,
         column: 31,
         ignore: false
       },
@@ -5685,7 +5705,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 460,
+        line: 429,
         column: 16,
         ignore: false
       },
@@ -5700,11 +5720,11 @@
           args: [
             {
               name: "since",
-              expr: 83
+              expr: 88
             },
             {
               name: "syscap",
-              expr: 84
+              expr: 89
             }
           ]
         }
@@ -5731,14 +5751,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 470,
+        line: 438,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 470,
+        line: 438,
         column: 31,
         ignore: false
       },
@@ -5746,7 +5766,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 470,
+        line: 438,
         column: 16,
         ignore: false
       },
@@ -5761,11 +5781,11 @@
           args: [
             {
               name: "since",
-              expr: 85
+              expr: 90
             },
             {
               name: "syscap",
-              expr: 86
+              expr: 91
             }
           ]
         }
@@ -5792,14 +5812,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 480,
+        line: 447,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 480,
+        line: 447,
         column: 30,
         ignore: false
       },
@@ -5807,7 +5827,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 480,
+        line: 447,
         column: 16,
         ignore: false
       },
@@ -5822,11 +5842,11 @@
           args: [
             {
               name: "since",
-              expr: 87
+              expr: 92
             },
             {
               name: "syscap",
-              expr: 88
+              expr: 93
             }
           ]
         }
@@ -5853,14 +5873,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 490,
+        line: 456,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 490,
+        line: 456,
         column: 30,
         ignore: false
       },
@@ -5868,7 +5888,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 490,
+        line: 456,
         column: 16,
         ignore: false
       },
@@ -5883,11 +5903,11 @@
           args: [
             {
               name: "since",
-              expr: 89
+              expr: 94
             },
             {
               name: "syscap",
-              expr: 90
+              expr: 95
             }
           ]
         }
@@ -5914,14 +5934,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 500,
+        line: 465,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 500,
+        line: 465,
         column: 36,
         ignore: false
       },
@@ -5929,7 +5949,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 500,
+        line: 465,
         column: 16,
         ignore: false
       },
@@ -5944,11 +5964,11 @@
           args: [
             {
               name: "since",
-              expr: 91
+              expr: 96
             },
             {
               name: "syscap",
-              expr: 92
+              expr: 97
             }
           ]
         }
@@ -5975,14 +5995,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 510,
+        line: 474,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 510,
+        line: 474,
         column: 36,
         ignore: false
       },
@@ -5990,7 +6010,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 510,
+        line: 474,
         column: 16,
         ignore: false
       },
@@ -6005,11 +6025,11 @@
           args: [
             {
               name: "since",
-              expr: 93
+              expr: 98
             },
             {
               name: "syscap",
-              expr: 94
+              expr: 99
             }
           ]
         }
@@ -6040,14 +6060,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 529,
+        line: 501,
         column: 6,
         ignore: false
       },
@@ -6055,7 +6075,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 12,
         ignore: false
       },
@@ -6070,11 +6090,11 @@
           args: [
             {
               name: "since",
-              expr: 95
+              expr: 100
             },
             {
               name: "syscap",
-              expr: 96
+              expr: 101
             }
           ]
         }
@@ -6088,7 +6108,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4280326563910073104
+        bodyHash: 12558981481942132636
       },
       info_type: "FuncInfo",
       info: {
@@ -6117,7 +6137,7 @@
               ]
             }
           ],
-          retType: 24
+          retType: 25
         }
       }
     },
@@ -6127,14 +6147,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 30,
         ignore: false
       },
@@ -6142,7 +6162,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 17,
         ignore: false
       },
@@ -6174,14 +6194,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 32,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 45,
         ignore: false
       },
@@ -6189,7 +6209,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 32,
         ignore: false
       },
@@ -6221,14 +6241,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 47,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 62,
         ignore: false
       },
@@ -6236,7 +6256,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 47,
         ignore: false
       },
@@ -6268,14 +6288,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 64,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 79,
         ignore: false
       },
@@ -6283,7 +6303,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 64,
         ignore: false
       },
@@ -6315,14 +6335,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 81,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 95,
         ignore: false
       },
@@ -6330,7 +6350,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 81,
         ignore: false
       },
@@ -6362,14 +6382,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 97,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 111,
         ignore: false
       },
@@ -6377,7 +6397,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 97,
         ignore: false
       },
@@ -6409,14 +6429,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 113,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 133,
         ignore: false
       },
@@ -6424,7 +6444,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 113,
         ignore: false
       },
@@ -6456,14 +6476,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 135,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 155,
         ignore: false
       },
@@ -6471,7 +6491,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 520,
+        line: 492,
         column: 135,
         ignore: false
       },
@@ -6507,14 +6527,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 545,
+        line: 517,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 554,
+        line: 526,
         column: 6,
         ignore: false
       },
@@ -6522,7 +6542,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 545,
+        line: 517,
         column: 5,
         ignore: false
       },
@@ -6542,7 +6562,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 15312557827107729479
+        bodyHash: 7186603855174886860
       },
       info_type: "FuncInfo",
       info: {
@@ -6567,14 +6587,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 545,
+        line: 517,
         column: 10,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 545,
+        line: 517,
         column: 40,
         ignore: false
       },
@@ -6582,7 +6602,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 545,
+        line: 517,
         column: 10,
         ignore: false
       },
@@ -6593,7 +6613,7 @@
       annotations: [
 
       ],
-      type: 24,
+      type: 25,
       mangledName: "_CN33ohos.graphics.color_space_manager21CJColorSpacePrimaries4initHCNY_19ColorSpacePrimariesEE9primariesE",
       exportId: "",
       mangledBeforeSema: "",
@@ -6614,14 +6634,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 535,
+        line: 507,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 535,
+        line: 507,
         column: 27,
         ignore: false
       },
@@ -6629,7 +6649,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 535,
+        line: 507,
         column: 13,
         ignore: false
       },
@@ -6662,14 +6682,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 536,
+        line: 508,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 536,
+        line: 508,
         column: 27,
         ignore: false
       },
@@ -6677,7 +6697,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 536,
+        line: 508,
         column: 13,
         ignore: false
       },
@@ -6710,14 +6730,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 537,
+        line: 509,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 537,
+        line: 509,
         column: 29,
         ignore: false
       },
@@ -6725,7 +6745,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 537,
+        line: 509,
         column: 13,
         ignore: false
       },
@@ -6758,14 +6778,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 538,
+        line: 510,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 538,
+        line: 510,
         column: 29,
         ignore: false
       },
@@ -6773,7 +6793,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 538,
+        line: 510,
         column: 13,
         ignore: false
       },
@@ -6806,14 +6826,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 539,
+        line: 511,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 539,
+        line: 511,
         column: 28,
         ignore: false
       },
@@ -6821,7 +6841,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 539,
+        line: 511,
         column: 13,
         ignore: false
       },
@@ -6854,14 +6874,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 540,
+        line: 512,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 540,
+        line: 512,
         column: 28,
         ignore: false
       },
@@ -6869,7 +6889,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 540,
+        line: 512,
         column: 13,
         ignore: false
       },
@@ -6902,14 +6922,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 541,
+        line: 513,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 541,
+        line: 513,
         column: 34,
         ignore: false
       },
@@ -6917,7 +6937,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 541,
+        line: 513,
         column: 13,
         ignore: false
       },
@@ -6950,14 +6970,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 542,
+        line: 514,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 542,
+        line: 514,
         column: 34,
         ignore: false
       },
@@ -6965,7 +6985,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 542,
+        line: 514,
         column: 13,
         ignore: false
       },
@@ -7002,14 +7022,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 534,
+        line: 506,
         column: 5,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 543,
+        line: 515,
         column: 9,
         ignore: false
       },
@@ -7017,7 +7037,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 534,
+        line: 506,
         column: 5,
         ignore: false
       },
@@ -7076,14 +7096,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 535,
+        line: 507,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 535,
+        line: 507,
         column: 27,
         ignore: false
       },
@@ -7091,7 +7111,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 535,
+        line: 507,
         column: 13,
         ignore: false
       },
@@ -7125,14 +7145,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 536,
+        line: 508,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 536,
+        line: 508,
         column: 27,
         ignore: false
       },
@@ -7140,7 +7160,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 536,
+        line: 508,
         column: 13,
         ignore: false
       },
@@ -7174,14 +7194,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 537,
+        line: 509,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 537,
+        line: 509,
         column: 29,
         ignore: false
       },
@@ -7189,7 +7209,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 537,
+        line: 509,
         column: 13,
         ignore: false
       },
@@ -7223,14 +7243,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 538,
+        line: 510,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 538,
+        line: 510,
         column: 29,
         ignore: false
       },
@@ -7238,7 +7258,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 538,
+        line: 510,
         column: 13,
         ignore: false
       },
@@ -7272,14 +7292,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 539,
+        line: 511,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 539,
+        line: 511,
         column: 28,
         ignore: false
       },
@@ -7287,7 +7307,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 539,
+        line: 511,
         column: 13,
         ignore: false
       },
@@ -7321,14 +7341,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 540,
+        line: 512,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 540,
+        line: 512,
         column: 28,
         ignore: false
       },
@@ -7336,7 +7356,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 540,
+        line: 512,
         column: 13,
         ignore: false
       },
@@ -7370,14 +7390,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 541,
+        line: 513,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 541,
+        line: 513,
         column: 34,
         ignore: false
       },
@@ -7385,7 +7405,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 541,
+        line: 513,
         column: 13,
         ignore: false
       },
@@ -7419,14 +7439,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 542,
+        line: 514,
         column: 9,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 542,
+        line: 514,
         column: 34,
         ignore: false
       },
@@ -7434,7 +7454,7 @@
       identifierPos: {
         file: 4,
         pkgId: 0,
-        line: 542,
+        line: 514,
         column: 13,
         ignore: false
       },
@@ -7515,14 +7535,37 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 69,
+        line: 46,
+        column: 21,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 46,
+        column: 25,
+        ignore: false
+      },
+      type: 23,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 70,
         column: 12,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 69,
+        line: 70,
         column: 16,
         ignore: false
       },
@@ -7538,14 +7581,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 13,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 70,
+        line: 71,
         column: 67,
         ignore: false
       },
@@ -7561,14 +7604,37 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 92,
+        line: 72,
+        column: 21,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 72,
+        column: 25,
+        ignore: false
+      },
+      type: 23,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 93,
         column: 12,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 92,
+        line: 93,
         column: 16,
         ignore: false
       },
@@ -7584,14 +7650,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 93,
+        line: 94,
         column: 13,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 93,
+        line: 94,
         column: 67,
         ignore: false
       },
@@ -7607,60 +7673,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 111,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 0,
-        line: 111,
-        column: 20,
-        ignore: false
-      },
-      type: 4,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 0,
         line: 112,
-        column: 17,
+        column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
         line: 112,
-        column: 71,
-        ignore: false
-      },
-      type: 4,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 0,
-        line: 130,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 0,
-        line: 130,
         column: 20,
         ignore: false
       },
@@ -7676,14 +7696,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 131,
+        line: 113,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 131,
+        line: 113,
         column: 71,
         ignore: false
       },
@@ -7699,14 +7719,37 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 151,
+        line: 114,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 114,
+        column: 29,
+        ignore: false
+      },
+      type: 23,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 132,
         column: 16,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 151,
+        line: 132,
         column: 20,
         ignore: false
       },
@@ -7722,14 +7765,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 152,
+        line: 133,
         column: 17,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 152,
+        line: 133,
         column: 71,
         ignore: false
       },
@@ -7738,6 +7781,98 @@
       info: {
         strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 134,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 134,
+        column: 29,
+        ignore: false
+      },
+      type: 23,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 154,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 154,
+        column: 20,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 155,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 155,
+        column: 71,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 156,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 156,
+        column: 29,
+        ignore: false
+      },
+      type: 23,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
       }
     },
     {
@@ -7745,14 +7880,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 30,
+        line: 29,
         column: 18,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 30,
+        line: 29,
         column: 22,
         ignore: false
       },
@@ -7768,14 +7903,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 31,
+        line: 30,
         column: 19,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 31,
+        line: 30,
         column: 73,
         ignore: false
       },
@@ -7791,14 +7926,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 36,
+        line: 35,
         column: 22,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 36,
+        line: 35,
         column: 26,
         ignore: false
       },
@@ -7814,14 +7949,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 37,
+        line: 36,
         column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 37,
+        line: 36,
         column: 77,
         ignore: false
       },
@@ -7837,14 +7972,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 43,
+        line: 42,
         column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 43,
+        line: 42,
         column: 27,
         ignore: false
       },
@@ -7860,14 +7995,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 44,
+        line: 43,
         column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 44,
+        line: 43,
         column: 78,
         ignore: false
       },
@@ -7875,6 +8010,29 @@
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 5,
+        line: 49,
+        column: 23,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 5,
+        line: 49,
+        column: 27,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -7884,20 +8042,20 @@
         file: 3,
         pkgId: 5,
         line: 50,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 50,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -7906,21 +8064,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 51,
-        column: 24,
+        line: 56,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 51,
-        column: 78,
+        line: 56,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -7930,20 +8088,20 @@
         file: 3,
         pkgId: 5,
         line: 57,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 57,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -7952,21 +8110,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 58,
-        column: 24,
+        line: 63,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 58,
-        column: 78,
+        line: 63,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -7976,20 +8134,20 @@
         file: 3,
         pkgId: 5,
         line: 64,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 64,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -7998,21 +8156,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 65,
-        column: 24,
+        line: 70,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 65,
-        column: 78,
+        line: 70,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8022,20 +8180,20 @@
         file: 3,
         pkgId: 5,
         line: 71,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 71,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8044,21 +8202,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 72,
-        column: 24,
+        line: 77,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 72,
-        column: 78,
+        line: 77,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8068,20 +8226,20 @@
         file: 3,
         pkgId: 5,
         line: 78,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 78,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8090,21 +8248,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 79,
-        column: 24,
+        line: 84,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 79,
-        column: 78,
+        line: 84,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8114,20 +8272,20 @@
         file: 3,
         pkgId: 5,
         line: 85,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 85,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8136,21 +8294,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 86,
-        column: 24,
+        line: 91,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 86,
-        column: 78,
+        line: 91,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8160,20 +8318,20 @@
         file: 3,
         pkgId: 5,
         line: 92,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 92,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8182,21 +8340,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 93,
-        column: 24,
+        line: 98,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 93,
-        column: 78,
+        line: 98,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8206,20 +8364,20 @@
         file: 3,
         pkgId: 5,
         line: 99,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 99,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8228,21 +8386,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 100,
-        column: 24,
+        line: 105,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 100,
-        column: 78,
+        line: 105,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8252,20 +8410,20 @@
         file: 3,
         pkgId: 5,
         line: 106,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 106,
-        column: 27,
+        column: 78,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8274,21 +8432,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 107,
-        column: 24,
+        line: 112,
+        column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 107,
-        column: 78,
+        line: 112,
+        column: 27,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8298,36 +8456,13 @@
         file: 3,
         pkgId: 5,
         line: 113,
-        column: 23,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 113,
-        column: 27,
-        ignore: false
-      },
-      type: 4,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 5,
-        line: 114,
-        column: 24,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 5,
-        line: 114,
         column: 78,
         ignore: false
       },
@@ -8343,14 +8478,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 120,
+        line: 119,
         column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 120,
+        line: 119,
         column: 27,
         ignore: false
       },
@@ -8366,14 +8501,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 121,
+        line: 120,
         column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 121,
+        line: 120,
         column: 78,
         ignore: false
       },
@@ -8389,14 +8524,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 127,
+        line: 126,
         column: 23,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 127,
+        line: 126,
         column: 27,
         ignore: false
       },
@@ -8412,14 +8547,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 128,
+        line: 127,
         column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 128,
+        line: 127,
         column: 79,
         ignore: false
       },
@@ -8427,6 +8562,29 @@
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 3,
+        pkgId: 5,
+        line: 133,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 5,
+        line: 133,
+        column: 28,
+        ignore: false
+      },
+      type: 4,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8436,20 +8594,20 @@
         file: 3,
         pkgId: 5,
         line: 134,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 134,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8458,21 +8616,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 135,
-        column: 25,
+        line: 140,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 135,
-        column: 79,
+        line: 140,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8482,20 +8640,20 @@
         file: 3,
         pkgId: 5,
         line: 141,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 141,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8504,21 +8662,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 142,
-        column: 25,
+        line: 147,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 142,
-        column: 79,
+        line: 147,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8528,20 +8686,20 @@
         file: 3,
         pkgId: 5,
         line: 148,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 148,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8550,21 +8708,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 149,
-        column: 25,
+        line: 154,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 149,
-        column: 79,
+        line: 154,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8574,20 +8732,20 @@
         file: 3,
         pkgId: 5,
         line: 155,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 155,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8596,21 +8754,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 156,
-        column: 25,
+        line: 161,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 156,
-        column: 79,
+        line: 161,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8620,20 +8778,20 @@
         file: 3,
         pkgId: 5,
         line: 162,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 162,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8642,21 +8800,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 163,
-        column: 25,
+        line: 168,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 163,
-        column: 79,
+        line: 168,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8666,20 +8824,20 @@
         file: 3,
         pkgId: 5,
         line: 169,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 169,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8688,21 +8846,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 170,
-        column: 25,
+        line: 175,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 170,
-        column: 79,
+        line: 175,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8712,20 +8870,20 @@
         file: 3,
         pkgId: 5,
         line: 176,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 176,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8734,21 +8892,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 177,
-        column: 25,
+        line: 182,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 177,
-        column: 79,
+        line: 182,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8758,20 +8916,20 @@
         file: 3,
         pkgId: 5,
         line: 183,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 183,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8780,21 +8938,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 184,
-        column: 25,
+        line: 189,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 184,
-        column: 79,
+        line: 189,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8804,20 +8962,20 @@
         file: 3,
         pkgId: 5,
         line: 190,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 190,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8826,21 +8984,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 191,
-        column: 25,
+        line: 196,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 191,
-        column: 79,
+        line: 196,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8850,20 +9008,20 @@
         file: 3,
         pkgId: 5,
         line: 197,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 197,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8872,21 +9030,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 198,
-        column: 25,
+        line: 203,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 198,
-        column: 79,
+        line: 203,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8896,20 +9054,20 @@
         file: 3,
         pkgId: 5,
         line: 204,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 204,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8918,21 +9076,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 205,
-        column: 25,
+        line: 210,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 205,
-        column: 79,
+        line: 210,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8942,20 +9100,20 @@
         file: 3,
         pkgId: 5,
         line: 211,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 211,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -8964,21 +9122,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 212,
-        column: 25,
+        line: 217,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 212,
-        column: 79,
+        line: 217,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -8988,20 +9146,20 @@
         file: 3,
         pkgId: 5,
         line: 218,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 218,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -9010,21 +9168,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 219,
-        column: 25,
+        line: 224,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 219,
-        column: 79,
+        line: 224,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -9034,20 +9192,20 @@
         file: 3,
         pkgId: 5,
         line: 225,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 225,
-        column: 28,
+        column: 79,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "22",
+        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         constKind: "String"
       }
     },
@@ -9056,21 +9214,21 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 226,
-        column: 25,
+        line: 231,
+        column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 226,
-        column: 79,
+        line: 231,
+        column: 28,
         ignore: false
       },
       type: 4,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -9080,36 +9238,13 @@
         file: 3,
         pkgId: 5,
         line: 232,
-        column: 24,
+        column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
         line: 232,
-        column: 28,
-        ignore: false
-      },
-      type: 4,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 3,
-        pkgId: 5,
-        line: 233,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 3,
-        pkgId: 5,
-        line: 233,
         column: 79,
         ignore: false
       },
@@ -9125,14 +9260,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 239,
+        line: 238,
         column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 239,
+        line: 238,
         column: 28,
         ignore: false
       },
@@ -9148,14 +9283,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 240,
+        line: 239,
         column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 240,
+        line: 239,
         column: 79,
         ignore: false
       },
@@ -9171,14 +9306,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 246,
+        line: 251,
         column: 24,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 246,
+        line: 251,
         column: 28,
         ignore: false
       },
@@ -9194,14 +9329,14 @@
       begin: {
         file: 3,
         pkgId: 5,
-        line: 247,
+        line: 252,
         column: 25,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 5,
-        line: 247,
+        line: 252,
         column: 79,
         ignore: false
       },
@@ -9217,14 +9352,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 428,
+        line: 400,
         column: 12,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 428,
+        line: 400,
         column: 16,
         ignore: false
       },
@@ -9240,14 +9375,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 429,
+        line: 401,
         column: 13,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 429,
+        line: 401,
         column: 67,
         ignore: false
       },
@@ -9263,14 +9398,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 437,
+        line: 408,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 437,
+        line: 408,
         column: 20,
         ignore: false
       },
@@ -9286,14 +9421,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 438,
+        line: 409,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 438,
+        line: 409,
         column: 71,
         ignore: false
       },
@@ -9309,14 +9444,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 447,
+        line: 417,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 447,
+        line: 417,
         column: 20,
         ignore: false
       },
@@ -9332,14 +9467,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 448,
+        line: 418,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 448,
+        line: 418,
         column: 71,
         ignore: false
       },
@@ -9355,14 +9490,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 457,
+        line: 426,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 457,
+        line: 426,
         column: 20,
         ignore: false
       },
@@ -9378,14 +9513,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 458,
+        line: 427,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 458,
+        line: 427,
         column: 71,
         ignore: false
       },
@@ -9401,14 +9536,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 467,
+        line: 435,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 467,
+        line: 435,
         column: 20,
         ignore: false
       },
@@ -9424,14 +9559,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 468,
+        line: 436,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 468,
+        line: 436,
         column: 71,
         ignore: false
       },
@@ -9447,14 +9582,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 477,
+        line: 444,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 477,
+        line: 444,
         column: 20,
         ignore: false
       },
@@ -9470,14 +9605,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 478,
+        line: 445,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 478,
+        line: 445,
         column: 71,
         ignore: false
       },
@@ -9493,14 +9628,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 487,
+        line: 453,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 487,
+        line: 453,
         column: 20,
         ignore: false
       },
@@ -9516,14 +9651,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 488,
+        line: 454,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 488,
+        line: 454,
         column: 71,
         ignore: false
       },
@@ -9539,14 +9674,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 497,
+        line: 462,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 497,
+        line: 462,
         column: 20,
         ignore: false
       },
@@ -9562,14 +9697,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 498,
+        line: 463,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 498,
+        line: 463,
         column: 71,
         ignore: false
       },
@@ -9585,14 +9720,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 507,
+        line: 471,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 507,
+        line: 471,
         column: 20,
         ignore: false
       },
@@ -9608,14 +9743,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 508,
+        line: 472,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 508,
+        line: 472,
         column: 71,
         ignore: false
       },
@@ -9631,14 +9766,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 517,
+        line: 489,
         column: 16,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 517,
+        line: 489,
         column: 20,
         ignore: false
       },
@@ -9654,14 +9789,14 @@
       begin: {
         file: 4,
         pkgId: 0,
-        line: 518,
+        line: 490,
         column: 17,
         ignore: false
       },
       end: {
         file: 4,
         pkgId: 0,
-        line: 518,
+        line: 490,
         column: 71,
         ignore: false
       },

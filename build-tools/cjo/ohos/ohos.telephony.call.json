@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.telephony.call",
-  pkgDepInfo: "{\"package\":\"ohos.telephony.call\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":37}}]},{\"package\":\"ohos.app.ability.want\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":31}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":49}},{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":52}}]},{\"package\":\"ohos.encoding.json\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":28}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":18}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":20}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":21}},{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":21}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":24}},{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":24}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":27}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.telephony.call\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.ui_ability\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":52}}]},{\"package\":\"ohos.app.ability.want\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":21,\"column\":31},\"end\":{\"line\":21,\"column\":35}},{\"file\":\"call.cj\",\"begin\":{\"line\":21,\"column\":37},\"end\":{\"line\":21,\"column\":50}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":49}},{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":52}},{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":49}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":29}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":31}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":28}},{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"call.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":30}},{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":30}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"number_format_options.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":27}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.app.ability.ui_ability",
@@ -26,15 +26,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
-            column: 37,
+            line: 20,
+            column: 52,
             ignore: false
           },
           prefixPaths: [
@@ -43,22 +43,22 @@
             "ability",
             "ui_ability"
           ],
-          identifier: "*",
+          identifier: "UIAbilityContext",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
-            column: 1,
+            line: 21,
+            column: 31,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
-            column: 31,
+            line: 21,
+            column: 35,
             ignore: false
           },
           prefixPaths: [
@@ -67,88 +67,89 @@
             "ability",
             "want"
           ],
-          identifier: "*",
+          identifier: "Want",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 1,
+            line: 21,
+            column: 37,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 28,
+            line: 21,
+            column: 50,
             ignore: false
           },
           prefixPaths: [
             "ohos",
-            "encoding",
-            "json"
+            "app",
+            "ability",
+            "want"
           ],
-          identifier: "*",
+          identifier: "WantValueType",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
-            column: 18,
+            line: 22,
+            column: 29,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "ffi"
           ],
-          identifier: "*",
+          identifier: "SUCCESS_CODE",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 23,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 22,
-            column: 21,
+            line: 23,
+            column: 28,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 24,
             column: 49,
             ignore: false
           },
@@ -163,22 +164,22 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 25,
+            line: 26,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 25,
-            column: 24,
+            line: 26,
+            column: 30,
             ignore: false
           },
           prefixPaths: [
             "std",
             "collection"
           ],
-          identifier: "*",
+          identifier: "HashMap",
           asIdentifier: ""
         },
         {
@@ -211,58 +212,58 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
-            column: 20,
+            line: 20,
+            column: 31,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "hilog"
           ],
-          identifier: "*",
+          identifier: "HilogChannel",
           asIdentifier: ""
         },
         {
           begin: {
             file: 2,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 19,
-            column: 21,
+            line: 21,
+            column: 28,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
           asIdentifier: ""
         },
         {
           begin: {
             file: 2,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 52,
             ignore: false
           },
@@ -277,36 +278,58 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 22,
+            line: 23,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 22,
-            column: 24,
+            line: 23,
+            column: 49,
             ignore: false
           },
           prefixPaths: [
-            "std",
-            "collection"
+            "ohos",
+            "business_exception"
           ],
-          identifier: "*",
+          identifier: "BusinessException",
           asIdentifier: ""
         },
         {
           begin: {
             file: 2,
             pkgId: 0,
-            line: 23,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 23,
+            line: 24,
+            column: 30,
+            ignore: false
+          },
+          prefixPaths: [
+            "std",
+            "collection"
+          ],
+          identifier: "HashMap",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 2,
+            pkgId: 0,
+            line: 25,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 2,
+            pkgId: 0,
+            line: 25,
             column: 27,
             ignore: false
           },
@@ -370,9 +393,6 @@
   ],
   allTypes: [
     {
-      kind: "Int32"
-    },
-    {
       kind: "Class",
       typeArgs: [
 
@@ -381,29 +401,8 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 2
+          index: 1
         }
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 2
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        5,
-        5
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 5
       }
     },
     {
@@ -421,24 +420,27 @@
     {
       kind: "Func",
       typeArgs: [
-        5
+        2
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 7
+        retType: 4
       }
     },
     {
     },
     {
+      kind: "Bool"
+    },
+    {
       kind: "Func",
       typeArgs: [
-        9,
-        5
+        7,
+        2
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 7
+        retType: 4
       }
     },
     {
@@ -457,38 +459,11 @@
     {
       kind: "Func",
       typeArgs: [
-        5,
-        11
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 12
-      }
-    },
-    {
-      kind: "Class",
-      typeArgs: [
 
       ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          pkgId: -2,
-          index: 13
-        }
-      }
-    },
-    {
-      kind: "Bool"
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        5
-      ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 11
+        retType: 5
       }
     },
     {
@@ -498,17 +473,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 12
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 16
+        retType: 10
       }
     },
     {
@@ -520,15 +485,15 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 20
+          index: 9
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        5,
-        18
+        2,
+        12
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -544,18 +509,73 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 23
+          index: 12
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        5
+        2
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 18
+        retType: 12
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        2,
+        15
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 2
+      }
+    },
+    {
+      kind: "Class",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: -2,
+          index: 18
+        }
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        2
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 15
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        2,
+        2
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 2
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 1
       }
     },
     {
@@ -586,8 +606,8 @@
     {
       kind: "Class",
       typeArgs: [
-        1,
-        5
+        22,
+        2
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -598,33 +618,36 @@
       }
     },
     {
+      kind: "Int32"
+    },
+    {
       kind: "Func",
       typeArgs: [
-        1
+        22
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1
+        retType: 22
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        1
+        22
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 5
+        retType: 2
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        1
+        22
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 11
+        retType: 12
       }
     },
     {
@@ -634,17 +657,17 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1
+        retType: 22
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        1
+        22
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 16
+        retType: 10
       }
     },
     {
@@ -666,13 +689,13 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 5
+        retType: 2
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        16
+        10
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -684,11 +707,11 @@
     {
       kind: "Func",
       typeArgs: [
-        16
+        10
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 12
+        retType: 5
       }
     },
     {
@@ -710,7 +733,7 @@
     {
       kind: "CPointer",
       typeArgs: [
-        1
+        22
       ]
     },
     {
@@ -720,7 +743,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 7,
+        retType: 4,
         isC: true
       }
     },
@@ -731,7 +754,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 12,
+        retType: 5,
         isC: true
       }
     },
@@ -742,7 +765,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 22,
         isC: true
       }
     },
@@ -750,12 +773,12 @@
       kind: "Func",
       typeArgs: [
         33,
-        1,
+        22,
         34
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 12,
+        retType: 5,
         isC: true
       }
     },
@@ -766,62 +789,12 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 22,
         isC: true
       }
     }
   ],
   allDecls: [
-    {
-      kind: "VarDecl",
-      isTopLevel: true,
-      fullPkgName: "ohos.telephony.call",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 26,
-        column: 1,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 26,
-        column: 57,
-        ignore: false
-      },
-      identifier: "ERROR_CELLUAR_DATA_SERVICE_UNAVAILABLE",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 26,
-        column: 7,
-        ignore: false
-      },
-      attributes: [
-        144678138029293616,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 1,
-      mangledName: "",
-      exportId: "_CN19ohos.telephony.call38ERROR_CELLUAR_DATA_SERVICE_UNAVAILABLEE",
-      mangledBeforeSema: "19ohos.telephony.call38ERROR_CELLUAR_DATA_SERVICE_UNAVAILABLEV$$i",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 12820464909098194885,
-        bodyHash: 10373038682132139120
-      },
-      info_type: "VarInfo",
-      info: {
-        isConst: true,
-        initializer: 1
-      }
-    },
     {
       kind: "ClassDecl",
       isTopLevel: true,
@@ -833,14 +806,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 35,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 248,
+        line: 258,
         column: 2,
         ignore: false
       },
@@ -848,7 +821,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 35,
         column: 14,
         ignore: false
       },
@@ -862,21 +835,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 2
-            },
-            {
-              name: "stagemodelonly",
-              expr: 3
+              name: "since",
+              expr: 1
             },
             {
               name: "syscap",
-              expr: 4
+              expr: 2
             }
           ]
         }
       ],
-      type: 2,
+      type: 1,
       mangledName: "_CN19ohos.telephony.call4CallE",
       exportId: "_CN19ohos.telephony.call4CallE",
       mangledBeforeSema: "19ohos.telephony.call4CallC",
@@ -885,23 +854,23 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14471852202543999582
+        bodyHash: 7138497430052096253
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          20
+          19
         ],
         body: [
-          3,
+          2,
           4,
           7,
-          9,
-          12,
-          18,
-          19,
-          21,
-          22
+          8,
+          10,
+          11,
+          17,
+          23,
+          26
         ]
       }
     },
@@ -915,255 +884,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 38,
+        line: 57,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 38,
-        column: 14,
-        ignore: false
-      },
-      identifier: "init",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 38,
-        column: 5,
-        ignore: false
-      },
-      attributes: [
-        144678140445212704,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 3,
-      mangledName: "_CN19ohos.telephony.call4Call6<init>Hv",
-      exportId: "_CN19ohos.telephony.call4Call6<init>Hv",
-      mangledBeforeSema: "19ohos.telephony.call4CallC6<init>F$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 0,
-        bodyHash: 7695942970948828362
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-
-              ],
-              desugars: [
-
-              ]
-            }
-          ],
-          retType: 2
-        }
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.telephony.call",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 80,
-        column: 6,
-        ignore: false
-      },
-      identifier: "formatPhoneNumberToE164",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 24,
-        ignore: false
-      },
-      attributes: [
-        144678138297714208,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 5
-            },
-            {
-              name: "stagemodelonly",
-              expr: 6
-            },
-            {
-              name: "syscap",
-              expr: 7
-            }
-          ]
-        }
-      ],
-      type: 4,
-      mangledName: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_",
-      exportId: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_",
-      mangledBeforeSema: "19ohos.telephony.call4CallC23formatPhoneNumberToE164F6String6String$$6String",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 8035971499611947038,
-        bodyHash: 4586928674390354315
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-                5,
-                6
-              ],
-              desugars: [
-                0,
-                0
-              ]
-            }
-          ],
-          retType: 5
-        }
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.telephony.call",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 48,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 67,
-        ignore: false
-      },
-      identifier: "phoneNumber",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 48,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 5,
-      mangledName: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_E11phoneNumberE",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.telephony.call",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 69,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 88,
-        ignore: false
-      },
-      identifier: "countryCode",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 69,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 5,
-      mangledName: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_E11countryCodeE",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.telephony.call",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 96,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 107,
+        line: 67,
         column: 6,
         ignore: false
       },
@@ -1171,7 +899,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 57,
         column: 24,
         ignore: false
       },
@@ -1185,21 +913,25 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 8
-            },
-            {
-              name: "stagemodelonly",
-              expr: 9
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 10
+              expr: 4
+            },
+            {
+              name: "throwexception",
+              expr: 5
+            },
+            {
+              name: "workerthread",
+              expr: 6
             }
           ]
         }
       ],
-      type: 6,
+      type: 3,
       mangledName: "_CN19ohos.telephony.call4Call8makeCallHRNat6StringE",
       exportId: "_CN19ohos.telephony.call4Call8makeCallHRNat6StringE",
       mangledBeforeSema: "19ohos.telephony.call4CallC8makeCallF6String$$u",
@@ -1208,7 +940,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 1448349256939022311
+        bodyHash: 7494848878878149452
       },
       info_type: "FuncInfo",
       info: {
@@ -1216,14 +948,14 @@
           paramLists: [
             {
               params: [
-                8
+                3
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 7
+          retType: 4
         }
       }
     },
@@ -1233,14 +965,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 57,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 57,
         column: 52,
         ignore: false
       },
@@ -1248,7 +980,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 57,
         column: 33,
         ignore: false
       },
@@ -1259,7 +991,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 2,
       mangledName: "_CN19ohos.telephony.call4Call8makeCallHRNat6StringEE11phoneNumberE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1284,14 +1016,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 91,
         column: 6,
         ignore: false
       },
@@ -1299,7 +1031,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 24,
         ignore: false
       },
@@ -1313,21 +1045,21 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 11
-            },
-            {
-              name: "stagemodelonly",
-              expr: 12
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 13
+              expr: 8
+            },
+            {
+              name: "throwexception",
+              expr: 9
             }
           ]
         }
       ],
-      type: 8,
+      type: 6,
       mangledName: "_CN19ohos.telephony.call4Call8makeCallHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat6StringE",
       exportId: "_CN19ohos.telephony.call4Call8makeCallHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat6StringE",
       mangledBeforeSema: "19ohos.telephony.call4CallC8makeCallF16UIAbilityContext6String$$u",
@@ -1336,7 +1068,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 3255921212959587497
+        bodyHash: 3606206664614268137
       },
       info_type: "FuncInfo",
       info: {
@@ -1344,8 +1076,8 @@
           paramLists: [
             {
               params: [
-                10,
-                11
+                5,
+                6
               ],
               desugars: [
                 0,
@@ -1353,7 +1085,7 @@
               ]
             }
           ],
-          retType: 7
+          retType: 4
         }
       }
     },
@@ -1363,14 +1095,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 58,
         ignore: false
       },
@@ -1378,7 +1110,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 33,
         ignore: false
       },
@@ -1389,7 +1121,7 @@
       annotations: [
 
       ],
-      type: 9,
+      type: 7,
       mangledName: "_CN19ohos.telephony.call4Call8makeCallHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat6StringEE7contextE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1410,14 +1142,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 60,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 79,
         ignore: false
       },
@@ -1425,7 +1157,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 123,
+        line: 84,
         column: 60,
         ignore: false
       },
@@ -1436,7 +1168,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 2,
       mangledName: "_CN19ohos.telephony.call4Call8makeCallHCN27ohos.app.ability.ui_ability16UIAbilityContextERNat6StringEE11phoneNumberE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1461,22 +1193,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 102,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 160,
+        line: 104,
         column: 6,
         ignore: false
       },
-      identifier: "isEmergencyPhoneNumber",
+      identifier: "hasCall",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 102,
         column: 24,
         ignore: false
       },
@@ -1490,11 +1222,249 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 14
+              name: "since",
+              expr: 10
             },
             {
-              name: "stagemodelonly",
+              name: "syscap",
+              expr: 11
+            }
+          ]
+        }
+      ],
+      type: 8,
+      mangledName: "_CN19ohos.telephony.call4Call7hasCallHv",
+      exportId: "_CN19ohos.telephony.call4Call7hasCallHv",
+      mangledBeforeSema: "19ohos.telephony.call4CallC7hasCallF$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 8035971499611947038,
+        bodyHash: 6591007996229675838
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 5
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.telephony.call",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 121,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 124,
+        column: 6,
+        ignore: false
+      },
+      identifier: "getCallState",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 121,
+        column: 24,
+        ignore: false
+      },
+      attributes: [
+        144678138297714208,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 12
+            },
+            {
+              name: "syscap",
+              expr: 13
+            },
+            {
+              name: "throwexception",
+              expr: 14
+            }
+          ]
+        }
+      ],
+      type: 9,
+      mangledName: "_CN19ohos.telephony.call4Call12getCallStateHv",
+      exportId: "_CN19ohos.telephony.call4Call12getCallStateHv",
+      mangledBeforeSema: "19ohos.telephony.call4CallC12getCallStateF$$9CallState",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 8035971499611947038,
+        bodyHash: 8565324161131326458
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 10
+        }
+      }
+    },
+    {
+      kind: "EnumDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.telephony.call",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 106,
+        column: 12,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 154,
+        column: 14,
+        ignore: false
+      },
+      identifier: "CallState",
+      identifierPos: {
+        file: 1,
+        pkgId: 5,
+        line: 106,
+        column: 24,
+        ignore: false
+      },
+      attributes: [
+        144678412907185200,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 36
+            },
+            {
+              name: "syscap",
+              expr: 37
+            }
+          ]
+        }
+      ],
+      type: 10,
+      mangledName: "_CN19ohos.telephony.call9CallStateE",
+      exportId: "_CN19ohos.telephony.call9CallStateE",
+      mangledBeforeSema: "19ohos.telephony.call9CallStateU",
+      hash: {
+        instVar: 3751344825402400885,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 0,
+        bodyHash: 2740781461607878969
+      },
+      info_type: "EnumInfo",
+      info: {
+        inheritedTypes: [
+
+        ],
+        body: [
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        nonExhaustive: true,
+        ellipsisPos: {
+          file: 2,
+          pkgId: 0,
+          line: 102,
+          column: 1210,
+          ignore: false
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.telephony.call",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 139,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 143,
+        column: 6,
+        ignore: false
+      },
+      identifier: "hasVoiceCapability",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 139,
+        column: 24,
+        ignore: false
+      },
+      attributes: [
+        144678138297714208,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
               expr: 15
             },
             {
@@ -1504,7 +1474,92 @@
           ]
         }
       ],
-      type: 10,
+      type: 8,
+      mangledName: "_CN19ohos.telephony.call4Call18hasVoiceCapabilityHv",
+      exportId: "_CN19ohos.telephony.call4Call18hasVoiceCapabilityHv",
+      mangledBeforeSema: "19ohos.telephony.call4CallC18hasVoiceCapabilityF$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 8035971499611947038,
+        bodyHash: 14264356751121056343
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 5
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.telephony.call",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 162,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 175,
+        column: 6,
+        ignore: false
+      },
+      identifier: "isEmergencyPhoneNumber",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 162,
+        column: 24,
+        ignore: false
+      },
+      attributes: [
+        144678138297714208,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 17
+            },
+            {
+              name: "syscap",
+              expr: 18
+            },
+            {
+              name: "throwexception",
+              expr: 19
+            },
+            {
+              name: "workerthread",
+              expr: 20
+            }
+          ]
+        }
+      ],
+      type: 11,
       mangledName: "_CN19ohos.telephony.call4Call22isEmergencyPhoneNumberHRNat6StringECNY_22EmergencyNumberOptionsE",
       exportId: "_CN19ohos.telephony.call4Call22isEmergencyPhoneNumberHRNat6StringECNY_22EmergencyNumberOptionsE",
       mangledBeforeSema: "19ohos.telephony.call4CallC22isEmergencyPhoneNumberF6String22EmergencyNumberOptions!7options=$$b",
@@ -1513,7 +1568,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 8617150388480155682
+        bodyHash: 13461017459150532627
       },
       info_type: "FuncInfo",
       info: {
@@ -1521,16 +1576,16 @@
           paramLists: [
             {
               params: [
-                14,
-                15
+                13,
+                14
               ],
               desugars: [
                 0,
-                16
+                15
               ]
             }
           ],
-          retType: 12
+          retType: 5
         }
       }
     },
@@ -1552,7 +1607,7 @@
       end: {
         file: 2,
         pkgId: 0,
-        line: 97,
+        line: 96,
         column: 2,
         ignore: false
       },
@@ -1574,21 +1629,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 29
             },
             {
-              name: "stagemodelonly",
-              expr: 30
-            },
-            {
               name: "syscap",
-              expr: 31
+              expr: 30
             }
           ]
         }
       ],
-      type: 11,
+      type: 12,
       mangledName: "_CN19ohos.telephony.call22EmergencyNumberOptionsE",
       exportId: "_CN19ohos.telephony.call22EmergencyNumberOptionsE",
       mangledBeforeSema: "19ohos.telephony.call22EmergencyNumberOptionsC",
@@ -1597,16 +1648,16 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13889038395717991727
+        bodyHash: 10585056073949719065
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          20
+          19
         ],
         body: [
-          34,
-          35
+          33,
+          34
         ]
       }
     },
@@ -1616,14 +1667,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 47,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 66,
         ignore: false
       },
@@ -1631,7 +1682,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 47,
         ignore: false
       },
@@ -1642,7 +1693,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 2,
       mangledName: "_CN19ohos.telephony.call4Call22isEmergencyPhoneNumberHRNat6StringECNY_22EmergencyNumberOptionsEE11phoneNumberE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1663,14 +1714,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 68,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 136,
         ignore: false
       },
@@ -1678,7 +1729,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 68,
         ignore: false
       },
@@ -1689,7 +1740,7 @@
       annotations: [
 
       ],
-      type: 11,
+      type: 12,
       mangledName: "_CN19ohos.telephony.call4Call22isEmergencyPhoneNumberHRNat6StringECNY_22EmergencyNumberOptionsEE7optionsE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1715,14 +1766,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 103,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 136,
         ignore: false
       },
@@ -1758,14 +1809,14 @@
           paramLists: [
             {
               params: [
-                17
+                16
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 11
+          retType: 12
         }
       }
     },
@@ -1775,14 +1826,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 47,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 66,
         ignore: false
       },
@@ -1790,7 +1841,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 146,
+        line: 162,
         column: 47,
         ignore: false
       },
@@ -1801,7 +1852,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 2,
       mangledName: "_CN19ohos.telephony.call4Call22isEmergencyPhoneNumberHRNat6StringECNY_22EmergencyNumberOptionsEE9options.1HY3_E11phoneNumberE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1826,345 +1877,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 172,
+        line: 197,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 174,
-        column: 6,
-        ignore: false
-      },
-      identifier: "hasCall",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 172,
-        column: 24,
-        ignore: false
-      },
-      attributes: [
-        144678138297714208,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 17
-            },
-            {
-              name: "stagemodelonly",
-              expr: 18
-            },
-            {
-              name: "syscap",
-              expr: 19
-            }
-          ]
-        }
-      ],
-      type: 14,
-      mangledName: "_CN19ohos.telephony.call4Call7hasCallHv",
-      exportId: "_CN19ohos.telephony.call4Call7hasCallHv",
-      mangledBeforeSema: "19ohos.telephony.call4CallC7hasCallF$$b",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 8035971499611947038,
-        bodyHash: 8739795652725788249
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-
-              ],
-              desugars: [
-
-              ]
-            }
-          ],
-          retType: 12
-        }
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.telephony.call",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 186,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 189,
-        column: 6,
-        ignore: false
-      },
-      identifier: "getCallState",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 186,
-        column: 24,
-        ignore: false
-      },
-      attributes: [
-        144678138297714208,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 20
-            },
-            {
-              name: "stagemodelonly",
-              expr: 21
-            },
-            {
-              name: "syscap",
-              expr: 22
-            }
-          ]
-        }
-      ],
-      type: 15,
-      mangledName: "_CN19ohos.telephony.call4Call12getCallStateHv",
-      exportId: "_CN19ohos.telephony.call4Call12getCallStateHv",
-      mangledBeforeSema: "19ohos.telephony.call4CallC12getCallStateF$$9CallState",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 8035971499611947038,
-        bodyHash: 17679437045095087358
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-
-              ],
-              desugars: [
-
-              ]
-            }
-          ],
-          retType: 16
-        }
-      }
-    },
-    {
-      kind: "EnumDecl",
-      isTopLevel: true,
-      fullPkgName: "ohos.telephony.call",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 109,
-        column: 12,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 161,
-        column: 14,
-        ignore: false
-      },
-      identifier: "CallState",
-      identifierPos: {
-        file: 1,
-        pkgId: 5,
-        line: 109,
-        column: 24,
-        ignore: false
-      },
-      attributes: [
-        144678412907185200,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 39
-            },
-            {
-              name: "stagemodelonly",
-              expr: 40
-            },
-            {
-              name: "syscap",
-              expr: 41
-            }
-          ]
-        }
-      ],
-      type: 16,
-      mangledName: "_CN19ohos.telephony.call9CallStateE",
-      exportId: "_CN19ohos.telephony.call9CallStateE",
-      mangledBeforeSema: "19ohos.telephony.call9CallStateU",
-      hash: {
-        instVar: 3751344825402400885,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 0,
-        bodyHash: 7857750332095324198
-      },
-      info_type: "EnumInfo",
-      info: {
-        inheritedTypes: [
-
-        ],
-        body: [
-          38,
-          39,
-          40,
-          41,
-          42,
-          43
-        ],
-        nonExhaustive: true,
-        ellipsisPos: {
-          file: 2,
-          pkgId: 0,
-          line: 104,
-          column: 1384,
-          ignore: false
-        }
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.telephony.call",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 201,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 205,
-        column: 6,
-        ignore: false
-      },
-      identifier: "hasVoiceCapability",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 201,
-        column: 24,
-        ignore: false
-      },
-      attributes: [
-        144678138297714208,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 23
-            },
-            {
-              name: "stagemodelonly",
-              expr: 24
-            },
-            {
-              name: "syscap",
-              expr: 25
-            }
-          ]
-        }
-      ],
-      type: 14,
-      mangledName: "_CN19ohos.telephony.call4Call18hasVoiceCapabilityHv",
-      exportId: "_CN19ohos.telephony.call4Call18hasVoiceCapabilityHv",
-      mangledBeforeSema: "19ohos.telephony.call4CallC18hasVoiceCapabilityF$$b",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 8035971499611947038,
-        bodyHash: 3382215633164368357
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-
-              ],
-              desugars: [
-
-              ]
-            }
-          ],
-          retType: 12
-        }
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.telephony.call",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 224,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 247,
+        line: 219,
         column: 6,
         ignore: false
       },
@@ -2172,7 +1892,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 224,
+        line: 197,
         column: 24,
         ignore: false
       },
@@ -2186,21 +1906,25 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 26
-            },
-            {
-              name: "stagemodelonly",
-              expr: 27
+              name: "since",
+              expr: 21
             },
             {
               name: "syscap",
-              expr: 28
+              expr: 22
+            },
+            {
+              name: "throwexception",
+              expr: 23
+            },
+            {
+              name: "workerthread",
+              expr: 24
             }
           ]
         }
       ],
-      type: 17,
+      type: 14,
       mangledName: "_CN19ohos.telephony.call4Call17formatPhoneNumberHRNat6StringECNY_19NumberFormatOptionsE",
       exportId: "_CN19ohos.telephony.call4Call17formatPhoneNumberHRNat6StringECNY_19NumberFormatOptionsE",
       mangledBeforeSema: "19ohos.telephony.call4CallC17formatPhoneNumberF6String19NumberFormatOptions!7options=$$6String",
@@ -2209,7 +1933,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 8035971499611947038,
-        bodyHash: 8801110311781273694
+        bodyHash: 5045928845340277053
       },
       info_type: "FuncInfo",
       info: {
@@ -2217,16 +1941,16 @@
           paramLists: [
             {
               params: [
-                24,
-                25
+                19,
+                20
               ],
               desugars: [
                 0,
-                26
+                21
               ]
             }
           ],
-          retType: 5
+          retType: 2
         }
       }
     },
@@ -2241,14 +1965,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 195,
+        line: 177,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 219,
+        line: 199,
         column: 2,
         ignore: false
       },
@@ -2256,7 +1980,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 195,
+        line: 177,
         column: 14,
         ignore: false
       },
@@ -2270,21 +1994,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 57
-            },
-            {
-              name: "stagemodelonly",
-              expr: 58
+              name: "since",
+              expr: 48
             },
             {
               name: "syscap",
-              expr: 59
+              expr: 49
             }
           ]
         }
       ],
-      type: 18,
+      type: 15,
       mangledName: "_CN19ohos.telephony.call19NumberFormatOptionsE",
       exportId: "_CN19ohos.telephony.call19NumberFormatOptionsE",
       mangledBeforeSema: "19ohos.telephony.call19NumberFormatOptionsC",
@@ -2293,16 +2013,16 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13889038395717991727
+        bodyHash: 10585056073949719065
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          20
+          19
         ],
         body: [
-          52,
-          53
+          51,
+          52
         ]
       }
     },
@@ -2312,14 +2032,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 225,
+        line: 198,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 225,
+        line: 198,
         column: 28,
         ignore: false
       },
@@ -2327,7 +2047,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 225,
+        line: 198,
         column: 9,
         ignore: false
       },
@@ -2338,7 +2058,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 2,
       mangledName: "_CN19ohos.telephony.call4Call17formatPhoneNumberHRNat6StringECNY_19NumberFormatOptionsEE11phoneNumberE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2359,14 +2079,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 199,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 199,
         column: 62,
         ignore: false
       },
@@ -2374,7 +2094,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 199,
         column: 9,
         ignore: false
       },
@@ -2385,7 +2105,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 15,
       mangledName: "_CN19ohos.telephony.call4Call17formatPhoneNumberHRNat6StringECNY_19NumberFormatOptionsEE7optionsE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2411,14 +2131,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 199,
         column: 41,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 226,
+        line: 199,
         column: 62,
         ignore: false
       },
@@ -2437,7 +2157,7 @@
       annotations: [
 
       ],
-      type: 19,
+      type: 16,
       mangledName: "_CPI19ohos.telephony.call4Call17formatPhoneNumberHRNat6StringECNY_19NumberFormatOptionsEE7optionsHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -2454,14 +2174,14 @@
           paramLists: [
             {
               params: [
-                27
+                22
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 18
+          retType: 15
         }
       }
     },
@@ -2471,14 +2191,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 225,
+        line: 198,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 225,
+        line: 198,
         column: 28,
         ignore: false
       },
@@ -2486,7 +2206,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 225,
+        line: 198,
         column: 9,
         ignore: false
       },
@@ -2497,7 +2217,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 2,
       mangledName: "_CN19ohos.telephony.call4Call17formatPhoneNumberHRNat6StringECNY_19NumberFormatOptionsEE9options.1HY3_E11phoneNumberE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2513,51 +2233,248 @@
       }
     },
     {
-      kind: "VarDecl",
-      isTopLevel: true,
+      kind: "FuncDecl",
       fullPkgName: "ohos.telephony.call",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
       begin: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 25,
-        column: 1,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 25,
-        column: 73,
-        ignore: false
-      },
-      identifier: "TELEPHONY_CALL_LOG",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 25,
+        line: 238,
         column: 5,
         ignore: false
       },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 257,
+        column: 6,
+        ignore: false
+      },
+      identifier: "formatPhoneNumberToE164",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 24,
+        ignore: false
+      },
       attributes: [
-        144678138029293872,
+        144678138297714208,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 25
+            },
+            {
+              name: "syscap",
+              expr: 26
+            },
+            {
+              name: "throwexception",
+              expr: 27
+            },
+            {
+              name: "workerthread",
+              expr: 28
+            }
+          ]
+        }
+      ],
+      type: 17,
+      mangledName: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_",
+      exportId: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_",
+      mangledBeforeSema: "19ohos.telephony.call4CallC23formatPhoneNumberToE164F6String6String$$6String",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 8035971499611947038,
+        bodyHash: 617918423692456597
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                24,
+                25
+              ],
+              desugars: [
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 2
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.telephony.call",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 48,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 67,
+        ignore: false
+      },
+      identifier: "phoneNumber",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 48,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
         0
       ],
       annotations: [
 
       ],
-      type: 21,
-      mangledName: "_CN19ohos.telephony.call18TELEPHONY_CALL_LOGE",
-      exportId: "_CN19ohos.telephony.call18TELEPHONY_CALL_LOGE",
-      mangledBeforeSema: "19ohos.telephony.call18TELEPHONY_CALL_LOGV$$",
+      type: 2,
+      mangledName: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_E11phoneNumberE",
+      exportId: "",
+      mangledBeforeSema: "",
       hash: {
         instVar: 0,
         virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 16683100364536938035
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
       },
-      info_type: "VarInfo",
+      info_type: "ParamInfo",
       info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.telephony.call",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 69,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 88,
+        ignore: false
+      },
+      identifier: "countryCode",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 238,
+        column: 69,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 2,
+      mangledName: "_CN19ohos.telephony.call4Call23formatPhoneNumberToE164HRNat6StringEY3_E11countryCodeE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.telephony.call",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 35,
+        column: 14,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 35,
+        column: 18,
+        ignore: false
+      },
+      identifier: "init",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 0,
+        column: 0,
+        ignore: false
+      },
+      attributes: [
+        1297599645052044384,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 18,
+      mangledName: "_CN19ohos.telephony.call4Call6<init>Hv",
+      exportId: "_CN19ohos.telephony.call4Call6<init>Hv",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 1
+        }
       }
     },
     {
@@ -2574,7 +2491,55 @@
       end: {
         file: 2,
         pkgId: 0,
-        line: 41,
+        line: 27,
+        column: 73,
+        ignore: false
+      },
+      identifier: "TELEPHONY_CALL_LOG",
+      identifierPos: {
+        file: 2,
+        pkgId: 0,
+        line: 27,
+        column: 5,
+        ignore: false
+      },
+      attributes: [
+        144678138029293872,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 20,
+      mangledName: "_CN19ohos.telephony.call18TELEPHONY_CALL_LOGE",
+      exportId: "_CN19ohos.telephony.call18TELEPHONY_CALL_LOGE",
+      mangledBeforeSema: "19ohos.telephony.call18TELEPHONY_CALL_LOGV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 5325848758900020059
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.telephony.call",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 29,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 43,
         column: 2,
         ignore: false
       },
@@ -2582,7 +2547,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 15,
         ignore: false
       },
@@ -2593,7 +2558,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 21,
       mangledName: "_CN19ohos.telephony.call14ERROR_CODE_MAPE",
       exportId: "_CN19ohos.telephony.call14ERROR_CODE_MAPE",
       mangledBeforeSema: "19ohos.telephony.call14ERROR_CODE_MAPV$$",
@@ -2602,7 +2567,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 1273861709373161920,
-        bodyHash: 15697169336188856296
+        bodyHash: 437664509082423412
       },
       info_type: "VarInfo",
       info: {
@@ -2619,14 +2584,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 43,
+        line: 45,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 49,
+        line: 52,
         column: 2,
         ignore: false
       },
@@ -2634,7 +2599,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 43,
+        line: 45,
         column: 6,
         ignore: false
       },
@@ -2654,7 +2619,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 9229366493099986786
+        bodyHash: 1803183987109332076
       },
       info_type: "FuncInfo",
       info: {
@@ -2662,14 +2627,14 @@
           paramLists: [
             {
               params: [
-                31
+                30
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 22
         }
       }
     },
@@ -2679,14 +2644,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 43,
+        line: 45,
         column: 19,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 43,
+        line: 45,
         column: 30,
         ignore: false
       },
@@ -2694,7 +2659,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 43,
+        line: 45,
         column: 19,
         ignore: false
       },
@@ -2705,7 +2670,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 22,
       mangledName: "_CN19ohos.telephony.call12getErrorCodeHiE4codeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2731,14 +2696,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 51,
+        line: 54,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 60,
+        line: 63,
         column: 2,
         ignore: false
       },
@@ -2746,7 +2711,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 51,
+        line: 54,
         column: 16,
         ignore: false
       },
@@ -2766,7 +2731,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 16437040566699367233
+        bodyHash: 9698036506343901843
       },
       info_type: "FuncInfo",
       info: {
@@ -2774,14 +2739,14 @@
           paramLists: [
             {
               params: [
-                33
+                32
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 5
+          retType: 2
         }
       }
     },
@@ -2791,14 +2756,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 51,
+        line: 54,
         column: 28,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 51,
+        line: 54,
         column: 39,
         ignore: false
       },
@@ -2806,7 +2771,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 51,
+        line: 54,
         column: 28,
         ignore: false
       },
@@ -2817,7 +2782,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 22,
       mangledName: "_CN19ohos.telephony.call11getErrorMsgHiE4codeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2838,14 +2803,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 84,
+        line: 81,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 84,
+        line: 81,
         column: 29,
         ignore: false
       },
@@ -2853,7 +2818,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 84,
+        line: 81,
         column: 16,
         ignore: false
       },
@@ -2867,21 +2832,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 32
-            },
-            {
-              name: "stagemodelonly",
-              expr: 33
+              name: "since",
+              expr: 31
             },
             {
               name: "syscap",
-              expr: 34
+              expr: 32
             }
           ]
         }
       ],
-      type: 1,
+      type: 22,
       mangledName: "",
       exportId: "_CN19ohos.telephony.call22EmergencyNumberOptions6slotIdK_E",
       mangledBeforeSema: "19ohos.telephony.call22EmergencyNumberOptionsC6slotIdV$$i",
@@ -2890,7 +2851,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 13889038395717991727
+        bodyHash: 10585056073949719065
       },
       info_type: "VarInfo",
       info: {
@@ -2907,14 +2868,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 96,
+        line: 95,
         column: 6,
         ignore: false
       },
@@ -2922,7 +2883,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 12,
         ignore: false
       },
@@ -2936,16 +2897,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 35
-            },
-            {
-              name: "stagemodelonly",
-              expr: 36
+              name: "since",
+              expr: 33
             },
             {
               name: "syscap",
-              expr: 37
+              expr: 34
             }
           ]
         }
@@ -2959,7 +2916,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16112817314284536544
+        bodyHash: 15287883386710799265
       },
       info_type: "FuncInfo",
       info: {
@@ -2967,14 +2924,14 @@
           paramLists: [
             {
               params: [
-                36
+                35
               ],
               desugars: [
-                37
+                36
               ]
             }
           ],
-          retType: 11
+          retType: 12
         }
       }
     },
@@ -2984,14 +2941,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 35,
         ignore: false
       },
@@ -2999,7 +2956,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 17,
         ignore: false
       },
@@ -3010,7 +2967,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 22,
       mangledName: "_CN19ohos.telephony.call22EmergencyNumberOptions4initHiE6slotIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3024,7 +2981,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 38
+        defaultVal: 35
       }
     },
     {
@@ -3037,14 +2994,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 34,
         ignore: true
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 35,
         ignore: false
       },
@@ -3087,7 +3044,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 22
         }
       }
     },
@@ -3097,14 +3054,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 116,
+        line: 112,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 116,
+        line: 112,
         column: 33,
         ignore: false
       },
@@ -3112,7 +3069,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 116,
+        line: 112,
         column: 17,
         ignore: false
       },
@@ -3126,21 +3083,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 42
-            },
-            {
-              name: "stagemodelonly",
-              expr: 43
+              name: "since",
+              expr: 38
             },
             {
               name: "syscap",
-              expr: 44
+              expr: 39
             }
           ]
         }
       ],
-      type: 16,
+      type: 10,
       mangledName: "",
       exportId: "_CN19ohos.telephony.call9CallState16CallStateUnknownKE",
       mangledBeforeSema: "19ohos.telephony.call9CallStateU16CallStateUnknownV$$",
@@ -3149,7 +3102,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 4795920866040227300
+        bodyHash: 517865834846911333
       },
       info_type: "VarInfo",
       info: {
@@ -3161,14 +3114,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 124,
+        line: 119,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 124,
+        line: 119,
         column: 30,
         ignore: false
       },
@@ -3176,7 +3129,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 124,
+        line: 119,
         column: 17,
         ignore: false
       },
@@ -3190,11 +3143,187 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 45
+              name: "since",
+              expr: 40
             },
             {
-              name: "stagemodelonly",
+              name: "syscap",
+              expr: 41
+            }
+          ]
+        }
+      ],
+      type: 10,
+      mangledName: "",
+      exportId: "_CN19ohos.telephony.call9CallState13CallStateIdleKE",
+      mangledBeforeSema: "19ohos.telephony.call9CallStateU13CallStateIdleV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 517865834846911333
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.telephony.call",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 126,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 126,
+        column: 33,
+        ignore: false
+      },
+      identifier: "CallStateRinging",
+      identifierPos: {
+        file: 1,
+        pkgId: 5,
+        line: 126,
+        column: 17,
+        ignore: false
+      },
+      attributes: [
+        279307093024,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 42
+            },
+            {
+              name: "syscap",
+              expr: 43
+            }
+          ]
+        }
+      ],
+      type: 10,
+      mangledName: "",
+      exportId: "_CN19ohos.telephony.call9CallState16CallStateRingingKE",
+      mangledBeforeSema: "19ohos.telephony.call9CallStateU16CallStateRingingV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 517865834846911333
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.telephony.call",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 133,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 133,
+        column: 33,
+        ignore: false
+      },
+      identifier: "CallStateOffhook",
+      identifierPos: {
+        file: 1,
+        pkgId: 5,
+        line: 133,
+        column: 17,
+        ignore: false
+      },
+      attributes: [
+        279307093024,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 44
+            },
+            {
+              name: "syscap",
+              expr: 45
+            }
+          ]
+        }
+      ],
+      type: 10,
+      mangledName: "",
+      exportId: "_CN19ohos.telephony.call9CallState16CallStateOffhookKE",
+      mangledBeforeSema: "19ohos.telephony.call9CallStateU16CallStateOffhookV$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 1273861709373161920,
+        bodyHash: 517865834846911333
+      },
+      info_type: "VarInfo",
+      info: {
+      }
+    },
+    {
+      kind: "VarDecl",
+      fullPkgName: "ohos.telephony.call",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 140,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 140,
+        column: 34,
+        ignore: false
+      },
+      identifier: "CallStateAnswered",
+      identifierPos: {
+        file: 1,
+        pkgId: 5,
+        line: 140,
+        column: 17,
+        ignore: false
+      },
+      attributes: [
+        279307093024,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
               expr: 46
             },
             {
@@ -3204,199 +3333,7 @@
           ]
         }
       ],
-      type: 16,
-      mangledName: "",
-      exportId: "_CN19ohos.telephony.call9CallState13CallStateIdleKE",
-      mangledBeforeSema: "19ohos.telephony.call9CallStateU13CallStateIdleV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 4795920866040227300
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.telephony.call",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 132,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 132,
-        column: 33,
-        ignore: false
-      },
-      identifier: "CallStateRinging",
-      identifierPos: {
-        file: 1,
-        pkgId: 5,
-        line: 132,
-        column: 17,
-        ignore: false
-      },
-      attributes: [
-        279307093024,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 48
-            },
-            {
-              name: "stagemodelonly",
-              expr: 49
-            },
-            {
-              name: "syscap",
-              expr: 50
-            }
-          ]
-        }
-      ],
-      type: 16,
-      mangledName: "",
-      exportId: "_CN19ohos.telephony.call9CallState16CallStateRingingKE",
-      mangledBeforeSema: "19ohos.telephony.call9CallStateU16CallStateRingingV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 4795920866040227300
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.telephony.call",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 140,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 140,
-        column: 33,
-        ignore: false
-      },
-      identifier: "CallStateOffhook",
-      identifierPos: {
-        file: 1,
-        pkgId: 5,
-        line: 140,
-        column: 17,
-        ignore: false
-      },
-      attributes: [
-        279307093024,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 51
-            },
-            {
-              name: "stagemodelonly",
-              expr: 52
-            },
-            {
-              name: "syscap",
-              expr: 53
-            }
-          ]
-        }
-      ],
-      type: 16,
-      mangledName: "",
-      exportId: "_CN19ohos.telephony.call9CallState16CallStateOffhookKE",
-      mangledBeforeSema: "19ohos.telephony.call9CallStateU16CallStateOffhookV$$",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 1273861709373161920,
-        bodyHash: 4795920866040227300
-      },
-      info_type: "VarInfo",
-      info: {
-      }
-    },
-    {
-      kind: "VarDecl",
-      fullPkgName: "ohos.telephony.call",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 148,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 148,
-        column: 34,
-        ignore: false
-      },
-      identifier: "CallStateAnswered",
-      identifierPos: {
-        file: 1,
-        pkgId: 5,
-        line: 148,
-        column: 17,
-        ignore: false
-      },
-      attributes: [
-        279307093024,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 54
-            },
-            {
-              name: "stagemodelonly",
-              expr: 55
-            },
-            {
-              name: "syscap",
-              expr: 56
-            }
-          ]
-        }
-      ],
-      type: 16,
+      type: 10,
       mangledName: "",
       exportId: "_CN19ohos.telephony.call9CallState17CallStateAnsweredKE",
       mangledBeforeSema: "19ohos.telephony.call9CallStateU17CallStateAnsweredV$$",
@@ -3405,7 +3342,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 4795920866040227300
+        bodyHash: 517865834846911333
       },
       info_type: "VarInfo",
       info: {
@@ -3421,14 +3358,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 151,
+        line: 144,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 160,
+        line: 153,
         column: 18,
         ignore: false
       },
@@ -3436,7 +3373,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 151,
+        line: 144,
         column: 39,
         ignore: false
       },
@@ -3456,7 +3393,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 8035971499611947038,
-        bodyHash: 15855796641836231946
+        bodyHash: 4558214960128539127
       },
       info_type: "FuncInfo",
       info: {
@@ -3464,14 +3401,14 @@
           paramLists: [
             {
               params: [
-                44
+                43
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 16
+          retType: 10
         }
       }
     },
@@ -3481,14 +3418,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 151,
+        line: 144,
         column: 45,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 151,
+        line: 144,
         column: 55,
         ignore: false
       },
@@ -3496,7 +3433,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 151,
+        line: 144,
         column: 45,
         ignore: false
       },
@@ -3507,7 +3444,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 22,
       mangledName: "_CN19ohos.telephony.call9CallState5parseHiE3valE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3533,14 +3470,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 162,
+        line: 155,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 181,
+        line: 174,
         column: 14,
         ignore: false
       },
@@ -3548,18 +3485,18 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 162,
+        line: 155,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 16,
+      type: 10,
       mangledName: "",
       exportId: "_CN19ohos.telephony.callXNNY_9CallStateEU000000040A8oWK_E",
       mangledBeforeSema: "9CallState<:8ToStringX",
@@ -3576,7 +3513,7 @@
           28
         ],
         body: [
-          46
+          45
         ]
       }
     },
@@ -3590,14 +3527,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 163,
+        line: 156,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 180,
+        line: 173,
         column: 18,
         ignore: false
       },
@@ -3605,7 +3542,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 163,
+        line: 156,
         column: 29,
         ignore: false
       },
@@ -3625,7 +3562,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 522946381253147502
+        bodyHash: 16942969201736561045
       },
       info_type: "FuncInfo",
       info: {
@@ -3640,7 +3577,7 @@
               ]
             }
           ],
-          retType: 5
+          retType: 2
         }
       }
     },
@@ -3655,14 +3592,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 182,
+        line: 175,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 196,
+        line: 189,
         column: 14,
         ignore: false
       },
@@ -3670,18 +3607,18 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 182,
+        line: 175,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 16,
+      type: 10,
       mangledName: "",
       exportId: "_CN19ohos.telephony.callXNNY_9CallStateEU000000040A8oWK0_E",
       mangledBeforeSema: "9CallState<:9Equatable<9CallState>X",
@@ -3690,7 +3627,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 16644958388981491973
+        bodyHash: 17083055532932446383
       },
       info_type: "ExtendInfo",
       info: {
@@ -3698,8 +3635,8 @@
           30
         ],
         body: [
-          48,
-          50
+          47,
+          49
         ]
       }
     },
@@ -3713,14 +3650,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 183,
+        line: 176,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 192,
+        line: 185,
         column: 18,
         ignore: false
       },
@@ -3728,7 +3665,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 183,
+        line: 176,
         column: 38,
         ignore: false
       },
@@ -3748,7 +3685,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 990296227602639134
+        bodyHash: 18364913374375044011
       },
       info_type: "FuncInfo",
       info: {
@@ -3756,14 +3693,14 @@
           paramLists: [
             {
               params: [
-                49
+                48
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 12
+          retType: 5
         },
         op: "Equal"
       }
@@ -3774,14 +3711,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 183,
+        line: 176,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 183,
+        line: 176,
         column: 57,
         ignore: false
       },
@@ -3789,7 +3726,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 183,
+        line: 176,
         column: 41,
         ignore: false
       },
@@ -3800,7 +3737,7 @@
       annotations: [
 
       ],
-      type: 16,
+      type: 10,
       mangledName: "_CN19ohos.telephony.callXNNY_9CallStateE2==HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3825,14 +3762,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 193,
+        line: 186,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 195,
+        line: 188,
         column: 18,
         ignore: false
       },
@@ -3840,7 +3777,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 193,
+        line: 186,
         column: 38,
         ignore: false
       },
@@ -3860,7 +3797,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 1375134266070499184
+        bodyHash: 14096072375163815187
       },
       info_type: "FuncInfo",
       info: {
@@ -3868,14 +3805,14 @@
           paramLists: [
             {
               params: [
-                51
+                50
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 12
+          retType: 5
         },
         op: "NotEqual"
       }
@@ -3886,14 +3823,14 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 193,
+        line: 186,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 193,
+        line: 186,
         column: 57,
         ignore: false
       },
@@ -3901,7 +3838,7 @@
       identifierPos: {
         file: 1,
         pkgId: 5,
-        line: 193,
+        line: 186,
         column: 41,
         ignore: false
       },
@@ -3912,7 +3849,7 @@
       annotations: [
 
       ],
-      type: 16,
+      type: 10,
       mangledName: "_CN19ohos.telephony.callXNNY_9CallStateE2!=HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3933,14 +3870,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 206,
+        line: 185,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 206,
+        line: 185,
         column: 35,
         ignore: false
       },
@@ -3948,7 +3885,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 206,
+        line: 185,
         column: 16,
         ignore: false
       },
@@ -3962,21 +3899,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 60
-            },
-            {
-              name: "stagemodelonly",
-              expr: 61
+              name: "since",
+              expr: 50
             },
             {
               name: "syscap",
-              expr: 62
+              expr: 51
             }
           ]
         }
       ],
-      type: 5,
+      type: 2,
       mangledName: "",
       exportId: "_CN19ohos.telephony.call19NumberFormatOptions11countryCodeK_E",
       mangledBeforeSema: "19ohos.telephony.call19NumberFormatOptionsC11countryCodeV$$6String",
@@ -3985,7 +3918,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 13889038395717991727
+        bodyHash: 10585056073949719065
       },
       info_type: "VarInfo",
       info: {
@@ -4002,14 +3935,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 218,
+        line: 198,
         column: 6,
         ignore: false
       },
@@ -4017,7 +3950,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 12,
         ignore: false
       },
@@ -4031,21 +3964,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 63
-            },
-            {
-              name: "stagemodelonly",
-              expr: 64
+              name: "since",
+              expr: 52
             },
             {
               name: "syscap",
-              expr: 65
+              expr: 53
             }
           ]
         }
       ],
-      type: 19,
+      type: 16,
       mangledName: "_CN19ohos.telephony.call19NumberFormatOptions6<init>HRNat6StringE",
       exportId: "_CN19ohos.telephony.call19NumberFormatOptions6<init>HRNat6StringE",
       mangledBeforeSema: "19ohos.telephony.call19NumberFormatOptionsC6<init>F6String!11countryCode=$$",
@@ -4054,7 +3983,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 270822825958180434
+        bodyHash: 81011174559339929
       },
       info_type: "FuncInfo",
       info: {
@@ -4062,14 +3991,14 @@
           paramLists: [
             {
               params: [
-                54
+                53
               ],
               desugars: [
-                55
+                54
               ]
             }
           ],
-          retType: 18
+          retType: 15
         }
       }
     },
@@ -4079,14 +4008,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 44,
         ignore: false
       },
@@ -4094,7 +4023,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 17,
         ignore: false
       },
@@ -4105,7 +4034,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 2,
       mangledName: "_CN19ohos.telephony.call19NumberFormatOptions4initHRNat6StringEE11countryCodeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -4119,7 +4048,7 @@
       info_type: "ParamInfo",
       info: {
         isNamedParam: true,
-        defaultVal: 66
+        defaultVal: 54
       }
     },
     {
@@ -4132,14 +4061,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 40,
         ignore: true
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 44,
         ignore: false
       },
@@ -4182,7 +4111,7 @@
               ]
             }
           ],
-          retType: 5
+          retType: 2
         }
       }
     },
@@ -4197,14 +4126,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 43,
         ignore: false
       },
@@ -4212,7 +4141,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 10,
         ignore: false
       },
@@ -4240,9 +4169,9 @@
           paramLists: [
             {
               params: [
+                56,
                 57,
-                58,
-                59
+                58
               ],
               desugars: [
                 0,
@@ -4261,14 +4190,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 54,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 74,
         ignore: false
       },
@@ -4276,7 +4205,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 54,
         ignore: false
       },
@@ -4308,14 +4237,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 76,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 96,
         ignore: false
       },
@@ -4323,7 +4252,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 76,
         ignore: false
       },
@@ -4355,14 +4284,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 9,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 33,
         ignore: false
       },
@@ -4370,7 +4299,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 9,
         ignore: false
       },
@@ -4407,14 +4336,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 42,
         ignore: false
       },
@@ -4422,7 +4351,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 22,
+        line: 24,
         column: 10,
         ignore: false
       },
@@ -4457,7 +4386,7 @@
               ]
             }
           ],
-          retType: 7
+          retType: 4
         }
       }
     },
@@ -4472,14 +4401,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 56,
         ignore: false
       },
@@ -4487,7 +4416,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 24,
+        line: 26,
         column: 10,
         ignore: false
       },
@@ -4522,7 +4451,7 @@
               ]
             }
           ],
-          retType: 12
+          retType: 5
         }
       }
     },
@@ -4537,14 +4466,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 126,
         ignore: false
       },
@@ -4552,7 +4481,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 10,
         ignore: false
       },
@@ -4580,9 +4509,9 @@
           paramLists: [
             {
               params: [
+                62,
                 63,
-                64,
-                65
+                64
               ],
               desugars: [
                 0,
@@ -4601,14 +4530,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 48,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 68,
         ignore: false
       },
@@ -4616,7 +4545,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 48,
         ignore: false
       },
@@ -4648,14 +4577,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 70,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 90,
         ignore: false
       },
@@ -4663,7 +4592,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 70,
         ignore: false
       },
@@ -4695,14 +4624,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 92,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 116,
         ignore: false
       },
@@ -4710,7 +4639,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 26,
+        line: 28,
         column: 92,
         ignore: false
       },
@@ -4747,14 +4676,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 51,
         ignore: false
       },
@@ -4762,7 +4691,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 28,
+        line: 30,
         column: 10,
         ignore: false
       },
@@ -4797,7 +4726,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 22
         }
       }
     },
@@ -4812,14 +4741,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 45,
         ignore: false
       },
@@ -4827,7 +4756,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 30,
+        line: 32,
         column: 10,
         ignore: false
       },
@@ -4862,7 +4791,7 @@
               ]
             }
           ],
-          retType: 12
+          retType: 5
         }
       }
     },
@@ -4877,14 +4806,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 121,
         ignore: false
       },
@@ -4892,7 +4821,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 10,
         ignore: false
       },
@@ -4920,9 +4849,9 @@
           paramLists: [
             {
               params: [
+                68,
                 69,
-                70,
-                71
+                70
               ],
               desugars: [
                 0,
@@ -4931,7 +4860,7 @@
               ]
             }
           ],
-          retType: 12
+          retType: 5
         }
       }
     },
@@ -4941,14 +4870,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 53,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 73,
         ignore: false
       },
@@ -4956,7 +4885,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 53,
         ignore: false
       },
@@ -4988,14 +4917,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 75,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 88,
         ignore: false
       },
@@ -5003,7 +4932,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 75,
         ignore: false
       },
@@ -5014,7 +4943,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 22,
       mangledName: "_CN19ohos.telephony.call42FfiOHOSTelephonyCallIsEmergencyPhoneNumberHkiPiE6slotIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5035,14 +4964,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 90,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 114,
         ignore: false
       },
@@ -5050,7 +4979,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 32,
+        line: 34,
         column: 90,
         ignore: false
       },
@@ -5087,14 +5016,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 67,
         ignore: false
       },
@@ -5102,7 +5031,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 10,
         ignore: false
       },
@@ -5130,14 +5059,14 @@
           paramLists: [
             {
               params: [
-                73
+                72
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 22
         }
       }
     },
@@ -5147,14 +5076,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 39,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 59,
         ignore: false
       },
@@ -5162,7 +5091,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 39,
         ignore: false
       },
@@ -5193,23 +5122,24 @@
     {
       kind: "LitConstExpr",
       begin: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 26,
-        column: 55,
+        line: 32,
+        column: 12,
         ignore: false
       },
       end: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 26,
-        column: 57,
+        line: 32,
+        column: 16,
         ignore: false
       },
-      type: 1,
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "-2"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5218,59 +5148,17 @@
         file: 1,
         pkgId: 0,
         line: 33,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 33,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 34,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 34,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 35,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 35,
+        line: 33,
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5282,63 +5170,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 56,
-        column: 9,
+        line: 52,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 56,
-        column: 11,
+        line: 52,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 57,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 57,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 58,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 58,
-        column: 57,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Telephony.CallManager",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -5347,60 +5193,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 92,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 92,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 93,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 93,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 94,
+        line: 53,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 94,
+        line: 53,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Contacts",
@@ -5412,38 +5216,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 119,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 119,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 120,
+        line: 54,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 54,
         column: 29,
         ignore: false
       },
+      type: 5,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -5455,17 +5239,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 55,
+        column: 23,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 55,
+        column: 27,
+        ignore: false
+      },
+      type: 5,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 80,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 80,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 81,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 81,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Applications.Contacts",
@@ -5477,38 +5308,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 142,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 142,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 143,
+        line: 82,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 82,
         column: 29,
         ignore: false
       },
+      type: 5,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -5520,17 +5331,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 99,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 99,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 100,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 100,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5542,20 +5377,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 168,
-        column: 9,
+        line: 117,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 168,
-        column: 11,
+        line: 117,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5563,17 +5400,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 169,
+        line: 118,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 57,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Telephony.CallManager",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 119,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 169,
+        line: 119,
         column: 29,
         ignore: false
       },
+      type: 5,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -5585,17 +5446,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 170,
+        line: 136,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 136,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 137,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 170,
+        line: 137,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5607,20 +5492,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 182,
-        column: 9,
+        line: 157,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 182,
-        column: 11,
+        line: 157,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5628,17 +5515,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 183,
+        line: 158,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 158,
+        column: 57,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Telephony.CallManager",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 159,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 183,
+        line: 159,
         column: 29,
         ignore: false
       },
+      type: 5,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -5650,60 +5561,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 184,
-        column: 17,
+        line: 160,
+        column: 23,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 184,
-        column: 57,
+        line: 160,
+        column: 27,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Telephony.CallManager",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 197,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 197,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 198,
-        column: 29,
-        ignore: false
-      },
+      type: 5,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -5715,17 +5584,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 192,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 192,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 193,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 193,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5737,38 +5630,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 220,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 220,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 221,
+        line: 194,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 221,
+        line: 194,
         column: 29,
         ignore: false
       },
+      type: 5,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -5780,17 +5653,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 222,
+        line: 195,
+        column: 23,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 195,
+        column: 27,
+        ignore: false
+      },
+      type: 5,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 233,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 233,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 234,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 222,
+        line: 234,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5800,22 +5720,47 @@
     {
       kind: "LitConstExpr",
       begin: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 68,
-        column: 5,
+        line: 235,
+        column: 25,
         ignore: false
       },
       end: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 68,
-        column: 7,
+        line: 235,
+        column: 29,
         ignore: false
       },
+      type: 5,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "true",
+        constKind: "Bool"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 236,
+        column: 23,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 236,
+        column: 27,
+        ignore: false
+      },
+      type: 5,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
       }
     },
     {
@@ -5824,20 +5769,21 @@
         file: 2,
         pkgId: 0,
         line: 69,
-        column: 21,
+        column: 12,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 69,
-        column: 25,
+        column: 16,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5856,6 +5802,7 @@
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5867,20 +5814,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 80,
-        column: 9,
+        line: 78,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 80,
-        column: 11,
+        line: 78,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5888,39 +5837,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 81,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 81,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 82,
+        line: 79,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 82,
+        line: 79,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5933,19 +5861,21 @@
         file: 2,
         pkgId: 0,
         line: 90,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
         line: 90,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -5954,38 +5884,17 @@
         file: 2,
         pkgId: 0,
         line: 91,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 91,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 92,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 92,
+        line: 91,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -5997,18 +5906,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 34,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 94,
+        line: 93,
         column: 35,
         ignore: false
       },
-      type: 1,
+      type: 22,
       info_type: "LitConstInfo",
       info: {
         strValue: "0"
@@ -6019,20 +5928,22 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 105,
-        column: 12,
+        line: 103,
+        column: 19,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 105,
-        column: 14,
+        line: 103,
+        column: 23,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6040,39 +5951,18 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 106,
-        column: 28,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 106,
-        column: 32,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 107,
+        line: 104,
         column: 20,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 5,
-        line: 107,
+        line: 104,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -6084,323 +5974,251 @@
       begin: {
         file: 1,
         pkgId: 5,
-        line: 112,
+        line: 109,
+        column: 23,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 109,
+        column: 27,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 110,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 110,
+        column: 64,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Telephony.CallManager",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 116,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 116,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 117,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 117,
+        column: 65,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Telephony.CallManager",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 123,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 123,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 124,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 124,
+        column: 65,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Telephony.CallManager",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 130,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 130,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 131,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 131,
+        column: 65,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Telephony.CallManager",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 137,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 137,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 5,
+        line: 138,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 5,
+        line: 138,
+        column: 65,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Telephony.CallManager",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 2,
+        pkgId: 0,
+        line: 174,
+        column: 12,
+        ignore: false
+      },
+      end: {
+        file: 2,
+        pkgId: 0,
+        line: 174,
         column: 16,
         ignore: false
       },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 112,
-        column: 18,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 113,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 113,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 114,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 114,
-        column: 65,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Telephony.CallManager",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 120,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 120,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 121,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 121,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 122,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 122,
-        column: 65,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Telephony.CallManager",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 128,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 128,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 129,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 129,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 130,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 130,
-        column: 65,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Telephony.CallManager",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 136,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 136,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 137,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 137,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 138,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 138,
-        column: 65,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Telephony.CallManager",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 144,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 144,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 145,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 145,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 5,
-        line: 146,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 5,
-        line: 146,
-        column: 65,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Telephony.CallManager",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -6409,60 +6227,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 191,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 191,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 192,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 192,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 193,
+        line: 175,
         column: 13,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 193,
+        line: 175,
         column: 53,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -6474,20 +6250,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 202,
-        column: 9,
+        line: 182,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 202,
-        column: 11,
+        line: 182,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6495,39 +6273,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 203,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 203,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 204,
+        line: 183,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 204,
+        line: 183,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -6539,20 +6296,22 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 212,
-        column: 9,
+        line: 193,
+        column: 16,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 212,
-        column: 11,
+        line: 193,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6560,39 +6319,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 213,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 213,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 214,
+        line: 194,
         column: 17,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 214,
+        line: 194,
         column: 57,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Telephony.CallManager",
@@ -6604,18 +6342,18 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 40,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 216,
+        line: 196,
         column: 44,
         ignore: false
       },
-      type: 5,
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "CN",

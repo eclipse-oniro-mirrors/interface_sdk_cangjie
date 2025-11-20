@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.bluetooth.constant",
-  pkgDepInfo: "{\"package\":\"ohos.bluetooth.constant\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"constant.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"constant.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":27}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.bluetooth.constant\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"constant.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"constant.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":27}}]}],\"features\":[]}",
   imports: [
     "ohos.bluetooth.constant",
     "std.core"
@@ -21,14 +21,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 27,
             ignore: false
           },
@@ -43,14 +43,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 28,
             ignore: false
           },
@@ -101,9 +101,22 @@
       }
     },
     {
+      kind: "Struct",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: 1,
+          decl: "_CNat6StringE"
+        }
+      }
+    },
+    {
       kind: "Func",
       typeArgs: [
-        3
+        4
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -133,20 +146,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 6
-      }
-    },
-    {
-      kind: "Struct",
-      typeArgs: [
-
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          pkgId: 1,
-          decl: "_CNat6StringE"
-        }
+        retType: 2
       }
     },
     {
@@ -195,7 +195,7 @@
       end: {
         file: 0,
         pkgId: 1,
-        line: 71,
+        line: 70,
         column: 13,
         ignore: false
       },
@@ -217,16 +217,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 1
             },
             {
-              name: "stagemodelonly",
-              expr: 2
-            },
-            {
               name: "syscap",
-              expr: 3
+              expr: 2
             }
           ]
         }
@@ -240,7 +236,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11820397875190442587
+        bodyHash: 7566020535662834025
       },
       info_type: "EnumInfo",
       info: {
@@ -258,8 +254,8 @@
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 25,
-          column: 1122,
+          line: 26,
+          column: 1024,
           ignore: false
         }
       }
@@ -270,14 +266,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 37,
+        line: 36,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 37,
+        line: 36,
         column: 33,
         ignore: false
       },
@@ -285,7 +281,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 37,
+        line: 36,
         column: 16,
         ignore: false
       },
@@ -299,16 +295,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 4
             }
           ]
         }
@@ -322,7 +314,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 5753089655142409548
+        bodyHash: 13781367296629150989
       },
       info_type: "VarInfo",
       info: {
@@ -334,14 +326,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 44,
+        line: 43,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 44,
+        line: 43,
         column: 31,
         ignore: false
       },
@@ -349,7 +341,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 44,
+        line: 43,
         column: 16,
         ignore: false
       },
@@ -363,16 +355,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
-              expr: 8
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 9
+              expr: 6
             }
           ]
         }
@@ -386,7 +374,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 5753089655142409548
+        bodyHash: 13781367296629150989
       },
       info_type: "VarInfo",
       info: {
@@ -398,14 +386,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 51,
+        line: 50,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 51,
+        line: 50,
         column: 30,
         ignore: false
       },
@@ -413,7 +401,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 51,
+        line: 50,
         column: 16,
         ignore: false
       },
@@ -427,16 +415,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 10
-            },
-            {
-              name: "stagemodelonly",
-              expr: 11
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 12
+              expr: 8
             }
           ]
         }
@@ -450,7 +434,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 5753089655142409548
+        bodyHash: 13781367296629150989
       },
       info_type: "VarInfo",
       info: {
@@ -462,14 +446,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 58,
+        line: 57,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 58,
+        line: 57,
         column: 34,
         ignore: false
       },
@@ -477,7 +461,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 58,
+        line: 57,
         column: 16,
         ignore: false
       },
@@ -491,16 +475,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 9
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 10
             }
           ]
         }
@@ -514,7 +494,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 5753089655142409548
+        bodyHash: 13781367296629150989
       },
       info_type: "VarInfo",
       info: {
@@ -530,14 +510,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 62,
+        line: 61,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 70,
+        line: 69,
         column: 17,
         ignore: false
       },
@@ -545,7 +525,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 62,
+        line: 61,
         column: 38,
         ignore: false
       },
@@ -556,7 +536,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 3,
       mangledName: "_CN23ohos.bluetooth.constant22ProfileConnectionState5parseHi",
       exportId: "_CN23ohos.bluetooth.constant22ProfileConnectionState5parseHi",
       mangledBeforeSema: "23ohos.bluetooth.constant22ProfileConnectionStateU5parseFi$$22ProfileConnectionState",
@@ -565,7 +545,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 8035971499611947038,
-        bodyHash: 15588683969114494140
+        bodyHash: 16372445624519017947
       },
       info_type: "FuncInfo",
       info: {
@@ -590,14 +570,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 62,
+        line: 61,
         column: 44,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 62,
+        line: 61,
         column: 56,
         ignore: false
       },
@@ -605,7 +585,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 62,
+        line: 61,
         column: 44,
         ignore: false
       },
@@ -616,7 +596,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 4,
       mangledName: "_CN23ohos.bluetooth.constant22ProfileConnectionState5parseHiE5stateE",
       exportId: "",
       mangledBeforeSema: "",
@@ -642,14 +622,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 72,
+        line: 71,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 89,
+        line: 88,
         column: 13,
         ignore: false
       },
@@ -657,12 +637,12 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 72,
+        line: 71,
         column: 12,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
@@ -682,7 +662,7 @@
       info_type: "ExtendInfo",
       info: {
         inheritedTypes: [
-          4
+          5
         ],
         body: [
           9
@@ -699,14 +679,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 73,
+        line: 72,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 88,
+        line: 87,
         column: 17,
         ignore: false
       },
@@ -714,7 +694,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 73,
+        line: 72,
         column: 28,
         ignore: false
       },
@@ -725,7 +705,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN23ohos.bluetooth.constantXNNY_22ProfileConnectionStateE8toStringHv",
       exportId: "_CN23ohos.bluetooth.constantXNNY_22ProfileConnectionStateE8toStringHv",
       mangledBeforeSema: "23ohos.bluetooth.constant7Extend!22ProfileConnectionState<:8ToStringX8toStringF$$6String",
@@ -734,7 +714,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12188481663874702511
+        bodyHash: 11533503717491003954
       },
       info_type: "FuncInfo",
       info: {
@@ -749,7 +729,7 @@
               ]
             }
           ],
-          retType: 6
+          retType: 2
         }
       }
     },
@@ -764,14 +744,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 90,
+        line: 89,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 103,
+        line: 102,
         column: 13,
         ignore: false
       },
@@ -779,12 +759,12 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 90,
+        line: 89,
         column: 12,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
@@ -799,7 +779,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 5205141457396306731
+        bodyHash: 13140888819255951184
       },
       info_type: "ExtendInfo",
       info: {
@@ -822,14 +802,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 91,
+        line: 90,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 99,
+        line: 98,
         column: 17,
         ignore: false
       },
@@ -837,7 +817,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 91,
+        line: 90,
         column: 37,
         ignore: false
       },
@@ -857,7 +837,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16484936713321557929
+        bodyHash: 7879074826811761743
       },
       info_type: "FuncInfo",
       info: {
@@ -883,14 +863,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 91,
+        line: 90,
         column: 40,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 91,
+        line: 90,
         column: 69,
         ignore: false
       },
@@ -898,7 +878,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 91,
+        line: 90,
         column: 40,
         ignore: false
       },
@@ -934,14 +914,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 100,
+        line: 99,
         column: 16,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 102,
+        line: 101,
         column: 17,
         ignore: false
       },
@@ -949,7 +929,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 100,
+        line: 99,
         column: 37,
         ignore: false
       },
@@ -969,7 +949,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 408004944932808728
+        bodyHash: 5991534073875041287
       },
       info_type: "FuncInfo",
       info: {
@@ -995,14 +975,14 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 100,
+        line: 99,
         column: 40,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 100,
+        line: 99,
         column: 69,
         ignore: false
       },
@@ -1010,7 +990,7 @@
       identifierPos: {
         file: 0,
         pkgId: 1,
-        line: 100,
+        line: 99,
         column: 40,
         ignore: false
       },
@@ -1043,42 +1023,22 @@
       begin: {
         file: 0,
         pkgId: 1,
-        line: 26,
-        column: 11,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 1,
-        line: 26,
-        column: 13,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 1,
         line: 27,
-        column: 27,
+        column: 18,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
         line: 27,
-        column: 31,
+        column: 22,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1097,6 +1057,7 @@
         column: 66,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -1109,19 +1070,21 @@
         file: 0,
         pkgId: 1,
         line: 33,
-        column: 15,
+        column: 22,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
         line: 33,
-        column: 17,
+        column: 26,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1130,38 +1093,17 @@
         file: 0,
         pkgId: 1,
         line: 34,
-        column: 32,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
         line: 34,
-        column: 36,
+        column: 70,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 1,
-        line: 35,
-        column: 24,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 1,
-        line: 35,
-        column: 71,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -1174,19 +1116,21 @@
         file: 0,
         pkgId: 1,
         line: 40,
-        column: 16,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
         line: 40,
-        column: 18,
+        column: 27,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1195,38 +1139,17 @@
         file: 0,
         pkgId: 1,
         line: 41,
-        column: 32,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 1,
-        line: 41,
-        column: 36,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 1,
-        line: 42,
         column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 42,
+        line: 41,
         column: 71,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -1239,19 +1162,21 @@
         file: 0,
         pkgId: 1,
         line: 47,
-        column: 16,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
         line: 47,
-        column: 18,
+        column: 27,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1260,38 +1185,17 @@
         file: 0,
         pkgId: 1,
         line: 48,
-        column: 32,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 1,
-        line: 48,
-        column: 36,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 1,
-        line: 49,
         column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 49,
+        line: 48,
         column: 71,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",
@@ -1304,19 +1208,21 @@
         file: 0,
         pkgId: 1,
         line: 54,
-        column: 16,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
         line: 54,
-        column: 18,
+        column: 27,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1325,38 +1231,17 @@
         file: 0,
         pkgId: 1,
         line: 55,
-        column: 32,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 1,
-        line: 55,
-        column: 36,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 1,
-        line: 56,
         column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 1,
-        line: 56,
+        line: 55,
         column: 71,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Communication.Bluetooth.Core",

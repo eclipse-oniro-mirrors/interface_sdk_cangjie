@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.battery_info",
-  pkgDepInfo: "{\"package\":\"ohos.battery_info\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"battery_info.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":28}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"battery_info.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":27}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.battery_info\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"battery_info.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":49}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"battery_info.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":28}}]},{\"package\":\"std.deriving\",\"isStd\":true,\"imports\":[{\"file\":\"battery_info.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":27}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.battery_info"
@@ -22,14 +22,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 28,
             ignore: false
           },
@@ -44,14 +44,36 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 21,
+            column: 49,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "business_exception"
+          ],
+          identifier: "BusinessException",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
             column: 27,
             ignore: false
           },
@@ -128,6 +150,18 @@
       }
     },
     {
+      kind: "Struct",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6StringE"
+        }
+      }
+    },
+    {
       kind: "Int32"
     },
     {
@@ -137,7 +171,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 2
+        retType: 3
       }
     },
     {
@@ -160,7 +194,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 4
+        retType: 5
       }
     },
     {
@@ -183,7 +217,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 6
+        retType: 7
       }
     },
     {
@@ -206,19 +240,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 8
-      }
-    },
-    {
-      kind: "Struct",
-      typeArgs: [
-
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          decl: "_CNat6StringE"
-        }
+        retType: 9
       }
     },
     {
@@ -228,7 +250,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 10
+        retType: 2
       }
     },
     {
@@ -253,7 +275,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 24
+          index: 22
         }
       }
     },
@@ -292,11 +314,11 @@
     {
       kind: "Func",
       typeArgs: [
-        2
+        3
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 8
+        retType: 9
       }
     },
     {
@@ -314,7 +336,7 @@
     {
       kind: "Interface",
       typeArgs: [
-        8
+        9
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -326,7 +348,7 @@
     {
       kind: "Func",
       typeArgs: [
-        8
+        9
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -336,17 +358,17 @@
     {
       kind: "Func",
       typeArgs: [
-        2
+        3
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 4
+        retType: 5
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        4
+        5
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -358,7 +380,7 @@
     {
       kind: "Func",
       typeArgs: [
-        4
+        5
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -368,17 +390,17 @@
     {
       kind: "Func",
       typeArgs: [
-        2
+        3
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 6
+        retType: 7
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        6
+        7
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -390,7 +412,7 @@
     {
       kind: "Func",
       typeArgs: [
-        6
+        7
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -400,7 +422,7 @@
     {
       kind: "Func",
       typeArgs: [
-        2
+        3
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -436,7 +458,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 2,
+        retType: 3,
         isC: true
       }
     },
@@ -485,7 +507,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 201,
+        line: 171,
         column: 2,
         ignore: false
       },
@@ -507,16 +529,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 1
             },
             {
-              name: "stagemodelonly",
-              expr: 2
-            },
-            {
               name: "syscap",
-              expr: 3
+              expr: 2
             }
           ]
         }
@@ -530,7 +548,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10936678378157966674
+        bodyHash: 17165578563042373315
       },
       info_type: "ClassInfo",
       info: {
@@ -547,7 +565,7 @@
           17,
           19,
           21,
-          23,
+          24,
           26
         ]
       }
@@ -558,22 +576,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 42,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 46,
         column: 6,
         ignore: false
       },
-      identifier: "batterySOC",
+      identifier: "batterySoc",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 42,
         column: 24,
         ignore: false
       },
@@ -587,30 +605,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 4
             }
           ]
         }
       ],
-      type: 2,
+      type: 3,
       mangledName: "",
-      exportId: "_CN17ohos.battery_info11BatteryInfo10batterySOCE",
-      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC10batterySOCP",
+      exportId: "_CN17ohos.battery_info11BatteryInfo10batterySocE",
+      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC10batterySocP",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 1251743430910221401,
-        bodyHash: 7818099222208075505
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -632,22 +646,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 46,
+        line: 43,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 48,
+        line: 45,
         column: 10,
         ignore: false
       },
-      identifier: "$batterySOCget",
+      identifier: "$batterySocget",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 46,
+        line: 43,
         column: 9,
         ignore: false
       },
@@ -658,16 +672,16 @@
       annotations: [
 
       ],
-      type: 3,
-      mangledName: "_CN17ohos.battery_info11BatteryInfo10batterySOCpgHv",
-      exportId: "_CN17ohos.battery_info11BatteryInfo10batterySOCpgHv",
-      mangledBeforeSema: "17ohos.battery_info10batterySOCP11BatteryInfoC3getF$$i",
+      type: 4,
+      mangledName: "_CN17ohos.battery_info11BatteryInfo10batterySocpgHv",
+      exportId: "_CN17ohos.battery_info11BatteryInfo10batterySocpgHv",
+      mangledBeforeSema: "17ohos.battery_info10batterySocP11BatteryInfoC3getF$$i",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 11233130805632594272
+        bodyHash: 11767338872783872529
       },
       info_type: "FuncInfo",
       info: {
@@ -682,7 +696,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -692,14 +706,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 55,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 60,
         column: 6,
         ignore: false
       },
@@ -707,7 +721,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 55,
         column: 24,
         ignore: false
       },
@@ -721,21 +735,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
-              expr: 8
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 9
+              expr: 6
             }
           ]
         }
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN17ohos.battery_info11BatteryInfo14chargingStatusE",
       mangledBeforeSema: "17ohos.battery_info11BatteryInfoC14chargingStatusP",
@@ -744,7 +754,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 9834031793828162787,
-        bodyHash: 7818099222208075505
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -767,14 +777,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 298,
+        line: 261,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 338,
+        line: 300,
         column: 14,
         ignore: false
       },
@@ -782,7 +792,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 298,
+        line: 261,
         column: 24,
         ignore: false
       },
@@ -796,21 +806,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 49
-            },
-            {
-              name: "stagemodelonly",
-              expr: 50
+              name: "since",
+              expr: 33
             },
             {
               name: "syscap",
-              expr: 51
+              expr: 34
             }
           ]
         }
       ],
-      type: 4,
+      type: 5,
       mangledName: "_CN17ohos.battery_info18BatteryChargeStateE",
       exportId: "_CN17ohos.battery_info18BatteryChargeStateE",
       mangledBeforeSema: "17ohos.battery_info18BatteryChargeStateU",
@@ -819,7 +825,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "EnumInfo",
       info: {
@@ -837,8 +843,8 @@
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 277,
-          column: 1146,
+          line: 233,
+          column: 1046,
           ignore: false
         }
       }
@@ -853,14 +859,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 62,
+        line: 56,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 65,
+        line: 59,
         column: 10,
         ignore: false
       },
@@ -868,7 +874,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 62,
+        line: 56,
         column: 9,
         ignore: false
       },
@@ -879,7 +885,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN17ohos.battery_info11BatteryInfo14chargingStatuspgHv",
       exportId: "_CN17ohos.battery_info11BatteryInfo14chargingStatuspgHv",
       mangledBeforeSema: "17ohos.battery_info14chargingStatusP11BatteryInfoC3getF$$18BatteryChargeState",
@@ -888,7 +894,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 8079081834437338416
+        bodyHash: 15906864489838697262
       },
       info_type: "FuncInfo",
       info: {
@@ -903,7 +909,7 @@
               ]
             }
           ],
-          retType: 4
+          retType: 5
         }
       }
     },
@@ -913,14 +919,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 69,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 74,
         column: 6,
         ignore: false
       },
@@ -928,7 +934,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 69,
         column: 24,
         ignore: false
       },
@@ -942,21 +948,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 10
-            },
-            {
-              name: "stagemodelonly",
-              expr: 11
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 12
+              expr: 8
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_info11BatteryInfo12healthStatusE",
       mangledBeforeSema: "17ohos.battery_info11BatteryInfoC12healthStatusP",
@@ -965,7 +967,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 9439764759026752849,
-        bodyHash: 7818099222208075505
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -988,14 +990,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 383,
+        line: 342,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 439,
+        line: 397,
         column: 14,
         ignore: false
       },
@@ -1003,7 +1005,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 383,
+        line: 342,
         column: 24,
         ignore: false
       },
@@ -1017,21 +1019,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 64
-            },
-            {
-              name: "stagemodelonly",
-              expr: 65
+              name: "since",
+              expr: 43
             },
             {
               name: "syscap",
-              expr: 66
+              expr: 44
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "_CN17ohos.battery_info18BatteryHealthStateE",
       exportId: "_CN17ohos.battery_info18BatteryHealthStateE",
       mangledBeforeSema: "17ohos.battery_info18BatteryHealthStateU",
@@ -1040,7 +1038,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "EnumInfo",
       info: {
@@ -1060,8 +1058,8 @@
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 346,
-          column: 1582,
+          line: 290,
+          column: 1454,
           ignore: false
         }
       }
@@ -1076,14 +1074,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 79,
+        line: 70,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 82,
+        line: 73,
         column: 10,
         ignore: false
       },
@@ -1091,7 +1089,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 79,
+        line: 70,
         column: 9,
         ignore: false
       },
@@ -1102,7 +1100,7 @@
       annotations: [
 
       ],
-      type: 7,
+      type: 8,
       mangledName: "_CN17ohos.battery_info11BatteryInfo12healthStatuspgHv",
       exportId: "_CN17ohos.battery_info11BatteryInfo12healthStatuspgHv",
       mangledBeforeSema: "17ohos.battery_info12healthStatusP11BatteryInfoC3getF$$18BatteryHealthState",
@@ -1111,7 +1109,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 16451007516947430790
+        bodyHash: 3191869562392655037
       },
       info_type: "FuncInfo",
       info: {
@@ -1126,7 +1124,7 @@
               ]
             }
           ],
-          retType: 6
+          retType: 7
         }
       }
     },
@@ -1136,14 +1134,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 95,
+        line: 83,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 88,
         column: 6,
         ignore: false
       },
@@ -1151,7 +1149,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 95,
+        line: 83,
         column: 24,
         ignore: false
       },
@@ -1165,21 +1163,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 9
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 10
             }
           ]
         }
       ],
-      type: 8,
+      type: 9,
       mangledName: "",
       exportId: "_CN17ohos.battery_info11BatteryInfo11pluggedTypeE",
       mangledBeforeSema: "17ohos.battery_info11BatteryInfoC11pluggedTypeP",
@@ -1188,7 +1182,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 4191849112162780716,
-        bodyHash: 7818099222208075505
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -1211,14 +1205,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 213,
+        line: 180,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 253,
+        line: 219,
         column: 14,
         ignore: false
       },
@@ -1226,7 +1220,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 213,
+        line: 180,
         column: 24,
         ignore: false
       },
@@ -1240,21 +1234,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 34
-            },
-            {
-              name: "stagemodelonly",
-              expr: 35
+              name: "since",
+              expr: 23
             },
             {
               name: "syscap",
-              expr: 36
+              expr: 24
             }
           ]
         }
       ],
-      type: 8,
+      type: 9,
       mangledName: "_CN17ohos.battery_info18BatteryPluggedTypeE",
       exportId: "_CN17ohos.battery_info18BatteryPluggedTypeE",
       mangledBeforeSema: "17ohos.battery_info18BatteryPluggedTypeU",
@@ -1263,7 +1253,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "EnumInfo",
       info: {
@@ -1281,8 +1271,8 @@
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 208,
-          column: 1133,
+          line: 176,
+          column: 1033,
           ignore: false
         }
       }
@@ -1297,14 +1287,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 84,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 99,
+        line: 87,
         column: 10,
         ignore: false
       },
@@ -1312,7 +1302,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 84,
         column: 9,
         ignore: false
       },
@@ -1323,7 +1313,7 @@
       annotations: [
 
       ],
-      type: 9,
+      type: 10,
       mangledName: "_CN17ohos.battery_info11BatteryInfo11pluggedTypepgHv",
       exportId: "_CN17ohos.battery_info11BatteryInfo11pluggedTypepgHv",
       mangledBeforeSema: "17ohos.battery_info11pluggedTypeP11BatteryInfoC3getF$$18BatteryPluggedType",
@@ -1332,7 +1322,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 10407125868045667254
+        bodyHash: 10964790608775641902
       },
       info_type: "FuncInfo",
       info: {
@@ -1347,7 +1337,7 @@
               ]
             }
           ],
-          retType: 8
+          retType: 9
         }
       }
     },
@@ -1357,14 +1347,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 116,
+        line: 101,
         column: 6,
         ignore: false
       },
@@ -1372,7 +1362,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 24,
         ignore: false
       },
@@ -1386,21 +1376,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 16
-            },
-            {
-              name: "stagemodelonly",
-              expr: 17
+              name: "since",
+              expr: 11
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 12
             }
           ]
         }
       ],
-      type: 2,
+      type: 3,
       mangledName: "",
       exportId: "_CN17ohos.battery_info11BatteryInfo7voltageE",
       mangledBeforeSema: "17ohos.battery_info11BatteryInfoC7voltageP",
@@ -1409,7 +1395,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 1251743430910221401,
-        bodyHash: 7818099222208075505
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -1431,14 +1417,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 100,
         column: 10,
         ignore: false
       },
@@ -1446,7 +1432,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 9,
         ignore: false
       },
@@ -1457,7 +1443,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 4,
       mangledName: "_CN17ohos.battery_info11BatteryInfo7voltagepgHv",
       exportId: "_CN17ohos.battery_info11BatteryInfo7voltagepgHv",
       mangledBeforeSema: "17ohos.battery_info7voltageP11BatteryInfoC3getF$$i",
@@ -1466,7 +1452,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 10730507008590129489
+        bodyHash: 9378478582617851726
       },
       info_type: "FuncInfo",
       info: {
@@ -1481,7 +1467,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -1491,22 +1477,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 128,
+        line: 110,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 132,
+        line: 117,
         column: 6,
         ignore: false
       },
-      identifier: "nowCurrent",
+      identifier: "technology",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 128,
+        line: 110,
         column: 24,
         ignore: false
       },
@@ -1520,30 +1506,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 19
-            },
-            {
-              name: "stagemodelonly",
-              expr: 20
+              name: "since",
+              expr: 13
             },
             {
               name: "syscap",
-              expr: 21
+              expr: 14
             }
           ]
         }
       ],
       type: 2,
       mangledName: "",
-      exportId: "_CN17ohos.battery_info11BatteryInfo10nowCurrentE",
-      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC10nowCurrentP",
+      exportId: "_CN17ohos.battery_info11BatteryInfo10technologyE",
+      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC10technologyP",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
-        srcUse: 1251743430910221401,
-        bodyHash: 7818099222208075505
+        srcUse: 14735065547661292473,
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -1565,22 +1547,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 129,
+        line: 111,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 131,
+        line: 116,
         column: 10,
         ignore: false
       },
-      identifier: "$nowCurrentget",
+      identifier: "$technologyget",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 129,
+        line: 111,
         column: 9,
         ignore: false
       },
@@ -1591,16 +1573,16 @@
       annotations: [
 
       ],
-      type: 3,
-      mangledName: "_CN17ohos.battery_info11BatteryInfo10nowCurrentpgHv",
-      exportId: "_CN17ohos.battery_info11BatteryInfo10nowCurrentpgHv",
-      mangledBeforeSema: "17ohos.battery_info10nowCurrentP11BatteryInfoC3getF$$i",
+      type: 11,
+      mangledName: "_CN17ohos.battery_info11BatteryInfo10technologypgHv",
+      exportId: "_CN17ohos.battery_info11BatteryInfo10technologypgHv",
+      mangledBeforeSema: "17ohos.battery_info10technologyP11BatteryInfoC3getF$$6String",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 14404577655073083341
+        bodyHash: 800413065186123258
       },
       info_type: "FuncInfo",
       info: {
@@ -1625,22 +1607,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 126,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 151,
+        line: 130,
         column: 6,
         ignore: false
       },
-      identifier: "technology",
+      identifier: "batteryTemperature",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 144,
+        line: 126,
         column: 24,
         ignore: false
       },
@@ -1654,30 +1636,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 22
-            },
-            {
-              name: "stagemodelonly",
-              expr: 23
+              name: "since",
+              expr: 15
             },
             {
               name: "syscap",
-              expr: 24
+              expr: 16
             }
           ]
         }
       ],
-      type: 10,
+      type: 3,
       mangledName: "",
-      exportId: "_CN17ohos.battery_info11BatteryInfo10technologyE",
-      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC10technologyP",
+      exportId: "_CN17ohos.battery_info11BatteryInfo18batteryTemperatureE",
+      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC18batteryTemperatureP",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
-        srcUse: 14735065547661292473,
-        bodyHash: 7818099222208075505
+        srcUse: 1251743430910221401,
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -1699,22 +1677,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 127,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 150,
+        line: 129,
         column: 10,
         ignore: false
       },
-      identifier: "$technologyget",
+      identifier: "$batteryTemperatureget",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 145,
+        line: 127,
         column: 9,
         ignore: false
       },
@@ -1725,16 +1703,16 @@
       annotations: [
 
       ],
-      type: 11,
-      mangledName: "_CN17ohos.battery_info11BatteryInfo10technologypgHv",
-      exportId: "_CN17ohos.battery_info11BatteryInfo10technologypgHv",
-      mangledBeforeSema: "17ohos.battery_info10technologyP11BatteryInfoC3getF$$6String",
+      type: 4,
+      mangledName: "_CN17ohos.battery_info11BatteryInfo18batteryTemperaturepgHv",
+      exportId: "_CN17ohos.battery_info11BatteryInfo18batteryTemperaturepgHv",
+      mangledBeforeSema: "17ohos.battery_info18batteryTemperatureP11BatteryInfoC3getF$$i",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 1390650743566903460
+        bodyHash: 7676687727415527238
       },
       info_type: "FuncInfo",
       info: {
@@ -1749,7 +1727,7 @@
               ]
             }
           ],
-          retType: 10
+          retType: 3
         }
       }
     },
@@ -1759,22 +1737,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 139,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 167,
+        line: 143,
         column: 6,
         ignore: false
       },
-      identifier: "batteryTemperature",
+      identifier: "isBatteryPresent",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 139,
         column: 24,
         ignore: false
       },
@@ -1788,30 +1766,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 25
-            },
-            {
-              name: "stagemodelonly",
-              expr: 26
+              name: "since",
+              expr: 17
             },
             {
               name: "syscap",
-              expr: 27
+              expr: 18
             }
           ]
         }
       ],
-      type: 2,
+      type: 12,
       mangledName: "",
-      exportId: "_CN17ohos.battery_info11BatteryInfo18batteryTemperatureE",
-      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC18batteryTemperatureP",
+      exportId: "_CN17ohos.battery_info11BatteryInfo16isBatteryPresentE",
+      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC16isBatteryPresentP",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
-        srcUse: 1251743430910221401,
-        bodyHash: 7818099222208075505
+        srcUse: 3870128986148185485,
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -1833,148 +1807,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 164,
+        line: 140,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 166,
-        column: 10,
-        ignore: false
-      },
-      identifier: "$batteryTemperatureget",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 164,
-        column: 9,
-        ignore: false
-      },
-      attributes: [
-        144678138297714208,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 3,
-      mangledName: "_CN17ohos.battery_info11BatteryInfo18batteryTemperaturepgHv",
-      exportId: "_CN17ohos.battery_info11BatteryInfo18batteryTemperaturepgHv",
-      mangledBeforeSema: "17ohos.battery_info18batteryTemperatureP11BatteryInfoC3getF$$i",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 0,
-        bodyHash: 1326299774419238431
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-
-              ],
-              desugars: [
-
-              ]
-            }
-          ],
-          retType: 2
-        }
-      }
-    },
-    {
-      kind: "PropDecl",
-      fullPkgName: "ohos.battery_info",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 179,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 183,
-        column: 6,
-        ignore: false
-      },
-      identifier: "isBatteryPresent",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 179,
-        column: 24,
-        ignore: false
-      },
-      attributes: [
-        144115188344292896,
-        0
-      ],
-      annotations: [
-        {
-          kind: "Custom",
-          identifier: "APILevel",
-          args: [
-            {
-              name: "",
-              expr: 28
-            },
-            {
-              name: "stagemodelonly",
-              expr: 29
-            },
-            {
-              name: "syscap",
-              expr: 30
-            }
-          ]
-        }
-      ],
-      type: 12,
-      mangledName: "",
-      exportId: "_CN17ohos.battery_info11BatteryInfo16isBatteryPresentE",
-      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC16isBatteryPresentP",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 14151301873218655650,
-        srcUse: 3870128986148185485,
-        bodyHash: 7818099222208075505
-      },
-      info_type: "PropInfo",
-      info: {
-        setters: [
-
-        ],
-        getters: [
-          22
-        ]
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.battery_info",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 180,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 182,
+        line: 142,
         column: 10,
         ignore: false
       },
@@ -1982,7 +1822,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 180,
+        line: 140,
         column: 9,
         ignore: false
       },
@@ -2002,7 +1842,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 4809648428655851340
+        bodyHash: 2202009701901299145
       },
       info_type: "FuncInfo",
       info: {
@@ -2027,14 +1867,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 195,
+        line: 152,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 200,
+        line: 157,
         column: 6,
         ignore: false
       },
@@ -2042,7 +1882,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 195,
+        line: 152,
         column: 24,
         ignore: false
       },
@@ -2056,16 +1896,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 31
-            },
-            {
-              name: "stagemodelonly",
-              expr: 32
+              name: "since",
+              expr: 19
             },
             {
               name: "syscap",
-              expr: 33
+              expr: 20
             }
           ]
         }
@@ -2079,7 +1915,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 5375086971253164067,
-        bodyHash: 7818099222208075505
+        bodyHash: 18174456695793761683
       },
       info_type: "PropInfo",
       info: {
@@ -2087,7 +1923,7 @@
 
         ],
         getters: [
-          25
+          23
         ]
       }
     },
@@ -2102,14 +1938,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 490,
+        line: 445,
         column: 12,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 554,
+        line: 508,
         column: 14,
         ignore: false
       },
@@ -2117,7 +1953,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 490,
+        line: 445,
         column: 24,
         ignore: false
       },
@@ -2131,16 +1967,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 85
-            },
-            {
-              name: "stagemodelonly",
-              expr: 86
+              name: "since",
+              expr: 57
             },
             {
               name: "syscap",
-              expr: 87
+              expr: 58
             }
           ]
         }
@@ -2154,7 +1986,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "EnumInfo",
       info: {
@@ -2175,8 +2007,8 @@
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 439,
-          column: 1822,
+          line: 367,
+          column: 1680,
           ignore: false
         }
       }
@@ -2191,14 +2023,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 153,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 199,
+        line: 156,
         column: 10,
         ignore: false
       },
@@ -2206,7 +2038,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 153,
         column: 9,
         ignore: false
       },
@@ -2226,7 +2058,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 14995416494315142791
+        bodyHash: 12868794439263050079
       },
       info_type: "FuncInfo",
       info: {
@@ -2242,6 +2074,136 @@
             }
           ],
           retType: 14
+        }
+      }
+    },
+    {
+      kind: "PropDecl",
+      fullPkgName: "ohos.battery_info",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 166,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 170,
+        column: 6,
+        ignore: false
+      },
+      identifier: "nowCurrent",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 166,
+        column: 24,
+        ignore: false
+      },
+      attributes: [
+        144115188344292896,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 21
+            },
+            {
+              name: "syscap",
+              expr: 22
+            }
+          ]
+        }
+      ],
+      type: 3,
+      mangledName: "",
+      exportId: "_CN17ohos.battery_info11BatteryInfo10nowCurrentE",
+      mangledBeforeSema: "17ohos.battery_info11BatteryInfoC10nowCurrentP",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 1251743430910221401,
+        bodyHash: 18174456695793761683
+      },
+      info_type: "PropInfo",
+      info: {
+        setters: [
+
+        ],
+        getters: [
+          25
+        ]
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.battery_info",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 167,
+        column: 9,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 169,
+        column: 10,
+        ignore: false
+      },
+      identifier: "$nowCurrentget",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 167,
+        column: 9,
+        ignore: false
+      },
+      attributes: [
+        144678138297714208,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 4,
+      mangledName: "_CN17ohos.battery_info11BatteryInfo10nowCurrentpgHv",
+      exportId: "_CN17ohos.battery_info11BatteryInfo10nowCurrentpgHv",
+      mangledBeforeSema: "17ohos.battery_info10nowCurrentP11BatteryInfoC3getF$$i",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 0,
+        bodyHash: 10965113955676113547
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 3
         }
       }
     },
@@ -2315,14 +2277,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 220,
+        line: 186,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 220,
+        line: 186,
         column: 28,
         ignore: false
       },
@@ -2330,7 +2292,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 220,
+        line: 186,
         column: 17,
         ignore: false
       },
@@ -2344,21 +2306,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 37
-            },
-            {
-              name: "stagemodelonly",
-              expr: 38
+              name: "since",
+              expr: 25
             },
             {
               name: "syscap",
-              expr: 39
+              expr: 26
             }
           ]
         }
       ],
-      type: 8,
+      type: 9,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryPluggedType11UnknownTypeKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryPluggedTypeU11UnknownTypeV$$",
@@ -2367,7 +2325,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -2379,14 +2337,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 227,
+        line: 193,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 227,
+        line: 193,
         column: 19,
         ignore: false
       },
@@ -2394,7 +2352,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 227,
+        line: 193,
         column: 17,
         ignore: false
       },
@@ -2408,21 +2366,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 40
-            },
-            {
-              name: "stagemodelonly",
-              expr: 41
+              name: "since",
+              expr: 27
             },
             {
               name: "syscap",
-              expr: 42
+              expr: 28
             }
           ]
         }
       ],
-      type: 8,
+      type: 9,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryPluggedType2AcKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryPluggedTypeU2AcV$$",
@@ -2431,7 +2385,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -2443,14 +2397,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 234,
+        line: 200,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 234,
+        line: 200,
         column: 20,
         ignore: false
       },
@@ -2458,7 +2412,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 234,
+        line: 200,
         column: 17,
         ignore: false
       },
@@ -2472,21 +2426,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 43
-            },
-            {
-              name: "stagemodelonly",
-              expr: 44
+              name: "since",
+              expr: 29
             },
             {
               name: "syscap",
-              expr: 45
+              expr: 30
             }
           ]
         }
       ],
-      type: 8,
+      type: 9,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryPluggedType3UsbKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryPluggedTypeU3UsbV$$",
@@ -2495,7 +2445,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -2507,14 +2457,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 241,
+        line: 207,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 241,
+        line: 207,
         column: 25,
         ignore: false
       },
@@ -2522,7 +2472,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 241,
+        line: 207,
         column: 17,
         ignore: false
       },
@@ -2536,21 +2486,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 46
-            },
-            {
-              name: "stagemodelonly",
-              expr: 47
+              name: "since",
+              expr: 31
             },
             {
               name: "syscap",
-              expr: 48
+              expr: 32
             }
           ]
         }
       ],
-      type: 8,
+      type: 9,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryPluggedType8WirelessKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryPluggedTypeU8WirelessV$$",
@@ -2559,7 +2505,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -2575,14 +2521,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 244,
+        line: 210,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 252,
+        line: 218,
         column: 18,
         ignore: false
       },
@@ -2590,7 +2536,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 244,
+        line: 210,
         column: 29,
         ignore: false
       },
@@ -2610,7 +2556,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 8035971499611947038,
-        bodyHash: 9127573663807345257
+        bodyHash: 16533268979952424095
       },
       info_type: "FuncInfo",
       info: {
@@ -2625,7 +2571,7 @@
               ]
             }
           ],
-          retType: 8
+          retType: 9
         }
       }
     },
@@ -2635,14 +2581,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 244,
+        line: 210,
         column: 35,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 244,
+        line: 210,
         column: 47,
         ignore: false
       },
@@ -2650,7 +2596,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 244,
+        line: 210,
         column: 35,
         ignore: false
       },
@@ -2661,7 +2607,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 3,
       mangledName: "_CN17ohos.battery_info18BatteryPluggedType5parseHiE5valueE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2687,14 +2633,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 254,
+        line: 220,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 271,
+        line: 237,
         column: 14,
         ignore: false
       },
@@ -2702,18 +2648,18 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 254,
+        line: 220,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 8,
+      type: 9,
       mangledName: "",
       exportId: "_CN17ohos.battery_infoXNNY_18BatteryPluggedTypeEUbattery_info$K_E",
       mangledBeforeSema: "18BatteryPluggedType<:8ToStringX",
@@ -2744,14 +2690,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 255,
+        line: 221,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 270,
+        line: 236,
         column: 18,
         ignore: false
       },
@@ -2759,7 +2705,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 255,
+        line: 221,
         column: 29,
         ignore: false
       },
@@ -2779,7 +2725,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 209017771866749561
+        bodyHash: 6705759172065034671
       },
       info_type: "FuncInfo",
       info: {
@@ -2794,7 +2740,7 @@
               ]
             }
           ],
-          retType: 10
+          retType: 2
         }
       }
     },
@@ -2809,14 +2755,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 272,
+        line: 238,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 285,
+        line: 251,
         column: 14,
         ignore: false
       },
@@ -2824,18 +2770,18 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 272,
+        line: 238,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 8,
+      type: 9,
       mangledName: "",
       exportId: "_CN17ohos.battery_infoXNNY_18BatteryPluggedTypeEUbattery_info$K0_E",
       mangledBeforeSema: "18BatteryPluggedType<:9Equatable<18BatteryPluggedType>X",
@@ -2844,7 +2790,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 4694890337760997687
+        bodyHash: 7837360256869332788
       },
       info_type: "ExtendInfo",
       info: {
@@ -2867,14 +2813,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 273,
+        line: 239,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 281,
+        line: 247,
         column: 18,
         ignore: false
       },
@@ -2882,7 +2828,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 273,
+        line: 239,
         column: 38,
         ignore: false
       },
@@ -2902,7 +2848,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16031813519790573208
+        bodyHash: 3473337550249010699
       },
       info_type: "FuncInfo",
       info: {
@@ -2928,14 +2874,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 273,
+        line: 239,
         column: 41,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 273,
+        line: 239,
         column: 66,
         ignore: false
       },
@@ -2943,7 +2889,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 273,
+        line: 239,
         column: 41,
         ignore: false
       },
@@ -2954,7 +2900,7 @@
       annotations: [
 
       ],
-      type: 8,
+      type: 9,
       mangledName: "_CN17ohos.battery_infoXNNY_18BatteryPluggedTypeE2==HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2979,14 +2925,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 282,
+        line: 248,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 284,
+        line: 250,
         column: 18,
         ignore: false
       },
@@ -2994,7 +2940,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 282,
+        line: 248,
         column: 38,
         ignore: false
       },
@@ -3014,7 +2960,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17148937555398893580
+        bodyHash: 15001656113300829786
       },
       info_type: "FuncInfo",
       info: {
@@ -3040,14 +2986,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 282,
+        line: 248,
         column: 41,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 282,
+        line: 248,
         column: 66,
         ignore: false
       },
@@ -3055,7 +3001,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 282,
+        line: 248,
         column: 41,
         ignore: false
       },
@@ -3066,7 +3012,7 @@
       annotations: [
 
       ],
-      type: 8,
+      type: 9,
       mangledName: "_CN17ohos.battery_infoXNNY_18BatteryPluggedTypeE2!=HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3087,14 +3033,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 305,
+        line: 267,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 305,
+        line: 267,
         column: 35,
         ignore: false
       },
@@ -3102,7 +3048,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 305,
+        line: 267,
         column: 17,
         ignore: false
       },
@@ -3116,21 +3062,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 52
-            },
-            {
-              name: "stagemodelonly",
-              expr: 53
+              name: "since",
+              expr: 35
             },
             {
               name: "syscap",
-              expr: 54
+              expr: 36
             }
           ]
         }
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryChargeState18UnknownChargeStateKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryChargeStateU18UnknownChargeStateV$$",
@@ -3139,7 +3081,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -3151,14 +3093,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 312,
+        line: 274,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 312,
+        line: 274,
         column: 24,
         ignore: false
       },
@@ -3166,7 +3108,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 312,
+        line: 274,
         column: 17,
         ignore: false
       },
@@ -3180,21 +3122,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 55
-            },
-            {
-              name: "stagemodelonly",
-              expr: 56
+              name: "since",
+              expr: 37
             },
             {
               name: "syscap",
-              expr: 57
+              expr: 38
             }
           ]
         }
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryChargeState7EnabledKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryChargeStateU7EnabledV$$",
@@ -3203,7 +3141,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -3215,14 +3153,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 319,
+        line: 281,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 319,
+        line: 281,
         column: 25,
         ignore: false
       },
@@ -3230,7 +3168,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 319,
+        line: 281,
         column: 17,
         ignore: false
       },
@@ -3244,21 +3182,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 58
-            },
-            {
-              name: "stagemodelonly",
-              expr: 59
+              name: "since",
+              expr: 39
             },
             {
               name: "syscap",
-              expr: 60
+              expr: 40
             }
           ]
         }
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryChargeState8DisabledKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryChargeStateU8DisabledV$$",
@@ -3267,7 +3201,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -3279,14 +3213,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 326,
+        line: 288,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 326,
+        line: 288,
         column: 21,
         ignore: false
       },
@@ -3294,7 +3228,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 326,
+        line: 288,
         column: 17,
         ignore: false
       },
@@ -3308,21 +3242,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 61
-            },
-            {
-              name: "stagemodelonly",
-              expr: 62
+              name: "since",
+              expr: 41
             },
             {
               name: "syscap",
-              expr: 63
+              expr: 42
             }
           ]
         }
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryChargeState4FullKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryChargeStateU4FullV$$",
@@ -3331,7 +3261,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -3347,14 +3277,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 329,
+        line: 291,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 337,
+        line: 299,
         column: 18,
         ignore: false
       },
@@ -3362,7 +3292,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 329,
+        line: 291,
         column: 29,
         ignore: false
       },
@@ -3382,7 +3312,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 8035971499611947038,
-        bodyHash: 13674152241584762192
+        bodyHash: 17934650952558327455
       },
       info_type: "FuncInfo",
       info: {
@@ -3397,7 +3327,7 @@
               ]
             }
           ],
-          retType: 4
+          retType: 5
         }
       }
     },
@@ -3407,14 +3337,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 329,
+        line: 291,
         column: 35,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 329,
+        line: 291,
         column: 47,
         ignore: false
       },
@@ -3422,7 +3352,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 329,
+        line: 291,
         column: 35,
         ignore: false
       },
@@ -3433,7 +3363,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 3,
       mangledName: "_CN17ohos.battery_info18BatteryChargeState5parseHiE5valueE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3459,14 +3389,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 339,
+        line: 301,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 356,
+        line: 318,
         column: 14,
         ignore: false
       },
@@ -3474,18 +3404,18 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 339,
+        line: 301,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN17ohos.battery_infoXNNY_18BatteryChargeStateEUbattery_info$K_E",
       mangledBeforeSema: "18BatteryChargeState<:8ToStringX",
@@ -3516,14 +3446,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 340,
+        line: 302,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 355,
+        line: 317,
         column: 18,
         ignore: false
       },
@@ -3531,7 +3461,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 340,
+        line: 302,
         column: 29,
         ignore: false
       },
@@ -3551,7 +3481,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7572539684679700614
+        bodyHash: 15272529851277116106
       },
       info_type: "FuncInfo",
       info: {
@@ -3566,7 +3496,7 @@
               ]
             }
           ],
-          retType: 10
+          retType: 2
         }
       }
     },
@@ -3581,14 +3511,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 357,
+        line: 319,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 370,
+        line: 332,
         column: 14,
         ignore: false
       },
@@ -3596,18 +3526,18 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 357,
+        line: 319,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN17ohos.battery_infoXNNY_18BatteryChargeStateEUbattery_info$K0_E",
       mangledBeforeSema: "18BatteryChargeState<:9Equatable<18BatteryChargeState>X",
@@ -3616,7 +3546,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 18244488085759404124
+        bodyHash: 14675252074781334677
       },
       info_type: "ExtendInfo",
       info: {
@@ -3639,14 +3569,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 358,
+        line: 320,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 366,
+        line: 328,
         column: 18,
         ignore: false
       },
@@ -3654,7 +3584,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 358,
+        line: 320,
         column: 38,
         ignore: false
       },
@@ -3674,7 +3604,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 9951031865338896365
+        bodyHash: 8724283571774993992
       },
       info_type: "FuncInfo",
       info: {
@@ -3700,14 +3630,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 358,
+        line: 320,
         column: 41,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 358,
+        line: 320,
         column: 66,
         ignore: false
       },
@@ -3715,7 +3645,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 358,
+        line: 320,
         column: 41,
         ignore: false
       },
@@ -3726,7 +3656,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "_CN17ohos.battery_infoXNNY_18BatteryChargeStateE2==HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3751,14 +3681,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 367,
+        line: 329,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 369,
+        line: 331,
         column: 18,
         ignore: false
       },
@@ -3766,7 +3696,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 367,
+        line: 329,
         column: 38,
         ignore: false
       },
@@ -3786,7 +3716,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10991589054093234685
+        bodyHash: 13915837576730503884
       },
       info_type: "FuncInfo",
       info: {
@@ -3812,14 +3742,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 367,
+        line: 329,
         column: 41,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 367,
+        line: 329,
         column: 66,
         ignore: false
       },
@@ -3827,7 +3757,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 367,
+        line: 329,
         column: 41,
         ignore: false
       },
@@ -3838,7 +3768,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "_CN17ohos.battery_infoXNNY_18BatteryChargeStateE2!=HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3859,14 +3789,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 390,
+        line: 348,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 390,
+        line: 348,
         column: 35,
         ignore: false
       },
@@ -3874,7 +3804,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 390,
+        line: 348,
         column: 17,
         ignore: false
       },
@@ -3888,21 +3818,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 67
-            },
-            {
-              name: "stagemodelonly",
-              expr: 68
+              name: "since",
+              expr: 45
             },
             {
               name: "syscap",
-              expr: 69
+              expr: 46
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryHealthState18UnknownHealthStateKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryHealthStateU18UnknownHealthStateV$$",
@@ -3911,7 +3837,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -3923,14 +3849,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 397,
+        line: 355,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 397,
+        line: 355,
         column: 21,
         ignore: false
       },
@@ -3938,7 +3864,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 397,
+        line: 355,
         column: 17,
         ignore: false
       },
@@ -3952,21 +3878,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 70
-            },
-            {
-              name: "stagemodelonly",
-              expr: 71
+              name: "since",
+              expr: 47
             },
             {
               name: "syscap",
-              expr: 72
+              expr: 48
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryHealthState4GoodKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryHealthStateU4GoodV$$",
@@ -3975,7 +3897,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -3987,14 +3909,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 404,
+        line: 362,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 404,
+        line: 362,
         column: 25,
         ignore: false
       },
@@ -4002,7 +3924,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 404,
+        line: 362,
         column: 17,
         ignore: false
       },
@@ -4016,21 +3938,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 73
-            },
-            {
-              name: "stagemodelonly",
-              expr: 74
+              name: "since",
+              expr: 49
             },
             {
               name: "syscap",
-              expr: 75
+              expr: 50
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryHealthState8OverheatKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryHealthStateU8OverheatV$$",
@@ -4039,7 +3957,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -4051,14 +3969,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 411,
+        line: 369,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 411,
+        line: 369,
         column: 28,
         ignore: false
       },
@@ -4066,7 +3984,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 411,
+        line: 369,
         column: 17,
         ignore: false
       },
@@ -4080,21 +3998,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 76
-            },
-            {
-              name: "stagemodelonly",
-              expr: 77
+              name: "since",
+              expr: 51
             },
             {
               name: "syscap",
-              expr: 78
+              expr: 52
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryHealthState11OvervoltageKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryHealthStateU11OvervoltageV$$",
@@ -4103,7 +4017,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -4115,14 +4029,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 418,
+        line: 376,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 418,
+        line: 376,
         column: 21,
         ignore: false
       },
@@ -4130,7 +4044,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 418,
+        line: 376,
         column: 17,
         ignore: false
       },
@@ -4144,21 +4058,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 79
-            },
-            {
-              name: "stagemodelonly",
-              expr: 80
+              name: "since",
+              expr: 53
             },
             {
               name: "syscap",
-              expr: 81
+              expr: 54
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryHealthState4ColdKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryHealthStateU4ColdV$$",
@@ -4167,7 +4077,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -4179,14 +4089,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 425,
+        line: 383,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 425,
+        line: 383,
         column: 21,
         ignore: false
       },
@@ -4194,7 +4104,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 425,
+        line: 383,
         column: 17,
         ignore: false
       },
@@ -4208,21 +4118,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 82
-            },
-            {
-              name: "stagemodelonly",
-              expr: 83
+              name: "since",
+              expr: 55
             },
             {
               name: "syscap",
-              expr: 84
+              expr: 56
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_info18BatteryHealthState4DeadKE",
       mangledBeforeSema: "17ohos.battery_info18BatteryHealthStateU4DeadV$$",
@@ -4231,7 +4137,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -4247,14 +4153,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 428,
+        line: 386,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 438,
+        line: 396,
         column: 18,
         ignore: false
       },
@@ -4262,7 +4168,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 428,
+        line: 386,
         column: 29,
         ignore: false
       },
@@ -4282,7 +4188,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 8035971499611947038,
-        bodyHash: 985538812577969470
+        bodyHash: 673686371204313261
       },
       info_type: "FuncInfo",
       info: {
@@ -4297,7 +4203,7 @@
               ]
             }
           ],
-          retType: 6
+          retType: 7
         }
       }
     },
@@ -4307,14 +4213,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 428,
+        line: 386,
         column: 35,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 428,
+        line: 386,
         column: 47,
         ignore: false
       },
@@ -4322,7 +4228,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 428,
+        line: 386,
         column: 35,
         ignore: false
       },
@@ -4333,7 +4239,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 3,
       mangledName: "_CN17ohos.battery_info18BatteryHealthState5parseHiE5valueE",
       exportId: "",
       mangledBeforeSema: "",
@@ -4359,14 +4265,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 440,
+        line: 398,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 461,
+        line: 419,
         column: 14,
         ignore: false
       },
@@ -4374,18 +4280,18 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 440,
+        line: 398,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_infoXNNY_18BatteryHealthStateEUbattery_info$K_E",
       mangledBeforeSema: "18BatteryHealthState<:8ToStringX",
@@ -4416,14 +4322,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 441,
+        line: 399,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 460,
+        line: 418,
         column: 18,
         ignore: false
       },
@@ -4431,7 +4337,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 441,
+        line: 399,
         column: 29,
         ignore: false
       },
@@ -4451,7 +4357,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6899206502355742346
+        bodyHash: 9782089664294914980
       },
       info_type: "FuncInfo",
       info: {
@@ -4466,7 +4372,7 @@
               ]
             }
           ],
-          retType: 10
+          retType: 2
         }
       }
     },
@@ -4481,33 +4387,33 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 462,
+        line: 420,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 477,
-        column: 15,
+        line: 435,
+        column: 14,
         ignore: false
       },
       identifier: "",
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 462,
+        line: 420,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
 
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN17ohos.battery_infoXNNY_18BatteryHealthStateEUbattery_info$K0_E",
       mangledBeforeSema: "18BatteryHealthState<:9Equatable<18BatteryHealthState>X",
@@ -4516,7 +4422,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 17149244516191277468
+        bodyHash: 3984428695977704821
       },
       info_type: "ExtendInfo",
       info: {
@@ -4539,14 +4445,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 463,
+        line: 421,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 473,
+        line: 431,
         column: 18,
         ignore: false
       },
@@ -4554,7 +4460,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 463,
+        line: 421,
         column: 38,
         ignore: false
       },
@@ -4574,7 +4480,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11236701078409227324
+        bodyHash: 17895130697162913832
       },
       info_type: "FuncInfo",
       info: {
@@ -4600,14 +4506,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 463,
+        line: 421,
         column: 41,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 463,
+        line: 421,
         column: 66,
         ignore: false
       },
@@ -4615,7 +4521,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 463,
+        line: 421,
         column: 41,
         ignore: false
       },
@@ -4626,7 +4532,7 @@
       annotations: [
 
       ],
-      type: 6,
+      type: 7,
       mangledName: "_CN17ohos.battery_infoXNNY_18BatteryHealthStateE2==HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -4651,14 +4557,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 474,
+        line: 432,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 476,
+        line: 434,
         column: 18,
         ignore: false
       },
@@ -4666,7 +4572,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 474,
+        line: 432,
         column: 38,
         ignore: false
       },
@@ -4686,7 +4592,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14460250823010450253
+        bodyHash: 14162543068188659104
       },
       info_type: "FuncInfo",
       info: {
@@ -4712,14 +4618,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 474,
+        line: 432,
         column: 41,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 474,
+        line: 432,
         column: 66,
         ignore: false
       },
@@ -4727,7 +4633,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 474,
+        line: 432,
         column: 41,
         ignore: false
       },
@@ -4738,7 +4644,7 @@
       annotations: [
 
       ],
-      type: 6,
+      type: 7,
       mangledName: "_CN17ohos.battery_infoXNNY_18BatteryHealthStateE2!=HY1_E5otherE",
       exportId: "",
       mangledBeforeSema: "",
@@ -4759,14 +4665,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 497,
+        line: 451,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 497,
+        line: 451,
         column: 26,
         ignore: false
       },
@@ -4774,7 +4680,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 497,
+        line: 451,
         column: 17,
         ignore: false
       },
@@ -4788,16 +4694,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 88
-            },
-            {
-              name: "stagemodelonly",
-              expr: 89
+              name: "since",
+              expr: 59
             },
             {
               name: "syscap",
-              expr: 90
+              expr: 60
             }
           ]
         }
@@ -4811,7 +4713,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -4823,14 +4725,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 504,
+        line: 458,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 504,
+        line: 458,
         column: 26,
         ignore: false
       },
@@ -4838,7 +4740,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 504,
+        line: 458,
         column: 17,
         ignore: false
       },
@@ -4852,16 +4754,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 91
-            },
-            {
-              name: "stagemodelonly",
-              expr: 92
+              name: "since",
+              expr: 61
             },
             {
               name: "syscap",
-              expr: 93
+              expr: 62
             }
           ]
         }
@@ -4875,7 +4773,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -4887,14 +4785,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 511,
+        line: 465,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 511,
+        line: 465,
         column: 28,
         ignore: false
       },
@@ -4902,7 +4800,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 511,
+        line: 465,
         column: 17,
         ignore: false
       },
@@ -4916,16 +4814,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 94
-            },
-            {
-              name: "stagemodelonly",
-              expr: 95
+              name: "since",
+              expr: 63
             },
             {
               name: "syscap",
-              expr: 96
+              expr: 64
             }
           ]
         }
@@ -4939,7 +4833,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -4951,14 +4845,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 518,
+        line: 472,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 518,
+        line: 472,
         column: 25,
         ignore: false
       },
@@ -4966,7 +4860,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 518,
+        line: 472,
         column: 17,
         ignore: false
       },
@@ -4980,16 +4874,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 97
-            },
-            {
-              name: "stagemodelonly",
-              expr: 98
+              name: "since",
+              expr: 65
             },
             {
               name: "syscap",
-              expr: 99
+              expr: 66
             }
           ]
         }
@@ -5003,7 +4893,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -5015,14 +4905,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 525,
+        line: 479,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 525,
+        line: 479,
         column: 29,
         ignore: false
       },
@@ -5030,7 +4920,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 525,
+        line: 479,
         column: 17,
         ignore: false
       },
@@ -5044,16 +4934,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 100
-            },
-            {
-              name: "stagemodelonly",
-              expr: 101
+              name: "since",
+              expr: 67
             },
             {
               name: "syscap",
-              expr: 102
+              expr: 68
             }
           ]
         }
@@ -5067,7 +4953,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -5079,14 +4965,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 532,
+        line: 486,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 532,
+        line: 486,
         column: 30,
         ignore: false
       },
@@ -5094,7 +4980,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 532,
+        line: 486,
         column: 17,
         ignore: false
       },
@@ -5108,16 +4994,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 103
-            },
-            {
-              name: "stagemodelonly",
-              expr: 104
+              name: "since",
+              expr: 69
             },
             {
               name: "syscap",
-              expr: 105
+              expr: 70
             }
           ]
         }
@@ -5131,7 +5013,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -5143,14 +5025,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 539,
+        line: 493,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 539,
+        line: 493,
         column: 30,
         ignore: false
       },
@@ -5158,7 +5040,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 539,
+        line: 493,
         column: 17,
         ignore: false
       },
@@ -5172,16 +5054,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 106
-            },
-            {
-              name: "stagemodelonly",
-              expr: 107
+              name: "since",
+              expr: 71
             },
             {
               name: "syscap",
-              expr: 108
+              expr: 72
             }
           ]
         }
@@ -5195,7 +5073,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11164439704056892690
+        bodyHash: 4693630898423566472
       },
       info_type: "VarInfo",
       info: {
@@ -5211,14 +5089,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 542,
+        line: 496,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 553,
+        line: 507,
         column: 18,
         ignore: false
       },
@@ -5226,7 +5104,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 542,
+        line: 496,
         column: 29,
         ignore: false
       },
@@ -5246,7 +5124,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 8035971499611947038,
-        bodyHash: 18334056168599898950
+        bodyHash: 12938297005003712891
       },
       info_type: "FuncInfo",
       info: {
@@ -5271,14 +5149,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 542,
+        line: 496,
         column: 35,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 542,
+        line: 496,
         column: 47,
         ignore: false
       },
@@ -5286,7 +5164,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 542,
+        line: 496,
         column: 35,
         ignore: false
       },
@@ -5297,7 +5175,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 3,
       mangledName: "_CN17ohos.battery_info20BatteryCapacityLevel5parseHiE5valueE",
       exportId: "",
       mangledBeforeSema: "",
@@ -5323,14 +5201,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 555,
+        line: 509,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 578,
+        line: 532,
         column: 14,
         ignore: false
       },
@@ -5338,12 +5216,12 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 555,
+        line: 509,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
@@ -5380,14 +5258,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 556,
+        line: 510,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 577,
+        line: 531,
         column: 18,
         ignore: false
       },
@@ -5395,7 +5273,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 556,
+        line: 510,
         column: 29,
         ignore: false
       },
@@ -5415,7 +5293,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17988235497988479032
+        bodyHash: 10933826081226923397
       },
       info_type: "FuncInfo",
       info: {
@@ -5430,7 +5308,7 @@
               ]
             }
           ],
-          retType: 10
+          retType: 2
         }
       }
     },
@@ -5445,14 +5323,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 579,
+        line: 533,
         column: 13,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 595,
+        line: 549,
         column: 15,
         ignore: false
       },
@@ -5460,12 +5338,12 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 579,
+        line: 533,
         column: 13,
         ignore: false
       },
       attributes: [
-        144678412907185168,
+        144678412907185200,
         0
       ],
       annotations: [
@@ -5480,7 +5358,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 9472746758005586478
+        bodyHash: 8176561732324099641
       },
       info_type: "ExtendInfo",
       info: {
@@ -5503,14 +5381,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 580,
+        line: 534,
         column: 17,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 591,
+        line: 545,
         column: 19,
         ignore: false
       },
@@ -5518,7 +5396,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 580,
+        line: 534,
         column: 38,
         ignore: false
       },
@@ -5538,7 +5416,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7479088367439994625
+        bodyHash: 17315485027329531654
       },
       info_type: "FuncInfo",
       info: {
@@ -5564,14 +5442,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 580,
+        line: 534,
         column: 41,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 580,
+        line: 534,
         column: 68,
         ignore: false
       },
@@ -5579,7 +5457,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 580,
+        line: 534,
         column: 41,
         ignore: false
       },
@@ -5615,14 +5493,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 592,
+        line: 546,
         column: 18,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 594,
+        line: 548,
         column: 19,
         ignore: false
       },
@@ -5630,7 +5508,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 592,
+        line: 546,
         column: 39,
         ignore: false
       },
@@ -5650,7 +5528,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 18306552113398460269
+        bodyHash: 16325390030037380528
       },
       info_type: "FuncInfo",
       info: {
@@ -5676,14 +5554,14 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 592,
+        line: 546,
         column: 42,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 592,
+        line: 546,
         column: 69,
         ignore: false
       },
@@ -5691,7 +5569,7 @@
       identifierPos: {
         file: 0,
         pkgId: 2,
-        line: 592,
+        line: 546,
         column: 42,
         ignore: false
       },
@@ -5728,14 +5606,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 43,
         ignore: false
       },
@@ -5743,7 +5621,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 19,
+        line: 21,
         column: 10,
         ignore: false
       },
@@ -5778,7 +5656,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -5793,14 +5671,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 49,
         ignore: false
       },
@@ -5808,7 +5686,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 10,
         ignore: false
       },
@@ -5843,7 +5721,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -5858,14 +5736,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 47,
         ignore: false
       },
@@ -5873,7 +5751,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 10,
         ignore: false
       },
@@ -5908,7 +5786,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -5923,14 +5801,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 47,
         ignore: false
       },
@@ -5938,7 +5816,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 10,
         ignore: false
       },
@@ -5973,7 +5851,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -5988,14 +5866,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 43,
         ignore: false
       },
@@ -6003,7 +5881,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 10,
         ignore: false
       },
@@ -6038,7 +5916,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -6053,14 +5931,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 53,
         ignore: false
       },
@@ -6068,7 +5946,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 10,
         ignore: false
       },
@@ -6103,7 +5981,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -6118,14 +5996,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 48,
         ignore: false
       },
@@ -6133,7 +6011,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 10,
         ignore: false
       },
@@ -6183,14 +6061,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 54,
         ignore: false
       },
@@ -6198,7 +6076,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 10,
         ignore: false
       },
@@ -6233,7 +6111,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     },
@@ -6248,14 +6126,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 49,
         ignore: false
       },
@@ -6263,7 +6141,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 10,
         ignore: false
       },
@@ -6313,14 +6191,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 5,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 49,
         ignore: false
       },
@@ -6328,7 +6206,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 10,
         ignore: false
       },
@@ -6363,7 +6241,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 3
         }
       }
     }
@@ -6374,42 +6252,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 30,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 30,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
         line: 31,
-        column: 21,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 31,
-        column: 25,
+        column: 16,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6428,6 +6286,7 @@
         column: 64,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -6439,20 +6298,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 41,
-        column: 9,
+        line: 39,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 41,
-        column: 11,
+        line: 39,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6460,39 +6321,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 42,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 42,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 43,
+        line: 40,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 43,
+        line: 40,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -6504,20 +6344,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 57,
-        column: 9,
+        line: 52,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 57,
-        column: 11,
+        line: 52,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6525,39 +6367,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 58,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 58,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 59,
+        line: 53,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 59,
+        line: 53,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -6569,20 +6390,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
-        column: 9,
+        line: 66,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
-        column: 11,
+        line: 66,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6590,39 +6413,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 75,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 75,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 76,
+        line: 67,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 67,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -6634,20 +6436,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 91,
-        column: 9,
+        line: 80,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 91,
-        column: 11,
+        line: 80,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6655,42 +6459,90 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 92,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 92,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 93,
+        line: 81,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 93,
+        line: 81,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 95,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 95,
+        column: 68,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 107,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 107,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -6700,62 +6552,43 @@
         file: 1,
         pkgId: 0,
         line: 108,
-        column: 9,
+        column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 108,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 109,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 109,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 110,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 110,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 123,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 123,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -6765,59 +6598,17 @@
         file: 1,
         pkgId: 0,
         line: 124,
-        column: 9,
+        column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 124,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 125,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 125,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 126,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 126,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -6829,20 +6620,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 140,
-        column: 9,
+        line: 136,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 140,
-        column: 11,
+        line: 136,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6850,39 +6643,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 141,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 141,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 142,
+        line: 137,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 137,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -6894,20 +6666,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 159,
-        column: 9,
+        line: 149,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 159,
-        column: 11,
+        line: 149,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6915,39 +6689,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 160,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 160,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 161,
+        line: 150,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 161,
+        line: 150,
         column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -6959,20 +6712,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 175,
-        column: 9,
+        line: 163,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 175,
-        column: 11,
+        line: 163,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -6980,107 +6735,44 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 176,
-        column: 25,
+        line: 164,
+        column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 176,
-        column: 29,
+        line: 164,
+        column: 68,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
       }
     },
     {
       kind: "LitConstExpr",
       begin: {
-        file: 1,
-        pkgId: 0,
+        file: 0,
+        pkgId: 2,
         line: 177,
-        column: 17,
+        column: 19,
         ignore: false
       },
       end: {
-        file: 1,
-        pkgId: 0,
+        file: 0,
+        pkgId: 2,
         line: 177,
-        column: 68,
+        column: 23,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 191,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 191,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 192,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 192,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 193,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 193,
-        column: 68,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -7089,60 +6781,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 209,
-        column: 12,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 209,
-        column: 14,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 210,
-        column: 28,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 210,
-        column: 32,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 211,
+        line: 178,
         column: 20,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 211,
+        line: 178,
         column: 71,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -7154,20 +6804,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 216,
-        column: 16,
+        line: 183,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 216,
-        column: 18,
+        line: 183,
+        column: 27,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -7175,39 +6827,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 217,
-        column: 33,
+        line: 184,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 217,
-        column: 37,
+        line: 184,
+        column: 75,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 218,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 218,
-        column: 76,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -7219,237 +6850,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 223,
-        column: 17,
+        line: 190,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 223,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 224,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 224,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 225,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 225,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 230,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 230,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 231,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 231,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 232,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 232,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 237,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 237,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 238,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 238,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 239,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 239,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 294,
-        column: 12,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 294,
-        column: 14,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 295,
+        line: 190,
         column: 28,
         ignore: false
       },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 295,
-        column: 32,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -7457,17 +6873,156 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 296,
+        line: 191,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 191,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 197,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 197,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 198,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 198,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 204,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 204,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 205,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 205,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 258,
+        column: 19,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 258,
+        column: 23,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 259,
         column: 20,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 296,
+        line: 259,
         column: 71,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -7479,20 +7034,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 301,
-        column: 16,
+        line: 264,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 301,
-        column: 18,
+        line: 264,
+        column: 27,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -7500,21 +7057,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 302,
-        column: 33,
+        line: 265,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 302,
-        column: 37,
+        line: 265,
+        column: 75,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
       }
     },
     {
@@ -7522,17 +7080,41 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 303,
+        line: 271,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 271,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 272,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 303,
+        line: 272,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -7544,20 +7126,114 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 308,
-        column: 17,
+        line: 278,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 308,
+        line: 278,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 279,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 279,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 285,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 285,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 286,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 286,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 339,
         column: 19,
         ignore: false
       },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 339,
+        column: 23,
+        ignore: false
+      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -7565,39 +7241,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 309,
-        column: 33,
+        line: 340,
+        column: 20,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 309,
-        column: 37,
+        line: 340,
+        column: 71,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 310,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 310,
-        column: 76,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -7609,20 +7264,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 315,
-        column: 17,
+        line: 345,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 315,
-        column: 19,
+        line: 345,
+        column: 27,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -7630,39 +7287,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 316,
-        column: 33,
+        line: 346,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 316,
-        column: 37,
+        line: 346,
+        column: 75,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 317,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 317,
-        column: 76,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -7674,20 +7310,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 322,
-        column: 17,
+        line: 352,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 322,
-        column: 19,
+        line: 352,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -7695,39 +7333,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 323,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 323,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 324,
+        line: 353,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 324,
+        line: 353,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -7739,20 +7356,137 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 379,
-        column: 12,
+        line: 359,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 379,
-        column: 14,
+        line: 359,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 360,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 360,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 366,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 366,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 367,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 367,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 373,
+        column: 24,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 373,
+        column: 28,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 374,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 374,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
       }
     },
     {
@@ -7761,475 +7495,21 @@
         file: 0,
         pkgId: 2,
         line: 380,
-        column: 28,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
         line: 380,
-        column: 32,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 381,
-        column: 20,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 381,
-        column: 71,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 386,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 386,
-        column: 18,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 387,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 387,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 388,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 388,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 393,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 393,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 394,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 394,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 395,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 395,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 400,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 400,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 401,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 401,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 402,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 402,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 407,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 407,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 408,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 408,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 409,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 409,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 414,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 414,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 415,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 415,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 416,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 416,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 421,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 421,
-        column: 19,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 422,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 422,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 423,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 423,
-        column: 76,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 486,
-        column: 12,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 486,
-        column: 14,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 487,
         column: 28,
         ignore: false
       },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 487,
-        column: 32,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8237,17 +7517,64 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 488,
+        line: 381,
+        column: 25,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 381,
+        column: 76,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.PowerManager.BatteryManager.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 442,
+        column: 19,
+        ignore: false
+      },
+      end: {
+        file: 0,
+        pkgId: 2,
+        line: 442,
+        column: 23,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 0,
+        pkgId: 2,
+        line: 443,
         column: 20,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 488,
+        line: 443,
         column: 71,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -8259,20 +7586,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 493,
-        column: 16,
+        line: 448,
+        column: 23,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 493,
-        column: 18,
+        line: 448,
+        column: 27,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8280,39 +7609,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 494,
-        column: 33,
+        line: 449,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 494,
-        column: 37,
+        line: 449,
+        column: 75,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 495,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 495,
-        column: 76,
-        ignore: false
-      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -8324,20 +7632,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 500,
-        column: 17,
+        line: 455,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 500,
-        column: 19,
+        line: 455,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8345,39 +7655,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 501,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 501,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 502,
+        line: 456,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 502,
+        line: 456,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -8389,20 +7678,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 507,
-        column: 17,
+        line: 462,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 507,
-        column: 19,
+        line: 462,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8410,39 +7701,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 508,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 508,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 509,
+        line: 463,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 509,
+        line: 463,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -8454,20 +7724,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 514,
-        column: 17,
+        line: 469,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 514,
-        column: 19,
+        line: 469,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8475,39 +7747,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 515,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 515,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 516,
+        line: 470,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 516,
+        line: 470,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -8519,20 +7770,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 521,
-        column: 17,
+        line: 476,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 521,
-        column: 19,
+        line: 476,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8540,39 +7793,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 522,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 522,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 523,
+        line: 477,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 523,
+        line: 477,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -8584,20 +7816,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 528,
-        column: 17,
+        line: 483,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 528,
-        column: 19,
+        line: 483,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8605,39 +7839,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 529,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 529,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 530,
+        line: 484,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 530,
+        line: 484,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",
@@ -8649,20 +7862,22 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 535,
-        column: 17,
+        line: 490,
+        column: 24,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 535,
-        column: 19,
+        line: 490,
+        column: 28,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -8670,39 +7885,18 @@
       begin: {
         file: 0,
         pkgId: 2,
-        line: 536,
-        column: 33,
-        ignore: false
-      },
-      end: {
-        file: 0,
-        pkgId: 2,
-        line: 536,
-        column: 37,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 0,
-        pkgId: 2,
-        line: 537,
+        line: 491,
         column: 25,
         ignore: false
       },
       end: {
         file: 0,
         pkgId: 2,
-        line: 537,
+        line: 491,
         column: 76,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.PowerManager.BatteryManager.Core",

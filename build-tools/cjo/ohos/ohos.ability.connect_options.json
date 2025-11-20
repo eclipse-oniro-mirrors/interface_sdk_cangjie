@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.ability.connect_options",
-  pkgDepInfo: "{\"package\":\"ohos.ability.connect_options\",\"isMacro\":false,\"accessLevel\":\"protected\",\"dependencies\":[{\"package\":\"ohos.element_name\",\"isStd\":false,\"imports\":[{\"file\":\"connect_options.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":37}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"connect_options.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":18}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"hilog.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":20}}]},{\"package\":\"ohos.rpc\",\"isStd\":false,\"imports\":[{\"file\":\"connect_options.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":18}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.ability.connect_options\",\"isMacro\":false,\"accessLevel\":\"protected\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"connect_options.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":49}}]},{\"package\":\"ohos.element_name\",\"isStd\":false,\"imports\":[{\"file\":\"connect_options.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":37}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"connect_options.cj\",\"begin\":{\"line\":21,\"column\":18},\"end\":{\"line\":21,\"column\":25}},{\"file\":\"connect_options.cj\",\"begin\":{\"line\":21,\"column\":27},\"end\":{\"line\":21,\"column\":41}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"hilog.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":31}}]},{\"package\":\"ohos.rpc\",\"isStd\":false,\"imports\":[{\"file\":\"connect_options.cj\",\"begin\":{\"line\":22,\"column\":18},\"end\":{\"line\":22,\"column\":31}},{\"file\":\"connect_options.cj\",\"begin\":{\"line\":22,\"column\":33},\"end\":{\"line\":22,\"column\":52}}]}],\"features\":[]}",
   imports: [
     "ohos.element_name",
     "ohos.rpc",
@@ -24,14 +24,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 37,
             ignore: false
           },
@@ -46,44 +46,110 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
-            column: 1,
+            line: 21,
+            column: 18,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
-            column: 18,
+            line: 21,
+            column: 25,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "ffi"
           ],
-          identifier: "*",
+          identifier: "FFIData",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 1,
+            line: 21,
+            column: 27,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 21,
+            column: 41,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "ffi"
+          ],
+          identifier: "FFIDataManager",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
             column: 18,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 31,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "rpc"
           ],
-          identifier: "*",
+          identifier: "IRemoteObject",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 33,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 52,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "rpc"
+          ],
+          identifier: "createIRemoteObject",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 49,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "business_exception"
+          ],
+          identifier: "BusinessException",
           asIdentifier: ""
         },
         {
@@ -116,22 +182,22 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
-            column: 20,
+            line: 20,
+            column: 31,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "hilog"
           ],
-          identifier: "*",
+          identifier: "HilogChannel",
           asIdentifier: ""
         },
         {
@@ -161,6 +227,9 @@
   ],
   allTypes: [
     {
+      kind: "Int32"
+    },
+    {
       kind: "Type",
       typeArgs: [
 
@@ -169,7 +238,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 1
+          index: 2
         }
       }
     },
@@ -185,17 +254,17 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 2
+          index: 3
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        5,
-        2,
-        5,
-        6
+        6,
+        3,
+        6,
+        1
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -207,15 +276,23 @@
       kind: "Int64"
     },
     {
-      kind: "Int32"
-    },
-    {
     },
     {
       kind: "Func",
       typeArgs: [
-        5,
-        2,
+        6,
+        3,
+        1
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 7,
+        isC: true
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
         6
       ],
       info_type: "FuncTyInfo",
@@ -227,24 +304,13 @@
     {
       kind: "Func",
       typeArgs: [
-        5
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 7,
-        isC: true
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        4,
+        5,
         8,
         9
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 3
+        retType: 4
       }
     },
     {
@@ -256,7 +322,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 21
+          index: 22
         }
       }
     },
@@ -309,7 +375,7 @@
     {
       kind: "Func",
       typeArgs: [
-        6
+        1
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -366,7 +432,7 @@
     {
       kind: "CPointer",
       typeArgs: [
-        3
+        4
       ]
     },
     {
@@ -396,20 +462,70 @@
   ],
   allDecls: [
     {
-      kind: "TypeAliasDecl",
+      kind: "VarDecl",
       isTopLevel: true,
       fullPkgName: "ohos.ability.connect_options",
       begin: {
         file: 1,
         pkgId: 0,
-        line: 22,
+        line: 26,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 22,
+        line: 26,
+        column: 41,
+        ignore: false
+      },
+      identifier: "ERROR_CODE_INNER",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 26,
+        column: 7,
+        ignore: false
+      },
+      attributes: [
+        144678138029293616,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 1,
+      mangledName: "",
+      exportId: "_CN28ohos.ability.connect_options16ERROR_CODE_INNERE",
+      mangledBeforeSema: "28ohos.ability.connect_options16ERROR_CODE_INNERV$$i",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 12820464909098194885,
+        bodyHash: 12669857238891627138
+      },
+      info_type: "VarInfo",
+      info: {
+        isConst: true,
+        initializer: 1
+      }
+    },
+    {
+      kind: "TypeAliasDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.ability.connect_options",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 25,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 25,
         column: 36,
         ignore: false
       },
@@ -417,7 +533,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 22,
+        line: 25,
         column: 6,
         ignore: false
       },
@@ -428,7 +544,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 2,
       mangledName: "",
       exportId: "_CN28ohos.ability.connect_options17ElementNameHandleE",
       mangledBeforeSema: "28ohos.ability.connect_options17ElementNameHandleT",
@@ -441,7 +557,7 @@
       },
       info_type: "AliasInfo",
       info: {
-        aliasedTy: 2
+        aliasedTy: 3
       }
     },
     {
@@ -455,14 +571,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 29,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 35,
         column: 2,
         ignore: false
       },
@@ -470,7 +586,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 29,
         column: 8,
         ignore: false
       },
@@ -481,7 +597,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 4,
       mangledName: "_CN28ohos.ability.connect_options29CJAbilityConnectCallbackFuncsE",
       exportId: "_CN28ohos.ability.connect_options29CJAbilityConnectCallbackFuncsE",
       mangledBeforeSema: "28ohos.ability.connect_options29CJAbilityConnectCallbackFuncsS",
@@ -490,7 +606,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 10474287441897005386
+        bodyHash: 12230921249717903680
       },
       info_type: "StructInfo",
       info: {
@@ -498,10 +614,10 @@
 
         ],
         body: [
-          3,
           4,
           5,
-          6
+          6,
+          7
         ]
       }
     },
@@ -511,14 +627,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 31,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 31,
         column: 79,
         ignore: false
       },
@@ -526,7 +642,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 31,
         column: 13,
         ignore: false
       },
@@ -537,7 +653,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "",
       exportId: "_CN28ohos.ability.connect_options29CJAbilityConnectCallbackFuncs9onConnectK_E",
       mangledBeforeSema: "28ohos.ability.connect_options29CJAbilityConnectCallbackFuncsS9onConnect$$5CFunc<Ful17ElementNameHandleli>",
@@ -559,14 +675,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 32,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 32,
         column: 75,
         ignore: false
       },
@@ -574,7 +690,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 32,
         column: 13,
         ignore: false
       },
@@ -607,14 +723,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 33,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 33,
         column: 44,
         ignore: false
       },
@@ -622,7 +738,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 33,
         column: 13,
         ignore: false
       },
@@ -659,14 +775,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 26,
+        line: 30,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 34,
         column: 9,
         ignore: false
       },
@@ -674,7 +790,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 26,
+        line: 30,
         column: 5,
         ignore: false
       },
@@ -702,9 +818,9 @@
           paramLists: [
             {
               params: [
-                7,
                 8,
-                9
+                9,
+                10
               ],
               desugars: [
                 0,
@@ -713,7 +829,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 4
         }
       }
     },
@@ -723,14 +839,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 31,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 31,
         column: 79,
         ignore: false
       },
@@ -738,7 +854,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 31,
         column: 13,
         ignore: false
       },
@@ -749,7 +865,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "_CN28ohos.ability.connect_options29CJAbilityConnectCallbackFuncs4initHFCulrliEFCulriEFCulEE9onConnectE",
       exportId: "",
       mangledBeforeSema: "",
@@ -771,14 +887,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 32,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 32,
         column: 75,
         ignore: false
       },
@@ -786,7 +902,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 28,
+        line: 32,
         column: 13,
         ignore: false
       },
@@ -819,14 +935,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 33,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 33,
         column: 44,
         ignore: false
       },
@@ -834,7 +950,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 33,
         column: 13,
         ignore: false
       },
@@ -872,14 +988,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 44,
+        line: 48,
         column: 2,
         ignore: false
       },
@@ -887,7 +1003,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 6,
         ignore: false
       },
@@ -898,7 +1014,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "_CN28ohos.ability.connect_options23connectOptionsOnConnectHlrli",
       exportId: "_CN28ohos.ability.connect_options23connectOptionsOnConnectHlrli",
       mangledBeforeSema: "28ohos.ability.connect_options23connectOptionsOnConnectFl17ElementNameHandleli$$u",
@@ -907,7 +1023,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 12446924124110182078
+        bodyHash: 17816505149221501908
       },
       info_type: "FuncInfo",
       info: {
@@ -915,10 +1031,10 @@
           paramLists: [
             {
               params: [
-                11,
                 12,
                 13,
-                14
+                14,
+                15
               ],
               desugars: [
                 0,
@@ -938,14 +1054,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 39,
         ignore: false
       },
@@ -953,7 +1069,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 30,
         ignore: false
       },
@@ -964,7 +1080,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN28ohos.ability.connect_options23connectOptionsOnConnectHlrliE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -985,14 +1101,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 73,
         ignore: false
       },
@@ -1000,7 +1116,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 41,
         ignore: false
       },
@@ -1011,7 +1127,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 3,
       mangledName: "_CN28ohos.ability.connect_options23connectOptionsOnConnectHlrliE13elementHandleE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1032,14 +1148,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 75,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 90,
         ignore: false
       },
@@ -1047,7 +1163,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 75,
         ignore: false
       },
@@ -1058,7 +1174,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN28ohos.ability.connect_options23connectOptionsOnConnectHlrliE8objectIdE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1079,14 +1195,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 92,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 109,
         ignore: false
       },
@@ -1094,7 +1210,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 38,
         column: 92,
         ignore: false
       },
@@ -1105,7 +1221,7 @@
       annotations: [
 
       ],
-      type: 6,
+      type: 1,
       mangledName: "_CN28ohos.ability.connect_options23connectOptionsOnConnectHlrliE10resultCodeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1131,14 +1247,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 57,
+        line: 63,
         column: 2,
         ignore: false
       },
@@ -1146,7 +1262,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 6,
         ignore: false
       },
@@ -1166,7 +1282,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 2964970787188082897
+        bodyHash: 11576458006992167330
       },
       info_type: "FuncInfo",
       info: {
@@ -1174,9 +1290,9 @@
           paramLists: [
             {
               params: [
-                16,
                 17,
-                18
+                18,
+                19
               ],
               desugars: [
                 0,
@@ -1195,14 +1311,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 42,
         ignore: false
       },
@@ -1210,7 +1326,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 33,
         ignore: false
       },
@@ -1221,7 +1337,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN28ohos.ability.connect_options26connectOptionsOnDisconnectHlriE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1242,14 +1358,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 44,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 76,
         ignore: false
       },
@@ -1257,7 +1373,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 44,
         ignore: false
       },
@@ -1268,7 +1384,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 3,
       mangledName: "_CN28ohos.ability.connect_options26connectOptionsOnDisconnectHlriE13elementHandleE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1289,14 +1405,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 78,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 95,
         ignore: false
       },
@@ -1304,7 +1420,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 54,
         column: 78,
         ignore: false
       },
@@ -1315,7 +1431,7 @@
       annotations: [
 
       ],
-      type: 6,
+      type: 1,
       mangledName: "_CN28ohos.ability.connect_options26connectOptionsOnDisconnectHlriE10resultCodeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1341,14 +1457,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 66,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 68,
+        line: 74,
         column: 2,
         ignore: false
       },
@@ -1356,7 +1472,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 66,
         column: 6,
         ignore: false
       },
@@ -1376,7 +1492,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 9223363883165838289
+        bodyHash: 3772216421261681775
       },
       info_type: "FuncInfo",
       info: {
@@ -1384,7 +1500,7 @@
           paramLists: [
             {
               params: [
-                20
+                21
               ],
               desugars: [
                 0
@@ -1401,14 +1517,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 66,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 66,
         column: 37,
         ignore: false
       },
@@ -1416,7 +1532,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 66,
         column: 28,
         ignore: false
       },
@@ -1427,7 +1543,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN28ohos.ability.connect_options21connectOptionsReleaseHlE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1453,14 +1569,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 70,
+        line: 76,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 97,
+        line: 103,
         column: 2,
         ignore: false
       },
@@ -1468,7 +1584,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 70,
+        line: 76,
         column: 17,
         ignore: false
       },
@@ -1496,11 +1612,11 @@
           19
         ],
         body: [
-          22,
           23,
           24,
           25,
-          28
+          26,
+          29
         ]
       }
     },
@@ -1510,14 +1626,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 71,
+        line: 77,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 71,
+        line: 77,
         column: 66,
         ignore: false
       },
@@ -1525,7 +1641,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 71,
+        line: 77,
         column: 19,
         ignore: false
       },
@@ -1558,14 +1674,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 78,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 78,
         column: 54,
         ignore: false
       },
@@ -1573,7 +1689,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 78,
         column: 19,
         ignore: false
       },
@@ -1606,14 +1722,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 79,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 79,
         column: 44,
         ignore: false
       },
@@ -1621,7 +1737,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 79,
         column: 19,
         ignore: false
       },
@@ -1658,14 +1774,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 75,
+        line: 81,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 84,
+        line: 90,
         column: 6,
         ignore: false
       },
@@ -1673,7 +1789,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 75,
+        line: 81,
         column: 5,
         ignore: false
       },
@@ -1693,7 +1809,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 3108440805939784832
+        bodyHash: 1723484123234283142
       },
       info_type: "FuncInfo",
       info: {
@@ -1701,8 +1817,8 @@
           paramLists: [
             {
               params: [
-                26,
-                27
+                27,
+                28
               ],
               desugars: [
                 0,
@@ -1720,14 +1836,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 82,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 82,
         column: 44,
         ignore: false
       },
@@ -1735,7 +1851,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 82,
         column: 9,
         ignore: false
       },
@@ -1767,14 +1883,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 83,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 83,
         column: 34,
         ignore: false
       },
@@ -1782,7 +1898,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 83,
         column: 9,
         ignore: false
       },
@@ -1818,14 +1934,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 86,
+        line: 92,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 102,
         column: 6,
         ignore: false
       },
@@ -1833,7 +1949,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 86,
+        line: 92,
         column: 5,
         ignore: false
       },
@@ -1853,7 +1969,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 5871936268006508503
+        bodyHash: 7626927140971303787
       },
       info_type: "FuncInfo",
       info: {
@@ -1861,9 +1977,9 @@
           paramLists: [
             {
               params: [
-                29,
                 30,
-                31
+                31,
+                32
               ],
               desugars: [
                 0,
@@ -1882,14 +1998,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 87,
+        line: 93,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 87,
+        line: 93,
         column: 56,
         ignore: false
       },
@@ -1897,7 +2013,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 87,
+        line: 93,
         column: 9,
         ignore: false
       },
@@ -1929,14 +2045,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 94,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 94,
         column: 44,
         ignore: false
       },
@@ -1944,7 +2060,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 94,
         column: 9,
         ignore: false
       },
@@ -1976,14 +2092,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 89,
+        line: 95,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 89,
+        line: 95,
         column: 34,
         ignore: false
       },
@@ -1991,7 +2107,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 89,
+        line: 95,
         column: 9,
         ignore: false
       },
@@ -2028,14 +2144,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 106,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 107,
+        line: 113,
         column: 2,
         ignore: false
       },
@@ -2043,7 +2159,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 106,
         column: 6,
         ignore: false
       },
@@ -2063,7 +2179,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 7100840738668961175
+        bodyHash: 585224368278876242
       },
       info_type: "FuncInfo",
       info: {
@@ -2071,7 +2187,7 @@
           paramLists: [
             {
               params: [
-                33
+                34
               ],
               desugars: [
                 0
@@ -2088,14 +2204,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 106,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 106,
         column: 83,
         ignore: false
       },
@@ -2103,7 +2219,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 100,
+        line: 106,
         column: 36,
         ignore: false
       },
@@ -2140,22 +2256,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 115,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 109,
-        column: 122,
+        line: 116,
+        column: 75,
         ignore: false
       },
       identifier: "RegisterCJAbilityConnectCallbackFuncs",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 115,
         column: 14,
         ignore: false
       },
@@ -2183,7 +2299,7 @@
           paramLists: [
             {
               params: [
-                35
+                36
               ],
               desugars: [
                 0
@@ -2200,23 +2316,23 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 109,
-        column: 52,
+        line: 116,
+        column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 109,
-        column: 115,
+        line: 116,
+        column: 68,
         ignore: false
       },
       identifier: "funcs",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 109,
-        column: 52,
+        line: 116,
+        column: 5,
         ignore: false
       },
       attributes: [
@@ -2248,14 +2364,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 118,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 118,
         column: 111,
         ignore: false
       },
@@ -2263,7 +2379,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 118,
         column: 5,
         ignore: false
       },
@@ -2283,7 +2399,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 9516937053909195466
+        bodyHash: 9610406103833083963
       },
       info_type: "VarInfo",
       info: {
@@ -2296,14 +2412,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 59,
         ignore: false
       },
@@ -2311,7 +2427,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 5,
         ignore: false
       },
@@ -2331,7 +2447,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11153182241336478132
+        bodyHash: 3473960820098618876
       },
       info_type: "VarInfo",
       info: {
@@ -2339,7 +2455,28 @@
     }
   ],
   allExprs: [
-
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 26,
+        column: 33,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 26,
+        column: 41,
+        ignore: false
+      },
+      type: 1,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "16000050"
+      }
+    }
   ],
   access: "Protected",
   moduleName: ""

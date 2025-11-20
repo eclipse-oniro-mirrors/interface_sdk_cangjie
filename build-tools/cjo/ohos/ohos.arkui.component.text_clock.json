@@ -1409,6 +1409,17 @@
       }
     },
     {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 4,
+        isC: true
+      }
+    },
+    {
       kind: "Class",
       typeArgs: [
 
@@ -1417,7 +1428,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 284
+          index: 285
         }
       }
     },
@@ -1428,7 +1439,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 53
+        retType: 54
       }
     },
     {
@@ -1453,19 +1464,19 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 289
+          index: 290
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        58,
-        59
+        59,
+        60
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 56
+        retType: 57
       }
     },
     {
@@ -1484,7 +1495,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        53
+        54
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1501,33 +1512,33 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 58
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        58
-      ],
-      info_type: "FuncTyInfo",
-      info: {
         retType: 59
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        63
+        59
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 60
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        64
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        64
+        65
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1556,7 +1567,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 289
+          index: 290
         },
         isThisTy: true
       }
@@ -1564,17 +1575,17 @@
     {
       kind: "Func",
       typeArgs: [
-        67
+        68
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        68
+        69
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1600,17 +1611,17 @@
     {
       kind: "Func",
       typeArgs: [
-        70
+        71
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        71
+        72
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1636,17 +1647,17 @@
     {
       kind: "Func",
       typeArgs: [
-        73
+        74
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        74
+        75
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1672,17 +1683,17 @@
     {
       kind: "Func",
       typeArgs: [
-        76
+        77
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        77
+        78
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1708,17 +1719,17 @@
     {
       kind: "Func",
       typeArgs: [
-        79
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        80
+        81
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1744,17 +1755,17 @@
     {
       kind: "Func",
       typeArgs: [
-        82
+        83
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        83
+        84
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1767,7 +1778,7 @@
     {
       kind: "Struct",
       typeArgs: [
-        84
+        85
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1793,17 +1804,17 @@
     {
       kind: "Func",
       typeArgs: [
-        86
+        87
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 65
+        retType: 66
       }
     },
     {
       kind: "Enum",
       typeArgs: [
-        84
+        85
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1816,7 +1827,7 @@
     {
       kind: "Class",
       typeArgs: [
-        56
+        57
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1835,94 +1846,94 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 314
+          index: 315
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        63
+        64
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        67
+        68
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        70
+        71
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        73
+        74
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        76
+        77
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        79
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        82
+        83
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        86
+        87
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 88
+        retType: 89
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        88
+        89
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -16714,6 +16725,71 @@
       }
     },
     {
+      kind: "FuncDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.arkui.component.text_clock",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 346,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 346,
+        column: 60,
+        ignore: false
+      },
+      identifier: "FfiOHOSAceFrameworkTextClockResetTextColor",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 346,
+        column: 10,
+        ignore: false
+      },
+      attributes: [
+        144968409101123632,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 53,
+      mangledName: "FfiOHOSAceFrameworkTextClockResetTextColor",
+      exportId: "FfiOHOSAceFrameworkTextClockResetTextColor",
+      mangledBeforeSema: "31ohos.arkui.component.text_clock42FfiOHOSAceFrameworkTextClockResetTextColorF$$u",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 7222278799635774413,
+        bodyHash: 0
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 4
+        }
+      }
+    },
+    {
       kind: "ClassDecl",
       isTopLevel: true,
       fullPkgName: "ohos.arkui.component.text_clock",
@@ -16724,14 +16800,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 355,
+        line: 357,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 403,
+        line: 405,
         column: 2,
         ignore: false
       },
@@ -16739,7 +16815,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 355,
+        line: 357,
         column: 14,
         ignore: false
       },
@@ -16763,7 +16839,7 @@
           ]
         }
       ],
-      type: 53,
+      type: 54,
       mangledName: "_CN31ohos.arkui.component.text_clock19TextClockControllerE",
       exportId: "_CN31ohos.arkui.component.text_clock19TextClockControllerE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock19TextClockControllerC",
@@ -16777,13 +16853,13 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          55
+          56
         ],
         body: [
-          285,
           286,
           287,
-          288
+          288,
+          289
         ]
       }
     },
@@ -16797,14 +16873,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 364,
+        line: 366,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 368,
+        line: 370,
         column: 6,
         ignore: false
       },
@@ -16812,7 +16888,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 364,
+        line: 366,
         column: 12,
         ignore: false
       },
@@ -16836,7 +16912,7 @@
           ]
         }
       ],
-      type: 54,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.text_clock19TextClockController6<init>Hv",
       exportId: "_CN31ohos.arkui.component.text_clock19TextClockController6<init>Hv",
       mangledBeforeSema: "31ohos.arkui.component.text_clock19TextClockControllerC6<init>F$$",
@@ -16845,7 +16921,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4779205954398101289
+        bodyHash: 6517940462873264148
       },
       info_type: "FuncInfo",
       info: {
@@ -16860,7 +16936,7 @@
               ]
             }
           ],
-          retType: 53
+          retType: 54
         }
       }
     },
@@ -16874,14 +16950,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 370,
+        line: 372,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 372,
+        line: 374,
         column: 6,
         ignore: false
       },
@@ -16889,7 +16965,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 370,
+        line: 372,
         column: 5,
         ignore: false
       },
@@ -16909,7 +16985,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 5206554353347596793
+        bodyHash: 6138366978356062318
       },
       info_type: "FuncInfo",
       info: {
@@ -16938,14 +17014,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 383,
+        line: 385,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 387,
+        line: 389,
         column: 6,
         ignore: false
       },
@@ -16953,7 +17029,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 383,
+        line: 385,
         column: 17,
         ignore: false
       },
@@ -16986,7 +17062,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11962316306928451644
+        bodyHash: 17899313069253847427
       },
       info_type: "FuncInfo",
       info: {
@@ -17015,14 +17091,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 398,
+        line: 400,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 402,
+        line: 404,
         column: 6,
         ignore: false
       },
@@ -17030,7 +17106,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 398,
+        line: 400,
         column: 17,
         ignore: false
       },
@@ -17063,7 +17139,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7185436042614318206
+        bodyHash: 13748170345025951179
       },
       info_type: "FuncInfo",
       info: {
@@ -17093,14 +17169,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 412,
+        line: 414,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 634,
+        line: 640,
         column: 2,
         ignore: false
       },
@@ -17108,7 +17184,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 412,
+        line: 414,
         column: 14,
         ignore: false
       },
@@ -17132,7 +17208,7 @@
           ]
         }
       ],
-      type: 56,
+      type: 57,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClockE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClockE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC",
@@ -17146,20 +17222,20 @@
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          87,
-          88
+          88,
+          89
         ],
         body: [
-          290,
-          296,
-          298,
-          300,
-          302,
-          304,
-          306,
-          308,
-          310,
-          312
+          291,
+          297,
+          299,
+          301,
+          303,
+          305,
+          307,
+          309,
+          311,
+          313
         ]
       }
     },
@@ -17173,14 +17249,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 436,
+        line: 438,
         column: 6,
         ignore: false
       },
@@ -17188,7 +17264,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 12,
         ignore: false
       },
@@ -17212,7 +17288,7 @@
           ]
         }
       ],
-      type: 57,
+      type: 58,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock6<init>HNNat6OptionIfENNatY5_ICNY_19TextClockControllerEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock6<init>HNNat6OptionIfENNatY5_ICNY_19TextClockControllerEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC6<init>FO1_f!14timeZoneOffset=O1_19TextClockController!10controller=$$",
@@ -17221,7 +17297,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2859119544258547585
+        bodyHash: 18202493678990254490
       },
       info_type: "FuncInfo",
       info: {
@@ -17229,16 +17305,16 @@
           paramLists: [
             {
               params: [
-                291,
-                293
-              ],
-              desugars: [
                 292,
                 294
+              ],
+              desugars: [
+                293,
+                295
               ]
             }
           ],
-          retType: 56
+          retType: 57
         }
       }
     },
@@ -17248,14 +17324,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 49,
         ignore: false
       },
@@ -17263,7 +17339,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 17,
         ignore: false
       },
@@ -17274,7 +17350,7 @@
       annotations: [
 
       ],
-      type: 58,
+      type: 59,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock4initHNNat6OptionIfENNatY5_ICNY_19TextClockControllerEEE14timeZoneOffsetIfE",
       exportId: "",
       mangledBeforeSema: "",
@@ -17300,14 +17376,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 45,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 49,
         ignore: false
       },
@@ -17326,7 +17402,7 @@
       annotations: [
 
       ],
-      type: 60,
+      type: 61,
       mangledName: "_CPI31ohos.arkui.component.text_clock9TextClock4initHNNat6OptionIfENNatY5_ICNY_19TextClockControllerEEE14timeZoneOffsetHv",
       exportId: "",
       mangledBeforeSema: "",
@@ -17350,7 +17426,7 @@
               ]
             }
           ],
-          retType: 58
+          retType: 59
         }
       }
     },
@@ -17360,14 +17436,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 51,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 91,
         ignore: false
       },
@@ -17375,7 +17451,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 51,
         ignore: false
       },
@@ -17386,7 +17462,7 @@
       annotations: [
 
       ],
-      type: 59,
+      type: 60,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock4initHNNat6OptionIfENNatY5_ICNY_19TextClockControllerEEE10controllerIY7_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -17412,14 +17488,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 87,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 91,
         ignore: false
       },
@@ -17438,7 +17514,7 @@
       annotations: [
 
       ],
-      type: 61,
+      type: 62,
       mangledName: "_CPI31ohos.arkui.component.text_clock9TextClock4initHNNat6OptionIfENNatY5_ICNY_19TextClockControllerEEE10controllerHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -17455,14 +17531,14 @@
           paramLists: [
             {
               params: [
-                295
+                296
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 59
+          retType: 60
         }
       }
     },
@@ -17472,14 +17548,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 49,
         ignore: false
       },
@@ -17487,7 +17563,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 426,
+        line: 428,
         column: 17,
         ignore: false
       },
@@ -17498,7 +17574,7 @@
       annotations: [
 
       ],
-      type: 58,
+      type: 59,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock4initHNNat6OptionIfENNatY5_ICNY_19TextClockControllerEEE12controller.1HY3_E14timeZoneOffsetIfE",
       exportId: "",
       mangledBeforeSema: "",
@@ -17523,14 +17599,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 455,
+        line: 457,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 462,
+        line: 464,
         column: 6,
         ignore: false
       },
@@ -17538,7 +17614,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 455,
+        line: 457,
         column: 17,
         ignore: false
       },
@@ -17562,7 +17638,7 @@
           ]
         }
       ],
-      type: 62,
+      type: 63,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock12onDateChangeHNNat6OptionIF0ulEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock12onDateChangeHNNat6OptionIF0ulEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC12onDateChangeFO1_Ful$$H",
@@ -17571,7 +17647,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12870403920385823311
+        bodyHash: 957071864438855588
       },
       info_type: "FuncInfo",
       info: {
@@ -17579,14 +17655,14 @@
           paramLists: [
             {
               params: [
-                297
+                298
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -17596,14 +17672,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 455,
+        line: 457,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 455,
+        line: 457,
         column: 56,
         ignore: false
       },
@@ -17611,7 +17687,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 455,
+        line: 457,
         column: 30,
         ignore: false
       },
@@ -17622,7 +17698,7 @@
       annotations: [
 
       ],
-      type: 63,
+      type: 64,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock12onDateChangeHNNat6OptionIF0ulEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -17647,14 +17723,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 480,
+        line: 482,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 489,
+        line: 491,
         column: 6,
         ignore: false
       },
@@ -17662,7 +17738,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 480,
+        line: 482,
         column: 17,
         ignore: false
       },
@@ -17686,7 +17762,7 @@
           ]
         }
       ],
-      type: 66,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock6formatHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock6formatHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC6formatFO1_11ResourceStr$$H",
@@ -17695,7 +17771,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6682794641695159221
+        bodyHash: 5477060584688630493
       },
       info_type: "FuncInfo",
       info: {
@@ -17703,14 +17779,14 @@
           paramLists: [
             {
               params: [
-                299
+                300
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -17720,14 +17796,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 480,
+        line: 482,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 480,
+        line: 482,
         column: 43,
         ignore: false
       },
@@ -17735,7 +17811,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 480,
+        line: 482,
         column: 24,
         ignore: false
       },
@@ -17746,7 +17822,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 68,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock6formatHNNat6OptionICN9ohos.base11ResourceStrEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -17771,14 +17847,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 503,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 507,
+        line: 509,
         column: 6,
         ignore: false
       },
@@ -17786,7 +17862,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 503,
         column: 17,
         ignore: false
       },
@@ -17810,7 +17886,7 @@
           ]
         }
       ],
-      type: 69,
+      type: 70,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC8fontSizeFO1_6Length$$H",
@@ -17819,7 +17895,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8420633767368987777
+        bodyHash: 11358258001129966952
       },
       info_type: "FuncInfo",
       info: {
@@ -17827,14 +17903,14 @@
           paramLists: [
             {
               params: [
-                301
+                302
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -17844,14 +17920,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 503,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 503,
         column: 40,
         ignore: false
       },
@@ -17859,7 +17935,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 503,
         column: 26,
         ignore: false
       },
@@ -17870,7 +17946,7 @@
       annotations: [
 
       ],
-      type: 70,
+      type: 71,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock8fontSizeHNNat6OptionICN9ohos.base6LengthEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -17895,14 +17971,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 520,
+        line: 521,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 526,
+        line: 532,
         column: 6,
         ignore: false
       },
@@ -17910,7 +17986,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 520,
+        line: 521,
         column: 17,
         ignore: false
       },
@@ -17934,7 +18010,7 @@
           ]
         }
       ],
-      type: 72,
+      type: 73,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC9fontColorFO1_13ResourceColor$$H",
@@ -17943,7 +18019,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14873614533010100781
+        bodyHash: 2805557631356628400
       },
       info_type: "FuncInfo",
       info: {
@@ -17951,14 +18027,14 @@
           paramLists: [
             {
               params: [
-                303
+                304
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -17968,14 +18044,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 520,
+        line: 521,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 520,
+        line: 521,
         column: 48,
         ignore: false
       },
@@ -17983,7 +18059,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 520,
+        line: 521,
         column: 27,
         ignore: false
       },
@@ -17994,7 +18070,7 @@
       annotations: [
 
       ],
-      type: 73,
+      type: 74,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock9fontColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -18019,14 +18095,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 538,
+        line: 544,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 544,
+        line: 550,
         column: 6,
         ignore: false
       },
@@ -18034,7 +18110,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 538,
+        line: 544,
         column: 17,
         ignore: false
       },
@@ -18058,7 +18134,7 @@
           ]
         }
       ],
-      type: 75,
+      type: 76,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC9fontStyleFO1_9FontStyle$$H",
@@ -18067,7 +18143,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 1387244354350734563
+        bodyHash: 6383774678026520602
       },
       info_type: "FuncInfo",
       info: {
@@ -18075,14 +18151,14 @@
           paramLists: [
             {
               params: [
-                305
+                306
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -18092,14 +18168,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 538,
+        line: 544,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 538,
+        line: 544,
         column: 44,
         ignore: false
       },
@@ -18107,7 +18183,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 538,
+        line: 544,
         column: 27,
         ignore: false
       },
@@ -18118,7 +18194,7 @@
       annotations: [
 
       ],
-      type: 76,
+      type: 77,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -18143,14 +18219,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 556,
+        line: 562,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 564,
+        line: 570,
         column: 6,
         ignore: false
       },
@@ -18158,7 +18234,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 556,
+        line: 562,
         column: 17,
         ignore: false
       },
@@ -18182,7 +18258,7 @@
           ]
         }
       ],
-      type: 78,
+      type: 79,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC10fontWeightFO1_10FontWeight$$H",
@@ -18191,7 +18267,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14881095708400819404
+        bodyHash: 1685634293151975484
       },
       info_type: "FuncInfo",
       info: {
@@ -18199,14 +18275,14 @@
           paramLists: [
             {
               params: [
-                307
+                308
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -18216,14 +18292,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 556,
+        line: 562,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 556,
+        line: 562,
         column: 46,
         ignore: false
       },
@@ -18231,7 +18307,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 556,
+        line: 562,
         column: 28,
         ignore: false
       },
@@ -18242,7 +18318,7 @@
       annotations: [
 
       ],
-      type: 79,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -18267,14 +18343,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 576,
+        line: 582,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 584,
+        line: 590,
         column: 6,
         ignore: false
       },
@@ -18282,7 +18358,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 576,
+        line: 582,
         column: 17,
         ignore: false
       },
@@ -18306,7 +18382,7 @@
           ]
         }
       ],
-      type: 66,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC10fontFamilyFO1_11ResourceStr$$H",
@@ -18315,7 +18391,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10962552277604286482
+        bodyHash: 1963219812601699082
       },
       info_type: "FuncInfo",
       info: {
@@ -18323,14 +18399,14 @@
           paramLists: [
             {
               params: [
-                309
+                310
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -18340,14 +18416,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 576,
+        line: 582,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 576,
+        line: 582,
         column: 47,
         ignore: false
       },
@@ -18355,7 +18431,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 576,
+        line: 582,
         column: 28,
         ignore: false
       },
@@ -18366,7 +18442,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 68,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -18391,14 +18467,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 597,
+        line: 602,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 608,
+        line: 614,
         column: 6,
         ignore: false
       },
@@ -18406,7 +18482,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 597,
+        line: 602,
         column: 17,
         ignore: false
       },
@@ -18430,7 +18506,7 @@
           ]
         }
       ],
-      type: 81,
+      type: 82,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC10textShadowFO1_5Array<13ShadowOptions>$$H",
@@ -18439,7 +18515,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7507439946222119792
+        bodyHash: 1989208891725846549
       },
       info_type: "FuncInfo",
       info: {
@@ -18447,14 +18523,14 @@
           paramLists: [
             {
               params: [
-                311
+                312
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -18464,14 +18540,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 597,
+        line: 602,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 597,
+        line: 602,
         column: 57,
         ignore: false
       },
@@ -18479,7 +18555,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 597,
+        line: 602,
         column: 28,
         ignore: false
       },
@@ -18490,7 +18566,7 @@
       annotations: [
 
       ],
-      type: 82,
+      type: 83,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEEE6valuesIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -18515,14 +18591,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 621,
+        line: 626,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 633,
+        line: 639,
         column: 6,
         ignore: false
       },
@@ -18530,7 +18606,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 621,
+        line: 626,
         column: 17,
         ignore: false
       },
@@ -18554,7 +18630,7 @@
           ]
         }
       ],
-      type: 85,
+      type: 86,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       exportId: "_CN31ohos.arkui.component.text_clock9TextClock10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock9TextClockC10textShadowFO1_13ShadowOptions$$H",
@@ -18563,7 +18639,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10891413712290965952
+        bodyHash: 17818309368111750112
       },
       info_type: "FuncInfo",
       info: {
@@ -18571,14 +18647,14 @@
           paramLists: [
             {
               params: [
-                313
+                314
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 65
+          retType: 66
         }
       }
     },
@@ -18588,14 +18664,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 621,
+        line: 626,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 621,
+        line: 626,
         column: 49,
         ignore: false
       },
@@ -18603,7 +18679,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 621,
+        line: 626,
         column: 28,
         ignore: false
       },
@@ -18614,7 +18690,7 @@
       annotations: [
 
       ],
-      type: 86,
+      type: 87,
       mangledName: "_CN31ohos.arkui.component.text_clock9TextClock10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -18679,7 +18755,7 @@
           ]
         }
       ],
-      type: 88,
+      type: 89,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttributeE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttributeE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI",
@@ -18693,18 +18769,18 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          97
+          98
         ],
         body: [
-          315,
-          317,
-          319,
-          321,
-          323,
-          325,
-          327,
-          329,
-          331
+          316,
+          318,
+          320,
+          322,
+          324,
+          326,
+          328,
+          330,
+          332
         ]
       }
     },
@@ -18757,7 +18833,7 @@
           ]
         }
       ],
-      type: 89,
+      type: 90,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute12onDateChangeHNNat6OptionIF0ulEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute12onDateChangeHNNat6OptionIF0ulEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI12onDateChangeFO1_Ful$$18TextClockAttribute",
@@ -18774,14 +18850,14 @@
           paramLists: [
             {
               params: [
-                316
+                317
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -18817,7 +18893,7 @@
       annotations: [
 
       ],
-      type: 63,
+      type: 64,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute12onDateChangeHNNat6OptionIF0ulEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -18881,7 +18957,7 @@
           ]
         }
       ],
-      type: 90,
+      type: 91,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute6formatHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute6formatHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI6formatFO1_11ResourceStr$$18TextClockAttribute",
@@ -18898,14 +18974,14 @@
           paramLists: [
             {
               params: [
-                318
+                319
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -18941,7 +19017,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 68,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute6formatHNNat6OptionICN9ohos.base11ResourceStrEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19005,7 +19081,7 @@
           ]
         }
       ],
-      type: 91,
+      type: 92,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI8fontSizeFO1_6Length$$18TextClockAttribute",
@@ -19022,14 +19098,14 @@
           paramLists: [
             {
               params: [
-                320
+                321
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -19065,7 +19141,7 @@
       annotations: [
 
       ],
-      type: 70,
+      type: 71,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19129,7 +19205,7 @@
           ]
         }
       ],
-      type: 92,
+      type: 93,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI9fontColorFO1_13ResourceColor$$18TextClockAttribute",
@@ -19146,14 +19222,14 @@
           paramLists: [
             {
               params: [
-                322
+                323
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -19189,7 +19265,7 @@
       annotations: [
 
       ],
-      type: 73,
+      type: 74,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19253,7 +19329,7 @@
           ]
         }
       ],
-      type: 93,
+      type: 94,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI9fontStyleFO1_9FontStyle$$18TextClockAttribute",
@@ -19270,14 +19346,14 @@
           paramLists: [
             {
               params: [
-                324
+                325
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -19313,7 +19389,7 @@
       annotations: [
 
       ],
-      type: 76,
+      type: 77,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19377,7 +19453,7 @@
           ]
         }
       ],
-      type: 94,
+      type: 95,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI10fontWeightFO1_10FontWeight$$18TextClockAttribute",
@@ -19394,14 +19470,14 @@
           paramLists: [
             {
               params: [
-                326
+                327
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -19437,7 +19513,7 @@
       annotations: [
 
       ],
-      type: 79,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19501,7 +19577,7 @@
           ]
         }
       ],
-      type: 90,
+      type: 91,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI10fontFamilyFO1_11ResourceStr$$18TextClockAttribute",
@@ -19518,14 +19594,14 @@
           paramLists: [
             {
               params: [
-                328
+                329
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -19561,7 +19637,7 @@
       annotations: [
 
       ],
-      type: 67,
+      type: 68,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19625,7 +19701,7 @@
           ]
         }
       ],
-      type: 95,
+      type: 96,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI10textShadowFO1_5Array<13ShadowOptions>$$18TextClockAttribute",
@@ -19642,14 +19718,14 @@
           paramLists: [
             {
               params: [
-                330
+                331
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -19685,7 +19761,7 @@
       annotations: [
 
       ],
-      type: 82,
+      type: 83,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10textShadowHNNat6OptionIRNat5ArrayICN27ohos.arkui.component.common13ShadowOptionsEEEE6valuesIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -19749,7 +19825,7 @@
           ]
         }
       ],
-      type: 96,
+      type: 97,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       exportId: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEE",
       mangledBeforeSema: "31ohos.arkui.component.text_clock18TextClockAttributeI10textShadowFO1_13ShadowOptions$$18TextClockAttribute",
@@ -19766,14 +19842,14 @@
           paramLists: [
             {
               params: [
-                332
+                333
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 88
+          retType: 89
         }
       }
     },
@@ -19809,7 +19885,7 @@
       annotations: [
 
       ],
-      type: 86,
+      type: 87,
       mangledName: "_CN31ohos.arkui.component.text_clock18TextClockAttribute10textShadowHNNat6OptionICN27ohos.arkui.component.common13ShadowOptionsEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -20797,14 +20873,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 352,
+        line: 354,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 352,
+        line: 354,
         column: 16,
         ignore: false
       },
@@ -20820,14 +20896,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 353,
+        line: 355,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 353,
+        line: 355,
         column: 48,
         ignore: false
       },
@@ -20843,14 +20919,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 361,
+        line: 363,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 361,
+        line: 363,
         column: 20,
         ignore: false
       },
@@ -20866,14 +20942,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 362,
+        line: 364,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 362,
+        line: 364,
         column: 52,
         ignore: false
       },
@@ -20889,14 +20965,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 380,
+        line: 382,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 380,
+        line: 382,
         column: 20,
         ignore: false
       },
@@ -20912,14 +20988,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 381,
+        line: 383,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 381,
+        line: 383,
         column: 52,
         ignore: false
       },
@@ -20935,14 +21011,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 395,
+        line: 397,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 395,
+        line: 397,
         column: 20,
         ignore: false
       },
@@ -20958,14 +21034,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 396,
+        line: 398,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 396,
+        line: 398,
         column: 52,
         ignore: false
       },
@@ -20981,14 +21057,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 409,
+        line: 411,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 409,
+        line: 411,
         column: 16,
         ignore: false
       },
@@ -21004,14 +21080,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 410,
+        line: 412,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 410,
+        line: 412,
         column: 48,
         ignore: false
       },
@@ -21027,14 +21103,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 423,
+        line: 425,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 423,
+        line: 425,
         column: 20,
         ignore: false
       },
@@ -21050,14 +21126,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 424,
+        line: 426,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 424,
+        line: 426,
         column: 52,
         ignore: false
       },
@@ -21073,14 +21149,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 452,
+        line: 454,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 452,
+        line: 454,
         column: 20,
         ignore: false
       },
@@ -21096,14 +21172,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 453,
+        line: 455,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 453,
+        line: 455,
         column: 52,
         ignore: false
       },
@@ -21119,14 +21195,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 477,
+        line: 479,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 477,
+        line: 479,
         column: 20,
         ignore: false
       },
@@ -21142,14 +21218,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 478,
+        line: 480,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 478,
+        line: 480,
         column: 52,
         ignore: false
       },
@@ -21165,14 +21241,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 498,
+        line: 500,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 498,
+        line: 500,
         column: 20,
         ignore: false
       },
@@ -21188,14 +21264,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 499,
+        line: 501,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 499,
+        line: 501,
         column: 52,
         ignore: false
       },
@@ -21203,29 +21279,6 @@
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.ArkUI.ArkUI.Full",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 517,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 517,
-        column: 20,
-        ignore: false
-      },
-      type: 16,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "22",
         constKind: "String"
       }
     },
@@ -21235,36 +21288,13 @@
         file: 1,
         pkgId: 0,
         line: 518,
-        column: 17,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 518,
-        column: 52,
-        ignore: false
-      },
-      type: 16,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.ArkUI.ArkUI.Full",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 535,
-        column: 16,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 535,
         column: 20,
         ignore: false
       },
@@ -21280,14 +21310,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 536,
+        line: 519,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 536,
+        line: 519,
         column: 52,
         ignore: false
       },
@@ -21303,14 +21333,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 553,
+        line: 541,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 553,
+        line: 541,
         column: 20,
         ignore: false
       },
@@ -21326,14 +21356,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 554,
+        line: 542,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 554,
+        line: 542,
         column: 52,
         ignore: false
       },
@@ -21349,14 +21379,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 573,
+        line: 559,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 573,
+        line: 559,
         column: 20,
         ignore: false
       },
@@ -21372,14 +21402,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 574,
+        line: 560,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 574,
+        line: 560,
         column: 52,
         ignore: false
       },
@@ -21395,14 +21425,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 594,
+        line: 579,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 594,
+        line: 579,
         column: 20,
         ignore: false
       },
@@ -21418,14 +21448,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 595,
+        line: 580,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 595,
+        line: 580,
         column: 52,
         ignore: false
       },
@@ -21441,14 +21471,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 618,
+        line: 599,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 618,
+        line: 599,
         column: 20,
         ignore: false
       },
@@ -21464,14 +21494,60 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 619,
+        line: 600,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 619,
+        line: 600,
+        column: 52,
+        ignore: false
+      },
+      type: 16,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.ArkUI.ArkUI.Full",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 623,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 623,
+        column: 20,
+        ignore: false
+      },
+      type: 16,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 624,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 624,
         column: 52,
         ignore: false
       },

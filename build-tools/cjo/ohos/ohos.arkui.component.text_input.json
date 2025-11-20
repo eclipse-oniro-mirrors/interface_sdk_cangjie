@@ -1193,17 +1193,6 @@
       kind: "Func",
       typeArgs: [
         31,
-        31
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 33
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        31,
         31,
         31,
         31
@@ -1217,9 +1206,9 @@
       kind: "Func",
       typeArgs: [
         31,
-        37,
+        36,
         31,
-        39
+        38
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1229,7 +1218,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        38
+        37
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1254,7 +1243,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        40
+        39
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1279,7 +1268,7 @@
     {
       kind: "Func",
       typeArgs: [
-        42
+        41
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1289,7 +1278,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        43
+        42
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1314,7 +1303,7 @@
     {
       kind: "Func",
       typeArgs: [
-        37
+        36
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1324,7 +1313,7 @@
     {
       kind: "Func",
       typeArgs: [
-        39
+        38
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1334,7 +1323,7 @@
     {
       kind: "Func",
       typeArgs: [
-        47
+        46
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1344,7 +1333,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        48
+        47
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1369,7 +1358,7 @@
     {
       kind: "Func",
       typeArgs: [
-        50
+        49
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1379,7 +1368,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        51
+        50
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1405,9 +1394,9 @@
       kind: "Func",
       typeArgs: [
         31,
-        53,
-        55,
-        56
+        52,
+        54,
+        55
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1417,7 +1406,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        54
+        53
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1454,7 +1443,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        57
+        56
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1483,14 +1472,26 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 53
+        retType: 52
       }
     },
     {
       kind: "Func",
       typeArgs: [
         31,
-        53
+        52
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 54
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        31,
+        52,
+        54
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1500,19 +1501,7 @@
     {
       kind: "Func",
       typeArgs: [
-        31,
-        53,
-        55
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 56
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        62
+        61
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1522,7 +1511,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        63
+        62
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1537,7 +1526,7 @@
     {
       kind: "Func",
       typeArgs: [
-        53
+        52
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1547,7 +1536,7 @@
     {
       kind: "Func",
       typeArgs: [
-        56
+        55
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1568,7 +1557,7 @@
       kind: "Func",
       typeArgs: [
         24,
-        68
+        67
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1578,7 +1567,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        69
+        68
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1604,13 +1593,13 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 68
+        retType: 67
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        72
+        71
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1620,7 +1609,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        73
+        72
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1632,7 +1621,7 @@
     {
       kind: "Func",
       typeArgs: [
-        48
+        47
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1642,7 +1631,7 @@
     {
       kind: "Func",
       typeArgs: [
-        68
+        67
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1652,7 +1641,7 @@
     {
       kind: "Func",
       typeArgs: [
-        76
+        75
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1662,7 +1651,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        77
+        76
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1674,7 +1663,7 @@
     {
       kind: "Func",
       typeArgs: [
-        78
+        77
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1687,8 +1676,8 @@
     {
       kind: "Func",
       typeArgs: [
-        80,
-        81
+        79,
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1710,7 +1699,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        78
+        77
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1722,17 +1711,17 @@
     {
       kind: "Func",
       typeArgs: [
-        80
+        79
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 81
+        retType: 80
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        84
+        83
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1742,7 +1731,7 @@
     {
       kind: "Enum",
       typeArgs: [
-        85
+        84
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -1767,7 +1756,7 @@
     {
       kind: "Func",
       typeArgs: [
-        81
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -1806,61 +1795,61 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 150
+          index: 147
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        47
+        46
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        50
+        49
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        37
+        36
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
         31,
-        53,
-        55,
-        56
+        52,
+        54,
+        55
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        62
+        61
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
@@ -1870,27 +1859,27 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        53
+        52
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        56
+        55
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
@@ -1900,79 +1889,79 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
         24,
-        68
+        67
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        72
+        71
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        68
+        67
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        76
+        75
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        80,
-        81
+        79,
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        84
+        83
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        81
+        80
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
@@ -1982,13 +1971,13 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 89
+        retType: 88
       }
     },
     {
       kind: "Interface",
       typeArgs: [
-        89
+        88
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -3737,7 +3726,7 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 654,
+        line: 643,
         column: 2,
         ignore: false
       },
@@ -3778,55 +3767,54 @@
         virt: 0,
         sig: 5055695693179556228,
         srcUse: 0,
-        bodyHash: 5004956043004502783
+        bodyHash: 5225955582175470252
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          88,
-          89
+          87,
+          88
         ],
         body: [
           32,
           42,
           44,
-          47,
-          49,
-          54,
-          59,
-          61,
-          66,
-          68,
-          70,
-          72,
-          74,
-          79,
-          81,
-          83,
-          85,
-          87,
-          89,
-          91,
-          105,
-          107,
-          109,
-          111,
-          113,
-          115,
-          117,
-          122,
-          124,
-          126,
-          128,
-          130,
-          132,
-          134,
-          139,
-          141,
-          143,
-          145,
-          147,
-          149
+          46,
+          51,
+          56,
+          58,
+          63,
+          65,
+          67,
+          69,
+          71,
+          76,
+          78,
+          80,
+          82,
+          84,
+          86,
+          88,
+          102,
+          104,
+          106,
+          108,
+          110,
+          112,
+          114,
+          119,
+          121,
+          123,
+          125,
+          127,
+          129,
+          131,
+          136,
+          138,
+          140,
+          142,
+          144,
+          146
         ]
       }
     },
@@ -4522,7 +4510,7 @@
         column: 6,
         ignore: false
       },
-      identifier: "sizeInner",
+      identifier: "paddingInner",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -4537,16 +4525,16 @@
       annotations: [
 
       ],
-      type: 34,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput9sizeInnerHNNat6OptionICN9ohos.base6LengthEEY3_",
-      exportId: "_CN31ohos.arkui.component.text_input9TextInput9sizeInnerHNNat6OptionICN9ohos.base6LengthEEY3_",
-      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC9sizeInnerFO1_6LengthO1_6Length$$H",
+      type: 30,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEE",
+      exportId: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEE",
+      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC12paddingInnerFO1_6Length$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 4392541002272289596
+        bodyHash: 17471747639037069944
       },
       info_type: "FuncInfo",
       info: {
@@ -4554,11 +4542,9 @@
           paramLists: [
             {
               params: [
-                45,
-                46
+                45
               ],
               desugars: [
-                0,
                 0
               ]
             }
@@ -4574,22 +4560,22 @@
         file: 1,
         pkgId: 0,
         line: 169,
-        column: 39,
+        column: 42,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 169,
-        column: 53,
+        column: 56,
         ignore: false
       },
-      identifier: "width",
+      identifier: "value",
       identifierPos: {
         file: 1,
         pkgId: 0,
         line: 169,
-        column: 39,
+        column: 42,
         ignore: false
       },
       attributes: [
@@ -4600,54 +4586,7 @@
 
       ],
       type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput9sizeInnerHNNat6OptionICN9ohos.base6LengthEEY3_E5widthIY6_E",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.arkui.component.text_input",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 169,
-        column: 55,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 169,
-        column: 70,
-        ignore: false
-      },
-      identifier: "height",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 169,
-        column: 55,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput9sizeInnerHNNat6OptionICN9ohos.base6LengthEEY3_E6heightIY6_E",
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -4697,16 +4636,16 @@
       annotations: [
 
       ],
-      type: 30,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEE",
-      exportId: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEE",
-      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC12paddingInnerFO1_6Length$$H",
+      type: 34,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
+      exportId: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
+      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC12paddingInnerFO1_6LengthO1_6LengthO1_6LengthO1_6Length$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 17247218144461393197
+        bodyHash: 2122666979356657158
       },
       info_type: "FuncInfo",
       info: {
@@ -4714,9 +4653,15 @@
           paramLists: [
             {
               params: [
-                48
+                47,
+                48,
+                49,
+                50
               ],
               desugars: [
+                0,
+                0,
+                0,
                 0
               ]
             }
@@ -4739,10 +4684,10 @@
         file: 1,
         pkgId: 0,
         line: 174,
-        column: 56,
+        column: 54,
         ignore: false
       },
-      identifier: "value",
+      identifier: "top",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -4758,7 +4703,148 @@
 
       ],
       type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEE5valueIY6_E",
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E3topIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.text_input",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 56,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 70,
+        ignore: false
+      },
+      identifier: "right",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 56,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 31,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E5rightIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.text_input",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 72,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 87,
+        ignore: false
+      },
+      identifier: "bottom",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 72,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 31,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E6bottomIY6_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.text_input",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 89,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 102,
+        ignore: false
+      },
+      identifier: "left",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 174,
+        column: 89,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 31,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E4leftIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -4793,7 +4879,7 @@
         column: 6,
         ignore: false
       },
-      identifier: "paddingInner",
+      identifier: "marginInner",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -4808,16 +4894,16 @@
       annotations: [
 
       ],
-      type: 35,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
-      exportId: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
-      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC12paddingInnerFO1_6LengthO1_6LengthO1_6LengthO1_6Length$$H",
+      type: 34,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
+      exportId: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
+      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC11marginInnerFO1_6Length!3topO1_6Length!5rightO1_6Length!6bottomO1_6Length!4left$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 601253446417987133
+        bodyHash: 10314373558569849131
       },
       info_type: "FuncInfo",
       info: {
@@ -4825,10 +4911,10 @@
           paramLists: [
             {
               params: [
-                50,
-                51,
                 52,
-                53
+                53,
+                54,
+                55
               ],
               desugars: [
                 0,
@@ -4849,7 +4935,7 @@
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 42,
+        column: 41,
         ignore: false
       },
       end: {
@@ -4864,7 +4950,7 @@
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 42,
+        column: 41,
         ignore: false
       },
       attributes: [
@@ -4875,7 +4961,7 @@
 
       ],
       type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E3topIY6_E",
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E3topIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -4887,6 +4973,7 @@
       },
       info_type: "ParamInfo",
       info: {
+        isNamedParam: true
       }
     },
     {
@@ -4903,7 +4990,7 @@
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 70,
+        column: 71,
         ignore: false
       },
       identifier: "right",
@@ -4922,7 +5009,7 @@
 
       ],
       type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E5rightIY6_E",
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E5rightIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -4934,6 +5021,7 @@
       },
       info_type: "ParamInfo",
       info: {
+        isNamedParam: true
       }
     },
     {
@@ -4943,14 +5031,14 @@
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 72,
+        column: 73,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 87,
+        column: 89,
         ignore: false
       },
       identifier: "bottom",
@@ -4958,7 +5046,7 @@
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 72,
+        column: 73,
         ignore: false
       },
       attributes: [
@@ -4969,7 +5057,7 @@
 
       ],
       type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E6bottomIY6_E",
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E6bottomIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -4981,6 +5069,7 @@
       },
       info_type: "ParamInfo",
       info: {
+        isNamedParam: true
       }
     },
     {
@@ -4990,14 +5079,14 @@
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 89,
+        column: 91,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 102,
+        column: 105,
         ignore: false
       },
       identifier: "left",
@@ -5005,7 +5094,7 @@
         file: 1,
         pkgId: 0,
         line: 179,
-        column: 89,
+        column: 91,
         ignore: false
       },
       attributes: [
@@ -5016,7 +5105,7 @@
 
       ],
       type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput12paddingInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E4leftIY6_E",
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E4leftIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -5028,6 +5117,7 @@
       },
       info_type: "ParamInfo",
       info: {
+        isNamedParam: true
       }
     },
     {
@@ -5066,268 +5156,6 @@
       annotations: [
 
       ],
-      type: 35,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
-      exportId: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
-      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC11marginInnerFO1_6Length!3topO1_6Length!5rightO1_6Length!6bottomO1_6Length!4left$$H",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 2687969717096398320,
-        srcUse: 0,
-        bodyHash: 5362290790835716397
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-                55,
-                56,
-                57,
-                58
-              ],
-              desugars: [
-                0,
-                0,
-                0,
-                0
-              ]
-            }
-          ],
-          retType: 33
-        }
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.arkui.component.text_input",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 41,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 54,
-        ignore: false
-      },
-      identifier: "top",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 41,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E3topIY6_E",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-        isNamedParam: true
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.arkui.component.text_input",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 56,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 71,
-        ignore: false
-      },
-      identifier: "right",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 56,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E5rightIY6_E",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-        isNamedParam: true
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.arkui.component.text_input",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 73,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 89,
-        ignore: false
-      },
-      identifier: "bottom",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 73,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E6bottomIY6_E",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-        isNamedParam: true
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.arkui.component.text_input",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 91,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 105,
-        ignore: false
-      },
-      identifier: "left",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 184,
-        column: 91,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_E4leftIY6_E",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-        isNamedParam: true
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.arkui.component.text_input",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 189,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 192,
-        column: 6,
-        ignore: false
-      },
-      identifier: "marginInner",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 189,
-        column: 29,
-        ignore: false
-      },
-      attributes: [
-        144678138297749536,
-        0
-      ],
-      annotations: [
-
-      ],
       type: 30,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput11marginInnerHNNat6OptionICN9ohos.base6LengthEE",
@@ -5337,7 +5165,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 8117597946289987113
+        bodyHash: 6180557028188971646
       },
       info_type: "FuncInfo",
       info: {
@@ -5345,7 +5173,7 @@
           paramLists: [
             {
               params: [
-                60
+                57
               ],
               desugars: [
                 0
@@ -5362,14 +5190,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 189,
+        line: 184,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 189,
+        line: 184,
         column: 55,
         ignore: false
       },
@@ -5377,7 +5205,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 189,
+        line: 184,
         column: 41,
         ignore: false
       },
@@ -5413,14 +5241,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 206,
+        line: 201,
         column: 6,
         ignore: false
       },
@@ -5428,7 +5256,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 29,
         ignore: false
       },
@@ -5439,7 +5267,7 @@
       annotations: [
 
       ],
-      type: 36,
+      type: 35,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput11borderInnerHNNat6OptionICN9ohos.base6LengthEENNatY5_ICNY7_13ResourceColorEEY3_NNatY5_INN27ohos.arkui.component.common11BorderStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput11borderInnerHNNat6OptionICN9ohos.base6LengthEENNatY5_ICNY7_13ResourceColorEEY3_NNatY5_INN27ohos.arkui.component.common11BorderStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC11borderInnerFO1_6LengthO1_13ResourceColorO1_6LengthO1_11BorderStyle$$H",
@@ -5448,7 +5276,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 12236922636803116015
+        bodyHash: 2959455958683646992
       },
       info_type: "FuncInfo",
       info: {
@@ -5456,10 +5284,10 @@
           paramLists: [
             {
               params: [
-                62,
-                63,
-                64,
-                65
+                59,
+                60,
+                61,
+                62
               ],
               desugars: [
                 0,
@@ -5479,14 +5307,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 55,
         ignore: false
       },
@@ -5494,7 +5322,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 41,
         ignore: false
       },
@@ -5526,14 +5354,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 57,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 78,
         ignore: false
       },
@@ -5541,7 +5369,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 57,
         ignore: false
       },
@@ -5552,7 +5380,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput11borderInnerHNNat6OptionICN9ohos.base6LengthEENNatY5_ICNY7_13ResourceColorEEY3_NNatY5_INN27ohos.arkui.component.common11BorderStyleEEE5colorIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -5573,14 +5401,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 80,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 95,
         ignore: false
       },
@@ -5588,7 +5416,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 80,
         ignore: false
       },
@@ -5620,14 +5448,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 97,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 116,
         ignore: false
       },
@@ -5635,7 +5463,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 203,
+        line: 198,
         column: 97,
         ignore: false
       },
@@ -5646,8 +5474,119 @@
       annotations: [
 
       ],
-      type: 39,
+      type: 38,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput11borderInnerHNNat6OptionICN9ohos.base6LengthEENNatY5_ICNY7_13ResourceColorEEY3_NNatY5_INN27ohos.arkui.component.common11BorderStyleEEE5styleIYD_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.arkui.component.text_input",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 203,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 206,
+        column: 6,
+        ignore: false
+      },
+      identifier: "borderWidthInner",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 203,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        144678138297749536,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 30,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN9ohos.base6LengthEE",
+      exportId: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN9ohos.base6LengthEE",
+      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16borderWidthInnerFO1_6Length$$H",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 2687969717096398320,
+        srcUse: 0,
+        bodyHash: 18056841348797512855
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                64
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 33
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.arkui.component.text_input",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 203,
+        column: 46,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 203,
+        column: 60,
+        ignore: false
+      },
+      identifier: "width",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 203,
+        column: 46,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 31,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN9ohos.base6LengthEEE5widthIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -5697,16 +5636,16 @@
       annotations: [
 
       ],
-      type: 30,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN9ohos.base6LengthEE",
-      exportId: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN9ohos.base6LengthEE",
-      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16borderWidthInnerFO1_6Length$$H",
+      type: 40,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN27ohos.arkui.component.common10EdgeWidthsEE",
+      exportId: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN27ohos.arkui.component.common10EdgeWidthsEE",
+      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16borderWidthInnerFO1_10EdgeWidths$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 10809785778483748823
+        bodyHash: 13436217775874298050
       },
       info_type: "FuncInfo",
       info: {
@@ -5714,7 +5653,7 @@
           paramLists: [
             {
               params: [
-                67
+                66
               ],
               desugars: [
                 0
@@ -5739,10 +5678,10 @@
         file: 1,
         pkgId: 0,
         line: 208,
-        column: 60,
+        column: 69,
         ignore: false
       },
-      identifier: "width",
+      identifier: "edgeWidths",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -5757,8 +5696,8 @@
       annotations: [
 
       ],
-      type: 31,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN9ohos.base6LengthEEE5widthIY6_E",
+      type: 41,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN27ohos.arkui.component.common10EdgeWidthsEEE10edgeWidthsIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -5793,7 +5732,7 @@
         column: 6,
         ignore: false
       },
-      identifier: "borderWidthInner",
+      identifier: "borderColorInner",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -5808,16 +5747,16 @@
       annotations: [
 
       ],
-      type: 41,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN27ohos.arkui.component.common10EdgeWidthsEE",
-      exportId: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN27ohos.arkui.component.common10EdgeWidthsEE",
-      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16borderWidthInnerFO1_10EdgeWidths$$H",
+      type: 43,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
+      exportId: "_CN31ohos.arkui.component.text_input9TextInput16borderColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
+      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16borderColorInnerFO1_13ResourceColor$$H",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 6388436390747409791
+        bodyHash: 4517110880809241437
       },
       info_type: "FuncInfo",
       info: {
@@ -5825,7 +5764,7 @@
           paramLists: [
             {
               params: [
-                69
+                68
               ],
               desugars: [
                 0
@@ -5850,10 +5789,10 @@
         file: 1,
         pkgId: 0,
         line: 213,
-        column: 69,
+        column: 67,
         ignore: false
       },
-      identifier: "edgeWidths",
+      identifier: "color",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -5868,8 +5807,8 @@
       annotations: [
 
       ],
-      type: 42,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderWidthInnerHNNat6OptionICN27ohos.arkui.component.common10EdgeWidthsEEE10edgeWidthsIY6_E",
+      type: 36,
+      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderColorInnerHNNat6OptionICN9ohos.base13ResourceColorEEE5colorIY6_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -5904,122 +5843,11 @@
         column: 6,
         ignore: false
       },
-      identifier: "borderColorInner",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 218,
-        column: 29,
-        ignore: false
-      },
-      attributes: [
-        144678138297749536,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 44,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
-      exportId: "_CN31ohos.arkui.component.text_input9TextInput16borderColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
-      mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16borderColorInnerFO1_13ResourceColor$$H",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 2687969717096398320,
-        srcUse: 0,
-        bodyHash: 17656185861864059493
-      },
-      info_type: "FuncInfo",
-      info: {
-        funcBody: {
-          paramLists: [
-            {
-              params: [
-                71
-              ],
-              desugars: [
-                0
-              ]
-            }
-          ],
-          retType: 33
-        }
-      }
-    },
-    {
-      kind: "FuncParam",
-      fullPkgName: "ohos.arkui.component.text_input",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 218,
-        column: 46,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 218,
-        column: 67,
-        ignore: false
-      },
-      identifier: "color",
-      identifierPos: {
-        file: 1,
-        pkgId: 0,
-        line: 218,
-        column: 46,
-        ignore: false
-      },
-      attributes: [
-        562949953421344,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 37,
-      mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderColorInnerHNNat6OptionICN9ohos.base13ResourceColorEEE5colorIY6_E",
-      exportId: "",
-      mangledBeforeSema: "",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 0,
-        srcUse: 0,
-        bodyHash: 0
-      },
-      info_type: "ParamInfo",
-      info: {
-      }
-    },
-    {
-      kind: "FuncDecl",
-      fullPkgName: "ohos.arkui.component.text_input",
-      genericDecl: {
-        pkgId: -1,
-        decl: ""
-      },
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 223,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 226,
-        column: 6,
-        ignore: false
-      },
       identifier: "borderRadiusInner",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 223,
+        line: 218,
         column: 29,
         ignore: false
       },
@@ -6039,7 +5867,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 6078817137319057343
+        bodyHash: 13780025207542621019
       },
       info_type: "FuncInfo",
       info: {
@@ -6047,7 +5875,7 @@
           paramLists: [
             {
               params: [
-                73
+                70
               ],
               desugars: [
                 0
@@ -6064,14 +5892,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 223,
+        line: 218,
         column: 47,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 223,
+        line: 218,
         column: 62,
         ignore: false
       },
@@ -6079,7 +5907,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 223,
+        line: 218,
         column: 47,
         ignore: false
       },
@@ -6115,14 +5943,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 232,
+        line: 227,
         column: 6,
         ignore: false
       },
@@ -6130,7 +5958,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 29,
         ignore: false
       },
@@ -6141,7 +5969,7 @@
       annotations: [
 
       ],
-      type: 35,
+      type: 34,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput17borderRadiusInnerHNNat6OptionICN9ohos.base6LengthEEY3_Y3_Y3_",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC17borderRadiusInnerFO1_6Length!7topLeftO1_6Length!8topRightO1_6Length!10bottomLeftO1_6Length!11bottomRight$$H",
@@ -6150,7 +5978,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 3794179123398246714
+        bodyHash: 2743310596679177433
       },
       info_type: "FuncInfo",
       info: {
@@ -6158,10 +5986,10 @@
           paramLists: [
             {
               params: [
-                75,
-                76,
-                77,
-                78
+                72,
+                73,
+                74,
+                75
               ],
               desugars: [
                 0,
@@ -6181,14 +6009,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 47,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 64,
         ignore: false
       },
@@ -6196,7 +6024,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 47,
         ignore: false
       },
@@ -6229,14 +6057,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 66,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 84,
         ignore: false
       },
@@ -6244,7 +6072,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 228,
+        line: 223,
         column: 66,
         ignore: false
       },
@@ -6277,14 +6105,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 224,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 224,
         column: 29,
         ignore: false
       },
@@ -6292,7 +6120,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 224,
         column: 9,
         ignore: false
       },
@@ -6325,14 +6153,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 224,
         column: 31,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 224,
         column: 52,
         ignore: false
       },
@@ -6340,7 +6168,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 229,
+        line: 224,
         column: 31,
         ignore: false
       },
@@ -6377,14 +6205,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 234,
+        line: 229,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 237,
+        line: 232,
         column: 6,
         ignore: false
       },
@@ -6392,7 +6220,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 234,
+        line: 229,
         column: 29,
         ignore: false
       },
@@ -6403,7 +6231,7 @@
       annotations: [
 
       ],
-      type: 44,
+      type: 43,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput20backgroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput20backgroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC20backgroundColorInnerFO1_13ResourceColor$$H",
@@ -6412,7 +6240,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 17228714439146105609
+        bodyHash: 2438175929433154797
       },
       info_type: "FuncInfo",
       info: {
@@ -6420,7 +6248,7 @@
           paramLists: [
             {
               params: [
-                80
+                77
               ],
               desugars: [
                 0
@@ -6437,14 +6265,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 234,
+        line: 229,
         column: 50,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 234,
+        line: 229,
         column: 71,
         ignore: false
       },
@@ -6452,7 +6280,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 234,
+        line: 229,
         column: 50,
         ignore: false
       },
@@ -6463,7 +6291,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput20backgroundColorInnerHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6488,14 +6316,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 239,
+        line: 234,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 242,
+        line: 237,
         column: 6,
         ignore: false
       },
@@ -6503,7 +6331,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 239,
+        line: 234,
         column: 29,
         ignore: false
       },
@@ -6514,7 +6342,7 @@
       annotations: [
 
       ],
-      type: 45,
+      type: 44,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderStyleInnerHNNat6OptionINN27ohos.arkui.component.common11BorderStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput16borderStyleInnerHNNat6OptionINN27ohos.arkui.component.common11BorderStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16borderStyleInnerFO1_11BorderStyle$$H",
@@ -6523,7 +6351,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 7229518829888410011
+        bodyHash: 16774581885160690777
       },
       info_type: "FuncInfo",
       info: {
@@ -6531,7 +6359,7 @@
           paramLists: [
             {
               params: [
-                82
+                79
               ],
               desugars: [
                 0
@@ -6548,14 +6376,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 239,
+        line: 234,
         column: 46,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 239,
+        line: 234,
         column: 65,
         ignore: false
       },
@@ -6563,7 +6391,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 239,
+        line: 234,
         column: 46,
         ignore: false
       },
@@ -6574,7 +6402,7 @@
       annotations: [
 
       ],
-      type: 39,
+      type: 38,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput16borderStyleInnerHNNat6OptionINN27ohos.arkui.component.common11BorderStyleEEE5styleIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6599,14 +6427,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 255,
+        line: 250,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 258,
+        line: 253,
         column: 6,
         ignore: false
       },
@@ -6614,7 +6442,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 255,
+        line: 250,
         column: 17,
         ignore: false
       },
@@ -6638,7 +6466,7 @@
           ]
         }
       ],
-      type: 46,
+      type: 45,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput12enterKeyTypeHNNat6OptionINN27ohos.arkui.component.common12EnterKeyTypeEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput12enterKeyTypeHNNat6OptionINN27ohos.arkui.component.common12EnterKeyTypeEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC12enterKeyTypeFO1_12EnterKeyType$$H",
@@ -6647,7 +6475,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 1666462442915552553
+        bodyHash: 8232278526001655038
       },
       info_type: "FuncInfo",
       info: {
@@ -6655,7 +6483,7 @@
           paramLists: [
             {
               params: [
-                84
+                81
               ],
               desugars: [
                 0
@@ -6672,14 +6500,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 255,
+        line: 250,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 255,
+        line: 250,
         column: 50,
         ignore: false
       },
@@ -6687,7 +6515,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 255,
+        line: 250,
         column: 30,
         ignore: false
       },
@@ -6698,7 +6526,7 @@
       annotations: [
 
       ],
-      type: 47,
+      type: 46,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput12enterKeyTypeHNNat6OptionINN27ohos.arkui.component.common12EnterKeyTypeEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6723,14 +6551,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 278,
+        line: 273,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 281,
+        line: 276,
         column: 6,
         ignore: false
       },
@@ -6738,7 +6566,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 278,
+        line: 273,
         column: 17,
         ignore: false
       },
@@ -6762,7 +6590,7 @@
           ]
         }
       ],
-      type: 49,
+      type: 48,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9textAlignHNNat6OptionINN27ohos.arkui.component.common9TextAlignEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput9textAlignHNNat6OptionINN27ohos.arkui.component.common9TextAlignEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC9textAlignFO1_9TextAlign$$H",
@@ -6771,7 +6599,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 5792214766271253156
+        bodyHash: 5315603471916233303
       },
       info_type: "FuncInfo",
       info: {
@@ -6779,7 +6607,7 @@
           paramLists: [
             {
               params: [
-                86
+                83
               ],
               desugars: [
                 0
@@ -6796,14 +6624,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 278,
+        line: 273,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 278,
+        line: 273,
         column: 44,
         ignore: false
       },
@@ -6811,7 +6639,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 278,
+        line: 273,
         column: 27,
         ignore: false
       },
@@ -6822,7 +6650,7 @@
       annotations: [
 
       ],
-      type: 50,
+      type: 49,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9textAlignHNNat6OptionINN27ohos.arkui.component.common9TextAlignEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6847,14 +6675,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 288,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 298,
+        line: 291,
         column: 6,
         ignore: false
       },
@@ -6862,7 +6690,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 288,
         column: 17,
         ignore: false
       },
@@ -6886,7 +6714,7 @@
           ]
         }
       ],
-      type: 44,
+      type: 43,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput16placeholderColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput16placeholderColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC16placeholderColorFO1_13ResourceColor$$H",
@@ -6895,7 +6723,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 5179599845531579752
+        bodyHash: 977331570025873613
       },
       info_type: "FuncInfo",
       info: {
@@ -6903,7 +6731,7 @@
           paramLists: [
             {
               params: [
-                88
+                85
               ],
               desugars: [
                 0
@@ -6920,14 +6748,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 288,
         column: 34,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 288,
         column: 55,
         ignore: false
       },
@@ -6935,7 +6763,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 294,
+        line: 288,
         column: 34,
         ignore: false
       },
@@ -6946,7 +6774,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput16placeholderColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -6971,14 +6799,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 310,
+        line: 303,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 313,
+        line: 306,
         column: 6,
         ignore: false
       },
@@ -6986,7 +6814,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 310,
+        line: 303,
         column: 17,
         ignore: false
       },
@@ -7010,7 +6838,7 @@
           ]
         }
       ],
-      type: 44,
+      type: 43,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput10caretColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput10caretColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC10caretColorFO1_13ResourceColor$$H",
@@ -7019,7 +6847,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8124816678285233645
+        bodyHash: 3575492261713367233
       },
       info_type: "FuncInfo",
       info: {
@@ -7027,7 +6855,7 @@
           paramLists: [
             {
               params: [
-                90
+                87
               ],
               desugars: [
                 0
@@ -7044,14 +6872,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 310,
+        line: 303,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 310,
+        line: 303,
         column: 49,
         ignore: false
       },
@@ -7059,7 +6887,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 310,
+        line: 303,
         column: 28,
         ignore: false
       },
@@ -7070,7 +6898,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput10caretColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7095,14 +6923,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 332,
+        line: 325,
         column: 6,
         ignore: false
       },
@@ -7110,7 +6938,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 17,
         ignore: false
       },
@@ -7134,7 +6962,7 @@
           ]
         }
       ],
-      type: 52,
+      type: 51,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC15placeholderFontFO1_6Length!4sizeO1_10FontWeight!6weight=O1_6String!6family=O1_9FontStyle!5style=$$H",
@@ -7143,7 +6971,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 14174692467677589335
+        bodyHash: 12112054890904527564
       },
       info_type: "FuncInfo",
       info: {
@@ -7151,16 +6979,16 @@
           paramLists: [
             {
               params: [
-                92,
+                89,
+                90,
                 93,
-                96,
-                100
+                97
               ],
               desugars: [
                 0,
+                91,
                 94,
-                97,
-                101
+                98
               ]
             }
           ],
@@ -7174,14 +7002,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 47,
         ignore: false
       },
@@ -7189,7 +7017,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
@@ -7222,14 +7050,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 49,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 76,
         ignore: false
       },
@@ -7237,7 +7065,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 49,
         ignore: false
       },
@@ -7248,7 +7076,7 @@
       annotations: [
 
       ],
-      type: 53,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE6weightIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7274,14 +7102,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 72,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 76,
         ignore: false
       },
@@ -7300,7 +7128,7 @@
       annotations: [
 
       ],
-      type: 58,
+      type: 57,
       mangledName: "_CPI31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE6weightHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -7317,14 +7145,14 @@
           paramLists: [
             {
               params: [
-                95
+                92
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 53
+          retType: 52
         }
       }
     },
@@ -7334,14 +7162,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 47,
         ignore: false
       },
@@ -7349,7 +7177,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
@@ -7381,14 +7209,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 78,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 101,
         ignore: false
       },
@@ -7396,7 +7224,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 78,
         ignore: false
       },
@@ -7407,7 +7235,7 @@
       annotations: [
 
       ],
-      type: 55,
+      type: 54,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE6familyIYE_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7433,14 +7261,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 97,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 101,
         ignore: false
       },
@@ -7459,7 +7287,7 @@
       annotations: [
 
       ],
-      type: 59,
+      type: 58,
       mangledName: "_CPI31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE6familyHY3_Y9_",
       exportId: "",
       mangledBeforeSema: "",
@@ -7476,8 +7304,8 @@
           paramLists: [
             {
               params: [
-                98,
-                99
+                95,
+                96
               ],
               desugars: [
                 0,
@@ -7485,7 +7313,7 @@
               ]
             }
           ],
-          retType: 55
+          retType: 54
         }
       }
     },
@@ -7495,14 +7323,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 47,
         ignore: false
       },
@@ -7510,7 +7338,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
@@ -7542,14 +7370,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 49,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 76,
         ignore: false
       },
@@ -7557,7 +7385,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 49,
         ignore: false
       },
@@ -7568,7 +7396,7 @@
       annotations: [
 
       ],
-      type: 53,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE8family.2HY3_Y9_E6weightIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7589,14 +7417,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 322,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 322,
         column: 34,
         ignore: false
       },
@@ -7604,7 +7432,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 322,
         column: 9,
         ignore: false
       },
@@ -7615,7 +7443,7 @@
       annotations: [
 
       ],
-      type: 56,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE5styleIYH_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7641,14 +7469,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 322,
         column: 30,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 329,
+        line: 322,
         column: 34,
         ignore: false
       },
@@ -7667,7 +7495,7 @@
       annotations: [
 
       ],
-      type: 60,
+      type: 59,
       mangledName: "_CPI31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE5styleHY3_Y9_YD_",
       exportId: "",
       mangledBeforeSema: "",
@@ -7684,9 +7512,9 @@
           paramLists: [
             {
               params: [
-                102,
-                103,
-                104
+                99,
+                100,
+                101
               ],
               desugars: [
                 0,
@@ -7695,7 +7523,7 @@
               ]
             }
           ],
-          retType: 56
+          retType: 55
         }
       }
     },
@@ -7705,14 +7533,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 47,
         ignore: false
       },
@@ -7720,7 +7548,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 33,
         ignore: false
       },
@@ -7752,14 +7580,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 49,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 76,
         ignore: false
       },
@@ -7767,7 +7595,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 49,
         ignore: false
       },
@@ -7778,7 +7606,7 @@
       annotations: [
 
       ],
-      type: 53,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE7style.3HY3_Y9_YD_E6weightIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7799,14 +7627,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 78,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 101,
         ignore: false
       },
@@ -7814,7 +7642,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 328,
+        line: 321,
         column: 78,
         ignore: false
       },
@@ -7825,7 +7653,7 @@
       annotations: [
 
       ],
-      type: 55,
+      type: 54,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE7style.3HY3_Y9_YD_E6familyIYE_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -7850,14 +7678,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 345,
+        line: 337,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 349,
+        line: 340,
         column: 6,
         ignore: false
       },
@@ -7865,7 +7693,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 345,
+        line: 337,
         column: 17,
         ignore: false
       },
@@ -7889,7 +7717,7 @@
           ]
         }
       ],
-      type: 61,
+      type: 60,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9maxLengthHNNat6OptionIjE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput9maxLengthHNNat6OptionIjE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC9maxLengthFO1_j$$H",
@@ -7898,7 +7726,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8929078735821370561
+        bodyHash: 11911780999554259802
       },
       info_type: "FuncInfo",
       info: {
@@ -7906,7 +7734,7 @@
           paramLists: [
             {
               params: [
-                106
+                103
               ],
               desugars: [
                 0
@@ -7923,14 +7751,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 345,
+        line: 337,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 345,
+        line: 337,
         column: 41,
         ignore: false
       },
@@ -7938,7 +7766,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 345,
+        line: 337,
         column: 27,
         ignore: false
       },
@@ -7949,7 +7777,7 @@
       annotations: [
 
       ],
-      type: 62,
+      type: 61,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9maxLengthHNNat6OptionIjEE5valueIjE",
       exportId: "",
       mangledBeforeSema: "",
@@ -7974,14 +7802,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 366,
+        line: 356,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 370,
+        line: 359,
         column: 6,
         ignore: false
       },
@@ -7989,7 +7817,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 366,
+        line: 356,
         column: 17,
         ignore: false
       },
@@ -8022,7 +7850,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2387217681885654600
+        bodyHash: 9271749044752289458
       },
       info_type: "FuncInfo",
       info: {
@@ -8030,7 +7858,7 @@
           paramLists: [
             {
               params: [
-                108
+                105
               ],
               desugars: [
                 0
@@ -8047,14 +7875,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 366,
+        line: 356,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 366,
+        line: 356,
         column: 40,
         ignore: false
       },
@@ -8062,7 +7890,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 366,
+        line: 356,
         column: 26,
         ignore: false
       },
@@ -8098,14 +7926,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 383,
+        line: 372,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 386,
+        line: 375,
         column: 6,
         ignore: false
       },
@@ -8113,7 +7941,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 383,
+        line: 372,
         column: 17,
         ignore: false
       },
@@ -8137,7 +7965,7 @@
           ]
         }
       ],
-      type: 44,
+      type: 43,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC9fontColorFO1_13ResourceColor$$H",
@@ -8146,7 +7974,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11520550197790096249
+        bodyHash: 10812412075248343633
       },
       info_type: "FuncInfo",
       info: {
@@ -8154,7 +7982,7 @@
           paramLists: [
             {
               params: [
-                110
+                107
               ],
               desugars: [
                 0
@@ -8171,14 +7999,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 383,
+        line: 372,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 383,
+        line: 372,
         column: 48,
         ignore: false
       },
@@ -8186,7 +8014,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 383,
+        line: 372,
         column: 27,
         ignore: false
       },
@@ -8197,7 +8025,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9fontColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8222,14 +8050,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 399,
+        line: 388,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 402,
+        line: 391,
         column: 6,
         ignore: false
       },
@@ -8237,7 +8065,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 399,
+        line: 388,
         column: 17,
         ignore: false
       },
@@ -8261,7 +8089,7 @@
           ]
         }
       ],
-      type: 64,
+      type: 63,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC10fontWeightFO1_10FontWeight$$H",
@@ -8270,7 +8098,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 13795115057892180327
+        bodyHash: 10908568561696047977
       },
       info_type: "FuncInfo",
       info: {
@@ -8278,7 +8106,7 @@
           paramLists: [
             {
               params: [
-                112
+                109
               ],
               desugars: [
                 0
@@ -8295,14 +8123,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 399,
+        line: 388,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 399,
+        line: 388,
         column: 46,
         ignore: false
       },
@@ -8310,7 +8138,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 399,
+        line: 388,
         column: 28,
         ignore: false
       },
@@ -8321,7 +8149,7 @@
       annotations: [
 
       ],
-      type: 53,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8346,14 +8174,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 415,
+        line: 404,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 418,
+        line: 407,
         column: 6,
         ignore: false
       },
@@ -8361,7 +8189,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 415,
+        line: 404,
         column: 17,
         ignore: false
       },
@@ -8385,7 +8213,7 @@
           ]
         }
       ],
-      type: 65,
+      type: 64,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC9fontStyleFO1_9FontStyle$$H",
@@ -8394,7 +8222,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4039080316598302550
+        bodyHash: 10702486814456803435
       },
       info_type: "FuncInfo",
       info: {
@@ -8402,7 +8230,7 @@
           paramLists: [
             {
               params: [
-                114
+                111
               ],
               desugars: [
                 0
@@ -8419,14 +8247,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 415,
+        line: 404,
         column: 27,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 415,
+        line: 404,
         column: 44,
         ignore: false
       },
@@ -8434,7 +8262,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 415,
+        line: 404,
         column: 27,
         ignore: false
       },
@@ -8445,7 +8273,7 @@
       annotations: [
 
       ],
-      type: 56,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8470,14 +8298,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 433,
+        line: 422,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 436,
+        line: 425,
         column: 6,
         ignore: false
       },
@@ -8485,7 +8313,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 433,
+        line: 422,
         column: 17,
         ignore: false
       },
@@ -8509,7 +8337,7 @@
           ]
         }
       ],
-      type: 66,
+      type: 65,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC10fontFamilyFO1_11ResourceStr$$H",
@@ -8518,7 +8346,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 8322202779900123996
+        bodyHash: 6633822273347103166
       },
       info_type: "FuncInfo",
       info: {
@@ -8526,7 +8354,7 @@
           paramLists: [
             {
               params: [
-                116
+                113
               ],
               desugars: [
                 0
@@ -8543,14 +8371,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 433,
+        line: 422,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 433,
+        line: 422,
         column: 47,
         ignore: false
       },
@@ -8558,7 +8386,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 433,
+        line: 422,
         column: 28,
         ignore: false
       },
@@ -8594,14 +8422,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 457,
+        line: 446,
         column: 6,
         ignore: false
       },
@@ -8609,7 +8437,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 17,
         ignore: false
       },
@@ -8633,7 +8461,7 @@
           ]
         }
       ],
-      type: 67,
+      type: 66,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput11inputFilterHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_IF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput11inputFilterHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_IF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC11inputFilterFO1_11ResourceStrO1_Fu6String!5error=$$H",
@@ -8642,7 +8470,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 18350499635956774518
+        bodyHash: 13014681255420737839
       },
       info_type: "FuncInfo",
       info: {
@@ -8650,12 +8478,12 @@
           paramLists: [
             {
               params: [
-                118,
-                119
+                115,
+                116
               ],
               desugars: [
                 0,
-                120
+                117
               ]
             }
           ],
@@ -8669,14 +8497,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 48,
         ignore: false
       },
@@ -8684,7 +8512,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 29,
         ignore: false
       },
@@ -8716,14 +8544,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 50,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 82,
         ignore: false
       },
@@ -8731,7 +8559,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 50,
         ignore: false
       },
@@ -8742,7 +8570,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput11inputFilterHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_IF0uRNat6StringEEEE5errorIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -8768,14 +8596,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 78,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 82,
         ignore: false
       },
@@ -8794,7 +8622,7 @@
       annotations: [
 
       ],
-      type: 70,
+      type: 69,
       mangledName: "_CPI31ohos.arkui.component.text_input9TextInput11inputFilterHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_IF0uRNat6StringEEEE5errorHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -8811,14 +8639,14 @@
           paramLists: [
             {
               params: [
-                121
+                118
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 68
+          retType: 67
         }
       }
     },
@@ -8828,14 +8656,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 48,
         ignore: false
       },
@@ -8843,7 +8671,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 449,
+        line: 438,
         column: 29,
         ignore: false
       },
@@ -8879,14 +8707,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 469,
+        line: 458,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 473,
+        line: 462,
         column: 6,
         ignore: false
       },
@@ -8894,7 +8722,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 469,
+        line: 458,
         column: 17,
         ignore: false
       },
@@ -8918,7 +8746,7 @@
           ]
         }
       ],
-      type: 71,
+      type: 70,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput8onSubmitHNNat6OptionIF0uNN27ohos.arkui.component.common12EnterKeyTypeEEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput8onSubmitHNNat6OptionIF0uNN27ohos.arkui.component.common12EnterKeyTypeEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC8onSubmitFO1_Fu12EnterKeyType$$H",
@@ -8927,7 +8755,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12425495162267913803
+        bodyHash: 5077691178015010043
       },
       info_type: "FuncInfo",
       info: {
@@ -8935,7 +8763,7 @@
           paramLists: [
             {
               params: [
-                123
+                120
               ],
               desugars: [
                 0
@@ -8952,14 +8780,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 469,
+        line: 458,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 469,
+        line: 458,
         column: 59,
         ignore: false
       },
@@ -8967,7 +8795,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 469,
+        line: 458,
         column: 26,
         ignore: false
       },
@@ -8978,7 +8806,7 @@
       annotations: [
 
       ],
-      type: 72,
+      type: 71,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput8onSubmitHNNat6OptionIF0uNN27ohos.arkui.component.common12EnterKeyTypeEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9003,14 +8831,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 485,
+        line: 474,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 489,
+        line: 478,
         column: 6,
         ignore: false
       },
@@ -9018,7 +8846,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 485,
+        line: 474,
         column: 17,
         ignore: false
       },
@@ -9042,7 +8870,7 @@
           ]
         }
       ],
-      type: 74,
+      type: 73,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput6onCopyHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput6onCopyHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC6onCopyFO1_Fu6String$$H",
@@ -9051,7 +8879,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 872566733533876685
+        bodyHash: 18424507363323390763
       },
       info_type: "FuncInfo",
       info: {
@@ -9059,7 +8887,7 @@
           paramLists: [
             {
               params: [
-                125
+                122
               ],
               desugars: [
                 0
@@ -9076,14 +8904,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 485,
+        line: 474,
         column: 24,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 485,
+        line: 474,
         column: 51,
         ignore: false
       },
@@ -9091,7 +8919,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 485,
+        line: 474,
         column: 24,
         ignore: false
       },
@@ -9102,7 +8930,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput6onCopyHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9127,14 +8955,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 490,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 505,
+        line: 494,
         column: 6,
         ignore: false
       },
@@ -9142,7 +8970,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 490,
         column: 17,
         ignore: false
       },
@@ -9166,7 +8994,7 @@
           ]
         }
       ],
-      type: 74,
+      type: 73,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput5onCutHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput5onCutHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC5onCutFO1_Fu6String$$H",
@@ -9175,7 +9003,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12957297007977620817
+        bodyHash: 3943305996192137222
       },
       info_type: "FuncInfo",
       info: {
@@ -9183,7 +9011,7 @@
           paramLists: [
             {
               params: [
-                127
+                124
               ],
               desugars: [
                 0
@@ -9200,14 +9028,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 490,
         column: 23,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 490,
         column: 50,
         ignore: false
       },
@@ -9215,7 +9043,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 501,
+        line: 490,
         column: 23,
         ignore: false
       },
@@ -9226,7 +9054,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput5onCutHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9251,14 +9079,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 517,
+        line: 506,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 521,
+        line: 510,
         column: 6,
         ignore: false
       },
@@ -9266,7 +9094,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 517,
+        line: 506,
         column: 17,
         ignore: false
       },
@@ -9290,7 +9118,7 @@
           ]
         }
       ],
-      type: 74,
+      type: 73,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput8onChangeHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput8onChangeHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC8onChangeFO1_Fu6String$$H",
@@ -9299,7 +9127,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11854317817068972314
+        bodyHash: 438505477182886682
       },
       info_type: "FuncInfo",
       info: {
@@ -9307,7 +9135,7 @@
           paramLists: [
             {
               params: [
-                129
+                126
               ],
               desugars: [
                 0
@@ -9324,14 +9152,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 517,
+        line: 506,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 517,
+        line: 506,
         column: 53,
         ignore: false
       },
@@ -9339,7 +9167,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 517,
+        line: 506,
         column: 26,
         ignore: false
       },
@@ -9350,7 +9178,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput8onChangeHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9375,14 +9203,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 533,
+        line: 522,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 537,
+        line: 526,
         column: 6,
         ignore: false
       },
@@ -9390,7 +9218,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 533,
+        line: 522,
         column: 17,
         ignore: false
       },
@@ -9414,7 +9242,7 @@
           ]
         }
       ],
-      type: 74,
+      type: 73,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput7onPasteHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput7onPasteHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC7onPasteFO1_Fu6String$$H",
@@ -9423,7 +9251,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 9712429122576122160
+        bodyHash: 9850855035685403184
       },
       info_type: "FuncInfo",
       info: {
@@ -9431,7 +9259,7 @@
           paramLists: [
             {
               params: [
-                131
+                128
               ],
               desugars: [
                 0
@@ -9448,14 +9276,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 533,
+        line: 522,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 533,
+        line: 522,
         column: 52,
         ignore: false
       },
@@ -9463,7 +9291,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 533,
+        line: 522,
         column: 25,
         ignore: false
       },
@@ -9474,7 +9302,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput7onPasteHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9499,14 +9327,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 549,
+        line: 538,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 553,
+        line: 542,
         column: 6,
         ignore: false
       },
@@ -9514,7 +9342,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 549,
+        line: 538,
         column: 17,
         ignore: false
       },
@@ -9538,7 +9366,7 @@
           ]
         }
       ],
-      type: 75,
+      type: 74,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput12onEditChangeHNNat6OptionIF0ubEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput12onEditChangeHNNat6OptionIF0ubEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC12onEditChangeFO1_Fub$$H",
@@ -9547,7 +9375,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 3727962760136054792
+        bodyHash: 13221708684980953132
       },
       info_type: "FuncInfo",
       info: {
@@ -9555,7 +9383,7 @@
           paramLists: [
             {
               params: [
-                133
+                130
               ],
               desugars: [
                 0
@@ -9572,14 +9400,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 549,
+        line: 538,
         column: 30,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 549,
+        line: 538,
         column: 55,
         ignore: false
       },
@@ -9587,7 +9415,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 549,
+        line: 538,
         column: 30,
         ignore: false
       },
@@ -9598,7 +9426,7 @@
       annotations: [
 
       ],
-      type: 76,
+      type: 75,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput12onEditChangeHNNat6OptionIF0ubEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9623,14 +9451,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 569,
+        line: 558,
         column: 6,
         ignore: false
       },
@@ -9638,7 +9466,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 17,
         ignore: false
       },
@@ -9662,7 +9490,7 @@
           ]
         }
       ],
-      type: 79,
+      type: 78,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput14customKeyboardHNNat6OptionIF0uEENNatY5_IbE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput14customKeyboardHNNat6OptionIF0uEENNatY5_IbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC14customKeyboardFO1_13CustomBuilderO1_b!16supportAvoidance=$$H",
@@ -9671,7 +9499,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2804815914809888145
+        bodyHash: 14063731139416747180
       },
       info_type: "FuncInfo",
       info: {
@@ -9679,12 +9507,12 @@
           paramLists: [
             {
               params: [
-                135,
-                136
+                132,
+                133
               ],
               desugars: [
                 0,
-                137
+                134
               ]
             }
           ],
@@ -9698,14 +9526,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 32,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 53,
         ignore: false
       },
@@ -9713,7 +9541,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 32,
         ignore: false
       },
@@ -9724,7 +9552,7 @@
       annotations: [
 
       ],
-      type: 80,
+      type: 79,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput14customKeyboardHNNat6OptionIF0uEENNatY5_IbEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9745,14 +9573,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 55,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 86,
         ignore: false
       },
@@ -9760,7 +9588,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 55,
         ignore: false
       },
@@ -9771,7 +9599,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput14customKeyboardHNNat6OptionIF0uEENNatY5_IbEE16supportAvoidanceIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -9797,14 +9625,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 82,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 86,
         ignore: false
       },
@@ -9823,7 +9651,7 @@
       annotations: [
 
       ],
-      type: 82,
+      type: 81,
       mangledName: "_CPI31ohos.arkui.component.text_input9TextInput14customKeyboardHNNat6OptionIF0uEENNatY5_IbEE16supportAvoidanceHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -9840,14 +9668,14 @@
           paramLists: [
             {
               params: [
-                138
+                135
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 81
+          retType: 80
         }
       }
     },
@@ -9857,14 +9685,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 32,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 53,
         ignore: false
       },
@@ -9872,7 +9700,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 566,
+        line: 555,
         column: 32,
         ignore: false
       },
@@ -9883,7 +9711,7 @@
       annotations: [
 
       ],
-      type: 80,
+      type: 79,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput14customKeyboardHNNat6OptionIF0uEENNatY5_IbEE18supportAvoidance.1HY3_E5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -9908,14 +9736,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 582,
+        line: 571,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 585,
+        line: 574,
         column: 6,
         ignore: false
       },
@@ -9923,7 +9751,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 582,
+        line: 571,
         column: 17,
         ignore: false
       },
@@ -9947,7 +9775,7 @@
           ]
         }
       ],
-      type: 83,
+      type: 82,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput5styleHNNat6OptionINN27ohos.arkui.component.common14TextInputStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput5styleHNNat6OptionINN27ohos.arkui.component.common14TextInputStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC5styleFO1_14TextInputStyle$$H",
@@ -9956,7 +9784,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 6388448120091391384
+        bodyHash: 16748081073299797078
       },
       info_type: "FuncInfo",
       info: {
@@ -9964,7 +9792,7 @@
           paramLists: [
             {
               params: [
-                140
+                137
               ],
               desugars: [
                 0
@@ -9981,14 +9809,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 582,
+        line: 571,
         column: 23,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 582,
+        line: 571,
         column: 45,
         ignore: false
       },
@@ -9996,7 +9824,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 582,
+        line: 571,
         column: 23,
         ignore: false
       },
@@ -10007,7 +9835,7 @@
       annotations: [
 
       ],
-      type: 84,
+      type: 83,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput5styleHNNat6OptionINN27ohos.arkui.component.common14TextInputStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -10032,14 +9860,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 599,
+        line: 588,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 602,
+        line: 591,
         column: 6,
         ignore: false
       },
@@ -10047,7 +9875,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 599,
+        line: 588,
         column: 17,
         ignore: false
       },
@@ -10071,7 +9899,7 @@
           ]
         }
       ],
-      type: 86,
+      type: 85,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput21enableKeyboardOnFocusHNNat6OptionIbE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput21enableKeyboardOnFocusHNNat6OptionIbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC21enableKeyboardOnFocusFO1_b$$H",
@@ -10080,7 +9908,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7248557220287178391
+        bodyHash: 7381628885533684229
       },
       info_type: "FuncInfo",
       info: {
@@ -10088,7 +9916,7 @@
           paramLists: [
             {
               params: [
-                142
+                139
               ],
               desugars: [
                 0
@@ -10105,14 +9933,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 599,
+        line: 588,
         column: 39,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 599,
+        line: 588,
         column: 51,
         ignore: false
       },
@@ -10120,7 +9948,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 599,
+        line: 588,
         column: 39,
         ignore: false
       },
@@ -10131,7 +9959,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput21enableKeyboardOnFocusHNNat6OptionIbEE5valueIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -10156,14 +9984,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 615,
+        line: 604,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 618,
+        line: 607,
         column: 6,
         ignore: false
       },
@@ -10171,7 +9999,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 615,
+        line: 604,
         column: 17,
         ignore: false
       },
@@ -10195,7 +10023,7 @@
           ]
         }
       ],
-      type: 86,
+      type: 85,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput19selectionMenuHiddenHNNat6OptionIbE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput19selectionMenuHiddenHNNat6OptionIbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC19selectionMenuHiddenFO1_b$$H",
@@ -10204,7 +10032,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11527270230808092471
+        bodyHash: 13562543815838469163
       },
       info_type: "FuncInfo",
       info: {
@@ -10212,7 +10040,7 @@
           paramLists: [
             {
               params: [
-                144
+                141
               ],
               desugars: [
                 0
@@ -10229,14 +10057,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 615,
+        line: 604,
         column: 37,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 615,
+        line: 604,
         column: 49,
         ignore: false
       },
@@ -10244,7 +10072,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 615,
+        line: 604,
         column: 37,
         ignore: false
       },
@@ -10255,7 +10083,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput19selectionMenuHiddenHNNat6OptionIbEE5valueIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -10280,14 +10108,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 631,
+        line: 620,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 634,
+        line: 623,
         column: 6,
         ignore: false
       },
@@ -10295,7 +10123,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 631,
+        line: 620,
         column: 17,
         ignore: false
       },
@@ -10319,7 +10147,7 @@
           ]
         }
       ],
-      type: 86,
+      type: 85,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput13showUnderlineHNNat6OptionIbE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput13showUnderlineHNNat6OptionIbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC13showUnderlineFO1_b$$H",
@@ -10328,7 +10156,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 303676400143518994
+        bodyHash: 18039225801943633294
       },
       info_type: "FuncInfo",
       info: {
@@ -10336,7 +10164,7 @@
           paramLists: [
             {
               params: [
-                146
+                143
               ],
               desugars: [
                 0
@@ -10353,14 +10181,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 631,
+        line: 620,
         column: 31,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 631,
+        line: 620,
         column: 43,
         ignore: false
       },
@@ -10368,7 +10196,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 631,
+        line: 620,
         column: 31,
         ignore: false
       },
@@ -10379,7 +10207,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput13showUnderlineHNNat6OptionIbEE5valueIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -10404,14 +10232,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 647,
+        line: 636,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 650,
+        line: 639,
         column: 6,
         ignore: false
       },
@@ -10419,7 +10247,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 647,
+        line: 636,
         column: 17,
         ignore: false
       },
@@ -10443,7 +10271,7 @@
           ]
         }
       ],
-      type: 87,
+      type: 86,
       mangledName: "_CN31ohos.arkui.component.text_input9TextInput8maxLinesHNNat6OptionIiE",
       exportId: "_CN31ohos.arkui.component.text_input9TextInput8maxLinesHNNat6OptionIiE",
       mangledBeforeSema: "31ohos.arkui.component.text_input9TextInputC8maxLinesFO1_i$$H",
@@ -10452,7 +10280,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 7795076695267272330
+        bodyHash: 12513315930485828515
       },
       info_type: "FuncInfo",
       info: {
@@ -10460,7 +10288,7 @@
           paramLists: [
             {
               params: [
-                148
+                145
               ],
               desugars: [
                 0
@@ -10477,14 +10305,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 647,
+        line: 636,
         column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 647,
+        line: 636,
         column: 39,
         ignore: false
       },
@@ -10492,7 +10320,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 647,
+        line: 636,
         column: 26,
         ignore: false
       },
@@ -10528,14 +10356,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 653,
+        line: 642,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 653,
+        line: 642,
         column: 43,
         ignore: false
       },
@@ -10543,7 +10371,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 653,
+        line: 642,
         column: 29,
         ignore: false
       },
@@ -10563,7 +10391,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 244983843313334027
+        bodyHash: 9948489291578574532
       },
       info_type: "FuncInfo",
       info: {
@@ -10632,7 +10460,7 @@
           ]
         }
       ],
-      type: 89,
+      type: 88,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttributeE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttributeE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI",
@@ -10646,33 +10474,33 @@
       info_type: "InterfaceInfo",
       info: {
         inheritedTypes: [
-          107
+          106
         ],
         body: [
-          151,
-          153,
-          155,
-          157,
-          159,
-          164,
-          166,
-          168,
-          170,
-          172,
-          174,
+          148,
+          150,
+          152,
+          154,
+          156,
+          161,
+          163,
+          165,
+          167,
+          169,
+          171,
+          173,
           176,
-          179,
-          181,
-          183,
-          185,
-          187,
-          189,
+          178,
+          180,
+          182,
+          184,
+          186,
+          188,
           191,
-          194,
-          196,
-          198,
-          200,
-          202
+          193,
+          195,
+          197,
+          199
         ]
       }
     },
@@ -10725,7 +10553,7 @@
           ]
         }
       ],
-      type: 90,
+      type: 89,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute12enterKeyTypeHNNat6OptionINN27ohos.arkui.component.common12EnterKeyTypeEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute12enterKeyTypeHNNat6OptionINN27ohos.arkui.component.common12EnterKeyTypeEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI12enterKeyTypeFO1_12EnterKeyType$$18TextInputAttribute",
@@ -10742,14 +10570,14 @@
           paramLists: [
             {
               params: [
-                152
+                149
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -10785,7 +10613,7 @@
       annotations: [
 
       ],
-      type: 47,
+      type: 46,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute12enterKeyTypeHNNat6OptionINN27ohos.arkui.component.common12EnterKeyTypeEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -10849,7 +10677,7 @@
           ]
         }
       ],
-      type: 91,
+      type: 90,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9textAlignHNNat6OptionINN27ohos.arkui.component.common9TextAlignEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute9textAlignHNNat6OptionINN27ohos.arkui.component.common9TextAlignEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI9textAlignFO1_9TextAlign$$18TextInputAttribute",
@@ -10866,14 +10694,14 @@
           paramLists: [
             {
               params: [
-                154
+                151
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -10909,7 +10737,7 @@
       annotations: [
 
       ],
-      type: 50,
+      type: 49,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9textAlignHNNat6OptionINN27ohos.arkui.component.common9TextAlignEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -10973,7 +10801,7 @@
           ]
         }
       ],
-      type: 92,
+      type: 91,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute16placeholderColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute16placeholderColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI16placeholderColorFO1_13ResourceColor$$18TextInputAttribute",
@@ -10990,14 +10818,14 @@
           paramLists: [
             {
               params: [
-                156
+                153
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -11033,7 +10861,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute16placeholderColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11097,7 +10925,7 @@
           ]
         }
       ],
-      type: 92,
+      type: 91,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute10caretColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute10caretColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI10caretColorFO1_13ResourceColor$$18TextInputAttribute",
@@ -11114,14 +10942,14 @@
           paramLists: [
             {
               params: [
-                158
+                155
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -11157,7 +10985,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute10caretColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11221,7 +11049,7 @@
           ]
         }
       ],
-      type: 93,
+      type: 92,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI15placeholderFontFO1_6Length!4sizeO1_10FontWeight!6weightO1_6String!6familyO1_9FontStyle!5style$$18TextInputAttribute",
@@ -11238,10 +11066,10 @@
           paramLists: [
             {
               params: [
-                160,
-                161,
-                162,
-                163
+                157,
+                158,
+                159,
+                160
               ],
               desugars: [
                 0,
@@ -11251,7 +11079,7 @@
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -11335,7 +11163,7 @@
       annotations: [
 
       ],
-      type: 53,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE6weightIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11383,7 +11211,7 @@
       annotations: [
 
       ],
-      type: 55,
+      type: 54,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE6familyIYE_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11431,7 +11259,7 @@
       annotations: [
 
       ],
-      type: 56,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute15placeholderFontHNNat6OptionICN9ohos.base6LengthEENNatY5_INN27ohos.arkui.component.common10FontWeightEENNatY5_IRNat6StringEENNatY5_INNYB_9FontStyleEEE5styleIYH_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11496,7 +11324,7 @@
           ]
         }
       ],
-      type: 94,
+      type: 93,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9maxLengthHNNat6OptionIjE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute9maxLengthHNNat6OptionIjE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI9maxLengthFO1_j$$18TextInputAttribute",
@@ -11513,14 +11341,14 @@
           paramLists: [
             {
               params: [
-                165
+                162
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -11556,7 +11384,7 @@
       annotations: [
 
       ],
-      type: 62,
+      type: 61,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9maxLengthHNNat6OptionIjEE5valueIjE",
       exportId: "",
       mangledBeforeSema: "",
@@ -11620,7 +11448,7 @@
           ]
         }
       ],
-      type: 95,
+      type: 94,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute8fontSizeHNNat6OptionICN9ohos.base6LengthEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI8fontSizeFO1_6Length$$18TextInputAttribute",
@@ -11637,14 +11465,14 @@
           paramLists: [
             {
               params: [
-                167
+                164
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -11744,7 +11572,7 @@
           ]
         }
       ],
-      type: 92,
+      type: 91,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI9fontColorFO1_13ResourceColor$$18TextInputAttribute",
@@ -11761,14 +11589,14 @@
           paramLists: [
             {
               params: [
-                169
+                166
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -11804,7 +11632,7 @@
       annotations: [
 
       ],
-      type: 37,
+      type: 36,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9fontColorHNNat6OptionICN9ohos.base13ResourceColorEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11868,7 +11696,7 @@
           ]
         }
       ],
-      type: 96,
+      type: 95,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI10fontWeightFO1_10FontWeight$$18TextInputAttribute",
@@ -11885,14 +11713,14 @@
           paramLists: [
             {
               params: [
-                171
+                168
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -11928,7 +11756,7 @@
       annotations: [
 
       ],
-      type: 53,
+      type: 52,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute10fontWeightHNNat6OptionINN27ohos.arkui.component.common10FontWeightEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -11992,7 +11820,7 @@
           ]
         }
       ],
-      type: 97,
+      type: 96,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI9fontStyleFO1_9FontStyle$$18TextInputAttribute",
@@ -12009,14 +11837,14 @@
           paramLists: [
             {
               params: [
-                173
+                170
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12052,7 +11880,7 @@
       annotations: [
 
       ],
-      type: 56,
+      type: 55,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute9fontStyleHNNat6OptionINN27ohos.arkui.component.common9FontStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -12116,7 +11944,7 @@
           ]
         }
       ],
-      type: 98,
+      type: 97,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute10fontFamilyHNNat6OptionICN9ohos.base11ResourceStrEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI10fontFamilyFO1_11ResourceStr$$18TextInputAttribute",
@@ -12133,14 +11961,14 @@
           paramLists: [
             {
               params: [
-                175
+                172
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12240,7 +12068,7 @@
           ]
         }
       ],
-      type: 99,
+      type: 98,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute11inputFilterHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_IF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute11inputFilterHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_IF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI11inputFilterFO1_11ResourceStrO1_Fu6String!5error$$18TextInputAttribute",
@@ -12257,8 +12085,8 @@
           paramLists: [
             {
               params: [
-                177,
-                178
+                174,
+                175
               ],
               desugars: [
                 0,
@@ -12266,7 +12094,7 @@
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12349,7 +12177,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute11inputFilterHNNat6OptionICN9ohos.base11ResourceStrEENNatY5_IF0uRNat6StringEEEE5errorIYA_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -12414,7 +12242,7 @@
           ]
         }
       ],
-      type: 100,
+      type: 99,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute8onSubmitHNNat6OptionIF0uNN27ohos.arkui.component.common12EnterKeyTypeEEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute8onSubmitHNNat6OptionIF0uNN27ohos.arkui.component.common12EnterKeyTypeEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI8onSubmitFO1_Fu12EnterKeyType$$18TextInputAttribute",
@@ -12431,14 +12259,14 @@
           paramLists: [
             {
               params: [
-                180
+                177
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12474,7 +12302,7 @@
       annotations: [
 
       ],
-      type: 72,
+      type: 71,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute8onSubmitHNNat6OptionIF0uNN27ohos.arkui.component.common12EnterKeyTypeEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -12538,7 +12366,7 @@
           ]
         }
       ],
-      type: 101,
+      type: 100,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute6onCopyHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute6onCopyHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI6onCopyFO1_Fu6String$$18TextInputAttribute",
@@ -12555,14 +12383,14 @@
           paramLists: [
             {
               params: [
-                182
+                179
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12598,7 +12426,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute6onCopyHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -12662,7 +12490,7 @@
           ]
         }
       ],
-      type: 101,
+      type: 100,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute5onCutHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute5onCutHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI5onCutFO1_Fu6String$$18TextInputAttribute",
@@ -12679,14 +12507,14 @@
           paramLists: [
             {
               params: [
-                184
+                181
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12722,7 +12550,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute5onCutHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -12786,7 +12614,7 @@
           ]
         }
       ],
-      type: 101,
+      type: 100,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute8onChangeHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute8onChangeHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI8onChangeFO1_Fu6String$$18TextInputAttribute",
@@ -12803,14 +12631,14 @@
           paramLists: [
             {
               params: [
-                186
+                183
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12846,7 +12674,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute8onChangeHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -12910,7 +12738,7 @@
           ]
         }
       ],
-      type: 101,
+      type: 100,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute7onPasteHNNat6OptionIF0uRNat6StringEEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute7onPasteHNNat6OptionIF0uRNat6StringEEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI7onPasteFO1_Fu6String$$18TextInputAttribute",
@@ -12927,14 +12755,14 @@
           paramLists: [
             {
               params: [
-                188
+                185
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -12970,7 +12798,7 @@
       annotations: [
 
       ],
-      type: 68,
+      type: 67,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute7onPasteHNNat6OptionIF0uRNat6StringEEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -13034,7 +12862,7 @@
           ]
         }
       ],
-      type: 102,
+      type: 101,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute12onEditChangeHNNat6OptionIF0ubEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute12onEditChangeHNNat6OptionIF0ubEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI12onEditChangeFO1_Fub$$18TextInputAttribute",
@@ -13051,14 +12879,14 @@
           paramLists: [
             {
               params: [
-                190
+                187
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -13094,7 +12922,7 @@
       annotations: [
 
       ],
-      type: 76,
+      type: 75,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute12onEditChangeHNNat6OptionIF0ubEEE8callbackIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -13158,7 +12986,7 @@
           ]
         }
       ],
-      type: 103,
+      type: 102,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute14customKeyboardHNNat6OptionIF0uEENNatY5_IbE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute14customKeyboardHNNat6OptionIF0uEENNatY5_IbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI14customKeyboardFO1_13CustomBuilderO1_b!16supportAvoidance$$18TextInputAttribute",
@@ -13175,8 +13003,8 @@
           paramLists: [
             {
               params: [
-                192,
-                193
+                189,
+                190
               ],
               desugars: [
                 0,
@@ -13184,7 +13012,7 @@
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -13220,7 +13048,7 @@
       annotations: [
 
       ],
-      type: 80,
+      type: 79,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute14customKeyboardHNNat6OptionIF0uEENNatY5_IbEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -13267,7 +13095,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute14customKeyboardHNNat6OptionIF0uEENNatY5_IbEE16supportAvoidanceIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -13332,7 +13160,7 @@
           ]
         }
       ],
-      type: 104,
+      type: 103,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute5styleHNNat6OptionINN27ohos.arkui.component.common14TextInputStyleEE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute5styleHNNat6OptionINN27ohos.arkui.component.common14TextInputStyleEE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI5styleFO1_14TextInputStyle$$18TextInputAttribute",
@@ -13349,14 +13177,14 @@
           paramLists: [
             {
               params: [
-                195
+                192
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -13392,7 +13220,7 @@
       annotations: [
 
       ],
-      type: 84,
+      type: 83,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute5styleHNNat6OptionINN27ohos.arkui.component.common14TextInputStyleEEE5valueIY6_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -13456,7 +13284,7 @@
           ]
         }
       ],
-      type: 105,
+      type: 104,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute21enableKeyboardOnFocusHNNat6OptionIbE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute21enableKeyboardOnFocusHNNat6OptionIbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI21enableKeyboardOnFocusFO1_b$$18TextInputAttribute",
@@ -13473,14 +13301,14 @@
           paramLists: [
             {
               params: [
-                197
+                194
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -13516,7 +13344,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute21enableKeyboardOnFocusHNNat6OptionIbEE5valueIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -13580,7 +13408,7 @@
           ]
         }
       ],
-      type: 105,
+      type: 104,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute19selectionMenuHiddenHNNat6OptionIbE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute19selectionMenuHiddenHNNat6OptionIbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI19selectionMenuHiddenFO1_b$$18TextInputAttribute",
@@ -13597,14 +13425,14 @@
           paramLists: [
             {
               params: [
-                199
+                196
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -13640,7 +13468,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute19selectionMenuHiddenHNNat6OptionIbEE5valueIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -13704,7 +13532,7 @@
           ]
         }
       ],
-      type: 105,
+      type: 104,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute13showUnderlineHNNat6OptionIbE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute13showUnderlineHNNat6OptionIbE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI13showUnderlineFO1_b$$18TextInputAttribute",
@@ -13721,14 +13549,14 @@
           paramLists: [
             {
               params: [
-                201
+                198
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -13764,7 +13592,7 @@
       annotations: [
 
       ],
-      type: 81,
+      type: 80,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute13showUnderlineHNNat6OptionIbEE5valueIbE",
       exportId: "",
       mangledBeforeSema: "",
@@ -13828,7 +13656,7 @@
           ]
         }
       ],
-      type: 106,
+      type: 105,
       mangledName: "_CN31ohos.arkui.component.text_input18TextInputAttribute8maxLinesHNNat6OptionIiE",
       exportId: "_CN31ohos.arkui.component.text_input18TextInputAttribute8maxLinesHNNat6OptionIiE",
       mangledBeforeSema: "31ohos.arkui.component.text_input18TextInputAttributeI8maxLinesFO1_i$$18TextInputAttribute",
@@ -13845,14 +13673,14 @@
           paramLists: [
             {
               params: [
-                203
+                200
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 89
+          retType: 88
         }
       }
     },
@@ -14232,14 +14060,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 252,
+        line: 247,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 252,
+        line: 247,
         column: 20,
         ignore: false
       },
@@ -14255,14 +14083,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 253,
+        line: 248,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 253,
+        line: 248,
         column: 52,
         ignore: false
       },
@@ -14278,14 +14106,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 275,
+        line: 270,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 275,
+        line: 270,
         column: 20,
         ignore: false
       },
@@ -14301,14 +14129,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 276,
+        line: 271,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 276,
+        line: 271,
         column: 52,
         ignore: false
       },
@@ -14324,14 +14152,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 291,
+        line: 285,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 291,
+        line: 285,
         column: 20,
         ignore: false
       },
@@ -14347,14 +14175,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 292,
+        line: 286,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 292,
+        line: 286,
         column: 52,
         ignore: false
       },
@@ -14370,14 +14198,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 307,
+        line: 300,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 307,
+        line: 300,
         column: 20,
         ignore: false
       },
@@ -14393,14 +14221,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 308,
+        line: 301,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 308,
+        line: 301,
         column: 52,
         ignore: false
       },
@@ -14416,14 +14244,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 325,
+        line: 318,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 325,
+        line: 318,
         column: 20,
         ignore: false
       },
@@ -14439,14 +14267,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 326,
+        line: 319,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 326,
+        line: 319,
         column: 52,
         ignore: false
       },
@@ -14462,14 +14290,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 342,
+        line: 334,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 342,
+        line: 334,
         column: 20,
         ignore: false
       },
@@ -14485,14 +14313,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 343,
+        line: 335,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 343,
+        line: 335,
         column: 52,
         ignore: false
       },
@@ -14508,14 +14336,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 363,
+        line: 353,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 363,
+        line: 353,
         column: 20,
         ignore: false
       },
@@ -14531,14 +14359,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 364,
+        line: 354,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 364,
+        line: 354,
         column: 52,
         ignore: false
       },
@@ -14554,14 +14382,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 380,
+        line: 369,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 380,
+        line: 369,
         column: 20,
         ignore: false
       },
@@ -14577,14 +14405,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 381,
+        line: 370,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 381,
+        line: 370,
         column: 52,
         ignore: false
       },
@@ -14600,14 +14428,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 396,
+        line: 385,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 396,
+        line: 385,
         column: 20,
         ignore: false
       },
@@ -14623,14 +14451,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 397,
+        line: 386,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 397,
+        line: 386,
         column: 52,
         ignore: false
       },
@@ -14646,14 +14474,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 412,
+        line: 401,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 412,
+        line: 401,
         column: 20,
         ignore: false
       },
@@ -14669,14 +14497,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 413,
+        line: 402,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 413,
+        line: 402,
         column: 52,
         ignore: false
       },
@@ -14692,14 +14520,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 430,
+        line: 419,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 430,
+        line: 419,
         column: 20,
         ignore: false
       },
@@ -14715,14 +14543,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 431,
+        line: 420,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 431,
+        line: 420,
         column: 52,
         ignore: false
       },
@@ -14738,14 +14566,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 446,
+        line: 435,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 446,
+        line: 435,
         column: 20,
         ignore: false
       },
@@ -14761,14 +14589,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 447,
+        line: 436,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 447,
+        line: 436,
         column: 52,
         ignore: false
       },
@@ -14784,14 +14612,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 466,
+        line: 455,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 466,
+        line: 455,
         column: 20,
         ignore: false
       },
@@ -14807,14 +14635,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 467,
+        line: 456,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 467,
+        line: 456,
         column: 52,
         ignore: false
       },
@@ -14830,14 +14658,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 482,
+        line: 471,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 482,
+        line: 471,
         column: 20,
         ignore: false
       },
@@ -14853,14 +14681,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 483,
+        line: 472,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 483,
+        line: 472,
         column: 52,
         ignore: false
       },
@@ -14876,14 +14704,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 498,
+        line: 487,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 498,
+        line: 487,
         column: 20,
         ignore: false
       },
@@ -14899,14 +14727,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 499,
+        line: 488,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 499,
+        line: 488,
         column: 52,
         ignore: false
       },
@@ -14922,14 +14750,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 514,
+        line: 503,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 514,
+        line: 503,
         column: 20,
         ignore: false
       },
@@ -14945,14 +14773,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 515,
+        line: 504,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 515,
+        line: 504,
         column: 52,
         ignore: false
       },
@@ -14968,14 +14796,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 530,
+        line: 519,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 530,
+        line: 519,
         column: 20,
         ignore: false
       },
@@ -14991,14 +14819,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 531,
+        line: 520,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 531,
+        line: 520,
         column: 52,
         ignore: false
       },
@@ -15014,14 +14842,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 546,
+        line: 535,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 546,
+        line: 535,
         column: 20,
         ignore: false
       },
@@ -15037,14 +14865,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 547,
+        line: 536,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 547,
+        line: 536,
         column: 52,
         ignore: false
       },
@@ -15060,14 +14888,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 563,
+        line: 552,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 563,
+        line: 552,
         column: 20,
         ignore: false
       },
@@ -15083,14 +14911,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 564,
+        line: 553,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 564,
+        line: 553,
         column: 52,
         ignore: false
       },
@@ -15106,14 +14934,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 579,
+        line: 568,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 579,
+        line: 568,
         column: 20,
         ignore: false
       },
@@ -15129,14 +14957,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 580,
+        line: 569,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 580,
+        line: 569,
         column: 52,
         ignore: false
       },
@@ -15152,14 +14980,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 596,
+        line: 585,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 596,
+        line: 585,
         column: 20,
         ignore: false
       },
@@ -15175,14 +15003,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 597,
+        line: 586,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 597,
+        line: 586,
         column: 52,
         ignore: false
       },
@@ -15198,14 +15026,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 612,
+        line: 601,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 612,
+        line: 601,
         column: 20,
         ignore: false
       },
@@ -15221,14 +15049,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 613,
+        line: 602,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 613,
+        line: 602,
         column: 52,
         ignore: false
       },
@@ -15244,14 +15072,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 628,
+        line: 617,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 628,
+        line: 617,
         column: 20,
         ignore: false
       },
@@ -15267,14 +15095,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 629,
+        line: 618,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 629,
+        line: 618,
         column: 52,
         ignore: false
       },
@@ -15290,14 +15118,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 644,
+        line: 633,
         column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 644,
+        line: 633,
         column: 20,
         ignore: false
       },
@@ -15313,14 +15141,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 645,
+        line: 634,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 645,
+        line: 634,
         column: 52,
         ignore: false
       },

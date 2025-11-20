@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "kit.CoreFileKit",
-  pkgDepInfo: "{\"package\":\"kit.CoreFileKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.file.fileuri\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":34}}]},{\"package\":\"ohos.file.fs\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":29}}]}]}",
+  pkgDepInfo: "{\"package\":\"kit.CoreFileKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.file.fileuri\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":34}}]},{\"package\":\"ohos.file.fs\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":29}}]}],\"features\":[]}",
   imports: [
     "ohos.file.fs",
     "ohos.file.fileuri"
@@ -21,14 +21,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 29,
             ignore: false
           },
@@ -45,14 +45,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 34,
             ignore: false
           },

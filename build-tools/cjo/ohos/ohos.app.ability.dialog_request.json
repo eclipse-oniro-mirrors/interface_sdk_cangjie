@@ -1,15 +1,15 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.app.ability.dialog_request",
-  pkgDepInfo: "{\"package\":\"ohos.app.ability.dialog_request\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.want\",\"isStd\":false,\"imports\":[{\"file\":\"dialog_request.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":31}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"hilog.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":20}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"dialog_request.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":21}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.app.ability.dialog_request\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.app.ability.want\",\"isStd\":false,\"imports\":[{\"file\":\"dialog_request.cj\",\"begin\":{\"line\":20,\"column\":31},\"end\":{\"line\":20,\"column\":35}},{\"file\":\"dialog_request.cj\",\"begin\":{\"line\":20,\"column\":37},\"end\":{\"line\":20,\"column\":47}}]},{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"dialog_request.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":49}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"hilog.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":31}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"dialog_request.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]}],\"features\":[]}",
   imports: [
-    "ohos.app.ability.want",
     "std.core",
+    "ohos.app.ability.want",
     "ohos.hilog"
   ],
   allFiles: [
@@ -23,15 +23,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
-            column: 1,
+            line: 20,
+            column: 31,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
-            column: 31,
+            line: 20,
+            column: 35,
             ignore: false
           },
           prefixPaths: [
@@ -40,29 +40,75 @@
             "ability",
             "want"
           ],
-          identifier: "*",
+          identifier: "Want",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 20,
+            column: 37,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 20,
+            column: 47,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "app",
+            "ability",
+            "want"
+          ],
+          identifier: "WantHandle",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
-            column: 21,
+            line: 21,
+            column: 28,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 1,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 49,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "business_exception"
+          ],
+          identifier: "BusinessException",
           asIdentifier: ""
         },
         {
@@ -95,22 +141,22 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
-            column: 20,
+            line: 20,
+            column: 31,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "hilog"
           ],
-          identifier: "*",
+          identifier: "HilogChannel",
           asIdentifier: ""
         },
         {
@@ -140,6 +186,9 @@
   ],
   allTypes: [
     {
+      kind: "Int32"
+    },
+    {
       kind: "Enum",
       typeArgs: [
 
@@ -148,67 +197,20 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 1
+          index: 2
         }
       }
     },
     {
-      kind: "Func",
-      typeArgs: [
-        3
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 1
-      }
-    },
-    {
-      kind: "Int32"
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 3
-      }
-    },
-    {
-      kind: "Class",
+      kind: "Struct",
       typeArgs: [
 
       ],
       info_type: "CompositeTyInfo",
       info: {
         declPtr: {
-          pkgId: -2,
-          index: 7
+          decl: "_CNat6StringE"
         }
-      }
-    },
-    {
-      kind: "Class",
-      typeArgs: [
-
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          decl: "_CN21ohos.app.ability.want4WantE"
-        }
-      }
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        1,
-        6
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 5
       }
     },
     {
@@ -218,7 +220,30 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 6
+        retType: 2
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 1
+      }
+    },
+    {
+      kind: "Class",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          pkgId: -2,
+          index: 8
+        }
       }
     },
     {
@@ -230,6 +255,39 @@
       info: {
         declPtr: {
           pkgId: 1,
+          decl: "_CN21ohos.app.ability.want4WantE"
+        }
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        2,
+        7
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 6
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        2
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 7
+      }
+    },
+    {
+      kind: "Class",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
           decl: "_CNat6ObjectE"
         }
       }
@@ -243,7 +301,7 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 15
+          index: 16
         }
       }
     },
@@ -253,12 +311,12 @@
     {
       kind: "Func",
       typeArgs: [
-        3,
-        11
+        1,
+        12
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 10
+        retType: 11
       }
     },
     {
@@ -277,6 +335,56 @@
   ],
   allDecls: [
     {
+      kind: "VarDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.app.ability.dialog_request",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 24,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 24,
+        column: 41,
+        ignore: false
+      },
+      identifier: "ERROR_CODE_INNER",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 24,
+        column: 7,
+        ignore: false
+      },
+      attributes: [
+        144678138029293616,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 1,
+      mangledName: "",
+      exportId: "_CN31ohos.app.ability.dialog_request16ERROR_CODE_INNERE",
+      mangledBeforeSema: "31ohos.app.ability.dialog_request16ERROR_CODE_INNERV$$i",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 12820464909098194885,
+        bodyHash: 1932593525106590939
+      },
+      info_type: "VarInfo",
+      info: {
+        isConst: true,
+        initializer: 1
+      }
+    },
+    {
       kind: "EnumDecl",
       isTopLevel: true,
       fullPkgName: "ohos.app.ability.dialog_request",
@@ -287,14 +395,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 71,
         column: 2,
         ignore: false
       },
@@ -302,7 +410,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 13,
         ignore: false
       },
@@ -316,11 +424,7 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 1
-            },
-            {
-              name: "stagemodelonly",
+              name: "since",
               expr: 2
             },
             {
@@ -330,7 +434,7 @@
           ]
         }
       ],
-      type: 1,
+      type: 2,
       mangledName: "_CN31ohos.app.ability.dialog_request10ResultCodeE",
       exportId: "_CN31ohos.app.ability.dialog_request10ResultCodeE",
       mangledBeforeSema: "31ohos.app.ability.dialog_request10ResultCodeU",
@@ -339,7 +443,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 9247755943451066890
+        bodyHash: 5191865489324337508
       },
       info_type: "EnumInfo",
       info: {
@@ -347,16 +451,16 @@
 
         ],
         body: [
-          2,
           3,
           4,
-          6
+          5,
+          7
         ],
         nonExhaustive: true,
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 55,
+          line: 51,
           column: 7,
           ignore: false
         }
@@ -368,14 +472,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 42,
+        line: 41,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 42,
+        line: 41,
         column: 13,
         ignore: false
       },
@@ -383,7 +487,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 42,
+        line: 41,
         column: 5,
         ignore: false
       },
@@ -397,21 +501,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 4
             },
             {
-              name: "stagemodelonly",
-              expr: 5
-            },
-            {
               name: "syscap",
-              expr: 6
+              expr: 5
             }
           ]
         }
       ],
-      type: 1,
+      type: 2,
       mangledName: "",
       exportId: "_CN31ohos.app.ability.dialog_request10ResultCode8ResultOkKE",
       mangledBeforeSema: "31ohos.app.ability.dialog_request10ResultCodeU8ResultOkV$$",
@@ -420,7 +520,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 16135290005938111378
+        bodyHash: 15007562349379224664
       },
       info_type: "VarInfo",
       info: {
@@ -432,14 +532,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 54,
+        line: 50,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 54,
+        line: 50,
         column: 17,
         ignore: false
       },
@@ -447,7 +547,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 54,
+        line: 50,
         column: 5,
         ignore: false
       },
@@ -461,21 +561,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
-              expr: 8
+              name: "since",
+              expr: 6
             },
             {
               name: "syscap",
-              expr: 9
+              expr: 7
             }
           ]
         }
       ],
-      type: 1,
+      type: 2,
       mangledName: "",
       exportId: "_CN31ohos.app.ability.dialog_request10ResultCode12ResultCancelKE",
       mangledBeforeSema: "31ohos.app.ability.dialog_request10ResultCodeU12ResultCancelV$$",
@@ -484,7 +580,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 16135290005938111378
+        bodyHash: 15007562349379224664
       },
       info_type: "VarInfo",
       info: {
@@ -500,14 +596,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 57,
+        line: 56,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 62,
         column: 6,
         ignore: false
       },
@@ -515,7 +611,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 57,
+        line: 56,
         column: 27,
         ignore: false
       },
@@ -526,7 +622,7 @@
       annotations: [
 
       ],
-      type: 2,
+      type: 4,
       mangledName: "_CN31ohos.app.ability.dialog_request10ResultCode5parseHi",
       exportId: "_CN31ohos.app.ability.dialog_request10ResultCode5parseHi",
       mangledBeforeSema: "31ohos.app.ability.dialog_request10ResultCodeU5parseFi$$10ResultCode",
@@ -535,7 +631,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 8035971499611947038,
-        bodyHash: 594402199483897079
+        bodyHash: 3803998800149044054
       },
       info_type: "FuncInfo",
       info: {
@@ -543,14 +639,14 @@
           paramLists: [
             {
               params: [
-                5
+                6
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 2
         }
       }
     },
@@ -560,14 +656,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 57,
+        line: 56,
         column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 57,
+        line: 56,
         column: 45,
         ignore: false
       },
@@ -575,7 +671,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 57,
+        line: 56,
         column: 33,
         ignore: false
       },
@@ -586,7 +682,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 1,
       mangledName: "_CN31ohos.app.ability.dialog_request10ResultCode5parseHiE5valueE",
       exportId: "",
       mangledBeforeSema: "",
@@ -611,14 +707,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 64,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 70,
         column: 6,
         ignore: false
       },
@@ -626,7 +722,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 64,
         column: 20,
         ignore: false
       },
@@ -637,7 +733,7 @@
       annotations: [
 
       ],
-      type: 4,
+      type: 5,
       mangledName: "_CN31ohos.app.ability.dialog_request10ResultCode8getValueHv",
       exportId: "_CN31ohos.app.ability.dialog_request10ResultCode8getValueHv",
       mangledBeforeSema: "31ohos.app.ability.dialog_request10ResultCodeU8getValueF$$i",
@@ -646,7 +742,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 7301569513466477311
+        bodyHash: 7171887741898644903
       },
       info_type: "FuncInfo",
       info: {
@@ -661,7 +757,7 @@
               ]
             }
           ],
-          retType: 3
+          retType: 1
         }
       }
     },
@@ -676,14 +772,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 85,
+        line: 80,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 103,
         column: 2,
         ignore: false
       },
@@ -691,7 +787,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 85,
+        line: 80,
         column: 14,
         ignore: false
       },
@@ -705,21 +801,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 10
-            },
-            {
-              name: "stagemodelonly",
-              expr: 11
+              name: "since",
+              expr: 8
             },
             {
               name: "syscap",
-              expr: 12
+              expr: 9
             }
           ]
         }
       ],
-      type: 5,
+      type: 6,
       mangledName: "_CN31ohos.app.ability.dialog_request13RequestResultE",
       exportId: "_CN31ohos.app.ability.dialog_request13RequestResultE",
       mangledBeforeSema: "31ohos.app.ability.dialog_request13RequestResultC",
@@ -728,17 +820,17 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16135290005938111378
+        bodyHash: 15007562349379224664
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          9
+          10
         ],
         body: [
-          8,
           9,
-          10
+          10,
+          11
         ]
       }
     },
@@ -748,14 +840,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 88,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 88,
         column: 34,
         ignore: false
       },
@@ -763,7 +855,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 96,
+        line: 88,
         column: 16,
         ignore: false
       },
@@ -777,21 +869,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 10
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 11
             }
           ]
         }
       ],
-      type: 1,
+      type: 2,
       mangledName: "",
       exportId: "_CN31ohos.app.ability.dialog_request13RequestResult6resultK_E",
       mangledBeforeSema: "31ohos.app.ability.dialog_request13RequestResultC6resultV$$10ResultCode",
@@ -800,7 +888,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 16135290005938111378
+        bodyHash: 15007562349379224664
       },
       info_type: "VarInfo",
       info: {
@@ -813,14 +901,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 108,
+        line: 97,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 108,
+        line: 97,
         column: 26,
         ignore: false
       },
@@ -828,7 +916,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 108,
+        line: 97,
         column: 16,
         ignore: false
       },
@@ -842,21 +930,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 16
-            },
-            {
-              name: "stagemodelonly",
-              expr: 17
+              name: "since",
+              expr: 12
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 13
             }
           ]
         }
       ],
-      type: 6,
+      type: 7,
       mangledName: "",
       exportId: "_CN31ohos.app.ability.dialog_request13RequestResult4wantK_E",
       mangledBeforeSema: "31ohos.app.ability.dialog_request13RequestResultC4wantV$$4Want",
@@ -865,7 +949,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 16135290005938111378
+        bodyHash: 15007562349379224664
       },
       info_type: "VarInfo",
       info: {
@@ -882,14 +966,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 102,
         column: 6,
         ignore: false
       },
@@ -897,7 +981,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 15,
         ignore: false
       },
@@ -908,7 +992,7 @@
       annotations: [
 
       ],
-      type: 7,
+      type: 8,
       mangledName: "_CN31ohos.app.ability.dialog_request13RequestResult6<init>HNNY_10ResultCodeECN21ohos.app.ability.want4WantE",
       exportId: "_CN31ohos.app.ability.dialog_request13RequestResult6<init>HNNY_10ResultCodeECN21ohos.app.ability.want4WantE",
       mangledBeforeSema: "31ohos.app.ability.dialog_request13RequestResultC6<init>F10ResultCode4Want!4want=$$",
@@ -917,7 +1001,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 3047841818237842422
+        bodyHash: 13102042220591252571
       },
       info_type: "FuncInfo",
       info: {
@@ -925,16 +1009,16 @@
           paramLists: [
             {
               params: [
-                11,
-                12
+                12,
+                13
               ],
               desugars: [
                 0,
-                13
+                14
               ]
             }
           ],
-          retType: 5
+          retType: 6
         }
       }
     },
@@ -944,14 +1028,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 20,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 38,
         ignore: false
       },
@@ -959,7 +1043,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 20,
         ignore: false
       },
@@ -970,7 +1054,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 2,
       mangledName: "_CN31ohos.app.ability.dialog_request13RequestResult4initHNNY_10ResultCodeECN21ohos.app.ability.want4WantEE6resultE",
       exportId: "",
       mangledBeforeSema: "",
@@ -991,14 +1075,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 40,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 60,
         ignore: false
       },
@@ -1006,7 +1090,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 40,
         ignore: false
       },
@@ -1017,7 +1101,7 @@
       annotations: [
 
       ],
-      type: 6,
+      type: 7,
       mangledName: "_CN31ohos.app.ability.dialog_request13RequestResult4initHNNY_10ResultCodeECN21ohos.app.ability.want4WantEE4wantE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1043,14 +1127,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 54,
         ignore: true
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 60,
         ignore: false
       },
@@ -1069,7 +1153,7 @@
       annotations: [
 
       ],
-      type: 8,
+      type: 9,
       mangledName: "_CPI31ohos.app.ability.dialog_request13RequestResult4initHNNY_10ResultCodeECN21ohos.app.ability.want4WantEE4wantHY3_",
       exportId: "",
       mangledBeforeSema: "",
@@ -1086,14 +1170,14 @@
           paramLists: [
             {
               params: [
-                14
+                15
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 6
+          retType: 7
         }
       }
     },
@@ -1103,14 +1187,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 20,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 38,
         ignore: false
       },
@@ -1118,7 +1202,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 99,
         column: 20,
         ignore: false
       },
@@ -1129,7 +1213,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 2,
       mangledName: "_CN31ohos.app.ability.dialog_request13RequestResult4initHNNY_10ResultCodeECN21ohos.app.ability.want4WantEE6want.1HY3_E6resultE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1155,14 +1239,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 117,
+        line: 106,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 122,
+        line: 111,
         column: 2,
         ignore: false
       },
@@ -1170,7 +1254,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 117,
+        line: 106,
         column: 18,
         ignore: false
       },
@@ -1181,7 +1265,7 @@
       annotations: [
 
       ],
-      type: 10,
+      type: 11,
       mangledName: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResultE",
       exportId: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResultE",
       mangledBeforeSema: "31ohos.app.ability.dialog_request21CJDialogRequestResultS",
@@ -1190,7 +1274,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 10474287441897005386
+        bodyHash: 12230921249717903680
       },
       info_type: "StructInfo",
       info: {
@@ -1198,9 +1282,9 @@
 
         ],
         body: [
-          16,
           17,
-          18
+          18,
+          19
         ]
       }
     },
@@ -1210,14 +1294,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 119,
+        line: 108,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 119,
+        line: 108,
         column: 36,
         ignore: false
       },
@@ -1225,7 +1309,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 119,
+        line: 108,
         column: 23,
         ignore: false
       },
@@ -1236,7 +1320,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 1,
       mangledName: "",
       exportId: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResult6resultK_E",
       mangledBeforeSema: "31ohos.app.ability.dialog_request21CJDialogRequestResultS6result$$i",
@@ -1258,14 +1342,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 45,
         ignore: false
       },
@@ -1273,7 +1357,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 23,
         ignore: false
       },
@@ -1284,7 +1368,7 @@
       annotations: [
 
       ],
-      type: 11,
+      type: 12,
       mangledName: "",
       exportId: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResult10wantHandleK_E",
       mangledBeforeSema: "31ohos.app.ability.dialog_request21CJDialogRequestResultS10wantHandle$$10WantHandle",
@@ -1310,14 +1394,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 118,
+        line: 107,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 121,
+        line: 110,
         column: 9,
         ignore: false
       },
@@ -1325,7 +1409,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 118,
+        line: 107,
         column: 15,
         ignore: false
       },
@@ -1336,7 +1420,7 @@
       annotations: [
 
       ],
-      type: 12,
+      type: 13,
       mangledName: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResult6<init>Hir",
       exportId: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResult6<init>Hir",
       mangledBeforeSema: "31ohos.app.ability.dialog_request21CJDialogRequestResultS21CJDialogRequestResultYi!RL6result10WantHandle!RL10wantHandle",
@@ -1353,8 +1437,8 @@
           paramLists: [
             {
               params: [
-                19,
-                20
+                20,
+                21
               ],
               desugars: [
                 0,
@@ -1362,7 +1446,7 @@
               ]
             }
           ],
-          retType: 10
+          retType: 11
         }
       }
     },
@@ -1372,14 +1456,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 119,
+        line: 108,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 119,
+        line: 108,
         column: 36,
         ignore: false
       },
@@ -1387,7 +1471,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 119,
+        line: 108,
         column: 23,
         ignore: false
       },
@@ -1398,7 +1482,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 1,
       mangledName: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResult4initHirE6resultE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1420,14 +1504,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 45,
         ignore: false
       },
@@ -1435,7 +1519,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 109,
         column: 23,
         ignore: false
       },
@@ -1446,7 +1530,7 @@
       annotations: [
 
       ],
-      type: 11,
+      type: 12,
       mangledName: "_CN31ohos.app.ability.dialog_request21CJDialogRequestResult4initHirE10wantHandleE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1469,14 +1553,14 @@
       begin: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 1,
         ignore: false
       },
       end: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 59,
         ignore: false
       },
@@ -1484,7 +1568,7 @@
       identifierPos: {
         file: 2,
         pkgId: 0,
-        line: 20,
+        line: 22,
         column: 5,
         ignore: false
       },
@@ -1495,7 +1579,7 @@
       annotations: [
 
       ],
-      type: 13,
+      type: 14,
       mangledName: "_CN31ohos.app.ability.dialog_request11ABILITY_LOGE",
       exportId: "_CN31ohos.app.ability.dialog_request11ABILITY_LOGE",
       mangledBeforeSema: "31ohos.app.ability.dialog_request11ABILITY_LOGV$$",
@@ -1504,7 +1588,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 11153182241336478132
+        bodyHash: 3473960820098618876
       },
       info_type: "VarInfo",
       info: {
@@ -1517,20 +1601,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 27,
-        column: 5,
+        line: 24,
+        column: 33,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 27,
-        column: 7,
+        line: 24,
+        column: 41,
         ignore: false
       },
+      type: 1,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "16000050"
       }
     },
     {
@@ -1538,21 +1623,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 28,
-        column: 21,
+        line: 30,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 28,
-        column: 25,
+        line: 30,
+        column: 16,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1560,17 +1646,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 59,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Ability.AbilityRuntime.Core",
@@ -1583,19 +1670,21 @@
         file: 1,
         pkgId: 0,
         line: 38,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 38,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1604,38 +1693,17 @@
         file: 1,
         pkgId: 0,
         line: 39,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 39,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 40,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 40,
+        line: 39,
         column: 63,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Ability.AbilityRuntime.Core",
@@ -1647,20 +1715,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 50,
-        column: 9,
+        line: 47,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 50,
-        column: 11,
+        line: 47,
+        column: 20,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1668,39 +1738,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 51,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 51,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 52,
+        line: 48,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 52,
+        line: 48,
         column: 63,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Ability.AbilityRuntime.Core",
@@ -1712,20 +1761,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 81,
-        column: 5,
+        line: 77,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 81,
-        column: 7,
+        line: 77,
+        column: 16,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1733,39 +1784,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 82,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 82,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 83,
+        line: 78,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 78,
         column: 59,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Ability.AbilityRuntime.Core",
@@ -1777,20 +1807,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 92,
-        column: 9,
+        line: 85,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 92,
-        column: 11,
+        line: 85,
+        column: 20,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1798,39 +1830,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 93,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 93,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 94,
+        line: 86,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 94,
+        line: 86,
         column: 63,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Ability.AbilityRuntime.Core",
@@ -1842,20 +1853,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 104,
-        column: 9,
+        line: 94,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 104,
-        column: 11,
+        line: 94,
+        column: 20,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1863,39 +1876,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 105,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 105,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 106,
+        line: 95,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 106,
+        line: 95,
         column: 63,
         ignore: false
       },
+      type: 3,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Ability.AbilityRuntime.Core",

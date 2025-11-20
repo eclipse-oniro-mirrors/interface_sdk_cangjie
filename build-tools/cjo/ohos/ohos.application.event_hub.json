@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.application.event_hub",
-  pkgDepInfo: "{\"package\":\"ohos.application.event_hub\",\"isMacro\":false,\"accessLevel\":\"protected\",\"dependencies\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.application.event_hub\",\"isMacro\":false,\"accessLevel\":\"protected\",\"dependencies\":[],\"features\":[]}",
   imports: [
     "std.core"
   ],
@@ -90,14 +90,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 28,
         ignore: false
       },
@@ -105,7 +105,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 17,
         ignore: false
       },
@@ -147,14 +147,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 18,
+        line: 20,
         column: 25,
         ignore: false
       },

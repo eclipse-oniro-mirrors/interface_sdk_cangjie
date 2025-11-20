@@ -1,17 +1,17 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
-  fullPkgName: "ohos.arkui.component.save_button",
-  pkgDepInfo: "{\"package\":\"ohos.arkui.component.save_button\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[]}",
+  fullPkgName: "ohos.ability",
+  pkgDepInfo: "{\"package\":\"ohos.ability\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[],\"features\":[]}",
   imports: [
 
   ],
   allFiles: [
-    "ohos.arkui.component.save_button/cj_save_button.cj"
+    "ohos.ability/ability.cj"
   ],
   allFileImports: [
     {

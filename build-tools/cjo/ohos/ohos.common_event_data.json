@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.common_event_data",
-  pkgDepInfo: "{\"package\":\"ohos.common_event_data\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]},{\"package\":\"ohos.value_type\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":20,\"column\":25},\"end\":{\"line\":20,\"column\":34}},{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":20,\"column\":36},\"end\":{\"line\":20,\"column\":50}},{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":20,\"column\":52},\"end\":{\"line\":20,\"column\":62}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":30}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.common_event_data\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]},{\"package\":\"ohos.value_type\",\"isStd\":false,\"imports\":[{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":22,\"column\":25},\"end\":{\"line\":22,\"column\":45}},{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":22,\"column\":47},\"end\":{\"line\":22,\"column\":61}},{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":22,\"column\":63},\"end\":{\"line\":22,\"column\":73}}]},{\"package\":\"std.collection\",\"isStd\":true,\"imports\":[{\"file\":\"common_event_data.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":30}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "std.collection",
@@ -22,14 +22,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 30,
             ignore: false
           },
@@ -44,14 +44,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 28,
             ignore: false
           },
@@ -66,37 +66,37 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 25,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 34,
+            line: 22,
+            column: 45,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "value_type"
           ],
-          identifier: "ValueType",
+          identifier: "CommonEventValueType",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 36,
+            line: 22,
+            column: 47,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 50,
+            line: 22,
+            column: 61,
             ignore: false
           },
           prefixPaths: [
@@ -110,15 +110,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 52,
+            line: 22,
+            column: 63,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 62,
+            line: 22,
+            column: 73,
             ignore: false
           },
           prefixPaths: [
@@ -205,7 +205,7 @@
       info: {
         declPtr: {
           pkgId: 2,
-          decl: "_CN15ohos.value_type9ValueTypeE"
+          decl: "_CN15ohos.value_type20CommonEventValueTypeE"
         }
       }
     },
@@ -287,14 +287,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 31,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 106,
+        line: 91,
         column: 2,
         ignore: false
       },
@@ -302,7 +302,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 32,
+        line: 31,
         column: 14,
         ignore: false
       },
@@ -316,16 +316,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 1
             },
             {
-              name: "stagemodelonly",
-              expr: 2
-            },
-            {
               name: "syscap",
-              expr: 3
+              expr: 2
             }
           ]
         }
@@ -335,11 +331,11 @@
       exportId: "_CN22ohos.common_event_data15CommonEventDataE",
       mangledBeforeSema: "22ohos.common_event_data15CommonEventDataC",
       hash: {
-        instVar: 12483944598607434356,
+        instVar: 17875997437968473209,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "ClassInfo",
       info: {
@@ -362,14 +358,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 43,
+        line: 39,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 43,
+        line: 39,
         column: 29,
         ignore: false
       },
@@ -377,7 +373,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 43,
+        line: 39,
         column: 16,
         ignore: false
       },
@@ -391,16 +387,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 4
             }
           ]
         }
@@ -414,7 +406,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -427,14 +419,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 54,
+        line: 47,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 54,
+        line: 47,
         column: 34,
         ignore: false
       },
@@ -442,7 +434,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 54,
+        line: 47,
         column: 16,
         ignore: false
       },
@@ -456,16 +448,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
-              expr: 8
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 9
+              expr: 6
             }
           ]
         }
@@ -479,7 +467,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -492,14 +480,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 56,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 56,
         column: 27,
         ignore: false
       },
@@ -507,7 +495,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 56,
         column: 16,
         ignore: false
       },
@@ -521,16 +509,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 10
-            },
-            {
-              name: "stagemodelonly",
-              expr: 11
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 12
+              expr: 8
             }
           ]
         }
@@ -544,7 +528,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -557,14 +541,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 65,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 65,
         column: 28,
         ignore: false
       },
@@ -572,7 +556,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 65,
         column: 16,
         ignore: false
       },
@@ -586,16 +570,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 9
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 10
             }
           ]
         }
@@ -609,7 +589,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -622,22 +602,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 90,
+        line: 75,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 90,
-        column: 54,
+        line: 75,
+        column: 65,
         ignore: false
       },
       identifier: "parameters",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 90,
+        line: 75,
         column: 16,
         ignore: false
       },
@@ -651,16 +631,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 16
-            },
-            {
-              name: "stagemodelonly",
-              expr: 17
+              name: "since",
+              expr: 11
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 12
             }
           ]
         }
@@ -668,13 +644,13 @@
       type: 4,
       mangledName: "",
       exportId: "_CN22ohos.common_event_data15CommonEventData10parametersK_E",
-      mangledBeforeSema: "22ohos.common_event_data15CommonEventDataC10parametersV$$7HashMap<6String9ValueType>",
+      mangledBeforeSema: "22ohos.common_event_data15CommonEventDataC10parametersV$$7HashMap<6String20CommonEventValueType>",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 17327286262165285715,
-        bodyHash: 4178370849353376641
+        bodyHash: 17843393552120412191
       },
       info_type: "VarInfo",
       info: {
@@ -691,14 +667,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 92,
+        line: 77,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 105,
+        line: 90,
         column: 6,
         ignore: false
       },
@@ -706,7 +682,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 92,
+        line: 77,
         column: 15,
         ignore: false
       },
@@ -726,7 +702,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 14932664058868763517
+        bodyHash: 6738103749798590269
       },
       info_type: "FuncInfo",
       info: {
@@ -756,14 +732,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 94,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 117,
+        line: 102,
         column: 2,
         ignore: false
       },
@@ -771,7 +747,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 109,
+        line: 94,
         column: 18,
         ignore: false
       },
@@ -791,7 +767,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 10474287441897005386
+        bodyHash: 12230921249717903680
       },
       info_type: "StructInfo",
       info: {
@@ -814,14 +790,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 92,
+        line: 77,
         column: 20,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 92,
+        line: 77,
         column: 47,
         ignore: false
       },
@@ -829,7 +805,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 92,
+        line: 77,
         column: 20,
         ignore: false
       },
@@ -861,14 +837,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 96,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 96,
         column: 27,
         ignore: false
       },
@@ -876,7 +852,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 96,
         column: 13,
         ignore: false
       },
@@ -909,14 +885,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 32,
         ignore: false
       },
@@ -924,7 +900,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 13,
         ignore: false
       },
@@ -957,14 +933,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 24,
         ignore: false
       },
@@ -972,7 +948,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 13,
         ignore: false
       },
@@ -1005,14 +981,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 99,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 99,
         column: 26,
         ignore: false
       },
@@ -1020,7 +996,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 99,
         column: 13,
         ignore: false
       },
@@ -1053,14 +1029,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 100,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 100,
         column: 39,
         ignore: false
       },
@@ -1068,7 +1044,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 100,
         column: 13,
         ignore: false
       },
@@ -1105,14 +1081,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 95,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 116,
+        line: 101,
         column: 9,
         ignore: false
       },
@@ -1120,7 +1096,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 95,
         column: 15,
         ignore: false
       },
@@ -1173,14 +1149,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 96,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 96,
         column: 27,
         ignore: false
       },
@@ -1188,7 +1164,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 96,
         column: 13,
         ignore: false
       },
@@ -1221,14 +1197,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 32,
         ignore: false
       },
@@ -1236,7 +1212,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 97,
         column: 13,
         ignore: false
       },
@@ -1269,14 +1245,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 24,
         ignore: false
       },
@@ -1284,7 +1260,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 98,
         column: 13,
         ignore: false
       },
@@ -1317,14 +1293,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 99,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 99,
         column: 26,
         ignore: false
       },
@@ -1332,7 +1308,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 99,
         column: 13,
         ignore: false
       },
@@ -1365,14 +1341,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 100,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 100,
         column: 39,
         ignore: false
       },
@@ -1380,7 +1356,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 115,
+        line: 100,
         column: 13,
         ignore: false
       },
@@ -1415,19 +1391,21 @@
         file: 1,
         pkgId: 0,
         line: 28,
-        column: 5,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 28,
-        column: 7,
+        column: 16,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1436,38 +1414,17 @@
         file: 1,
         pkgId: 0,
         line: 29,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 29,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 30,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 30,
+        line: 29,
         column: 56,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -1479,20 +1436,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 39,
-        column: 9,
+        line: 36,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 39,
-        column: 11,
+        line: 36,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1500,39 +1459,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 40,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 40,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 41,
+        line: 37,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 41,
+        line: 37,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -1544,20 +1482,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 50,
-        column: 9,
+        line: 44,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 50,
-        column: 11,
+        line: 44,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1565,39 +1505,64 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 51,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 51,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 52,
+        line: 45,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 52,
+        line: 45,
         column: 60,
         ignore: false
       },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.Notification.CommonEvent",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 53,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 53,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 54,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 54,
+        column: 60,
+        ignore: false
+      },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -1610,19 +1575,21 @@
         file: 1,
         pkgId: 0,
         line: 62,
-        column: 9,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 62,
-        column: 11,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1631,38 +1598,17 @@
         file: 1,
         pkgId: 0,
         line: 63,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 63,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 64,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 63,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",
@@ -1674,63 +1620,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 74,
-        column: 9,
+        line: 72,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 74,
-        column: 11,
+        line: 72,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 75,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 75,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 76,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 76,
-        column: 60,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.Notification.CommonEvent",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -1739,60 +1643,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 86,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 86,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 87,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 87,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 88,
+        line: 73,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 88,
+        line: 73,
         column: 60,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.Notification.CommonEvent",

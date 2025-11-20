@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "kit.ConnectivityKit",
-  pkgDepInfo: "{\"package\":\"kit.ConnectivityKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.bluetooth\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":31}}]},{\"package\":\"ohos.bluetooth.a2dp\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":36}}]},{\"package\":\"ohos.bluetooth.base_profile\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":44}}]},{\"package\":\"ohos.bluetooth.ble\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":35}}]},{\"package\":\"ohos.bluetooth.connection\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":42}}]},{\"package\":\"ohos.bluetooth.constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":40}}]},{\"package\":\"ohos.bluetooth.hfp\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":35}}]},{\"package\":\"ohos.wifi_manager\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":34}}]}]}",
+  pkgDepInfo: "{\"package\":\"kit.ConnectivityKit\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.bluetooth\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":31}}]},{\"package\":\"ohos.bluetooth.a2dp\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":36}}]},{\"package\":\"ohos.bluetooth.base_profile\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":44}}]},{\"package\":\"ohos.bluetooth.ble\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":35}}]},{\"package\":\"ohos.bluetooth.connection\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":42}}]},{\"package\":\"ohos.bluetooth.constant\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":40}}]},{\"package\":\"ohos.bluetooth.hfp\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":35}}]},{\"package\":\"ohos.wifi_manager\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":34}}]}],\"features\":[]}",
   imports: [
     "ohos.bluetooth",
     "ohos.bluetooth.base_profile",
@@ -27,14 +27,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 31,
             ignore: false
           },
@@ -50,14 +50,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 44,
             ignore: false
           },
@@ -74,14 +74,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 35,
             ignore: false
           },
@@ -98,14 +98,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 40,
             ignore: false
           },
@@ -122,14 +122,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 42,
             ignore: false
           },
@@ -146,14 +146,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 25,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 25,
             column: 34,
             ignore: false
           },
@@ -169,14 +169,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 24,
+            line: 26,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 24,
+            line: 26,
             column: 36,
             ignore: false
           },
@@ -193,14 +193,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 25,
+            line: 27,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 25,
+            line: 27,
             column: 35,
             ignore: false
           },

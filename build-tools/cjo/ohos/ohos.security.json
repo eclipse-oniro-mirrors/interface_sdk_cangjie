@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.security",
-  pkgDepInfo: "{\"package\":\"ohos.security\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[]}",
+  pkgDepInfo: "{\"package\":\"ohos.security\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[],\"features\":[]}",
   imports: [
 
   ],

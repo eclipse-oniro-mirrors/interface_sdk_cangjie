@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.file.fileuri",
-  pkgDepInfo: "{\"package\":\"ohos.file.fileuri\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":33}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":18}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":20}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":21}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.file.fileuri\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":49}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":20,\"column\":18},\"end\":{\"line\":20,\"column\":32}},{\"file\":\"file_uri.cj\",\"begin\":{\"line\":20,\"column\":34},\"end\":{\"line\":20,\"column\":48}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":24}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"file_uri.cj\",\"begin\":{\"line\":23,\"column\":21},\"end\":{\"line\":23,\"column\":29}},{\"file\":\"file_uri.cj\",\"begin\":{\"line\":23,\"column\":31},\"end\":{\"line\":23,\"column\":35}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.ffi"
@@ -21,88 +21,132 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
-            column: 1,
+            line: 20,
+            column: 18,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
-            column: 18,
+            line: 20,
+            column: 32,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "ffi"
           ],
-          identifier: "*",
+          identifier: "RemoteDataLite",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 20,
+            column: 34,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 20,
+            column: 48,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "ffi"
+          ],
+          identifier: "releaseFFIData",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
-            column: 20,
+            line: 21,
+            column: 24,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "hilog"
           ],
-          identifier: "*",
+          identifier: "Hilog",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 33,
+            line: 22,
+            column: 49,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "business_exception"
           ],
-          identifier: "*",
+          identifier: "BusinessException",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
-            column: 1,
+            line: 23,
+            column: 21,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
-            column: 21,
+            line: 23,
+            column: 29,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 31,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
+            column: 35,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "labels"
+          ],
+          identifier: "Hide",
           asIdentifier: ""
         },
         {
@@ -219,16 +263,6 @@
       }
     },
     {
-      kind: "Func",
-      typeArgs: [
-        3
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 9
-      }
-    },
-    {
       kind: "Struct",
       typeArgs: [
 
@@ -243,11 +277,140 @@
     {
       kind: "Func",
       typeArgs: [
+        3
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 9
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
 
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 11
+        retType: 10
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        9
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 14
+      }
+    },
+    {
+      kind: "Bool"
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 14
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 9
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        10
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 10
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        10,
+        10
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 9
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 20
+      }
+    },
+    {
+      kind: "Struct",
+      typeArgs: [
+        10
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat5ArrayIG_E"
+        }
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        10
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 20
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        10,
+        14
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 14
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        10
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 9
+      }
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        10,
+        10,
+        10
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 9
       }
     },
     {
@@ -284,18 +447,18 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 20
+          index: 51
         }
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        11
+        10
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 15
+        retType: 27
       }
     },
     {
@@ -305,20 +468,10 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 18
+        retType: 30
       }
     },
     {
-    },
-    {
-      kind: "Func",
-      typeArgs: [
-        11
-      ],
-      info_type: "FuncTyInfo",
-      info: {
-        retType: 11
-      }
     }
   ],
   allDecls: [
@@ -333,14 +486,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 64,
         ignore: false
       },
@@ -348,7 +501,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 14,
         ignore: false
       },
@@ -393,14 +546,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 38,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 56,
         ignore: false
       },
@@ -408,7 +561,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 38,
         ignore: false
       },
@@ -445,14 +598,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 55,
         ignore: false
       },
@@ -460,7 +613,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 14,
         ignore: false
       },
@@ -505,14 +658,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 45,
         ignore: false
       },
@@ -520,7 +673,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 36,
         ignore: false
       },
@@ -557,14 +710,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 55,
         ignore: false
       },
@@ -572,7 +725,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 14,
         ignore: false
       },
@@ -617,14 +770,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 36,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 45,
         ignore: false
       },
@@ -632,7 +785,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 36,
         ignore: false
       },
@@ -669,14 +822,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 56,
         ignore: false
       },
@@ -684,7 +837,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 14,
         ignore: false
       },
@@ -729,14 +882,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 37,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 46,
         ignore: false
       },
@@ -744,7 +897,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 37,
         ignore: false
       },
@@ -781,14 +934,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 67,
         ignore: false
       },
@@ -796,7 +949,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 14,
         ignore: false
       },
@@ -841,14 +994,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 43,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 57,
         ignore: false
       },
@@ -856,7 +1009,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 43,
         ignore: false
       },
@@ -893,14 +1046,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 2,
         ignore: false
       },
@@ -908,7 +1061,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 7,
         ignore: false
       },
@@ -950,14 +1103,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 14,
         ignore: false
       },
@@ -965,7 +1118,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 34,
+        line: 36,
         column: 5,
         ignore: false
       },
@@ -985,7 +1138,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 8933174228718600597
+        bodyHash: 16129878550063935788
       },
       info_type: "FuncInfo",
       info: {
@@ -1015,14 +1168,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 46,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 82,
+        line: 131,
         column: 2,
         ignore: false
       },
@@ -1030,7 +1183,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 46,
         column: 19,
         ignore: false
       },
@@ -1044,16 +1197,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 1
             },
             {
-              name: "stagemodelonly",
-              expr: 2
-            },
-            {
               name: "syscap",
-              expr: 3
+              expr: 2
             }
           ]
         }
@@ -1064,22 +1213,40 @@
       mangledBeforeSema: "17ohos.file.fileuri3UriC",
       hash: {
         instVar: 5882002180836963169,
-        virt: 15382321336562447621,
+        virt: 17542109552283187350,
         sig: 17811220696591324424,
         srcUse: 6029406924600920868,
-        bodyHash: 14234629659794837558
+        bodyHash: 7977868264590529279
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          13,
-          14
+          25,
+          26
         ],
         body: [
           14,
           15,
           17,
-          19
+          19,
+          20,
+          22,
+          24,
+          25,
+          26,
+          28,
+          31,
+          32,
+          34,
+          37,
+          38,
+          39,
+          40,
+          42,
+          44,
+          45,
+          46,
+          47
         ]
       }
     },
@@ -1089,14 +1256,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 48,
+        line: 47,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 48,
+        line: 47,
         column: 43,
         ignore: false
       },
@@ -1104,7 +1271,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 48,
+        line: 47,
         column: 17,
         ignore: false
       },
@@ -1124,7 +1291,7 @@
         virt: 0,
         sig: 13785781977040174648,
         srcUse: 1273861709373161920,
-        bodyHash: 7173161855970910822
+        bodyHash: 2246739794969679481
       },
       info_type: "VarInfo",
       info: {
@@ -1140,14 +1307,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 51,
+        line: 50,
         column: 6,
         ignore: false
       },
@@ -1155,7 +1322,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 5,
         ignore: false
       },
@@ -1166,7 +1333,7 @@
       annotations: [
 
       ],
-      type: 10,
+      type: 11,
       mangledName: "_CN17ohos.file.fileuri3Uri6<init>Hl",
       exportId: "_CN17ohos.file.fileuri3Uri6<init>Hl",
       mangledBeforeSema: "17ohos.file.fileuri3UriC6<init>Fl$$",
@@ -1175,7 +1342,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 17017837491170981675
+        bodyHash: 13603755100546533104
       },
       info_type: "FuncInfo",
       info: {
@@ -1200,14 +1367,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 10,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 19,
         ignore: false
       },
@@ -1215,7 +1382,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 48,
         column: 10,
         ignore: false
       },
@@ -1247,14 +1414,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 63,
+        line: 59,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 67,
+        line: 63,
         column: 6,
         ignore: false
       },
@@ -1262,7 +1429,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 63,
+        line: 59,
         column: 22,
         ignore: false
       },
@@ -1276,21 +1443,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 4
             }
           ]
         }
       ],
-      type: 11,
+      type: 10,
       mangledName: "",
       exportId: "_CN17ohos.file.fileuri3Uri4pathE",
       mangledBeforeSema: "17ohos.file.fileuri3UriC4pathP",
@@ -1299,7 +1462,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 12859798660668635638,
-        bodyHash: 14234629659794837558
+        bodyHash: 15080819991141475899
       },
       info_type: "PropInfo",
       info: {
@@ -1321,14 +1484,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 60,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 66,
+        line: 62,
         column: 10,
         ignore: false
       },
@@ -1336,7 +1499,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 60,
         column: 9,
         ignore: false
       },
@@ -1356,7 +1519,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 6253080818770480835
+        bodyHash: 8009691633607535475
       },
       info_type: "FuncInfo",
       info: {
@@ -1371,7 +1534,7 @@
               ]
             }
           ],
-          retType: 11
+          retType: 10
         }
       }
     },
@@ -1385,14 +1548,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 79,
+        line: 74,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 81,
+        line: 76,
         column: 6,
         ignore: false
       },
@@ -1400,7 +1563,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 79,
+        line: 74,
         column: 22,
         ignore: false
       },
@@ -1414,16 +1577,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
-              expr: 8
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 9
+              expr: 6
             }
           ]
         }
@@ -1437,7 +1596,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 6029406924600920868,
-        bodyHash: 18259824300106160458
+        bodyHash: 2455705122458868720
       },
       info_type: "FuncInfo",
       info: {
@@ -1452,13 +1611,503 @@
               ]
             }
           ],
-          retType: 11
+          retType: 10
         }
       }
     },
     {
-      kind: "ClassDecl",
-      isTopLevel: true,
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 79,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 79,
+        column: 68,
+        ignore: false
+      },
+      identifier: "equals",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 79,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 13,
+      mangledName: "_CN17ohos.file.fileuri3Uri6equalsHCNY_Y0_E",
+      exportId: "_CN17ohos.file.fileuri3Uri6equalsHCNY_Y0_E",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC6equalsF3Uri$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 11215566071168270000
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                21
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 14
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 79,
+        column: 29,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 79,
+        column: 39,
+        ignore: false
+      },
+      identifier: "other",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 79,
+        column: 29,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 9,
+      mangledName: "_CN17ohos.file.fileuri3Uri6equalsHCNY_Y0_EE5otherE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 70,
+        ignore: false
+      },
+      identifier: "equalsTo",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 13,
+      mangledName: "_CN17ohos.file.fileuri3Uri8equalsToHCNY_Y0_E",
+      exportId: "_CN17ohos.file.fileuri3Uri8equalsToHCNY_Y0_E",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC8equalsToF3Uri$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 11627908094689048889
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                23
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 14
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 31,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 41,
+        ignore: false
+      },
+      identifier: "other",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 82,
+        column: 31,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 9,
+      mangledName: "_CN17ohos.file.fileuri3Uri8equalsToHCNY_Y0_EE5otherE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 85,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 85,
+        column: 67,
+        ignore: false
+      },
+      identifier: "checkIsAbsolute",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 85,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 15,
+      mangledName: "_CN17ohos.file.fileuri3Uri15checkIsAbsoluteHv",
+      exportId: "_CN17ohos.file.fileuri3Uri15checkIsAbsoluteHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC15checkIsAbsoluteF$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 9805726836303808673
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 14
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 88,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 88,
+        column: 60,
+        ignore: false
+      },
+      identifier: "normalize",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 88,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "_CN17ohos.file.fileuri3Uri9normalizeHv",
+      exportId: "_CN17ohos.file.fileuri3Uri9normalizeHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC9normalizeF$$3Uri",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 11957818941804487162
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 91,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 91,
+        column: 78,
+        ignore: false
+      },
+      identifier: "getQueryValue",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 91,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 17,
+      mangledName: "_CN17ohos.file.fileuri3Uri13getQueryValueHRNat6StringE",
+      exportId: "_CN17ohos.file.fileuri3Uri13getQueryValueHRNat6StringE",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC13getQueryValueF6String$$6String",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 13850457356264795230
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                27
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 10
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 91,
+        column: 36,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 91,
+        column: 47,
+        ignore: false
+      },
+      identifier: "key",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 91,
+        column: 36,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri13getQueryValueHRNat6StringEE3keyE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
       fullPkgName: "ohos.file.fileuri",
       genericDecl: {
         pkgId: -1,
@@ -1468,71 +2117,652 @@
         file: 1,
         pkgId: 0,
         line: 94,
-        column: 1,
+        column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 194,
-        column: 2,
+        line: 94,
+        column: 90,
         ignore: false
       },
-      identifier: "FileUri",
+      identifier: "addQueryValue",
       identifierPos: {
         file: 1,
         pkgId: 0,
         line: 94,
-        column: 14,
+        column: 22,
         ignore: false
       },
       attributes: [
-        144678412907185200,
+        144678138298237984,
         0
       ],
       annotations: [
         {
           kind: "Custom",
-          identifier: "APILevel",
+          identifier: "Hide",
           args: [
-            {
-              name: "",
-              expr: 10
-            },
-            {
-              name: "stagemodelonly",
-              expr: 11
-            },
-            {
-              name: "syscap",
-              expr: 12
-            }
+
           ]
         }
       ],
-      type: 15,
-      mangledName: "_CN17ohos.file.fileuri7FileUriE",
-      exportId: "_CN17ohos.file.fileuri7FileUriE",
-      mangledBeforeSema: "17ohos.file.fileuri7FileUriC",
+      type: 18,
+      mangledName: "_CN17ohos.file.fileuri3Uri13addQueryValueHRNat6StringEY3_",
+      exportId: "_CN17ohos.file.fileuri3Uri13addQueryValueHRNat6StringEY3_",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC13addQueryValueF6String6String$$3Uri",
       hash: {
         instVar: 0,
         virt: 0,
-        sig: 12795822531091757485,
-        srcUse: 0,
-        bodyHash: 10251316806890812664
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 12858817209198821146
       },
-      info_type: "ClassInfo",
+      info_type: "FuncInfo",
       info: {
-        inheritedTypes: [
-          9
-        ],
-        body: [
-          21,
-          23,
-          24,
-          26,
-          28
-        ]
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                29,
+                30
+              ],
+              desugars: [
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 36,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 47,
+        ignore: false
+      },
+      identifier: "key",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 36,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri13addQueryValueHRNat6StringEY3_E3keyE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 49,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 62,
+        ignore: false
+      },
+      identifier: "value",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 94,
+        column: 49,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri13addQueryValueHRNat6StringEY3_E5valueE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 97,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 97,
+        column: 74,
+        ignore: false
+      },
+      identifier: "getQueryNames",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 97,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 19,
+      mangledName: "_CN17ohos.file.fileuri3Uri13getQueryNamesHv",
+      exportId: "_CN17ohos.file.fileuri3Uri13getQueryNamesHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC13getQueryNamesF$$5Array<6String>",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 9998835729942171234
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 20
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 100,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 100,
+        column: 86,
+        ignore: false
+      },
+      identifier: "getQueryValues",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 100,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 21,
+      mangledName: "_CN17ohos.file.fileuri3Uri14getQueryValuesHRNat6StringE",
+      exportId: "_CN17ohos.file.fileuri3Uri14getQueryValuesHRNat6StringE",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC14getQueryValuesF6String$$5Array<6String>",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 9545334813687242358
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                33
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 20
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 100,
+        column: 37,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 100,
+        column: 48,
+        ignore: false
+      },
+      identifier: "key",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 100,
+        column: 37,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri14getQueryValuesHRNat6StringEE3keyE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 103,
+        ignore: false
+      },
+      identifier: "getBooleanQueryValue",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 22,
+      mangledName: "_CN17ohos.file.fileuri3Uri20getBooleanQueryValueHRNat6StringEb",
+      exportId: "_CN17ohos.file.fileuri3Uri20getBooleanQueryValueHRNat6StringEb",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC20getBooleanQueryValueF6Stringb$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 18021053372917018399
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                35,
+                36
+              ],
+              desugars: [
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 14
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 43,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 54,
+        ignore: false
+      },
+      identifier: "key",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 43,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri20getBooleanQueryValueHRNat6StringEbE3keyE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 56,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 74,
+        ignore: false
+      },
+      identifier: "defaultValue",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 103,
+        column: 56,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 14,
+      mangledName: "_CN17ohos.file.fileuri3Uri20getBooleanQueryValueHRNat6StringEbE12defaultValueE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 106,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 106,
+        column: 61,
+        ignore: false
+      },
+      identifier: "clearQuery",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 106,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 16,
+      mangledName: "_CN17ohos.file.fileuri3Uri10clearQueryHv",
+      exportId: "_CN17ohos.file.fileuri3Uri10clearQueryHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC10clearQueryF$$3Uri",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 8945241153246720260
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 109,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 109,
+        column: 68,
+        ignore: false
+      },
+      identifier: "getLastSegment",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 109,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 12,
+      mangledName: "_CN17ohos.file.fileuri3Uri14getLastSegmentHv",
+      exportId: "_CN17ohos.file.fileuri3Uri14getLastSegmentHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC14getLastSegmentF$$6String",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 9746344678570309514
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 10
+        }
       }
     },
     {
@@ -1552,7 +2782,811 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 128,
+        line: 112,
+        column: 71,
+        ignore: false
+      },
+      identifier: "getSegment",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 112,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 19,
+      mangledName: "_CN17ohos.file.fileuri3Uri10getSegmentHv",
+      exportId: "_CN17ohos.file.fileuri3Uri10getSegmentHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC10getSegmentF$$5Array<6String>",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 13017202152262504579
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 20
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 115,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 115,
+        column: 80,
+        ignore: false
+      },
+      identifier: "addSegment",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 115,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 23,
+      mangledName: "_CN17ohos.file.fileuri3Uri10addSegmentHRNat6StringE",
+      exportId: "_CN17ohos.file.fileuri3Uri10addSegmentHRNat6StringE",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC10addSegmentF6String$$3Uri",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 7208428166090882207
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                41
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 115,
+        column: 33,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 115,
+        column: 52,
+        ignore: false
+      },
+      identifier: "pathSegment",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 115,
+        column: 33,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri10addSegmentHRNat6StringEE11pathSegmentE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 87,
+        ignore: false
+      },
+      identifier: "addEncodedSegment",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 23,
+      mangledName: "_CN17ohos.file.fileuri3Uri17addEncodedSegmentHRNat6StringE",
+      exportId: "_CN17ohos.file.fileuri3Uri17addEncodedSegmentHRNat6StringE",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC17addEncodedSegmentF6String$$3Uri",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 8753347232202739763
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                43
+              ],
+              desugars: [
+                0
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 40,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 59,
+        ignore: false
+      },
+      identifier: "pathSegment",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 118,
+        column: 40,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri17addEncodedSegmentHRNat6StringEE11pathSegmentE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 121,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 121,
+        column: 69,
+        ignore: false
+      },
+      identifier: "checkHierarchical",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 121,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 15,
+      mangledName: "_CN17ohos.file.fileuri3Uri17checkHierarchicalHv",
+      exportId: "_CN17ohos.file.fileuri3Uri17checkHierarchicalHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC17checkHierarchicalF$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 6220754553892805205
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 14
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 124,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 124,
+        column: 63,
+        ignore: false
+      },
+      identifier: "checkOpaque",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 124,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 15,
+      mangledName: "_CN17ohos.file.fileuri3Uri11checkOpaqueHv",
+      exportId: "_CN17ohos.file.fileuri3Uri11checkOpaqueHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC11checkOpaqueF$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 2184391058514752710
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 14
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 127,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 127,
+        column: 65,
+        ignore: false
+      },
+      identifier: "checkRelative",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 127,
+        column: 22,
+        ignore: false
+      },
+      attributes: [
+        144678138298237984,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 15,
+      mangledName: "_CN17ohos.file.fileuri3Uri13checkRelativeHv",
+      exportId: "_CN17ohos.file.fileuri3Uri13checkRelativeHv",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC13checkRelativeF$$b",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 6029406924600920868,
+        bodyHash: 17128328969897649238
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+
+              ],
+              desugars: [
+
+              ]
+            }
+          ],
+          retType: 14
+        }
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 113,
+        ignore: false
+      },
+      identifier: "createFromParts",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 24,
+        ignore: false
+      },
+      attributes: [
+        144678138297714208,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "Hide",
+          args: [
+
+          ]
+        }
+      ],
+      type: 24,
+      mangledName: "_CN17ohos.file.fileuri3Uri15createFromPartsHRNat6StringEY3_Y3_",
+      exportId: "_CN17ohos.file.fileuri3Uri15createFromPartsHRNat6StringEY3_Y3_",
+      mangledBeforeSema: "17ohos.file.fileuri3UriC15createFromPartsF6String6String6String$$3Uri",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 14151301873218655650,
+        srcUse: 8035971499611947038,
+        bodyHash: 13784196715912832571
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                48,
+                49,
+                50
+              ],
+              desugars: [
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 9
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 40,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 54,
+        ignore: false
+      },
+      identifier: "scheme",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 40,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri15createFromPartsHRNat6StringEY3_Y3_E6schemeE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 56,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 67,
+        ignore: false
+      },
+      identifier: "ssp",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 56,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri15createFromPartsHRNat6StringEY3_Y3_E3sspE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.file.fileuri",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 69,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 85,
+        ignore: false
+      },
+      identifier: "fragment",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 130,
+        column: 69,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 10,
+      mangledName: "_CN17ohos.file.fileuri3Uri15createFromPartsHRNat6StringEY3_Y3_E8fragmentE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "ClassDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 140,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 236,
+        column: 2,
+        ignore: false
+      },
+      identifier: "FileUri",
+      identifierPos: {
+        file: 1,
+        pkgId: 0,
+        line: 140,
+        column: 14,
+        ignore: false
+      },
+      attributes: [
+        144678412907185200,
+        0
+      ],
+      annotations: [
+        {
+          kind: "Custom",
+          identifier: "APILevel",
+          args: [
+            {
+              name: "since",
+              expr: 7
+            },
+            {
+              name: "syscap",
+              expr: 8
+            }
+          ]
+        }
+      ],
+      type: 27,
+      mangledName: "_CN17ohos.file.fileuri7FileUriE",
+      exportId: "_CN17ohos.file.fileuri7FileUriE",
+      mangledBeforeSema: "17ohos.file.fileuri7FileUriC",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 12795822531091757485,
+        srcUse: 0,
+        bodyHash: 1520390479899320659
+      },
+      info_type: "ClassInfo",
+      info: {
+        inheritedTypes: [
+          9
+        ],
+        body: [
+          52,
+          54,
+          55,
+          57,
+          59
+        ]
+      }
+    },
+    {
+      kind: "FuncDecl",
+      fullPkgName: "ohos.file.fileuri",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 157,
+        column: 5,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 173,
         column: 6,
         ignore: false
       },
@@ -1560,7 +3594,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 157,
         column: 12,
         ignore: false
       },
@@ -1574,21 +3608,21 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 9
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 10
+            },
+            {
+              name: "throwexception",
+              expr: 11
             }
           ]
         }
       ],
-      type: 16,
+      type: 28,
       mangledName: "_CN17ohos.file.fileuri7FileUri6<init>HRNat6StringE",
       exportId: "_CN17ohos.file.fileuri7FileUri6<init>HRNat6StringE",
       mangledBeforeSema: "17ohos.file.fileuri7FileUriC6<init>F6String$$",
@@ -1597,7 +3631,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16365687495261774874
+        bodyHash: 12012291554040548655
       },
       info_type: "FuncInfo",
       info: {
@@ -1605,14 +3639,14 @@
           paramLists: [
             {
               params: [
-                22
+                53
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 15
+          retType: 27
         }
       }
     },
@@ -1622,14 +3656,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 157,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 157,
         column: 34,
         ignore: false
       },
@@ -1637,7 +3671,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 157,
         column: 17,
         ignore: false
       },
@@ -1648,7 +3682,7 @@
       annotations: [
 
       ],
-      type: 11,
+      type: 10,
       mangledName: "_CN17ohos.file.fileuri7FileUri4initHRNat6StringEE9uriOrPathE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1673,14 +3707,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 175,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 132,
+        line: 177,
         column: 6,
         ignore: false
       },
@@ -1688,7 +3722,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 130,
+        line: 175,
         column: 5,
         ignore: false
       },
@@ -1699,7 +3733,7 @@
       annotations: [
 
       ],
-      type: 17,
+      type: 29,
       mangledName: "_CN17ohos.file.fileuri7FileUri5~initHv",
       exportId: "_CN17ohos.file.fileuri7FileUri5~initHv",
       mangledBeforeSema: "17ohos.file.fileuri7FileUriC5~initF$$",
@@ -1708,7 +3742,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 9757206925776041693
+        bodyHash: 768693810769982924
       },
       info_type: "FuncInfo",
       info: {
@@ -1723,7 +3757,7 @@
               ]
             }
           ],
-          retType: 18
+          retType: 30
         }
       }
     },
@@ -1733,14 +3767,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 186,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 151,
+        line: 195,
         column: 6,
         ignore: false
       },
@@ -1748,7 +3782,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 142,
+        line: 186,
         column: 26,
         ignore: false
       },
@@ -1762,21 +3796,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 16
-            },
-            {
-              name: "stagemodelonly",
-              expr: 17
+              name: "since",
+              expr: 12
             },
             {
               name: "syscap",
-              expr: 18
+              expr: 13
             }
           ]
         }
       ],
-      type: 11,
+      type: 10,
       mangledName: "",
       exportId: "_CN17ohos.file.fileuri7FileUri4pathE",
       mangledBeforeSema: "17ohos.file.fileuri7FileUriC4pathP",
@@ -1785,7 +3815,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 7331204170280875521,
-        bodyHash: 3633122652602452959
+        bodyHash: 4479176923648537048
       },
       info_type: "PropInfo",
       info: {
@@ -1793,7 +3823,7 @@
 
         ],
         getters: [
-          25
+          56
         ]
       }
     },
@@ -1807,14 +3837,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 187,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 150,
+        line: 194,
         column: 10,
         ignore: false
       },
@@ -1822,7 +3852,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 143,
+        line: 187,
         column: 9,
         ignore: false
       },
@@ -1842,7 +3872,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 10219916966891973997
+        bodyHash: 7452465676244005249
       },
       info_type: "FuncInfo",
       info: {
@@ -1857,7 +3887,7 @@
               ]
             }
           ],
-          retType: 11
+          retType: 10
         }
       }
     },
@@ -1867,14 +3897,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 208,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 174,
+        line: 217,
         column: 6,
         ignore: false
       },
@@ -1882,7 +3912,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 165,
+        line: 208,
         column: 17,
         ignore: false
       },
@@ -1896,21 +3926,21 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 19
-            },
-            {
-              name: "stagemodelonly",
-              expr: 20
+              name: "since",
+              expr: 14
             },
             {
               name: "syscap",
-              expr: 21
+              expr: 15
+            },
+            {
+              name: "throwexception",
+              expr: 16
             }
           ]
         }
       ],
-      type: 11,
+      type: 10,
       mangledName: "",
       exportId: "_CN17ohos.file.fileuri7FileUri4nameE",
       mangledBeforeSema: "17ohos.file.fileuri7FileUriC4nameP",
@@ -1919,7 +3949,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 7331204170280875521,
-        bodyHash: 14234629659794837558
+        bodyHash: 4367725608451497835
       },
       info_type: "PropInfo",
       info: {
@@ -1927,7 +3957,7 @@
 
         ],
         getters: [
-          27
+          58
         ]
       }
     },
@@ -1941,14 +3971,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 166,
+        line: 209,
         column: 9,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 173,
+        line: 216,
         column: 10,
         ignore: false
       },
@@ -1956,7 +3986,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 166,
+        line: 209,
         column: 9,
         ignore: false
       },
@@ -1976,7 +4006,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 17193725871358619987
+        bodyHash: 108374392455206039
       },
       info_type: "FuncInfo",
       info: {
@@ -1991,7 +4021,7 @@
               ]
             }
           ],
-          retType: 11
+          retType: 10
         }
       }
     },
@@ -2005,14 +4035,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 186,
+        line: 228,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 193,
+        line: 235,
         column: 6,
         ignore: false
       },
@@ -2020,7 +4050,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 186,
+        line: 228,
         column: 26,
         ignore: false
       },
@@ -2034,16 +4064,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 22
-            },
-            {
-              name: "stagemodelonly",
-              expr: 23
+              name: "since",
+              expr: 17
             },
             {
               name: "syscap",
-              expr: 24
+              expr: 18
             }
           ]
         }
@@ -2057,7 +4083,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 12268934618343885457
+        bodyHash: 11955067554628893251
       },
       info_type: "FuncInfo",
       info: {
@@ -2072,7 +4098,7 @@
               ]
             }
           ],
-          retType: 11
+          retType: 10
         }
       }
     },
@@ -2087,14 +4113,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 250,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 220,
+        line: 263,
         column: 2,
         ignore: false
       },
@@ -2102,7 +4128,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 250,
         column: 13,
         ignore: false
       },
@@ -2116,21 +4142,21 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 25
-            },
-            {
-              name: "stagemodelonly",
-              expr: 26
+              name: "since",
+              expr: 19
             },
             {
               name: "syscap",
-              expr: 27
+              expr: 20
+            },
+            {
+              name: "throwexception",
+              expr: 21
             }
           ]
         }
       ],
-      type: 19,
+      type: 17,
       mangledName: "_CN17ohos.file.fileuri14getUriFromPathHRNat6StringE",
       exportId: "_CN17ohos.file.fileuri14getUriFromPathHRNat6StringE",
       mangledBeforeSema: "17ohos.file.fileuri14getUriFromPathF6String$$6String",
@@ -2139,7 +4165,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10634431198739958899
+        bodyHash: 17265809207934077500
       },
       info_type: "FuncInfo",
       info: {
@@ -2147,14 +4173,14 @@
           paramLists: [
             {
               params: [
-                30
+                61
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 11
+          retType: 10
         }
       }
     },
@@ -2164,14 +4190,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 250,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 250,
         column: 40,
         ignore: false
       },
@@ -2179,7 +4205,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 250,
         column: 28,
         ignore: false
       },
@@ -2190,7 +4216,7 @@
       annotations: [
 
       ],
-      type: 11,
+      type: 10,
       mangledName: "_CN17ohos.file.fileuri14getUriFromPathHRNat6StringEE4pathE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2213,19 +4239,21 @@
         file: 1,
         pkgId: 0,
         line: 43,
-        column: 5,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 43,
-        column: 7,
+        column: 16,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2234,38 +4262,17 @@
         file: 1,
         pkgId: 0,
         line: 44,
-        column: 21,
+        column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 44,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 45,
-        column: 13,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 45,
         column: 61,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.FileManagement.AppFileService",
@@ -2277,20 +4284,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 59,
-        column: 9,
+        line: 56,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 59,
-        column: 11,
+        line: 56,
+        column: 20,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2298,39 +4307,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 60,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 60,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 61,
+        line: 57,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 57,
         column: 65,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.FileManagement.AppFileService",
@@ -2342,20 +4330,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 75,
-        column: 9,
+        line: 71,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 75,
-        column: 11,
+        line: 71,
+        column: 20,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2363,39 +4353,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 76,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 76,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 77,
+        line: 72,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 72,
         column: 65,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.FileManagement.AppFileService",
@@ -2407,128 +4376,21 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 90,
-        column: 5,
+        line: 137,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 90,
-        column: 7,
+        line: 137,
+        column: 16,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 91,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 91,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 92,
-        column: 13,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 92,
-        column: 61,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.FileManagement.AppFileService",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 108,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 108,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 109,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 109,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 110,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 110,
-        column: 65,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.FileManagement.AppFileService",
+        strValue: "22",
         constKind: "String"
       }
     },
@@ -2538,59 +4400,17 @@
         file: 1,
         pkgId: 0,
         line: 138,
-        column: 9,
+        column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 138,
-        column: 11,
+        column: 61,
         ignore: false
       },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 139,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 139,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 140,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 140,
-        column: 65,
-        ignore: false
-      },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.FileManagement.AppFileService",
@@ -2602,20 +4422,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 161,
-        column: 9,
+        line: 153,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 161,
-        column: 11,
+        line: 153,
+        column: 20,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2623,39 +4445,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 162,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 162,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 163,
+        line: 154,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 154,
         column: 65,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.FileManagement.AppFileService",
@@ -2667,20 +4468,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 182,
-        column: 9,
+        line: 155,
+        column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 182,
-        column: 11,
+        line: 155,
+        column: 29,
         ignore: false
       },
+      type: 14,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "true",
+        constKind: "Bool"
       }
     },
     {
@@ -2689,20 +4492,21 @@
         file: 1,
         pkgId: 0,
         line: 183,
-        column: 25,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 183,
-        column: 29,
+        column: 20,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2721,6 +4525,7 @@
         column: 65,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.FileManagement.AppFileService",
@@ -2732,20 +4537,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 203,
-        column: 5,
+        line: 204,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 203,
-        column: 7,
+        line: 204,
+        column: 20,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -2753,17 +4560,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 204,
-        column: 21,
+        line: 205,
+        column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 204,
+        line: 205,
+        column: 65,
+        ignore: false
+      },
+      type: 10,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.FileManagement.AppFileService",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 206,
         column: 25,
         ignore: false
       },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 206,
+        column: 29,
+        ignore: false
+      },
+      type: 14,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -2775,21 +4606,114 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 205,
+        line: 225,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 225,
+        column: 20,
+        ignore: false
+      },
+      type: 10,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 226,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 226,
+        column: 65,
+        ignore: false
+      },
+      type: 10,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.FileManagement.AppFileService",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 246,
+        column: 12,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 246,
+        column: 16,
+        ignore: false
+      },
+      type: 10,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 247,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 205,
+        line: 247,
         column: 61,
         ignore: false
       },
+      type: 10,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.FileManagement.AppFileService",
         constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 248,
+        column: 21,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 248,
+        column: 25,
+        ignore: false
+      },
+      type: 14,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "true",
+        constKind: "Bool"
       }
     }
   ],

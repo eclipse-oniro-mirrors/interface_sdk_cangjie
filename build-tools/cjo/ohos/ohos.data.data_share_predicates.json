@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.data.data_share_predicates",
-  pkgDepInfo: "{\"package\":\"ohos.data.data_share_predicates\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":21,\"column\":33},\"end\":{\"line\":21,\"column\":50}},{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":21,\"column\":52},\"end\":{\"line\":21,\"column\":71}},{\"file\":\"data_share_predicates_common.cj\",\"begin\":{\"line\":19,\"column\":33},\"end\":{\"line\":19,\"column\":50}},{\"file\":\"data_share_predicates_common.cj\",\"begin\":{\"line\":19,\"column\":52},\"end\":{\"line\":19,\"column\":72}}]},{\"package\":\"ohos.data.values_bucket\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":33}},{\"file\":\"data_share_predicates_ffi.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":33}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":18}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates_common.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":20}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":21}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.data.data_share_predicates\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.business_exception\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":23,\"column\":33},\"end\":{\"line\":23,\"column\":50}},{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":23,\"column\":52},\"end\":{\"line\":23,\"column\":71}},{\"file\":\"data_share_predicates_common.cj\",\"begin\":{\"line\":21,\"column\":33},\"end\":{\"line\":21,\"column\":50}},{\"file\":\"data_share_predicates_common.cj\",\"begin\":{\"line\":21,\"column\":52},\"end\":{\"line\":21,\"column\":72}}]},{\"package\":\"ohos.data.values_bucket\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":20,\"column\":33},\"end\":{\"line\":20,\"column\":44}},{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":20,\"column\":46},\"end\":{\"line\":20,\"column\":56}},{\"file\":\"data_share_predicates_ffi.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":42}}]},{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":22,\"column\":18},\"end\":{\"line\":22,\"column\":32}},{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":22,\"column\":34},\"end\":{\"line\":22,\"column\":48}},{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":22,\"column\":50},\"end\":{\"line\":22,\"column\":60}}]},{\"package\":\"ohos.hilog\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates_common.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":31}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"data_share_predicates.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.data.values_bucket",
@@ -25,15 +25,15 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
-            column: 1,
+            line: 20,
+            column: 33,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
-            column: 33,
+            line: 20,
+            column: 44,
             ignore: false
           },
           prefixPaths: [
@@ -41,65 +41,132 @@
             "data",
             "values_bucket"
           ],
-          identifier: "*",
+          identifier: "VBValueType",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 20,
+            column: 46,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 20,
+            column: 56,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "data",
+            "values_bucket"
+          ],
+          identifier: "CValueType",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
-            column: 21,
+            line: 21,
+            column: 28,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "labels"
           ],
-          identifier: "*",
+          identifier: "APILevel",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 1,
+            line: 22,
+            column: 18,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
-            column: 18,
+            line: 22,
+            column: 32,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "ffi"
           ],
-          identifier: "*",
+          identifier: "RemoteDataLite",
           asIdentifier: ""
         },
         {
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 22,
+            column: 34,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 48,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "ffi"
+          ],
+          identifier: "releaseFFIData",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 50,
+            ignore: false
+          },
+          end: {
+            file: 1,
+            pkgId: 0,
+            line: 22,
+            column: 60,
+            ignore: false
+          },
+          prefixPaths: [
+            "ohos",
+            "ffi"
+          ],
+          identifier: "safeMalloc",
+          asIdentifier: ""
+        },
+        {
+          begin: {
+            file: 1,
+            pkgId: 0,
+            line: 23,
             column: 33,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 50,
             ignore: false
           },
@@ -114,14 +181,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 52,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 71,
             ignore: false
           },
@@ -162,36 +229,36 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 18,
-            column: 20,
+            line: 20,
+            column: 31,
             ignore: false
           },
           prefixPaths: [
             "ohos",
             "hilog"
           ],
-          identifier: "*",
+          identifier: "HilogChannel",
           asIdentifier: ""
         },
         {
           begin: {
             file: 2,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 33,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 50,
             ignore: false
           },
@@ -206,14 +273,14 @@
           begin: {
             file: 2,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 52,
             ignore: false
           },
           end: {
             file: 2,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 72,
             ignore: false
           },
@@ -254,15 +321,15 @@
           begin: {
             file: 3,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 3,
             pkgId: 0,
-            line: 18,
-            column: 33,
+            line: 20,
+            column: 42,
             ignore: false
           },
           prefixPaths: [
@@ -270,7 +337,7 @@
             "data",
             "values_bucket"
           ],
-          identifier: "*",
+          identifier: "CValueType",
           asIdentifier: ""
         },
         {
@@ -300,9 +367,6 @@
   ],
   allTypes: [
     {
-      kind: "Int32"
-    },
-    {
       kind: "Class",
       typeArgs: [
 
@@ -311,7 +375,19 @@
       info: {
         declPtr: {
           pkgId: -2,
-          index: 3
+          index: 1
+        }
+      }
+    },
+    {
+      kind: "Struct",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6StringE"
         }
       }
     },
@@ -322,7 +398,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 2
+        retType: 1
       }
     },
     {
@@ -340,24 +416,12 @@
     {
       kind: "Func",
       typeArgs: [
-        7,
-        8
+        2,
+        7
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 2
-      }
-    },
-    {
-      kind: "Struct",
-      typeArgs: [
-
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          decl: "_CNat6StringE"
-        }
+        retType: 1
       }
     },
     {
@@ -369,46 +433,52 @@
       info: {
         declPtr: {
           pkgId: 1,
-          decl: "_CN23ohos.data.values_bucket9ValueTypeE"
+          decl: "_CN23ohos.data.values_bucket11VBValueTypeE"
         }
       }
     },
     {
+      kind: "Bool"
+    },
+    {
       kind: "Func",
       typeArgs: [
-        7
+        2
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 2
+        retType: 1
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        1,
-        1
+        11,
+        11
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 2
+        retType: 1
       }
+    },
+    {
+      kind: "Int32"
     },
     {
       kind: "Func",
       typeArgs: [
-        7,
-        12
+        2,
+        13
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 2
+        retType: 1
       }
     },
     {
       kind: "Struct",
       typeArgs: [
-        8
+        7
       ],
       info_type: "CompositeTyInfo",
       info: {
@@ -446,17 +516,17 @@
     {
       kind: "Func",
       typeArgs: [
-        1
+        11
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 7
+        retType: 2
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        1
+        11
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -470,7 +540,7 @@
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 18,
+        retType: 19,
         isC: true
       }
     },
@@ -480,13 +550,13 @@
     {
       kind: "Func",
       typeArgs: [
-        18,
-        20,
-        21
+        19,
+        21,
+        22
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 11,
         isC: true
       }
     },
@@ -509,161 +579,72 @@
     {
       kind: "Func",
       typeArgs: [
-        18
+        19
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 11,
         isC: true
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        18,
-        20
+        19,
+        21
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 11,
         isC: true
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        18,
-        1,
-        1
+        19,
+        11,
+        11
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 11,
         isC: true
       }
     },
     {
       kind: "Func",
       typeArgs: [
-        18,
-        20,
-        26,
-        18
+        19,
+        21,
+        27,
+        19
       ],
       info_type: "FuncTyInfo",
       info: {
-        retType: 1,
+        retType: 11,
         isC: true
       }
     },
     {
       kind: "CPointer",
       typeArgs: [
-        21
+        22
       ]
+    },
+    {
+      kind: "Func",
+      typeArgs: [
+        27,
+        19
+      ],
+      info_type: "FuncTyInfo",
+      info: {
+        retType: 5
+      }
     }
   ],
   allDecls: [
-    {
-      kind: "VarDecl",
-      isTopLevel: true,
-      fullPkgName: "ohos.data.data_share_predicates",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 21,
-        column: 1,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 21,
-        column: 30,
-        ignore: false
-      },
-      identifier: "SUCCESS_CODE",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 21,
-        column: 7,
-        ignore: false
-      },
-      attributes: [
-        144678138029293616,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 1,
-      mangledName: "",
-      exportId: "_CN31ohos.data.data_share_predicates12SUCCESS_CODEE",
-      mangledBeforeSema: "31ohos.data.data_share_predicates12SUCCESS_CODEV$$i",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 12820464909098194885,
-        bodyHash: 15935751526715947134
-      },
-      info_type: "VarInfo",
-      info: {
-        isConst: true,
-        initializer: 1
-      }
-    },
-    {
-      kind: "VarDecl",
-      isTopLevel: true,
-      fullPkgName: "ohos.data.data_share_predicates",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 22,
-        column: 1,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 22,
-        column: 31,
-        ignore: false
-      },
-      identifier: "MEMORY_ERROR",
-      identifierPos: {
-        file: 2,
-        pkgId: 0,
-        line: 22,
-        column: 7,
-        ignore: false
-      },
-      attributes: [
-        144678138029293616,
-        0
-      ],
-      annotations: [
-
-      ],
-      type: 1,
-      mangledName: "",
-      exportId: "_CN31ohos.data.data_share_predicates12MEMORY_ERRORE",
-      mangledBeforeSema: "31ohos.data.data_share_predicates12MEMORY_ERRORV$$i",
-      hash: {
-        instVar: 0,
-        virt: 0,
-        sig: 520285295869893810,
-        srcUse: 12820464909098194885,
-        bodyHash: 4768474382028768954
-      },
-      info_type: "VarInfo",
-      info: {
-        isConst: true,
-        initializer: 2
-      }
-    },
     {
       kind: "ClassDecl",
       isTopLevel: true,
@@ -675,14 +656,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 46,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 289,
+        line: 276,
         column: 2,
         ignore: false
       },
@@ -690,7 +671,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 49,
+        line: 46,
         column: 14,
         ignore: false
       },
@@ -704,21 +685,17 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 3
-            },
-            {
-              name: "stagemodelonly",
-              expr: 4
+              name: "since",
+              expr: 1
             },
             {
               name: "syscap",
-              expr: 5
+              expr: 2
             }
           ]
         }
       ],
-      type: 2,
+      type: 1,
       mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicatesE",
       exportId: "_CN31ohos.data.data_share_predicates19DataSharePredicatesE",
       mangledBeforeSema: "31ohos.data.data_share_predicates19DataSharePredicatesC",
@@ -727,25 +704,25 @@
         virt: 0,
         sig: 14226628559908992850,
         srcUse: 0,
-        bodyHash: 7849527546063600254
+        bodyHash: 3194716417744289730
       },
       info_type: "ClassInfo",
       info: {
         inheritedTypes: [
-          13
+          14
         ],
         body: [
+          2,
+          3,
           4,
-          5,
-          6,
-          9,
+          7,
+          8,
           10,
           12,
-          14,
-          17,
-          20,
-          21,
-          22
+          15,
+          18,
+          19,
+          20
         ]
       }
     },
@@ -759,14 +736,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 58,
+        line: 55,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 60,
+        line: 57,
         column: 6,
         ignore: false
       },
@@ -774,7 +751,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 58,
+        line: 55,
         column: 12,
         ignore: false
       },
@@ -788,16 +765,12 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 6
-            },
-            {
-              name: "stagemodelonly",
-              expr: 7
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 8
+              expr: 4
             }
           ]
         }
@@ -811,7 +784,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 2799791421713124306
+        bodyHash: 17162139642138494554
       },
       info_type: "FuncInfo",
       info: {
@@ -826,7 +799,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -840,14 +813,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 62,
+        line: 59,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 61,
         column: 6,
         ignore: false
       },
@@ -855,7 +828,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 62,
+        line: 59,
         column: 5,
         ignore: false
       },
@@ -875,7 +848,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 16882035436506442185
+        bodyHash: 8609282257750780018
       },
       info_type: "FuncInfo",
       info: {
@@ -904,14 +877,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 79,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 99,
+        line: 95,
         column: 6,
         ignore: false
       },
@@ -919,7 +892,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 79,
         column: 17,
         ignore: false
       },
@@ -933,30 +906,30 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 9
-            },
-            {
-              name: "stagemodelonly",
-              expr: 10
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 11
+              expr: 6
+            },
+            {
+              name: "throwexception",
+              expr: 7
             }
           ]
         }
       ],
       type: 6,
-      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket9ValueTypeE",
-      exportId: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket9ValueTypeE",
-      mangledBeforeSema: "31ohos.data.data_share_predicates19DataSharePredicatesC7equalToF6String9ValueType$$19DataSharePredicates",
+      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket11VBValueTypeE",
+      exportId: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket11VBValueTypeE",
+      mangledBeforeSema: "31ohos.data.data_share_predicates19DataSharePredicatesC7equalToF6String11VBValueType$$19DataSharePredicates",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 15631606580679816872
+        bodyHash: 10286682143806236301
       },
       info_type: "FuncInfo",
       info: {
@@ -964,8 +937,8 @@
           paramLists: [
             {
               params: [
-                7,
-                8
+                5,
+                6
               ],
               desugars: [
                 0,
@@ -973,7 +946,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -983,14 +956,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 79,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 79,
         column: 38,
         ignore: false
       },
@@ -998,7 +971,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 79,
         column: 25,
         ignore: false
       },
@@ -1009,8 +982,8 @@
       annotations: [
 
       ],
-      type: 7,
-      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket9ValueTypeEE5fieldE",
+      type: 2,
+      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket11VBValueTypeEE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1030,22 +1003,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 79,
         column: 40,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 83,
-        column: 56,
+        line: 79,
+        column: 58,
         ignore: false
       },
       identifier: "value",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 79,
         column: 40,
         ignore: false
       },
@@ -1056,8 +1029,8 @@
       annotations: [
 
       ],
-      type: 8,
-      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket9ValueTypeEE5valueE",
+      type: 7,
+      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates7equalToHRNat6StringENN23ohos.data.values_bucket11VBValueTypeEE5valueE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1081,14 +1054,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 110,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 120,
+        line: 116,
         column: 6,
         ignore: false
       },
@@ -1096,7 +1069,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 114,
+        line: 110,
         column: 17,
         ignore: false
       },
@@ -1110,16 +1083,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 12
-            },
-            {
-              name: "stagemodelonly",
-              expr: 13
+              name: "since",
+              expr: 8
             },
             {
               name: "syscap",
-              expr: 14
+              expr: 9
+            },
+            {
+              name: "throwexception",
+              expr: 10
             }
           ]
         }
@@ -1133,7 +1106,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 17437145454940481601
+        bodyHash: 14816339424707291423
       },
       info_type: "FuncInfo",
       info: {
@@ -1148,7 +1121,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1162,14 +1135,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 137,
+        line: 132,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 150,
+        line: 145,
         column: 6,
         ignore: false
       },
@@ -1177,7 +1150,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 137,
+        line: 132,
         column: 17,
         ignore: false
       },
@@ -1191,16 +1164,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 15
-            },
-            {
-              name: "stagemodelonly",
-              expr: 16
+              name: "since",
+              expr: 11
             },
             {
               name: "syscap",
-              expr: 17
+              expr: 12
+            },
+            {
+              name: "throwexception",
+              expr: 13
             }
           ]
         }
@@ -1214,7 +1187,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 9683814000870065133
+        bodyHash: 111739608914342813
       },
       info_type: "FuncInfo",
       info: {
@@ -1222,14 +1195,14 @@
           paramLists: [
             {
               params: [
-                11
+                9
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1239,14 +1212,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 137,
+        line: 132,
         column: 28,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 137,
+        line: 132,
         column: 41,
         ignore: false
       },
@@ -1254,7 +1227,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 137,
+        line: 132,
         column: 28,
         ignore: false
       },
@@ -1265,7 +1238,7 @@
       annotations: [
 
       ],
-      type: 7,
+      type: 2,
       mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates10orderByAscHRNat6StringEE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1290,14 +1263,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 166,
+        line: 160,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 179,
+        line: 173,
         column: 6,
         ignore: false
       },
@@ -1305,7 +1278,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 166,
+        line: 160,
         column: 17,
         ignore: false
       },
@@ -1319,16 +1292,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 18
-            },
-            {
-              name: "stagemodelonly",
-              expr: 19
+              name: "since",
+              expr: 14
             },
             {
               name: "syscap",
-              expr: 20
+              expr: 15
+            },
+            {
+              name: "throwexception",
+              expr: 16
             }
           ]
         }
@@ -1342,7 +1315,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 16647586411216970221
+        bodyHash: 186568777064228581
       },
       info_type: "FuncInfo",
       info: {
@@ -1350,14 +1323,14 @@
           paramLists: [
             {
               params: [
-                13
+                11
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1367,14 +1340,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 166,
+        line: 160,
         column: 29,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 166,
+        line: 160,
         column: 42,
         ignore: false
       },
@@ -1382,7 +1355,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 166,
+        line: 160,
         column: 29,
         ignore: false
       },
@@ -1393,7 +1366,7 @@
       annotations: [
 
       ],
-      type: 7,
+      type: 2,
       mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates11orderByDescHRNat6StringEE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1418,14 +1391,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 207,
+        line: 200,
         column: 6,
         ignore: false
       },
@@ -1433,7 +1406,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 17,
         ignore: false
       },
@@ -1447,16 +1420,16 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 21
-            },
-            {
-              name: "stagemodelonly",
-              expr: 22
+              name: "since",
+              expr: 17
             },
             {
               name: "syscap",
-              expr: 23
+              expr: 18
+            },
+            {
+              name: "throwexception",
+              expr: 19
             }
           ]
         }
@@ -1470,7 +1443,7 @@
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 10188299272024318086
+        bodyHash: 16156553374162762069
       },
       info_type: "FuncInfo",
       info: {
@@ -1478,8 +1451,8 @@
           paramLists: [
             {
               params: [
-                15,
-                16
+                13,
+                14
               ],
               desugars: [
                 0,
@@ -1487,7 +1460,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1497,14 +1470,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 23,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 35,
         ignore: false
       },
@@ -1512,7 +1485,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 23,
         ignore: false
       },
@@ -1523,7 +1496,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 11,
       mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates5limitHiiE5totalE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1544,14 +1517,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 37,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 50,
         ignore: false
       },
@@ -1559,7 +1532,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 196,
+        line: 189,
         column: 37,
         ignore: false
       },
@@ -1570,7 +1543,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 11,
       mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates5limitHiiE6offsetE",
       exportId: "",
       mangledBeforeSema: "",
@@ -1595,14 +1568,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 225,
+        line: 217,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 261,
+        line: 248,
         column: 6,
         ignore: false
       },
@@ -1610,8 +1583,8 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 225,
-        column: 18,
+        line: 217,
+        column: 17,
         ignore: false
       },
       attributes: [
@@ -1624,30 +1597,30 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 24
-            },
-            {
-              name: "stagemodelonly",
-              expr: 25
+              name: "since",
+              expr: 20
             },
             {
               name: "syscap",
-              expr: 26
+              expr: 21
+            },
+            {
+              name: "throwexception",
+              expr: 22
             }
           ]
         }
       ],
-      type: 11,
-      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates2inHRNat6StringERNat5ArrayINN23ohos.data.values_bucket9ValueTypeEE",
-      exportId: "_CN31ohos.data.data_share_predicates19DataSharePredicates2inHRNat6StringERNat5ArrayINN23ohos.data.values_bucket9ValueTypeEE",
-      mangledBeforeSema: "31ohos.data.data_share_predicates19DataSharePredicatesC2inF6String5Array<9ValueType>$$19DataSharePredicates",
+      type: 12,
+      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates8inValuesHRNat6StringERNat5ArrayINN23ohos.data.values_bucket11VBValueTypeEE",
+      exportId: "_CN31ohos.data.data_share_predicates19DataSharePredicates8inValuesHRNat6StringERNat5ArrayINN23ohos.data.values_bucket11VBValueTypeEE",
+      mangledBeforeSema: "31ohos.data.data_share_predicates19DataSharePredicatesC8inValuesF6String5Array<11VBValueType>$$19DataSharePredicates",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 11847774022537666772
+        bodyHash: 2237197763923551353
       },
       info_type: "FuncInfo",
       info: {
@@ -1655,8 +1628,8 @@
           paramLists: [
             {
               params: [
-                18,
-                19
+                16,
+                17
               ],
               desugars: [
                 0,
@@ -1664,7 +1637,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1674,23 +1647,23 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 225,
-        column: 22,
+        line: 217,
+        column: 26,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 225,
-        column: 35,
+        line: 217,
+        column: 39,
         ignore: false
       },
       identifier: "field",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 225,
-        column: 22,
+        line: 217,
+        column: 26,
         ignore: false
       },
       attributes: [
@@ -1700,8 +1673,8 @@
       annotations: [
 
       ],
-      type: 7,
-      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates2inHRNat6StringERNat5ArrayINN23ohos.data.values_bucket9ValueTypeEEE5fieldE",
+      type: 2,
+      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates8inValuesHRNat6StringERNat5ArrayINN23ohos.data.values_bucket11VBValueTypeEEE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1721,23 +1694,23 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 225,
-        column: 37,
+        line: 217,
+        column: 41,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 225,
-        column: 60,
+        line: 217,
+        column: 66,
         ignore: false
       },
       identifier: "value",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 225,
-        column: 37,
+        line: 217,
+        column: 41,
         ignore: false
       },
       attributes: [
@@ -1747,8 +1720,8 @@
       annotations: [
 
       ],
-      type: 12,
-      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates2inHRNat6StringERNat5ArrayINN23ohos.data.values_bucket9ValueTypeEEE5valueIY8_E",
+      type: 13,
+      mangledName: "_CN31ohos.data.data_share_predicates19DataSharePredicates8inValuesHRNat6StringERNat5ArrayINN23ohos.data.values_bucket11VBValueTypeEEE5valueIY8_E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1772,14 +1745,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 263,
+        line: 250,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 270,
+        line: 257,
         column: 6,
         ignore: false
       },
@@ -1787,7 +1760,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 263,
+        line: 250,
         column: 20,
         ignore: false
       },
@@ -1807,7 +1780,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 11132036426573800743
+        bodyHash: 17461228237438394913
       },
       info_type: "FuncInfo",
       info: {
@@ -1822,7 +1795,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1836,14 +1809,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 272,
+        line: 259,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 279,
+        line: 266,
         column: 6,
         ignore: false
       },
@@ -1851,7 +1824,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 272,
+        line: 259,
         column: 20,
         ignore: false
       },
@@ -1871,7 +1844,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 12076448999186856560
+        bodyHash: 15239891976753932191
       },
       info_type: "FuncInfo",
       info: {
@@ -1886,7 +1859,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1900,14 +1873,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 281,
+        line: 268,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 288,
+        line: 275,
         column: 6,
         ignore: false
       },
@@ -1915,7 +1888,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 281,
+        line: 268,
         column: 20,
         ignore: false
       },
@@ -1935,7 +1908,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 15906006040667688180
+        bodyHash: 3521141814873004899
       },
       info_type: "FuncInfo",
       info: {
@@ -1950,7 +1923,7 @@
               ]
             }
           ],
-          retType: 2
+          retType: 1
         }
       }
     },
@@ -1987,7 +1960,7 @@
       annotations: [
 
       ],
-      type: 14,
+      type: 15,
       mangledName: "_CN31ohos.data.data_share_predicates3LOGE",
       exportId: "_CN31ohos.data.data_share_predicates3LOGE",
       mangledBeforeSema: "31ohos.data.data_share_predicates3LOGV$$",
@@ -1996,7 +1969,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 1273861709373161920,
-        bodyHash: 14427442097953945539
+        bodyHash: 9409677349956042357
       },
       info_type: "VarInfo",
       info: {
@@ -2039,7 +2012,7 @@
       annotations: [
 
       ],
-      type: 15,
+      type: 16,
       mangledName: "_CN31ohos.data.data_share_predicates11getErrorMsgHi",
       exportId: "_CN31ohos.data.data_share_predicates11getErrorMsgHi",
       mangledBeforeSema: "31ohos.data.data_share_predicates11getErrorMsgFi$$6String",
@@ -2048,7 +2021,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 14159260758447481877
+        bodyHash: 9552949829271940620
       },
       info_type: "FuncInfo",
       info: {
@@ -2056,14 +2029,14 @@
           paramLists: [
             {
               params: [
-                25
+                23
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 7
+          retType: 2
         }
       }
     },
@@ -2099,7 +2072,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 11,
       mangledName: "_CN31ohos.data.data_share_predicates11getErrorMsgHiE4codeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2151,7 +2124,7 @@
       annotations: [
 
       ],
-      type: 16,
+      type: 17,
       mangledName: "_CN31ohos.data.data_share_predicates17throwIfNotSuccessHi",
       exportId: "_CN31ohos.data.data_share_predicates17throwIfNotSuccessHi",
       mangledBeforeSema: "31ohos.data.data_share_predicates17throwIfNotSuccessFi$$u",
@@ -2160,7 +2133,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 5034875262012285526
+        bodyHash: 3632180533780693455
       },
       info_type: "FuncInfo",
       info: {
@@ -2168,7 +2141,7 @@
           paramLists: [
             {
               params: [
-                27
+                25
               ],
               desugars: [
                 0
@@ -2211,7 +2184,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 11,
       mangledName: "_CN31ohos.data.data_share_predicates17throwIfNotSuccessHiE4codeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2237,14 +2210,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 70,
         ignore: false
       },
@@ -2252,7 +2225,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 21,
+        line: 23,
         column: 10,
         ignore: false
       },
@@ -2263,7 +2236,7 @@
       annotations: [
 
       ],
-      type: 17,
+      type: 18,
       mangledName: "FfiOHOSDataSharePredicatesCreateDataSharePredicates",
       exportId: "FfiOHOSDataSharePredicatesCreateDataSharePredicates",
       mangledBeforeSema: "31ohos.data.data_share_predicates51FfiOHOSDataSharePredicatesCreateDataSharePredicatesF$$l",
@@ -2287,7 +2260,7 @@
               ]
             }
           ],
-          retType: 18
+          retType: 19
         }
       }
     },
@@ -2302,14 +2275,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 96,
         ignore: false
       },
@@ -2317,7 +2290,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 10,
         ignore: false
       },
@@ -2328,7 +2301,7 @@
       annotations: [
 
       ],
-      type: 19,
+      type: 20,
       mangledName: "FfiOHOSDataSharePredicatesEqualTo",
       exportId: "FfiOHOSDataSharePredicatesEqualTo",
       mangledBeforeSema: "31ohos.data.data_share_predicates33FfiOHOSDataSharePredicatesEqualToFl7CString10CValueType$$i",
@@ -2345,9 +2318,9 @@
           paramLists: [
             {
               params: [
-                30,
-                31,
-                32
+                28,
+                29,
+                30
               ],
               desugars: [
                 0,
@@ -2356,7 +2329,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -2366,14 +2339,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 44,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 53,
         ignore: false
       },
@@ -2381,7 +2354,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 44,
         ignore: false
       },
@@ -2392,7 +2365,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates33FfiOHOSDataSharePredicatesEqualToHlkRN23ohos.data.values_bucket10CValueTypeEE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2413,14 +2386,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 55,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 69,
         ignore: false
       },
@@ -2428,7 +2401,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 55,
         ignore: false
       },
@@ -2439,7 +2412,7 @@
       annotations: [
 
       ],
-      type: 20,
+      type: 21,
       mangledName: "_CN31ohos.data.data_share_predicates33FfiOHOSDataSharePredicatesEqualToHlkRN23ohos.data.values_bucket10CValueTypeEE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2460,14 +2433,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 71,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 88,
         ignore: false
       },
@@ -2475,7 +2448,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 23,
+        line: 25,
         column: 71,
         ignore: false
       },
@@ -2486,7 +2459,7 @@
       annotations: [
 
       ],
-      type: 21,
+      type: 22,
       mangledName: "_CN31ohos.data.data_share_predicates33FfiOHOSDataSharePredicatesEqualToHlkRN23ohos.data.values_bucket10CValueTypeEE5valueE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2512,14 +2485,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 57,
         ignore: false
       },
@@ -2527,7 +2500,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 10,
         ignore: false
       },
@@ -2538,7 +2511,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 23,
       mangledName: "FfiOHOSDataSharePredicatesAnd",
       exportId: "FfiOHOSDataSharePredicatesAnd",
       mangledBeforeSema: "31ohos.data.data_share_predicates29FfiOHOSDataSharePredicatesAndFl$$i",
@@ -2555,14 +2528,14 @@
           paramLists: [
             {
               params: [
-                34
+                32
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -2572,14 +2545,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 40,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 49,
         ignore: false
       },
@@ -2587,7 +2560,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 25,
+        line: 27,
         column: 40,
         ignore: false
       },
@@ -2598,7 +2571,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates29FfiOHOSDataSharePredicatesAndHlE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2624,14 +2597,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 80,
         ignore: false
       },
@@ -2639,7 +2612,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 10,
         ignore: false
       },
@@ -2650,7 +2623,7 @@
       annotations: [
 
       ],
-      type: 23,
+      type: 24,
       mangledName: "FfiOHOSDataSharePredicatesOrderByAsc",
       exportId: "FfiOHOSDataSharePredicatesOrderByAsc",
       mangledBeforeSema: "31ohos.data.data_share_predicates36FfiOHOSDataSharePredicatesOrderByAscFl7CString$$i",
@@ -2667,8 +2640,8 @@
           paramLists: [
             {
               params: [
-                36,
-                37
+                34,
+                35
               ],
               desugars: [
                 0,
@@ -2676,7 +2649,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -2686,14 +2659,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 47,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 56,
         ignore: false
       },
@@ -2701,7 +2674,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 47,
         ignore: false
       },
@@ -2712,7 +2685,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates36FfiOHOSDataSharePredicatesOrderByAscHlkE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2733,14 +2706,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 58,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 72,
         ignore: false
       },
@@ -2748,7 +2721,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 27,
+        line: 29,
         column: 58,
         ignore: false
       },
@@ -2759,7 +2732,7 @@
       annotations: [
 
       ],
-      type: 20,
+      type: 21,
       mangledName: "_CN31ohos.data.data_share_predicates36FfiOHOSDataSharePredicatesOrderByAscHlkE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2785,14 +2758,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 81,
         ignore: false
       },
@@ -2800,7 +2773,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 10,
         ignore: false
       },
@@ -2811,7 +2784,7 @@
       annotations: [
 
       ],
-      type: 23,
+      type: 24,
       mangledName: "FfiOHOSDataSharePredicatesOrderByDesc",
       exportId: "FfiOHOSDataSharePredicatesOrderByDesc",
       mangledBeforeSema: "31ohos.data.data_share_predicates37FfiOHOSDataSharePredicatesOrderByDescFl7CString$$i",
@@ -2828,8 +2801,8 @@
           paramLists: [
             {
               params: [
-                39,
-                40
+                37,
+                38
               ],
               desugars: [
                 0,
@@ -2837,7 +2810,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -2847,14 +2820,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 48,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 57,
         ignore: false
       },
@@ -2862,7 +2835,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 48,
         ignore: false
       },
@@ -2873,7 +2846,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates37FfiOHOSDataSharePredicatesOrderByDescHlkE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2894,14 +2867,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 59,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 73,
         ignore: false
       },
@@ -2909,7 +2882,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 29,
+        line: 31,
         column: 59,
         ignore: false
       },
@@ -2920,7 +2893,7 @@
       annotations: [
 
       ],
-      type: 20,
+      type: 21,
       mangledName: "_CN31ohos.data.data_share_predicates37FfiOHOSDataSharePredicatesOrderByDescHlkE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
@@ -2946,14 +2919,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 88,
         ignore: false
       },
@@ -2961,7 +2934,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 10,
         ignore: false
       },
@@ -2972,7 +2945,7 @@
       annotations: [
 
       ],
-      type: 24,
+      type: 25,
       mangledName: "FfiOHOSDataSharePredicatesLimit",
       exportId: "FfiOHOSDataSharePredicatesLimit",
       mangledBeforeSema: "31ohos.data.data_share_predicates31FfiOHOSDataSharePredicatesLimitFlii$$i",
@@ -2989,9 +2962,9 @@
           paramLists: [
             {
               params: [
-                42,
-                43,
-                44
+                40,
+                41,
+                42
               ],
               desugars: [
                 0,
@@ -3000,7 +2973,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -3010,14 +2983,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 42,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 51,
         ignore: false
       },
@@ -3025,7 +2998,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 42,
         ignore: false
       },
@@ -3036,7 +3009,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates31FfiOHOSDataSharePredicatesLimitHliiE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3057,14 +3030,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 53,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 65,
         ignore: false
       },
@@ -3072,7 +3045,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 53,
         ignore: false
       },
@@ -3083,7 +3056,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 11,
       mangledName: "_CN31ohos.data.data_share_predicates31FfiOHOSDataSharePredicatesLimitHliiE5totalE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3104,14 +3077,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 67,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 80,
         ignore: false
       },
@@ -3119,7 +3092,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 31,
+        line: 33,
         column: 67,
         ignore: false
       },
@@ -3130,7 +3103,7 @@
       annotations: [
 
       ],
-      type: 1,
+      type: 11,
       mangledName: "_CN31ohos.data.data_share_predicates31FfiOHOSDataSharePredicatesLimitHliiE6offsetE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3156,14 +3129,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 121,
         ignore: false
       },
@@ -3171,7 +3144,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 10,
         ignore: false
       },
@@ -3182,7 +3155,7 @@
       annotations: [
 
       ],
-      type: 25,
+      type: 26,
       mangledName: "FfiOHOSDataSharePredicatesIn",
       exportId: "FfiOHOSDataSharePredicatesIn",
       mangledBeforeSema: "31ohos.data.data_share_predicates28FfiOHOSDataSharePredicatesInFl7CString8CPointer<10CValueType>l$$i",
@@ -3199,10 +3172,10 @@
           paramLists: [
             {
               params: [
+                44,
+                45,
                 46,
-                47,
-                48,
-                49
+                47
               ],
               desugars: [
                 0,
@@ -3212,7 +3185,7 @@
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -3222,14 +3195,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 39,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 48,
         ignore: false
       },
@@ -3237,7 +3210,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 39,
         ignore: false
       },
@@ -3248,7 +3221,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates28FfiOHOSDataSharePredicatesInHlkPRN23ohos.data.values_bucket10CValueTypeElE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3269,14 +3242,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 50,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 64,
         ignore: false
       },
@@ -3284,7 +3257,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 50,
         ignore: false
       },
@@ -3295,7 +3268,7 @@
       annotations: [
 
       ],
-      type: 20,
+      type: 21,
       mangledName: "_CN31ohos.data.data_share_predicates28FfiOHOSDataSharePredicatesInHlkPRN23ohos.data.values_bucket10CValueTypeElE5fieldE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3316,14 +3289,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 66,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 94,
         ignore: false
       },
@@ -3331,7 +3304,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 66,
         ignore: false
       },
@@ -3342,7 +3315,7 @@
       annotations: [
 
       ],
-      type: 26,
+      type: 27,
       mangledName: "_CN31ohos.data.data_share_predicates28FfiOHOSDataSharePredicatesInHlkPRN23ohos.data.values_bucket10CValueTypeElE6valuesIY4_E",
       exportId: "",
       mangledBeforeSema: "",
@@ -3363,14 +3336,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 96,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 113,
         ignore: false
       },
@@ -3378,7 +3351,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 33,
+        line: 35,
         column: 96,
         ignore: false
       },
@@ -3389,7 +3362,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates28FfiOHOSDataSharePredicatesInHlkPRN23ohos.data.values_bucket10CValueTypeElE10valuesSizeE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3415,14 +3388,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 56,
         ignore: false
       },
@@ -3430,7 +3403,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 10,
         ignore: false
       },
@@ -3441,7 +3414,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 23,
       mangledName: "FfiOHOSDataSharePredicatesOr",
       exportId: "FfiOHOSDataSharePredicatesOr",
       mangledBeforeSema: "31ohos.data.data_share_predicates28FfiOHOSDataSharePredicatesOrFl$$i",
@@ -3458,14 +3431,14 @@
           paramLists: [
             {
               params: [
-                51
+                49
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -3475,14 +3448,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 39,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 48,
         ignore: false
       },
@@ -3490,7 +3463,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 35,
+        line: 37,
         column: 39,
         ignore: false
       },
@@ -3501,7 +3474,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates28FfiOHOSDataSharePredicatesOrHlE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3527,14 +3500,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 63,
         ignore: false
       },
@@ -3542,7 +3515,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 10,
         ignore: false
       },
@@ -3553,7 +3526,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 23,
       mangledName: "FfiOHOSDataSharePredicatesBeginWrap",
       exportId: "FfiOHOSDataSharePredicatesBeginWrap",
       mangledBeforeSema: "31ohos.data.data_share_predicates35FfiOHOSDataSharePredicatesBeginWrapFl$$i",
@@ -3570,14 +3543,14 @@
           paramLists: [
             {
               params: [
-                53
+                51
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -3587,14 +3560,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 46,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 55,
         ignore: false
       },
@@ -3602,7 +3575,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 37,
+        line: 39,
         column: 46,
         ignore: false
       },
@@ -3613,7 +3586,7 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates35FfiOHOSDataSharePredicatesBeginWrapHlE2idE",
       exportId: "",
       mangledBeforeSema: "",
@@ -3639,14 +3612,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 39,
+        line: 41,
         column: 5,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 39,
+        line: 41,
         column: 61,
         ignore: false
       },
@@ -3654,7 +3627,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 39,
+        line: 41,
         column: 10,
         ignore: false
       },
@@ -3665,7 +3638,7 @@
       annotations: [
 
       ],
-      type: 22,
+      type: 23,
       mangledName: "FfiOHOSDataSharePredicatesEndWrap",
       exportId: "FfiOHOSDataSharePredicatesEndWrap",
       mangledBeforeSema: "31ohos.data.data_share_predicates33FfiOHOSDataSharePredicatesEndWrapFl$$i",
@@ -3682,14 +3655,14 @@
           paramLists: [
             {
               params: [
-                55
+                53
               ],
               desugars: [
                 0
               ]
             }
           ],
-          retType: 1
+          retType: 11
         }
       }
     },
@@ -3699,14 +3672,14 @@
       begin: {
         file: 3,
         pkgId: 0,
-        line: 39,
+        line: 41,
         column: 44,
         ignore: false
       },
       end: {
         file: 3,
         pkgId: 0,
-        line: 39,
+        line: 41,
         column: 53,
         ignore: false
       },
@@ -3714,7 +3687,7 @@
       identifierPos: {
         file: 3,
         pkgId: 0,
-        line: 39,
+        line: 41,
         column: 44,
         ignore: false
       },
@@ -3725,8 +3698,169 @@
       annotations: [
 
       ],
-      type: 18,
+      type: 19,
       mangledName: "_CN31ohos.data.data_share_predicates33FfiOHOSDataSharePredicatesEndWrapHlE2idE",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncDecl",
+      isTopLevel: true,
+      fullPkgName: "ohos.data.data_share_predicates",
+      genericDecl: {
+        pkgId: -1,
+        decl: ""
+      },
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 1,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 53,
+        column: 2,
+        ignore: false
+      },
+      identifier: "free",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 6,
+        ignore: false
+      },
+      attributes: [
+        144678138029293616,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 28,
+      mangledName: "_CN31ohos.data.data_share_predicates4freeHPRN23ohos.data.values_bucket10CValueTypeEl",
+      exportId: "_CN31ohos.data.data_share_predicates4freeHPRN23ohos.data.values_bucket10CValueTypeEl",
+      mangledBeforeSema: "31ohos.data.data_share_predicates4freeF8CPointer<10CValueType>l$$",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 520285295869893810,
+        srcUse: 0,
+        bodyHash: 14818213437053270042
+      },
+      info_type: "FuncInfo",
+      info: {
+        funcBody: {
+          paramLists: [
+            {
+              params: [
+                55,
+                56
+              ],
+              desugars: [
+                0,
+                0
+              ]
+            }
+          ],
+          retType: 5
+        }
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.data.data_share_predicates",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 11,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 45,
+        ignore: false
+      },
+      identifier: "cValuesArray",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 11,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 27,
+      mangledName: "_CN31ohos.data.data_share_predicates4freeHPRN23ohos.data.values_bucket10CValueTypeElE12cValuesArrayIY3_E",
+      exportId: "",
+      mangledBeforeSema: "",
+      hash: {
+        instVar: 0,
+        virt: 0,
+        sig: 0,
+        srcUse: 0,
+        bodyHash: 0
+      },
+      info_type: "ParamInfo",
+      info: {
+      }
+    },
+    {
+      kind: "FuncParam",
+      fullPkgName: "ohos.data.data_share_predicates",
+      begin: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 47,
+        ignore: false
+      },
+      end: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 64,
+        ignore: false
+      },
+      identifier: "valuesSize",
+      identifierPos: {
+        file: 3,
+        pkgId: 0,
+        line: 44,
+        column: 47,
+        ignore: false
+      },
+      attributes: [
+        562949953421344,
+        0
+      ],
+      annotations: [
+
+      ],
+      type: 19,
+      mangledName: "_CN31ohos.data.data_share_predicates4freeHPRN23ohos.data.values_bucket10CValueTypeElE10valuesSizeE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -3745,45 +3879,24 @@
     {
       kind: "LitConstExpr",
       begin: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 21,
-        column: 29,
+        line: 43,
+        column: 12,
         ignore: false
       },
       end: {
-        file: 2,
+        file: 1,
         pkgId: 0,
-        line: 21,
-        column: 30,
+        line: 43,
+        column: 16,
         ignore: false
       },
-      type: 1,
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "0"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 2,
-        pkgId: 0,
-        line: 22,
-        column: 29,
-        ignore: false
-      },
-      end: {
-        file: 2,
-        pkgId: 0,
-        line: 22,
-        column: 31,
-        ignore: false
-      },
-      type: 1,
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "-1"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3791,60 +3904,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 45,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 45,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 46,
-        column: 21,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 46,
-        column: 25,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 47,
+        line: 44,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 47,
+        line: 44,
         column: 69,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -3856,20 +3927,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 54,
-        column: 9,
+        line: 52,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 54,
-        column: 11,
+        line: 52,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -3877,17 +3950,87 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 55,
+        line: 53,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 53,
+        column: 73,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 75,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 75,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 76,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 76,
+        column: 73,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 77,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 55,
+        line: 77,
         column: 29,
         ignore: false
       },
+      type: 8,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -3899,17 +4042,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 56,
+        line: 106,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 106,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 107,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 56,
+        line: 107,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -3921,38 +4088,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 79,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 79,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 80,
+        line: 108,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 108,
         column: 29,
         ignore: false
       },
+      type: 8,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -3964,17 +4111,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 81,
+        line: 128,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 128,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 129,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 81,
+        line: 129,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -3986,38 +4157,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 110,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 111,
+        line: 130,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 111,
+        line: 130,
         column: 29,
         ignore: false
       },
+      type: 8,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -4029,17 +4180,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 156,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 156,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 157,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 157,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -4051,38 +4226,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 133,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 133,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 134,
+        line: 158,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 134,
+        line: 158,
         column: 29,
         ignore: false
       },
+      type: 8,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -4094,17 +4249,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 185,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 185,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 186,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 135,
+        line: 186,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -4116,38 +4295,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 162,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 162,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 163,
+        line: 187,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 163,
+        line: 187,
         column: 29,
         ignore: false
       },
+      type: 8,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
@@ -4159,17 +4318,41 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 164,
+        line: 213,
+        column: 16,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 213,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 214,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 164,
+        line: 214,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -4181,129 +4364,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 192,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 192,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 193,
+        line: 215,
         column: 25,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 193,
+        line: 215,
         column: 29,
         ignore: false
       },
+      type: 8,
       info_type: "LitConstInfo",
       info: {
         strValue: "true",
         constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 194,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 194,
-        column: 73,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
-        constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 221,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 221,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 222,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 222,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 223,
-        column: 17,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 223,
-        column: 73,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
-        constKind: "String"
       }
     }
   ],

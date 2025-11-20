@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "ohos.data.values_bucket",
-  pkgDepInfo: "{\"package\":\"ohos.data.values_bucket\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"value_type.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":30}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"value_type.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":28}}]}]}",
+  pkgDepInfo: "{\"package\":\"ohos.data.values_bucket\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.ffi\",\"isStd\":false,\"imports\":[{\"file\":\"value_type.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":30}}]},{\"package\":\"ohos.labels\",\"isStd\":false,\"imports\":[{\"file\":\"value_type.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":28}}]}],\"features\":[]}",
   imports: [
     "std.core",
     "ohos.ffi"
@@ -21,14 +21,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 30,
             ignore: false
           },
@@ -43,14 +43,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 28,
             ignore: false
           },
@@ -101,9 +101,21 @@
       }
     },
     {
+      kind: "Struct",
+      typeArgs: [
+
+      ],
+      info_type: "CompositeTyInfo",
+      info: {
+        declPtr: {
+          decl: "_CNat6StringE"
+        }
+      }
+    },
+    {
       kind: "Func",
       typeArgs: [
-        3
+        4
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -116,7 +128,7 @@
     {
       kind: "Func",
       typeArgs: [
-        5
+        6
       ],
       info_type: "FuncTyInfo",
       info: {
@@ -129,23 +141,11 @@
     {
       kind: "Func",
       typeArgs: [
-        7
+        2
       ],
       info_type: "FuncTyInfo",
       info: {
         retType: 1
-      }
-    },
-    {
-      kind: "Struct",
-      typeArgs: [
-
-      ],
-      info_type: "CompositeTyInfo",
-      info: {
-        declPtr: {
-          decl: "_CNat6StringE"
-        }
       }
     },
     {
@@ -261,11 +261,11 @@
       end: {
         file: 1,
         pkgId: 0,
-        line: 73,
+        line: 77,
         column: 2,
         ignore: false
       },
-      identifier: "ValueType",
+      identifier: "VBValueType",
       identifierPos: {
         file: 1,
         pkgId: 0,
@@ -283,30 +283,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
+              name: "since",
               expr: 1
             },
             {
-              name: "stagemodelonly",
-              expr: 2
-            },
-            {
               name: "syscap",
-              expr: 3
+              expr: 2
             }
           ]
         }
       ],
       type: 1,
-      mangledName: "_CN23ohos.data.values_bucket9ValueTypeE",
-      exportId: "_CN23ohos.data.values_bucket9ValueTypeE",
-      mangledBeforeSema: "23ohos.data.values_bucket9ValueTypeU",
+      mangledName: "_CN23ohos.data.values_bucket11VBValueTypeE",
+      exportId: "_CN23ohos.data.values_bucket11VBValueTypeE",
+      mangledBeforeSema: "23ohos.data.values_bucket11VBValueTypeU",
       hash: {
-        instVar: 11387644817458069692,
+        instVar: 5492725109535961010,
         virt: 0,
         sig: 14151301873218655650,
         srcUse: 0,
-        bodyHash: 3802699449646019857
+        bodyHash: 10932070328191981232
       },
       info_type: "EnumInfo",
       info: {
@@ -325,7 +321,7 @@
         ellipsisPos: {
           file: 1,
           pkgId: 0,
-          line: 62,
+          line: 66,
           column: 7,
           ignore: false
         }
@@ -341,14 +337,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 19,
         ignore: false
       },
@@ -356,7 +352,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 5,
         ignore: false
       },
@@ -370,30 +366,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 4
-            },
-            {
-              name: "stagemodelonly",
-              expr: 5
+              name: "since",
+              expr: 3
             },
             {
               name: "syscap",
-              expr: 6
+              expr: 4
             }
           ]
         }
       ],
-      type: 2,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType7IntegerHl",
-      exportId: "_CN23ohos.data.values_bucket9ValueType7IntegerHl",
-      mangledBeforeSema: "23ohos.data.values_bucket9ValueTypeU7IntegerFl$$",
+      type: 3,
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType7IntegerHl",
+      exportId: "_CN23ohos.data.values_bucket11VBValueType7IntegerHl",
+      mangledBeforeSema: "23ohos.data.values_bucket11VBValueTypeU7IntegerFl$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 3155734247200437568
+        bodyHash: 11216783600958207250
       },
       info_type: "FuncInfo",
       info: {
@@ -418,14 +410,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 18,
         ignore: false
       },
@@ -433,7 +425,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 37,
+        line: 38,
         column: 13,
         ignore: false
       },
@@ -444,8 +436,8 @@
       annotations: [
 
       ],
-      type: 3,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType7IntegerHlE2p1E",
+      type: 4,
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType7IntegerHlE2p1E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -469,14 +461,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 47,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 47,
         column: 20,
         ignore: false
       },
@@ -484,7 +476,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 47,
         column: 5,
         ignore: false
       },
@@ -498,30 +490,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 7
-            },
-            {
-              name: "stagemodelonly",
-              expr: 8
+              name: "since",
+              expr: 5
             },
             {
               name: "syscap",
-              expr: 9
+              expr: 6
             }
           ]
         }
       ],
-      type: 4,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType6DoubleHd",
-      exportId: "_CN23ohos.data.values_bucket9ValueType6DoubleHd",
-      mangledBeforeSema: "23ohos.data.values_bucket9ValueTypeU6DoubleFd$$",
+      type: 5,
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType6DoubleHd",
+      exportId: "_CN23ohos.data.values_bucket11VBValueType6DoubleHd",
+      mangledBeforeSema: "23ohos.data.values_bucket11VBValueTypeU6DoubleFd$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 3155734247200437568
+        bodyHash: 11216783600958207250
       },
       info_type: "FuncInfo",
       info: {
@@ -546,14 +534,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 47,
         column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 47,
         column: 19,
         ignore: false
       },
@@ -561,7 +549,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 45,
+        line: 47,
         column: 12,
         ignore: false
       },
@@ -572,8 +560,8 @@
       annotations: [
 
       ],
-      type: 5,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType6DoubleHdE2p1E",
+      type: 6,
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType6DoubleHdE2p1E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -597,14 +585,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 53,
+        line: 56,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 53,
+        line: 56,
         column: 24,
         ignore: false
       },
@@ -612,7 +600,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 53,
+        line: 56,
         column: 5,
         ignore: false
       },
@@ -626,30 +614,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 10
-            },
-            {
-              name: "stagemodelonly",
-              expr: 11
+              name: "since",
+              expr: 7
             },
             {
               name: "syscap",
-              expr: 12
+              expr: 8
             }
           ]
         }
       ],
-      type: 6,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType11StringValueHRNat6StringE",
-      exportId: "_CN23ohos.data.values_bucket9ValueType11StringValueHRNat6StringE",
-      mangledBeforeSema: "23ohos.data.values_bucket9ValueTypeU11StringValueF6String$$",
+      type: 7,
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType11StringValueHRNat6StringE",
+      exportId: "_CN23ohos.data.values_bucket11VBValueType11StringValueHRNat6StringE",
+      mangledBeforeSema: "23ohos.data.values_bucket11VBValueTypeU11StringValueF6String$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 3155734247200437568
+        bodyHash: 11216783600958207250
       },
       info_type: "FuncInfo",
       info: {
@@ -674,14 +658,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 53,
+        line: 56,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 53,
+        line: 56,
         column: 23,
         ignore: false
       },
@@ -689,7 +673,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 53,
+        line: 56,
         column: 17,
         ignore: false
       },
@@ -700,8 +684,8 @@
       annotations: [
 
       ],
-      type: 7,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType11StringValueHRNat6StringEE2p1E",
+      type: 2,
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType11StringValueHRNat6StringEE2p1E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -725,14 +709,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 65,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 65,
         column: 18,
         ignore: false
       },
@@ -740,7 +724,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 65,
         column: 5,
         ignore: false
       },
@@ -754,30 +738,26 @@
           identifier: "APILevel",
           args: [
             {
-              name: "",
-              expr: 13
-            },
-            {
-              name: "stagemodelonly",
-              expr: 14
+              name: "since",
+              expr: 9
             },
             {
               name: "syscap",
-              expr: 15
+              expr: 10
             }
           ]
         }
       ],
       type: 8,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType7BooleanHb",
-      exportId: "_CN23ohos.data.values_bucket9ValueType7BooleanHb",
-      mangledBeforeSema: "23ohos.data.values_bucket9ValueTypeU7BooleanFb$$",
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType7BooleanHb",
+      exportId: "_CN23ohos.data.values_bucket11VBValueType7BooleanHb",
+      mangledBeforeSema: "23ohos.data.values_bucket11VBValueTypeU7BooleanFb$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 520285295869893810,
         srcUse: 0,
-        bodyHash: 3155734247200437568
+        bodyHash: 11216783600958207250
       },
       info_type: "FuncInfo",
       info: {
@@ -802,14 +782,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 65,
         column: 13,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 65,
         column: 17,
         ignore: false
       },
@@ -817,7 +797,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 61,
+        line: 65,
         column: 13,
         ignore: false
       },
@@ -829,7 +809,7 @@
 
       ],
       type: 9,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType7BooleanHbE2p1E",
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType7BooleanHbE2p1E",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -853,14 +833,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 68,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 72,
+        line: 76,
         column: 6,
         ignore: false
       },
@@ -868,7 +848,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 64,
+        line: 68,
         column: 20,
         ignore: false
       },
@@ -880,15 +860,15 @@
 
       ],
       type: 10,
-      mangledName: "_CN23ohos.data.values_bucket9ValueType3getHv",
-      exportId: "_CN23ohos.data.values_bucket9ValueType3getHv",
-      mangledBeforeSema: "23ohos.data.values_bucket9ValueTypeU3getF$$i",
+      mangledName: "_CN23ohos.data.values_bucket11VBValueType3getHv",
+      exportId: "_CN23ohos.data.values_bucket11VBValueType3getHv",
+      mangledBeforeSema: "23ohos.data.values_bucket11VBValueTypeU3getF$$i",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 11482119751277154051
+        bodyHash: 3475400136156595055
       },
       info_type: "FuncInfo",
       info: {
@@ -918,14 +898,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 80,
         column: 1,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 113,
+        line: 117,
         column: 2,
         ignore: false
       },
@@ -933,7 +913,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 76,
+        line: 80,
         column: 18,
         ignore: false
       },
@@ -953,7 +933,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 322635928948891371
+        bodyHash: 15636995438910707220
       },
       info_type: "StructInfo",
       info: {
@@ -978,14 +958,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 81,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 81,
         column: 27,
         ignore: false
       },
@@ -993,7 +973,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 77,
+        line: 81,
         column: 9,
         ignore: false
       },
@@ -1004,7 +984,7 @@
       annotations: [
 
       ],
-      type: 3,
+      type: 4,
       mangledName: "",
       exportId: "_CN23ohos.data.values_bucket10CValueType7integerK_E",
       mangledBeforeSema: "23ohos.data.values_bucket10CValueTypeS7integerV$$l",
@@ -1013,7 +993,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 10286533859144162469
+        bodyHash: 138756149046081241
       },
       info_type: "VarInfo",
       info: {
@@ -1026,14 +1006,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 82,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 82,
         column: 30,
         ignore: false
       },
@@ -1041,7 +1021,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 78,
+        line: 82,
         column: 9,
         ignore: false
       },
@@ -1052,7 +1032,7 @@
       annotations: [
 
       ],
-      type: 5,
+      type: 6,
       mangledName: "",
       exportId: "_CN23ohos.data.values_bucket10CValueType6doubleK_E",
       mangledBeforeSema: "23ohos.data.values_bucket10CValueTypeS6doubleV$$d",
@@ -1061,7 +1041,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 15199768527201425325
+        bodyHash: 3154933525044515902
       },
       info_type: "VarInfo",
       info: {
@@ -1074,14 +1054,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 79,
+        line: 83,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 79,
+        line: 83,
         column: 30,
         ignore: false
       },
@@ -1089,7 +1069,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 79,
+        line: 83,
         column: 9,
         ignore: false
       },
@@ -1109,7 +1089,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 4707437046421216633
+        bodyHash: 3191588914297147344
       },
       info_type: "VarInfo",
       info: {
@@ -1122,14 +1102,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 84,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 84,
         column: 52,
         ignore: false
       },
@@ -1137,7 +1117,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 80,
+        line: 84,
         column: 9,
         ignore: false
       },
@@ -1157,7 +1137,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 6656731671355585332
+        bodyHash: 1934089812283356867
       },
       info_type: "VarInfo",
       info: {
@@ -1170,14 +1150,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 81,
+        line: 85,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 81,
+        line: 85,
         column: 23,
         ignore: false
       },
@@ -1185,7 +1165,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 81,
+        line: 85,
         column: 9,
         ignore: false
       },
@@ -1205,7 +1185,7 @@
         virt: 0,
         sig: 520285295869893810,
         srcUse: 17327286262165285715,
-        bodyHash: 365576628188345724
+        bodyHash: 1931227753397585004
       },
       info_type: "VarInfo",
       info: {
@@ -1222,14 +1202,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 87,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 99,
+        line: 103,
         column: 6,
         ignore: false
       },
@@ -1237,7 +1217,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 87,
         column: 15,
         ignore: false
       },
@@ -1249,15 +1229,15 @@
 
       ],
       type: 15,
-      mangledName: "_CN23ohos.data.values_bucket10CValueType6<init>HNNY_9ValueTypeE",
-      exportId: "_CN23ohos.data.values_bucket10CValueType6<init>HNNY_9ValueTypeE",
-      mangledBeforeSema: "23ohos.data.values_bucket10CValueTypeS6<init>F9ValueType$$",
+      mangledName: "_CN23ohos.data.values_bucket10CValueType6<init>HNNY_11VBValueTypeE",
+      exportId: "_CN23ohos.data.values_bucket10CValueType6<init>HNNY_11VBValueTypeE",
+      mangledBeforeSema: "23ohos.data.values_bucket10CValueTypeS6<init>F11VBValueType$$",
       hash: {
         instVar: 0,
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 13754268014701815346
+        bodyHash: 5989268625468599770
       },
       info_type: "FuncInfo",
       info: {
@@ -1282,22 +1262,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 87,
         column: 20,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 83,
-        column: 36,
+        line: 87,
+        column: 38,
         ignore: false
       },
       identifier: "value",
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 83,
+        line: 87,
         column: 20,
         ignore: false
       },
@@ -1309,7 +1289,7 @@
 
       ],
       type: 1,
-      mangledName: "_CN23ohos.data.values_bucket10CValueType4initHNNY_9ValueTypeEE5valueE",
+      mangledName: "_CN23ohos.data.values_bucket10CValueType4initHNNY_11VBValueTypeEE5valueE",
       exportId: "",
       mangledBeforeSema: "",
       hash: {
@@ -1333,14 +1313,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 101,
+        line: 105,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 108,
+        line: 112,
         column: 6,
         ignore: false
       },
@@ -1348,7 +1328,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 101,
+        line: 105,
         column: 20,
         ignore: false
       },
@@ -1368,7 +1348,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 15771009603198838510
+        bodyHash: 17048428000607019105
       },
       info_type: "FuncInfo",
       info: {
@@ -1397,14 +1377,14 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 114,
         column: 5,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 112,
+        line: 116,
         column: 6,
         ignore: false
       },
@@ -1412,7 +1392,7 @@
       identifierPos: {
         file: 1,
         pkgId: 0,
-        line: 110,
+        line: 114,
         column: 20,
         ignore: false
       },
@@ -1432,7 +1412,7 @@
         virt: 0,
         sig: 2687969717096398320,
         srcUse: 0,
-        bodyHash: 8299062876737024384
+        bodyHash: 10448207274616079059
       },
       info_type: "FuncInfo",
       info: {
@@ -1458,42 +1438,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 26,
-        column: 5,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 26,
-        column: 7,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
         line: 27,
-        column: 21,
+        column: 12,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 27,
-        column: 25,
+        column: 16,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "true",
-        constKind: "Bool"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1512,53 +1472,11 @@
         column: 69,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
         constKind: "String"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 33,
-        column: 9,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 33,
-        column: 11,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "21"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 34,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 34,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
       }
     },
     {
@@ -1567,16 +1485,40 @@
         file: 1,
         pkgId: 0,
         line: 35,
-        column: 17,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
         line: 35,
+        column: 20,
+        ignore: false
+      },
+      type: 2,
+      info_type: "LitConstInfo",
+      info: {
+        strValue: "22",
+        constKind: "String"
+      }
+    },
+    {
+      kind: "LitConstExpr",
+      begin: {
+        file: 1,
+        pkgId: 0,
+        line: 36,
+        column: 17,
+        ignore: false
+      },
+      end: {
+        file: 1,
+        pkgId: 0,
+        line: 36,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -1588,20 +1530,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 41,
-        column: 9,
+        line: 44,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 41,
-        column: 11,
+        line: 44,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1609,39 +1553,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 42,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 42,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 43,
+        line: 45,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 43,
+        line: 45,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -1653,20 +1576,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 49,
-        column: 9,
+        line: 53,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 49,
-        column: 11,
+        line: 53,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1674,39 +1599,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 50,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 50,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 51,
+        line: 54,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 51,
+        line: 54,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",
@@ -1718,20 +1622,22 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 57,
-        column: 9,
+        line: 62,
+        column: 16,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 57,
-        column: 11,
+        line: 62,
+        column: 20,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
-        strValue: "21"
+        strValue: "22",
+        constKind: "String"
       }
     },
     {
@@ -1739,39 +1645,18 @@
       begin: {
         file: 1,
         pkgId: 0,
-        line: 58,
-        column: 25,
-        ignore: false
-      },
-      end: {
-        file: 1,
-        pkgId: 0,
-        line: 58,
-        column: 29,
-        ignore: false
-      },
-      info_type: "LitConstInfo",
-      info: {
-        strValue: "true",
-        constKind: "Bool"
-      }
-    },
-    {
-      kind: "LitConstExpr",
-      begin: {
-        file: 1,
-        pkgId: 0,
-        line: 59,
+        line: 63,
         column: 17,
         ignore: false
       },
       end: {
         file: 1,
         pkgId: 0,
-        line: 59,
+        line: 63,
         column: 73,
         ignore: false
       },
+      type: 2,
       info_type: "LitConstInfo",
       info: {
         strValue: "SystemCapability.DistributedDataManager.DataShare.Core",

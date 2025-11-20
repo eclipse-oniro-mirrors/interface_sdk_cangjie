@@ -1,12 +1,12 @@
 {
-  version: "1.0.0",
+  version: "1.0.5",
   cjoVersion: {
     major_num: 0,
     minor_num: 1,
     patch_num: 0
   },
   fullPkgName: "kit.ArkData",
-  pkgDepInfo: "{\"package\":\"kit.ArkData\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.data\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":18,\"column\":1},\"end\":{\"line\":18,\"column\":26}}]},{\"package\":\"ohos.data.data_share_predicates\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":19,\"column\":1},\"end\":{\"line\":19,\"column\":48}}]},{\"package\":\"ohos.data.distributed_kv_store\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":47}},{\"file\":\"index.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":59}},{\"file\":\"index.cj\",\"begin\":{\"line\":26,\"column\":1},\"end\":{\"line\":26,\"column\":71}},{\"file\":\"index.cj\",\"begin\":{\"line\":27,\"column\":1},\"end\":{\"line\":27,\"column\":63}}]},{\"package\":\"ohos.data.preferences\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":38}},{\"file\":\"index.cj\",\"begin\":{\"line\":28,\"column\":1},\"end\":{\"line\":28,\"column\":59}},{\"file\":\"index.cj\",\"begin\":{\"line\":29,\"column\":1},\"end\":{\"line\":29,\"column\":63}}]},{\"package\":\"ohos.data.relational_store\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":43}},{\"file\":\"index.cj\",\"begin\":{\"line\":30,\"column\":1},\"end\":{\"line\":30,\"column\":72}},{\"file\":\"index.cj\",\"begin\":{\"line\":31,\"column\":1},\"end\":{\"line\":31,\"column\":80}}]},{\"package\":\"ohos.data.values_bucket\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":40}},{\"file\":\"index.cj\",\"begin\":{\"line\":32,\"column\":1},\"end\":{\"line\":32,\"column\":56}}]}]}",
+  pkgDepInfo: "{\"package\":\"kit.ArkData\",\"isMacro\":false,\"accessLevel\":\"public\",\"dependencies\":[{\"package\":\"ohos.data\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":20,\"column\":1},\"end\":{\"line\":20,\"column\":26}}]},{\"package\":\"ohos.data.data_share_predicates\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":21,\"column\":1},\"end\":{\"line\":21,\"column\":48}}]},{\"package\":\"ohos.data.distributed_kv_store\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":22,\"column\":1},\"end\":{\"line\":22,\"column\":47}}]},{\"package\":\"ohos.data.preferences\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":23,\"column\":1},\"end\":{\"line\":23,\"column\":38}}]},{\"package\":\"ohos.data.relational_store\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":24,\"column\":1},\"end\":{\"line\":24,\"column\":43}}]},{\"package\":\"ohos.data.values_bucket\",\"isStd\":false,\"imports\":[{\"file\":\"index.cj\",\"begin\":{\"line\":25,\"column\":1},\"end\":{\"line\":25,\"column\":40}}]}],\"features\":[]}",
   imports: [
     "ohos.data",
     "ohos.data.data_share_predicates",
@@ -25,14 +25,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 18,
+            line: 20,
             column: 26,
             ignore: false
           },
@@ -48,14 +48,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 19,
+            line: 21,
             column: 48,
             ignore: false
           },
@@ -72,14 +72,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 20,
+            line: 22,
             column: 47,
             ignore: false
           },
@@ -96,14 +96,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 21,
+            line: 23,
             column: 38,
             ignore: false
           },
@@ -120,14 +120,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 22,
+            line: 24,
             column: 43,
             ignore: false
           },
@@ -144,14 +144,14 @@
           begin: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 25,
             column: 1,
             ignore: false
           },
           end: {
             file: 1,
             pkgId: 0,
-            line: 23,
+            line: 25,
             column: 40,
             ignore: false
           },
@@ -163,190 +163,6 @@
           identifier: "*",
           asIdentifier: "",
           reExport: "Public"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 25,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 25,
-            column: 59,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "distributed_kv_store"
-          ],
-          identifier: "Options",
-          asIdentifier: "KVOptions"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 26,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 26,
-            column: 71,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "distributed_kv_store"
-          ],
-          identifier: "SecurityLevel",
-          asIdentifier: "KVSecurityLevel"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 27,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 27,
-            column: 63,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "distributed_kv_store"
-          ],
-          identifier: "ValueType",
-          asIdentifier: "KVValueType"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 28,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 28,
-            column: 59,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "preferences"
-          ],
-          identifier: "Options",
-          asIdentifier: "PreferencesOptions"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 29,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 29,
-            column: 63,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "preferences"
-          ],
-          identifier: "ValueType",
-          asIdentifier: "PreferencesValueType"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 30,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 30,
-            column: 72,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "relational_store"
-          ],
-          identifier: "ValueType",
-          asIdentifier: "RelationalStoreValueType"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 31,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 31,
-            column: 80,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "relational_store"
-          ],
-          identifier: "SecurityLevel",
-          asIdentifier: "RelationalStoreSecurityLevel"
-        },
-        {
-          begin: {
-            file: 1,
-            pkgId: 0,
-            line: 32,
-            column: 1,
-            ignore: false
-          },
-          end: {
-            file: 1,
-            pkgId: 0,
-            line: 32,
-            column: 56,
-            ignore: false
-          },
-          prefixPaths: [
-            "ohos",
-            "data",
-            "values_bucket"
-          ],
-          identifier: "ValueType",
-          asIdentifier: "VBValueType"
         },
         {
           begin: {
