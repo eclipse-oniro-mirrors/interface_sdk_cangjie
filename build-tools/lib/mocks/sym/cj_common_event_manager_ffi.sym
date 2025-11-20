@@ -1,0 +1,77 @@
+# Copyright (c) 2025 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+CJ_AbortCommonEvent;
+CJ_ClearAbortCommonEvent;
+CJ_CreateCommonEventSubscribeInfo;
+CJ_CreateSubscriber;
+CJ_FinishCommonEvent;
+CJ_GetAbortCommonEvent;
+CJ_GetBundleName;
+CJ_GetCode;
+CJ_GetData;
+CJ_GetDeviceId;
+CJ_GetEvents;
+CJ_GetPermission;
+CJ_GetPriority;
+CJ_GetSubscribeInfo;
+CJ_GetUserId;
+CJ_IsOrderedCommonEvent;
+CJ_IsStickyCommonEvent;
+CJ_PublishEvent;
+CJ_PublishEventWithData;
+CJ_RemoveStickyCommonEvent;
+CJ_SetBundleName;
+CJ_SetCode;
+CJ_SetCodeAndData;
+CJ_SetData;
+CJ_SetDeviceId;
+CJ_SetPermission;
+CJ_SetPriority;
+CJ_SetStaticSubscriberState;
+CJ_SetUserId;
+CJ_Subscribe;
+CJ_Unsubscribe;
+CreateSubscribeManager;
+CreateSubscribeManagerV2;
+FfiCommonEventManagerCreateSubscriber;
+FfiCommonEventManagerCreateSubscriberV2;
+FfiOHOSAbortCommonEvent;
+FfiOHOSClearAbortCommonEvent;
+FfiOHOSCommonEventManagerReleaseSubscribeInfo;
+FfiOHOSCommonEventManagerReleaseSubscribeManager;
+FfiOHOSCreateCommonEventSubscribeInfo;
+FfiOHOSCreateSubscriber;
+FfiOHOSFinishCommonEvent;
+FfiOHOSGetAbortCommonEvent;
+FfiOHOSGetBundleName;
+FfiOHOSGetCode;
+FfiOHOSGetData;
+FfiOHOSGetDeviceId;
+FfiOHOSGetEvents;
+FfiOHOSGetPermission;
+FfiOHOSGetPriority;
+FfiOHOSGetSubscribeInfo;
+FfiOHOSGetUserId;
+FfiOHOSIsOrderedCommonEvent;
+FfiOHOSIsStickyCommonEvent;
+FfiOHOSSetBundleName;
+FfiOHOSSetCode;
+FfiOHOSSetCodeAndData;
+FfiOHOSSetData;
+FfiOHOSSetDeviceId;
+FfiOHOSSetPermission;
+FfiOHOSSetPriority;
+FfiOHOSSetUserId;
+FfiOHOSSubscribe;
+FfiOHOSUnsubscribe;

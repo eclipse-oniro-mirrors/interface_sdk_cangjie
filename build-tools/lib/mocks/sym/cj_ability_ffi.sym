@@ -1,0 +1,72 @@
+# Copyright (c) 2025 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+ConvertToJsAppProcessState;
+FFIAbilityDelegatorAddAbilityMonitor;
+FFIAbilityDelegatorAddAbilityStageMonitor;
+FFIAbilityDelegatorApplicationContext;
+FFIAbilityDelegatorDoAbilityBackground;
+FFIAbilityDelegatorDoAbilityForeground;
+FFIAbilityDelegatorExecuteShellCommand;
+FFIAbilityDelegatorFinishTest;
+FFIAbilityDelegatorGetAbilityState;
+FFIAbilityDelegatorGetCurrentTopAbility;
+FFIAbilityDelegatorPrint;
+FFIAbilityDelegatorRegistryGetAbilityDelegator;
+FFIAbilityDelegatorRemoveAbilityMonitor;
+FFIAbilityDelegatorRemoveAbilityStageMonitor;
+FFIAbilityDelegatorStartAbility;
+FFIAbilityDelegatorWaitAbilityMonitor;
+FFIAbilityDelegatorWaitAbilityMonitorWithTimeout;
+FFIAbilityDelegatorWaitAbilityStageMonitor;
+FFIAbilityDelegatorWaitAbilityStageMonitorWithTimeout;
+FFICJApplicationInfo;
+FFICJElementNameCreateWithContent;
+FFICJElementNameDelete;
+FFICJElementNameGetElementNameInfo;
+FFICJElementNameParamsDelete;
+FFICJWantAddEntity;
+FFICJWantCreateWithWantInfo;
+FFICJWantDelete;
+FFICJWantGetWantInfo;
+FFICJWantParamsDelete;
+FFICJWantParseUri;
+FFIDump;
+FFIGetArea;
+FFIGetExitCode;
+FFIGetStdResult;
+FfiAbilityDelegatorArgsGetTestBundleName;
+FfiAbilityDelegatorArgsGetTestCaseName;
+FfiAbilityDelegatorArgsGetTestParam;
+FfiAbilityDelegatorArgsGetTestRunnerClassName;
+FfiAbilityDelegatorRegistryGetArguments;
+FfiCJApplicationContextClearUpApplicationData;
+FfiCJApplicationContextGetCurrentAppCloneIndex;
+FfiCJApplicationContextGetRunningProcessInformation;
+FfiCJApplicationContextKillAllProcesses;
+FfiCJApplicationContextOnOff;
+FfiCJApplicationContextOnOnAbilityLifecycle;
+FfiCJApplicationContextOnOnApplicationStateChange;
+FfiCJApplicationContextOnOnEnvironment;
+FfiCJApplicationContextRestartApp;
+FfiCJApplicationContextSetColorMode;
+FfiCJApplicationContextSetFont;
+FfiCJApplicationContextSetFontSizeScale;
+FfiCJApplicationContextSetLanguage;
+FfiCJApplicationContextSetSupportedProcessCache;
+FfiConvertApplicationContext2Napi;
+FfiCreateApplicationContextFromNapi;
+OHOS_CjAppCtxFunc;
+OHOS_CjAppCtxWindowFunc;
+OHOS_ConvertConfiguration;
+RegisterCJMonitorFuncs;

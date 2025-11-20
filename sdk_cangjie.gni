@@ -14,6 +14,11 @@
 import("//build/config/python.gni")
 import("//build/templates/cangjie/cjc_toolchain.gni")
 
+declare_args() {
+  sdk_build_cangjie_previewer = false
+  sdk_build_cjo_from_source = false
+}
+
 template("cj_ohos_sdk_header_copy") {
   forward_variables_from(invoker,
                          [
@@ -64,16 +69,13 @@ template("cj_ohos_sdk_shared_lib") {
 
   _output_dir =
       "${target_out_dir}/cangjie_sdk/api/lib/${platform}/${module_name}"
-  _flatc_path =
-      "//prebuilts/cangjie_sdk/build-tools/flatc/${build_tools_arch}/flatc"
-  _fbs_path = "//interface/sdk_cangjie/build-tools/cjo/ModuleFormat.fbs"
 
   action_with_pydeps(target_name) {
-    deps = [ "build-tools/lib/mock:ohos.mock(${toolchain})" ]
+    deps = [ "build-tools/lib/mocks/mock:ohos.mock(${toolchain})" ]
     _mock_t_out = get_label_info(deps[0], "target_out_dir")
     _mock_so_target = "${_mock_t_out}/libohos.mock.so"
 
-    script = "//interface/sdk_cangjie/build-tools/script/process_libs.py"
+    script = "//interface/sdk_cangjie/build-tools/script/generate_mock_libs.py"
     depfile = "${target_gen_dir}/${target_name}.d"
     inputs = [ _input_dir ]
     args = [
@@ -83,11 +85,54 @@ template("cj_ohos_sdk_shared_lib") {
       rebase_path(_output_dir, root_build_dir),
       "--mock",
       rebase_path(_mock_so_target, root_build_dir),
+    ]
+    outputs = [ _output_dir ]
+  }
+}
+
+template("cj_ohos_sdk_shared_lib_cjo") {
+  forward_variables_from(invoker,
+                         [
+                           "platform",
+                           "toolchain",
+                         ])
+  not_needed(["toolchain"])
+  _input_dir = "//interface/sdk_cangjie/build-tools/cjo"
+
+  _output_dir = "${target_out_dir}/cangjie_sdk/api/lib/${platform}/"
+  _flatc_path =
+      "//prebuilts/cangjie_sdk/build-tools/flatc/${build_tools_arch}/flatc"
+  _fbs_path = "//interface/sdk_cangjie/build-tools/cjo/ModuleFormat.fbs"
+
+  action_with_pydeps(target_name) {
+    script = "//interface/sdk_cangjie/build-tools/script/process_libs.py"
+    depfile = "${target_gen_dir}/${target_name}.d"
+    inputs = [ _input_dir ]
+    args = [
+      "--input-dir",
+      rebase_path(_input_dir, root_build_dir),
+      "--output-dir",
+      rebase_path(_output_dir, root_build_dir),
       "--flatc",
       rebase_path(_flatc_path, root_build_dir),
       "--fbs",
       rebase_path(_fbs_path, root_build_dir),
     ]
+    if (defined(invoker.external_deps)) {
+      external_deps = invoker.external_deps
+    }
+    if (defined(invoker.target_root_out_dir)) {
+      deps = [ "build-tools/lib/mocks/mock:ohos.mock(${toolchain})" ]
+      _mock_t_out = get_label_info(deps[0], "target_out_dir")
+      _mock_so_target = "${_mock_t_out}/libohos.mock.so"
+      _source_dir = "${invoker.target_root_out_dir}/obj/interface/sdk_cangjie/cangjie_sdk/api/lib/${platform}"
+      args += [
+        "--copy-cjo-dir",
+        rebase_path(_source_dir, root_build_dir),
+        "--mock",
+        rebase_path(_mock_so_target, root_build_dir),
+      ]
+    }
     outputs = [ _output_dir ]
   }
 }

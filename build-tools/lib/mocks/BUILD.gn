@@ -1,0 +1,117 @@
+# Copyright (c) 2025 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("sdk_mock.gni")
+
+config("mock_stub_config") {
+  include_dirs = ["."]
+}
+
+ohos_shared_library("mock_stub") {
+  sources = [
+    "mock_stub.cpp"
+  ]
+  public_configs = [
+    ":mock_stub_config"
+  ]
+  part_name = "sdk_cangjie"
+  subsystem_name = "sdk"
+}
+
+if (build_ohos_sdk) {
+  mock_sources = [
+    "abilitykit_native.sym",
+    "appkit_delegator.sym",
+    "appkit_native.sym",
+    "ark_interop_helper_ffi.sym",
+    "ark_interop.sym",
+    "cj_ability_access_ctrl_ffi.sym",
+    "cj_ability_context_native.sym",
+    "cj_ability_ffi.sym",
+    "cj_abilitykit_native_ffi.sym",
+    "cj_app_recovery_ffi.sym",
+    "cj_avplayer_ffi.sym",
+    "cj_avscreen_capture_ffi.sym",
+    "cj_avtranscoder_ffi.sym",
+    "cj_battery_info_ffi.sym",
+    "cj_bind_ffi.sym",
+    "cj_bluetooth_a2dp_ffi.sym",
+    "cj_bluetooth_ble_ffi.sym",
+    "cj_bluetooth_connection_ffi.sym",
+    "cj_bluetooth_hfp_ffi.sym",
+    "cj_bundle_manager_ffi.sym",
+    "cj_camera_ffi.sym",
+    "cj_color_manager_ffi.sym",
+    "cj_common_event_manager_ffi.sym",
+    "cj_context_ffi.sym",
+    "cj_cryptoframework_ffi.sym",
+    "cj_data_share_predicates_ffi.sym",
+    "cj_device_info_ffi.sym",
+    "cj_display_ffi.sym",
+    "cj_distributed_kv_store_ffi.sym",
+    "cj_errormanager_ffi.sym",
+    "cj_extensionkit_native.sym",
+    "cj_file_fileuri_ffi.sym",
+    "cj_file_fs_ffi.sym",
+    "cj_frontend_ohos.sym",
+    "cj_geolocationmanager_ffi.sym",
+    "cj_hiappevent_ffi.sym",
+    "cj_hitracemeter_ffi.sym",
+    "cj_huks_ffi.sym",
+    "cj_i18n_ffi.sym",
+    "cj_image_ffi.sym",
+    "cj_insightintentcontext.sym",
+    "cj_insight_intent_executor.sym",
+    "cj_ipc_ffi.sym",
+    "cj_media_avrecorder_ffi.sym",
+    "cj_metadatahelper_ffi.sym",
+    "cj_net_connection_ffi.sym",
+    "cj_net_http_ffi.sym",
+    "cj_photoaccesshelper_ffi.sym",
+    "cj_photo_editor_extension.sym",
+    "cj_preferences_ffi.sym",
+    "cj_relational_store_ffi.sym",
+    "cj_request_ffi.sym",
+    "cj_resource_manager_ffi.sym",
+    "cj_sensor_ffi.sym",
+    "cj_settings_ffi.sym",
+    "cj_soundpool_ffi.sym",
+    "cj_system_date_time_ffi.sym",
+    "cj_system_parameter_enhance_ffi.sym",
+    "cj_telephony_call_ffi.sym",
+    "cj_ui_extension.sym",
+    "cj_ui_test_ffi.sym",
+    "cj_want_agent_ffi.sym",
+    "cj_webview_ffi.sym",
+    "cj_wifi_ffi.sym",
+    "cj_window_ffi.sym",
+    "hilog.sym",
+    "uiabilitykit_native.sym",
+    "utf16string.sym",
+  ]
+  foreach(source, mock_sources) {
+    target_name = string_replace(source, ".sym", "")
+    mock_sdk_target(target_name) {
+      part_name = "sdk_cangjie"
+      subsystem_name = "sdk"
+      sources = [
+        "sym/${source}",
+      ]
+      if (target_name == "hilog") {
+        if (is_ohos) {
+          output_extension = "so"
+        }
+      }
+    }
+  }
+}
