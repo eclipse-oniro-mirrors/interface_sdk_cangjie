@@ -520,11 +520,9 @@ public const S_IFSOCK: UInt32 = 0xC000
  * @param path: The file path.
  * @param mode: The file type mode.
  * @returns True if the file is of the specified type, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isType(path: String, mode: UInt32): Bool
 
@@ -532,11 +530,9 @@ public func isType(path: String, mode: UInt32): Bool
  * @description Checks if the file is a regular file.
  * @param path: The file path.
  * @returns True if the file is a regular file, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isReg(path: String): Bool
 
@@ -544,11 +540,9 @@ public func isReg(path: String): Bool
  * @description Checks if the file is a directory.
  * @param path: The file path.
  * @returns True if the file is a directory, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isDir(path: String): Bool
 
@@ -556,11 +550,9 @@ public func isDir(path: String): Bool
  * @description Checks if the file is a character device.
  * @param path: The file path.
  * @returns True if the file is a character device, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isChr(path: String): Bool
 
@@ -568,11 +560,9 @@ public func isChr(path: String): Bool
  * @description Checks if the file is a block device.
  * @param path: The file path.
  * @returns True if the file is a block device, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isBlk(path: String): Bool
 
@@ -580,11 +570,9 @@ public func isBlk(path: String): Bool
  * @description Checks if the file is a FIFO.
  * @param path: The file path.
  * @returns True if the file is a FIFO, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isFIFO(path: String): Bool
 
@@ -592,11 +580,9 @@ public func isFIFO(path: String): Bool
  * @description Checks if the file is a socket.
  * @param path: The file path.
  * @returns True if the file is a socket, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isSock(path: String): Bool
 
@@ -604,11 +590,9 @@ public func isSock(path: String): Bool
  * @description Checks if the file is a symbolic link.
  * @param path: The file path.
  * @returns True if the file is a symbolic link, false otherwise.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func isLnk(path: String): Bool
 
@@ -616,11 +600,9 @@ public func isLnk(path: String): Bool
  * @description Changes the current working directory.
  * @param path: The path to the new working directory.
  * @returns 0 on success, -1 on error.
- * @throws IllegalArgumentException if the arguments are invalid.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func chdir(path: String): Int32
 

@@ -80,7 +80,7 @@ public class TestSuite {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Runs all tests in this suite.
      * @returns Returns a `TestReport` containing the results of the test run.
@@ -89,7 +89,7 @@ public class TestSuite {
         since: "22"
     ]
     public func runTests(): TestReport
-    
+
     /**
      * @description Runs all tests in this suite with the given configuration.
      * @param configuration - The configuration to use for the test run.
@@ -99,7 +99,7 @@ public class TestSuite {
         since: "22"
     ]
     public func runTests(configuration: Configuration): TestReport
-    
+
     /**
      * @description Runs all benchmarks in this suite.
      * @returns Returns a `BenchReport` containing the results of the benchmark run.
@@ -108,7 +108,7 @@ public class TestSuite {
         since: "22"
     ]
     public func runBenchmarks(): BenchReport
-    
+
     /**
      * @description Runs all benchmarks in this suite with the given configuration.
      * @param configuration - The configuration to use for the benchmark run.
@@ -118,7 +118,7 @@ public class TestSuite {
         since: "22"
     ]
     public func runBenchmarks(configuration: Configuration): BenchReport
-    
+
     /**
      * @description Creates a `TestSuiteBuilder` with the given name.
      * @param name - The name of the test suite.
@@ -128,7 +128,7 @@ public class TestSuite {
         since: "22"
     ]
     public static func builder(name: String): TestSuiteBuilder
-    
+
     /**
      * @description Creates a `TestSuiteBuilder` from an existing `TestSuite`.
      * @param suite - The test suite to use as a template.
@@ -154,7 +154,7 @@ public class TestGroup {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Runs all tests in this group.
      * @returns Returns a `TestReport` containing the results of the test run.
@@ -163,7 +163,7 @@ public class TestGroup {
         since: "22"
     ]
     public func runTests(): TestReport
-    
+
     /**
      * @description Runs all tests in this group with the given configuration.
      * @param configuration - The configuration to use for the test run.
@@ -173,7 +173,7 @@ public class TestGroup {
         since: "22"
     ]
     public func runTests(configuration: Configuration): TestReport
-    
+
     /**
      * @description Runs all benchmarks in this group.
      * @returns Returns a `BenchReport` containing the results of the benchmark run.
@@ -182,7 +182,7 @@ public class TestGroup {
         since: "22"
     ]
     public func runBenchmarks(): BenchReport
-    
+
     /**
      * @description Runs all benchmarks in this group with the given configuration.
      * @param configuration - The configuration to use for the benchmark run.
@@ -192,7 +192,7 @@ public class TestGroup {
         since: "22"
     ]
     public func runBenchmarks(configuration: Configuration): BenchReport
-    
+
     /**
      * @description Creates a `TestGroupBuilder` with the given name.
      * @param name - The name of the test group.
@@ -202,7 +202,7 @@ public class TestGroup {
         since: "22"
     ]
     public static func builder(name: String): TestGroupBuilder
-    
+
     /**
      * @description Creates a `TestGroupBuilder` from an existing `TestGroup`.
      * @param group - The test group to use as a template.
@@ -230,7 +230,7 @@ public class TestGroupBuilder {
         since: "22"
     ]
     public func setName(name: String): TestGroupBuilder
-    
+
     /**
      * @description Configures the test group with the given configuration.
      * @param configuration - The configuration to apply.
@@ -240,7 +240,7 @@ public class TestGroupBuilder {
         since: "22"
     ]
     public func configure(configuration: Configuration): TestGroupBuilder
-    
+
     /**
      * @description Adds a `UnitTestCase` to the test group.
      * @param test - The test case to add.
@@ -250,7 +250,7 @@ public class TestGroupBuilder {
         since: "22"
     ]
     public func add(test: UnitTestCase): TestGroupBuilder
-    
+
     /**
      * @description Adds a `Benchmark` to the test group.
      * @param benchmark - The benchmark to add.
@@ -260,7 +260,7 @@ public class TestGroupBuilder {
         since: "22"
     ]
     public func add(benchmark: Benchmark): TestGroupBuilder
-    
+
     /**
      * @description Adds a `TestSuite` to the test group.
      * @param suite - The test suite to add.
@@ -270,7 +270,7 @@ public class TestGroupBuilder {
         since: "22"
     ]
     public func add(suite: TestSuite): TestGroupBuilder
-    
+
     /**
      * @description Builds the `TestGroup`.
      * @returns Returns the new `TestGroup` instance.
@@ -297,7 +297,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func setName(name: String): TestSuiteBuilder
-    
+
     /**
      * @description Configures the test suite with the given configuration.
      * @param configuration - The configuration to apply.
@@ -307,7 +307,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func configure(configuration: Configuration): TestSuiteBuilder
-    
+
     /**
      * @description Adds a function to be executed before each test case in the suite.
      * @param body - The function to execute, which takes the test case name as a parameter.
@@ -317,7 +317,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func beforeEach(body: (String) -> Unit): TestSuiteBuilder
-    
+
     /**
      * @description Adds a function to be executed after each test case in the suite.
      * @param body - The function to execute, which takes the test case name as a parameter.
@@ -327,7 +327,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func afterEach(body: (String) -> Unit): TestSuiteBuilder
-    
+
     /**
      * @description Adds a function to be executed before each test case in the suite.
      * @param body - The function to execute.
@@ -337,7 +337,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func beforeEach(body: () -> Unit): TestSuiteBuilder
-    
+
     /**
      * @description Adds a function to be executed after each test case in the suite.
      * @param body - The function to execute.
@@ -347,7 +347,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func afterEach(body: () -> Unit): TestSuiteBuilder
-    
+
     /**
      * @description Adds a function to be executed once before all test cases in the suite.
      * @param body - The function to execute.
@@ -357,7 +357,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func beforeAll(body: () -> Unit): TestSuiteBuilder
-    
+
     /**
      * @description Adds a function to be executed once after all test cases in the suite.
      * @param body - The function to execute.
@@ -367,7 +367,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func afterAll(body: () -> Unit): TestSuiteBuilder
-    
+
     /**
      * @description Adds a `UnitTestCase` to the test suite.
      * @param test - The test case to add.
@@ -377,7 +377,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func add(test: UnitTestCase): TestSuiteBuilder
-    
+
     /**
      * @description Adds a `Benchmark` to the test suite.
      * @param benchmark - The benchmark to add.
@@ -387,7 +387,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func add(benchmark: Benchmark): TestSuiteBuilder
-    
+
     /**
      * @description Uses another `TestSuite` as a template for this builder.
      * @param template - The test suite to use as a template.
@@ -397,7 +397,7 @@ public class TestSuiteBuilder {
         since: "22"
     ]
     public func template(template: TestSuite): TestSuiteBuilder
-    
+
     /**
      * @description Builds the `TestSuite`.
      * @returns Returns the new `TestSuite` instance.
@@ -422,7 +422,7 @@ public class UnitTestCase {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Runs this test case.
      * @returns Returns a `TestReport` containing the results of the test run.
@@ -431,7 +431,7 @@ public class UnitTestCase {
         since: "22"
     ]
     public func run(): TestReport
-    
+
     /**
      * @description Creates a parameterized test case with a data strategy.
      * @param name - The name of the test case.
@@ -445,7 +445,7 @@ public class UnitTestCase {
     ]
     public static func createParameterized<T>(name: String, strategy: DataStrategy<T>,
         configuration!: Configuration = Configuration(), body!: (T) -> Unit): UnitTestCase
-    
+
     /**
      * @description Creates a parameterized test case with a data strategy processor.
      * @param name - The name of the test case.
@@ -459,7 +459,7 @@ public class UnitTestCase {
     ]
     public static func createParameterized<T>(name: String, strategy: DataStrategyProcessor<T>,
         configuration!: Configuration = Configuration(), body!: (T) -> Unit): UnitTestCase
-    
+
     /**
      * @description Creates a simple test case.
      * @param name - The name of the test case.
@@ -487,7 +487,7 @@ public class Benchmark {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Runs this benchmark.
      * @returns Returns a `BenchReport` containing the results of the benchmark run.
@@ -496,7 +496,7 @@ public class Benchmark {
         since: "22"
     ]
     public func run(): BenchReport
-    
+
     /**
      * @description Creates a parameterized benchmark with a data strategy.
      * @param name - The name of the benchmark.
@@ -516,7 +516,7 @@ public class Benchmark {
         measurement!: Measurement = TimeNow(),
         body!: (T) -> Unit
     ): Benchmark
-    
+
     /**
      * @description Creates a parameterized benchmark with a data strategy processor.
      * @param name - The name of the benchmark.
@@ -536,7 +536,7 @@ public class Benchmark {
         measurement!: Measurement = TimeNow(),
         body!: (T) -> Unit
     ): Benchmark
-    
+
     /**
      * @description Creates a simple benchmark.
      * @param name - The name of the benchmark.
@@ -579,7 +579,7 @@ sealed abstract class Report {
         since: "22"
     ]
     public prop errorCount:   Int64
-    
+
     /**
      * @description The total number of cases.
      */
@@ -587,7 +587,7 @@ sealed abstract class Report {
         since: "22"
     ]
     public prop caseCount:    Int64
-    
+
     /**
      * @description The number of passed cases.
      */
@@ -595,7 +595,7 @@ sealed abstract class Report {
         since: "22"
     ]
     public prop passedCount:  Int64
-    
+
     /**
      * @description The number of failed cases.
      */
@@ -603,7 +603,7 @@ sealed abstract class Report {
         since: "22"
     ]
     public prop failedCount:  Int64
-    
+
     /**
      * @description The number of skipped cases.
      */
@@ -683,7 +683,7 @@ public class TestPackage {
     public TestPackage(
         let name: String
     )
-    
+
     /**
      * @description Registers a test case with the package.
      * @param testCase - A function that returns the `UnitTestCase` to register.
@@ -692,7 +692,7 @@ public class TestPackage {
         since: "22"
     ]
     public func registerCase(testCase: () -> UnitTestCase): Unit
-    
+
     /**
      * @description Registers a test suite with the package.
      * @param suite - A function that returns the `TestSuite` to register.
@@ -701,7 +701,7 @@ public class TestPackage {
         since: "22"
     ]
     public func registerSuite(suite: () -> TestSuite): Unit
-    
+
     /**
      * @description Registers a benchmark with the package.
      * @param bench - A function that returns the `Benchmark` to register.
@@ -715,7 +715,7 @@ public class TestPackage {
 
 
 /**
- * @description Asserts that two values are equal. 
+ * @description Asserts that two values are equal.
  * @param leftStr - A string representation of the expected value.
  * @param rightStr - A string representation of the actual value.
  * @param expected - The expected value.
@@ -808,7 +808,7 @@ public class AssertException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Creates a new `AssertException` with a message.
      * @param message - The exception message.
@@ -833,7 +833,7 @@ public class AssertIntermediateException <: Exception {
         since: "22"
     ]
     public let expression: String
-    
+
     /**
      * @description The original exception that caused the failure.
      */
@@ -841,7 +841,7 @@ public class AssertIntermediateException <: Exception {
         since: "22"
     ]
     public let originalException: Exception
-    
+
     /**
      * @description Gets the stack trace of the original exception.
      * @returns Returns a string representation of the original stack trace.
@@ -868,12 +868,21 @@ public interface BenchmarkInputMarker {
     since: "22"
 ]
 public interface BenchInputProvider<T> <: BenchmarkInputMarker {
+    /**
+     * @description Resets the provider.
+     * @param max The maximum number of inputs.
+     */
     @Frozen
     @!APILevel[
         since: "22"
     ]
     mut func reset(max: Int64)
-    
+
+    /**
+     * @description Gets the input data for the given index.
+     * @param idx The index of the input.
+     * @returns The input data.
+     */
     @Frozen
     @!APILevel[
         since: "22"
@@ -897,7 +906,7 @@ public struct ImmutableInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public ImmutableInputProvider(let data: T)
-    
+
     /**
      * @description Gets the input data.
      * @returns The input data.
@@ -907,7 +916,7 @@ public struct ImmutableInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public mut func get(_: Int64): T
-    
+
     /**
      * @description Creates an `ImmutableInputProvider` if the argument is not already a provider.
      * @param arg The input data.
@@ -919,7 +928,7 @@ public struct ImmutableInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public static func createOrExisting(arg: T, x!: Int64 = 0): ImmutableInputProvider<T>
-    
+
     /**
      * @description Returns the existing provider if the argument is already a `BenchInputProvider`.
      * @param arg The input provider.
@@ -947,9 +956,9 @@ public struct BatchInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public BatchInputProvider(let builder: () -> T)
-    
+
     /**
-     * @description Resets the provider. This implementation is empty.
+     * @description Resets the provider.
      * @param max The maximum number of inputs.
      */
     @Frozen
@@ -957,7 +966,7 @@ public struct BatchInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public mut func reset(max: Int64)
-    
+
     /**
      * @description Gets the input data for the given index.
      * @param idx The index of the input.
@@ -985,7 +994,7 @@ public struct BatchSizeOneInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public BatchSizeOneInputProvider(let builder: () -> T)
-    
+
     /**
      * @description Resets the provider.
      * @param max The maximum number of inputs.
@@ -995,7 +1004,7 @@ public struct BatchSizeOneInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public mut func reset(max: Int64)
-    
+
     /**
      * @description Gets the input data.
      * @returns The input data.
@@ -1022,16 +1031,16 @@ public struct GenerateEachInputProvider<T> <: BenchInputProvider<T> {
         since: "22"
     ]
     public GenerateEachInputProvider(let builder: () -> T)
-    
+
     /**
-     * @description Resets the provider. This implementation is empty.
+     * @description Resets the provider.
      */
     @Frozen
     @!APILevel[
         since: "22"
     ]
     public mut func reset(_: Int64)
-    
+
     /**
      * @description Gets the input data by invoking the builder function.
      * @returns The newly generated input data.
@@ -1058,7 +1067,7 @@ public interface BenchmarkConfig {
         since: "22"
     ]
     func batchSize(b: Int64): Unit
-    
+
     /**
      * @description Sets a range of batch sizes for the benchmark to iterate over.
      * @param x The range of batch sizes.
@@ -1067,7 +1076,7 @@ public interface BenchmarkConfig {
         since: "22"
     ]
     func batchSize(x: Range<Int64>): Unit
-    
+
     /**
      * @description Sets the number of warmup iterations.
      * @param x The number of warmup iterations.
@@ -1076,7 +1085,7 @@ public interface BenchmarkConfig {
         since: "22"
     ]
     func warmup(x: Int64): Unit
-    
+
     /**
      * @description Sets the duration for warmup.
      * @param x The duration of the warmup phase.
@@ -1085,7 +1094,7 @@ public interface BenchmarkConfig {
         since: "22"
     ]
     func warmup(x: Duration): Unit
-    
+
     /**
      * @description Sets the minimum duration for the benchmark measurement phase.
      * @param x The minimum duration.
@@ -1094,7 +1103,7 @@ public interface BenchmarkConfig {
         since: "22"
     ]
     func minDuration(x: Duration): Unit
-    
+
     /**
      * @description Configures explicit garbage collection during the benchmark.
      * @param x The type of explicit garbage collection.
@@ -1103,7 +1112,7 @@ public interface BenchmarkConfig {
         since: "22"
     ]
     func explicitGC(x: ExplicitGcType): Unit
-    
+
     /**
      * @description Sets the minimum number of batches to execute.
      * @param x The minimum number of batches.
@@ -1123,7 +1132,7 @@ extend Configuration <: BenchmarkConfig {
         since: "22"
     ]
     public func batchSize(b: Int64)
-    
+
     /**
      * @description Sets a range of batch sizes for the benchmark to iterate over.
      * @param x The range of batch sizes.
@@ -1132,7 +1141,7 @@ extend Configuration <: BenchmarkConfig {
         since: "22"
     ]
     public func batchSize(x: Range<Int64>)
-    
+
     /**
      * @description Sets the number of warmup iterations.
      * @param x The number of warmup iterations.
@@ -1141,7 +1150,7 @@ extend Configuration <: BenchmarkConfig {
         since: "22"
     ]
     public func warmup(x: Int64)
-    
+
     /**
      * @description Sets the duration for warmup.
      * @param x The duration of the warmup phase.
@@ -1150,7 +1159,7 @@ extend Configuration <: BenchmarkConfig {
         since: "22"
     ]
     public func warmup(x: Duration)
-    
+
     /**
      * @description Sets the minimum duration for the benchmark measurement phase.
      * @param x The minimum duration.
@@ -1159,7 +1168,7 @@ extend Configuration <: BenchmarkConfig {
         since: "22"
     ]
     public func minDuration(x: Duration)
-    
+
     /**
      * @description Configures explicit garbage collection during the benchmark.
      * @param x The type of explicit garbage collection.
@@ -1168,7 +1177,7 @@ extend Configuration <: BenchmarkConfig {
         since: "22"
     ]
     public func explicitGC(x: ExplicitGcType)
-    
+
     /**
      * @description Sets the minimum number of batches to execute.
      * @param x The minimum number of batches.
@@ -1195,7 +1204,7 @@ public interface Measurement {
         since: "22"
     ]
     func setup()
-    
+
     /**
      * @description Performs the measurement.
      * @returns The result of the measurement.
@@ -1205,7 +1214,7 @@ public interface Measurement {
         since: "22"
     ]
     func measure(): Float64
-    
+
     /**
      * @description A table for converting measurement units.
      */
@@ -1213,7 +1222,7 @@ public interface Measurement {
         since: "22"
     ]
     prop conversionTable: MeasurementUnitTable
-    
+
     /**
      * @description The name of the measurement.
      */
@@ -1221,7 +1230,7 @@ public interface Measurement {
         since: "22"
     ]
     prop name: String
-    
+
     /**
      * @description A textual description of the measurement.
      */
@@ -1229,7 +1238,7 @@ public interface Measurement {
         since: "22"
     ]
     prop textDescription: String
-    
+
     /**
      * @description Additional information about the measurement.
      */
@@ -1256,7 +1265,7 @@ public struct MeasurementInfo {
         since: "22"
     ]
     public init(conversionTable: MeasurementUnitTable, name: String, textDescription: String)
-    
+
     /**
      * @description A table for converting measurement units.
      */
@@ -1304,7 +1313,7 @@ public struct TimeNow <: Measurement {
         since: "22"
     ]
     public init(unit: ?TimeUnit)
-    
+
     /**
      * @description Creates a `TimeNow` measurement with the default time unit.
      */
@@ -1312,7 +1321,7 @@ public struct TimeNow <: Measurement {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Measures the current time.
      * @returns The current time as a `Float64`.
@@ -1322,7 +1331,7 @@ public struct TimeNow <: Measurement {
         since: "22"
     ]
     public func measure(): Float64
-    
+
     /**
      * @description The conversion table for time units.
      */
@@ -1330,7 +1339,7 @@ public struct TimeNow <: Measurement {
         since: "22"
     ]
     public prop conversionTable: MeasurementUnitTable
-    
+
     /**
      * @description The name of the measurement, which is "Time".
      */
@@ -1338,7 +1347,7 @@ public struct TimeNow <: Measurement {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description A description of the measurement.
      */
@@ -1437,49 +1446,6 @@ public enum ExplicitGcType <: ToString {
 @!APILevel[
     since: "22"
 ]
-public struct CpuCycles <: Measurement {
-    /**
-     * @description Measures the CPU cycles.
-     * @returns The number of CPU cycles.
-     */
-    @Frozen
-    @!APILevel[
-        since: "22"
-    ]
-    public func measure(): Float64
-    
-    /**
-     * @description Sets up the CPU cycle measurement. This implementation is empty.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func setup()
-    
-    /**
-     * @description The conversion table for CPU cycles.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public prop conversionTable: MeasurementUnitTable
-    
-    /**
-     * @description The name of the measurement, which is "CPU Cycles".
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public prop name: String
-    
-    /**
-     * @description A description of the measurement.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public prop textDescription: String
-}
 
 /**
  * @description A measurement that uses performance counters.
@@ -1496,7 +1462,7 @@ public struct Perf <: Measurement {
         since: "22"
     ]
     public Perf(var counter: PerfCounter)
-    
+
     /**
      * @description Creates a `Perf` measurement with the default performance counter.
      */
@@ -1504,7 +1470,7 @@ public struct Perf <: Measurement {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Sets up the performance counter measurement.
      */
@@ -1512,7 +1478,7 @@ public struct Perf <: Measurement {
         since: "22"
     ]
     public func setup()
-    
+
     /**
      * @description Performs the measurement using the performance counter.
      * @returns The result of the measurement.
@@ -1522,7 +1488,7 @@ public struct Perf <: Measurement {
         since: "22"
     ]
     public func measure(): Float64
-    
+
     /**
      * @description The conversion table for the performance counter.
      */
@@ -1530,7 +1496,7 @@ public struct Perf <: Measurement {
         since: "22"
     ]
     public prop conversionTable: MeasurementUnitTable
-    
+
     /**
      * @description The name of the measurement.
      */
@@ -1538,7 +1504,7 @@ public struct Perf <: Measurement {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description A description of the measurement.
      */
@@ -1705,7 +1671,7 @@ public class AssertionCtx {
         since: "22"
     ]
     public prop caller: String
-    
+
     /**
      * @description Indicates whether there have been any errors in the assertion context.
      */
@@ -1713,7 +1679,7 @@ public class AssertionCtx {
         since: "22"
     ]
     public prop hasErrors: Bool
-    
+
     /**
      * @description Gets the value of an argument by its key.
      * @param key The key of the argument.
@@ -1723,7 +1689,7 @@ public class AssertionCtx {
         since: "22"
     ]
     public func arg(key: String): String
-    
+
     /**
      * @description The arguments passed to the assertion.
      */
@@ -1731,7 +1697,7 @@ public class AssertionCtx {
         since: "22"
     ]
     public prop args: String
-    
+
     /**
      * @description Sets aliases for the arguments.
      * @param aliases An array of aliases.
@@ -1740,7 +1706,7 @@ public class AssertionCtx {
         since: "22"
     ]
     public func setArgsAliases(aliases: Array<String>)
-    
+
     /**
      * @description Fails the assertion with a message.
      * @param message The failure message.
@@ -1750,17 +1716,19 @@ public class AssertionCtx {
         since: "22"
     ]
     public func fail(message: String): Nothing
-    
+
     /**
      * @description Fails the assertion with a pretty-printable object.
      * @param pt The pretty-printable object.
      * @returns This function does not return.
+     * @throws AssertException
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func fail<PP>(pt: PP): Nothing where PP <: PrettyPrintable
-    
+
     /**
      * @description Records an expected failure with a message.
      * @param message The failure message.
@@ -1769,7 +1737,7 @@ public class AssertionCtx {
         since: "22"
     ]
     public func failExpect(message: String): Unit
-    
+
     /**
      * @description Records an expected failure with a pretty-printable object.
      * @param pt The pretty-printable object.
@@ -1789,8 +1757,7 @@ public class AssertionCtx {
  * @returns The result of the assertion function.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func invokeCustomAssert<T>(
     passedArgs: Array<String>,
@@ -1903,7 +1870,7 @@ extend Float16 <: NearEquatable<Float16, Float16> & NearEquatable<Float16, Relat
         since: "22"
     ]
     public func isNear(obj: Float16, delta!: Float16): Bool
-    
+
     /**
      * @description Checks if this `Float16` is nearly equal to another `Float16` within a relative delta.
      * @param obj The `Float16` to compare with.
@@ -1927,7 +1894,7 @@ extend Float32 <: NearEquatable<Float32, Float32> & NearEquatable<Float32, Relat
         since: "22"
     ]
     public func isNear(obj: Float32, delta!: Float32): Bool
-    
+
     /**
      * @description Checks if this `Float32` is nearly equal to another `Float32` within a relative delta.
      * @param obj The `Float32` to compare with.
@@ -1951,7 +1918,7 @@ extend Float64 <: NearEquatable<Float64, Float64> & NearEquatable<Float64, Relat
         since: "22"
     ]
     public func isNear(obj: Float64, delta!: Float64): Bool
-    
+
     /**
      * @description Checks if this `Float64` is nearly equal to another `Float64` within a relative delta.
      * @param obj The `Float64` to compare with.
@@ -1979,8 +1946,7 @@ public func entryMain(testPackage: TestPackage): Int64
  * @param message The failure message to be recorded.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func failExpect(message: String): Unit
 
@@ -1988,8 +1954,7 @@ public func failExpect(message: String): Unit
  * @param message The message detailing the reason for the failure.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func fail(message: String): Nothing
 
@@ -2001,8 +1966,7 @@ public func fail(message: String): Nothing
  * @param optParentCtx An optional parent assertion context for nested assertions.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func assertCaughtUnexpectedE(
     message: String,
@@ -2019,8 +1983,7 @@ public func assertCaughtUnexpectedE(
  * @param optParentCtx An optional parent assertion context for nested expectations.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func expectCaughtUnexpectedE(
     message: String,
@@ -2039,7 +2002,7 @@ extend UInt8 <: Torcable<UInt8> {
         since: "22"
     ]
     public static func randomRecentEntry(): ?(UInt8, UInt8)
-    
+
     /**
      * @description Gets a random value that was recently compared to the given value.
      * @param value The value to find a recent comparison for.
@@ -2049,7 +2012,7 @@ extend UInt8 <: Torcable<UInt8> {
         since: "22"
     ]
     public static func randomRecentValueComparedTo(value: UInt8): ?UInt8
-    
+
     /**
      * @description Generates the next random `UInt8` value from a random source.
      * @param random The random number generator to use.
@@ -2059,7 +2022,7 @@ extend UInt8 <: Torcable<UInt8> {
         since: "22"
     ]
     public static func nextFrom(random: Random): UInt8
-    
+
     /**
      * @description Generates a "suggested" `UInt8` value from a set of interesting or edge-case values.
      * @param random The random number generator to use for selection.
@@ -2069,7 +2032,7 @@ extend UInt8 <: Torcable<UInt8> {
         since: "22"
     ]
     public static func suggestedFrom(random: Random): UInt8
-    
+
     /**
      * @description Checks if the value is zero.
      */
@@ -2077,7 +2040,7 @@ extend UInt8 <: Torcable<UInt8> {
         since: "22"
     ]
     public func isZero()
-    
+
     /**
      * @description Flips the bit at the specified position.
      * @param at The index of the bit to flip (0-7).
@@ -2098,7 +2061,7 @@ extend UInt16 <: Torcable<UInt16> {
         since: "22"
     ]
     public static func randomRecentEntry(): ?(UInt16, UInt16)
-    
+
     /**
      * @description Gets a random value that was recently compared to the given value.
      * @param value The value to find a recent comparison for.
@@ -2108,7 +2071,7 @@ extend UInt16 <: Torcable<UInt16> {
         since: "22"
     ]
     public static func randomRecentValueComparedTo(value: UInt16): ?UInt16
-    
+
     /**
      * @description Generates the next random `UInt16` value from a random source.
      * @param random The random number generator to use.
@@ -2118,7 +2081,7 @@ extend UInt16 <: Torcable<UInt16> {
         since: "22"
     ]
     public static func nextFrom(random: Random): UInt16
-    
+
     /**
      * @description Generates a "suggested" `UInt16` value from a set of interesting or edge-case values.
      * @param random The random number generator to use for selection.
@@ -2128,7 +2091,7 @@ extend UInt16 <: Torcable<UInt16> {
         since: "22"
     ]
     public static func suggestedFrom(random: Random): UInt16
-    
+
     /**
      * @description Checks if the value is zero.
      */
@@ -2136,7 +2099,7 @@ extend UInt16 <: Torcable<UInt16> {
         since: "22"
     ]
     public func isZero()
-    
+
     /**
      * @description Flips the bit at the specified position.
      * @param at The index of the bit to flip (0-15).
@@ -2146,7 +2109,7 @@ extend UInt16 <: Torcable<UInt16> {
         since: "22"
     ]
     public func bitFlip(at: UInt8): UInt16
-    
+
     /**
      * @description Adds a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to add.
@@ -2157,7 +2120,7 @@ extend UInt16 <: Torcable<UInt16> {
         since: "22"
     ]
     public operator func+(arg: UInt8): UInt16
-    
+
     /**
      * @description Subtracts a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to subtract.
@@ -2179,7 +2142,7 @@ extend UInt32 <: Torcable<UInt32> {
         since: "22"
     ]
     public static func randomRecentEntry(): ?(UInt32, UInt32)
-    
+
     /**
      * @description Gets a random value that was recently compared to the given value.
      * @param value The value to find a recent comparison for.
@@ -2189,7 +2152,7 @@ extend UInt32 <: Torcable<UInt32> {
         since: "22"
     ]
     public static func randomRecentValueComparedTo(value: UInt32): ?UInt32
-    
+
     /**
      * @description Generates the next random `UInt32` value from a random source.
      * @param random The random number generator to use.
@@ -2199,7 +2162,7 @@ extend UInt32 <: Torcable<UInt32> {
         since: "22"
     ]
     public static func nextFrom(random: Random): UInt32
-    
+
     /**
      * @description Generates a "suggested" `UInt32` value from a set of interesting or edge-case values.
      * @param random The random number generator to use for selection.
@@ -2209,7 +2172,7 @@ extend UInt32 <: Torcable<UInt32> {
         since: "22"
     ]
     public static func suggestedFrom(random: Random): UInt32
-    
+
     /**
      * @description Checks if the value is zero.
      */
@@ -2217,7 +2180,7 @@ extend UInt32 <: Torcable<UInt32> {
         since: "22"
     ]
     public func isZero()
-    
+
     /**
      * @description Flips the bit at the specified position.
      * @param at The index of the bit to flip (0-31).
@@ -2227,7 +2190,7 @@ extend UInt32 <: Torcable<UInt32> {
         since: "22"
     ]
     public func bitFlip(at: UInt8): UInt32
-    
+
     /**
      * @description Adds a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to add.
@@ -2238,7 +2201,7 @@ extend UInt32 <: Torcable<UInt32> {
         since: "22"
     ]
     public operator func+(arg: UInt8): UInt32
-    
+
     /**
      * @description Subtracts a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to subtract.
@@ -2260,7 +2223,7 @@ extend UInt64 <: Torcable<UInt64> {
         since: "22"
     ]
     public static func randomRecentEntry(): ?(UInt64, UInt64)
-    
+
     /**
      * @description Gets a random value that was recently compared to the given value.
      * @param value The value to find a recent comparison for.
@@ -2270,7 +2233,7 @@ extend UInt64 <: Torcable<UInt64> {
         since: "22"
     ]
     public static func randomRecentValueComparedTo(value: UInt64): ?UInt64
-    
+
     /**
      * @description Generates the next random `UInt64` value from a random source.
      * @param random The random number generator to use.
@@ -2280,7 +2243,7 @@ extend UInt64 <: Torcable<UInt64> {
         since: "22"
     ]
     public static func nextFrom(random: Random): UInt64
-    
+
     /**
      * @description Generates a "suggested" `UInt64` value from a set of interesting or edge-case values.
      * @param random The random number generator to use for selection.
@@ -2290,7 +2253,7 @@ extend UInt64 <: Torcable<UInt64> {
         since: "22"
     ]
     public static func suggestedFrom(random: Random): UInt64
-    
+
     /**
      * @description Checks if the value is zero.
      */
@@ -2298,7 +2261,7 @@ extend UInt64 <: Torcable<UInt64> {
         since: "22"
     ]
     public func isZero()
-    
+
     /**
      * @description Flips the bit at the specified position.
      * @param at The index of the bit to flip (0-63).
@@ -2308,7 +2271,7 @@ extend UInt64 <: Torcable<UInt64> {
         since: "22"
     ]
     public func bitFlip(at: UInt8): UInt64
-    
+
     /**
      * @description Adds a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to add.
@@ -2319,7 +2282,7 @@ extend UInt64 <: Torcable<UInt64> {
         since: "22"
     ]
     public operator func+(arg: UInt8): UInt64
-    
+
     /**
      * @description Subtracts a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to subtract.
@@ -2341,7 +2304,7 @@ extend Float32 <: Torcable<Float32> {
         since: "22"
     ]
     public static func randomRecentEntry(): ?(Float32, Float32)
-    
+
     /**
      * @description Gets a random value that was recently compared to the given value.
      * @param value The value to find a recent comparison for.
@@ -2351,7 +2314,7 @@ extend Float32 <: Torcable<Float32> {
         since: "22"
     ]
     public static func randomRecentValueComparedTo(value: Float32): ?Float32
-    
+
     /**
      * @description Generates the next random `Float32` value from a random source.
      * @param random The random number generator to use.
@@ -2361,7 +2324,7 @@ extend Float32 <: Torcable<Float32> {
         since: "22"
     ]
     public static func nextFrom(random: Random): Float32
-    
+
     /**
      * @description Generates a "suggested" `Float32` value from a set of interesting or edge-case values.
      * @param random The random number generator to use for selection.
@@ -2371,7 +2334,7 @@ extend Float32 <: Torcable<Float32> {
         since: "22"
     ]
     public static func suggestedFrom(random: Random): Float32
-    
+
     /**
      * @description Checks if the value is zero.
      */
@@ -2379,7 +2342,7 @@ extend Float32 <: Torcable<Float32> {
         since: "22"
     ]
     public func isZero()
-    
+
     /**
      * @description Flips the bit at the specified position.
      * @param at The index of the bit to flip (0-31).
@@ -2389,7 +2352,7 @@ extend Float32 <: Torcable<Float32> {
         since: "22"
     ]
     public func bitFlip(at: UInt8): Float32
-    
+
     /**
      * @description Adds a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to add.
@@ -2400,7 +2363,7 @@ extend Float32 <: Torcable<Float32> {
         since: "22"
     ]
     public operator func+(arg: UInt8): Float32
-    
+
     /**
      * @description Subtracts a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to subtract.
@@ -2422,7 +2385,7 @@ extend Float64 <: Torcable<Float64> {
         since: "22"
     ]
     public static func randomRecentEntry(): ?(Float64, Float64)
-    
+
     /**
      * @description Gets a random value that was recently compared to the given value.
      * @param value The value to find a recent comparison for.
@@ -2432,7 +2395,7 @@ extend Float64 <: Torcable<Float64> {
         since: "22"
     ]
     public static func randomRecentValueComparedTo(value: Float64): ?Float64
-    
+
     /**
      * @description Generates the next random `Float64` value from a random source.
      * @param random The random number generator to use.
@@ -2442,7 +2405,7 @@ extend Float64 <: Torcable<Float64> {
         since: "22"
     ]
     public static func nextFrom(random: Random): Float64
-    
+
     /**
      * @description Generates a "suggested" `Float64` value from a set of interesting or edge-case values.
      * @param random The random number generator to use for selection.
@@ -2452,7 +2415,7 @@ extend Float64 <: Torcable<Float64> {
         since: "22"
     ]
     public static func suggestedFrom(random: Random): Float64
-    
+
     /**
      * @description Checks if the value is zero.
      */
@@ -2460,7 +2423,7 @@ extend Float64 <: Torcable<Float64> {
         since: "22"
     ]
     public func isZero()
-    
+
     /**
      * @description Flips the bit at the specified position.
      * @param at The index of the bit to flip (0-63).
@@ -2470,7 +2433,7 @@ extend Float64 <: Torcable<Float64> {
         since: "22"
     ]
     public func bitFlip(at: UInt8): Float64
-    
+
     /**
      * @description Adds a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to add.
@@ -2481,7 +2444,7 @@ extend Float64 <: Torcable<Float64> {
         since: "22"
     ]
     public operator func+(arg: UInt8): Float64
-    
+
     /**
      * @description Subtracts a `UInt8` value, with overflow wrapping around.
      * @param arg The `UInt8` value to subtract.
@@ -2508,7 +2471,7 @@ public struct KeyHelp <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop help: KeyHelp
-    
+
     /**
      * @description The name of the configuration key, "--help".
      */
@@ -2532,7 +2495,7 @@ public struct KeyNoColor <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop noColor: KeyNoColor
-    
+
     /**
      * @description The name of the configuration key, "--no-color".
      */
@@ -2556,7 +2519,7 @@ public struct KeyFromTopLevel <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop fromTopLevel: KeyFromTopLevel
-    
+
     /**
      * @description The name of the configuration key, "fromTopLevel".
      */
@@ -2580,7 +2543,7 @@ public struct KeyRandomSeed <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop randomSeed: KeyRandomSeed
-    
+
     /**
      * @description The name of the configuration key, "--random-seed".
      */
@@ -2604,7 +2567,7 @@ public struct KeyWarmup <: KeyFor<Int64> & KeyFor<Duration> {
         since: "22"
     ]
     public static prop warmup: KeyWarmup
-    
+
     /**
      * @description The name of the configuration key, "--warmup".
      */
@@ -2628,7 +2591,7 @@ public struct KeyMinDuration <: KeyFor<Duration> {
         since: "22"
     ]
     public static prop minDuration: KeyMinDuration
-    
+
     /**
      * @description The name of the configuration key, "--min-duration".
      */
@@ -2652,7 +2615,7 @@ public struct KeyExplicitGC <: KeyFor<ExplicitGcType> {
         since: "22"
     ]
     public static prop explicitGC: KeyExplicitGC
-    
+
     /**
      * @description The name of the configuration key, "--explicit-gc".
      */
@@ -2676,7 +2639,7 @@ public struct KeyMinBatches <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop minBatches: KeyMinBatches
-    
+
     /**
      * @description The name of the configuration key, "--min-batches".
      */
@@ -2700,7 +2663,7 @@ public struct KeyBatchSize <: KeyFor<Int64> & KeyFor<Range<Int64>> {
         since: "22"
     ]
     public static prop batchSize: KeyBatchSize
-    
+
     /**
      * @description The name of the configuration key, "--batch-size".
      */
@@ -2724,7 +2687,7 @@ public struct KeyParallel <: KeyFor<Bool> & KeyFor<String> & KeyFor<Int64> {
         since: "22"
     ]
     public static prop parallel: KeyParallel
-    
+
     /**
      * @description The name of the configuration key, "--parallel".
      */
@@ -2748,7 +2711,7 @@ public struct KeyGenerationSteps <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop generationSteps: KeyGenerationSteps
-    
+
     /**
      * @description The name of the configuration key, "--generation-steps".
      */
@@ -2772,7 +2735,7 @@ public struct KeyReductionSteps <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop reductionSteps: KeyReductionSteps
-    
+
     /**
      * @description The name of the configuration key, "--reduction-steps".
      */
@@ -2796,7 +2759,7 @@ public struct KeySkip <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop skip: KeySkip
-    
+
     /**
      * @description The name of the configuration key, "skip".
      */
@@ -2820,7 +2783,7 @@ public struct KeyCoverageGuided <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop coverageGuided: KeyCoverageGuided
-    
+
     /**
      * @description The name of the configuration key, "--coverage-guided".
      */
@@ -2844,7 +2807,7 @@ public struct KeyCoverageGuidedInitialSeeds <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop coverageGuidedInitialSeeds: KeyCoverageGuidedInitialSeeds
-    
+
     /**
      * @description The name of the configuration key, "--coverage-guided-initial-seeds".
      */
@@ -2868,7 +2831,7 @@ public struct KeyCoverageGuidedMaxCandidates <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop coverageGuidedMaxCandidates: KeyCoverageGuidedMaxCandidates
-    
+
     /**
      * @description The name of the configuration key, "--coverage-guided-max-candidates".
      */
@@ -2892,7 +2855,7 @@ public struct KeyCoverageGuidedBaselineScore <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop coverageGuidedBaselineScore: KeyCoverageGuidedBaselineScore
-    
+
     /**
      * @description The name of the configuration key, "--coverage-guided-baseline-score".
      */
@@ -2916,7 +2879,7 @@ public struct KeyCoverageGuidedNewCoverageScore <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop coverageGuidedNewCoverageScore: KeyCoverageGuidedNewCoverageScore
-    
+
     /**
      * @description The name of the configuration key, "--coverage-guided-new-coverage-score".
      */
@@ -2940,7 +2903,7 @@ public struct KeyCoverageGuidedNewCoverageBonus <: KeyFor<Int64> {
         since: "22"
     ]
     public static prop coverageGuidedNewCoverageBonus: KeyCoverageGuidedNewCoverageBonus
-    
+
     /**
      * @description The name of the configuration key, "--coverage-guided-new-coverage-bonus".
      */
@@ -2964,7 +2927,7 @@ public struct KeyBench <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop bench: KeyBench
-    
+
     /**
      * @description The name of the configuration key, "--bench".
      */
@@ -2988,7 +2951,7 @@ public struct KeyTimeout <: KeyFor<Duration> {
         since: "22"
     ]
     public static prop timeout: KeyTimeout
-    
+
     /**
      * @description The name of the configuration key, "timeout".
      */
@@ -3012,7 +2975,7 @@ public struct KeyTimeoutEach <: KeyFor<String> {
         since: "22"
     ]
     public static prop timeoutEach: KeyTimeoutEach
-    
+
     /**
      * @description The name of the configuration key, "timeout-each".
      */
@@ -3036,7 +2999,7 @@ public struct KeyTimeoutHandler <: KeyFor<(TestCaseInfo) -> Unit> {
         since: "22"
     ]
     public static prop timeoutHandler: KeyTimeoutHandler
-    
+
     /**
      * @description The name of the configuration key, "timeout-handler".
      */
@@ -3060,7 +3023,7 @@ public struct KeyCaptureOutput <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop captureOutput: KeyCaptureOutput
-    
+
     /**
      * @description The name of the configuration key, "capture-output".
      */
@@ -3084,7 +3047,7 @@ public struct KeyNoCaptureOutput <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop noCaptureOutput: KeyNoCaptureOutput
-    
+
     /**
      * @description The name of the configuration key, "--no-capture-output".
      */
@@ -3108,7 +3071,7 @@ public struct KeyShowAllOutput <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop showAllOutput: KeyShowAllOutput
-    
+
     /**
      * @description The name of the configuration key, "--show-all-output".
      */
@@ -3132,7 +3095,7 @@ public struct KeyVerbose <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop verbose: KeyVerbose
-    
+
     /**
      * @description The name of the configuration key, "--verbose".
      */
@@ -3156,7 +3119,7 @@ public struct KeyMeasurement <: KeyFor<Measurement> {
         since: "22"
     ]
     public static prop measurement: KeyMeasurement
-    
+
     /**
      * @description The name of the configuration key, "measurement".
      */
@@ -3180,7 +3143,7 @@ public struct KeyMeasurementInfo <: KeyFor<MeasurementInfo> {
         since: "22"
     ]
     public static prop measurementInfo: KeyMeasurementInfo
-    
+
     /**
      * @description The name of the configuration key, "measurement-info".
      */
@@ -3204,7 +3167,7 @@ public struct KeyInternalTestrunnerInputPath <: KeyFor<String> {
         since: "22"
     ]
     public static prop internalTestrunnerInputPath: KeyInternalTestrunnerInputPath
-    
+
     /**
      * @description The name of the configuration key, "internal-testrunner-input-path".
      */
@@ -3228,7 +3191,7 @@ public struct KeyDeathAware <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop deathAware: KeyDeathAware
-    
+
     /**
      * @description The name of the configuration key, "death-aware".
      */
@@ -3252,7 +3215,7 @@ public struct KeyBaseline <: KeyFor<String> {
         since: "22"
     ]
     public static prop baseline: KeyBaseline
-    
+
     /**
      * @description The name of the configuration key, "--baseline".
      */
@@ -3276,7 +3239,7 @@ public struct KeyFilter <: KeyFor<String> {
         since: "22"
     ]
     public static prop filter: KeyFilter
-    
+
     /**
      * @description The name of the configuration key, "--filter".
      */
@@ -3300,7 +3263,7 @@ public struct KeyIncludeTags <: KeyFor<String> {
         since: "22"
     ]
     public static prop includeTags: KeyIncludeTags
-    
+
     /**
      * @description The name of the configuration key, "--include-tags".
      */
@@ -3324,7 +3287,7 @@ public struct KeyExcludeTags <: KeyFor<String> {
         since: "22"
     ]
     public static prop excludeTags: KeyExcludeTags
-    
+
     /**
      * @description The name of the configuration key, "--exclude-tags".
      */
@@ -3348,7 +3311,7 @@ public struct KeyReportPath <: KeyFor<String> {
         since: "22"
     ]
     public static prop reportPath: KeyReportPath
-    
+
     /**
      * @description The name of the configuration key, "--report-path".
      */
@@ -3372,7 +3335,7 @@ public struct KeyReportFormat <: KeyFor<String> {
         since: "22"
     ]
     public static prop reportFormat: KeyReportFormat
-    
+
     /**
      * @description The name of the configuration key, "--report-format".
      */
@@ -3396,7 +3359,7 @@ public struct KeyBaselinePath <: KeyFor<String> {
         since: "22"
     ]
     public static prop baselinePath: KeyBaselinePath
-    
+
     /**
      * @description The name of the configuration key, "--baseline-path".
      */
@@ -3420,7 +3383,7 @@ public struct KeyDryRun <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop dryRun: KeyDryRun
-    
+
     /**
      * @description The name of the configuration key, "--dry-run".
      */
@@ -3444,7 +3407,7 @@ public struct KeyShowTags <: KeyFor<Bool> {
         since: "22"
     ]
     public static prop showTags: KeyShowTags
-    
+
     /**
      * @description The name of the configuration key, "--show-tags".
      */
@@ -3471,7 +3434,7 @@ public class PowerAssertDiagramBuilder {
         since: "22"
     ]
     public init(expression: String)
-    
+
     /**
      * @description Records the value of a sub-expression during a power-assert evaluation.
      * @param value The value of the sub-expression.
@@ -3483,7 +3446,7 @@ public class PowerAssertDiagramBuilder {
         since: "22"
     ]
     public func r<T>(value: T, exprAsText: String, position: Int64): T
-    
+
     /**
      * @description Records the value of a `Rune` sub-expression during a power-assert evaluation.
      * @param value The value of the sub-expression.
@@ -3495,7 +3458,7 @@ public class PowerAssertDiagramBuilder {
         since: "22"
     ]
     public func r(value: Rune, exprAsText: String, position: Int64): Rune
-    
+
     /**
      * @description Records the value of a `String` sub-expression during a power-assert evaluation.
      * @param value The value of the sub-expression.
@@ -3507,7 +3470,7 @@ public class PowerAssertDiagramBuilder {
         since: "22"
     ]
     public func r(value: String, exprAsText: String, position: Int64): String
-    
+
     /**
      * @description Handles an exception that occurred during the evaluation of a sub-expression.
      * @param exception The exception that was caught.
@@ -3518,7 +3481,7 @@ public class PowerAssertDiagramBuilder {
         since: "22"
     ]
     public func h(exception: Exception, exprAsText: String, position: Int64): Nothing
-    
+
     /**
      * @param passed A boolean indicating whether the assertion passed.
      */
@@ -3664,132 +3627,6 @@ public class RawStatsReporter <: Reporter<BenchReport, HashMap<String, (Float64,
     public RawStatsReporter()
 }
 
-extend LStep <: Serializable<LStep> {
-    /**
-     * @description Serializes the `LStep` object into a `DataModel`.
-     * @returns The serialized `DataModel` representation of the object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func serializeInternal(): DataModel
-    
-    /**
-     * @description Deserializes a `DataModel` into an `LStep` object.
-     * @param dm The `DataModel` to deserialize.
-     * @returns The deserialized `LStep` object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func deserialize(dm: DataModel): LStep
-}
-
-extend StepKind <: Serializable<StepKind> {
-    /**
-     * @description Serializes the `StepKind` enum into a `DataModel`.
-     * @returns The serialized `DataModel` representation of the enum.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func serializeInternal(): DataModel
-    
-    /**
-     * @description Deserializes a `DataModel` into a `StepKind` enum.
-     * @param dm The `DataModel` to deserialize.
-     * @returns The deserialized `StepKind` enum.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func deserialize(dm: DataModel): StepKind
-}
-
-extend StepInfo <: Serializable<StepInfo> {
-    /**
-     * @description Serializes the `StepInfo` object into a `DataModel`.
-     * @returns The serialized `DataModel` representation of the object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func serializeInternal(): DataModel
-    
-    /**
-     * @description Deserializes a `DataModel` into a `StepInfo` object.
-     * @param dm The `DataModel` to deserialize.
-     * @returns The deserialized `StepInfo` object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func deserialize(dm: DataModel): StepInfo
-}
-
-extend TestCaseReportInfo <: Serializable<TestCaseReportInfo> {
-    /**
-     * @description Serializes the `TestCaseReportInfo` object into a `DataModel`.
-     * @returns The serialized `DataModel` representation of the object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func serializeInternal(): DataModel
-    
-    /**
-     * @description Deserializes a `DataModel` into a `TestCaseReportInfo` object.
-     * @param dm The `DataModel` to deserialize.
-     * @returns The deserialized `TestCaseReportInfo` object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func deserialize(dm: DataModel): TestCaseReportInfo
-}
-
-extend TestSuiteReportInfo <: Serializable<TestSuiteReportInfo> {
-    /**
-     * @description Serializes the `TestSuiteReportInfo` object into a `DataModel`.
-     * @returns The serialized `DataModel` representation of the object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func serializeInternal(): DataModel
-    
-    /**
-     * @description Deserializes a `DataModel` into a `TestSuiteReportInfo` object.
-     * @param dm The `DataModel` to deserialize.
-     * @returns The deserialized `TestSuiteReportInfo` object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func deserialize(dm: DataModel): TestSuiteReportInfo
-}
-
-extend RenderOptions <: Serializable<RenderOptions> {
-    /**
-     * @description Serializes the `RenderOptions` object into a `DataModel`.
-     * @returns The serialized `DataModel` representation of the object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func serializeInternal(): DataModel
-    
-    /**
-     * @description Deserializes a `DataModel` into a `RenderOptions` object.
-     * @param dm The `DataModel` to deserialize.
-     * @returns The deserialized `RenderOptions` object.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func deserialize(dm: DataModel): RenderOptions
-}
-
 extend Float64 <: AsFloat {
     /**
      * @description Returns the `Float64` value itself.
@@ -3904,7 +3741,7 @@ sealed abstract class DataStrategyProcessor<T> {
         configuration!: Configuration,
         doRun!: (T, Int64, Int64) -> Float64
     ): Benchmark
-    
+
     /**
      * @description Converts the data strategy into a unit test case.
      * @param caseName The name of the test case.
@@ -3920,7 +3757,7 @@ sealed abstract class DataStrategyProcessor<T> {
         configuration!: Configuration,
         doRun!: (T) -> Unit
     ): UnitTestCase
-    
+
     /**
      * @description Starts a processing pipeline with a given data strategy.
      * @param s The initial data strategy.
@@ -3931,21 +3768,19 @@ sealed abstract class DataStrategyProcessor<T> {
         since: "22"
     ]
     public static func start(s: DataStrategy<T>, name: String): SimpleProcessor<T>
-    
+
     /**
      * @description Starts a processing pipeline with a function that provides a data strategy for benchmark input.
      * @param f A function that returns a data strategy.
      * @param name The name for this processing stage.
      * @returns A `DataStrategyProcessor` for the benchmark input.
-     * @throws UnittestOptionValidationException if a configuration option is invalid.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public static func start<U>(f: () -> DataStrategy<U>, name: String): DataStrategyProcessor<U>
         where U <: BenchInputProvider<T>
-   
+
     /**
      * @description Starts a processing pipeline with a function that provides a data strategy.
      * @param f A function that returns a data strategy.
@@ -3957,7 +3792,7 @@ sealed abstract class DataStrategyProcessor<T> {
         since: "22"
     ]
     public static func start(f: () -> DataStrategy<T>, name: String, x!: Int64 = 0): SimpleProcessor<T>
-    
+
     /**
      * @description Starts a processing pipeline with a function that provides a data strategy processor.
      * @param f A function that returns a data strategy processor.
@@ -3968,7 +3803,7 @@ sealed abstract class DataStrategyProcessor<T> {
         since: "22"
     ]
     public static func start(f: () -> DataStrategyProcessor<T>, _: String): DataStrategyProcessor<T>
-    
+
     /**
      * @description Starts a processing pipeline with a function that provides a data strategy processor for benchmark input.
      * @param f A function that returns a data strategy processor.
@@ -3981,7 +3816,7 @@ sealed abstract class DataStrategyProcessor<T> {
     ]
     public static func start<U>(f: () -> DataStrategyProcessor<U>, _: String, x!: Int64 = 0): DataStrategyProcessor<U>
         where U <: BenchInputProvider<T>
-   
+
 }
 
 extend<T> DataStrategyProcessor<T> {
@@ -3994,7 +3829,7 @@ extend<T> DataStrategyProcessor<T> {
         since: "22"
     ]
     public func map<R>(f: (T) -> R): MapProcessor<T, R>
-    
+
     /**
      * @description Applies a mapping function that also takes the test configuration.
      * @param f The function to apply to each element, which also receives the configuration.
@@ -4004,7 +3839,7 @@ extend<T> DataStrategyProcessor<T> {
         since: "22"
     ]
     public func mapWithConfig<R>(f: (T, Configuration) -> R): MapProcessor<T, R>
-    
+
     /**
      * @description Applies a flat-map function that returns a `DataProvider`.
      * @param f The function to apply to each element.
@@ -4014,7 +3849,7 @@ extend<T> DataStrategyProcessor<T> {
         since: "22"
     ]
     public func flatMap<R>(f: (T) -> DataProvider<R>): FlatMapProcessor<T, R>
-    
+
     /**
      * @description Applies a flat-map function that returns a `DataStrategy`.
      * @param f The function to apply to each element.
@@ -4024,7 +3859,7 @@ extend<T> DataStrategyProcessor<T> {
         since: "22"
     ]
     public func flatMapStrategy<R>(f: (T) -> DataStrategy<R>): FlatMapStrategyProcessor<T, R>
-    
+
     /**
      * @description Computes the Cartesian product with another data strategy processor.
      * @param p The other data strategy processor.
@@ -4034,7 +3869,7 @@ extend<T> DataStrategyProcessor<T> {
         since: "22"
     ]
     public func product<R>(p: DataStrategyProcessor<R>): CartesianProductProcessor<T, R>
-    
+
     /**
      * @description Computes the product with a unit data strategy processor.
      * @param p The unit data strategy processor.
@@ -4110,28 +3945,6 @@ extend<T> ArrayList<T> <: IntoJson where T <: IntoJson {
         since: "22"
     ]
     public func json(): JsonValue
-}
-
-extend CheckResult <: PrettyPrintable {
-    /**
-     * @description Pretty-prints the check result with a "FAILED" prefix if the check failed.
-     * @param pp The `PrettyPrinter` to use for printing.
-     * @returns The `PrettyPrinter` instance.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func pprintWithFailedPrefix(pp: PrettyPrinter): PrettyPrinter
-    
-    /**
-     * @description Pretty-prints the check result.
-     * @param pp The `PrettyPrinter` to use for printing.
-     * @returns The `PrettyPrinter` instance.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func pprint(pp: PrettyPrinter): PrettyPrinter
 }
 
 /**

@@ -17,7 +17,7 @@ public interface BigEndianOrder<T> {
     @!APILevel[
         since: "22"
     ]
-    func writeBigEndian(buffer: Array<UInt8>): Int64
+    func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads the value of type T in big-endian order from the buffer byte array.
@@ -27,7 +27,7 @@ public interface BigEndianOrder<T> {
     @!APILevel[
         since: "22"
     ]
-    static func readBigEndian(buffer: Array<UInt8>): T
+    static func readBigEndian(buffer: Array<Byte>): T
 }
 
 /**
@@ -46,7 +46,7 @@ public interface LittleEndianOrder<T> {
     @!APILevel[
         since: "22"
     ]
-    func writeLittleEndian(buffer: Array<UInt8>): Int64
+    func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads the value of type T in little-endian order from the buffer byte array.
@@ -56,7 +56,7 @@ public interface LittleEndianOrder<T> {
     @!APILevel[
         since: "22"
     ]
-    static func readLittleEndian(buffer: Array<UInt8>): T
+    static func readLittleEndian(buffer: Array<Byte>): T
 }
 
 /**
@@ -87,7 +87,7 @@ extend UInt64 <: BigEndianOrder<UInt64> & LittleEndianOrder<UInt64> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a UInt64 value in big-endian order to the buffer byte array.
@@ -98,7 +98,7 @@ extend UInt64 <: BigEndianOrder<UInt64> & LittleEndianOrder<UInt64> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a UInt64 value in big-endian order from the buffer byte array.
@@ -109,7 +109,7 @@ extend UInt64 <: BigEndianOrder<UInt64> & LittleEndianOrder<UInt64> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): UInt64
+    public static func readBigEndian(buffer: Array<Byte>): UInt64
     
     /**
      * @description Reads a UInt64 value in little-endian order from the buffer byte array.
@@ -120,7 +120,7 @@ extend UInt64 <: BigEndianOrder<UInt64> & LittleEndianOrder<UInt64> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): UInt64
+    public static func readLittleEndian(buffer: Array<Byte>): UInt64
     
     /**
      * @description Swaps the byte order of the UInt64 value.
@@ -142,7 +142,7 @@ extend Int64 <: BigEndianOrder<Int64> & LittleEndianOrder<Int64> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes an Int64 value in big-endian order to the buffer byte array.
@@ -153,7 +153,7 @@ extend Int64 <: BigEndianOrder<Int64> & LittleEndianOrder<Int64> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads an Int64 value in big-endian order from the buffer byte array.
@@ -164,7 +164,7 @@ extend Int64 <: BigEndianOrder<Int64> & LittleEndianOrder<Int64> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Int64
+    public static func readBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads an Int64 value in little-endian order from the buffer byte array.
@@ -175,7 +175,7 @@ extend Int64 <: BigEndianOrder<Int64> & LittleEndianOrder<Int64> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Int64
+    public static func readLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Swaps the byte order of the Int64 value.
@@ -198,7 +198,7 @@ extend UInt32 <: BigEndianOrder<UInt32> & LittleEndianOrder<UInt32> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a UInt32 value in big-endian order to the buffer byte array.
@@ -209,7 +209,7 @@ extend UInt32 <: BigEndianOrder<UInt32> & LittleEndianOrder<UInt32> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a UInt32 value in big-endian order from the buffer byte array.
@@ -220,7 +220,7 @@ extend UInt32 <: BigEndianOrder<UInt32> & LittleEndianOrder<UInt32> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): UInt32
+    public static func readBigEndian(buffer: Array<Byte>): UInt32
     
     /**
      * @description Reads a UInt32 value in little-endian order from the buffer byte array.
@@ -231,7 +231,7 @@ extend UInt32 <: BigEndianOrder<UInt32> & LittleEndianOrder<UInt32> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): UInt32
+    public static func readLittleEndian(buffer: Array<Byte>): UInt32
     
     /**
      * @description Swaps the byte order of the UInt32 value.
@@ -253,7 +253,7 @@ extend Int32 <: BigEndianOrder<Int32> & LittleEndianOrder<Int32> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes an Int32 value in big-endian order to the buffer byte array.
@@ -264,7 +264,7 @@ extend Int32 <: BigEndianOrder<Int32> & LittleEndianOrder<Int32> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads an Int32 value in big-endian order from the buffer byte array.
@@ -275,7 +275,7 @@ extend Int32 <: BigEndianOrder<Int32> & LittleEndianOrder<Int32> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Int32
+    public static func readBigEndian(buffer: Array<Byte>): Int32
     
     /**
      * @description Reads an Int32 value in little-endian order from the buffer byte array.
@@ -286,7 +286,7 @@ extend Int32 <: BigEndianOrder<Int32> & LittleEndianOrder<Int32> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Int32
+    public static func readLittleEndian(buffer: Array<Byte>): Int32
     
     /**
      * @description Swaps the byte order of the Int32 value.
@@ -309,7 +309,7 @@ extend UInt16 <: BigEndianOrder<UInt16> & LittleEndianOrder<UInt16> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a UInt16 value in big-endian order to the buffer byte array.
@@ -320,7 +320,7 @@ extend UInt16 <: BigEndianOrder<UInt16> & LittleEndianOrder<UInt16> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a UInt16 value in big-endian order from the buffer byte array.
@@ -331,7 +331,7 @@ extend UInt16 <: BigEndianOrder<UInt16> & LittleEndianOrder<UInt16> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): UInt16
+    public static func readBigEndian(buffer: Array<Byte>): UInt16
     
     /**
      * @description Reads a UInt16 value in little-endian order from the buffer byte array.
@@ -342,7 +342,7 @@ extend UInt16 <: BigEndianOrder<UInt16> & LittleEndianOrder<UInt16> & SwapEndian
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): UInt16
+    public static func readLittleEndian(buffer: Array<Byte>): UInt16
     
     /**
      * @description Swaps the byte order of the UInt16 value.
@@ -364,7 +364,7 @@ extend Int16 <: BigEndianOrder<Int16> & LittleEndianOrder<Int16> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes an Int16 value in big-endian order to the buffer byte array.
@@ -375,7 +375,7 @@ extend Int16 <: BigEndianOrder<Int16> & LittleEndianOrder<Int16> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads an Int16 value in big-endian order from the buffer byte array.
@@ -386,7 +386,7 @@ extend Int16 <: BigEndianOrder<Int16> & LittleEndianOrder<Int16> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Int16
+    public static func readBigEndian(buffer: Array<Byte>): Int16
     
     /**
      * @description Reads an Int16 value in little-endian order from the buffer byte array.
@@ -397,7 +397,7 @@ extend Int16 <: BigEndianOrder<Int16> & LittleEndianOrder<Int16> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Int16
+    public static func readLittleEndian(buffer: Array<Byte>): Int16
     
     /**
      * @description Swaps the byte order of the Int16 value.
@@ -419,7 +419,7 @@ extend UInt8 <: BigEndianOrder<UInt8> & LittleEndianOrder<UInt8> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a UInt8 value in big-endian order to the buffer byte array.
@@ -429,7 +429,7 @@ extend UInt8 <: BigEndianOrder<UInt8> & LittleEndianOrder<UInt8> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a UInt8 value in big-endian order from the buffer byte array.
@@ -439,7 +439,7 @@ extend UInt8 <: BigEndianOrder<UInt8> & LittleEndianOrder<UInt8> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): UInt8
+    public static func readBigEndian(buffer: Array<Byte>): UInt8
     
     /**
      * @description Reads a UInt8 value in little-endian order from the buffer byte array.
@@ -449,7 +449,7 @@ extend UInt8 <: BigEndianOrder<UInt8> & LittleEndianOrder<UInt8> & SwapEndianOrd
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): UInt8
+    public static func readLittleEndian(buffer: Array<Byte>): UInt8
     
     /**
      * @description Swaps the byte order of the UInt8 value (no-op for single byte values).
@@ -471,7 +471,7 @@ extend Int8 <: BigEndianOrder<Int8> & LittleEndianOrder<Int8> & SwapEndianOrder<
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes an Int8 value in big-endian order to the buffer byte array.
@@ -482,7 +482,7 @@ extend Int8 <: BigEndianOrder<Int8> & LittleEndianOrder<Int8> & SwapEndianOrder<
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads an Int8 value in big-endian order from the buffer byte array.
@@ -493,7 +493,7 @@ extend Int8 <: BigEndianOrder<Int8> & LittleEndianOrder<Int8> & SwapEndianOrder<
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Int8
+    public static func readBigEndian(buffer: Array<Byte>): Int8
     
     /**
      * @description Reads an Int8 value in little-endian order from the buffer byte array.
@@ -504,7 +504,7 @@ extend Int8 <: BigEndianOrder<Int8> & LittleEndianOrder<Int8> & SwapEndianOrder<
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Int8
+    public static func readLittleEndian(buffer: Array<Byte>): Int8
     
     /**
      * @description Swaps the byte order of the Int8 value (no-op for single byte values).
@@ -525,7 +525,7 @@ extend Float64 <: BigEndianOrder<Float64> & LittleEndianOrder<Float64> {
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a Float64 value in big-endian order to the buffer byte array.
@@ -535,7 +535,7 @@ extend Float64 <: BigEndianOrder<Float64> & LittleEndianOrder<Float64> {
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a Float64 value in big-endian order from the buffer byte array.
@@ -545,7 +545,7 @@ extend Float64 <: BigEndianOrder<Float64> & LittleEndianOrder<Float64> {
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Float64
+    public static func readBigEndian(buffer: Array<Byte>): Float64
     
     /**
      * @description Reads a Float64 value in little-endian order from the buffer byte array.
@@ -555,7 +555,7 @@ extend Float64 <: BigEndianOrder<Float64> & LittleEndianOrder<Float64> {
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Float64
+    public static func readLittleEndian(buffer: Array<Byte>): Float64
 }
 
 extend Float32 <: BigEndianOrder<Float32> & LittleEndianOrder<Float32> {
@@ -567,7 +567,7 @@ extend Float32 <: BigEndianOrder<Float32> & LittleEndianOrder<Float32> {
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a Float32 value in big-endian order to the buffer byte array.
@@ -577,7 +577,7 @@ extend Float32 <: BigEndianOrder<Float32> & LittleEndianOrder<Float32> {
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a Float32 value in big-endian order from the buffer byte array.
@@ -587,7 +587,7 @@ extend Float32 <: BigEndianOrder<Float32> & LittleEndianOrder<Float32> {
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Float32
+    public static func readBigEndian(buffer: Array<Byte>): Float32
     
     /**
      * @description Reads a Float32 value in little-endian order from the buffer byte array.
@@ -597,7 +597,7 @@ extend Float32 <: BigEndianOrder<Float32> & LittleEndianOrder<Float32> {
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Float32
+    public static func readLittleEndian(buffer: Array<Byte>): Float32
 }
 
 extend Float16 <: BigEndianOrder<Float16> & LittleEndianOrder<Float16> {
@@ -609,7 +609,7 @@ extend Float16 <: BigEndianOrder<Float16> & LittleEndianOrder<Float16> {
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a Float16 value in big-endian order to the buffer byte array.
@@ -619,7 +619,7 @@ extend Float16 <: BigEndianOrder<Float16> & LittleEndianOrder<Float16> {
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a Float16 value in big-endian order from the buffer byte array.
@@ -629,7 +629,7 @@ extend Float16 <: BigEndianOrder<Float16> & LittleEndianOrder<Float16> {
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Float16
+    public static func readBigEndian(buffer: Array<Byte>): Float16
     
     /**
      * @description Reads a Float16 value in little-endian order from the buffer byte array.
@@ -639,7 +639,7 @@ extend Float16 <: BigEndianOrder<Float16> & LittleEndianOrder<Float16> {
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Float16
+    public static func readLittleEndian(buffer: Array<Byte>): Float16
 }
 
 extend Bool <: BigEndianOrder<Bool> & LittleEndianOrder<Bool> {
@@ -651,7 +651,7 @@ extend Bool <: BigEndianOrder<Bool> & LittleEndianOrder<Bool> {
     @!APILevel[
         since: "22"
     ]
-    public func writeLittleEndian(buffer: Array<UInt8>): Int64
+    public func writeLittleEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Writes a Bool value in big-endian order to the buffer byte array.
@@ -661,7 +661,7 @@ extend Bool <: BigEndianOrder<Bool> & LittleEndianOrder<Bool> {
     @!APILevel[
         since: "22"
     ]
-    public func writeBigEndian(buffer: Array<UInt8>): Int64
+    public func writeBigEndian(buffer: Array<Byte>): Int64
     
     /**
      * @description Reads a Bool value in big-endian order from the buffer byte array.
@@ -671,7 +671,7 @@ extend Bool <: BigEndianOrder<Bool> & LittleEndianOrder<Bool> {
     @!APILevel[
         since: "22"
     ]
-    public static func readBigEndian(buffer: Array<UInt8>): Bool
+    public static func readBigEndian(buffer: Array<Byte>): Bool
     
     /**
      * @description Reads a Bool value in little-endian order from the buffer byte array.
@@ -681,5 +681,5 @@ extend Bool <: BigEndianOrder<Bool> & LittleEndianOrder<Bool> {
     @!APILevel[
         since: "22"
     ]
-    public static func readLittleEndian(buffer: Array<UInt8>): Bool
+    public static func readLittleEndian(buffer: Array<Byte>): Bool
 }

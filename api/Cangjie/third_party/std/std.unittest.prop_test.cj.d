@@ -390,7 +390,7 @@ public interface ArbitraryRange<T> where T <: Arbitrary<T> & Comparable<T> {
         since: "22"
     ]
     static func min(): T
-    
+
     /**
      * @description Returns the maximum value of the type's range.
      * @returns The maximum value.
@@ -399,7 +399,7 @@ public interface ArbitraryRange<T> where T <: Arbitrary<T> & Comparable<T> {
         since: "22"
     ]
     static func max(): T
-    
+
     /**
      * @description Creates a generator for arbitrary values within the given inclusive range.
      * @param random The source of randomness.
@@ -422,7 +422,7 @@ extend Int64 <: ArbitraryRange<Int64> {
         since: "22"
     ]
     public static func min(): Int64
-    
+
     /**
      * @description Returns `Int64.MAX_VALUE`.
      * @returns The maximum `Int64` value.
@@ -431,16 +431,18 @@ extend Int64 <: ArbitraryRange<Int64> {
         since: "22"
     ]
     public static func max(): Int64
-    
+
     /**
      * @description Creates a generator for `Int64` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<Int64>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: Int64, max: Int64): Generator<Int64>
 }
@@ -454,7 +456,7 @@ extend UInt64 <: ArbitraryRange<UInt64> {
         since: "22"
     ]
     public static func min(): UInt64
-    
+
     /**
      * @description Returns `UInt64.MAX_VALUE`.
      * @returns The maximum `UInt64` value.
@@ -463,16 +465,18 @@ extend UInt64 <: ArbitraryRange<UInt64> {
         since: "22"
     ]
     public static func max(): UInt64
-    
+
     /**
      * @description Creates a generator for `UInt64` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<UInt64>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: UInt64, max: UInt64): Generator<UInt64>
 }
@@ -486,7 +490,7 @@ extend Int32 <: ArbitraryRange<Int32> {
         since: "22"
     ]
     public static func min(): Int32
-    
+
     /**
      * @description Returns `Int32.MAX_VALUE`.
      * @returns The maximum `Int32` value.
@@ -495,16 +499,18 @@ extend Int32 <: ArbitraryRange<Int32> {
         since: "22"
     ]
     public static func max(): Int32
-    
+
     /**
      * @description Creates a generator for `Int32` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<Int32>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: Int32, max: Int32): Generator<Int32>
 }
@@ -518,7 +524,7 @@ extend UInt32 <: ArbitraryRange<UInt32> {
         since: "22"
     ]
     public static func min(): UInt32
-    
+
     /**
      * @description Returns `UInt32.MAX_VALUE`.
      * @returns The maximum `UInt32` value.
@@ -527,16 +533,18 @@ extend UInt32 <: ArbitraryRange<UInt32> {
         since: "22"
     ]
     public static func max(): UInt32
-    
+
     /**
      * @description Creates a generator for `UInt32` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<UInt32>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: UInt32, max: UInt32): Generator<UInt32>
 }
@@ -550,7 +558,7 @@ extend Int16 <: ArbitraryRange<Int16> {
         since: "22"
     ]
     public static func min(): Int16
-    
+
     /**
      * @description Returns `Int16.MAX_VALUE`.
      * @returns The maximum `Int16` value.
@@ -559,16 +567,18 @@ extend Int16 <: ArbitraryRange<Int16> {
         since: "22"
     ]
     public static func max(): Int16
-    
+
     /**
      * @description Creates a generator for `Int16` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<Int16>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: Int16, max: Int16): Generator<Int16>
 }
@@ -582,7 +592,7 @@ extend UInt16 <: ArbitraryRange<UInt16> {
         since: "22"
     ]
     public static func min(): UInt16
-    
+
     /**
      * @description Returns `UInt16.MAX_VALUE`.
      * @returns The maximum `UInt16` value.
@@ -591,16 +601,18 @@ extend UInt16 <: ArbitraryRange<UInt16> {
         since: "22"
     ]
     public static func max(): UInt16
-    
+
     /**
      * @description Creates a generator for `UInt16` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<UInt16>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: UInt16, max: UInt16): Generator<UInt16>
 }
@@ -614,7 +626,7 @@ extend Int8 <: ArbitraryRange<Int8> {
         since: "22"
     ]
     public static func min(): Int8
-    
+
     /**
      * @description Returns `Int8.MAX_VALUE`.
      * @returns The maximum `Int8` value.
@@ -623,16 +635,18 @@ extend Int8 <: ArbitraryRange<Int8> {
         since: "22"
     ]
     public static func max(): Int8
-    
+
     /**
      * @description Creates a generator for `Int8` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<Int8>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: Int8, max: Int8): Generator<Int8>
 }
@@ -646,7 +660,7 @@ extend UInt8 <: ArbitraryRange<UInt8> {
         since: "22"
     ]
     public static func min(): UInt8
-    
+
     /**
      * @description Returns `UInt8.MAX_VALUE`.
      * @returns The maximum `UInt8` value.
@@ -655,16 +669,18 @@ extend UInt8 <: ArbitraryRange<UInt8> {
         since: "22"
     ]
     public static func max(): UInt8
-    
+
     /**
      * @description Creates a generator for `UInt8` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<UInt8>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: UInt8, max: UInt8): Generator<UInt8>
 }
@@ -678,7 +694,7 @@ extend IntNative <: ArbitraryRange<IntNative> {
         since: "22"
     ]
     public static func min(): IntNative
-    
+
     /**
      * @description Returns `IntNative.MAX_VALUE`.
      * @returns The maximum `IntNative` value.
@@ -687,16 +703,18 @@ extend IntNative <: ArbitraryRange<IntNative> {
         since: "22"
     ]
     public static func max(): IntNative
-    
+
     /**
      * @description Creates a generator for `IntNative` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<IntNative>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: IntNative, max: IntNative): Generator<IntNative>
 }
@@ -710,7 +728,7 @@ extend UIntNative <: ArbitraryRange<UIntNative> {
         since: "22"
     ]
     public static func min(): UIntNative
-    
+
     /**
      * @description Returns `UIntNative.MAX_VALUE`.
      * @returns The maximum `UIntNative` value.
@@ -719,16 +737,18 @@ extend UIntNative <: ArbitraryRange<UIntNative> {
         since: "22"
     ]
     public static func max(): UIntNative
-    
+
     /**
      * @description Creates a generator for `UIntNative` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<UIntNative>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: UIntNative, max: UIntNative): Generator<UIntNative>
 }
@@ -742,7 +762,7 @@ extend Float64 <: ArbitraryRange<Float64> {
         since: "22"
     ]
     public static func min(): Float64
-    
+
     /**
      * @description Returns a large positive `Float64` value, used as a practical maximum for generation.
      * @returns A maximum `Float64` value.
@@ -751,16 +771,18 @@ extend Float64 <: ArbitraryRange<Float64> {
         since: "22"
     ]
     public static func max(): Float64
-    
+
     /**
      * @description Creates a generator for `Float64` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<Float64>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: Float64, max: Float64): Generator<Float64>
 }
@@ -774,7 +796,7 @@ extend Float32 <: ArbitraryRange<Float32> {
         since: "22"
     ]
     public static func min(): Float32
-    
+
     /**
      * @description Returns a large positive `Float32` value, used as a practical maximum for generation.
      * @returns A maximum `Float32` value.
@@ -783,16 +805,18 @@ extend Float32 <: ArbitraryRange<Float32> {
         since: "22"
     ]
     public static func max(): Float32
-    
+
     /**
      * @description Creates a generator for `Float32` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<Float32>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: Float32, max: Float32): Generator<Float32>
 }
@@ -806,7 +830,7 @@ extend Float16 <: ArbitraryRange<Float16> {
         since: "22"
     ]
     public static func min(): Float16
-    
+
     /**
      * @description Returns a large positive `Float16` value, used as a practical maximum for generation.
      * @returns A maximum `Float16` value.
@@ -815,16 +839,18 @@ extend Float16 <: ArbitraryRange<Float16> {
         since: "22"
     ]
     public static func max(): Float16
-    
+
     /**
      * @description Creates a generator for `Float16` values within the given inclusive range.
      * @param random The source of randomness.
      * @param min The minimum value.
      * @param max The maximum value.
      * @returns A `Generator<Float16>`.
+     * @throws IllegalArgumentException if either min or max is NaN, or if max is less than min forming an empty interval
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func arbitraryRange(random: RandomSource, min: Float16, max: Float16): Generator<Float16>
 }
@@ -873,7 +899,7 @@ public class Generators {
         since: "22"
     ]
     public static func generate<T>(l: T, r: T, body: (T, T) -> T): Generator<T>
-    
+
     /**
      * @description Creates a generator that always returns the same single value.
      * @param value The value to be returned by the generator.
@@ -883,7 +909,7 @@ public class Generators {
         since: "22"
     ]
     public static func single<T>(value: T): Generator<T>
-    
+
     /**
      * @description Creates a generator that produces values by repeatedly calling a factory function.
      * @param body A function that produces a value of type `T`.
@@ -893,7 +919,7 @@ public class Generators {
         since: "22"
     ]
     public static func generate<T>(body: () -> T): Generator<T>
-    
+
     /**
      * @description Creates a generator that randomly picks elements from a given array.
      * @param random The source of randomness.
@@ -904,7 +930,7 @@ public class Generators {
         since: "22"
     ]
     public static func iterable<T>(random: RandomSource, collection: Array<T>): Generator<T>
-    
+
     /**
      * @description Creates a generator that selects from a collection of other generators based on assigned weights.
      * @param random The source of randomness.
@@ -915,7 +941,7 @@ public class Generators {
         since: "22"
     ]
     public static func weighted<T>(random: RandomSource, variants: Array<(UInt64, Generator<T>)>): Generator<T>
-    
+
     /**
      * @description Creates a generator that randomly picks one of the provided generators to delegate to, with equal probability.
      * @param random The source of randomness.
@@ -926,7 +952,7 @@ public class Generators {
         since: "22"
     ]
     public static func pick<T>(random: RandomSource, variants: Array<Generator<T>>): Generator<T>
-    
+
     /**
      * @description Creates a generator for a type `T` by looking up its `Arbitrary` implementation.
      * @param random The source of randomness.
@@ -936,7 +962,7 @@ public class Generators {
         since: "22"
     ]
     public static func lookup<T>(random: RandomSource): Generator<T> where T <: Arbitrary<T>
-    
+
     /**
      * @description Creates a generator by generating a value of type `T` and then applying a mapping function to it.
      * @param random The source of randomness.
@@ -947,7 +973,7 @@ public class Generators {
         since: "22"
     ]
     public static func mapped<T, R>(random: RandomSource, body: (T) -> R): Generator<R> where T <: Arbitrary<T>
-    
+
     /**
      * @description Creates a generator by generating two values (`T1`, `T2`) and applying a mapping function to them.
      * @param random The source of randomness.
@@ -959,7 +985,7 @@ public class Generators {
     ]
     public static func mapped<T1, T2, R>(random: RandomSource, body: (T1, T2) -> R): Generator<R> where T1 <: Arbitrary<T1>,
         T2 <: Arbitrary<T2>
-    
+
     /**
      * @description Creates a generator by generating three values (`T1`, `T2`, `T3`) and applying a mapping function to them.
      * @param random The source of randomness.
@@ -971,7 +997,7 @@ public class Generators {
     ]
     public static func mapped<T1, T2, T3, R>(random: RandomSource, body: (T1, T2, T3) -> R): Generator<R> where T1 <: Arbitrary<T1>,
         T2 <: Arbitrary<T2>, T3 <: Arbitrary<T3>
-    
+
     /**
      * @description Creates a generator by generating four values (`T1`, `T2`, `T3`, `T4`) and applying a mapping function to them.
      * @param random The source of randomness.
@@ -1001,7 +1027,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public static func of(iterable: Iterable<T>)
-    
+
     /**
      * @description Creates a `LazySeq` from an `Array`.
      * @param array The array to convert.
@@ -1011,7 +1037,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public static func of(array: Array<T>)
-    
+
     /**
      * @description Creates a `LazySeq` containing a single element.
      * @param element The single element in the sequence.
@@ -1020,7 +1046,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public init(element: T)
-    
+
     /**
      * @description Creates an empty `LazySeq`.
      */
@@ -1028,7 +1054,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Returns an iterator for this lazy sequence.
      * @returns An `Iterator<T>`.
@@ -1037,7 +1063,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description Concatenates another `LazySeq` to the end of this one.
      * @param other The `LazySeq` to append.
@@ -1047,7 +1073,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public func concat(other: LazySeq<T>): LazySeq<T>
-    
+
     /**
      * @description Adds an element to the beginning of the sequence.
      * @param element The element to prepend.
@@ -1057,7 +1083,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public func prepend(element: T): LazySeq<T>
-    
+
     /**
      * @description Adds an element to the end of the sequence.
      * @param element The element to append.
@@ -1067,7 +1093,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public func append(element: T): LazySeq<T>
-    
+
     /**
      * @description Interleaves the elements of this sequence with another.
      * @param other The `LazySeq` to mix with.
@@ -1077,7 +1103,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public func mixWith(other: LazySeq<T>): LazySeq<T>
-    
+
     /**
      * @description Interleaves the elements of two lazy sequences.
      * @param l1 The first sequence.
@@ -1088,7 +1114,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public static func mix(l1: LazySeq<T>, l2: LazySeq<T>)
-    
+
     /**
      * @description Interleaves the elements of three lazy sequences.
      * @param l1 The first sequence.
@@ -1100,7 +1126,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public static func mix(l1: LazySeq<T>, l2: LazySeq<T>, l3: LazySeq<T>)
-    
+
     /**
      * @description Interleaves the elements of four lazy sequences.
      * @param l1 The first sequence.
@@ -1113,7 +1139,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public static func mix(l1: LazySeq<T>, l2: LazySeq<T>, l3: LazySeq<T>, l4: LazySeq<T>)
-    
+
     /**
      * @description Interleaves the elements of five lazy sequences.
      * @param l1 The first sequence.
@@ -1127,7 +1153,7 @@ public class LazySeq<T> <: Iterable<T> {
         since: "22"
     ]
     public static func mix(l1: LazySeq<T>, l2: LazySeq<T>, l3: LazySeq<T>, l4: LazySeq<T>, l5: LazySeq<T>)
-    
+
     /**
      * @description Creates a new `LazySeq` by applying a function to each element of this sequence.
      * @param body The function to apply to each element.
@@ -1139,125 +1165,6 @@ public class LazySeq<T> <: Iterable<T> {
     public func map<U>(body: (T) -> U): LazySeq<U>
 }
 
-
-extend Random {
-    /**
-     * @description Randomly picks an element from an array.
-     * @param choices The array of elements to choose from.
-     * @returns A randomly selected element of type `T`.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func pick<T>(choices: Array<T>): T
-    
-    /**
-     * @description Randomly picks an element from a weighted table.
-     * @param choices The `WeightTable` containing elements and their weights.
-     * @returns A randomly selected element of type `T`.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func pickWeighted<T>(choices: WeightTable<T>): T
-}
-
-extend Int16 <: FromFloat64<Int16> {
-    /**
-     * @description Converts a `Float64` to an `Int16`, truncating the fractional part.
-     * @param f The `Float64` value.
-     * @returns The converted `Int16` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f: Float64): Int16
-}
-
-extend Int32 <: FromFloat64<Int32> {
-    /**
-     * @description Converts a `Float64` to an `Int32`, truncating the fractional part.
-     * @param f The `Float64` value.
-     * @returns The converted `Int32` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f: Float64): Int32
-}
-
-extend Int64 <: FromFloat64<Int64> {
-    /**
-     * @description Converts a `Float64` to an `Int64`, truncating the fractional part.
-     * @param f The `Float64` value.
-     * @returns The converted `Int64` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f: Float64): Int64
-}
-
-extend IntNative <: FromFloat64<IntNative> {
-    /**
-     * @description Converts a `Float64` to an `IntNative`, truncating the fractional part.
-     * @param f The `Float64` value.
-     * @returns The converted `IntNative` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f: Float64): IntNative
-}
-
-extend UInt16 <: FromFloat64<UInt16> {
-    /**
-     * @description Converts a `Float64` to a `UInt16`, truncating the fractional part.
-     * @param f_ The `Float64` value.
-     * @returns The converted `UInt16` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f_: Float64): UInt16
-}
-
-extend UInt32 <: FromFloat64<UInt32> {
-    /**
-     * @description Converts a `Float64` to a `UInt32`, truncating the fractional part.
-     * @param f_ The `Float64` value.
-     * @returns The converted `UInt32` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f_: Float64): UInt32
-}
-
-extend UInt64 <: FromFloat64<UInt64> {
-    /**
-     * @description Converts a `Float64` to a `UInt64`, truncating the fractional part.
-     * @param f_ The `Float64` value.
-     * @returns The converted `UInt64` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f_: Float64): UInt64
-}
-
-extend UIntNative <: FromFloat64<UIntNative> {
-    /**
-     * @description Converts a `Float64` to a `UIntNative`, truncating the fractional part.
-     * @param f_ The `Float64` value.
-     * @returns The converted `UIntNative` value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(f_: Float64): UIntNative
-}
-
 extend Random <: RandomSource {
     /**
      * @description Suggests a random `Bool` value.
@@ -1267,7 +1174,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestBool(): Bool
-    
+
     /**
      * @description Suggests a random `Int8` value.
      * @returns A random `Int8`.
@@ -1276,7 +1183,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt8(): Int8
-    
+
     /**
      * @description Suggests a random `Int16` value.
      * @returns A random `Int16`.
@@ -1285,7 +1192,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt16(): Int16
-    
+
     /**
      * @description Suggests a random `Int32` value.
      * @returns A random `Int32`.
@@ -1294,7 +1201,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt32(): Int32
-    
+
     /**
      * @description Suggests a random `Int64` value.
      * @returns A random `Int64`.
@@ -1303,7 +1210,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt64(): Int64
-    
+
     /**
      * @description Suggests a random `IntNative` value.
      * @returns A random `IntNative`.
@@ -1313,7 +1220,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestIntNative(): IntNative
-    
+
     /**
      * @description Suggests a random `UInt8` value.
      * @returns A random `UInt8`.
@@ -1322,7 +1229,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt8(): UInt8
-    
+
     /**
      * @description Suggests a random `UInt16` value.
      * @returns A random `UInt16`.
@@ -1331,7 +1238,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt16(): UInt16
-    
+
     /**
      * @description Suggests a random `UInt32` value.
      * @returns A random `UInt32`.
@@ -1340,7 +1247,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt32(): UInt32
-    
+
     /**
      * @description Suggests a random `UInt64` value.
      * @returns A random `UInt64`.
@@ -1349,7 +1256,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt64(): UInt64
-    
+
     /**
      * @description Suggests a random `UIntNative` value.
      * @returns A random `UIntNative`.
@@ -1359,7 +1266,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUIntNative(): UIntNative
-    
+
     /**
      * @description Suggests a random `Float16` value.
      * @returns A random `Float16`.
@@ -1368,7 +1275,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestFloat16(): Float16
-    
+
     /**
      * @description Suggests a random `Float32` value.
      * @returns A random `Float32`.
@@ -1377,7 +1284,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestFloat32(): Float32
-    
+
     /**
      * @description Suggests a random `Float64` value.
      * @returns A random `Float64`.
@@ -1386,7 +1293,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestFloat64(): Float64
-    
+
     /**
      * @description Suggests a random `Rune` value.
      * @returns A random `Rune`.
@@ -1395,7 +1302,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestRune(): Rune
-    
+
     /**
      * @description Generates a random `IntNative` value.
      * @returns A random `IntNative`.
@@ -1405,7 +1312,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func nextIntNative(): IntNative
-    
+
     /**
      * @description Generates a random `UIntNative` value.
      * @returns A random `UIntNative`.
@@ -1415,7 +1322,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func nextUIntNative(): UIntNative
-    
+
     /**
      * @description Suggests a random `Int64` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1426,7 +1333,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt64(l: Int64, r: Int64): Int64
-    
+
     /**
      * @description Suggests a random `UInt64` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1437,7 +1344,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt64(l: UInt64, r: UInt64): UInt64
-    
+
     /**
      * @description Suggests a random `Int32` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1448,7 +1355,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt32(l: Int32, r: Int32): Int32
-    
+
     /**
      * @description Suggests a random `UInt32` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1459,7 +1366,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt32(l: UInt32, r: UInt32): UInt32
-    
+
     /**
      * @description Suggests a random `Int16` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1470,7 +1377,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt16(l: Int16, r: Int16): Int16
-    
+
     /**
      * @description Suggests a random `UInt16` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1481,7 +1388,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt16(l: UInt16, r: UInt16): UInt16
-    
+
     /**
      * @description Suggests a random `Int8` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1492,7 +1399,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestInt8(l: Int8, r: Int8): Int8
-    
+
     /**
      * @description Suggests a random `UInt8` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1503,7 +1410,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUInt8(l: UInt8, r: UInt8): UInt8
-    
+
     /**
      * @description Suggests a random `IntNative` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1514,7 +1421,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestIntNative(l: IntNative, r: IntNative): IntNative
-    
+
     /**
      * @description Suggests a random `UIntNative` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1525,7 +1432,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestUIntNative(l: UIntNative, r: UIntNative): UIntNative
-    
+
     /**
      * @description Suggests a random `Float64` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1536,7 +1443,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestFloat64(l: Float64, r: Float64): Float64
-    
+
     /**
      * @description Suggests a random `Float32` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1547,7 +1454,7 @@ extend Random <: RandomSource {
         since: "22"
     ]
     public func suggestFloat32(l: Float32, r: Float32): Float32
-    
+
     /**
      * @description Suggests a random `Float16` value within a given range.
      * @param l The lower bound (inclusive).
@@ -1575,7 +1482,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextBool(): Bool
-    
+
     /**
      * @description Generates a random `Int8` value over its full range.
      * @returns A random `Int8`.
@@ -1585,7 +1492,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextInt8(): Int8
-    
+
     /**
      * @description Generates a random `Int16` value over its full range.
      * @returns A random `Int16`.
@@ -1595,7 +1502,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextInt16(): Int16
-    
+
     /**
      * @description Generates a random `Int32` value over its full range.
      * @returns A random `Int32`.
@@ -1605,7 +1512,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextInt32(): Int32
-    
+
     /**
      * @description Generates a random `Int64` value over its full range.
      * @returns A random `Int64`.
@@ -1615,7 +1522,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextInt64(): Int64
-    
+
     /**
      * @description Generates a random `Int8` value in `[0, max)`.
      * @param max The exclusive upper bound.
@@ -1627,7 +1534,7 @@ public interface RandomSource {
         throwexception: true
     ]
     func nextInt8(max: Int8): Int8
-    
+
     /**
      * @description Generates a random `Int16` value in `[0, max)`.
      * @param max The exclusive upper bound.
@@ -1639,7 +1546,7 @@ public interface RandomSource {
         throwexception: true
     ]
     func nextInt16(max: Int16): Int16
-    
+
     /**
      * @description Generates a random `Int32` value in `[0, max)`.
      * @param max The exclusive upper bound.
@@ -1651,7 +1558,7 @@ public interface RandomSource {
         throwexception: true
     ]
     func nextInt32(max: Int32): Int32
-    
+
     /**
      * @description Generates a random `Int64` value in `[0, max)`.
      * @param max The exclusive upper bound.
@@ -1663,7 +1570,7 @@ public interface RandomSource {
         throwexception: true
     ]
     func nextInt64(max: Int64): Int64
-    
+
     /**
      * @description Generates a random `UInt8` value over its full range.
      * @returns A random `UInt8`.
@@ -1672,7 +1579,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextUInt8(): UInt8
-    
+
     /**
      * @description Generates a random `UInt16` value over its full range.
      * @returns A random `UInt16`.
@@ -1681,7 +1588,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextUInt16(): UInt16
-    
+
     /**
      * @description Generates a random `UInt32` value over its full range.
      * @returns A random `UInt32`.
@@ -1690,7 +1597,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextUInt32(): UInt32
-    
+
     /**
      * @description Generates a random `UInt64` value over its full range.
      * @returns A random `UInt64`.
@@ -1699,19 +1606,17 @@ public interface RandomSource {
         since: "22"
     ]
     func nextUInt64(): UInt64
-    
+
     /**
      * @description Generates a random `UInt8` value in `[0, max)`.
      * @param max The exclusive upper bound.
      * @returns A random `UInt8`.
-     * @throws IllegalArgumentException if `max` is not positive.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     func nextUInt8(max: UInt8): UInt8
-    
+
     /**
      * @description Generates a random `UInt16` value in `[0, max)`.
      * @param max The exclusive upper bound.
@@ -1723,7 +1628,7 @@ public interface RandomSource {
         throwexception: true
     ]
     func nextUInt16(max: UInt16): UInt16
-    
+
     /**
      * @description Generates a random `UInt32` value in `[0, max)`.
      * @param max The exclusive upper bound.
@@ -1735,7 +1640,7 @@ public interface RandomSource {
         throwexception: true
     ]
     func nextUInt32(max: UInt32): UInt32
-    
+
     /**
      * @description Generates a random `UInt64` value in `[0, max)`.
      * @param max The exclusive upper bound.
@@ -1747,7 +1652,7 @@ public interface RandomSource {
         throwexception: true
     ]
     func nextUInt64(max: UInt64): UInt64
-    
+
     /**
      * @description Generates a random `Float16` value in `[0.0, 1.0)`.
      * @returns A random `Float16`.
@@ -1756,7 +1661,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextFloat16(): Float16
-    
+
     /**
      * @description Generates a random `Float32` value in `[0.0, 1.0)`.
      * @returns A random `Float32`.
@@ -1765,7 +1670,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextFloat32(): Float32
-    
+
     /**
      * @description Generates a random `Float64` value in `[0.0, 1.0)`.
      * @returns A random `Float64`.
@@ -1774,7 +1679,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextFloat64(): Float64
-    
+
     /**
      * @description Generates a `Float64` value from a Gaussian (normal) distribution.
      * @param mean The mean of the distribution.
@@ -1785,7 +1690,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextGaussianFloat64(mean!: Float64, sigma!: Float64): Float64
-    
+
     /**
      * @description Generates a random `IntNative` value over its full range.
      * @returns A random `IntNative`.
@@ -1795,7 +1700,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextIntNative(): IntNative
-    
+
     /**
      * @description Generates a random `UIntNative` value over its full range.
      * @returns A random `UIntNative`.
@@ -1805,7 +1710,7 @@ public interface RandomSource {
         since: "22"
     ]
     func nextUIntNative(): UIntNative
-    
+
     /**
      * @description Suggests a random `UInt8` value, biased towards edge cases.
      * @returns A random `UInt8`.
@@ -1814,7 +1719,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt8(): UInt8
-    
+
     /**
      * @description Suggests a random `UInt16` value, biased towards edge cases.
      * @returns A random `UInt16`.
@@ -1823,7 +1728,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt16(): UInt16
-    
+
     /**
      * @description Suggests a random `UInt32` value, biased towards edge cases.
      * @returns A random `UInt32`.
@@ -1832,7 +1737,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt32(): UInt32
-    
+
     /**
      * @description Suggests a random `UInt64` value, biased towards edge cases.
      * @returns A random `UInt64`.
@@ -1841,7 +1746,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt64(): UInt64
-    
+
     /**
      * @description Suggests a random `UIntNative` value, biased towards edge cases.
      * @returns A random `UIntNative`.
@@ -1851,7 +1756,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUIntNative(): UIntNative
-    
+
     /**
      * @description Suggests a random `Int8` value, biased towards edge cases.
      * @returns A random `Int8`.
@@ -1860,7 +1765,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt8(): Int8
-    
+
     /**
      * @description Suggests a random `Int16` value, biased towards edge cases.
      * @returns A random `Int16`.
@@ -1869,7 +1774,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt16(): Int16
-    
+
     /**
      * @description Suggests a random `Int32` value, biased towards edge cases.
      * @returns A random `Int32`.
@@ -1878,7 +1783,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt32(): Int32
-    
+
     /**
      * @description Suggests a random `Int64` value, biased towards edge cases.
      * @returns A random `Int64`.
@@ -1887,7 +1792,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt64(): Int64
-    
+
     /**
      * @description Suggests a random `IntNative` value, biased towards edge cases.
      * @returns A random `IntNative`.
@@ -1897,7 +1802,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestIntNative(): IntNative
-    
+
     /**
      * @description Suggests a random `Float16` value, biased towards edge cases (0, 1, -1, NaN, infinities).
      * @returns A random `Float16`.
@@ -1906,7 +1811,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestFloat16(): Float16
-    
+
     /**
      * @description Suggests a random `Float32` value, biased towards edge cases (0, 1, -1, NaN, infinities).
      * @returns A random `Float32`.
@@ -1915,7 +1820,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestFloat32(): Float32
-    
+
     /**
      * @description Suggests a random `Float64` value, biased towards edge cases (0, 1, -1, NaN, infinities).
      * @returns A random `Float64`.
@@ -1924,7 +1829,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestFloat64(): Float64
-    
+
     /**
      * @description Suggests a random `Bool` value.
      * @returns A random `Bool`.
@@ -1933,7 +1838,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestBool(): Bool
-    
+
     /**
      * @description Suggests a random `Rune` value, biased towards ASCII and edge cases.
      * @returns A random `Rune`.
@@ -1942,7 +1847,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestRune(): Rune
-    
+
     /**
      * @description Suggests a random `Int64` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -1953,7 +1858,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt64(l: Int64, r: Int64): Int64
-    
+
     /**
      * @description Suggests a random `UInt64` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -1964,7 +1869,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt64(l: UInt64, r: UInt64): UInt64
-    
+
     /**
      * @description Suggests a random `Int32` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -1975,7 +1880,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt32(l: Int32, r: Int32): Int32
-    
+
     /**
      * @description Suggests a random `UInt32` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -1986,7 +1891,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt32(l: UInt32, r: UInt32): UInt32
-    
+
     /**
      * @description Suggests a random `Int16` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -1997,7 +1902,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt16(l: Int16, r: Int16): Int16
-    
+
     /**
      * @description Suggests a random `UInt16` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2008,7 +1913,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt16(l: UInt16, r: UInt16): UInt16
-    
+
     /**
      * @description Suggests a random `Int8` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2019,7 +1924,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestInt8(l: Int8, r: Int8): Int8
-    
+
     /**
      * @description Suggests a random `UInt8` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2030,7 +1935,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUInt8(l: UInt8, r: UInt8): UInt8
-    
+
     /**
      * @description Suggests a random `IntNative` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2041,7 +1946,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestIntNative(l: IntNative, r: IntNative): IntNative
-    
+
     /**
      * @description Suggests a random `UIntNative` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2052,7 +1957,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestUIntNative(l: UIntNative, r: UIntNative): UIntNative
-    
+
     /**
      * @description Suggests a random `Float64` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2063,7 +1968,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestFloat64(l: Float64, r: Float64): Float64
-    
+
     /**
      * @description Suggests a random `Float32` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2074,7 +1979,7 @@ public interface RandomSource {
         since: "22"
     ]
     func suggestFloat32(l: Float32, r: Float32): Float32
-    
+
     /**
      * @description Suggests a random `Float16` value within a given range, biased towards the bounds.
      * @param l The lower bound (inclusive).
@@ -2101,7 +2006,7 @@ public struct KeyRandom <: KeyFor<RandomSource> {
         since: "22"
     ]
     public static prop random: KeyRandom
-    
+
     /**
      * @description The name of the configuration key, "random".
      */
@@ -2121,12 +2026,14 @@ public class RandomDataProvider<T> <: DataProvider<T> where T <: Arbitrary<T> {
     /**
      * @description Creates a new `RandomDataProvider` with the given test configuration.
      * @param configuration The configuration for the property test.
+     * @throws IllegalArgumentException if the configuration does not contain instance of random
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public RandomDataProvider(private let configuration: Configuration)
-    
+
     /**
      * @description Provides an iterable sequence of randomly generated data.
      * @returns An `Iterable<T>` of random values.
@@ -2171,7 +2078,7 @@ public class RandomDataStrategy<T> <: DataStrategy<T> where T <: Arbitrary<T> {
         since: "22"
     ]
     public override func provider(configuration: Configuration): RandomDataProvider<T>
-    
+
     /**
      * @description Creates a data shrinker for this strategy.
      * @param _ The test configuration (unused).
@@ -2181,7 +2088,7 @@ public class RandomDataStrategy<T> <: DataStrategy<T> where T <: Arbitrary<T> {
         since: "22"
     ]
     public override func shrinker(_: Configuration): RandomDataShrinker<T>
-    
+
     /**
      * @description Indicates that this strategy can generate an infinite stream of values.
      */
@@ -2212,12 +2119,14 @@ public class RandomDataProviderRange<T> <: DataProvider<T> where T <: ArbitraryR
      * @param configuration The test configuration.
      * @param min The minimum value of the range.
      * @param max The maximum value of the range.
+     * @throws IllegalArgumentException Thrown when no random number generator is provided in the configuration
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public RandomDataProviderRange(private let configuration: Configuration, private let min: T, private let max: T)
-    
+
     /**
      * @description Provides an iterable sequence of randomly generated data within the specified range.
      * @returns An `Iterable<T>` of random values.
@@ -2262,7 +2171,7 @@ public class RandomDataStrategyRange<T> <: DataStrategy<T> where T <: ArbitraryR
         since: "22"
     ]
     public override func provider(configuration: Configuration): RandomDataProviderRange<T>
-    
+
     /**
      * @description Creates a data shrinker for this strategy.
      * @param _ The test configuration (unused).
@@ -2272,7 +2181,7 @@ public class RandomDataStrategyRange<T> <: DataStrategy<T> where T <: ArbitraryR
         since: "22"
     ]
     public override func shrinker(_: Configuration): RandomDataShrinkerRange<T>
-    
+
     /**
      * @description Indicates that this strategy can generate an infinite stream of values.
      */
@@ -2469,17 +2378,6 @@ extend Rune <: Shrink<Rune> {
     public func shrink(): Iterable<Rune>
 }
 
-extend<T> Array<T> <: CanShrinkElements<Array<T>> where T <: Shrink<T> {
-    /**
-     * @description Shrinks an array by attempting to shrink each of its elements individually.
-     * @returns A `LazySeq` of arrays, each with one element shrunk.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func shrinkUsingElements(): LazySeq<Array<T>>
-}
-
 extend<T> Array<T> <: Shrink<Array<T>> {
     /**
      * @description Shrinks an array by reducing its length and by shrinking its individual elements.
@@ -2489,17 +2387,6 @@ extend<T> Array<T> <: Shrink<Array<T>> {
         since: "22"
     ]
     public func shrink(): Iterable<Array<T>>
-}
-
-extend<T> ArrayList<T> <: CanShrinkElements<ArrayList<T>> where T <: Shrink<T> {
-    /**
-     * @description Shrinks an `ArrayList` by attempting to shrink each of its elements individually.
-     * @returns A `LazySeq` of array lists, each with one element shrunk.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func shrinkUsingElements(): LazySeq<ArrayList<T>>
 }
 
 extend<T> ArrayList<T> <: Shrink<ArrayList<T>> {
@@ -2513,17 +2400,6 @@ extend<T> ArrayList<T> <: Shrink<ArrayList<T>> {
     public func shrink(): Iterable<ArrayList<T>>
 }
 
-extend<T> HashSet<T> <: CanShrinkElements<HashSet<T>> where T <: Shrink<T> {
-    /**
-     * @description Shrinks a `HashSet` by attempting to shrink each of its elements individually.
-     * @returns A `LazySeq` of hash sets, each with one element shrunk.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func shrinkUsingElements(): LazySeq<HashSet<T>>
-}
-
 extend<T> HashSet<T> <: Shrink<HashSet<T>> {
     /**
      * @description Shrinks a `HashSet` by reducing its size and by shrinking its individual elements.
@@ -2533,28 +2409,6 @@ extend<T> HashSet<T> <: Shrink<HashSet<T>> {
         since: "22"
     ]
     public func shrink(): Iterable<HashSet<T>>
-}
-
-extend<K, V> ShrinkKeyWrapper<K, V> <: CanShrinkElements<HashMap<K, V>> where K <: Shrink<K> {
-    /**
-     * @description Shrinks a `HashMap` by attempting to shrink each of its keys individually.
-     * @returns A `LazySeq` of hash maps, each with one key shrunk.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func shrinkUsingElements(): LazySeq<HashMap<K, V>>
-}
-
-extend<K, V> HashMap<K, V> <: CanShrinkElements<HashMap<K, V>> where V <: Shrink<V> {
-    /**
-     * @description Shrinks a `HashMap` by attempting to shrink each of its values individually.
-     * @returns A `LazySeq` of hash maps, each with one value shrunk.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func shrinkUsingElements(): LazySeq<HashMap<K, V>>
 }
 
 extend<K, V> HashMap<K, V> <: Shrink<HashMap<K, V>> {
@@ -2577,17 +2431,6 @@ extend String <: Shrink<String> {
         since: "22"
     ]
     public func shrink(): Iterable<String>
-}
-
-extend<T> Option<T> <: CanShrinkElements<Option<T>> where T <: Shrink<T> {
-    /**
-     * @description If the option is `Some(value)`, shrinks the inner value. If `None`, returns an empty sequence.
-     * @returns A `LazySeq` of `Option<T>` with the inner value shrunk.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func shrinkUsingElements(): LazySeq<Option<T>>
 }
 
 extend<T> Option<T> <: Shrink<Option<T>> {
@@ -2682,7 +2525,7 @@ public class ShrinkHelpers {
         t0: Iterable<T0>,
         t1: Iterable<T1>
     ): Iterable<(T0, T1)>
-    
+
     /**
      * @description Shrinks a 3-element tuple by combining the shrink results of its components.
      * @param tuple The original tuple.
@@ -2700,7 +2543,7 @@ public class ShrinkHelpers {
         t1: Iterable<T1>,
         t2: Iterable<T2>
     ): Iterable<(T0, T1, T2)>
-    
+
     /**
      * @description Shrinks a 4-element tuple by combining the shrink results of its components.
      * @param tuple The original tuple.
@@ -2720,7 +2563,7 @@ public class ShrinkHelpers {
         t2: Iterable<T2>,
         t3: Iterable<T3>
     ): Iterable<(T0, T1, T2, T3)>
-    
+
     /**
      * @description Shrinks a 5-element tuple by combining the shrink results of its components.
      * @param tuple The original tuple.
@@ -2742,7 +2585,7 @@ public class ShrinkHelpers {
         t3: Iterable<T3>,
         t4: Iterable<T4>
     ): Iterable<(T0, T1, T2, T3, T4)>
-    
+
     /**
      * @description Interleaves multiple iterables into a single iterable.
      * @param iterables An array of iterables to mix.
@@ -2769,7 +2612,7 @@ public struct Function0Wrapper<R> {
         since: "22"
     ]
     public Function0Wrapper(public let function: () -> R)
-    
+
     /**
      * @description Invokes the wrapped function.
      * @returns The result of calling the wrapped function.
@@ -2795,7 +2638,7 @@ public struct TupleWrapper2<T0, T1> {
         since: "22"
     ]
     public TupleWrapper2(public let tuple: (T0, T1))
-    
+
     /**
      * @description Applies a function to the elements of the wrapped tuple.
      * @param f The function to apply.
@@ -2822,7 +2665,7 @@ public struct TupleWrapper3<T0, T1, T2> {
         since: "22"
     ]
     public TupleWrapper3(public let tuple: (T0, T1, T2))
-    
+
     /**
      * @description Applies a function to the elements of the wrapped tuple.
      * @param f The function to apply.
@@ -2849,7 +2692,7 @@ public struct TupleWrapper4<T0, T1, T2, T3> {
         since: "22"
     ]
     public TupleWrapper4(public let tuple: (T0, T1, T2, T3))
-    
+
     /**
      * @description Applies a function to the elements of the wrapped tuple.
      * @param f The function to apply.
@@ -2876,7 +2719,7 @@ public struct TupleWrapper5<T0, T1, T2, T3, T4> {
         since: "22"
     ]
     public TupleWrapper5(public let tuple: (T0, T1, T2, T3, T4))
-    
+
     /**
      * @description Applies a function to the elements of the wrapped tuple.
      * @param f The function to apply.
@@ -2946,7 +2789,7 @@ extend<T0, T1> TupleWrapper2<T0, T1> <: Equatable<TupleWrapper2<T0, T1>> where T
         since: "22"
     ]
     public operator func ==(other: TupleWrapper2<T0, T1>)
-    
+
     /**
      * @description Checks if this tuple wrapper is not equal to another.
      * @param other The other tuple wrapper to compare with.
@@ -2969,7 +2812,7 @@ extend<T0, T1, T2> TupleWrapper3<T0, T1, T2> <: Equatable<TupleWrapper3<T0, T1, 
         since: "22"
     ]
     public operator func ==(other: TupleWrapper3<T0, T1, T2>)
-    
+
     /**
      * @description Checks if this tuple wrapper is not equal to another.
      * @param other The other tuple wrapper to compare with.
@@ -2992,7 +2835,7 @@ extend<T0, T1, T2, T3> TupleWrapper4<T0, T1, T2, T3> <: Equatable<TupleWrapper4<
         since: "22"
     ]
     public operator func ==(other: TupleWrapper4<T0, T1, T2, T3>)
-    
+
     /**
      * @description Checks if this tuple wrapper is not equal to another.
      * @param other The other tuple wrapper to compare with.
@@ -3015,7 +2858,7 @@ extend<T0, T1, T2, T3, T4> TupleWrapper5<T0, T1, T2, T3, T4> <: Equatable<TupleW
         since: "22"
     ]
     public operator func ==(other: TupleWrapper5<T0, T1, T2, T3, T4>)
-    
+
     /**
      * @description Checks if this tuple wrapper is not equal to another.
      * @param other The other tuple wrapper to compare with.

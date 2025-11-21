@@ -59,7 +59,7 @@ public enum RoundingMode <: Equatable<RoundingMode> & ToString {
         since: "22"
     ]
     public operator func ==(other: RoundingMode): Bool
-    
+
     /**
      * @description Returns a string representation of the rounding mode.
      * @returns The name of the rounding mode as a string.
@@ -82,7 +82,7 @@ extend Float64 <: MathExtension<Float64> {
         since: "22"
     ]
     public static func GetPI(): Float64
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The double-precision floating-point value of E.
@@ -105,7 +105,7 @@ extend Float32 <: MathExtension<Float32> {
         since: "22"
     ]
     public static func GetPI(): Float32
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The single-precision floating-point value of E.
@@ -128,7 +128,7 @@ extend Float16 <: MathExtension<Float16> {
         since: "22"
     ]
     public static func GetPI(): Float16
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The half-precision floating-point value of E.
@@ -148,7 +148,7 @@ extend Int8 <: MaxMinValue<Int8> {
         since: "22"
     ]
     public static func getMax(): Int8
-    
+
     /**
      * @description Gets the minimum value for an 8-bit signed integer.
      * @returns The minimum `Int8` value.
@@ -168,7 +168,7 @@ extend Int16 <: MaxMinValue<Int16> {
         since: "22"
     ]
     public static func getMax(): Int16
-    
+
     /**
      * @description Gets the minimum value for a 16-bit signed integer.
      * @returns The minimum `Int16` value.
@@ -188,7 +188,7 @@ extend Int32 <: MaxMinValue<Int32> {
         since: "22"
     ]
     public static func getMax(): Int32
-    
+
     /**
      * @description Gets the minimum value for a 32-bit signed integer.
      * @returns The minimum `Int32` value.
@@ -208,7 +208,7 @@ extend Int64 <: MaxMinValue<Int64> {
         since: "22"
     ]
     public static func getMax(): Int64
-    
+
     /**
      * @description Gets the minimum value for a 64-bit signed integer.
      * @returns The minimum `Int64` value.
@@ -228,7 +228,7 @@ extend IntNative <: MaxMinValue<IntNative> {
         since: "22"
     ]
     public static func getMax(): IntNative
-    
+
     /**
      * @description Gets the minimum value for a native-sized signed integer.
      * @returns The minimum `IntNative` value.
@@ -248,7 +248,7 @@ extend UInt8 <: MaxMinValue<UInt8> {
         since: "22"
     ]
     public static func getMax(): UInt8
-    
+
     /**
      * @description Gets the minimum value for an 8-bit unsigned integer.
      * @returns The minimum `UInt8` value.
@@ -268,7 +268,7 @@ extend UInt16 <: MaxMinValue<UInt16> {
         since: "22"
     ]
     public static func getMax(): UInt16
-    
+
     /**
      * @description Gets the minimum value for a 16-bit unsigned integer.
      * @returns The minimum `UInt16` value.
@@ -288,7 +288,7 @@ extend UInt32 <: MaxMinValue<UInt32> {
         since: "22"
     ]
     public static func getMax(): UInt32
-    
+
     /**
      * @description Gets the minimum value for a 32-bit unsigned integer.
      * @returns The minimum `UInt32` value.
@@ -308,7 +308,7 @@ extend UInt64 <: MaxMinValue<UInt64> {
         since: "22"
     ]
     public static func getMax(): UInt64
-    
+
     /**
      * @description Gets the minimum value for a 64-bit unsigned integer.
      * @returns The minimum `UInt64` value.
@@ -328,7 +328,7 @@ extend UIntNative <: MaxMinValue<UIntNative> {
         since: "22"
     ]
     public static func getMax(): UIntNative
-    
+
     /**
      * @description Gets the minimum value for a native-sized unsigned integer.
      * @returns The minimum `UIntNative` value.
@@ -348,7 +348,7 @@ extend Float16 <: MaxMinValue<Float16> {
         since: "22"
     ]
     public static func getMax(): Float16
-    
+
     /**
      * @description Gets the minimum positive normal value for a half-precision float.
      * @returns The minimum `Float16` value.
@@ -368,7 +368,7 @@ extend Float32 <: MaxMinValue<Float32> {
         since: "22"
     ]
     public static func getMax(): Float32
-    
+
     /**
      * @description Gets the minimum positive normal value for a single-precision float.
      * @returns The minimum `Float32` value.
@@ -388,7 +388,7 @@ extend Float64 <: MaxMinValue<Float64> {
         since: "22"
     ]
     public static func getMax(): Float64
-    
+
     /**
      * @description Gets the minimum positive normal value for a double-precision float.
      * @returns The minimum `Float64` value.
@@ -531,7 +531,7 @@ extend Float16 <: FloatingPoint<Float16> {
         since: "22"
     ]
     public static func getPI(): Float16
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The half-precision floating-point value of E.
@@ -540,7 +540,7 @@ extend Float16 <: FloatingPoint<Float16> {
         since: "22"
     ]
     public static func getE(): Float16
-    
+
     /**
      * @description Gets the Not-a-Number (NaN) value.
      * @returns The `Float16` NaN value.
@@ -549,7 +549,7 @@ extend Float16 <: FloatingPoint<Float16> {
         since: "22"
     ]
     public static func getNaN(): Float16
-    
+
     /**
      * @description Gets the positive infinity value.
      * @returns The `Float16` positive infinity value.
@@ -558,7 +558,7 @@ extend Float16 <: FloatingPoint<Float16> {
         since: "22"
     ]
     public static func getInf(): Float16
-    
+
     /**
      * @description Gets the smallest positive non-zero denormal value.
      * @returns The smallest denormal `Float16` value.
@@ -567,7 +567,7 @@ extend Float16 <: FloatingPoint<Float16> {
         since: "22"
     ]
     public static func getMinDenormal(): Float16
-    
+
     /**
      * @description Gets the smallest positive normal value.
      * @returns The smallest normal `Float16` value.
@@ -587,7 +587,7 @@ extend Float32 <: FloatingPoint<Float32> {
         since: "22"
     ]
     public static func getPI(): Float32
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The single-precision floating-point value of E.
@@ -596,7 +596,7 @@ extend Float32 <: FloatingPoint<Float32> {
         since: "22"
     ]
     public static func getE(): Float32
-    
+
     /**
      * @description Gets the Not-a-Number (NaN) value.
      * @returns The `Float32` NaN value.
@@ -605,7 +605,7 @@ extend Float32 <: FloatingPoint<Float32> {
         since: "22"
     ]
     public static func getNaN(): Float32
-    
+
     /**
      * @description Gets the positive infinity value.
      * @returns The `Float32` positive infinity value.
@@ -614,7 +614,7 @@ extend Float32 <: FloatingPoint<Float32> {
         since: "22"
     ]
     public static func getInf(): Float32
-    
+
     /**
      * @description Gets the smallest positive non-zero denormal value.
      * @returns The smallest denormal `Float32` value.
@@ -623,7 +623,7 @@ extend Float32 <: FloatingPoint<Float32> {
         since: "22"
     ]
     public static func getMinDenormal(): Float32
-    
+
     /**
      * @description Gets the smallest positive normal value.
      * @returns The smallest normal `Float32` value.
@@ -643,7 +643,7 @@ extend Float64 <: FloatingPoint<Float64> {
         since: "22"
     ]
     public static func getPI(): Float64
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The double-precision floating-point value of E.
@@ -652,7 +652,7 @@ extend Float64 <: FloatingPoint<Float64> {
         since: "22"
     ]
     public static func getE(): Float64
-    
+
     /**
      * @description Gets the Not-a-Number (NaN) value.
      * @returns The `Float64` NaN value.
@@ -661,7 +661,7 @@ extend Float64 <: FloatingPoint<Float64> {
         since: "22"
     ]
     public static func getNaN(): Float64
-    
+
     /**
      * @description Gets the positive infinity value.
      * @returns The `Float64` positive infinity value.
@@ -670,7 +670,7 @@ extend Float64 <: FloatingPoint<Float64> {
         since: "22"
     ]
     public static func getInf(): Float64
-    
+
     /**
      * @description Gets the smallest positive non-zero denormal value.
      * @returns The smallest denormal `Float64` value.
@@ -679,7 +679,7 @@ extend Float64 <: FloatingPoint<Float64> {
         since: "22"
     ]
     public static func getMinDenormal(): Float64
-    
+
     /**
      * @description Gets the smallest positive normal value.
      * @returns The smallest normal `Float64` value.
@@ -1149,8 +1149,7 @@ public func atanh(x: Float16): Float16
  * @returns The number of leading zero bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: UInt64): Int64
 
@@ -1160,8 +1159,7 @@ public func leadingZeros(x: UInt64): Int64
  * @returns The number of leading zero bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: UInt32): Int64
 
@@ -1171,8 +1169,7 @@ public func leadingZeros(x: UInt32): Int64
  * @returns The number of leading zero bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: UInt16): Int64
 
@@ -1182,8 +1179,7 @@ public func leadingZeros(x: UInt16): Int64
  * @returns The number of leading zero bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: UInt8): Int64
 
@@ -1194,8 +1190,7 @@ public func leadingZeros(x: UInt8): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: Int8): Int64
 
@@ -1206,8 +1201,7 @@ public func leadingZeros(x: Int8): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: Int16): Int64
 
@@ -1218,8 +1212,7 @@ public func leadingZeros(x: Int16): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: Int32): Int64
 
@@ -1230,8 +1223,7 @@ public func leadingZeros(x: Int32): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func leadingZeros(x: Int64): Int64
 
@@ -1325,8 +1317,7 @@ public func trailingZeros(x: Int64): Int64
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: UInt64): Int64
 
@@ -1336,8 +1327,7 @@ public func countOnes(x: UInt64): Int64
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: UInt32): Int64
 
@@ -1347,8 +1337,7 @@ public func countOnes(x: UInt32): Int64
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: UInt16): Int64
 
@@ -1358,8 +1347,7 @@ public func countOnes(x: UInt16): Int64
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: UInt8): Int64
 
@@ -1370,8 +1358,7 @@ public func countOnes(x: UInt8): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: Int8): Int64
 
@@ -1382,8 +1369,7 @@ public func countOnes(x: Int8): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: Int16): Int64
 
@@ -1394,8 +1380,7 @@ public func countOnes(x: Int16): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: Int32): Int64
 
@@ -1406,8 +1391,7 @@ public func countOnes(x: Int32): Int64
  */
 @OverflowWrapping
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOnes(x: Int64): Int64
 
@@ -1417,8 +1401,7 @@ public func countOnes(x: Int64): Int64
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: Int8): Int8
 
@@ -1428,8 +1411,7 @@ public func countOne(x: Int8): Int8
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: Int16): Int8
 
@@ -1439,8 +1421,7 @@ public func countOne(x: Int16): Int8
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: Int32): Int8
 
@@ -1450,8 +1431,7 @@ public func countOne(x: Int32): Int8
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: Int64): Int8
 
@@ -1461,8 +1441,7 @@ public func countOne(x: Int64): Int8
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: UInt8): Int8
 
@@ -1472,8 +1451,7 @@ public func countOne(x: UInt8): Int8
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: UInt16): Int8
 
@@ -1483,8 +1461,7 @@ public func countOne(x: UInt16): Int8
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: UInt32): Int8
 
@@ -1494,8 +1471,7 @@ public func countOne(x: UInt32): Int8
  * @returns The number of set bits.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func countOne(x: UInt64): Int8
 
@@ -1505,8 +1481,7 @@ public func countOne(x: UInt64): Int8
  * @returns The value with the bit order reversed.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func reverse(x: UInt64): UInt64
 
@@ -1516,8 +1491,7 @@ public func reverse(x: UInt64): UInt64
  * @returns The value with the bit order reversed.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func reverse(x: UInt32): UInt32
 
@@ -1527,8 +1501,7 @@ public func reverse(x: UInt32): UInt32
  * @returns The value with the bit order reversed.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func reverse(x: UInt16): UInt16
 
@@ -1538,8 +1511,7 @@ public func reverse(x: UInt16): UInt16
  * @returns The value with the bit order reversed.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func reverse(x: UInt8): UInt8
 
@@ -1549,8 +1521,7 @@ public func reverse(x: UInt8): UInt8
  * @returns An `Option` containing the absolute value, or `None` if the operation would overflow (i.e., `abs(Int8.MIN)`).
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func checkedAbs(x: Int8): Option<Int8>
 
@@ -1560,8 +1531,7 @@ public func checkedAbs(x: Int8): Option<Int8>
  * @returns An `Option` containing the absolute value, or `None` if the operation would overflow (i.e., `abs(Int16.MIN)`).
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func checkedAbs(x: Int16): Option<Int16>
 
@@ -1571,8 +1541,7 @@ public func checkedAbs(x: Int16): Option<Int16>
  * @returns An `Option` containing the absolute value, or `None` if the operation would overflow (i.e., `abs(Int32.MIN)`).
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func checkedAbs(x: Int32): Option<Int32>
 
@@ -1582,8 +1551,7 @@ public func checkedAbs(x: Int32): Option<Int32>
  * @returns An `Option` containing the absolute value, or `None` if the operation would overflow (i.e., `abs(Int64.MIN)`).
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func checkedAbs(x: Int64): Option<Int64>
 
@@ -2549,7 +2517,7 @@ public interface MathExtension<T> {
         since: "22"
     ]
     static func GetPI(): T
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The value of E for the type `T`.
@@ -2576,7 +2544,7 @@ public interface MaxMinValue<T> {
         since: "22"
     ]
     static func getMax(): T
-    
+
     /**
      * @description Gets the minimum representable value for the type `T`.
      * @returns The minimum value.
@@ -2604,7 +2572,7 @@ public interface Number<T> {
         since: "22"
     ]
     operator func +(other: T): T
-    
+
     /**
      * @description Subtracts one number from another.
      * @param other The right-hand side operand.
@@ -2614,7 +2582,7 @@ public interface Number<T> {
         since: "22"
     ]
     operator func -(other: T): T
-    
+
     /**
      * @description Multiplies two numbers.
      * @param other The right-hand side operand.
@@ -2624,7 +2592,7 @@ public interface Number<T> {
         since: "22"
     ]
     operator func *(other: T): T
-    
+
     /**
      * @description Divides one number by another.
      * @param other The right-hand side operand (divisor).
@@ -2634,7 +2602,7 @@ public interface Number<T> {
         since: "22"
     ]
     operator func /(other: T): T
-    
+
     /**
      * @description Negates a number.
      * @returns The negated value.
@@ -2661,7 +2629,7 @@ public interface Integer<T> <: Number<T> {
         since: "22"
     ]
     static func isSigned(): Bool
-    
+
     /**
      * @description Computes the remainder of a division.
      * @param other The divisor.
@@ -2671,7 +2639,7 @@ public interface Integer<T> <: Number<T> {
         since: "22"
     ]
     operator func %(other: T): T
-    
+
     /**
      * @description Performs a bitwise AND operation.
      * @param other The right-hand side operand.
@@ -2681,7 +2649,7 @@ public interface Integer<T> <: Number<T> {
         since: "22"
     ]
     operator func &(other: T): T
-    
+
     /**
      * @description Performs a bitwise OR operation.
      * @param other The right-hand side operand.
@@ -2691,7 +2659,7 @@ public interface Integer<T> <: Number<T> {
         since: "22"
     ]
     operator func |(other: T): T
-    
+
     /**
      * @description Performs a bitwise XOR operation.
      * @param other The right-hand side operand.
@@ -2701,7 +2669,7 @@ public interface Integer<T> <: Number<T> {
         since: "22"
     ]
     operator func ^(other: T): T
-    
+
     /**
      * @description Performs a bitwise NOT (complement) operation.
      * @returns The bitwise complement of the value.
@@ -2710,7 +2678,7 @@ public interface Integer<T> <: Number<T> {
         since: "22"
     ]
     operator func !(): T
-    
+
     /**
      * @description Performs a right bit shift.
      * @param n The number of positions to shift.
@@ -2720,7 +2688,7 @@ public interface Integer<T> <: Number<T> {
         since: "22"
     ]
     operator func >>(n: Int64): T
-    
+
     /**
      * @description Performs a left bit shift.
      * @param n The number of positions to shift.
@@ -2748,7 +2716,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     static func getPI(): T
-    
+
     /**
      * @description Gets the value of E, the base of natural logarithms.
      * @returns The value of E for the type `T`.
@@ -2757,7 +2725,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     static func getE(): T
-    
+
     /**
      * @description Gets the Not-a-Number (NaN) value.
      * @returns The NaN value for the type `T`.
@@ -2766,7 +2734,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     static func getNaN(): T
-    
+
     /**
      * @description Gets the positive infinity value.
      * @returns The positive infinity value for the type `T`.
@@ -2775,7 +2743,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     static func getInf(): T
-    
+
     /**
      * @description Gets the smallest positive non-zero denormal value.
      * @returns The smallest denormal value for the type `T`.
@@ -2784,7 +2752,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     static func getMinDenormal(): T
-    
+
     /**
      * @description Gets the smallest positive normal value.
      * @returns The smallest normal value for the type `T`.
@@ -2793,7 +2761,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     static func getMinNormal(): T
-    
+
     /**
      * @description Checks if the value is positive or negative infinity.
      * @returns `true` if the value is infinite, `false` otherwise.
@@ -2802,7 +2770,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     func isInf(): Bool
-    
+
     /**
      * @description Checks if the value is Not-a-Number (NaN).
      * @returns `true` if the value is NaN, `false` otherwise.
@@ -2811,7 +2779,7 @@ public interface FloatingPoint<T> <: Number<T> {
         since: "22"
     ]
     func isNaN(): Bool
-    
+
     /**
      * @description Checks if the value is a normal number (i.e., not zero, subnormal, infinite, or NaN).
      * @returns `true` if the value is normal, `false` otherwise.

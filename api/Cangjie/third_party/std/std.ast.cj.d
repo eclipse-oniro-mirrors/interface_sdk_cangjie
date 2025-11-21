@@ -28,7 +28,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public mut open prop identifier: Token
-    
+
     /**
      * @description The keyword token of the declaration (e.g., 'class', 'func').
      */
@@ -36,7 +36,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description A list of annotations applied to this declaration.
      */
@@ -44,7 +44,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public mut prop annotations: ArrayList<Annotation>
-    
+
     /**
      * @description A list of modifiers for this declaration (e.g., 'public', 'open').
      */
@@ -52,7 +52,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public mut prop modifiers: ArrayList<Modifier>
-    
+
     /**
      * @description The generic parameter of the declaration, if it exists.
      * @throws ASTException if there is an AST-related error.
@@ -62,7 +62,7 @@ public open class Decl <: Node {
         throwexception: true
     ]
     public mut prop genericParam: GenericParam
-    
+
     /**
      * @description A list of generic constraints for this declaration.
      */
@@ -70,7 +70,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public mut prop genericConstraint: ArrayList<GenericConstraint>
-    
+
     /**
      * @description The comma tokens used in the generic constraint list.
      * @throws ASTException if there is an AST-related error.
@@ -80,7 +80,7 @@ public open class Decl <: Node {
         throwexception: true
     ]
     public mut prop constraintCommas: Tokens
-    
+
     /**
      * @description Checks if the declaration has a specific attribute.
      * @param attr The name of the attribute to check.
@@ -90,7 +90,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public func hasAttr(attr: String): Bool
-    
+
     /**
      * @description Gets all attribute tokens associated with this declaration.
      * @returns A `Tokens` object containing the attributes.
@@ -99,7 +99,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public func getAttrs(): Tokens
-    
+
     /**
      * @description Indicates whether this is a generic declaration.
      */
@@ -107,7 +107,7 @@ public open class Decl <: Node {
         since: "22"
     ]
     public mut prop isGenericDecl: Bool
-    
+
     /**
      * @description Converts the declaration node to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -118,7 +118,7 @@ public open class Decl <: Node {
         throwexception: true
     ]
     public open func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -146,7 +146,7 @@ public class ClassDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ClassDecl`.
      */
@@ -154,7 +154,7 @@ public class ClassDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The upper bound token for generic type constraints.
      * @throws ASTException if there is an AST-related error.
@@ -164,7 +164,7 @@ public class ClassDecl <: Decl {
         throwexception: true
     ]
     public mut prop upperBound: Token
-    
+
     /**
      * @description A list of super types that this class inherits from.
      */
@@ -172,7 +172,7 @@ public class ClassDecl <: Decl {
         since: "22"
     ]
     public mut prop superTypes: ArrayList<TypeNode>
-    
+
     /**
      * @description The bitwise AND tokens used in the super type list.
      * @throws ASTException if there is an AST-related error.
@@ -182,7 +182,7 @@ public class ClassDecl <: Decl {
         throwexception: true
     ]
     public mut prop superTypeBitAnds: Tokens
-    
+
     /**
      * @description The body of the class declaration.
      */
@@ -190,7 +190,7 @@ public class ClassDecl <: Decl {
         since: "22"
     ]
     public mut prop body: Body
-    
+
     /**
      * @description Converts the class declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -201,7 +201,7 @@ public class ClassDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this class declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -229,7 +229,7 @@ public class StructDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `StructDecl`.
      */
@@ -237,7 +237,7 @@ public class StructDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The upper bound token for generic type constraints.
      * @throws ASTException if there is an AST-related error.
@@ -247,7 +247,7 @@ public class StructDecl <: Decl {
         throwexception: true
     ]
     public mut prop upperBound: Token
-    
+
     /**
      * @description A list of super types that this struct implements.
      */
@@ -255,7 +255,7 @@ public class StructDecl <: Decl {
         since: "22"
     ]
     public mut prop superTypes: ArrayList<TypeNode>
-    
+
     /**
      * @description The bitwise AND tokens used in the super type list.
      * @throws ASTException if there is an AST-related error.
@@ -265,7 +265,7 @@ public class StructDecl <: Decl {
         throwexception: true
     ]
     public mut prop superTypeBitAnds: Tokens
-    
+
     /**
      * @description The body of the struct declaration.
      */
@@ -273,7 +273,7 @@ public class StructDecl <: Decl {
         since: "22"
     ]
     public mut prop body: Body
-    
+
     /**
      * @description Converts the struct declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -284,7 +284,7 @@ public class StructDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this struct declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -312,7 +312,7 @@ public class InterfaceDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `InterfaceDecl`.
      */
@@ -320,7 +320,7 @@ public class InterfaceDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The upper bound token for generic type constraints.
      * @throws ASTException if there is an AST-related error.
@@ -330,7 +330,7 @@ public class InterfaceDecl <: Decl {
         throwexception: true
     ]
     public mut prop upperBound: Token
-    
+
     /**
      * @description A list of super types that this interface extends.
      */
@@ -338,7 +338,7 @@ public class InterfaceDecl <: Decl {
         since: "22"
     ]
     public mut prop superTypes: ArrayList<TypeNode>
-    
+
     /**
      * @description The bitwise AND tokens used in the super type list.
      * @throws ASTException if there is an AST-related error.
@@ -348,7 +348,7 @@ public class InterfaceDecl <: Decl {
         throwexception: true
     ]
     public mut prop superTypeBitAnds: Tokens
-    
+
     /**
      * @description The body of the interface declaration.
      */
@@ -356,7 +356,7 @@ public class InterfaceDecl <: Decl {
         since: "22"
     ]
     public mut prop body: Body
-    
+
     /**
      * @description Converts the interface declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -367,7 +367,7 @@ public class InterfaceDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this interface declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -395,7 +395,7 @@ public class EnumDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `EnumDecl`.
      */
@@ -403,7 +403,7 @@ public class EnumDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The upper bound token for generic type constraints.
      * @throws ASTException if there is an AST-related error.
@@ -413,7 +413,7 @@ public class EnumDecl <: Decl {
         throwexception: true
     ]
     public mut prop upperBound: Token
-    
+
     /**
      * @description A list of super types that this enum implements.
      */
@@ -421,7 +421,7 @@ public class EnumDecl <: Decl {
         since: "22"
     ]
     public mut prop superTypes: ArrayList<TypeNode>
-    
+
     /**
      * @description The bitwise AND tokens used in the super type list.
      * @throws ASTException if there is an AST-related error.
@@ -431,7 +431,7 @@ public class EnumDecl <: Decl {
         throwexception: true
     ]
     public mut prop superTypeBitAnds: Tokens
-    
+
     /**
      * @description The opening brace token of the enum body.
      * @throws ASTException if there is an AST-related error.
@@ -441,7 +441,7 @@ public class EnumDecl <: Decl {
         throwexception: true
     ]
     public mut prop lBrace: Token
-    
+
     /**
      * @description A list of constructors (cases) for this enum.
      */
@@ -449,7 +449,7 @@ public class EnumDecl <: Decl {
         since: "22"
     ]
     public mut prop constructors: ArrayList<Constructor>
-    
+
     /**
      * @description A list of member declarations within the enum.
      */
@@ -457,7 +457,7 @@ public class EnumDecl <: Decl {
         since: "22"
     ]
     public mut prop decls: ArrayList<Decl>
-    
+
     /**
      * @description The closing brace token of the enum body.
      * @throws ASTException if there is an AST-related error.
@@ -467,7 +467,7 @@ public class EnumDecl <: Decl {
         throwexception: true
     ]
     public mut prop rBrace: Token
-    
+
     /**
      * @description The ellipsis token, if present.
      * @throws ASTException if there is an AST-related error.
@@ -477,7 +477,7 @@ public class EnumDecl <: Decl {
         throwexception: true
     ]
     public mut prop ellipsis: Token
-    
+
     /**
      * @description Converts the enum declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -488,7 +488,7 @@ public class EnumDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this enum declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -516,7 +516,7 @@ public class ExtendDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ExtendDecl`.
      */
@@ -524,7 +524,7 @@ public class ExtendDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The identifier of the extension, which is overridden.
      * @throws ASTException if there is an AST-related error.
@@ -534,7 +534,7 @@ public class ExtendDecl <: Decl {
         throwexception: true
     ]
     public mut override prop identifier: Token
-    
+
     /**
      * @description The type being extended.
      */
@@ -542,7 +542,7 @@ public class ExtendDecl <: Decl {
         since: "22"
     ]
     public mut prop extendType: TypeNode
-    
+
     /**
      * @description The upper bound token for generic type constraints.
      * @throws ASTException if there is an AST-related error.
@@ -552,7 +552,7 @@ public class ExtendDecl <: Decl {
         throwexception: true
     ]
     public mut prop upperBound: Token
-    
+
     /**
      * @description A list of super types that this extension conforms to.
      */
@@ -560,7 +560,7 @@ public class ExtendDecl <: Decl {
         since: "22"
     ]
     public mut prop superTypes: ArrayList<TypeNode>
-    
+
     /**
      * @description The bitwise AND tokens used in the super type list.
      * @throws ASTException if there is an AST-related error.
@@ -570,7 +570,7 @@ public class ExtendDecl <: Decl {
         throwexception: true
     ]
     public mut prop superTypeBitAnds: Tokens
-    
+
     /**
      * @description The body of the extension.
      */
@@ -578,7 +578,7 @@ public class ExtendDecl <: Decl {
         since: "22"
     ]
     public mut prop body: Body
-    
+
     /**
      * @description Converts the extend declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -589,7 +589,7 @@ public class ExtendDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this extend declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -617,7 +617,7 @@ public class FuncDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `FuncDecl`.
      */
@@ -625,7 +625,7 @@ public class FuncDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Tokens representing an operator overload, if any.
      */
@@ -633,7 +633,7 @@ public class FuncDecl <: Decl {
         since: "22"
     ]
     public mut prop overloadOp: Tokens
-    
+
     /**
      * @description The opening parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -643,7 +643,7 @@ public class FuncDecl <: Decl {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of function parameters.
      */
@@ -651,7 +651,7 @@ public class FuncDecl <: Decl {
         since: "22"
     ]
     public mut prop funcParams: ArrayList<FuncParam>
-    
+
     /**
      * @description The closing parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -661,7 +661,7 @@ public class FuncDecl <: Decl {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The colon token separating the parameter list from the return type.
      * @throws ASTException if there is an AST-related error.
@@ -671,7 +671,7 @@ public class FuncDecl <: Decl {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The return type of the function.
      * @throws ASTException if there is an AST-related error.
@@ -681,7 +681,7 @@ public class FuncDecl <: Decl {
         throwexception: true
     ]
     public mut prop declType: TypeNode
-    
+
     /**
      * @description The body of the function as a block of code.
      */
@@ -689,7 +689,7 @@ public class FuncDecl <: Decl {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Checks if the function is declared as constant.
      * @returns `true` if the function is constant, `false` otherwise.
@@ -698,7 +698,7 @@ public class FuncDecl <: Decl {
         since: "22"
     ]
     public func isConst(): Bool
-    
+
     /**
      * @description Converts the function declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -709,7 +709,7 @@ public class FuncDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this function declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -737,7 +737,7 @@ public class MainDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `MainDecl`.
      */
@@ -745,7 +745,7 @@ public class MainDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -755,7 +755,7 @@ public class MainDecl <: Decl {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of function parameters.
      */
@@ -763,7 +763,7 @@ public class MainDecl <: Decl {
         since: "22"
     ]
     public mut prop funcParams: ArrayList<FuncParam>
-    
+
     /**
      * @description The closing parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -773,7 +773,7 @@ public class MainDecl <: Decl {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The colon token separating the parameter list from the return type.
      * @throws ASTException if there is an AST-related error.
@@ -783,7 +783,7 @@ public class MainDecl <: Decl {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The return type of the main function.
      * @throws ASTException if there is an AST-related error.
@@ -793,7 +793,7 @@ public class MainDecl <: Decl {
         throwexception: true
     ]
     public mut prop declType: TypeNode
-    
+
     /**
      * @description The body of the main function as a block of code.
      */
@@ -801,7 +801,7 @@ public class MainDecl <: Decl {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Converts the main function declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -812,7 +812,7 @@ public class MainDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this main function declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -840,7 +840,7 @@ public class MacroDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `MacroDecl`.
      */
@@ -848,7 +848,7 @@ public class MacroDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -858,7 +858,7 @@ public class MacroDecl <: Decl {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of macro parameters.
      */
@@ -866,7 +866,7 @@ public class MacroDecl <: Decl {
         since: "22"
     ]
     public mut prop funcParams: ArrayList<FuncParam>
-    
+
     /**
      * @description The closing parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -876,7 +876,7 @@ public class MacroDecl <: Decl {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The colon token separating the parameter list from the return type.
      * @throws ASTException if there is an AST-related error.
@@ -886,7 +886,7 @@ public class MacroDecl <: Decl {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The return type of the macro.
      * @throws ASTException if there is an AST-related error.
@@ -896,7 +896,7 @@ public class MacroDecl <: Decl {
         throwexception: true
     ]
     public mut prop declType: TypeNode
-    
+
     /**
      * @description The body of the macro as a block of code.
      */
@@ -904,7 +904,7 @@ public class MacroDecl <: Decl {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Converts the macro declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -915,7 +915,7 @@ public class MacroDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this macro declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -945,7 +945,7 @@ public class PrimaryCtorDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `PrimaryCtorDecl`.
      */
@@ -953,7 +953,7 @@ public class PrimaryCtorDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -963,7 +963,7 @@ public class PrimaryCtorDecl <: Decl {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of constructor parameters.
      */
@@ -971,7 +971,7 @@ public class PrimaryCtorDecl <: Decl {
         since: "22"
     ]
     public mut prop funcParams: ArrayList<FuncParam>
-    
+
     /**
      * @description The closing parenthesis of the parameter list.
      * @throws ASTException if there is an AST-related error.
@@ -981,7 +981,7 @@ public class PrimaryCtorDecl <: Decl {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The body of the constructor as a block of code.
      */
@@ -989,7 +989,7 @@ public class PrimaryCtorDecl <: Decl {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Checks if the constructor is declared as constant.
      * @returns `true` if the constructor is constant, `false` otherwise.
@@ -998,7 +998,7 @@ public class PrimaryCtorDecl <: Decl {
         since: "22"
     ]
     public func isConst(): Bool
-    
+
     /**
      * @description Converts the primary constructor declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -1009,7 +1009,7 @@ public class PrimaryCtorDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this primary constructor declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1037,7 +1037,7 @@ public class VarDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `VarDecl`.
      */
@@ -1045,7 +1045,7 @@ public class VarDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The pattern used in the variable declaration (e.g., for destructuring).
      * @throws ASTException if there is an AST-related error.
@@ -1055,7 +1055,7 @@ public class VarDecl <: Decl {
         throwexception: true
     ]
     public mut prop pattern: Pattern
-    
+
     /**
      * @description The colon token separating the pattern from the type.
      * @throws ASTException if there is an AST-related error.
@@ -1065,7 +1065,7 @@ public class VarDecl <: Decl {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The declared type of the variable.
      * @throws ASTException if there is an AST-related error.
@@ -1075,7 +1075,7 @@ public class VarDecl <: Decl {
         throwexception: true
     ]
     public mut prop declType: TypeNode
-    
+
     /**
      * @description The assignment token (`=`).
      * @throws ASTException if there is an AST-related error.
@@ -1085,7 +1085,7 @@ public class VarDecl <: Decl {
         throwexception: true
     ]
     public mut prop assign: Token
-    
+
     /**
      * @description The initialization expression for the variable.
      * @throws ASTException if there is an AST-related error.
@@ -1095,7 +1095,7 @@ public class VarDecl <: Decl {
         throwexception: true
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Checks if the variable is declared as constant (`let`).
      * @returns `true` if the variable is constant, `false` otherwise.
@@ -1104,7 +1104,7 @@ public class VarDecl <: Decl {
         since: "22"
     ]
     public func isConst(): Bool
-    
+
     /**
      * @description Converts the variable declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -1115,7 +1115,7 @@ public class VarDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this variable declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1143,7 +1143,7 @@ public open class FuncParam <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `FuncParam`.
      */
@@ -1151,7 +1151,7 @@ public open class FuncParam <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `not` token, if present.
      * @throws ASTException if there is an AST-related error.
@@ -1161,7 +1161,7 @@ public open class FuncParam <: Decl {
         throwexception: true
     ]
     public mut prop not: Token
-    
+
     /**
      * @description The colon token separating the parameter name from its type.
      * @throws ASTException if there is an AST-related error.
@@ -1171,7 +1171,7 @@ public open class FuncParam <: Decl {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The type of the parameter.
      */
@@ -1179,7 +1179,7 @@ public open class FuncParam <: Decl {
         since: "22"
     ]
     public mut prop paramType: TypeNode
-    
+
     /**
      * @description The assignment token (`=`) for a default value.
      * @throws ASTException if there is an AST-related error.
@@ -1189,7 +1189,7 @@ public open class FuncParam <: Decl {
         throwexception: true
     ]
     public mut prop assign: Token
-    
+
     /**
      * @description The default value expression for the parameter.
      * @throws ASTException if there is an AST-related error.
@@ -1199,7 +1199,7 @@ public open class FuncParam <: Decl {
         throwexception: true
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Checks if this is a member parameter (e.g., `prop` or `mut prop`).
      * @returns `true` if it is a member parameter, `false` otherwise.
@@ -1208,7 +1208,7 @@ public open class FuncParam <: Decl {
         since: "22"
     ]
     public func isMemberParam(): Bool
-    
+
     /**
      * @description Converts the function parameter to its token representation.
      * @returns A `Tokens` object representing this parameter.
@@ -1219,7 +1219,7 @@ public open class FuncParam <: Decl {
         throwexception: true
     ]
     public open func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this function parameter node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1247,7 +1247,7 @@ public class PropDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `PropDecl`.
      */
@@ -1255,7 +1255,7 @@ public class PropDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The colon token separating the property name from its type.
      * @throws ASTException if there is an AST-related error.
@@ -1265,7 +1265,7 @@ public class PropDecl <: Decl {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The type of the property.
      */
@@ -1273,7 +1273,7 @@ public class PropDecl <: Decl {
         since: "22"
     ]
     public mut prop declType: TypeNode
-    
+
     /**
      * @description The opening brace for the getter/setter block.
      * @throws ASTException if there is an AST-related error.
@@ -1283,7 +1283,7 @@ public class PropDecl <: Decl {
         throwexception: true
     ]
     public mut prop lBrace: Token
-    
+
     /**
      * @description The getter function declaration for the property.
      * @throws ASTException if there is an AST-related error.
@@ -1293,7 +1293,7 @@ public class PropDecl <: Decl {
         throwexception: true
     ]
     public mut prop getter: FuncDecl
-    
+
     /**
      * @description The setter function declaration for the property.
      * @throws ASTException if there is an AST-related error.
@@ -1303,7 +1303,7 @@ public class PropDecl <: Decl {
         throwexception: true
     ]
     public mut prop setter: FuncDecl
-    
+
     /**
      * @description The closing brace for the getter/setter block.
      * @throws ASTException if there is an AST-related error.
@@ -1313,7 +1313,7 @@ public class PropDecl <: Decl {
         throwexception: true
     ]
     public mut prop rBrace: Token
-    
+
     /**
      * @description Converts the property declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -1324,7 +1324,7 @@ public class PropDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this property declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1352,7 +1352,7 @@ public class TypeAliasDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `TypeAliasDecl`.
      */
@@ -1360,7 +1360,7 @@ public class TypeAliasDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The assignment token (`=`).
      * @throws ASTException if there is an AST-related error.
@@ -1370,7 +1370,7 @@ public class TypeAliasDecl <: Decl {
         throwexception: true
     ]
     public mut prop assign: Token
-    
+
     /**
      * @description The type that is being aliased.
      */
@@ -1378,7 +1378,7 @@ public class TypeAliasDecl <: Decl {
         since: "22"
     ]
     public mut prop aliasType: TypeNode
-    
+
     /**
      * @description Converts the type alias declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -1389,7 +1389,7 @@ public class TypeAliasDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this type alias declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1417,7 +1417,7 @@ public class MacroExpandDecl <: Decl {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `MacroExpandDecl`.
      */
@@ -1425,7 +1425,7 @@ public class MacroExpandDecl <: Decl {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The full identifier of the macro being expanded.
      */
@@ -1433,7 +1433,7 @@ public class MacroExpandDecl <: Decl {
         since: "22"
     ]
     public mut prop fullIdentifier: Token
-    
+
     /**
      * @description The opening square bracket `[` for macro attributes.
      * @throws ASTException if there is an AST-related error.
@@ -1443,7 +1443,7 @@ public class MacroExpandDecl <: Decl {
         throwexception: true
     ]
     public mut prop lSquare: Token
-    
+
     /**
      * @description The attributes passed to the macro.
      */
@@ -1451,7 +1451,7 @@ public class MacroExpandDecl <: Decl {
         since: "22"
     ]
     public mut prop macroAttrs: Tokens
-    
+
     /**
      * @description The closing square bracket `]` for macro attributes.
      * @throws ASTException if there is an AST-related error.
@@ -1461,7 +1461,7 @@ public class MacroExpandDecl <: Decl {
         throwexception: true
     ]
     public mut prop rSquare: Token
-    
+
     /**
      * @description The opening parenthesis `(` for macro inputs.
      * @throws ASTException if there is an AST-related error.
@@ -1471,7 +1471,7 @@ public class MacroExpandDecl <: Decl {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The input tokens passed to the macro.
      */
@@ -1479,7 +1479,7 @@ public class MacroExpandDecl <: Decl {
         since: "22"
     ]
     public mut prop macroInputs: Tokens
-    
+
     /**
      * @description The closing parenthesis `)` for macro inputs.
      * @throws ASTException if there is an AST-related error.
@@ -1489,7 +1489,7 @@ public class MacroExpandDecl <: Decl {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The declaration generated from the macro input.
      * @throws ASTException if there is an AST-related error.
@@ -1499,7 +1499,7 @@ public class MacroExpandDecl <: Decl {
         throwexception: true
     ]
     public mut prop macroInputDecl: Decl
-    
+
     /**
      * @description Converts the macro expansion declaration to its token representation.
      * @returns A `Tokens` object representing this declaration.
@@ -1510,7 +1510,7 @@ public class MacroExpandDecl <: Decl {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this macro expansion declaration node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1535,7 +1535,7 @@ public class MacroExpandParam <: FuncParam {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The full identifier of the macro being expanded.
      */
@@ -1543,7 +1543,7 @@ public class MacroExpandParam <: FuncParam {
         since: "22"
     ]
     public mut prop fullIdentifier: Token
-    
+
     /**
      * @description The opening square bracket `[` for macro attributes.
      * @throws ASTException if there is an AST-related error.
@@ -1553,7 +1553,7 @@ public class MacroExpandParam <: FuncParam {
         throwexception: true
     ]
     public mut prop lSquare: Token
-    
+
     /**
      * @description The attributes passed to the macro.
      */
@@ -1561,7 +1561,7 @@ public class MacroExpandParam <: FuncParam {
         since: "22"
     ]
     public mut prop macroAttrs: Tokens
-    
+
     /**
      * @description The closing square bracket `]` for macro attributes.
      * @throws ASTException if there is an AST-related error.
@@ -1571,7 +1571,7 @@ public class MacroExpandParam <: FuncParam {
         throwexception: true
     ]
     public mut prop rSquare: Token
-    
+
     /**
      * @description The opening parenthesis `(` for macro inputs.
      * @throws ASTException if there is an AST-related error.
@@ -1581,7 +1581,7 @@ public class MacroExpandParam <: FuncParam {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The input tokens passed to the macro.
      */
@@ -1589,7 +1589,7 @@ public class MacroExpandParam <: FuncParam {
         since: "22"
     ]
     public mut prop macroInputs: Tokens
-    
+
     /**
      * @description The closing parenthesis `)` for macro inputs.
      * @throws ASTException if there is an AST-related error.
@@ -1599,7 +1599,7 @@ public class MacroExpandParam <: FuncParam {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The declaration generated from the macro input.
      * @throws ASTException if there is an AST-related error.
@@ -1609,7 +1609,7 @@ public class MacroExpandParam <: FuncParam {
         throwexception: true
     ]
     public mut prop macroInputDecl: Decl
-    
+
     /**
      * @description Converts the macro expansion parameter to its token representation.
      * @returns A `Tokens` object representing this parameter.
@@ -1620,7 +1620,7 @@ public class MacroExpandParam <: FuncParam {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this macro expansion parameter node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1690,7 +1690,7 @@ public class ASTException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a new `ASTException` with a specified message.
      * @param message The detail message.
@@ -1715,7 +1715,7 @@ public class ParseASTException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a new `ParseASTException` with a specified message.
      * @param message The detail message.
@@ -1741,7 +1741,7 @@ public open class Expr <: Node {
         since: "22"
     ]
     public open func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1766,7 +1766,7 @@ public class Block <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening brace token of the block.
      * @throws ASTException if there is an AST-related error.
@@ -1776,7 +1776,7 @@ public class Block <: Expr {
         throwexception: true
     ]
     public mut prop lBrace: Token
-    
+
     /**
      * @description A list of nodes (statements and declarations) within the block.
      */
@@ -1784,7 +1784,7 @@ public class Block <: Expr {
         since: "22"
     ]
     public mut prop nodes: ArrayList<Node>
-    
+
     /**
      * @description The closing brace token of the block.
      * @throws ASTException if there is an AST-related error.
@@ -1794,7 +1794,7 @@ public class Block <: Expr {
         throwexception: true
     ]
     public mut prop rBrace: Token
-    
+
     /**
      * @description Converts the block to its token representation.
      * @returns A `Tokens` object representing this block.
@@ -1803,7 +1803,7 @@ public class Block <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this block node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1832,7 +1832,7 @@ public class BinaryExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `BinaryExpr`.
      */
@@ -1840,7 +1840,7 @@ public class BinaryExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The left-hand side expression.
      */
@@ -1848,7 +1848,7 @@ public class BinaryExpr <: Expr {
         since: "22"
     ]
     public mut prop leftExpr: Expr
-    
+
     /**
      * @description The binary operator token.
      */
@@ -1856,7 +1856,7 @@ public class BinaryExpr <: Expr {
         since: "22"
     ]
     public mut prop op: Token
-    
+
     /**
      * @description The right-hand side expression.
      */
@@ -1864,7 +1864,7 @@ public class BinaryExpr <: Expr {
         since: "22"
     ]
     public mut prop rightExpr: Expr
-    
+
     /**
      * @description Converts the binary expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -1873,7 +1873,7 @@ public class BinaryExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this binary expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1901,7 +1901,7 @@ public class UnaryExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `UnaryExpr`.
      */
@@ -1909,7 +1909,7 @@ public class UnaryExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The unary operator token.
      */
@@ -1917,7 +1917,7 @@ public class UnaryExpr <: Expr {
         since: "22"
     ]
     public mut prop op: Token
-    
+
     /**
      * @description The expression the operator is applied to.
      */
@@ -1925,7 +1925,7 @@ public class UnaryExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Converts the unary expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -1934,7 +1934,7 @@ public class UnaryExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this unary expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -1962,7 +1962,7 @@ public class IsExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `IsExpr`.
      */
@@ -1970,7 +1970,7 @@ public class IsExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The expression to be type-checked.
      */
@@ -1978,7 +1978,7 @@ public class IsExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description The `is` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -1988,7 +1988,7 @@ public class IsExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The type to check against.
      */
@@ -1996,7 +1996,7 @@ public class IsExpr <: Expr {
         since: "22"
     ]
     public mut prop shiftType: TypeNode
-    
+
     /**
      * @description Converts the `is` expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2005,7 +2005,7 @@ public class IsExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this `is` expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2033,7 +2033,7 @@ public class AsExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `AsExpr`.
      */
@@ -2041,7 +2041,7 @@ public class AsExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The expression to be cast.
      */
@@ -2049,7 +2049,7 @@ public class AsExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description The `as` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2059,7 +2059,7 @@ public class AsExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The type to cast to.
      */
@@ -2067,7 +2067,7 @@ public class AsExpr <: Expr {
         since: "22"
     ]
     public mut prop shiftType: TypeNode
-    
+
     /**
      * @description Converts the `as` expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2076,7 +2076,7 @@ public class AsExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this `as` expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2104,7 +2104,7 @@ public class ParenExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ParenExpr`.
      */
@@ -2112,7 +2112,7 @@ public class ParenExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening parenthesis token.
      * @throws ASTException if there is an AST-related error.
@@ -2122,7 +2122,7 @@ public class ParenExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The expression enclosed in parentheses.
      */
@@ -2130,7 +2130,7 @@ public class ParenExpr <: Expr {
         since: "22"
     ]
     public mut prop parenthesizedExpr: Expr
-    
+
     /**
      * @description The closing parenthesis token.
      * @throws ASTException if there is an AST-related error.
@@ -2140,7 +2140,7 @@ public class ParenExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the parenthesized expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2149,7 +2149,7 @@ public class ParenExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this parenthesized expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2177,7 +2177,7 @@ public class LitConstExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `LitConstExpr`.
      */
@@ -2185,7 +2185,7 @@ public class LitConstExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The token representing the literal value.
      */
@@ -2193,7 +2193,7 @@ public class LitConstExpr <: Expr {
         since: "22"
     ]
     public mut prop literal: Token
-    
+
     /**
      * @description Converts the literal constant expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2202,7 +2202,7 @@ public class LitConstExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this literal constant expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2230,7 +2230,7 @@ public class RefExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `RefExpr`.
      */
@@ -2238,7 +2238,7 @@ public class RefExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The identifier token of the reference.
      */
@@ -2246,7 +2246,7 @@ public class RefExpr <: Expr {
         since: "22"
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description The opening angle bracket for generic type arguments.
      * @throws ASTException if there is an AST-related error.
@@ -2256,7 +2256,7 @@ public class RefExpr <: Expr {
         throwexception: true
     ]
     public mut prop lAngle: Token
-    
+
     /**
      * @description A list of type arguments for a generic reference.
      */
@@ -2264,7 +2264,7 @@ public class RefExpr <: Expr {
         since: "22"
     ]
     public mut prop typeArguments: ArrayList<TypeNode>
-    
+
     /**
      * @description The comma tokens used in the type argument list.
      * @throws ASTException if there is an AST-related error.
@@ -2274,7 +2274,7 @@ public class RefExpr <: Expr {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing angle bracket for generic type arguments.
      * @throws ASTException if there is an AST-related error.
@@ -2284,7 +2284,7 @@ public class RefExpr <: Expr {
         throwexception: true
     ]
     public mut prop rAngle: Token
-    
+
     /**
      * @description Converts the reference expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2293,7 +2293,7 @@ public class RefExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this reference expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2321,7 +2321,7 @@ public class ReturnExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ReturnExpr`.
      */
@@ -2329,7 +2329,7 @@ public class ReturnExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `return` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2339,7 +2339,7 @@ public class ReturnExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The expression to be returned, if any.
      * @throws ASTException if there is an AST-related error.
@@ -2349,7 +2349,7 @@ public class ReturnExpr <: Expr {
         throwexception: true
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Converts the return expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2358,7 +2358,7 @@ public class ReturnExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this return expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2386,7 +2386,7 @@ public class ThrowExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ThrowExpr`.
      */
@@ -2394,7 +2394,7 @@ public class ThrowExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `throw` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2404,7 +2404,7 @@ public class ThrowExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The expression to be thrown.
      */
@@ -2412,7 +2412,7 @@ public class ThrowExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Converts the throw expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2421,7 +2421,7 @@ public class ThrowExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this throw expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2449,7 +2449,7 @@ public class PerformExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `PerformExpr`.
      */
@@ -2457,7 +2457,7 @@ public class PerformExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `perform` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2467,7 +2467,7 @@ public class PerformExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The expression to be performed.
      */
@@ -2475,7 +2475,7 @@ public class PerformExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Converts the perform expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2484,7 +2484,7 @@ public class PerformExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this perform expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2512,7 +2512,7 @@ public class ResumeExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ResumeExpr`.
      */
@@ -2520,7 +2520,7 @@ public class ResumeExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `resume` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2530,7 +2530,7 @@ public class ResumeExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordR : Token
-    
+
     /**
      * @description The optional `with` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2540,7 +2540,7 @@ public class ResumeExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordW : Option<Token>
-    
+
     /**
      * @description The optional expression to resume with.
      */
@@ -2548,7 +2548,7 @@ public class ResumeExpr <: Expr {
         since: "22"
     ]
     public mut prop withExpr: Option<Expr>
-    
+
     /**
      * @description The optional `throwing` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2558,7 +2558,7 @@ public class ResumeExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordT : Option<Token>
-    
+
     /**
      * @description The optional expression to resume by throwing.
      */
@@ -2566,7 +2566,7 @@ public class ResumeExpr <: Expr {
         since: "22"
     ]
     public mut prop throwingExpr: Option<Expr>
-    
+
     /**
      * @description Converts the resume expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2575,7 +2575,7 @@ public class ResumeExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this resume expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2603,7 +2603,7 @@ public class AssignExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `AssignExpr`.
      */
@@ -2611,7 +2611,7 @@ public class AssignExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The assignment operator token (e.g., `=`, `+=`).
      * @throws ASTException if there is an AST-related error.
@@ -2621,7 +2621,7 @@ public class AssignExpr <: Expr {
         throwexception: true
     ]
     public mut prop assign: Token
-    
+
     /**
      * @description The left-hand side expression (the target of the assignment).
      */
@@ -2629,7 +2629,7 @@ public class AssignExpr <: Expr {
         since: "22"
     ]
     public mut prop leftExpr: Expr
-    
+
     /**
      * @description The right-hand side expression (the value to assign).
      */
@@ -2637,7 +2637,7 @@ public class AssignExpr <: Expr {
         since: "22"
     ]
     public mut prop rightExpr: Expr
-    
+
     /**
      * @description Converts the assignment expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2646,7 +2646,7 @@ public class AssignExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this assignment expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2674,7 +2674,7 @@ public class CallExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `CallExpr`.
      */
@@ -2682,7 +2682,7 @@ public class CallExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The expression that evaluates to the function being called.
      */
@@ -2690,7 +2690,7 @@ public class CallExpr <: Expr {
         since: "22"
     ]
     public mut prop callFunc: Expr
-    
+
     /**
      * @description The opening parenthesis of the argument list.
      * @throws ASTException if there is an AST-related error.
@@ -2700,7 +2700,7 @@ public class CallExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of arguments passed to the function.
      */
@@ -2708,7 +2708,7 @@ public class CallExpr <: Expr {
         since: "22"
     ]
     public mut prop arguments: ArrayList<Argument>
-    
+
     /**
      * @description The closing parenthesis of the argument list.
      * @throws ASTException if there is an AST-related error.
@@ -2718,7 +2718,7 @@ public class CallExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the call expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2729,7 +2729,7 @@ public class CallExpr <: Expr {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this call expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2757,7 +2757,7 @@ public class MemberAccess <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `MemberAccess` expression.
      */
@@ -2765,7 +2765,7 @@ public class MemberAccess <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The base expression from which the member is accessed.
      */
@@ -2773,7 +2773,7 @@ public class MemberAccess <: Expr {
         since: "22"
     ]
     public mut prop baseExpr: Expr
-    
+
     /**
      * @description The dot token used for member access.
      * @throws ASTException if there is an AST-related error.
@@ -2783,7 +2783,7 @@ public class MemberAccess <: Expr {
         throwexception: true
     ]
     public mut prop dot: Token
-    
+
     /**
      * @description The token representing the name of the member being accessed.
      */
@@ -2791,7 +2791,7 @@ public class MemberAccess <: Expr {
         since: "22"
     ]
     public mut prop field: Token
-    
+
     /**
      * @description The opening angle bracket for generic type arguments.
      * @throws ASTException if there is an AST-related error.
@@ -2801,7 +2801,7 @@ public class MemberAccess <: Expr {
         throwexception: true
     ]
     public mut prop lAngle: Token
-    
+
     /**
      * @description A list of type arguments for a generic member access.
      */
@@ -2809,7 +2809,7 @@ public class MemberAccess <: Expr {
         since: "22"
     ]
     public mut prop typeArguments: ArrayList<TypeNode>
-    
+
     /**
      * @description The comma tokens used in the type argument list.
      * @throws ASTException if there is an AST-related error.
@@ -2819,7 +2819,7 @@ public class MemberAccess <: Expr {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing angle bracket for generic type arguments.
      * @throws ASTException if there is an AST-related error.
@@ -2829,7 +2829,7 @@ public class MemberAccess <: Expr {
         throwexception: true
     ]
     public mut prop rAngle: Token
-    
+
     /**
      * @description Converts the member access expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2838,7 +2838,7 @@ public class MemberAccess <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this member access expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2866,7 +2866,7 @@ public class IfExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `IfExpr`.
      */
@@ -2874,7 +2874,7 @@ public class IfExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `if` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2884,7 +2884,7 @@ public class IfExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordI: Token
-    
+
     /**
      * @description The opening parenthesis for the condition.
      * @throws ASTException if there is an AST-related error.
@@ -2894,7 +2894,7 @@ public class IfExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The condition expression.
      */
@@ -2902,7 +2902,7 @@ public class IfExpr <: Expr {
         since: "22"
     ]
     public mut prop condition: Expr
-    
+
     /**
      * @description The closing parenthesis for the condition.
      * @throws ASTException if there is an AST-related error.
@@ -2912,7 +2912,7 @@ public class IfExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The block of code to execute if the condition is true.
      */
@@ -2920,7 +2920,7 @@ public class IfExpr <: Expr {
         since: "22"
     ]
     public mut prop ifBlock: Block
-    
+
     /**
      * @description The `else` keyword token, if present.
      * @throws ASTException if there is an AST-related error.
@@ -2930,7 +2930,7 @@ public class IfExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordE: Token
-    
+
     /**
      * @description The expression or block to execute if the condition is false.
      * @throws ASTException if there is an AST-related error.
@@ -2940,7 +2940,7 @@ public class IfExpr <: Expr {
         throwexception: true
     ]
     public mut prop elseExpr: Expr
-    
+
     /**
      * @description Converts the if-else expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -2949,7 +2949,7 @@ public class IfExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this if-else expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -2977,7 +2977,7 @@ public class LetPatternExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `LetPatternExpr`.
      */
@@ -2985,7 +2985,7 @@ public class LetPatternExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `let` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -2995,7 +2995,7 @@ public class LetPatternExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The pattern to match against.
      */
@@ -3003,7 +3003,7 @@ public class LetPatternExpr <: Expr {
         since: "22"
     ]
     public mut prop pattern: Pattern
-    
+
     /**
      * @description The back arrow token (`<-`).
      * @throws ASTException if there is an AST-related error.
@@ -3013,7 +3013,7 @@ public class LetPatternExpr <: Expr {
         throwexception: true
     ]
     public mut prop backArrow: Token
-    
+
     /**
      * @description The expression to match the pattern against.
      */
@@ -3021,7 +3021,7 @@ public class LetPatternExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Converts the let-pattern expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3030,7 +3030,7 @@ public class LetPatternExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this let-pattern expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3058,7 +3058,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `MatchExpr`.
      */
@@ -3066,7 +3066,7 @@ public class MatchExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `match` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3076,7 +3076,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The opening parenthesis for the selector.
      * @throws ASTException if there is an AST-related error.
@@ -3086,7 +3086,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The expression being matched.
      * @throws ASTException if there is an AST-related error.
@@ -3096,7 +3096,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public mut prop selector: Expr
-    
+
     /**
      * @description The closing parenthesis for the selector.
      * @throws ASTException if there is an AST-related error.
@@ -3106,7 +3106,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The opening brace for the match cases.
      * @throws ASTException if there is an AST-related error.
@@ -3116,7 +3116,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public mut prop lBrace: Token
-    
+
     /**
      * @description A list of cases for the match expression.
      */
@@ -3124,7 +3124,7 @@ public class MatchExpr <: Expr {
         since: "22"
     ]
     public mut prop matchCases: ArrayList<MatchCase>
-    
+
     /**
      * @description The closing brace for the match cases.
      * @throws ASTException if there is an AST-related error.
@@ -3134,7 +3134,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public mut prop rBrace: Token
-    
+
     /**
      * @description Converts the match expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3145,7 +3145,7 @@ public class MatchExpr <: Expr {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this match expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3173,7 +3173,7 @@ public class WhileExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `WhileExpr`.
      */
@@ -3181,7 +3181,7 @@ public class WhileExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `while` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3191,7 +3191,7 @@ public class WhileExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The opening parenthesis for the condition.
      * @throws ASTException if there is an AST-related error.
@@ -3201,7 +3201,7 @@ public class WhileExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The loop condition expression.
      */
@@ -3209,7 +3209,7 @@ public class WhileExpr <: Expr {
         since: "22"
     ]
     public mut prop condition: Expr
-    
+
     /**
      * @description The closing parenthesis for the condition.
      * @throws ASTException if there is an AST-related error.
@@ -3219,7 +3219,7 @@ public class WhileExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The body of the loop as a block of code.
      */
@@ -3227,7 +3227,7 @@ public class WhileExpr <: Expr {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Converts the while expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3236,7 +3236,7 @@ public class WhileExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this while expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3264,7 +3264,7 @@ public class DoWhileExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `DoWhileExpr`.
      */
@@ -3272,7 +3272,7 @@ public class DoWhileExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `do` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3282,7 +3282,7 @@ public class DoWhileExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordD: Token
-    
+
     /**
      * @description The body of the loop as a block of code.
      */
@@ -3290,7 +3290,7 @@ public class DoWhileExpr <: Expr {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description The `while` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3300,7 +3300,7 @@ public class DoWhileExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordW: Token
-    
+
     /**
      * @description The opening parenthesis for the condition.
      * @throws ASTException if there is an AST-related error.
@@ -3310,7 +3310,7 @@ public class DoWhileExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The loop condition expression.
      */
@@ -3318,7 +3318,7 @@ public class DoWhileExpr <: Expr {
         since: "22"
     ]
     public mut prop condition: Expr
-    
+
     /**
      * @description The closing parenthesis for the condition.
      * @throws ASTException if there is an AST-related error.
@@ -3328,7 +3328,7 @@ public class DoWhileExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the do-while expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3337,7 +3337,7 @@ public class DoWhileExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this do-while expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3365,7 +3365,7 @@ public class LambdaExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `LambdaExpr`.
      */
@@ -3373,7 +3373,7 @@ public class LambdaExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening brace of the lambda body.
      * @throws ASTException if there is an AST-related error.
@@ -3383,7 +3383,7 @@ public class LambdaExpr <: Expr {
         throwexception: true
     ]
     public mut prop lBrace: Token
-    
+
     /**
      * @description A list of parameters for the lambda.
      */
@@ -3391,7 +3391,7 @@ public class LambdaExpr <: Expr {
         since: "22"
     ]
     public mut prop funcParams: ArrayList<FuncParam>
-    
+
     /**
      * @description The double arrow token (`=>`) separating parameters from the body.
      * @throws ASTException if there is an AST-related error.
@@ -3401,7 +3401,7 @@ public class LambdaExpr <: Expr {
         throwexception: true
     ]
     public mut prop doubleArrow: Token
-    
+
     /**
      * @description A list of nodes (statements) in the lambda body.
      */
@@ -3409,7 +3409,7 @@ public class LambdaExpr <: Expr {
         since: "22"
     ]
     public mut prop nodes: ArrayList<Node>
-    
+
     /**
      * @description The closing brace of the lambda body.
      * @throws ASTException if there is an AST-related error.
@@ -3419,18 +3419,16 @@ public class LambdaExpr <: Expr {
         throwexception: true
     ]
     public mut prop rBrace: Token
-    
+
     /**
      * @description Converts the lambda expression to its token representation.
      * @returns A `Tokens` object representing this expression.
-     * @throws ASTException if there is an AST-related error.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this lambda expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3458,7 +3456,7 @@ public class SpawnExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `SpawnExpr`.
      */
@@ -3466,7 +3464,7 @@ public class SpawnExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `spawn` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3476,7 +3474,7 @@ public class SpawnExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The opening parenthesis for the thread context.
      * @throws ASTException if there is an AST-related error.
@@ -3486,7 +3484,7 @@ public class SpawnExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The thread context expression.
      * @throws ASTException if there is an AST-related error.
@@ -3496,7 +3494,7 @@ public class SpawnExpr <: Expr {
         throwexception: true
     ]
     public mut prop threadContext: Expr
-    
+
     /**
      * @description The closing parenthesis for the thread context.
      * @throws ASTException if there is an AST-related error.
@@ -3506,7 +3504,7 @@ public class SpawnExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The lambda expression representing the task to be spawned.
      */
@@ -3514,7 +3512,7 @@ public class SpawnExpr <: Expr {
         since: "22"
     ]
     public mut prop lambdaExpr: LambdaExpr
-    
+
     /**
      * @description Converts the spawn expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3523,7 +3521,7 @@ public class SpawnExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this spawn expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3551,7 +3549,7 @@ public class SynchronizedExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `SynchronizedExpr`.
      */
@@ -3559,7 +3557,7 @@ public class SynchronizedExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `synchronized` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3569,7 +3567,7 @@ public class SynchronizedExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The opening parenthesis for the lock object.
      * @throws ASTException if there is an AST-related error.
@@ -3579,7 +3577,7 @@ public class SynchronizedExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The expression for the structured mutex (lock object).
      */
@@ -3587,7 +3585,7 @@ public class SynchronizedExpr <: Expr {
         since: "22"
     ]
     public mut prop structuredMutex: Expr
-    
+
     /**
      * @description The closing parenthesis for the lock object.
      * @throws ASTException if there is an AST-related error.
@@ -3597,7 +3595,7 @@ public class SynchronizedExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The block of code to be executed under the lock.
      */
@@ -3605,7 +3603,7 @@ public class SynchronizedExpr <: Expr {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Converts the synchronized expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3614,7 +3612,7 @@ public class SynchronizedExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this synchronized expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3642,7 +3640,7 @@ public class TrailingClosureExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `TrailingClosureExpr`.
      */
@@ -3650,7 +3648,7 @@ public class TrailingClosureExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The main expression (e.g., the function call) to which the closure is attached.
      */
@@ -3658,7 +3656,7 @@ public class TrailingClosureExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description The lambda expression that forms the trailing closure.
      */
@@ -3666,18 +3664,16 @@ public class TrailingClosureExpr <: Expr {
         since: "22"
     ]
     public mut prop lambdaExpr: LambdaExpr
-    
+
     /**
      * @description Converts the trailing closure expression to its token representation.
      * @returns A `Tokens` object representing this expression.
-     * @throws ASTException if there is an AST-related error.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this trailing closure expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3705,7 +3701,7 @@ public class TypeConvExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `TypeConvExpr`.
      */
@@ -3713,7 +3709,7 @@ public class TypeConvExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The target primitive type for the conversion.
      */
@@ -3721,7 +3717,7 @@ public class TypeConvExpr <: Expr {
         since: "22"
     ]
     public mut prop targetType: PrimitiveType
-    
+
     /**
      * @description The opening parenthesis token.
      * @throws ASTException if there is an AST-related error.
@@ -3731,7 +3727,7 @@ public class TypeConvExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The expression to be converted.
      */
@@ -3739,7 +3735,7 @@ public class TypeConvExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description The closing parenthesis token.
      * @throws ASTException if there is an AST-related error.
@@ -3749,7 +3745,7 @@ public class TypeConvExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the type conversion expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3758,7 +3754,7 @@ public class TypeConvExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this type conversion expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3786,7 +3782,7 @@ public class ForInExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ForInExpr`.
      */
@@ -3794,7 +3790,7 @@ public class ForInExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `for` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3804,7 +3800,7 @@ public class ForInExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordF: Token
-    
+
     /**
      * @description The opening parenthesis token.
      * @throws ASTException if there is an AST-related error.
@@ -3814,7 +3810,7 @@ public class ForInExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The pattern to bind variables for each iteration.
      */
@@ -3822,7 +3818,7 @@ public class ForInExpr <: Expr {
         since: "22"
     ]
     public mut prop pattern: Pattern
-    
+
     /**
      * @description The `in` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -3832,7 +3828,7 @@ public class ForInExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordI: Token
-    
+
     /**
      * @description The expression to iterate over.
      */
@@ -3840,7 +3836,7 @@ public class ForInExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description The `where` keyword token for a pattern guard.
      */
@@ -3848,7 +3844,7 @@ public class ForInExpr <: Expr {
         since: "22"
     ]
     public mut prop keywordW: Token
-    
+
     /**
      * @description The optional guard expression (`where` clause).
      * @throws ASTException if there is an AST-related error.
@@ -3858,7 +3854,7 @@ public class ForInExpr <: Expr {
         throwexception: true
     ]
     public mut prop patternGuard: Expr
-    
+
     /**
      * @description The closing parenthesis token.
      * @throws ASTException if there is an AST-related error.
@@ -3868,7 +3864,7 @@ public class ForInExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The body of the loop.
      */
@@ -3876,7 +3872,7 @@ public class ForInExpr <: Expr {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Converts the for-in expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3885,7 +3881,7 @@ public class ForInExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this for-in expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3913,7 +3909,7 @@ public class PrimitiveTypeExpr <: Expr {
         throwexception: true
     ]
     public init(kind: Tokens)
-    
+
     /**
      * @description Initializes an empty `PrimitiveTypeExpr`.
      */
@@ -3921,7 +3917,7 @@ public class PrimitiveTypeExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The token representing the primitive type keyword.
      * @throws ASTException if there is an AST-related error.
@@ -3931,7 +3927,7 @@ public class PrimitiveTypeExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description Converts the primitive type expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -3940,7 +3936,7 @@ public class PrimitiveTypeExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this primitive type expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -3968,7 +3964,7 @@ public class ArrayLiteral <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ArrayLiteral`.
      */
@@ -3976,7 +3972,7 @@ public class ArrayLiteral <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening square bracket `[` token.
      * @throws ASTException if there is an AST-related error.
@@ -3986,7 +3982,7 @@ public class ArrayLiteral <: Expr {
         throwexception: true
     ]
     public mut prop lSquare: Token
-    
+
     /**
      * @description A list of expressions for the array elements.
      */
@@ -3994,7 +3990,7 @@ public class ArrayLiteral <: Expr {
         since: "22"
     ]
     public mut prop elements: ArrayList<Expr>
-    
+
     /**
      * @description The closing square bracket `]` token.
      * @throws ASTException if there is an AST-related error.
@@ -4004,7 +4000,7 @@ public class ArrayLiteral <: Expr {
         throwexception: true
     ]
     public mut prop rSquare: Token
-    
+
     /**
      * @description Converts the array literal to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4013,7 +4009,7 @@ public class ArrayLiteral <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this array literal node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4041,7 +4037,7 @@ public class TupleLiteral <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `TupleLiteral`.
      */
@@ -4049,7 +4045,7 @@ public class TupleLiteral <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening parenthesis `(` token.
      * @throws ASTException if there is an AST-related error.
@@ -4059,7 +4055,7 @@ public class TupleLiteral <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of expressions for the tuple elements.
      */
@@ -4067,7 +4063,7 @@ public class TupleLiteral <: Expr {
         since: "22"
     ]
     public mut prop elements: ArrayList<Expr>
-    
+
     /**
      * @description The closing parenthesis `)` token.
      * @throws ASTException if there is an AST-related error.
@@ -4077,7 +4073,7 @@ public class TupleLiteral <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the tuple literal to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4086,7 +4082,7 @@ public class TupleLiteral <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this tuple literal node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4114,7 +4110,7 @@ public class RangeExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `RangeExpr`.
      */
@@ -4122,7 +4118,7 @@ public class RangeExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The start expression of the range.
      * @throws ASTException if there is an AST-related error.
@@ -4132,7 +4128,7 @@ public class RangeExpr <: Expr {
         throwexception: true
     ]
     public mut prop start: Expr
-    
+
     /**
      * @description The range operator token (`..` or `...`).
      */
@@ -4140,7 +4136,7 @@ public class RangeExpr <: Expr {
         since: "22"
     ]
     public mut prop op: Token
-    
+
     /**
      * @description The end expression of the range.
      * @throws ASTException if there is an AST-related error.
@@ -4150,7 +4146,7 @@ public class RangeExpr <: Expr {
         throwexception: true
     ]
     public mut prop end: Expr
-    
+
     /**
      * @description The colon token `:` for specifying a step.
      * @throws ASTException if there is an AST-related error.
@@ -4160,7 +4156,7 @@ public class RangeExpr <: Expr {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The step expression for the range.
      * @throws ASTException if there is an AST-related error.
@@ -4170,7 +4166,7 @@ public class RangeExpr <: Expr {
         throwexception: true
     ]
     public mut prop step: Expr
-    
+
     /**
      * @description Converts the range expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4179,7 +4175,7 @@ public class RangeExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this range expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4207,7 +4203,7 @@ public class SubscriptExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `SubscriptExpr`.
      */
@@ -4215,7 +4211,7 @@ public class SubscriptExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The base expression being subscripted (e.g., the array or dictionary).
      */
@@ -4223,7 +4219,7 @@ public class SubscriptExpr <: Expr {
         since: "22"
     ]
     public mut prop baseExpr: Expr
-    
+
     /**
      * @description The opening square bracket `[` token.
      * @throws ASTException if there is an AST-related error.
@@ -4233,7 +4229,7 @@ public class SubscriptExpr <: Expr {
         throwexception: true
     ]
     public mut prop lSquare: Token
-    
+
     /**
      * @description A list of index expressions.
      */
@@ -4241,7 +4237,7 @@ public class SubscriptExpr <: Expr {
         since: "22"
     ]
     public mut prop indexList: ArrayList<Expr>
-    
+
     /**
      * @description The closing square bracket `]` token.
      * @throws ASTException if there is an AST-related error.
@@ -4251,7 +4247,7 @@ public class SubscriptExpr <: Expr {
         throwexception: true
     ]
     public mut prop rSquare: Token
-    
+
     /**
      * @description Converts the subscript expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4260,7 +4256,7 @@ public class SubscriptExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this subscript expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4288,7 +4284,7 @@ public class JumpExpr <: Expr {
         throwexception: true
     ]
     public init(kind: Tokens)
-    
+
     /**
      * @description Initializes an empty `JumpExpr`.
      */
@@ -4296,7 +4292,7 @@ public class JumpExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The keyword token (`break` or `continue`).
      * @throws ASTException if there is an AST-related error.
@@ -4306,7 +4302,7 @@ public class JumpExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description Converts the jump expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4315,7 +4311,7 @@ public class JumpExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this jump expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4343,7 +4339,7 @@ public class IncOrDecExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `IncOrDecExpr`.
      */
@@ -4351,7 +4347,7 @@ public class IncOrDecExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The increment (`++`) or decrement (`--`) operator token.
      */
@@ -4359,7 +4355,7 @@ public class IncOrDecExpr <: Expr {
         since: "22"
     ]
     public mut prop op: Token
-    
+
     /**
      * @description The expression being incremented or decremented.
      */
@@ -4367,7 +4363,7 @@ public class IncOrDecExpr <: Expr {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Converts the increment/decrement expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4376,7 +4372,7 @@ public class IncOrDecExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this increment/decrement expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4413,7 +4409,7 @@ public class TryExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `TryExpr`.
      */
@@ -4421,7 +4417,7 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `try` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -4431,7 +4427,7 @@ public class TryExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordT: Token
-    
+
     /**
      * @description A list of resource specifications for try-with-resources.
      */
@@ -4439,7 +4435,7 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public mut prop resourceSpec: ArrayList<VarDecl>
-    
+
     /**
      * @description The main block of code to be executed.
      */
@@ -4447,7 +4443,7 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public mut prop tryBlock: Block
-    
+
     /**
      * @description The `catch` keyword tokens.
      * @throws ASTException if there is an AST-related error.
@@ -4457,7 +4453,7 @@ public class TryExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordsC: Tokens
-    
+
     /**
      * @description A list of patterns for the `catch` blocks.
      */
@@ -4465,7 +4461,7 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public mut prop catchPatterns: ArrayList<Pattern>
-    
+
     /**
      * @description A list of blocks corresponding to the `catch` patterns.
      */
@@ -4473,7 +4469,7 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public mut prop catchBlocks: ArrayList<Block>
-    
+
     /**
      * @description A list of handlers for `try-handle` expressions.
      */
@@ -4481,7 +4477,7 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public mut prop handlers: ArrayList<Handler>
-    
+
     /**
      * @description The `finally` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -4491,7 +4487,7 @@ public class TryExpr <: Expr {
         throwexception: true
     ]
     public mut prop keywordF: Token
-    
+
     /**
      * @description The `finally` block, which is always executed.
      * @throws ASTException if there is an AST-related error.
@@ -4501,7 +4497,7 @@ public class TryExpr <: Expr {
         throwexception: true
     ]
     public mut prop finallyBlock: Block
-    
+
     /**
      * @description Converts the try expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4510,7 +4506,7 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this try expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4535,7 +4531,7 @@ public class OptionalExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes an `OptionalExpr` from a set of tokens.
      * @param inputs The tokens to parse.
@@ -4546,7 +4542,7 @@ public class OptionalExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description The base expression that is optional.
      */
@@ -4554,7 +4550,7 @@ public class OptionalExpr <: Expr {
         since: "22"
     ]
     public mut prop baseExpr: Expr
-    
+
     /**
      * @description The question mark `?` token.
      * @throws ASTException if there is an AST-related error.
@@ -4564,7 +4560,7 @@ public class OptionalExpr <: Expr {
         throwexception: true
     ]
     public mut prop quest: Token
-    
+
     /**
      * @description Converts the optional expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4573,7 +4569,7 @@ public class OptionalExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this optional expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4598,7 +4594,7 @@ public class QuoteToken <: Expr {
         since: "22"
     ]
     public mut prop tokens: Tokens
-    
+
     /**
      * @description Converts the quoted tokens to their token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4607,7 +4603,7 @@ public class QuoteToken <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this quoted token node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4635,7 +4631,7 @@ public class QuoteExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `QuoteExpr`.
      */
@@ -4643,7 +4639,7 @@ public class QuoteExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `quote` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -4653,7 +4649,7 @@ public class QuoteExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The opening parenthesis `(` token.
      * @throws ASTException if there is an AST-related error.
@@ -4663,7 +4659,7 @@ public class QuoteExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of expressions being quoted.
      */
@@ -4671,7 +4667,7 @@ public class QuoteExpr <: Expr {
         since: "22"
     ]
     public mut prop exprs: ArrayList<Expr>
-    
+
     /**
      * @description The closing parenthesis `)` token.
      * @throws ASTException if there is an AST-related error.
@@ -4681,7 +4677,7 @@ public class QuoteExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the quote expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4690,7 +4686,7 @@ public class QuoteExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this quote expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4718,7 +4714,7 @@ public class WildcardExpr <: Expr {
         throwexception: true
     ]
     public init(keyword: Tokens)
-    
+
     /**
      * @description Initializes an empty `WildcardExpr`.
      */
@@ -4726,7 +4722,7 @@ public class WildcardExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The wildcard `_` token.
      * @throws ASTException if there is an AST-related error.
@@ -4736,7 +4732,7 @@ public class WildcardExpr <: Expr {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description Converts the wildcard expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4745,7 +4741,7 @@ public class WildcardExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this wildcard expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4773,7 +4769,7 @@ public class VArrayExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `VArrayExpr`.
      */
@@ -4781,7 +4777,7 @@ public class VArrayExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The SIMD vector array type.
      */
@@ -4789,7 +4785,7 @@ public class VArrayExpr <: Expr {
         since: "22"
     ]
     public mut prop vArrayType: VArrayType
-    
+
     /**
      * @description The opening parenthesis `(` token.
      * @throws ASTException if there is an AST-related error.
@@ -4799,7 +4795,7 @@ public class VArrayExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of arguments for the vector array constructor.
      */
@@ -4807,7 +4803,7 @@ public class VArrayExpr <: Expr {
         since: "22"
     ]
     public mut prop arguments: ArrayList<Argument>
-    
+
     /**
      * @description The closing parenthesis `)` token.
      * @throws ASTException if there is an AST-related error.
@@ -4817,7 +4813,7 @@ public class VArrayExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the SIMD vector array expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4828,7 +4824,7 @@ public class VArrayExpr <: Expr {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this SIMD vector array expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4856,7 +4852,7 @@ public class MacroExpandExpr <: Expr {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `MacroExpandExpr`.
      */
@@ -4864,7 +4860,7 @@ public class MacroExpandExpr <: Expr {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The at `@` token.
      * @throws ASTException if there is an AST-related error.
@@ -4874,7 +4870,7 @@ public class MacroExpandExpr <: Expr {
         throwexception: true
     ]
     public mut prop at: Token
-    
+
     /**
      * @description The identifier token of the macro being expanded.
      */
@@ -4882,7 +4878,7 @@ public class MacroExpandExpr <: Expr {
         since: "22"
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description The opening square bracket `[` for macro attributes.
      * @throws ASTException if there is an AST-related error.
@@ -4892,7 +4888,7 @@ public class MacroExpandExpr <: Expr {
         throwexception: true
     ]
     public mut prop lSquare: Token
-    
+
     /**
      * @description The attributes passed to the macro.
      */
@@ -4900,7 +4896,7 @@ public class MacroExpandExpr <: Expr {
         since: "22"
     ]
     public mut prop macroAttrs: Tokens
-    
+
     /**
      * @description The closing square bracket `]` for macro attributes.
      * @throws ASTException if there is an AST-related error.
@@ -4910,7 +4906,7 @@ public class MacroExpandExpr <: Expr {
         throwexception: true
     ]
     public mut prop rSquare: Token
-    
+
     /**
      * @description The opening parenthesis `(` for macro inputs.
      * @throws ASTException if there is an AST-related error.
@@ -4920,7 +4916,7 @@ public class MacroExpandExpr <: Expr {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The inputs passed to the macro.
      */
@@ -4928,7 +4924,7 @@ public class MacroExpandExpr <: Expr {
         since: "22"
     ]
     public mut prop macroInputs: Tokens
-    
+
     /**
      * @description The closing parenthesis `)` for macro inputs.
      * @throws ASTException if there is an AST-related error.
@@ -4938,7 +4934,7 @@ public class MacroExpandExpr <: Expr {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the macro expansion expression to its token representation.
      * @returns A `Tokens` object representing this expression.
@@ -4947,7 +4943,7 @@ public class MacroExpandExpr <: Expr {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this macro expansion expression node with a visitor.
      * @param v The visitor to use for traversal.
@@ -4963,6 +4959,7 @@ public class MacroExpandExpr <: Expr {
  * @param code The source code string to tokenize.
  * @returns A `Tokens` object containing the sequence of lexical tokens.
  * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  */
 @!APILevel[
     since: "22",
@@ -4976,6 +4973,7 @@ public func cangjieLex(code: String): Tokens
  * @param truncated A boolean indicating if the code is a truncated snippet.
  * @returns A `Tokens` object containing the sequence of lexical tokens.
  * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  */
 @!APILevel[
     since: "22",
@@ -4997,7 +4995,7 @@ public class MacroContextException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a new `MacroContextException` with a specified error message.
      * @param message The detail message.
@@ -5011,7 +5009,7 @@ public class MacroContextException <: Exception {
 /**
  * @description Asserts that the current macro is being expanded within the context of a specified parent macro.
  * @param parentMacroName The name of the expected parent macro.
- * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  * @throws MacroContextException if the assertion fails.
  */
 @!APILevel[
@@ -5024,7 +5022,7 @@ public func assertParentContext(parentMacroName: String): Unit
  * @description Checks if the current macro is being expanded within the context of a specified parent macro.
  * @param parentMacroName The name of the parent macro to check for.
  * @returns `true` if inside the parent context, `false` otherwise.
- * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  */
 @!APILevel[
     since: "22",
@@ -5037,6 +5035,7 @@ public func insideParentContext(parentMacroName: String): Bool
  * @param key The key to associate the value with.
  * @param value The string value to set.
  * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  */
 @!APILevel[
     since: "22",
@@ -5049,6 +5048,7 @@ public func setItem(key: String, value: String): Unit
  * @param key The key to associate the value with.
  * @param value The Int64 value to set.
  * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  */
 @!APILevel[
     since: "22",
@@ -5061,6 +5061,7 @@ public func setItem(key: String, value: Int64): Unit
  * @param key The key to associate the value with.
  * @param value The boolean value to set.
  * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  */
 @!APILevel[
     since: "22",
@@ -5073,6 +5074,7 @@ public func setItem(key: String, value: Bool): Unit
  * @param key The key to associate the value with.
  * @param value The `Tokens` value to set.
  * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails.
  */
 @!APILevel[
     since: "22",
@@ -5096,44 +5098,52 @@ public class MacroMessage {
         since: "22"
     ]
     public func hasItem(key: String): Bool
-    
+
     /**
      * @description Retrieves a string value from the message by its key.
      * @param key The key of the value to retrieve.
      * @returns The string value associated with the key.
+     * @throws Exception if the key is not found or the value is not a string.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func getString(key: String): String
-    
+
     /**
      * @description Retrieves an Int64 value from the message by its key.
      * @param key The key of the value to retrieve.
      * @returns The Int64 value associated with the key.
+     * @throws Exception if the key is not found or the value is not a string.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func getInt64(key: String): Int64
-    
+
     /**
      * @description Retrieves a boolean value from the message by its key.
      * @param key The key of the value to retrieve.
      * @returns The boolean value associated with the key.
+     * @throws Exception if the key is not found or the value is not a boolean.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func getBool(key: String): Bool
-    
+
     /**
      * @description Retrieves a `Tokens` value from the message by its key.
      * @param key The key of the value to retrieve.
      * @returns The `Tokens` value associated with the key.
+     * @throws Exception if the key is not found or the value is not `Tokens`.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func getTokens(key: String): Tokens
 }
@@ -5142,7 +5152,7 @@ public class MacroMessage {
  * @description Retrieves messages from child macros with a specific name.
  * @param children The name of the child macros to get messages from.
  * @returns An `ArrayList` of `MacroMessage` objects from the specified children.
- * @throws IllegalArgumentException if an argument is invalid.
+ * @throws IllegalMemoryException if a memory allocation fails
  */
 @!APILevel[
     since: "22",
@@ -5164,7 +5174,7 @@ abstract sealed class Node <: ToTokens {
         since: "22"
     ]
     public mut prop beginPos: Position
-    
+
     /**
      * @description The ending position of this node in the source code.
      */
@@ -5172,7 +5182,7 @@ abstract sealed class Node <: ToTokens {
         since: "22"
     ]
     public mut prop endPos: Position
-    
+
     /**
      * @description Converts the AST node back into its token representation.
      * @returns A `Tokens` object representing this node.
@@ -5181,7 +5191,7 @@ abstract sealed class Node <: ToTokens {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this AST node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5190,7 +5200,7 @@ abstract sealed class Node <: ToTokens {
         since: "22"
     ]
     public func traverse(v: Visitor): Unit
-    
+
     /**
      * @description Dumps a debug representation of the AST node to standard output.
      */
@@ -5217,7 +5227,7 @@ public class Annotation <: Node {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `Annotation`.
      */
@@ -5225,7 +5235,7 @@ public class Annotation <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The at `@` token.
      * @throws ASTException if there is an AST-related error.
@@ -5235,7 +5245,7 @@ public class Annotation <: Node {
         throwexception: true
     ]
     public mut prop at: Token
-    
+
     /**
      * @description The identifier token of the annotation.
      */
@@ -5243,7 +5253,7 @@ public class Annotation <: Node {
         since: "22"
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description A list of arguments passed to the annotation.
      */
@@ -5251,7 +5261,7 @@ public class Annotation <: Node {
         since: "22"
     ]
     public mut prop arguments: ArrayList<Argument>
-    
+
     /**
      * @description The attributes of the annotation.
      */
@@ -5259,7 +5269,7 @@ public class Annotation <: Node {
         since: "22"
     ]
     public mut prop attributes: Tokens
-    
+
     /**
      * @description The optional condition expression for the annotation.
      * @throws ASTException if there is an AST-related error.
@@ -5269,7 +5279,7 @@ public class Annotation <: Node {
         throwexception: true
     ]
     public mut prop condition: Expr
-    
+
     /**
      * @description Converts the annotation to its token representation.
      * @returns A `Tokens` object representing this annotation.
@@ -5280,7 +5290,7 @@ public class Annotation <: Node {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this annotation node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5306,7 +5316,7 @@ public class Modifier <: Node {
         since: "22"
     ]
     public init(keyword: Token)
-    
+
     /**
      * @description Initializes an empty `Modifier`.
      */
@@ -5314,7 +5324,7 @@ public class Modifier <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The token representing the modifier keyword.
      */
@@ -5322,7 +5332,7 @@ public class Modifier <: Node {
         since: "22"
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description Converts the modifier to its token representation.
      * @returns A `Tokens` object representing this modifier.
@@ -5331,7 +5341,7 @@ public class Modifier <: Node {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this modifier node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5357,7 +5367,7 @@ public class GenericParam <: Node {
         since: "22"
     ]
     public init(parameters: Tokens)
-    
+
     /**
      * @description Initializes an empty `GenericParam`.
      */
@@ -5365,7 +5375,7 @@ public class GenericParam <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening angle bracket `<` token.
      * @throws ASTException if there is an AST-related error.
@@ -5375,7 +5385,7 @@ public class GenericParam <: Node {
         throwexception: true
     ]
     public mut prop lAngle: Token
-    
+
     /**
      * @description The tokens representing the generic parameters.
      */
@@ -5383,7 +5393,7 @@ public class GenericParam <: Node {
         since: "22"
     ]
     public mut prop parameters: Tokens
-    
+
     /**
      * @description The closing angle bracket `>` token.
      * @throws ASTException if there is an AST-related error.
@@ -5393,7 +5403,7 @@ public class GenericParam <: Node {
         throwexception: true
     ]
     public mut prop rAngle: Token
-    
+
     /**
      * @description Converts the generic parameter to its token representation.
      * @returns A `Tokens` object representing this generic parameter.
@@ -5402,7 +5412,7 @@ public class GenericParam <: Node {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this generic parameter node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5427,7 +5437,7 @@ public class GenericConstraint <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `where` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -5437,7 +5447,7 @@ public class GenericConstraint <: Node {
         throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The type argument being constrained (e.g., `T`).
      */
@@ -5445,7 +5455,7 @@ public class GenericConstraint <: Node {
         since: "22"
     ]
     public mut prop typeArgument: TypeNode
-    
+
     /**
      * @description The colon token `:` indicating an upper bound.
      * @throws ASTException if there is an AST-related error.
@@ -5455,7 +5465,7 @@ public class GenericConstraint <: Node {
         throwexception: true
     ]
     public mut prop upperBound: Token
-    
+
     /**
      * @description A list of types that form the upper bounds of the constraint.
      */
@@ -5463,7 +5473,7 @@ public class GenericConstraint <: Node {
         since: "22"
     ]
     public mut prop upperBounds: ArrayList<TypeNode>
-    
+
     /**
      * @description The bitwise AND `&` tokens used to separate multiple upper bounds.
      * @throws ASTException if there is an AST-related error.
@@ -5473,7 +5483,7 @@ public class GenericConstraint <: Node {
         throwexception: true
     ]
     public mut prop bitAnds: Tokens
-    
+
     /**
      * @description Converts the generic constraint to its token representation.
      * @returns A `Tokens` object representing this constraint.
@@ -5484,7 +5494,7 @@ public class GenericConstraint <: Node {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this generic constraint node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5510,7 +5520,7 @@ public class Body <: Node {
         since: "22"
     ]
     public init(decls: ArrayList<Decl>)
-    
+
     /**
      * @description Initializes an empty `Body`.
      */
@@ -5518,7 +5528,7 @@ public class Body <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening brace `{` token.
      * @throws ASTException if there is an AST-related error.
@@ -5528,7 +5538,7 @@ public class Body <: Node {
         throwexception: true
     ]
     public mut prop lBrace: Token
-    
+
     /**
      * @description The list of declarations within the body.
      */
@@ -5536,7 +5546,7 @@ public class Body <: Node {
         since: "22"
     ]
     public mut prop decls: ArrayList<Decl>
-    
+
     /**
      * @description The closing brace `}` token.
      * @throws ASTException if there is an AST-related error.
@@ -5546,7 +5556,7 @@ public class Body <: Node {
         throwexception: true
     ]
     public mut prop rBrace: Token
-    
+
     /**
      * @description Converts the body to its token representation.
      * @returns A `Tokens` object representing this body.
@@ -5557,7 +5567,7 @@ public class Body <: Node {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this body node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5582,7 +5592,7 @@ public class Argument <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The keyword token for the argument (e.g., `inout`).
      */
@@ -5590,7 +5600,7 @@ public class Argument <: Node {
         since: "22"
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The identifier for a named argument.
      * @throws ASTException if there is an AST-related error.
@@ -5600,7 +5610,7 @@ public class Argument <: Node {
         throwexception: true
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description The colon token `:` separating a named argument's identifier from its value.
      * @throws ASTException if there is an AST-related error.
@@ -5610,7 +5620,7 @@ public class Argument <: Node {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The expression providing the value of the argument.
      */
@@ -5618,7 +5628,7 @@ public class Argument <: Node {
         since: "22"
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description Converts the argument to its token representation.
      * @returns A `Tokens` object representing this argument.
@@ -5629,7 +5639,7 @@ public class Argument <: Node {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this argument node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5654,7 +5664,7 @@ public class MatchCase <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `case` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -5664,7 +5674,7 @@ public class MatchCase <: Node {
         throwexception: true
     ]
     public mut prop keywordC: Token
-    
+
     /**
      * @description The expression for a `case` that matches a specific value.
      * @throws ASTException if there is an AST-related error.
@@ -5674,7 +5684,7 @@ public class MatchCase <: Node {
         throwexception: true
     ]
     public mut prop expr: Expr
-    
+
     /**
      * @description A list of patterns for this case. Multiple patterns can be separated by `|`.
      */
@@ -5682,7 +5692,7 @@ public class MatchCase <: Node {
         since: "22"
     ]
     public mut prop patterns: ArrayList<Pattern>
-    
+
     /**
      * @description The bitwise OR `|` tokens used to separate multiple patterns.
      * @throws ASTException if there is an AST-related error.
@@ -5692,7 +5702,7 @@ public class MatchCase <: Node {
         throwexception: true
     ]
     public mut prop bitOrs: Tokens
-    
+
     /**
      * @description The `where` keyword token for a pattern guard.
      * @throws ASTException if there is an AST-related error.
@@ -5702,7 +5712,7 @@ public class MatchCase <: Node {
         throwexception: true
     ]
     public mut prop keywordW: Token
-    
+
     /**
      * @description The optional guard expression (`where` clause).
      * @throws ASTException if there is an AST-related error.
@@ -5712,7 +5722,7 @@ public class MatchCase <: Node {
         throwexception: true
     ]
     public mut prop patternGuard: Expr
-    
+
     /**
      * @description The arrow token `->` separating the pattern from the case body.
      * @throws ASTException if there is an AST-related error.
@@ -5722,7 +5732,7 @@ public class MatchCase <: Node {
         throwexception: true
     ]
     public mut prop arrow: Token
-    
+
     /**
      * @description The block of code to execute for this case.
      */
@@ -5730,7 +5740,7 @@ public class MatchCase <: Node {
         since: "22"
     ]
     public mut prop block: Block
-    
+
     /**
      * @description Converts the match case to its token representation.
      * @returns A `Tokens` object representing this match case.
@@ -5739,7 +5749,7 @@ public class MatchCase <: Node {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this match case node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5767,7 +5777,7 @@ public class Program <: Node {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `Program`.
      */
@@ -5775,7 +5785,7 @@ public class Program <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The package header declaration.
      */
@@ -5783,7 +5793,7 @@ public class Program <: Node {
         since: "22"
     ]
     public mut prop packageHeader: PackageHeader
-    
+
     /**
      * @description A list of import statements.
      */
@@ -5791,7 +5801,7 @@ public class Program <: Node {
         since: "22"
     ]
     public mut prop importLists: ArrayList<ImportList>
-    
+
     /**
      * @description A list of top-level declarations in the program.
      */
@@ -5799,7 +5809,7 @@ public class Program <: Node {
         since: "22"
     ]
     public mut prop decls: ArrayList<Decl>
-    
+
     /**
      * @description Converts the program to its token representation.
      * @returns A `Tokens` object representing this program.
@@ -5810,7 +5820,7 @@ public class Program <: Node {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this program node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5838,7 +5848,7 @@ public class PackageHeader <: Node {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `PackageHeader`.
      */
@@ -5846,7 +5856,7 @@ public class PackageHeader <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The accessibility modifier token (e.g., `public`).
      */
@@ -5854,7 +5864,7 @@ public class PackageHeader <: Node {
         since: "22"
     ]
     public mut prop accessible: Token
-    
+
     /**
      * @description The `module` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -5864,7 +5874,7 @@ public class PackageHeader <: Node {
         throwexception: true
     ]
     public mut prop keywordM: Token
-    
+
     /**
      * @description The `package` keyword token.
      * @throws ASTException if there is an AST-related error.
@@ -5874,7 +5884,7 @@ public class PackageHeader <: Node {
         throwexception: true
     ]
     public mut prop keywordP: Token
-    
+
     /**
      * @description The path components of the package name.
      */
@@ -5882,7 +5892,7 @@ public class PackageHeader <: Node {
         since: "22"
     ]
     public mut prop prefixPaths: Tokens
-    
+
     /**
      * @description The dot `.` tokens separating package path components.
      * @throws ASTException if there is an AST-related error.
@@ -5892,7 +5902,7 @@ public class PackageHeader <: Node {
         throwexception: true
     ]
     public mut prop prefixDots: Tokens
-    
+
     /**
      * @description The final identifier of the package name.
      */
@@ -5900,7 +5910,7 @@ public class PackageHeader <: Node {
         since: "22"
     ]
     public mut prop packageIdentifier: Token
-    
+
     /**
      * @description Converts the package header to its token representation.
      * @returns A `Tokens` object representing this package header.
@@ -5909,7 +5919,7 @@ public class PackageHeader <: Node {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this package header node with a visitor.
      * @param v The visitor to use for traversal.
@@ -5979,7 +5989,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The kind of import (e.g., Single, Alias, All, Multi).
      */
@@ -5987,7 +5997,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public mut prop importKind: ImportKind
-    
+
     /**
      * @description The path components of the import.
      */
@@ -5995,7 +6005,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public mut prop prefixPaths: Tokens
-    
+
     /**
      * @description The dot `.` tokens separating the import path components.
      * @throws ASTException if there is an AST-related error.
@@ -6005,7 +6015,7 @@ public class ImportContent <: Node {
         throwexception: true
     ]
     public mut prop prefixDots: Tokens
-    
+
     /**
      * @description The identifier being imported.
      */
@@ -6013,7 +6023,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description The alias for the import, if any.
      */
@@ -6021,7 +6031,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public mut prop importAlias: Tokens
-    
+
     /**
      * @description The opening brace `{` for a multi-import.
      * @throws ASTException if there is an AST-related error.
@@ -6031,7 +6041,7 @@ public class ImportContent <: Node {
         throwexception: true
     ]
     public mut prop lBrace: Token
-    
+
     /**
      * @description A list of nested import content items for a multi-import.
      */
@@ -6039,7 +6049,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public mut prop items: ArrayList<ImportContent>
-    
+
     /**
      * @description The comma tokens separating items in a multi-import.
      * @throws ASTException if there is an AST-related error.
@@ -6049,7 +6059,7 @@ public class ImportContent <: Node {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing brace `}` for a multi-import.
      * @throws ASTException if there is an AST-related error.
@@ -6059,7 +6069,7 @@ public class ImportContent <: Node {
         throwexception: true
     ]
     public mut prop rBrace: Token
-    
+
     /**
      * @description Checks if this is an import with an alias.
      * @returns `true` if it is an alias import, `false` otherwise.
@@ -6068,7 +6078,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public func isImportAlias(): Bool
-    
+
     /**
      * @description Checks if this is a wildcard import.
      * @returns `true` if it is a wildcard import, `false` otherwise.
@@ -6077,7 +6087,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public func isImportAll(): Bool
-    
+
     /**
      * @description Checks if this is a multi-item import.
      * @returns `true` if it is a multi-item import, `false` otherwise.
@@ -6086,7 +6096,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public func isImportMulti(): Bool
-    
+
     /**
      * @description Checks if this is a single-item import.
      * @returns `true` if it is a single-item import, `false` otherwise.
@@ -6095,7 +6105,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public func isImportSingle(): Bool
-    
+
     /**
      * @description Converts the import content to its token representation.
      * @returns A `Tokens` object representing this import content.
@@ -6104,7 +6114,7 @@ public class ImportContent <: Node {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this import content node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6132,7 +6142,7 @@ public class ImportList <: Node {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ImportList`.
      */
@@ -6140,7 +6150,7 @@ public class ImportList <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The modifier token for the import (e.g., `public`).
      */
@@ -6148,7 +6158,7 @@ public class ImportList <: Node {
         since: "22"
     ]
     public mut prop modifier: Token
-    
+
     /**
      * @description The `import` keyword token.
      */
@@ -6156,7 +6166,7 @@ public class ImportList <: Node {
         since: "22"
     ]
     public mut prop keywordI: Token
-    
+
     /**
      * @description The content of the import statement.
      */
@@ -6164,7 +6174,7 @@ public class ImportList <: Node {
         since: "22"
     ]
     public mut prop content: ImportContent
-    
+
     /**
      * @description Checks if this is a multi-item import.
      * @returns `true` if it is a multi-item import, `false` otherwise.
@@ -6173,7 +6183,7 @@ public class ImportList <: Node {
         since: "22"
     ]
     public func isImportMulti(): Bool
-    
+
     /**
      * @description Converts the import list to its token representation.
      * @returns A `Tokens` object representing this import list.
@@ -6182,7 +6192,7 @@ public class ImportList <: Node {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this import list node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6207,7 +6217,7 @@ public class Constructor <: Node {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description A list of annotations on the constructor.
      */
@@ -6215,7 +6225,7 @@ public class Constructor <: Node {
         since: "22"
     ]
     public mut prop annotations: ArrayList<Annotation>
-    
+
     /**
      * @description The identifier token of the constructor.
      */
@@ -6223,7 +6233,7 @@ public class Constructor <: Node {
         since: "22"
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description The opening parenthesis `(` for type arguments.
      * @throws ASTException if there is an AST-related error.
@@ -6233,7 +6243,7 @@ public class Constructor <: Node {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of type arguments for a generic constructor.
      */
@@ -6241,7 +6251,7 @@ public class Constructor <: Node {
         since: "22"
     ]
     public mut prop typeArguments: ArrayList<TypeNode>
-    
+
     /**
      * @description The closing parenthesis `)` for type arguments.
      * @throws ASTException if there is an AST-related error.
@@ -6251,7 +6261,7 @@ public class Constructor <: Node {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the constructor to its token representation.
      * @returns A `Tokens` object representing this constructor.
@@ -6262,7 +6272,7 @@ public class Constructor <: Node {
         throwexception: true
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this constructor node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6425,7 +6435,7 @@ public open class Pattern <: Node {
         since: "22"
     ]
     public open func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6453,7 +6463,7 @@ public class ConstPattern <: Pattern {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ConstPattern`.
      */
@@ -6461,7 +6471,7 @@ public class ConstPattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The literal constant expression to match.
      */
@@ -6469,7 +6479,7 @@ public class ConstPattern <: Pattern {
         since: "22"
     ]
     public mut prop litConstExpr: LitConstExpr
-    
+
     /**
      * @description Converts the constant pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6478,7 +6488,7 @@ public class ConstPattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this constant pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6506,7 +6516,7 @@ public class WildcardPattern <: Pattern {
         throwexception: true
     ]
     public init(keyword: Tokens)
-    
+
     /**
      * @description Initializes an empty `WildcardPattern`.
      */
@@ -6514,7 +6524,7 @@ public class WildcardPattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The wildcard `_` token.
      * @throws ASTException if there is an AST-related error.
@@ -6524,7 +6534,7 @@ public class WildcardPattern <: Pattern {
         throwexception: true
     ]
     public mut prop wildcard: Token
-    
+
     /**
      * @description Converts the wildcard pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6533,7 +6543,7 @@ public class WildcardPattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this wildcard pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6561,7 +6571,7 @@ public class VarPattern <: Pattern {
         throwexception: true
     ]
     public init(identifier: Token)
-    
+
     /**
      * @description Initializes an empty `VarPattern`.
      */
@@ -6569,7 +6579,7 @@ public class VarPattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The identifier token for the variable.
      * @throws ASTException if there is an AST-related error.
@@ -6579,7 +6589,7 @@ public class VarPattern <: Pattern {
         throwexception: true
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description Converts the variable pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6588,7 +6598,7 @@ public class VarPattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this variable pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6616,7 +6626,7 @@ public class VarOrEnumPattern <: Pattern {
         throwexception: true
     ]
     public init(identifier: Token)
-    
+
     /**
      * @description Initializes an empty `VarOrEnumPattern`.
      */
@@ -6624,7 +6634,7 @@ public class VarOrEnumPattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The identifier token.
      * @throws ASTException if there is an AST-related error.
@@ -6634,7 +6644,7 @@ public class VarOrEnumPattern <: Pattern {
         throwexception: true
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description Converts the pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6643,7 +6653,7 @@ public class VarOrEnumPattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6668,7 +6678,7 @@ public class ExceptTypePattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes an `ExceptTypePattern` from a set of tokens.
      * @param inputs The tokens to parse.
@@ -6679,7 +6689,7 @@ public class ExceptTypePattern <: Pattern {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description The inner pattern.
      */
@@ -6687,7 +6697,7 @@ public class ExceptTypePattern <: Pattern {
         since: "22"
     ]
     public mut prop pattern: Pattern
-    
+
     /**
      * @description The colon token `:`.
      * @throws ASTException if there is an AST-related error.
@@ -6697,7 +6707,7 @@ public class ExceptTypePattern <: Pattern {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description A list of exception types for the constraint.
      */
@@ -6705,7 +6715,7 @@ public class ExceptTypePattern <: Pattern {
         since: "22"
     ]
     public mut prop types: ArrayList<TypeNode>
-    
+
     /**
      * @description Converts the pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6714,7 +6724,7 @@ public class ExceptTypePattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6739,7 +6749,7 @@ public class CommandTypePattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a `CommandTypePattern` from a set of tokens.
      * @param inputs The tokens to parse.
@@ -6750,7 +6760,7 @@ public class CommandTypePattern <: Pattern {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description The inner pattern.
      */
@@ -6758,7 +6768,7 @@ public class CommandTypePattern <: Pattern {
         since: "22"
     ]
     public mut prop pattern: Pattern
-    
+
     /**
      * @description The colon token `:`.
      * @throws ASTException if there is an AST-related error.
@@ -6768,7 +6778,7 @@ public class CommandTypePattern <: Pattern {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description A list of command types for the constraint.
      */
@@ -6776,7 +6786,7 @@ public class CommandTypePattern <: Pattern {
         since: "22"
     ]
     public mut prop types: ArrayList<TypeNode>
-    
+
     /**
      * @description Converts the pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6785,7 +6795,7 @@ public class CommandTypePattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6810,7 +6820,7 @@ public class TypePattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a `TypePattern` from a set of tokens.
      * @param inputs The tokens to parse.
@@ -6821,7 +6831,7 @@ public class TypePattern <: Pattern {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description The inner pattern being typed.
      */
@@ -6829,7 +6839,7 @@ public class TypePattern <: Pattern {
         since: "22"
     ]
     public mut prop pattern: Pattern
-    
+
     /**
      * @description The colon token `:`.
      * @throws ASTException if there is an AST-related error.
@@ -6839,7 +6849,7 @@ public class TypePattern <: Pattern {
         throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description The type being annotated on the pattern.
      */
@@ -6847,7 +6857,7 @@ public class TypePattern <: Pattern {
         since: "22"
     ]
     public mut prop patternType: TypeNode
-    
+
     /**
      * @description Converts the type pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6856,7 +6866,7 @@ public class TypePattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this type pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6881,7 +6891,7 @@ public class EnumPattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes an `EnumPattern` from a set of tokens.
      * @param inputs The tokens to parse.
@@ -6892,7 +6902,7 @@ public class EnumPattern <: Pattern {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description The constructor expression for the enum case.
      */
@@ -6900,7 +6910,7 @@ public class EnumPattern <: Pattern {
         since: "22"
     ]
     public mut prop constructor: Expr
-    
+
     /**
      * @description The opening parenthesis `(` for associated value patterns.
      * @throws ASTException if there is an AST-related error.
@@ -6910,7 +6920,7 @@ public class EnumPattern <: Pattern {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of patterns for the associated values of the enum case.
      */
@@ -6918,7 +6928,7 @@ public class EnumPattern <: Pattern {
         since: "22"
     ]
     public mut prop patterns: ArrayList<Pattern>
-    
+
     /**
      * @description The comma tokens separating associated value patterns.
      * @throws ASTException if there is an AST-related error.
@@ -6928,7 +6938,7 @@ public class EnumPattern <: Pattern {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing parenthesis `)` for associated value patterns.
      * @throws ASTException if there is an AST-related error.
@@ -6938,7 +6948,7 @@ public class EnumPattern <: Pattern {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the enum pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -6947,7 +6957,7 @@ public class EnumPattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this enum pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -6972,7 +6982,7 @@ public class TuplePattern <: Pattern {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a `TuplePattern` from a set of tokens.
      * @param inputs The tokens to parse.
@@ -6983,7 +6993,7 @@ public class TuplePattern <: Pattern {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description The opening parenthesis `(` token.
      * @throws ASTException if there is an AST-related error.
@@ -6993,7 +7003,7 @@ public class TuplePattern <: Pattern {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of patterns for the elements of the tuple.
      */
@@ -7001,7 +7011,7 @@ public class TuplePattern <: Pattern {
         since: "22"
     ]
     public mut prop patterns: ArrayList<Pattern>
-    
+
     /**
      * @description The comma tokens separating the element patterns.
      * @throws ASTException if there is an AST-related error.
@@ -7011,7 +7021,7 @@ public class TuplePattern <: Pattern {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing parenthesis `)` token.
      * @throws ASTException if there is an AST-related error.
@@ -7021,7 +7031,7 @@ public class TuplePattern <: Pattern {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the tuple pattern to its token representation.
      * @returns A `Tokens` object representing this pattern.
@@ -7030,7 +7040,7 @@ public class TuplePattern <: Pattern {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this tuple pattern node with a visitor.
      * @param v The visitor to use for traversal.
@@ -7055,7 +7065,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public let fileID: UInt32
-    
+
     /**
      * @description The line number in the source file (1-based).
      */
@@ -7063,7 +7073,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public let line: Int32
-    
+
     /**
      * @description The column number in the source file (1-based).
      */
@@ -7071,7 +7081,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public let column: Int32
-    
+
     /**
      * @description Initializes an empty `Position` (typically with zero values).
      */
@@ -7079,7 +7089,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a `Position` with a file ID, line, and column.
      * @param fileID The ID of the source file.
@@ -7090,7 +7100,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public init(fileID: UInt32, line: Int32, column: Int32)
-    
+
     /**
      * @description Checks if the position is empty (uninitialized).
      * @returns `true` if the position is empty, `false` otherwise.
@@ -7099,7 +7109,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Compares this position with another for equality.
      * @param r The other `Position` to compare with.
@@ -7109,7 +7119,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public operator func ==(r: Position): Bool
-    
+
     /**
      * @description Compares this position with another for inequality.
      * @param r The other `Position` to compare with.
@@ -7119,7 +7129,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public operator func !=(r: Position): Bool
-    
+
     /**
      * @description Dumps a debug representation of the position to standard output.
      */
@@ -7127,7 +7137,7 @@ public struct Position <: ToBytes {
         since: "22"
     ]
     public func dump(): Unit
-    
+
     /**
      * @description Converts the position to a byte array representation.
      * @returns An `Array<UInt8>` representing the position.
@@ -7168,7 +7178,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public let kind: TokenKind
-    
+
     /**
      * @description The string value of the token (e.g., the variable name for an `IDENTIFIER`).
      */
@@ -7176,7 +7186,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public let value: String
-    
+
     /**
      * @description The position of the token in the source file.
      */
@@ -7184,7 +7194,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public let pos: Position
-    
+
     /**
      * @description The number of delimiters.
      */
@@ -7192,7 +7202,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public var delimiterNum: UInt16 = 1
-    
+
     /**
      * @description Initializes an empty `Token`.
      */
@@ -7200,7 +7210,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a `Token` with a specific kind.
      * @param kind The kind of the token.
@@ -7209,7 +7219,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public init(kind: TokenKind)
-    
+
     /**
      * @description Initializes a `Token` with a kind and a value.
      * @param kind The kind of the token.
@@ -7221,7 +7231,7 @@ public struct Token <: ToBytes {
         throwexception: true
     ]
     public init(kind: TokenKind, value: String)
-    
+
     /**
      * @description Creates a new token with an updated source position.
      * @param fileID The ID of the source file.
@@ -7233,7 +7243,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public func addPosition(fileID: UInt32, line: Int32, colum: Int32): Token
-    
+
     /**
      * @description Compares this token with another for equality.
      * @param r The other `Token` to compare with.
@@ -7243,7 +7253,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public operator func ==(r: Token): Bool
-    
+
     /**
      * @description Compares this token with another for inequality.
      * @param r The other `Token` to compare with.
@@ -7253,7 +7263,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public operator func !=(r: Token): Bool
-    
+
     /**
      * @description Concatenates this token with a `Tokens` object.
      * @param r The `Tokens` object to append.
@@ -7263,7 +7273,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public operator func +(r: Tokens): Tokens
-    
+
     /**
      * @description Concatenates this token with another token.
      * @param r The `Token` to append.
@@ -7273,7 +7283,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public operator func +(r: Token): Tokens
-    
+
     /**
      * @description Dumps a debug representation of the token to standard output.
      */
@@ -7281,7 +7291,7 @@ public struct Token <: ToBytes {
         since: "22"
     ]
     public func dump(): Unit
-    
+
     /**
      * @description Converts the token to a byte array representation.
      * @returns An `Array<UInt8>` representing the token.
@@ -8433,10 +8443,8 @@ public enum TokenKind <: ToString {
         since: "22"
     ]
     THROWING |
-    /**
-     * @description The `...` token.
-     */
     ...
+
     /**
      * @description Compares this token kind with another for equality.
      * @param right The other `TokenKind` to compare with.
@@ -8446,7 +8454,7 @@ public enum TokenKind <: ToString {
         since: "22"
     ]
     public operator func ==(right: TokenKind): Bool
-    
+
     /**
      * @description Compares this token kind with another for inequality.
      * @param right The other `TokenKind` to compare with.
@@ -8456,7 +8464,7 @@ public enum TokenKind <: ToString {
         since: "22"
     ]
     public operator func !=(right: TokenKind): Bool
-    
+
     /**
      * @description Converts the token kind to its string representation.
      * @returns The string name of the token kind.
@@ -8473,8 +8481,7 @@ public enum TokenKind <: ToString {
  * @returns The corresponding `TokenKind`.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func getTokenKind(no: UInt16): TokenKind
 
@@ -8493,7 +8500,7 @@ public class TokensIterator <: Iterator<Token> {
         since: "22"
     ]
     public init(tokens: Tokens)
-    
+
     /**
      * @description Looks at the next token without consuming it.
      * @returns An `Option<Token>` containing the next token, or `None` if at the end.
@@ -8502,7 +8509,7 @@ public class TokensIterator <: Iterator<Token> {
         since: "22"
     ]
     public func peek(): Option<Token>
-    
+
     /**
      * @description Checks if the next token is of a specific kind.
      * @param kind The `TokenKind` to check for.
@@ -8512,7 +8519,7 @@ public class TokensIterator <: Iterator<Token> {
         since: "22"
     ]
     public func seeing(kind: TokenKind): Bool
-    
+
     /**
      * @description Consumes and returns the next token in the sequence.
      * @returns An `Option<Token>` containing the next token, or `None` if at the end.
@@ -8537,7 +8544,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a `Tokens` object from an array of `Token`.
      * @param tokArray The array of tokens.
@@ -8546,7 +8553,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public init(tokArray: Array<Token>)
-    
+
     /**
      * @description Initializes a `Tokens` object from an `ArrayList` of `Token`.
      * @param tokArrayList The `ArrayList` of tokens.
@@ -8555,7 +8562,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public init(tokArrayList: ArrayList<Token>)
-    
+
     /**
      * @description The number of tokens in the sequence.
      */
@@ -8563,7 +8570,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public open prop size: Int64
-    
+
     /**
      * @description Retrieves the token at the specified index.
      * @param index The index of the token to retrieve.
@@ -8575,7 +8582,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         throwexception: true
     ]
     public open func get(index: Int64): Token
-    
+
     /**
      * @description Returns an iterator over the tokens in the sequence.
      * @returns A `TokensIterator` for this sequence.
@@ -8584,7 +8591,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public func iterator(): TokensIterator
-    
+
     /**
      * @description Concatenates this `Tokens` object with another.
      * @param tokens The `Tokens` object to concatenate.
@@ -8594,7 +8601,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public func concat(tokens: Tokens): Tokens
-    
+
     /**
      * @description Retrieves the token at the specified index using array-like syntax.
      * @param index The index of the token to retrieve.
@@ -8606,7 +8613,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         throwexception: true
     ]
     public operator func [](index: Int64): Token
-    
+
     /**
      * @description Retrieves a sub-sequence of tokens using a range.
      * @param range The range of indices to retrieve.
@@ -8619,7 +8626,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         throwexception: true
     ]
     public open operator func [](range: Range<Int64>): Tokens
-    
+
     /**
      * @description Concatenates this `Tokens` object with another using the `+` operator.
      * @param r The `Tokens` object to append.
@@ -8629,7 +8636,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public operator func +(r: Tokens): Tokens
-    
+
     /**
      * @description Concatenates this `Tokens` object with a single `Token` using the `+` operator.
      * @param r The `Token` to append.
@@ -8639,7 +8646,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public operator func +(r: Token): Tokens
-    
+
     /**
      * @description Appends another `Tokens` object to this one.
      * @param tokens The `Tokens` object to append.
@@ -8649,7 +8656,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public open func append(tokens: Tokens): Tokens
-    
+
     /**
      * @description Appends a single `Token` to this `Tokens` object.
      * @param token The `Token` to append.
@@ -8659,7 +8666,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public open func append(token: Token): Tokens
-    
+
     /**
      * @description Appends the token representation of an AST `Node` to this `Tokens` object.
      * @param node The `Node` to convert to tokens and append.
@@ -8669,7 +8676,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public func append(node: Node): Tokens
-    
+
     /**
      * @description Removes the token at the specified index.
      * @param index The index of the token to remove.
@@ -8681,7 +8688,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         throwexception: true
     ]
     public func remove(index: Int64): Tokens
-    
+
     /**
      * @description Dumps a debug representation of the tokens to standard output.
      */
@@ -8689,7 +8696,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public func dump(): Unit
-    
+
     /**
      * @description Converts the sequence of tokens to its string representation.
      * @returns A `String` representing the tokens.
@@ -8698,7 +8705,7 @@ public open class Tokens <: ToString & Iterable<Token> & ToBytes {
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Converts the sequence of tokens to a byte array.
      * @returns An `Array<UInt8>` representing the tokens.
@@ -8916,15 +8923,17 @@ public open class TypeNode <: Node {
         since: "22"
     ]
     public mut prop typeParameterName: Token
-    
+
     /**
      * @description The colon token `:` separating a parameter name from its type.
+     * @throws ASTException if there is an AST-related error.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public mut prop colon: Token
-    
+
     /**
      * @description Converts the type node to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -8933,7 +8942,7 @@ public open class TypeNode <: Node {
         since: "22"
     ]
     public open func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -8961,7 +8970,7 @@ public class PrimitiveType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `PrimitiveType`.
      */
@@ -8969,15 +8978,17 @@ public class PrimitiveType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The keyword token representing the primitive type (e.g., `INT32`).
+     * @throws ASTException if there is an AST-related error.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description Converts the primitive type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -8986,7 +8997,7 @@ public class PrimitiveType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this primitive type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9014,7 +9025,7 @@ public class RefType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `RefType`.
      */
@@ -9022,7 +9033,7 @@ public class RefType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The identifier token for the type name.
      */
@@ -9030,7 +9041,7 @@ public class RefType <: TypeNode {
         since: "22"
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description The opening angle bracket `<` for generic arguments.
      * @throws ASTException if there is an AST-related error.
@@ -9040,7 +9051,7 @@ public class RefType <: TypeNode {
         throwexception: true
     ]
     public mut prop lAngle: Token
-    
+
     /**
      * @description A list of type nodes for the generic arguments.
      */
@@ -9048,7 +9059,7 @@ public class RefType <: TypeNode {
         since: "22"
     ]
     public mut prop typeArguments: ArrayList<TypeNode>
-    
+
     /**
      * @description The comma tokens separating generic arguments.
      * @throws ASTException if there is an AST-related error.
@@ -9058,7 +9069,7 @@ public class RefType <: TypeNode {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing angle bracket `>` for generic arguments.
      * @throws ASTException if there is an AST-related error.
@@ -9068,7 +9079,7 @@ public class RefType <: TypeNode {
         throwexception: true
     ]
     public mut prop rAngle: Token
-    
+
     /**
      * @description Converts the reference type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9077,7 +9088,7 @@ public class RefType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this reference type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9105,7 +9116,7 @@ public class QualifiedType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `QualifiedType`.
      */
@@ -9113,7 +9124,7 @@ public class QualifiedType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The base type from which the member type is accessed.
      */
@@ -9121,7 +9132,7 @@ public class QualifiedType <: TypeNode {
         since: "22"
     ]
     public mut prop baseType: TypeNode
-    
+
     /**
      * @description The dot `.` token used for qualification.
      * @throws ASTException if there is an AST-related error.
@@ -9131,7 +9142,7 @@ public class QualifiedType <: TypeNode {
         throwexception: true
     ]
     public mut prop dot: Token
-    
+
     /**
      * @description The identifier of the member type.
      */
@@ -9139,7 +9150,7 @@ public class QualifiedType <: TypeNode {
         since: "22"
     ]
     public mut prop identifier: Token
-    
+
     /**
      * @description The opening angle bracket `<` for generic arguments of the member type.
      * @throws ASTException if there is an AST-related error.
@@ -9149,7 +9160,7 @@ public class QualifiedType <: TypeNode {
         throwexception: true
     ]
     public mut prop lAngle: Token
-    
+
     /**
      * @description A list of type nodes for the generic arguments.
      */
@@ -9157,7 +9168,7 @@ public class QualifiedType <: TypeNode {
         since: "22"
     ]
     public mut prop typeArguments: ArrayList<TypeNode>
-    
+
     /**
      * @description The comma tokens separating generic arguments.
      * @throws ASTException if there is an AST-related error.
@@ -9167,7 +9178,7 @@ public class QualifiedType <: TypeNode {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing angle bracket `>` for generic arguments.
      * @throws ASTException if there is an AST-related error.
@@ -9177,7 +9188,7 @@ public class QualifiedType <: TypeNode {
         throwexception: true
     ]
     public mut prop rAngle: Token
-    
+
     /**
      * @description Converts the qualified type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9186,7 +9197,7 @@ public class QualifiedType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this qualified type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9211,7 +9222,7 @@ public class ParenType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Initializes a `ParenType` from a sequence of tokens.
      * @param inputs The tokens to parse.
@@ -9222,7 +9233,7 @@ public class ParenType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description The opening parenthesis `(` token.
      * @throws ASTException if there is an AST-related error.
@@ -9232,7 +9243,7 @@ public class ParenType <: TypeNode {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description The type node enclosed within the parentheses.
      */
@@ -9240,7 +9251,7 @@ public class ParenType <: TypeNode {
         since: "22"
     ]
     public mut prop parenthesizedType: TypeNode
-    
+
     /**
      * @description The closing parenthesis `)` token.
      * @throws ASTException if there is an AST-related error.
@@ -9250,7 +9261,7 @@ public class ParenType <: TypeNode {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the parenthesized type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9259,7 +9270,7 @@ public class ParenType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this parenthesized type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9287,7 +9298,7 @@ public class TupleType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `TupleType`.
      */
@@ -9295,7 +9306,7 @@ public class TupleType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The opening parenthesis `(` token.
      * @throws ASTException if there is an AST-related error.
@@ -9305,7 +9316,7 @@ public class TupleType <: TypeNode {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of type nodes for the elements of the tuple.
      */
@@ -9313,7 +9324,7 @@ public class TupleType <: TypeNode {
         since: "22"
     ]
     public mut prop types: ArrayList<TypeNode>
-    
+
     /**
      * @description The closing parenthesis `)` token.
      * @throws ASTException if there is an AST-related error.
@@ -9323,7 +9334,7 @@ public class TupleType <: TypeNode {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description Converts the tuple type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9332,7 +9343,7 @@ public class TupleType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this tuple type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9360,7 +9371,7 @@ public class ThisType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `ThisType`.
      */
@@ -9368,7 +9379,7 @@ public class ThisType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `This` keyword token.
      */
@@ -9376,7 +9387,7 @@ public class ThisType <: TypeNode {
         since: "22"
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description Converts the `This` type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9385,7 +9396,7 @@ public class ThisType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this `This` type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9413,7 +9424,7 @@ public class PrefixType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `PrefixType`.
      */
@@ -9421,7 +9432,7 @@ public class PrefixType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The prefix operator tokens (e.g., `&`, `mut`).
      */
@@ -9429,7 +9440,7 @@ public class PrefixType <: TypeNode {
         since: "22"
     ]
     public mut prop prefixOps: Tokens
-    
+
     /**
      * @description The base type that the prefixes apply to.
      */
@@ -9437,7 +9448,7 @@ public class PrefixType <: TypeNode {
         since: "22"
     ]
     public mut prop baseType: TypeNode
-    
+
     /**
      * @description Converts the prefix type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9446,7 +9457,7 @@ public class PrefixType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this prefix type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9474,7 +9485,7 @@ public class FuncType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `FuncType`.
      */
@@ -9482,7 +9493,7 @@ public class FuncType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `func` keyword token.
      */
@@ -9490,7 +9501,7 @@ public class FuncType <: TypeNode {
         since: "22"
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The opening parenthesis `(` for parameter types.
      * @throws ASTException if there is an AST-related error.
@@ -9500,7 +9511,7 @@ public class FuncType <: TypeNode {
         throwexception: true
     ]
     public mut prop lParen: Token
-    
+
     /**
      * @description A list of type nodes for the function's parameters.
      */
@@ -9508,7 +9519,7 @@ public class FuncType <: TypeNode {
         since: "22"
     ]
     public mut prop types: ArrayList<TypeNode>
-    
+
     /**
      * @description The comma tokens separating parameter types.
      * @throws ASTException if there is an AST-related error.
@@ -9518,7 +9529,7 @@ public class FuncType <: TypeNode {
         throwexception: true
     ]
     public mut prop commas: Tokens
-    
+
     /**
      * @description The closing parenthesis `)` for parameter types.
      * @throws ASTException if there is an AST-related error.
@@ -9528,7 +9539,7 @@ public class FuncType <: TypeNode {
         throwexception: true
     ]
     public mut prop rParen: Token
-    
+
     /**
      * @description The arrow `->` token indicating the return type.
      * @throws ASTException if there is an AST-related error.
@@ -9538,7 +9549,7 @@ public class FuncType <: TypeNode {
         throwexception: true
     ]
     public mut prop arrow: Token
-    
+
     /**
      * @description The return type of the function.
      */
@@ -9546,7 +9557,7 @@ public class FuncType <: TypeNode {
         since: "22"
     ]
     public mut prop returnType: TypeNode
-    
+
     /**
      * @description Converts the function type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9555,7 +9566,7 @@ public class FuncType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this function type node with a visitor.
      * @param v The visitor to use for traversal.
@@ -9583,7 +9594,7 @@ public class VArrayType <: TypeNode {
         throwexception: true
     ]
     public init(inputs: Tokens)
-    
+
     /**
      * @description Initializes an empty `VArrayType`.
      */
@@ -9591,7 +9602,7 @@ public class VArrayType <: TypeNode {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description The `varray` keyword token.
      */
@@ -9599,7 +9610,7 @@ public class VArrayType <: TypeNode {
         since: "22"
     ]
     public mut prop keyword: Token
-    
+
     /**
      * @description The opening angle bracket `<`.
      * @throws ASTException if there is an AST-related error.
@@ -9609,7 +9620,7 @@ public class VArrayType <: TypeNode {
         throwexception: true
     ]
     public mut prop lAngle: Token
-    
+
     /**
      * @description The element type of the array.
      */
@@ -9617,7 +9628,7 @@ public class VArrayType <: TypeNode {
         since: "22"
     ]
     public mut prop elementTy: TypeNode
-    
+
     /**
      * @description The dollar sign `$` token separating the element type from the size.
      * @throws ASTException if there is an AST-related error.
@@ -9627,7 +9638,7 @@ public class VArrayType <: TypeNode {
         throwexception: true
     ]
     public mut prop dollar: Token
-    
+
     /**
      * @description The token representing the size of the array.
      */
@@ -9635,7 +9646,7 @@ public class VArrayType <: TypeNode {
         since: "22"
     ]
     public mut prop size: Token
-    
+
     /**
      * @description The closing angle bracket `>`.
      * @throws ASTException if there is an AST-related error.
@@ -9645,7 +9656,7 @@ public class VArrayType <: TypeNode {
         throwexception: true
     ]
     public mut prop rAngle: Token
-    
+
     /**
      * @description Converts the `varray` type to its token representation.
      * @returns A `Tokens` object representing this type.
@@ -9654,7 +9665,7 @@ public class VArrayType <: TypeNode {
         since: "22"
     ]
     public func toTokens(): Tokens
-    
+
     /**
      * @description Traverses this `varray` type node with a visitor.
      * @param v The visitor to use for traversal.

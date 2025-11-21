@@ -148,18 +148,22 @@ public class Matcher {
     /**
      * @description Attempts to match the entire input string against the pattern.
      * @returns Option containing MatchData when the whole input matches, or None otherwise.
+     * @throws RegexException if memory allocation fails or match data creation fails.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func fullMatch(): Option<MatchData>
     
     /**
      * @description Attempts to match from the beginning of the input string.
      * @returns Option containing MatchData when a match starting at index 0 is found, or None.
+     * @throws RegexException if memory allocation fails or match data creation fails.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func matchStart(): Option<MatchData>
     
@@ -176,9 +180,11 @@ public class Matcher {
      * @description Finds the next occurrence of the pattern starting at the specified index.
      * @param index - The index in the input string to start searching from.
      * @returns Option containing MatchData for the next match, or None if no match is found.
+     * @throws IndexOutOfBoundsException if index is less than 0 or index is greater than or equal to input.size.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func find(index: Int64): Option<MatchData>
     
@@ -404,9 +410,11 @@ public class Regex {
      * @param input - The input string to search.
      * @param group - If true, include group captures in MatchData results.
      * @returns Option containing MatchData for the first match, or None if none found.
+     * @throws RegexException if memory allocation fails or match data creation fails.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func find(input: String, group!: Bool = false): Option<MatchData>
     
@@ -442,6 +450,7 @@ public class Regex {
      * @param replacement - The replacement string.
      * @returns The resulting string after replacement.
      * @throws RegexException on regex processing errors.
+     * @throws IndexOutOfBoundsException if the match index is out of range.
      */
     @!APILevel[
         since: "22",

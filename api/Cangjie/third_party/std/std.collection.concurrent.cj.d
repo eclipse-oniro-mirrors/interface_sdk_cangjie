@@ -19,7 +19,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public let capacity: Int64
-    
+
     /**
      * @description Creates an `ArrayBlockingQueue` with the given (fixed) capacity.
      * @param capacity The capacity of this queue.
@@ -30,7 +30,7 @@ public class ArrayBlockingQueue<E> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Creates an `ArrayBlockingQueue` with the given (fixed) capacity and initially containing the elements of the given collection.
      * @param capacity The capacity of this queue.
@@ -42,7 +42,7 @@ public class ArrayBlockingQueue<E> {
         throwexception: true
     ]
     public init(capacity: Int64, elements: Collection<E>)
-    
+
     /**
      * @description The number of elements in this queue.
      */
@@ -50,7 +50,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting for space to become available if the queue is full.
      * @param element The element to add.
@@ -59,7 +59,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func enqueue(element: E): Unit
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting for space to become available if the queue is full.
      * @param element The element to add.
@@ -68,7 +68,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func add(element: E): Unit
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting up to the specified wait time for space to become available if the queue is full.
      * @param element The element to add.
@@ -79,7 +79,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func enqueue(element: E, timeout: Duration): Bool
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting up to the specified wait time for space to become available if the queue is full.
      * @param element The element to add.
@@ -90,7 +90,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func add(element: E, timeout: Duration): Bool
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting if necessary until an element becomes available.
      * @returns The head of this queue.
@@ -99,7 +99,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func dequeue(): E
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting if necessary until an element becomes available.
      * @returns The head of this queue.
@@ -108,7 +108,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func remove(): E
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting up to the specified wait time if necessary for an element to become available.
      * @param timeout How long to wait before giving up.
@@ -118,7 +118,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func dequeue(timeout: Duration): Option<E>
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting up to the specified wait time if necessary for an element to become available.
      * @param timeout How long to wait before giving up.
@@ -128,7 +128,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func remove(timeout: Duration): Option<E>
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -137,7 +137,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func head(): Option<E>
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -146,7 +146,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func peek(): Option<E>
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue if it is possible to do so immediately without exceeding the queue's capacity.
      * @param element The element to add.
@@ -156,7 +156,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func tryEnqueue(element: E): Bool
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue if it is possible to do so immediately without exceeding the queue's capacity.
      * @param element The element to add.
@@ -167,7 +167,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func tryAdd(element: E): Bool
-    
+
     /**
      * @description Retrieves and removes the head of this queue if it is possible to do so immediately.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -176,7 +176,7 @@ public class ArrayBlockingQueue<E> {
         since: "22"
     ]
     public func tryDequeue(): Option<E>
-    
+
     /**
      * @description Retrieves and removes the head of this queue if it is possible to do so immediately.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -207,7 +207,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public let capacity: Int64
-    
+
     /**
      * @description Creates a `LinkedBlockingQueue` with the given (fixed) capacity.
      * @param capacity The capacity of this queue.
@@ -218,7 +218,7 @@ public class LinkedBlockingQueue<E> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Creates a `LinkedBlockingQueue` with a capacity of `Int64.max`.
      */
@@ -226,7 +226,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Creates a `LinkedBlockingQueue` with the given capacity, initially containing the elements of the given array.
      * @param capacity The capacity of this queue.
@@ -238,7 +238,7 @@ public class LinkedBlockingQueue<E> {
         throwexception: true
     ]
     public init(capacity: Int64, elements: Array<E>)
-    
+
     /**
      * @description Creates a `LinkedBlockingQueue` with the given capacity, initially containing the elements of the given collection.
      * @param capacity The capacity of this queue.
@@ -250,7 +250,7 @@ public class LinkedBlockingQueue<E> {
         throwexception: true
     ]
     public init(capacity: Int64, elements: Collection<E>)
-    
+
     /**
      * @description The number of elements in this queue.
      */
@@ -258,7 +258,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting for space to become available if the queue is full.
      * @param element The element to add.
@@ -267,7 +267,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func enqueue(element: E): Unit
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting for space to become available if the queue is full.
      * @param element The element to add.
@@ -276,7 +276,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func add(element: E): Unit
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting up to the specified wait time for space to become available if the queue is full.
      * @param element The element to add.
@@ -287,7 +287,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func enqueue(element: E, timeout: Duration): Bool
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue, waiting up to the specified wait time for space to become available if the queue is full.
      * @param element The element to add.
@@ -298,7 +298,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func add(element: E, timeout: Duration): Bool
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting if necessary until an element becomes available.
      * @returns The head of this queue.
@@ -307,7 +307,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func dequeue(): E
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting if necessary until an element becomes available.
      * @returns The head of this queue.
@@ -316,7 +316,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func remove(): E
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting up to the specified wait time if necessary for an element to become available.
      * @param timeout How long to wait before giving up.
@@ -326,7 +326,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func dequeue(timeout: Duration): Option<E>
-    
+
     /**
      * @description Retrieves and removes the head of this queue, waiting up to the specified wait time if necessary for an element to become available.
      * @param timeout How long to wait before giving up.
@@ -336,7 +336,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func remove(timeout: Duration): Option<E>
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -345,7 +345,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func head(): Option<E>
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -354,7 +354,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func peek(): Option<E>
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue if it is possible to do so immediately without exceeding the queue's capacity.
      * @param element The element to add.
@@ -364,7 +364,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func tryEnqueue(element: E): Bool
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue if it is possible to do so immediately without exceeding the queue's capacity.
      * @param element The element to add.
@@ -375,7 +375,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func tryAdd(element: E): Bool
-    
+
     /**
      * @description Retrieves and removes the head of this queue if it is possible to do so immediately.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -384,7 +384,7 @@ public class LinkedBlockingQueue<E> {
         since: "22"
     ]
     public func tryDequeue(): Option<E>
-    
+
     /**
      * @description Retrieves and removes the head of this queue if it is possible to do so immediately.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -412,7 +412,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public init(concurrencyLevel!: Int64 = DEFAULT_CONCUR_LEVEL)
-    
+
     /**
      * @description Creates a new, empty map with the specified initial capacity and concurrency level.
      * @param capacity The initial capacity.
@@ -424,7 +424,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         throwexception: true
     ]
     public init(capacity: Int64, concurrencyLevel!: Int64 = DEFAULT_CONCUR_LEVEL)
-    
+
     /**
      * @description Creates a new map with the same mappings as the given collection.
      * @param elements The collection of key-value pairs.
@@ -434,7 +434,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public init(elements: Collection<(K, V)>, concurrencyLevel!: Int64 = DEFAULT_CONCUR_LEVEL)
-    
+
     /**
      * @description Creates a new map with mappings returned by the initializer function.
      * @param size The size of the map to create.
@@ -447,7 +447,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         throwexception: true
     ]
     public init(size: Int64, initElement: (Int64) -> (K, V), concurrencyLevel!: Int64 = DEFAULT_CONCUR_LEVEL)
-    
+
     /**
      * @description Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key.
      * @param key The key whose associated value is to be returned.
@@ -458,7 +458,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func get(key: K): ?V
-    
+
     /**
      * @description Tests if the specified object is a key in this table.
      * @param key The key to search for.
@@ -469,7 +469,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func contains(key: K): Bool
-    
+
     /**
      * @description Maps the specified key to the specified value in this table.
      * @param key The key with which the specified value is to be associated.
@@ -480,7 +480,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func put(key: K, value: V): ?V
-    
+
     /**
      * @description Maps the specified key to the specified value in this table.
      * @param key The key with which the specified value is to be associated.
@@ -492,7 +492,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func add(key: K, value: V): ?V
-    
+
     /**
      * @description If the specified key is not already associated with a value, associate it with the given value.
      * @param key The key with which the specified value is to be associated.
@@ -503,7 +503,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func putIfAbsent(key: K, value: V): ?V
-    
+
     /**
      * @description If the specified key is not already associated with a value, associate it with the given value.
      * @param key The key with which the specified value is to be associated.
@@ -515,7 +515,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func addIfAbsent(key: K, value: V): ?V
-    
+
     /**
      * @description Removes the key (and its corresponding value) from this map.
      * @param key The key that needs to be removed.
@@ -525,7 +525,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func remove(key: K): ?V
-    
+
     /**
      * @description Removes the entry for a key only if currently mapped to a given value.
      * @param key The key with which the specified value is associated.
@@ -536,7 +536,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func remove(key: K, predicate: (V) -> Bool): ?V
-    
+
     /**
      * @description Replaces the entry for a key only if currently mapped to some value.
      * @param key The key with which the specified value is associated.
@@ -548,7 +548,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func replace(key: K, value: V): ?V
-    
+
     /**
      * @description Replaces the entry for a key only if currently mapped to some value, and the new value is computed from the old one.
      * @param key The key with which the specified value is associated.
@@ -559,7 +559,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func replace(key: K, eval: (V) -> V): ?V
-    
+
     /**
      * @description Replaces the entry for a key only if it satisfies a predicate, and the new value is computed from the old one.
      * @param key The key with which the specified value is associated.
@@ -571,7 +571,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func replace(key: K, predicate: (V) -> Bool, eval: (V) -> V): ?V
-    
+
     /**
      * @description Provides a view of a map entry, allowing atomic operations on it.
      * @param key The key of the entry.
@@ -582,7 +582,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func entryView(key: K, fn: (MapEntryView<K, V>) -> Unit): ?V
-    
+
     /**
      * @description Returns the value to which the specified key is mapped.
      * @param key The key whose associated value is to be returned.
@@ -594,7 +594,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         throwexception: true
     ]
     public operator func [](key: K): V
-    
+
     /**
      * @description Associates the specified value with the specified key in this map.
      * @param key The key with which the specified value is to be associated.
@@ -604,7 +604,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public operator func [](key: K, value!: V): Unit
-    
+
     /**
      * @description The number of key-value mappings in this map.
      */
@@ -612,7 +612,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Returns `true` if this map contains no key-value mappings.
      * @returns `true` if this map is empty, `false` otherwise.
@@ -621,7 +621,7 @@ public class ConcurrentHashMap<K, V> <: ConcurrentMap<K, V> & Collection<(K, V)>
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns an iterator over the key-value pairs in this map.
      * @returns An iterator over the entries in this map.
@@ -648,7 +648,7 @@ public class ConcurrentHashMapIterator<K, V> <: Iterator<(K, V)> where K <: Hash
         since: "22"
     ]
     public init(cmap: ConcurrentHashMap<K, V>)
-    
+
     /**
      * @description Returns the next key-value pair in the iteration.
      * @returns An `Option` containing the next entry, or `None` if the iteration has no more elements.
@@ -676,7 +676,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func get(key: K): ?V
-    
+
     /**
      * @description Returns `true` if this map contains a mapping for the specified key.
      * @param key The key whose presence in this map is to be tested.
@@ -686,7 +686,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func contains(key: K): Bool
-    
+
     /**
      * @description Maps the specified key to the specified value in this table.
      * @param key The key with which the specified value is to be associated.
@@ -697,7 +697,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func put(key: K, value: V): ?V
-    
+
     /**
      * @description Maps the specified key to the specified value in this table.
      * @param key The key with which the specified value is to be associated.
@@ -708,7 +708,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func add(key: K, value: V): ?V
-    
+
     /**
      * @description If the specified key is not already associated with a value, associate it with the given value.
      * @param key The key with which the specified value is to be associated.
@@ -719,7 +719,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func putIfAbsent(key: K, value: V): ?V
-    
+
     /**
      * @description If the specified key is not already associated with a value, associate it with the given value.
      * @param key The key with which the specified value is to be associated.
@@ -730,7 +730,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func addIfAbsent(key: K, value: V): ?V
-    
+
     /**
      * @description Removes the key (and its corresponding value) from this map.
      * @param key The key that needs to be removed.
@@ -740,7 +740,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func remove(key: K): ?V
-    
+
     /**
      * @description Removes the entry for a key only if currently mapped to a given value.
      * @param key The key with which the specified value is associated.
@@ -751,7 +751,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func remove(key: K, predicate: (V) -> Bool): ?V
-    
+
     /**
      * @description Replaces the entry for a key only if currently mapped to some value.
      * @param key The key with which the specified value is to be associated.
@@ -762,7 +762,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func replace(key: K, value: V): ?V
-    
+
     /**
      * @description Replaces the entry for a key only if currently mapped to some value, and the new value is computed from the old one.
      * @param key The key with which the specified value is to be associated.
@@ -773,7 +773,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func replace(key: K, eval: (V) -> V): ?V
-    
+
     /**
      * @description Replaces the entry for a key only if it satisfies a predicate, and the new value is computed from the old one.
      * @param key The key with which the specified value is to be associated.
@@ -785,7 +785,7 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func replace(key: K, predicate: (V) -> Bool, eval: (V) -> V): ?V
-    
+
     /**
      * @description Provides a view of a map entry, allowing atomic operations on it.
      * @param key The key of the entry.
@@ -796,19 +796,17 @@ public interface ConcurrentMap<K, V> {
         since: "22"
     ]
     func entryView(key: K, fn: (MapEntryView<K, V>) -> Unit): ?V
-    
+
     /**
      * @description Returns the value to which the specified key is mapped.
      * @param key The key whose associated value is to be returned.
      * @returns The value to which the specified key is mapped.
-     * @throws NoneValueException if the key is not found in the map.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     operator func [](key: K): V
-    
+
     /**
      * @description Associates the specified value with the specified key in this map.
      * @param key The key with which the specified value is to be associated.
@@ -839,7 +837,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Creates a `ConcurrentLinkedQueue` initially containing the elements of the given collection.
      * @param elements The collection of elements to initially contain.
@@ -848,7 +846,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public init(elements: Collection<E>)
-    
+
     /**
      * @description The number of elements in this queue.
      */
@@ -856,7 +854,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue.
      * @param element The element to add.
@@ -866,7 +864,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func enqueue(element: E): Bool
-    
+
     /**
      * @description Inserts the specified element at the tail of this queue.
      * @param element The element to add.
@@ -876,7 +874,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func add(element: E): Bool
-    
+
     /**
      * @description Retrieves and removes the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -885,7 +883,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func dequeue(): Option<E>
-    
+
     /**
      * @description Retrieves and removes the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -894,7 +892,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func remove(): Option<E>
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -903,7 +901,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func head(): Option<E>
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns An `Option` containing the head of this queue, or `None` if this queue is empty.
@@ -912,7 +910,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func peek(): Option<E>
-    
+
     /**
      * @description Returns `true` if this queue contains no elements.
      * @returns `true` if this queue is empty, `false` otherwise.
@@ -921,7 +919,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns an array containing all of the elements in this queue, in proper sequence.
      * @returns An array containing all of the elements in this queue.
@@ -930,7 +928,7 @@ public class ConcurrentLinkedQueue<E> <: Collection<E> {
         since: "22"
     ]
     public func toArray(): Array<E>
-    
+
     /**
      * @description Returns an iterator over the elements in this queue in proper sequence.
      * @returns An iterator over the elements in this queue.

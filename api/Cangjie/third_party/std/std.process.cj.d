@@ -107,9 +107,11 @@ public class CurrentProcess <: Process {
     /**
      * @description Terminates the current process with the specified exit code
      * @param code - The exit code to return to the operating system
+     * @throws ProcessException If the process cannot be terminated normally and is already closed.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func exit(code: Int64): Nothing
 }
@@ -335,7 +337,7 @@ public open class Process {
     /**
      * @description Terminates the process
      * @param force - If true, forcefully terminates the process; otherwise attempts a graceful termination
-     * @throws ProcessException when the process does not exist
+     * @throws IllegalArgumentException when the process does not exist
      */
     @!APILevel[
         since: "22",

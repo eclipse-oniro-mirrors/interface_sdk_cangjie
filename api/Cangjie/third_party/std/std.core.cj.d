@@ -78,9 +78,6 @@ public enum AnnotationKind {
         since: "22"
     ]
     Extension |
-    /**
-     * @description Represents other kinds of annotations not explicitly listed.
-     */
     ...
 }
 
@@ -98,7 +95,7 @@ public open class ArithmeticException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new ArithmeticException with the specified detail message.
      * @param message The detail message.
@@ -109,6 +106,11 @@ public open class ArithmeticException <: Exception {
     public init(message: String)
 }
 
+/**
+ * A generic array structure used to store elements.
+ *
+ * @param <T> The type of elements stored in the array.
+ */
 @ConstSafe
 @!APILevel[
     since: "22"
@@ -122,7 +124,7 @@ public struct Array<T> {
         since: "22"
     ]
     public const init()
-    
+
     /**
      * @description Constructs an Array with the specified size, with all elements initialized to the given value.
      * @param size The size of the array.
@@ -133,7 +135,7 @@ public struct Array<T> {
         since: "22"
     ]
     public init(size: Int64, repeat!: T)
-    
+
     /**
      * @description Constructs an Array with the specified size, with elements initialized using the provided function.
      * @param size The size of the array.
@@ -144,7 +146,7 @@ public struct Array<T> {
         since: "22"
     ]
     public init(size: Int64, initElement: (Int64) -> T)
-    
+
     /**
      * @description Gets the first element of the array as an Option.
      * @returns Some(value) if the array is not empty, None otherwise.
@@ -154,7 +156,7 @@ public struct Array<T> {
         since: "22"
     ]
     public prop first: Option<T>
-    
+
     /**
      * @description Gets the last element of the array as an Option.
      * @returns Some(value) if the array is not empty, None otherwise.
@@ -164,7 +166,7 @@ public struct Array<T> {
         since: "22"
     ]
     public prop last: Option<T>
-    
+
     /**
      * @description Returns a slice of this array.
      * @param start The starting index of the slice.
@@ -178,7 +180,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public func slice(start: Int64, len: Int64): Array<T>
-    
+
     /**
      * @description Gets the element at the specified index as an Option.
      * @param index The index of the element to get.
@@ -190,7 +192,7 @@ public struct Array<T> {
         since: "22"
     ]
     public func get(index: Int64): Option<T>
-    
+
     /**
      * @description Gets the element at the specified index.
      * @param index The index of the element to get.
@@ -204,7 +206,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public operator func [](index: Int64): T
-    
+
     /**
      * @description Sets the element at the specified index.
      * @param index The index of the element to set.
@@ -218,7 +220,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public operator func [](index: Int64, value!: T): Unit
-    
+
     /**
      * @description Gets a slice of this array based on the specified range.
      * @param range The range to slice.
@@ -232,7 +234,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public operator func [](range: Range<Int64>): Array<T>
-    
+
     /**
      * @description Fills the entire array with the specified value.
      * @param value The value to fill the array with.
@@ -242,7 +244,7 @@ public struct Array<T> {
         since: "22"
     ]
     public func fill(value: T): Unit
-    
+
     /**
      * @description Sets the elements in the specified range to the values from another array.
      * @param range The range to set values for.
@@ -256,7 +258,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public operator func [](range: Range<Int64>, value!: Array<T>): Unit
-    
+
     /**
      * @description Reverses the elements of the array in place.
      */
@@ -266,7 +268,7 @@ public struct Array<T> {
         since: "22"
     ]
     public func reverse(): Unit
-    
+
     /**
      * @description Creates a copy of the array.
      * @returns A new Array that is a copy of this array.
@@ -276,7 +278,7 @@ public struct Array<T> {
         since: "22"
     ]
     public func clone(): Array<T>
-    
+
     /**
      * @description Creates a copy of a specified range of the array.
      * @param range The range of elements to clone.
@@ -290,7 +292,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public func clone(range: Range<Int64>): Array<T>
-    
+
     /**
      * @description Copies elements from this array to another array.
      * @param dst The destination array.
@@ -306,7 +308,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public func copyTo(dst: Array<T>, srcStart: Int64, dstStart: Int64, copyLen: Int64): Unit
-    
+
     /**
      * @description Copies all elements from this array to another array.
      * @param dst The destination array.
@@ -318,7 +320,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public func copyTo(dst: Array<T>): Unit
-    
+
     /**
      * @description Concatenates this array with another array.
      * @param other The array to concatenate with.
@@ -329,7 +331,7 @@ public struct Array<T> {
         since: "22"
     ]
     public func concat(other: Array<T>): Array<T>
-    
+
     /**
      * @description Swaps the elements at the specified indices.
      * @param index1 The first index.
@@ -342,7 +344,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public func swap(index1: Int64, index2: Int64): Unit
-    
+
     /**
      * @description Splits the array into two arrays at the specified index.
      * @param mid The index to split at.
@@ -355,7 +357,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public func splitAt(mid: Int64): (Array<T>, Array<T>)
-    
+
     /**
      * @description Repeats the elements of the array n times.
      * @param n The number of times to repeat the elements.
@@ -368,7 +370,7 @@ public struct Array<T> {
         throwexception: true
     ]
     public func repeat(n: Int64): Array<T>
-    
+
     /**
      * @description Applies a transformation function to each element of the array.
      * @param transform The transformation function.
@@ -403,7 +405,7 @@ extend<T> Array<T> <: Collection<T> {
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description Gets the size of the array.
      * @returns The number of elements in the array.
@@ -413,7 +415,7 @@ extend<T> Array<T> <: Collection<T> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Checks if the array is empty.
      * @returns true if the array is empty, false otherwise.
@@ -423,7 +425,7 @@ extend<T> Array<T> <: Collection<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Converts the array to a new array.
      * @returns A new Array containing the same elements as this array.
@@ -459,7 +461,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public operator const func ==(other: Array<T>): Bool
-    
+
     /**
      * @description Checks if this array is not equal to another array.
      * @param other The array to compare with.
@@ -470,7 +472,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public operator const func !=(other: Array<T>): Bool
-    
+
     /**
      * @description Checks if the array contains a specific element.
      * @param element The element to check for.
@@ -481,7 +483,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func contains(element: T): Bool
-    
+
     /**
      * @description Finds the index of the first occurrence of a specific element.
      * @param element The element to find.
@@ -492,7 +494,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func indexOf(element: T): Option<Int64>
-    
+
     /**
      * @description Finds the index of the first occurrence of a specific element starting from a given index.
      * @param element The element to find.
@@ -504,7 +506,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func indexOf(element: T, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Finds the index of the first occurrence of a specific subarray.
      * @param elements The subarray to find.
@@ -515,7 +517,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func indexOf(elements: Array<T>): Option<Int64>
-    
+
     /**
      * @description Finds the index of the first occurrence of a specific subarray starting from a given index.
      * @param elements The subarray to find.
@@ -527,7 +529,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func indexOf(elements: Array<T>, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Finds the index of the last occurrence of a specific element.
      * @param element The element to find.
@@ -538,7 +540,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func lastIndexOf(element: T): Option<Int64>
-    
+
     /**
      * @description Finds the index of the last occurrence of a specific element starting from a given index.
      * @param element The element to find.
@@ -550,7 +552,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func lastIndexOf(element: T, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Finds the index of the last occurrence of a specific subarray.
      * @param elements The subarray to find.
@@ -561,7 +563,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func lastIndexOf(elements: Array<T>): Option<Int64>
-    
+
     /**
      * @description Finds the index of the last occurrence of a specific subarray starting from a given index.
      * @param elements The subarray to find.
@@ -573,7 +575,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public func lastIndexOf(elements: Array<T>, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Removes leading elements that are in the specified set.
      * @param set The set of elements to remove.
@@ -587,7 +589,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         throwexception: true
     ]
     public func trimStart(set: Array<T>): Array<T>
-    
+
     /**
      * @description Removes trailing elements that are in the specified set.
      * @param set The set of elements to remove.
@@ -600,7 +602,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         throwexception: true
     ]
     public func trimEnd(set: Array<T>): Array<T>
-    
+
     /**
      * @description Removes leading elements that satisfy the specified predicate.
      * @param predicate The predicate to apply.
@@ -613,7 +615,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         throwexception: true
     ]
     public func trimStart(predicate: (T) -> Bool): Array<T>
-    
+
     /**
      * @description Removes trailing elements that satisfy the specified predicate.
      * @param predicate The predicate to apply.
@@ -626,7 +628,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         throwexception: true
     ]
     public func trimEnd(predicate: (T) -> Bool): Array<T>
-    
+
     /**
      * @description Removes the specified prefix from the array.
      * @param prefix The prefix to remove.
@@ -639,7 +641,7 @@ extend<T> Array<T> <: Equatable<Array<T>> where T <: Equatable<T> {
         throwexception: true
     ]
     public func removePrefix(prefix: Array<T>): Array<T>
-    
+
     /**
      * @description Removes the specified suffix from the array.
      * @param suffix The suffix to remove.
@@ -670,7 +672,7 @@ public class ArrayIterator<T> <: Iterator<T> {
         since: "22"
     ]
     public init(data: Array<T>)
-    
+
     /**
      * @description Gets the next element of the iterator.
      * @returns The next element, or None if there are no more elements.
@@ -697,7 +699,7 @@ public struct CPointerHandle<T> where T <: CType {
         since: "22"
     ]
     public let pointer: CPointer<T>
-    
+
     /**
      * @description The array data.
      */
@@ -705,7 +707,7 @@ public struct CPointerHandle<T> where T <: CType {
         since: "22"
     ]
     public let array: Array<T>
-    
+
     /**
      * @description Constructs an empty CPointerHandle.
      */
@@ -713,9 +715,9 @@ public struct CPointerHandle<T> where T <: CType {
         since: "22"
     ]
     public init()
-    
+
     /**
-     * @description Constructs a CPointerHandle with the specified C pointer and array data. 
+     * @description Constructs a CPointerHandle with the specified C pointer and array data.
      * @param ptr The C pointer.
      * @param arr The array data.
      */
@@ -760,7 +762,7 @@ public class Box<T> {
         since: "22"
     ]
     public var value: T
-    
+
     /**
      * @description Constructs a Box with the specified value.
      * @param v The value to box.
@@ -792,7 +794,7 @@ extend<T> Box<T> <: Comparable<Box<T>> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func ==(other: Box<T>): Bool
-    
+
     /**
      * @description Indicates whether some other boxed object is "not equal to" this one.
      * @param other The reference object with which to compare.
@@ -802,7 +804,7 @@ extend<T> Box<T> <: Comparable<Box<T>> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func !=(other: Box<T>): Bool
-    
+
     /**
      * @description Indicates whether this boxed object is "greater than" the specified object.
      * @param other The reference object with which to compare.
@@ -812,7 +814,7 @@ extend<T> Box<T> <: Comparable<Box<T>> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func >(other: Box<T>): Bool
-    
+
     /**
      * @description Indicates whether this boxed object is "less than" the specified object.
      * @param other The reference object with which to compare.
@@ -822,7 +824,7 @@ extend<T> Box<T> <: Comparable<Box<T>> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func <(other: Box<T>): Bool
-    
+
     /**
      * @description Indicates whether this boxed object is "greater than or equal to" the specified object.
      * @param other The reference object with which to compare.
@@ -832,7 +834,7 @@ extend<T> Box<T> <: Comparable<Box<T>> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func >=(other: Box<T>): Bool
-    
+
     /**
      * @description Indicates whether this boxed object is "less than or equal to" the specified object.
      * @param other The reference object with which to compare.
@@ -842,7 +844,7 @@ extend<T> Box<T> <: Comparable<Box<T>> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func <=(other: Box<T>): Bool
-    
+
     /**
      * @description Compares this boxed object with the specified boxed object for order.
      * @param other The boxed object to be compared.
@@ -874,7 +876,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiLetter(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII number.
      * @returns true if this byte is an ASCII number, false otherwise.
@@ -883,7 +885,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiNumber(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII hexadecimal digit.
      * @returns true if this byte is an ASCII hexadecimal digit, false otherwise.
@@ -892,7 +894,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiHex(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII octal digit.
      * @returns true if this byte is an ASCII octal digit, false otherwise.
@@ -901,7 +903,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiOct(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII punctuation character.
      * @returns true if this byte is an ASCII punctuation character, false otherwise.
@@ -910,7 +912,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiPunctuation(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII graphic character.
      * @returns true if this byte is an ASCII graphic character, false otherwise.
@@ -919,7 +921,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiGraphic(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII control character.
      * @returns true if this byte is an ASCII control character, false otherwise.
@@ -928,7 +930,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiControl(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII letter or number.
      * @returns true if this byte is an ASCII letter or number, false otherwise.
@@ -937,7 +939,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiNumberOrLetter(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII lowercase letter.
      * @returns true if this byte is an ASCII lowercase letter, false otherwise.
@@ -946,7 +948,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiLowerCase(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII uppercase letter.
      * @returns true if this byte is an ASCII uppercase letter, false otherwise.
@@ -955,7 +957,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiUpperCase(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII character.
      * @returns true if this byte is an ASCII character, false otherwise.
@@ -964,7 +966,7 @@ extend Byte {
         since: "22"
     ]
     public func isAscii(): Bool
-    
+
     /**
      * @description Checks if this byte is an ASCII whitespace character.
      * @returns true if this byte is an ASCII whitespace character, false otherwise.
@@ -973,7 +975,7 @@ extend Byte {
         since: "22"
     ]
     public func isAsciiWhiteSpace(): Bool
-    
+
     /**
      * @description Converts this ASCII byte to uppercase.
      * @returns The uppercase version of this ASCII byte.
@@ -982,7 +984,7 @@ extend Byte {
         since: "22"
     ]
     public func toAsciiUpperCase(): Byte
-    
+
     /**
      * @description Converts this ASCII byte to lowercase.
      * @returns The lowercase version of this ASCII byte.
@@ -1002,7 +1004,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public func isNull(): Bool
-    
+
     /**
      * @description Checks if this pointer is not null.
      * @returns true if this pointer is not null, false otherwise.
@@ -1011,7 +1013,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public func isNotNull(): Bool
-    
+
     /**
      * @description Converts this pointer to a UIntNative value.
      * @returns The UIntNative representation of this pointer.
@@ -1020,7 +1022,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public func toUIntNative(): UIntNative
-    
+
     /**
      * @description Reads the value pointed to by this pointer.
      * @returns The value pointed to by this pointer.
@@ -1030,7 +1032,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public unsafe func read(): T
-    
+
     /**
      * @description Writes a value to the location pointed to by this pointer.
      * @param value The value to write.
@@ -1040,7 +1042,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public unsafe func write(value: T): Unit
-    
+
     /**
      * @description Reads the value at the specified index from this pointer.
      * @param idx The index to read from.
@@ -1051,7 +1053,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public unsafe func read(idx: Int64): T
-    
+
     /**
      * @description Writes a value at the specified index from this pointer.
      * @param idx The index to write to.
@@ -1062,7 +1064,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public unsafe func write(idx: Int64, value: T): Unit
-    
+
     /**
      * @description Adds an offset to this pointer.
      * @param offset The offset to add.
@@ -1072,7 +1074,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public unsafe operator func +(offset: Int64): CPointer<T>
-    
+
     /**
      * @description Subtracts an offset from this pointer.
      * @param offset The offset to subtract.
@@ -1083,7 +1085,7 @@ extend<T> CPointer<T> {
         since: "22"
     ]
     public unsafe operator func -(offset: Int64): CPointer<T>
-    
+
     /**
      * @description Converts this pointer to a resource.
      * @returns A CPointerResource wrapping this pointer.
@@ -1108,7 +1110,7 @@ public struct CPointerResource<T> <: Resource where T <: CType {
         since: "22"
     ]
     public let value: CPointer<T>
-    
+
     /**
      * @description Checks if this resource is closed.
      * @returns true if this resource is closed, false otherwise.
@@ -1117,7 +1119,7 @@ public struct CPointerResource<T> <: Resource where T <: CType {
         since: "22"
     ]
     public func isClosed(): Bool
-    
+
     /**
      * @description Closes this resource.
      */
@@ -1145,7 +1147,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func getChars(): CPointer<UInt8>
-    
+
     /**
      * @description Checks if this C string is null.
      * @returns true if this C string is null, false otherwise.
@@ -1154,7 +1156,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func isNull(): Bool
-    
+
     /**
      * @description Gets the size of this C string.
      * @returns The size of this C string.
@@ -1163,7 +1165,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func size(): Int64
-    
+
     /**
      * @description Checks if this C string is empty.
      * @returns true if this C string is empty, false otherwise.
@@ -1172,7 +1174,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Checks if this C string is not empty.
      * @returns true if this C string is not empty, false otherwise.
@@ -1181,7 +1183,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func isNotEmpty(): Bool
-    
+
     /**
      * @description Checks if this C string starts with the specified prefix.
      * @param prefix The prefix to check for.
@@ -1191,7 +1193,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func startsWith(prefix: CString): Bool
-    
+
     /**
      * @description Checks if this C string ends with the specified suffix.
      * @param suffix The suffix to check for.
@@ -1201,7 +1203,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func endsWith(suffix: CString): Bool
-    
+
     /**
      * @description Checks if this C string equals the specified C string.
      * @param other The C string to compare with.
@@ -1211,7 +1213,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func equals(other: CString): Bool
-    
+
     /**
      * @description Checks if this C string equals the specified C string ignoring case.
      * @param other The C string to compare with.
@@ -1221,7 +1223,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func equalsLower(other: CString): Bool
-    
+
     /**
      * @description Creates a substring from this C string starting at the specified index.
      * @param beginIndex The starting index.
@@ -1233,7 +1235,7 @@ extend CString <: ToString {
         throwexception: true
     ]
     public func subCString(beginIndex: UIntNative): CString
-    
+
     /**
      * @description Creates a substring from this C string with the specified starting index and length.
      * @param beginIndex The starting index.
@@ -1246,17 +1248,19 @@ extend CString <: ToString {
         throwexception: true
     ]
     public func subCString(beginIndex: UIntNative, subLen: UIntNative): CString
-    
+
     /**
      * @description Compares this C string with the specified C string.
      * @param str The C string to compare with.
      * @returns An Int32 indicating the result of the comparison.
+     * @throws Exception if self is null or str is null
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func compare(str: CString): Int32
-    
+
     /**
      * @description Converts this C string to a String.
      * @returns A String representation of this C string.
@@ -1265,7 +1269,7 @@ extend CString <: ToString {
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Converts this C string to a resource.
      * @returns A CStringResource wrapping this C string.
@@ -1290,7 +1294,7 @@ public struct CStringResource <: Resource {
         since: "22"
     ]
     public let value: CString
-    
+
     /**
      * @description Checks if this resource is closed.
      * @returns true if this resource is closed, false otherwise.
@@ -1299,7 +1303,7 @@ public struct CStringResource <: Resource {
         since: "22"
     ]
     public func isClosed(): Bool
-    
+
     /**
      * @description Closes this resource.
      */
@@ -1307,12 +1311,6 @@ public struct CStringResource <: Resource {
         since: "22"
     ]
     public func close(): Unit
-}
-
-@!APILevel[
-    since: "22"
-]
-sealed interface CType {
 }
 
 extend Rune {
@@ -1324,7 +1322,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiLetter(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII number.
      * @returns true if this rune is an ASCII number, false otherwise.
@@ -1333,7 +1331,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiNumber(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII hexadecimal digit.
      * @returns true if this rune is an ASCII hexadecimal digit, false otherwise.
@@ -1342,7 +1340,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiHex(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII octal digit.
      * @returns true if this rune is an ASCII octal digit, false otherwise.
@@ -1351,7 +1349,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiOct(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII punctuation character.
      * @returns true if this rune is an ASCII punctuation character, false otherwise.
@@ -1360,7 +1358,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiPunctuation(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII graphic character.
      * @returns true if this rune is an ASCII graphic character, false otherwise.
@@ -1369,7 +1367,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiGraphic(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII control character.
      * @returns true if this rune is an ASCII control character, false otherwise.
@@ -1378,7 +1376,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiControl(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII letter or number.
      * @returns true if this rune is an ASCII letter or number, false otherwise.
@@ -1387,7 +1385,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiNumberOrLetter(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII lowercase letter.
      * @returns true if this rune is an ASCII lowercase letter, false otherwise.
@@ -1396,7 +1394,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiLowerCase(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII uppercase letter.
      * @returns true if this rune is an ASCII uppercase letter, false otherwise.
@@ -1405,7 +1403,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiUpperCase(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII character.
      * @returns true if this rune is an ASCII character, false otherwise.
@@ -1414,7 +1412,7 @@ extend Rune {
         since: "22"
     ]
     public func isAscii(): Bool
-    
+
     /**
      * @description Checks if this rune is an ASCII whitespace character.
      * @returns true if this rune is an ASCII whitespace character, false otherwise.
@@ -1423,7 +1421,7 @@ extend Rune {
         since: "22"
     ]
     public func isAsciiWhiteSpace(): Bool
-    
+
     /**
      * @description Converts this ASCII rune to uppercase.
      * @returns The uppercase version of this ASCII rune.
@@ -1432,7 +1430,7 @@ extend Rune {
         since: "22"
     ]
     public func toAsciiUpperCase(): Rune
-    
+
     /**
      * @description Converts this ASCII rune to lowercase.
      * @returns The lowercase version of this ASCII rune.
@@ -1441,7 +1439,7 @@ extend Rune {
         since: "22"
     ]
     public func toAsciiLowerCase(): Rune
-    
+
     /**
      * @description Gets the UTF-8 size of a rune in an array at the specified index.
      * @param arr The array containing UTF-8 data.
@@ -1454,7 +1452,7 @@ extend Rune {
         throwexception: true
     ]
     public static func utf8Size(arr: Array<UInt8>, index: Int64): Int64
-    
+
     /**
      * @description Gets the UTF-8 size of the specified rune.
      * @param c The rune.
@@ -1465,7 +1463,7 @@ extend Rune {
         since: "22"
     ]
     public static func utf8Size(c: Rune): Int64
-    
+
     /**
      * @description Creates a rune from UTF-8 data in an array at the specified index.
      * @param arr The array containing UTF-8 data.
@@ -1479,7 +1477,7 @@ extend Rune {
         throwexception: true
     ]
     public static func fromUtf8(arr: Array<UInt8>, index: Int64): (Rune, Int64)
-    
+
     /**
      * @description Gets the previous rune from UTF-8 data in an array at the specified index.
      * @param arr The array containing UTF-8 data.
@@ -1493,7 +1491,7 @@ extend Rune {
         throwexception: true
     ]
     public static func getPreviousFromUtf8(arr: Array<UInt8>, index: Int64): (Rune, Int64)
-    
+
     /**
      * @description Converts a rune to UTF-8 data in an array at the specified index.
      * @param c The rune to convert.
@@ -1536,7 +1534,7 @@ public interface Collection<T> <: Iterable<T> {
         since: "22"
     ]
     prop size: Int64
-    
+
     /**
      * @description Checks if the collection is empty.
      * @returns true if the collection is empty, false otherwise.
@@ -1545,7 +1543,7 @@ public interface Collection<T> <: Iterable<T> {
         since: "22"
     ]
     func isEmpty(): Bool
-    
+
     /**
      * @description Converts the collection to an array.
      * @returns An array containing the elements of the collection.
@@ -1674,7 +1672,7 @@ public interface Comparable<T> <: Equatable<T> & Less<T> & Greater<T> & LessOrEq
         since: "22"
     ]
     func compare(other: T): Ordering
-    
+
     /**
      * @description Indicates whether some other object is "equal to" this one.
      * @param other The reference object with which to compare.
@@ -1684,7 +1682,7 @@ public interface Comparable<T> <: Equatable<T> & Less<T> & Greater<T> & LessOrEq
         since: "22"
     ]
     operator func ==(other: T): Bool
-    
+
     /**
      * @description Indicates whether this object is "less than" the specified object.
      * @param other The reference object with which to compare.
@@ -1694,7 +1692,7 @@ public interface Comparable<T> <: Equatable<T> & Less<T> & Greater<T> & LessOrEq
         since: "22"
     ]
     operator func <(other: T): Bool
-    
+
     /**
      * @description Indicates whether this object is "greater than" the specified object.
      * @param other The reference object with which to compare.
@@ -1704,7 +1702,7 @@ public interface Comparable<T> <: Equatable<T> & Less<T> & Greater<T> & LessOrEq
         since: "22"
     ]
     operator func >(other: T): Bool
-    
+
     /**
      * @description Indicates whether this object is "less than or equal to" the specified object.
      * @param other The reference object with which to compare.
@@ -1714,7 +1712,7 @@ public interface Comparable<T> <: Equatable<T> & Less<T> & Greater<T> & LessOrEq
         since: "22"
     ]
     operator func <=(other: T): Bool
-    
+
     /**
      * @description Indicates whether this object is "greater than or equal to" the specified object.
      * @param other The reference object with which to compare.
@@ -1771,7 +1769,7 @@ extend Int64 <: Comparable<Int64> {
         since: "22"
     ]
     public func compare(other: Int64): Ordering
-    
+
     /**
      * @description Indicates whether this Int64 is "less than" the specified Int64.
      * @param other The reference Int64 with which to compare.
@@ -1782,7 +1780,7 @@ extend Int64 <: Comparable<Int64> {
         since: "22"
     ]
     public operator func <(other: Int64): Bool
-    
+
     /**
      * @description Indicates whether this Int64 is "greater than" the specified Int64.
      * @param other The reference Int64 with which to compare.
@@ -1793,7 +1791,7 @@ extend Int64 <: Comparable<Int64> {
         since: "22"
     ]
     public operator func >(other: Int64): Bool
-    
+
     /**
      * @description Indicates whether this Int64 is "less than or equal to" the specified Int64.
      * @param other The reference Int64 with which to compare.
@@ -1804,7 +1802,7 @@ extend Int64 <: Comparable<Int64> {
         since: "22"
     ]
     public operator func <=(other: Int64): Bool
-    
+
     /**
      * @description Indicates whether this Int64 is "greater than or equal to" the specified Int64.
      * @param other The reference Int64 with which to compare.
@@ -1815,7 +1813,7 @@ extend Int64 <: Comparable<Int64> {
         since: "22"
     ]
     public operator func >=(other: Int64): Bool
-    
+
     /**
      * @description Indicates whether some other Int64 is "equal to" this one.
      * @param other The reference Int64 with which to compare.
@@ -1826,7 +1824,7 @@ extend Int64 <: Comparable<Int64> {
         since: "22"
     ]
     public operator func ==(other: Int64): Bool
-    
+
     /**
      * @description Indicates whether some other Int64 is "not equal to" this one.
      * @param other The reference Int64 with which to compare.
@@ -1849,7 +1847,7 @@ extend Int32 <: Comparable<Int32> {
         since: "22"
     ]
     public func compare(other: Int32): Ordering
-    
+
     /**
      * @description Indicates whether this Int32 is "less than" the specified Int32.
      * @param other The reference Int32 with which to compare.
@@ -1860,7 +1858,7 @@ extend Int32 <: Comparable<Int32> {
         since: "22"
     ]
     public operator func <(other: Int32): Bool
-    
+
     /**
      * @description Indicates whether this Int32 is "greater than" the specified Int32.
      * @param other The reference Int32 with which to compare.
@@ -1871,7 +1869,7 @@ extend Int32 <: Comparable<Int32> {
         since: "22"
     ]
     public operator func >(other: Int32): Bool
-    
+
     /**
      * @description Indicates whether this Int32 is "less than or equal to" the specified Int32.
      * @param other The reference Int32 with which to compare.
@@ -1882,7 +1880,7 @@ extend Int32 <: Comparable<Int32> {
         since: "22"
     ]
     public operator func <=(other: Int32): Bool
-    
+
     /**
      * @description Indicates whether this Int32 is "greater than or equal to" the specified Int32.
      * @param other The reference Int32 with which to compare.
@@ -1893,7 +1891,7 @@ extend Int32 <: Comparable<Int32> {
         since: "22"
     ]
     public operator func >=(other: Int32): Bool
-    
+
     /**
      * @description Indicates whether some other Int32 is "equal to" this one.
      * @param other The reference Int32 with which to compare.
@@ -1904,7 +1902,7 @@ extend Int32 <: Comparable<Int32> {
         since: "22"
     ]
     public operator func ==(other: Int32): Bool
-    
+
     /**
      * @description Indicates whether some other Int32 is "not equal to" this one.
      * @param other The reference Int32 with which to compare.
@@ -1927,7 +1925,7 @@ extend Int16 <: Comparable<Int16> {
         since: "22"
     ]
     public func compare(other: Int16): Ordering
-    
+
     /**
      * @description Indicates whether this Int16 is "less than" the specified Int16.
      * @param other The reference Int16 with which to compare.
@@ -1938,7 +1936,7 @@ extend Int16 <: Comparable<Int16> {
         since: "22"
     ]
     public operator func <(other: Int16): Bool
-    
+
     /**
      * @description Indicates whether this Int16 is "greater than" the specified Int16.
      * @param other The reference Int16 with which to compare.
@@ -1949,7 +1947,7 @@ extend Int16 <: Comparable<Int16> {
         since: "22"
     ]
     public operator func >(other: Int16): Bool
-    
+
     /**
      * @description Indicates whether this Int16 is "less than or equal to" the specified Int16.
      * @param other The reference Int16 with which to compare.
@@ -1960,7 +1958,7 @@ extend Int16 <: Comparable<Int16> {
         since: "22"
     ]
     public operator func <=(other: Int16): Bool
-    
+
     /**
      * @description Indicates whether this Int16 is "greater than or equal to" the specified Int16.
      * @param other The reference Int16 with which to compare.
@@ -1971,7 +1969,7 @@ extend Int16 <: Comparable<Int16> {
         since: "22"
     ]
     public operator func >=(other: Int16): Bool
-    
+
     /**
      * @description Indicates whether some other Int16 is "equal to" this one.
      * @param other The reference Int16 with which to compare.
@@ -1982,7 +1980,7 @@ extend Int16 <: Comparable<Int16> {
         since: "22"
     ]
     public operator func ==(other: Int16): Bool
-    
+
     /**
      * @description Indicates whether some other Int16 is "not equal to" this one.
      * @param other The reference Int16 with which to compare.
@@ -2005,7 +2003,7 @@ extend Int8 <: Comparable<Int8> {
         since: "22"
     ]
     public func compare(other: Int8): Ordering
-    
+
     /**
      * @description Indicates whether this Int8 is "less than" the specified Int8.
      * @param other The reference Int8 with which to compare.
@@ -2016,7 +2014,7 @@ extend Int8 <: Comparable<Int8> {
         since: "22"
     ]
     public operator func <(other: Int8): Bool
-    
+
     /**
      * @description Indicates whether this Int8 is "greater than" the specified Int8.
      * @param other The reference Int8 with which to compare.
@@ -2027,7 +2025,7 @@ extend Int8 <: Comparable<Int8> {
         since: "22"
     ]
     public operator func >(other: Int8): Bool
-    
+
     /**
      * @description Indicates whether this Int8 is "less than or equal to" the specified Int8.
      * @param other The reference Int8 with which to compare.
@@ -2038,7 +2036,7 @@ extend Int8 <: Comparable<Int8> {
         since: "22"
     ]
     public operator func <=(other: Int8): Bool
-    
+
     /**
      * @description Indicates whether this Int8 is "greater than or equal to" the specified Int8.
      * @param other The reference Int8 with which to compare.
@@ -2049,7 +2047,7 @@ extend Int8 <: Comparable<Int8> {
         since: "22"
     ]
     public operator func >=(other: Int8): Bool
-    
+
     /**
      * @description Indicates whether some other Int8 is "equal to" this one.
      * @param other The reference Int8 with which to compare.
@@ -2060,7 +2058,7 @@ extend Int8 <: Comparable<Int8> {
         since: "22"
     ]
     public operator func ==(other: Int8): Bool
-    
+
     /**
      * @description Indicates whether some other Int8 is "not equal to" this one.
      * @param other The reference Int8 with which to compare.
@@ -2095,7 +2093,7 @@ extend UInt64 <: Comparable<UInt64> {
         since: "22"
     ]
     public func compare(other: UInt64): Ordering
-    
+
     /**
      * @description Indicates whether this UInt64 is "less than" the specified UInt64.
      * @param other The reference UInt64 with which to compare.
@@ -2106,7 +2104,7 @@ extend UInt64 <: Comparable<UInt64> {
         since: "22"
     ]
     public operator func <(other: UInt64): Bool
-    
+
     /**
      * @description Indicates whether this UInt64 is "greater than" the specified UInt64.
      * @param other The reference UInt64 with which to compare.
@@ -2117,7 +2115,7 @@ extend UInt64 <: Comparable<UInt64> {
         since: "22"
     ]
     public operator func >(other: UInt64): Bool
-    
+
     /**
      * @description Indicates whether this UInt64 is "less than or equal to" the specified UInt64.
      * @param other The reference UInt64 with which to compare.
@@ -2128,7 +2126,7 @@ extend UInt64 <: Comparable<UInt64> {
         since: "22"
     ]
     public operator func <=(other: UInt64): Bool
-    
+
     /**
      * @description Indicates whether this UInt64 is "greater than or equal to" the specified UInt64.
      * @param other The reference UInt64 with which to compare.
@@ -2139,7 +2137,7 @@ extend UInt64 <: Comparable<UInt64> {
         since: "22"
     ]
     public operator func >=(other: UInt64): Bool
-    
+
     /**
      * @description Indicates whether some other UInt64 is "equal to" this one.
      * @param other The reference UInt64 with which to compare.
@@ -2150,7 +2148,7 @@ extend UInt64 <: Comparable<UInt64> {
         since: "22"
     ]
     public operator func ==(other: UInt64): Bool
-    
+
     /**
      * @description Indicates whether some other UInt64 is "not equal to" this one.
      * @param other The reference UInt64 with which to compare.
@@ -2173,7 +2171,7 @@ extend UInt32 <: Comparable<UInt32> {
         since: "22"
     ]
     public func compare(other: UInt32): Ordering
-    
+
     /**
      * @description Indicates whether this UInt32 is "less than" the specified UInt32.
      * @param other The reference UInt32 with which to compare.
@@ -2184,7 +2182,7 @@ extend UInt32 <: Comparable<UInt32> {
         since: "22"
     ]
     public operator func <(other: UInt32): Bool
-    
+
     /**
      * @description Indicates whether this UInt32 is "greater than" the specified UInt32.
      * @param other The reference UInt32 with which to compare.
@@ -2195,7 +2193,7 @@ extend UInt32 <: Comparable<UInt32> {
         since: "22"
     ]
     public operator func >(other: UInt32): Bool
-    
+
     /**
      * @description Indicates whether this UInt32 is "less than or equal to" the specified UInt32.
      * @param other The reference UInt32 with which to compare.
@@ -2206,7 +2204,7 @@ extend UInt32 <: Comparable<UInt32> {
         since: "22"
     ]
     public operator func <=(other: UInt32): Bool
-    
+
     /**
      * @description Indicates whether this UInt32 is "greater than or equal to" the specified UInt32.
      * @param other The reference UInt32 with which to compare.
@@ -2217,7 +2215,7 @@ extend UInt32 <: Comparable<UInt32> {
         since: "22"
     ]
     public operator func >=(other: UInt32): Bool
-    
+
     /**
      * @description Indicates whether some other UInt32 is "equal to" this one.
      * @param other The reference UInt32 with which to compare.
@@ -2228,7 +2226,7 @@ extend UInt32 <: Comparable<UInt32> {
         since: "22"
     ]
     public operator func ==(other: UInt32): Bool
-    
+
     /**
      * @description Indicates whether some other UInt32 is "not equal to" this one.
      * @param other The reference UInt32 with which to compare.
@@ -2251,7 +2249,7 @@ extend UInt16 <: Comparable<UInt16> {
         since: "22"
     ]
     public func compare(other: UInt16): Ordering
-    
+
     /**
      * @description Indicates whether this UInt16 is "less than" the specified UInt16.
      * @param other The reference UInt16 with which to compare.
@@ -2262,7 +2260,7 @@ extend UInt16 <: Comparable<UInt16> {
         since: "22"
     ]
     public operator func <(other: UInt16): Bool
-    
+
     /**
      * @description Indicates whether this UInt16 is "greater than" the specified UInt16.
      * @param other The reference UInt16 with which to compare.
@@ -2273,7 +2271,7 @@ extend UInt16 <: Comparable<UInt16> {
         since: "22"
     ]
     public operator func >(other: UInt16): Bool
-    
+
     /**
      * @description Indicates whether this UInt16 is "less than or equal to" the specified UInt16.
      * @param other The reference UInt16 with which to compare.
@@ -2284,7 +2282,7 @@ extend UInt16 <: Comparable<UInt16> {
         since: "22"
     ]
     public operator func <=(other: UInt16): Bool
-    
+
     /**
      * @description Indicates whether this UInt16 is "greater than or equal to" the specified UInt16.
      * @param other The reference UInt16 with which to compare.
@@ -2295,7 +2293,7 @@ extend UInt16 <: Comparable<UInt16> {
         since: "22"
     ]
     public operator func >=(other: UInt16): Bool
-    
+
     /**
      * @description Indicates whether some other UInt16 is "equal to" this one.
      * @param other The reference UInt16 with which to compare.
@@ -2306,7 +2304,7 @@ extend UInt16 <: Comparable<UInt16> {
         since: "22"
     ]
     public operator func ==(other: UInt16): Bool
-    
+
     /**
      * @description Indicates whether some other UInt16 is "not equal to" this one.
      * @param other The reference UInt16 with which to compare.
@@ -2329,7 +2327,7 @@ extend UInt8 <: Comparable<UInt8> {
         since: "22"
     ]
     public func compare(other: UInt8): Ordering
-    
+
     /**
      * @description Indicates whether this UInt8 is "less than" the specified UInt8.
      * @param other The reference UInt8 with which to compare.
@@ -2340,7 +2338,7 @@ extend UInt8 <: Comparable<UInt8> {
         since: "22"
     ]
     public operator func <(other: UInt8): Bool
-    
+
     /**
      * @description Indicates whether this UInt8 is "greater than" the specified UInt8.
      * @param other The reference UInt8 with which to compare.
@@ -2351,7 +2349,7 @@ extend UInt8 <: Comparable<UInt8> {
         since: "22"
     ]
     public operator func >(other: UInt8): Bool
-    
+
     /**
      * @description Indicates whether this UInt8 is "less than or equal to" the specified UInt8.
      * @param other The reference UInt8 with which to compare.
@@ -2362,7 +2360,7 @@ extend UInt8 <: Comparable<UInt8> {
         since: "22"
     ]
     public operator func <=(other: UInt8): Bool
-    
+
     /**
      * @description Indicates whether this UInt8 is "greater than or equal to" the specified UInt8.
      * @param other The reference UInt8 with which to compare.
@@ -2373,7 +2371,7 @@ extend UInt8 <: Comparable<UInt8> {
         since: "22"
     ]
     public operator func >=(other: UInt8): Bool
-    
+
     /**
      * @description Indicates whether some other UInt8 is "equal to" this one.
      * @param other The reference UInt8 with which to compare.
@@ -2384,7 +2382,7 @@ extend UInt8 <: Comparable<UInt8> {
         since: "22"
     ]
     public operator func ==(other: UInt8): Bool
-    
+
     /**
      * @description Indicates whether some other UInt8 is "not equal to" this one.
      * @param other The reference UInt8 with which to compare.
@@ -2407,7 +2405,7 @@ extend Float64 <: Comparable<Float64> {
         since: "22"
     ]
     public func compare(other: Float64): Ordering
-    
+
     /**
      * @description Indicates whether this Float64 is "less than" the specified Float64.
      * @param other The reference Float64 with which to compare.
@@ -2418,7 +2416,7 @@ extend Float64 <: Comparable<Float64> {
         since: "22"
     ]
     public operator func <(other: Float64): Bool
-    
+
     /**
      * @description Indicates whether this Float64 is "greater than" the specified Float64.
      * @param other The reference Float64 with which to compare.
@@ -2429,7 +2427,7 @@ extend Float64 <: Comparable<Float64> {
         since: "22"
     ]
     public operator func >(other: Float64): Bool
-    
+
     /**
      * @description Indicates whether this Float64 is "less than or equal to" the specified Float64.
      * @param other The reference Float64 with which to compare.
@@ -2440,7 +2438,7 @@ extend Float64 <: Comparable<Float64> {
         since: "22"
     ]
     public operator func <=(other: Float64): Bool
-    
+
     /**
      * @description Indicates whether this Float64 is "greater than or equal to" the specified Float64.
      * @param other The reference Float64 with which to compare.
@@ -2451,7 +2449,7 @@ extend Float64 <: Comparable<Float64> {
         since: "22"
     ]
     public operator func >=(other: Float64): Bool
-    
+
     /**
      * @description Indicates whether some other Float64 is "equal to" this one.
      * @param other The reference Float64 with which to compare.
@@ -2462,7 +2460,7 @@ extend Float64 <: Comparable<Float64> {
         since: "22"
     ]
     public operator func ==(other: Float64): Bool
-    
+
     /**
      * @description Indicates whether some other Float64 is "not equal to" this one.
      * @param other The reference Float64 with which to compare.
@@ -2485,7 +2483,7 @@ extend Float32 <: Comparable<Float32> {
         since: "22"
     ]
     public func compare(other: Float32): Ordering
-    
+
     /**
      * @description Indicates whether this Float32 is "less than" the specified Float32.
      * @param other The reference Float32 with which to compare.
@@ -2496,7 +2494,7 @@ extend Float32 <: Comparable<Float32> {
         since: "22"
     ]
     public operator func <(other: Float32): Bool
-    
+
     /**
      * @description Indicates whether this Float32 is "greater than" the specified Float32.
      * @param other The reference Float32 with which to compare.
@@ -2507,7 +2505,7 @@ extend Float32 <: Comparable<Float32> {
         since: "22"
     ]
     public operator func >(other: Float32): Bool
-    
+
     /**
      * @description Indicates whether this Float32 is "less than or equal to" the specified Float32.
      * @param other The reference Float32 with which to compare.
@@ -2518,7 +2516,7 @@ extend Float32 <: Comparable<Float32> {
         since: "22"
     ]
     public operator func <=(other: Float32): Bool
-    
+
     /**
      * @description Indicates whether this Float32 is "greater than or equal to" the specified Float32.
      * @param other The reference Float32 with which to compare.
@@ -2529,7 +2527,7 @@ extend Float32 <: Comparable<Float32> {
         since: "22"
     ]
     public operator func >=(other: Float32): Bool
-    
+
     /**
      * @description Indicates whether some other Float32 is "equal to" this one.
      * @param other The reference Float32 with which to compare.
@@ -2540,7 +2538,7 @@ extend Float32 <: Comparable<Float32> {
         since: "22"
     ]
     public operator func ==(other: Float32): Bool
-    
+
     /**
      * @description Indicates whether some other Float32 is "not equal to" this one.
      * @param other The reference Float32 with which to compare.
@@ -2563,7 +2561,7 @@ extend Float16 <: Comparable<Float16> {
         since: "22"
     ]
     public func compare(other: Float16): Ordering
-    
+
     /**
      * @description Indicates whether this Float16 is "less than" the specified Float16.
      * @param other The reference Float16 with which to compare.
@@ -2574,7 +2572,7 @@ extend Float16 <: Comparable<Float16> {
         since: "22"
     ]
     public operator func <(other: Float16): Bool
-    
+
     /**
      * @description Indicates whether this Float16 is "greater than" the specified Float16.
      * @param other The reference Float16 with which to compare.
@@ -2585,7 +2583,7 @@ extend Float16 <: Comparable<Float16> {
         since: "22"
     ]
     public operator func >(other: Float16): Bool
-    
+
     /**
      * @description Indicates whether this Float16 is "less than or equal to" the specified Float16.
      * @param other The reference Float16 with which to compare.
@@ -2596,7 +2594,7 @@ extend Float16 <: Comparable<Float16> {
         since: "22"
     ]
     public operator func <=(other: Float16): Bool
-    
+
     /**
      * @description Indicates whether this Float16 is "greater than or equal to" the specified Float16.
      * @param other The reference Float16 with which to compare.
@@ -2607,7 +2605,7 @@ extend Float16 <: Comparable<Float16> {
         since: "22"
     ]
     public operator func >=(other: Float16): Bool
-    
+
     /**
      * @description Indicates whether some other Float16 is "equal to" this one.
      * @param other The reference Float16 with which to compare.
@@ -2618,7 +2616,7 @@ extend Float16 <: Comparable<Float16> {
         since: "22"
     ]
     public operator func ==(other: Float16): Bool
-    
+
     /**
      * @description Indicates whether some other Float16 is "not equal to" this one.
      * @param other The reference Float16 with which to compare.
@@ -2673,7 +2671,7 @@ public interface Countable<T> {
         since: "22"
     ]
     func next(right: Int64): T
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2694,7 +2692,7 @@ extend IntNative <: Countable<IntNative> {
         since: "22"
     ]
     public func next(right: Int64): IntNative
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2715,7 +2713,7 @@ extend Int64 <: Countable<Int64> {
         since: "22"
     ]
     public func next(right: Int64): Int64
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2736,7 +2734,7 @@ extend Int32 <: Countable<Int32> {
         since: "22"
     ]
     public func next(right: Int64): Int32
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2757,7 +2755,7 @@ extend Int16 <: Countable<Int16> {
         since: "22"
     ]
     public func next(right: Int64): Int16
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2778,7 +2776,7 @@ extend Int8 <: Countable<Int8> {
         since: "22"
     ]
     public func next(right: Int64): Int8
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2799,7 +2797,7 @@ extend UIntNative <: Countable<UIntNative> {
         since: "22"
     ]
     public func next(right: Int64): UIntNative
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2820,7 +2818,7 @@ extend UInt64 <: Countable<UInt64> {
         since: "22"
     ]
     public func next(right: Int64): UInt64
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2841,7 +2839,7 @@ extend UInt32 <: Countable<UInt32> {
         since: "22"
     ]
     public func next(right: Int64): UInt32
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2862,7 +2860,7 @@ extend UInt16 <: Countable<UInt16> {
         since: "22"
     ]
     public func next(right: Int64): UInt16
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2883,7 +2881,7 @@ extend UInt8 <: Countable<UInt8> {
         since: "22"
     ]
     public func next(right: Int64): UInt8
-    
+
     /**
      * @description Gets the current position in the sequence.
      * @returns The current position in the sequence.
@@ -2903,7 +2901,7 @@ extend Rune <: Countable<Rune> {
         since: "22"
     ]
     public func position(): Int64
-    
+
     /**
      * @description Gets the next Rune value in the sequence.
      * @param right The right bound of the sequence.
@@ -2930,7 +2928,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const nanosecond: Duration = Duration(0, 1)
-    
+
     /**
      * @description A duration of one microsecond.
      */
@@ -2938,7 +2936,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const microsecond: Duration = Duration(0, 1000u32)
-    
+
     /**
      * @description A duration of one millisecond.
      */
@@ -2946,7 +2944,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const millisecond: Duration = Duration(0, 1000000u32)
-    
+
     /**
      * @description A duration of one second.
      */
@@ -2954,7 +2952,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const second: Duration = Duration(1, 0)
-    
+
     /**
      * @description A duration of one minute.
      */
@@ -2962,7 +2960,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const minute: Duration = Duration(SECS_PER_MINUTE, 0)
-    
+
     /**
      * @description A duration of one hour.
      */
@@ -2970,7 +2968,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const hour: Duration = Duration(SECS_PER_HOUR, 0)
-    
+
     /**
      * @description A duration of one day.
      */
@@ -2978,7 +2976,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const day: Duration = Duration(SECS_PER_DAY, 0)
-    
+
     /**
      * @description A duration of zero.
      */
@@ -2986,7 +2984,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const Zero: Duration = Duration(0, 0)
-    
+
     /**
      * @description The maximum duration.
      */
@@ -2994,7 +2992,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const Max: Duration = Duration(MAX_INT64, MAX_NANOSECOND)
-    
+
     /**
      * @description The minimum duration.
      */
@@ -3002,7 +3000,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public static const Min: Duration = Duration(MIN_INT64, 0)
-    
+
     /**
      * @description Converts this duration to nanoseconds.
      * @returns The number of nanoseconds in this duration.
@@ -3013,7 +3011,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         throwexception: true
     ]
     public func toNanoseconds(): Int64
-    
+
     /**
      * @description Converts this duration to microseconds.
      * @returns The number of microseconds in this duration.
@@ -3024,7 +3022,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         throwexception: true
     ]
     public func toMicroseconds(): Int64
-    
+
     /**
      * @description Converts this duration to milliseconds.
      * @returns The number of milliseconds in this duration.
@@ -3035,7 +3033,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         throwexception: true
     ]
     public func toMilliseconds(): Int64
-    
+
     /**
      * @description Converts this duration to seconds.
      * @returns The number of seconds in this duration.
@@ -3044,7 +3042,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public func toSeconds(): Int64
-    
+
     /**
      * @description Converts this duration to minutes.
      * @returns The number of minutes in this duration.
@@ -3053,7 +3051,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public func toMinutes(): Int64
-    
+
     /**
      * @description Converts this duration to hours.
      * @returns The number of hours in this duration.
@@ -3062,7 +3060,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public func toHours(): Int64
-    
+
     /**
      * @description Converts this duration to days.
      * @returns The number of days in this duration.
@@ -3071,7 +3069,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public func toDays(): Int64
-    
+
     /**
      * @description Returns a string representation of this duration.
      * @returns A string representation of this duration.
@@ -3080,7 +3078,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Returns a hash code value for this duration.
      * @returns A hash code value for this duration.
@@ -3089,7 +3087,7 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns the absolute value of this duration.
      * @returns The absolute value of this duration.
@@ -3100,10 +3098,10 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         throwexception: true
     ]
     public func abs(): Duration
-    
+
     /**
      * @description Adds another duration to this duration.
-     * @param r The duration to add.
+     * @param other The duration to add.
      * @returns The sum of the two durations.
      * @throws ArithmeticException if the operation would overflow.
      */
@@ -3111,11 +3109,11 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22",
         throwexception: true
     ]
-    public operator func +(r: Duration): Duration
-    
+    public operator func +(other: Duration): Duration
+
     /**
      * @description Subtracts another duration from this duration.
-     * @param r The duration to subtract.
+     * @param other The duration to subtract.
      * @returns The difference of the two durations.
      * @throws ArithmeticException if the operation would overflow.
      */
@@ -3123,11 +3121,11 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22",
         throwexception: true
     ]
-    public operator func -(r: Duration): Duration
-    
+    public operator func -(other: Duration): Duration
+
     /**
      * @description Multiplies this duration by an integer.
-     * @param r The integer to multiply by.
+     * @param multiplier The integer to multiply by.
      * @returns The product of this duration and the integer.
      * @throws ArithmeticException if the operation would overflow.
      */
@@ -3135,23 +3133,24 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22",
         throwexception: true
     ]
-    public operator func *(r: Int64): Duration
-    
+    public operator func *(multiplier: Int64): Duration
+
     /**
      * @description Multiplies this duration by a Float64.
-     * @param r The Float64 to multiply by.
+     * @param multiplier The Float64 to multiply by.
      * @returns The product of this duration and the Float64.
      * @throws ArithmeticException if the operation would overflow.
+
      */
     @!APILevel[
         since: "22",
         throwexception: true
     ]
-    public operator func *(r: Float64): Duration
-    
+    public operator func *(multiplier: Float64): Duration
+
     /**
      * @description Divides this duration by an integer.
-     * @param r The integer to divide by.
+     * @param divisor The integer to divide by.
      * @returns The quotient of this duration and the integer.
      * @throws ArithmeticException if the operation would overflow.
      * @throws IllegalArgumentException if the divisor is zero.
@@ -3160,11 +3159,11 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22",
         throwexception: true
     ]
-    public operator func /(r: Int64): Duration
-    
+    public operator func /(divisor: Int64): Duration
+
     /**
      * @description Divides this duration by a Float64.
-     * @param r The Float64 to divide by.
+     * @param divisor The Float64 to divide by.
      * @returns The quotient of this duration and the Float64.
      * @throws ArithmeticException if the operation would overflow.
      * @throws IllegalArgumentException if the divisor is zero.
@@ -3173,11 +3172,11 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22",
         throwexception: true
     ]
-    public operator func /(r: Float64): Duration
-    
+    public operator func /(divisor: Float64): Duration
+
     /**
      * @description Divides this duration by another duration.
-     * @param r The duration to divide by.
+     * @param other The duration to divide by.
      * @returns The quotient of the two durations.
      * @throws IllegalArgumentException if the divisor is zero.
      */
@@ -3185,68 +3184,68 @@ public struct Duration <: ToString & Hashable & Comparable<Duration> {
         since: "22",
         throwexception: true
     ]
-    public operator func /(r: Duration): Float64
-    
+    public operator func /(other: Duration): Float64
+
     /**
      * @description Checks if this duration is equal to another duration.
-     * @param r The duration to compare with.
+     * @param other The duration to compare with.
      * @returns true if the durations are equal, false otherwise.
      */
     @!APILevel[
         since: "22"
     ]
-    public operator func ==(r: Duration): Bool
-    
+    public operator func ==(other: Duration): Bool
+
     /**
      * @description Checks if this duration is not equal to another duration.
-     * @param r The duration to compare with.
+     * @param other The duration to compare with.
      * @returns true if the durations are not equal, false otherwise.
      */
     @!APILevel[
         since: "22"
     ]
-    public operator func !=(r: Duration): Bool
-    
+    public operator func !=(other: Duration): Bool
+
     /**
      * @description Checks if this duration is greater than or equal to another duration.
-     * @param r The duration to compare with.
+     * @param other The duration to compare with.
      * @returns true if this duration is greater than or equal to the other duration, false otherwise.
      */
     @!APILevel[
         since: "22"
     ]
-    public operator func >=(r: Duration): Bool
-    
+    public operator func >=(other: Duration): Bool
+
     /**
      * @description Checks if this duration is greater than another duration.
-     * @param r The duration to compare with.
+     * @param other The duration to compare with.
      * @returns true if this duration is greater than the other duration, false otherwise.
      */
     @!APILevel[
         since: "22"
     ]
-    public operator func >(r: Duration): Bool
-    
+    public operator func >(other: Duration): Bool
+
     /**
      * @description Checks if this duration is less than or equal to another duration.
-     * @param r The duration to compare with.
+     * @param other The duration to compare with.
      * @returns true if this duration is less than or equal to the other duration, false otherwise.
      */
     @!APILevel[
         since: "22"
     ]
-    public operator func <=(r: Duration): Bool
-    
+    public operator func <=(other: Duration): Bool
+
     /**
      * @description Checks if this duration is less than another duration.
-     * @param r The duration to compare with.
+     * @param other The duration to compare with.
      * @returns true if this duration is less than the other duration, false otherwise.
      */
     @!APILevel[
         since: "22"
     ]
-    public operator func <(r: Duration): Bool
-    
+    public operator func <(other: Duration): Bool
+
     /**
      * @description Compares this duration with another duration for order.
      * @param other The duration to be compared.
@@ -3308,7 +3307,7 @@ public enum Endian {
         since: "22"
     ]
     Little
-    
+
     /**
      * @description The endianness of the current platform.
      */
@@ -3400,7 +3399,7 @@ public open class Error <: ToString {
         since: "22"
     ]
     public open prop message: String
-    
+
     /**
      * @description Returns a string representation of this error.
      * @returns A string representation of this error.
@@ -3409,7 +3408,7 @@ public open class Error <: ToString {
         since: "22"
     ]
     public open func toString(): String
-    
+
     /**
      * @description Prints the stack trace of this error to the standard error stream.
      */
@@ -3417,7 +3416,7 @@ public open class Error <: ToString {
         since: "22"
     ]
     public open func printStackTrace(): Unit
-    
+
     /**
      * @description Gets the stack trace message of this error.
      * @returns The stack trace message of this error.
@@ -3426,7 +3425,7 @@ public open class Error <: ToString {
         since: "22"
     ]
     public open func getStackTraceMessage(): String
-    
+
     /**
      * @description Gets the stack trace elements of this error.
      * @returns An array of stack trace elements.
@@ -3451,7 +3450,7 @@ public open class Exception <: ToString {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new Exception with the specified detail message.
      * @param message The detail message.
@@ -3460,7 +3459,7 @@ public open class Exception <: ToString {
         since: "22"
     ]
     public init(message: String)
-    
+
     /**
      * @description The exception message.
      */
@@ -3468,7 +3467,7 @@ public open class Exception <: ToString {
         since: "22"
     ]
     public open prop message: String
-    
+
     /**
      * @description Returns a string representation of this exception.
      * @returns A string representation of this exception.
@@ -3477,7 +3476,7 @@ public open class Exception <: ToString {
         since: "22"
     ]
     public open func toString(): String
-    
+
     /**
      * @description Prints the stack trace of this exception to the standard error stream.
      */
@@ -3485,7 +3484,7 @@ public open class Exception <: ToString {
         since: "22"
     ]
     public func printStackTrace(): Unit
-    
+
     /**
      * @description Gets the stack trace elements of this exception.
      * @returns An array of stack trace elements.
@@ -3506,7 +3505,7 @@ extend Float64 {
         since: "22"
     ]
     public static func fromBits(bits: UInt64): Float64
-    
+
     /**
      * @description Returns the bit representation of this Float64.
      * @returns The bit representation of this Float64.
@@ -3527,7 +3526,7 @@ extend Float32 {
         since: "22"
     ]
     public static func fromBits(bits: UInt32): Float32
-    
+
     /**
      * @description Returns the bit representation of this Float32.
      * @returns The bit representation of this Float32.
@@ -3548,7 +3547,7 @@ extend Float16 {
         since: "22"
     ]
     public static func fromBits(bits: UInt16): Float16
-    
+
     /**
      * @description Returns the bit representation of this Float16.
      * @returns The bit representation of this Float16.
@@ -3579,7 +3578,7 @@ public class Future<T> {
         since: "22"
     ]
     public prop thread: Thread
-    
+
     /**
      * @description Gets the result of the computation, blocking if necessary.
      * @returns The result of the computation.
@@ -3588,7 +3587,7 @@ public class Future<T> {
         since: "22"
     ]
     public func get(): T
-    
+
     /**
      * @description Attempts to get the result of the computation without blocking.
      * @returns Some(value) if the computation is complete, None otherwise.
@@ -3597,7 +3596,7 @@ public class Future<T> {
         since: "22"
     ]
     public func tryGet(): Option<T>
-    
+
     /**
      * @description Gets the result of the computation, waiting up to the specified timeout.
      * @param timeout The maximum time to wait.
@@ -3609,7 +3608,7 @@ public class Future<T> {
         throwexception: true
     ]
     public func get(timeout: Duration): T
-    
+
     /**
      * @description Cancels the computation.
      */
@@ -3633,7 +3632,7 @@ public interface ThreadContext {
         since: "22"
     ]
     func end(): Unit
-    
+
     /**
      * @description Checks if the thread context has ended.
      * @returns true if the thread context has ended, false otherwise.
@@ -3715,7 +3714,7 @@ extend IntNative <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of IntNative.
      */
@@ -3723,7 +3722,7 @@ extend IntNative <: Hashable {
         since: "22"
     ]
     public static prop Max: IntNative
-    
+
     /**
      * @description The minimum value of IntNative.
      */
@@ -3742,7 +3741,7 @@ extend Int64 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of Int64.
      */
@@ -3750,7 +3749,7 @@ extend Int64 <: Hashable {
         since: "22"
     ]
     public static prop Max: Int64
-    
+
     /**
      * @description The minimum value of Int64.
      */
@@ -3769,7 +3768,7 @@ extend Int32 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of Int32.
      */
@@ -3777,7 +3776,7 @@ extend Int32 <: Hashable {
         since: "22"
     ]
     public static prop Max: Int32
-    
+
     /**
      * @description The minimum value of Int32.
      */
@@ -3796,7 +3795,7 @@ extend Int16 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of Int16.
      */
@@ -3804,7 +3803,7 @@ extend Int16 <: Hashable {
         since: "22"
     ]
     public static prop Max: Int16
-    
+
     /**
      * @description The minimum value of Int16.
      */
@@ -3823,7 +3822,7 @@ extend Int8 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of Int8.
      */
@@ -3831,7 +3830,7 @@ extend Int8 <: Hashable {
         since: "22"
     ]
     public static prop Max: Int8
-    
+
     /**
      * @description The minimum value of Int8.
      */
@@ -3851,7 +3850,7 @@ extend UIntNative <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of UIntNative.
      */
@@ -3859,7 +3858,7 @@ extend UIntNative <: Hashable {
         since: "22"
     ]
     public static prop Max: UIntNative
-    
+
     /**
      * @description The minimum value of UIntNative.
      */
@@ -3879,7 +3878,7 @@ extend UInt64 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of UInt64.
      */
@@ -3887,7 +3886,7 @@ extend UInt64 <: Hashable {
         since: "22"
     ]
     public static prop Max: UInt64
-    
+
     /**
      * @description The minimum value of UInt64.
      */
@@ -3906,7 +3905,7 @@ extend UInt32 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of UInt32.
      */
@@ -3914,7 +3913,7 @@ extend UInt32 <: Hashable {
         since: "22"
     ]
     public static prop Max: UInt32
-    
+
     /**
      * @description The minimum value of UInt32.
      */
@@ -3933,7 +3932,7 @@ extend UInt16 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of UInt16.
      */
@@ -3941,7 +3940,7 @@ extend UInt16 <: Hashable {
         since: "22"
     ]
     public static prop Max: UInt16
-    
+
     /**
      * @description The minimum value of UInt16.
      */
@@ -3960,7 +3959,7 @@ extend UInt8 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description The maximum value of UInt8.
      */
@@ -3968,7 +3967,7 @@ extend UInt8 <: Hashable {
         since: "22"
     ]
     public static prop Max: UInt8
-    
+
     /**
      * @description The minimum value of UInt8.
      */
@@ -3987,7 +3986,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Represents a "Not a Number" value.
      */
@@ -3995,7 +3994,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public static prop NaN: Float64
-    
+
     /**
      * @description Represents positive infinity.
      */
@@ -4003,7 +4002,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public static prop Inf: Float64
-    
+
     /**
      * @description The maximum finite value of Float64.
      */
@@ -4011,7 +4010,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public static prop Max: Float64
-    
+
     /**
      * @description The minimum finite value of Float64.
      */
@@ -4019,7 +4018,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public static prop Min: Float64
-    
+
     /**
      * @description The minimum positive denormalized value of Float64.
      */
@@ -4027,7 +4026,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public static prop MinDenormal: Float64
-    
+
     /**
      * @description The minimum positive normalized value of Float64.
      */
@@ -4035,7 +4034,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public static prop MinNormal: Float64
-    
+
     /**
      * @description Checks if this Float64 is positive or negative infinity.
      * @returns true if this Float64 is positive or negative infinity, false otherwise.
@@ -4044,7 +4043,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public func isInf(): Bool
-    
+
     /**
      * @description Checks if this Float64 is NaN (Not a Number).
      * @returns true if this Float64 is NaN, false otherwise.
@@ -4053,7 +4052,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public func isNaN(): Bool
-    
+
     /**
      * @description Checks if this Float64 is a normal number (not NaN, infinity, or zero).
      * @returns true if this Float64 is a normal number, false otherwise.
@@ -4062,7 +4061,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public func isNormal(): Bool
-    
+
     /**
      * @description Returns the maximum of the given Float64 values.
      * @param a The first value.
@@ -4074,7 +4073,7 @@ extend Float64 <: Hashable {
         since: "22"
     ]
     public static func max(a: Float64, b: Float64, others: Array<Float64>): Float64
-    
+
     /**
      * @description Returns the minimum of the given Float64 values.
      * @param a The first value.
@@ -4097,7 +4096,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Represents a "Not a Number" value.
      */
@@ -4105,7 +4104,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public static prop NaN: Float32
-    
+
     /**
      * @description Represents positive infinity.
      */
@@ -4113,7 +4112,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public static prop Inf: Float32
-    
+
     /**
      * @description The maximum finite value of Float32.
      */
@@ -4121,7 +4120,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public static prop Max: Float32
-    
+
     /**
      * @description The minimum finite value of Float32.
      */
@@ -4129,7 +4128,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public static prop Min: Float32
-    
+
     /**
      * @description The minimum positive denormalized value of Float32.
      */
@@ -4137,7 +4136,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public static prop MinDenormal: Float32
-    
+
     /**
      * @description The minimum positive normalized value of Float32.
      */
@@ -4145,7 +4144,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public static prop MinNormal: Float32
-    
+
     /**
      * @description Checks if this Float32 is positive or negative infinity.
      * @returns true if this Float32 is positive or negative infinity, false otherwise.
@@ -4154,7 +4153,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public func isInf(): Bool
-    
+
     /**
      * @description Checks if this Float32 is NaN (Not a Number).
      * @returns true if this Float32 is NaN, false otherwise.
@@ -4163,7 +4162,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public func isNaN(): Bool
-    
+
     /**
      * @description Checks if this Float32 is a normal number (not NaN, infinity, or zero).
      * @returns true if this Float32 is a normal number, false otherwise.
@@ -4172,7 +4171,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public func isNormal(): Bool
-    
+
     /**
      * @description Returns the maximum of the given Float32 values.
      * @param a The first value.
@@ -4184,7 +4183,7 @@ extend Float32 <: Hashable {
         since: "22"
     ]
     public static func max(a: Float32, b: Float32, others: Array<Float32>): Float32
-    
+
     /**
      * @description Returns the minimum of the given Float32 values.
      * @param a The first value.
@@ -4207,7 +4206,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Represents a "Not a Number" value.
      */
@@ -4215,7 +4214,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public static prop NaN: Float16
-    
+
     /**
      * @description Represents positive infinity.
      */
@@ -4223,7 +4222,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public static prop Inf: Float16
-    
+
     /**
      * @description The maximum finite value of Float16.
      */
@@ -4231,7 +4230,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public static prop Max: Float16
-    
+
     /**
      * @description The minimum finite value of Float16.
      */
@@ -4239,7 +4238,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public static prop Min: Float16
-    
+
     /**
      * @description The minimum positive denormalized value of Float16.
      */
@@ -4247,7 +4246,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public static prop MinDenormal: Float16
-    
+
     /**
      * @description The minimum positive normalized value of Float16.
      */
@@ -4255,7 +4254,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public static prop MinNormal: Float16
-    
+
     /**
      * @description Checks if this Float16 is positive or negative infinity.
      * @returns true if this Float16 is positive or negative infinity, false otherwise.
@@ -4264,7 +4263,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public func isInf(): Bool
-    
+
     /**
      * @description Checks if this Float16 is NaN (Not a Number).
      * @returns true if this Float16 is NaN, false otherwise.
@@ -4273,7 +4272,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public func isNaN(): Bool
-    
+
     /**
      * @description Checks if this Float16 is a normal number (not NaN, infinity, or zero).
      * @returns true if this Float16 is a normal number, false otherwise.
@@ -4282,7 +4281,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public func isNormal(): Bool
-    
+
     /**
      * @description Returns the maximum of the given Float16 values.
      * @param a The first value.
@@ -4294,7 +4293,7 @@ extend Float16 <: Hashable {
         since: "22"
     ]
     public static func max(a: Float16, b: Float16, others: Array<Float16>): Float16
-    
+
     /**
      * @description Returns the minimum of the given Float16 values.
      * @param a The first value.
@@ -4334,7 +4333,7 @@ public interface Hasher {
         since: "22"
     ]
     func finish(): Int64
-    
+
     /**
      * @description Resets the hasher to its initial state.
      */
@@ -4342,7 +4341,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func reset(): Unit
-    
+
     /**
      * @description Writes a Bool value to the hasher.
      * @param value The Bool value to write.
@@ -4351,7 +4350,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Bool): Unit
-    
+
     /**
      * @description Writes a Rune value to the hasher.
      * @param value The Rune value to write.
@@ -4360,7 +4359,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Rune): Unit
-    
+
     /**
      * @description Writes an Int8 value to the hasher.
      * @param value The Int8 value to write.
@@ -4369,7 +4368,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Int8): Unit
-    
+
     /**
      * @description Writes an Int16 value to the hasher.
      * @param value The Int16 value to write.
@@ -4378,7 +4377,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Int16): Unit
-    
+
     /**
      * @description Writes an Int32 value to the hasher.
      * @param value The Int32 value to write.
@@ -4387,7 +4386,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Int32): Unit
-    
+
     /**
      * @description Writes an Int64 value to the hasher.
      * @param value The Int64 value to write.
@@ -4396,7 +4395,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Int64): Unit
-    
+
     /**
      * @description Writes a UInt8 value to the hasher.
      * @param value The UInt8 value to write.
@@ -4405,7 +4404,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: UInt8): Unit
-    
+
     /**
      * @description Writes a UInt16 value to the hasher.
      * @param value The UInt16 value to write.
@@ -4414,7 +4413,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: UInt16): Unit
-    
+
     /**
      * @description Writes a UInt32 value to the hasher.
      * @param value The UInt32 value to write.
@@ -4423,7 +4422,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: UInt32): Unit
-    
+
     /**
      * @description Writes a UInt64 value to the hasher.
      * @param value The UInt64 value to write.
@@ -4432,7 +4431,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: UInt64): Unit
-    
+
     /**
      * @description Writes a Float16 value to the hasher.
      * @param value The Float16 value to write.
@@ -4441,7 +4440,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Float16): Unit
-    
+
     /**
      * @description Writes a Float32 value to the hasher.
      * @param value The Float32 value to write.
@@ -4450,7 +4449,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Float32): Unit
-    
+
     /**
      * @description Writes a Float64 value to the hasher.
      * @param value The Float64 value to write.
@@ -4459,7 +4458,7 @@ public interface Hasher {
         since: "22"
     ]
     mut func write(value: Float64): Unit
-    
+
     /**
      * @description Writes a String value to the hasher.
      * @param value The String value to write.
@@ -4485,7 +4484,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public func finish(): Int64
-    
+
     /**
      * @description Resets the hasher to its initial state.
      */
@@ -4493,7 +4492,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func reset(): Unit
-    
+
     /**
      * @description Writes a Bool value to the hasher.
      * @param value The Bool value to write.
@@ -4502,7 +4501,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Bool): Unit
-    
+
     /**
      * @description Writes a Rune value to the hasher.
      * @param value The Rune value to write.
@@ -4511,7 +4510,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Rune): Unit
-    
+
     /**
      * @description Writes an Int8 value to the hasher.
      * @param value The Int8 value to write.
@@ -4520,7 +4519,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Int8): Unit
-    
+
     /**
      * @description Writes an Int16 value to the hasher.
      * @param value The Int16 value to write.
@@ -4529,7 +4528,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Int16): Unit
-    
+
     /**
      * @description Writes an Int32 value to the hasher.
      * @param value The Int32 value to write.
@@ -4538,7 +4537,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Int32): Unit
-    
+
     /**
      * @description Writes an Int64 value to the hasher.
      * @param value The Int64 value to write.
@@ -4547,7 +4546,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Int64): Unit
-    
+
     /**
      * @description Writes a UInt8 value to the hasher.
      * @param value The UInt8 value to write.
@@ -4556,7 +4555,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: UInt8): Unit
-    
+
     /**
      * @description Writes a UInt16 value to the hasher.
      * @param value The UInt16 value to write.
@@ -4565,7 +4564,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: UInt16): Unit
-    
+
     /**
      * @description Writes a UInt32 value to the hasher.
      * @param value The UInt32 value to write.
@@ -4574,7 +4573,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: UInt32): Unit
-    
+
     /**
      * @description Writes a UInt64 value to the hasher.
      * @param value The UInt64 value to write.
@@ -4583,7 +4582,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: UInt64): Unit
-    
+
     /**
      * @description Writes a Float16 value to the hasher.
      * @param value The Float16 value to write.
@@ -4592,7 +4591,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Float16): Unit
-    
+
     /**
      * @description Writes a Float32 value to the hasher.
      * @param value The Float32 value to write.
@@ -4601,7 +4600,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Float32): Unit
-    
+
     /**
      * @description Writes a Float64 value to the hasher.
      * @param value The Float64 value to write.
@@ -4610,7 +4609,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: Float64): Unit
-    
+
     /**
      * @description Writes a String value to the hasher.
      * @param value The String value to write.
@@ -4619,7 +4618,7 @@ public struct DefaultHasher <: Hasher {
         since: "22"
     ]
     public mut func write(value: String): Unit
-    
+
     /**
      * @description Constructs a DefaultHasher with the specified initial result value.
      * @param res The initial result value.
@@ -4644,7 +4643,7 @@ public open class IllegalArgumentException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new IllegalArgumentException with the specified detail message.
      * @param message The detail message.
@@ -4669,7 +4668,7 @@ public open class IllegalFormatException <: IllegalArgumentException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new IllegalFormatException with the specified detail message.
      * @param message The detail message.
@@ -4694,7 +4693,7 @@ public class IllegalMemoryException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new IllegalMemoryException with the specified detail message.
      * @param message The detail message.
@@ -4719,7 +4718,7 @@ public class IllegalStateException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new IllegalStateException with the specified detail message.
      * @param message The detail message.
@@ -4744,7 +4743,7 @@ public class IncompatiblePackageException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new IncompatiblePackageException with the specified detail message.
      * @param message The detail message.
@@ -4769,7 +4768,7 @@ public class IndexOutOfBoundsException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new IndexOutOfBoundsException with the specified detail message.
      * @param message The detail message.
@@ -4780,6 +4779,9 @@ public class IndexOutOfBoundsException <: Exception {
     public init(message: String)
 }
 
+/**
+ * @description Provides an interface for Iterable
+ */
 @!APILevel[
     since: "22"
 ]
@@ -4809,7 +4811,7 @@ public abstract class Iterator<T> <: Iterable<T> {
         since: "22"
     ]
     public func next(): Option<T>
-    
+
     /**
      * @description Constructs a new Iterator.
      */
@@ -4818,7 +4820,7 @@ public abstract class Iterator<T> <: Iterable<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Returns this iterator.
      * @returns This iterator.
@@ -4852,7 +4854,7 @@ extend<T> Iterator<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func max(): Option<T>
-    
+
     /**
      * @description Returns the minimum value in the iterator.
      * @returns The minimum value, or None if the iterator is empty.
@@ -4874,7 +4876,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func zip<R>(it: Iterator<R>): Iterator<(T, R)>
-    
+
     /**
      * @description Creates an iterator that yields pairs of indices and values.
      * @returns An iterator of pairs of indices and values.
@@ -4884,7 +4886,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func enumerate(): Iterator<(Int64, T)>
-    
+
     /**
      * @description Creates an iterator that filters values based on a predicate.
      * @param predicate The predicate to apply.
@@ -4895,7 +4897,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func filter(predicate: (T) -> Bool): Iterator<T>
-    
+
     /**
      * @description Creates an iterator that applies a transformation function and filters out None values.
      * @param transform The transformation function to apply.
@@ -4906,7 +4908,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func filterMap<R>(transform: (T) -> Option<R>): Iterator<R>
-    
+
     /**
      * @description Creates an iterator that applies a transformation function to each value.
      * @param transform The transformation function to apply.
@@ -4917,46 +4919,48 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func map<R>(transform: (T) -> R): Iterator<R>
-    
+
     /**
      * @description Creates an iterator that skips values by a specified step count.
      * @param count The step count.
      * @returns An iterator that yields every nth value.     */
     @Frozen
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func step(count: Int64): Iterator<T>
-    
+
     /**
      * @description Creates an iterator that skips the first n values.
      * @param count The number of values to skip.
      * @returns An iterator that yields values after skipping the first n values.     */
     @Frozen
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func skip(count: Int64): Iterator<T>
-    
+
     /**
      * @description Creates an iterator that takes the first n values.
      * @param count The number of values to take.
      * @returns An iterator that yields only the first n values.     */
     @Frozen
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func take(count: Int64): Iterator<T>
-    
+
+    /**
+     * @description Concatenates this iterator with another iterator.
+     * @param other The iterator to concatenate with.
+     * @returns A new iterator containing the elements of this iterator followed by the elements of other.
+     */
     @Frozen
     @!APILevel[
         since: "22"
     ]
     public func concat(other: Iterator<T>): Iterator<T>
-    
+
     /**
      * @description Creates an iterator that performs an action on each value.
      * @param action The action to perform.
@@ -4967,7 +4971,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func inspect(action: (T) -> Unit): Iterator<T>
-    
+
     /**
      * @description Creates an iterator that applies a transformation function and flattens the result.
      * @param transform The transformation function to apply.
@@ -4978,7 +4982,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func flatMap<R>(transform: (T) -> Iterator<R>): Iterator<R>
-    
+
     /**
      * @description Creates an iterator that inserts a separator between each value.
      * @param separator The separator to insert.
@@ -4989,7 +4993,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func intersperse(separator: T): Iterator<T>
-    
+
     /**
      * @description Checks if all values in the iterator satisfy a predicate.
      * @param predicate The predicate to apply.
@@ -5000,7 +5004,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func all(predicate: (T) -> Bool): Bool
-    
+
     /**
      * @description Checks if any value in the iterator satisfies a predicate.
      * @param predicate The predicate to apply.
@@ -5011,7 +5015,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func any(predicate: (T) -> Bool): Bool
-    
+
     /**
      * @description Checks if no values in the iterator satisfy a predicate.
      * @param predicate The predicate to apply.
@@ -5022,7 +5026,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func none(predicate: (T) -> Bool): Bool
-    
+
     /**
      * @description Checks if the iterator is empty.
      * @returns true if the iterator is empty, false otherwise.
@@ -5032,7 +5036,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns the number of values in the iterator.
      * @returns The number of values in the iterator.
@@ -5042,7 +5046,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func count(): Int64
-    
+
     /**
      * @description Performs an action for each value in the iterator.
      * @param action The action to perform.
@@ -5052,7 +5056,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func forEach(action: (T) -> Unit): Unit
-    
+
     /**
      * @description Returns the first value in the iterator.
      * @returns The first value, or None if the iterator is empty.
@@ -5062,7 +5066,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func first(): Option<T>
-    
+
     /**
      * @description Returns the last value in the iterator.
      * @returns The last value, or None if the iterator is empty.
@@ -5072,7 +5076,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func last(): Option<T>
-    
+
     /**
      * @description Returns the value at the specified index in the iterator.
      * @param n The index of the value to return.
@@ -5083,7 +5087,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func at(n: Int64): Option<T>
-    
+
     /**
      * @description Reduces the iterator to a single value using the specified operation.
      * @param operation The reduction operation.
@@ -5094,7 +5098,7 @@ extend<T> Iterator<T> {
         since: "22"
     ]
     public func reduce(operation: (T, T) -> T): Option<T>
-    
+
     /**
      * @description Folds the iterator into a single value using the specified initial value and operation.
      * @param initial The initial value.
@@ -5126,6 +5130,9 @@ public func sizeOf<T>(): UIntNative where T <: CType
 ]
 public func alignOf<T>(): UIntNative where T <: CType
 
+/**
+ * @description Provides utils for libc
+ */
 @!APILevel[
     since: "22"
 ]
@@ -5141,7 +5148,7 @@ public struct LibC {
         throwexception: true
     ]
     public static func malloc<T>(count!: Int64 = 1): CPointer<T> where T <: CType
-    
+
     /**
      * @description Frees memory allocated for a C type.
      * @param p The C pointer to free.
@@ -5150,7 +5157,7 @@ public struct LibC {
         since: "22"
     ]
     public unsafe static func free<T>(p: CPointer<T>): Unit where T <: CType
-    
+
     /**
      * @description Allocates memory for a C string.
      * @param str The string to allocate memory for.
@@ -5162,7 +5169,7 @@ public struct LibC {
         throwexception: true
     ]
     public unsafe static func mallocCString(str: String): CString
-    
+
     /**
      * @description Frees memory allocated for a C string.
      * @param cstr The C string to free.
@@ -5187,7 +5194,7 @@ public class NegativeArraySizeException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new NegativeArraySizeException with the specified detail message.
      * @param message The detail message.
@@ -5212,7 +5219,7 @@ public class NoneValueException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @param message The detail message.
      */
@@ -5289,7 +5296,7 @@ public enum Option<T> {
         since: "22"
     ]
     None
-    
+
     /**
      * @description Returns the value if present, otherwise throws a NoneValueException.
      * @returns The value if present.
@@ -5301,7 +5308,7 @@ public enum Option<T> {
         throwexception: true
     ]
     public func getOrThrow(): T
-    
+
     /**
      * @description Returns the value if present, otherwise throws the specified exception.
      * @param exception A function that returns the exception to throw.
@@ -5312,7 +5319,7 @@ public enum Option<T> {
         since: "22"
     ]
     public func getOrThrow(exception: () -> Exception): T
-    
+
     /**
      * @description Returns the value if present, otherwise returns the result of the specified function.
      * @param other A function that returns the default value.
@@ -5323,7 +5330,7 @@ public enum Option<T> {
         since: "22"
     ]
     public func getOrDefault(other: () -> T): T
-    
+
     /**
      * @description Checks if the Option is None.
      * @returns true if the Option is None, false otherwise.
@@ -5333,7 +5340,7 @@ public enum Option<T> {
         since: "22"
     ]
     public func isNone(): Bool
-    
+
     /**
      * @description Checks if the Option is Some.
      * @returns true if the Option is Some, false otherwise.
@@ -5343,7 +5350,7 @@ public enum Option<T> {
         since: "22"
     ]
     public func isSome(): Bool
-    
+
     /**
      * @description Maps the value if present using the specified transformation function.
      * @param transform The transformation function to apply.
@@ -5353,7 +5360,7 @@ public enum Option<T> {
         since: "22"
     ]
     public func map<R>(transform: (T) -> R): Option<R>
-    
+
     /**
      * @description Filters the value if present using the specified predicate.
      * @param predicate The predicate to apply.
@@ -5363,7 +5370,7 @@ public enum Option<T> {
         since: "22"
     ]
     public func filter(predicate: (T) -> Bool): Option<T>
-    
+
     /**
      * @description Maps the value if present using the specified transformation function and flattens the result.
      * @param transform The transformation function to apply.
@@ -5406,7 +5413,7 @@ extend<T> Option<T> <: Equatable<Option<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public operator func ==(other: Option<T>): Bool
-    
+
     /**
      * @description Checks if this Option is not equal to another Option.
      * @param other The Option to compare with.
@@ -5475,7 +5482,7 @@ public class OverflowException <: ArithmeticException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new OverflowException with the specified detail message.
      * @param message The detail message.
@@ -5493,8 +5500,7 @@ public class OverflowException <: ArithmeticException {
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func print(str: String, flush!: Bool = false): Unit
 
@@ -5513,8 +5519,7 @@ public func println(): Unit
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func println(str: String): Unit
 
@@ -5525,8 +5530,7 @@ public func println(str: String): Unit
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func eprint(str: String, flush!: Bool = true): Unit
 
@@ -5536,8 +5540,7 @@ public func eprint(str: String, flush!: Bool = true): Unit
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func eprintln(str: String): Unit
 
@@ -5548,8 +5551,7 @@ public func eprintln(str: String): Unit
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func eprint<T>(arg: T, flush!: Bool = false): Unit where T <: ToString
 
@@ -5559,8 +5561,7 @@ public func eprint<T>(arg: T, flush!: Bool = false): Unit where T <: ToString
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func eprintln<T>(arg: T): Unit where T <: ToString
 
@@ -5571,8 +5572,7 @@ public func eprintln<T>(arg: T): Unit where T <: ToString
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func print<T>(arg: T, flush!: Bool = false): Unit where T <: ToString
 
@@ -5582,8 +5582,7 @@ public func print<T>(arg: T, flush!: Bool = false): Unit where T <: ToString
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func println<T>(arg: T): Unit where T <: ToString
 
@@ -5884,7 +5883,7 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
         since: "22"
     ]
     public let start: T
-    
+
     /**
      * @description The end value of the range.
      */
@@ -5892,7 +5891,7 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
         since: "22"
     ]
     public let end: T
-    
+
     /**
      * @description The step value of the range.
      */
@@ -5900,7 +5899,7 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
         since: "22"
     ]
     public let step: Int64
-    
+
     /**
      * @description Whether the range has a start value.
      */
@@ -5908,7 +5907,7 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
         since: "22"
     ]
     public let hasStart: Bool
-    
+
     /**
      * @description Whether the range has an end value.
      */
@@ -5916,7 +5915,7 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
         since: "22"
     ]
     public let hasEnd: Bool
-    
+
     /**
      * @description Whether the range is closed (includes the end value).
      */
@@ -5924,7 +5923,7 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
         since: "22"
     ]
     public let isClosed: Bool
-    
+
     /**
      * @description Constructs a Range with the specified parameters.
      * @param start The start value of the range.
@@ -5933,13 +5932,15 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
      * @param hasStart Whether the range has a start value.
      * @param hasEnd Whether the range has an end value.
      * @param isClosed Whether the range is closed (includes the end value).
+     * @throws IllegalArgumentException if the value of the step is equal to zero
      */
     @Frozen
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public const init(start: T, end: T, step: Int64, hasStart: Bool, hasEnd: Bool, isClosed: Bool)
-    
+
     /**
      * @description Returns an iterator over the values in the range.
      * @returns An iterator over the values in the range.
@@ -5949,7 +5950,7 @@ public struct Range<T> <: Iterable<T> where T <: Countable<T> & Comparable<T> & 
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description Checks if the range is empty.
      * @returns true if the range is empty, false otherwise.
@@ -5993,7 +5994,7 @@ public interface Resource {
         since: "22"
     ]
     func isClosed(): Bool
-    
+
     /**
      * @description Closes the resource.
      */
@@ -6028,7 +6029,7 @@ public class SpawnException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new SpawnException with the specified detail message.
      * @param message The detail message.
@@ -6076,7 +6077,7 @@ public open class StackTraceElement {
         since: "22"
     ]
     public let declaringClass: String
-    
+
     /**
      * @description The name of the method containing the execution point represented by this stack trace element.
      */
@@ -6084,7 +6085,7 @@ public open class StackTraceElement {
         since: "22"
     ]
     public let methodName: String
-    
+
     /**
      * @description The name of the file containing the execution point represented by this stack trace element.
      */
@@ -6092,7 +6093,7 @@ public open class StackTraceElement {
         since: "22"
     ]
     public let fileName: String
-    
+
     /**
      * @description The line number of the source line containing the execution point represented by this stack trace element.
      */
@@ -6100,7 +6101,7 @@ public open class StackTraceElement {
         since: "22"
     ]
     public let lineNumber: Int64
-    
+
     /**
      * @description Constructs a new StackTraceElement.
      * @param declaringClass The fully qualified name of the class containing the execution point represented by this stack trace element.
@@ -6129,7 +6130,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public static const empty: String = String()
-    
+
     /**
      * @description Constructs an empty string.
      */
@@ -6138,29 +6139,33 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public const init()
-    
+
     /**
      * @description Constructs a string from an array of runes.
      * @param value The array of runes.
+     * @throws IllegalArgumentException if the resulting string size exceeds the maximum allowed size (UInt32.Max).
      */
     @Frozen
     @OverflowWrapping
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public init(value: Array<Rune>)
-    
+
     /**
      * @description Constructs a string from a collection of runes.
      * @param value The collection of runes.
+     * @throws IllegalArgumentException if the resulting string size exceeds the maximum allowed size (UInt32.Max).
      */
     @Frozen
     @OverflowWrapping
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public init(value: Collection<Rune>)
-    
+
     /**
      * @description Gets the byte at the specified index.
      * @param index The index of the byte to get.
@@ -6172,7 +6177,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func get(index: Int64): Option<Byte>
-    
+
     /**
      * @description Converts this string to an array of runes.
      * @returns An array of runes.
@@ -6183,7 +6188,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func toRuneArray(): Array<Rune>
-    
+
     /**
      * @description Converts this string to an array of bytes.
      * @returns An array of bytes.
@@ -6193,7 +6198,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func toArray(): Array<Byte>
-    
+
     /**
      * @description Returns this string.
      * @returns This string.
@@ -6203,7 +6208,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Returns an iterator over the bytes of this string.
      * @returns An iterator over the bytes of this string.
@@ -6213,7 +6218,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func iterator(): Iterator<Byte>
-    
+
     /**
      * @description Returns an iterator over the runes of this string.
      * @returns An iterator over the runes of this string.
@@ -6223,7 +6228,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func runes(): Iterator<Rune>
-    
+
     /**
      * @description Returns an iterator over the lines of this string.
      * @returns An iterator over the lines of this string.
@@ -6233,7 +6238,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func lines(): Iterator<String>
-    
+
     /**
      * @description Gets the size of this string in bytes.
      * @returns The size of this string in bytes.
@@ -6243,7 +6248,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Checks if this string is empty.
      * @returns true if this string is empty, false otherwise.
@@ -6253,7 +6258,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Checks if this string consists only of ASCII characters.
      * @returns true if this string consists only of ASCII characters, false otherwise.
@@ -6263,7 +6268,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func isAscii(): Bool
-    
+
     /**
      * @description Checks if this string consists only of ASCII whitespace characters.
      * @returns true if this string consists only of ASCII whitespace characters, false otherwise.
@@ -6273,7 +6278,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func isAsciiBlank(): Bool
-    
+
     /**
      * @description Creates a copy of this string.
      * @returns A copy of this string.
@@ -6283,7 +6288,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func clone(): String
-    
+
     /**
      * @description Returns a hash code value for this string.
      * @returns A hash code value for this string.
@@ -6294,12 +6299,12 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Creates a string from UTF-8 data.
      * @param utf8Data The UTF-8 data.
      * @returns A string created from the UTF-8 data.
-     * @throws IllegalArgumentException if the input parameter does not conform to the utf-8 sequence rules, 
+     * @throws IllegalArgumentException if the input parameter does not conform to the utf-8 sequence rules,
      *         or when attempting to construct a string with a length exceeding the maximum value of UInt32.
      */
     @Frozen
@@ -6308,7 +6313,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         throwexception: true
     ]
     public static func fromUtf8(utf8Data: Array<UInt8>): String
-    
+
     /**
      * @description Gets the raw data of this string.
      * @returns The raw data of this string.
@@ -6318,7 +6323,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public unsafe func rawData(): Array<Byte>
-    
+
     /**
      * @description Creates a string from UTF-8 data without checking validity.
      * @param utf8Data The UTF-8 data.
@@ -6331,7 +6336,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         throwexception: true
     ]
     public unsafe static func fromUtf8Unchecked(utf8Data: Array<UInt8>): String
-    
+
     /**
      * @description Finds the first occurrence of a byte in this string.
      * @param b The byte to find.
@@ -6342,7 +6347,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func indexOf(b: Byte): Option<Int64>
-    
+
     /**
      * @description Finds the first occurrence of a byte in this string starting from a specified index.
      * @param b The byte to find.
@@ -6354,7 +6359,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func indexOf(b: Byte, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Finds the first occurrence of a substring in this string.
      * @param str The substring to find.
@@ -6365,7 +6370,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func indexOf(str: String): Option<Int64>
-    
+
     /**
      * @description Finds the first occurrence of a substring in this string starting from a specified index.
      * @param str The substring to find.
@@ -6377,7 +6382,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func indexOf(str: String, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Finds the last occurrence of a byte in this string.
      * @param b The byte to find.
@@ -6388,7 +6393,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func lastIndexOf(b: Byte): Option<Int64>
-    
+
     /**
      * @description Finds the last occurrence of a byte in this string up to a specified index.
      * @param b The byte to find.
@@ -6401,7 +6406,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func lastIndexOf(b: Byte, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Finds the last occurrence of a substring in this string.
      * @param str The substring to find.
@@ -6412,7 +6417,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func lastIndexOf(str: String): Option<Int64>
-    
+
     /**
      * @description Finds the last occurrence of a substring in this string up to a specified index.
      * @param str The substring to find.
@@ -6424,7 +6429,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func lastIndexOf(str: String, fromIndex: Int64): Option<Int64>
-    
+
     /**
      * @description Counts the number of occurrences of a substring in this string.
      * @param str The substring to count.
@@ -6436,7 +6441,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func count(str: String): Int64
-    
+
     /**
      * @description Splits this string into an array of substrings using a delimiter.
      * @param str The delimiter.
@@ -6448,7 +6453,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func split(str: String, removeEmpty!: Bool = false): Array<String>
-    
+
     /**
      * @description Splits this string into an array of substrings using a delimiter with a maximum number of splits.
      * @param str The delimiter.
@@ -6461,7 +6466,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func split(str: String, maxSplits: Int64, removeEmpty!: Bool = false): Array<String>
-    
+
     /**
      * @description Returns an iterator that lazily splits this string using a delimiter.
      * @param str The delimiter.
@@ -6473,7 +6478,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func lazySplit(str: String, removeEmpty!: Bool = false): Iterator<String>
-    
+
     /**
      * @description Returns an iterator that lazily splits this string using a delimiter with a maximum number of splits.
      * @param str The delimiter.
@@ -6486,21 +6491,19 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func lazySplit(str: String, maxSplits: Int64, removeEmpty!: Bool = false): Iterator<String>
-    
+
     /**
      * @description Replaces all occurrences of a substring with another substring.
      * @param old The substring to replace.
      * @param new The replacement substring.
      * @returns A new string with the replacements made.
-     * @throws OutOfMemoryError if there is not enough memory.
      */
     @Frozen
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func replace(old: String, new: String): String
-    
+
     /**
      * @description Converts all ASCII letters in this string to lowercase.
      * @returns A new string with ASCII letters converted to lowercase.
@@ -6511,7 +6514,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func toAsciiLower(): String
-    
+
     /**
      * @description Converts all ASCII letters in this string to uppercase.
      * @returns A new string with ASCII letters converted to uppercase.
@@ -6522,7 +6525,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func toAsciiUpper(): String
-    
+
     /**
      * @description Converts the first ASCII letter in each word to uppercase and the rest to lowercase.
      * @returns A new string with ASCII letters converted to title case.
@@ -6533,7 +6536,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func toAsciiTitle(): String
-    
+
     /**
      * @description Removes leading and trailing ASCII whitespace from this string.
      * @returns A new string with leading and trailing ASCII whitespace removed.
@@ -6543,7 +6546,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimAscii(): String
-    
+
     /**
      * @description Removes leading ASCII whitespace from this string.
      * @returns A new string with leading ASCII whitespace removed.
@@ -6554,7 +6557,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimAsciiStart(): String
-    
+
     /**
      * @description Removes trailing ASCII whitespace from this string.
      * @returns A new string with trailing ASCII whitespace removed.
@@ -6565,7 +6568,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimAsciiEnd(): String
-    
+
     /**
      * @description Removes leading characters from this string that are present in the specified array.
      * @param set The array of characters to remove.
@@ -6577,7 +6580,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimStart(set: Array<Rune>): String
-    
+
     /**
      * @description Removes trailing characters from this string that are present in the specified array.
      * @param set The array of characters to remove.
@@ -6588,7 +6591,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimEnd(set: Array<Rune>): String
-    
+
     /**
      * @description Removes leading characters from this string that are present in the specified string.
      * @param set The string of characters to remove.
@@ -6599,7 +6602,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimStart(set: String): String
-    
+
     /**
      * @description Removes trailing characters from this string that are present in the specified string.
      * @param set The string of characters to remove.
@@ -6610,7 +6613,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimEnd(set: String): String
-    
+
     /**
      * @description Removes leading characters from this string that satisfy the specified predicate.
      * @param predicate The predicate to apply.
@@ -6621,7 +6624,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimStart(predicate: (Rune) -> Bool): String
-    
+
     /**
      * @description Removes trailing characters from this string that satisfy the specified predicate.
      * @param predicate The predicate to apply.
@@ -6632,7 +6635,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func trimEnd(predicate: (Rune) -> Bool): String
-    
+
     /**
      * @description Removes the specified prefix from this string if it exists.
      * @param prefix The prefix to remove.
@@ -6643,7 +6646,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func removePrefix(prefix: String): String
-    
+
     /**
      * @description Removes the specified suffix from this string if it exists.
      * @param suffix The suffix to remove.
@@ -6654,7 +6657,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func removeSuffix(suffix: String): String
-    
+
     /**
      * @description Checks if this string contains the specified substring.
      * @param str The substring to check for.
@@ -6665,7 +6668,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func contains(str: String): Bool
-    
+
     /**
      * @description Checks if this string starts with the specified prefix.
      * @param prefix The prefix to check for.
@@ -6677,7 +6680,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func startsWith(prefix: String): Bool
-    
+
     /**
      * @description Checks if this string ends with the specified suffix.
      * @param suffix The suffix to check for.
@@ -6689,7 +6692,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func endsWith(suffix: String): Bool
-    
+
     /**
      * @description Pads the start of this string to the specified width with the specified padding string.
      * @param totalWidth The total width of the resulting string.
@@ -6703,7 +6706,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         throwexception: true
     ]
     public func padStart(totalWidth: Int64, padding!: String = " "): String
-    
+
     /**
      * @description Pads the end of this string to the specified width with the specified padding string.
      * @param totalWidth The total width of the resulting string.
@@ -6717,7 +6720,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         throwexception: true
     ]
     public func padEnd(totalWidth: Int64, padding!: String = " "): String
-    
+
     /**
      * @description Checks if this string is equal to another string, ignoring ASCII case.
      * @param other The string to compare with.
@@ -6729,7 +6732,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func equalsIgnoreAsciiCase(other: String): Bool
-    
+
     /**
      * @description Compares this string with another string for order.
      * @param str The string to compare with.
@@ -6740,10 +6743,10 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         since: "22"
     ]
     public func compare(str: String): Ordering
-    
+
     /**
      * @description Concatenates this string with another string.
-     * @param right The string to concatenate with.
+     * @param other The string to concatenate with.
      * @returns The concatenated string.
      */
     @Frozen
@@ -6751,8 +6754,8 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
     @!APILevel[
         since: "22"
     ]
-    public operator const func +(right: String): String
-    
+    public operator const func +(other: String): String
+
     /**
      * @description Repeats this string the specified number of times.
      * @param count The number of times to repeat.
@@ -6765,73 +6768,73 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         throwexception: true
     ]
     public operator const func *(count: Int64): String
-    
+
     /**
      * @description Checks if this string is less than another string.
-     * @param right The string to compare with.
+     * @param other The string to compare with.
      * @returns true if this string is less than the other string, false otherwise.
      */
     @Frozen
     @!APILevel[
         since: "22"
     ]
-    public operator const func <(right: String): Bool
-    
+    public operator const func <(other: String): Bool
+
     /**
      * @description Checks if this string is less than or equal to another string.
-     * @param right The string to compare with.
+     * @param other The string to compare with.
      * @returns true if this string is less than or equal to the other string, false otherwise.
      */
     @Frozen
     @!APILevel[
         since: "22"
     ]
-    public operator const func <=(right: String): Bool
-    
+    public operator const func <=(other: String): Bool
+
     /**
      * @description Checks if this string is greater than another string.
-     * @param right The string to compare with.
+     * @param other The string to compare with.
      * @returns true if this string is greater than the other string, false otherwise.
      */
     @Frozen
     @!APILevel[
         since: "22"
     ]
-    public operator const func >(right: String): Bool
-    
+    public operator const func >(other: String): Bool
+
     /**
      * @description Checks if this string is greater than or equal to another string.
-     * @param right The string to compare with.
+     * @param other The string to compare with.
      * @returns true if this string is greater than or equal to the other string, false otherwise.
      */
     @Frozen
     @!APILevel[
         since: "22"
     ]
-    public operator const func >=(right: String): Bool
-    
+    public operator const func >=(other: String): Bool
+
     /**
      * @description Checks if this string is equal to another string.
-     * @param right The string to compare with.
+     * @param other The string to compare with.
      * @returns true if the strings are equal, false otherwise.
      */
     @Frozen
     @!APILevel[
         since: "22"
     ]
-    public operator const func ==(right: String): Bool
-    
+    public operator const func ==(other: String): Bool
+
     /**
      * @description Checks if this string is not equal to another string.
-     * @param right The string to compare with.
+     * @param other The string to compare with.
      * @returns true if the strings are not equal, false otherwise.
      */
     @Frozen
     @!APILevel[
         since: "22"
     ]
-    public operator const func !=(right: String): Bool
-    
+    public operator const func !=(other: String): Bool
+
     /**
      * @description Gets the byte at the specified index.
      * @param index The index of the byte to get.
@@ -6845,12 +6848,14 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         throwexception: true
     ]
     public operator const func [](index: Int64): Byte
-    
+
     /**
      * @description Gets a substring using the specified range.
      * @param range The range to use.
      * @returns The substring.
-     * @throws IndexOutOfBoundsException if there is an index error.
+     * @throws IllegalArgumentException if `step` is not equal to one.
+     * @throws IndexOutOfBoundsException if `range` is out of bounds.
+     * @throws IllegalArgumentException if the start or end point of the range is not the code point boundary.
      */
     @OverflowWrapping
     @Frozen
@@ -6859,7 +6864,7 @@ public struct String <: Collection<Byte> & Comparable<String> & Hashable & ToStr
         throwexception: true
     ]
     public operator const func [](range: Range<Int64>): String
-    
+
     /**
      * @description Joins an array of strings using the specified delimiter.
      * @param strArray The array of strings to join.
@@ -6891,7 +6896,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a StringBuilder with the specified string.
      * @param str The initial string.
@@ -6901,18 +6906,20 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public init(str: String)
-    
+
     /**
      * @description Constructs a StringBuilder with the specified rune repeated n times.
      * @param r The rune to repeat.
      * @param n The number of times to repeat.
+     * @throws IllegalArgumentException if n is negative.
      */
     @Frozen
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public init(r: Rune, n: Int64)
-    
+
     /**
      * @description Constructs a StringBuilder with the specified array of runes.
      * @param value The array of runes.
@@ -6922,7 +6929,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public init(value: Array<Rune>)
-    
+
     /**
      * @description Constructs a StringBuilder with the specified capacity.
      * @param capacity The initial capacity.
@@ -6934,7 +6941,7 @@ public class StringBuilder <: ToString {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Gets the size of this StringBuilder.
      * @returns The size of this StringBuilder.
@@ -6944,7 +6951,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Gets the capacity of this StringBuilder.
      * @returns The capacity of this StringBuilder.
@@ -6954,7 +6961,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public prop capacity: Int64
-    
+
     /**
      * @description Returns a string representation of this StringBuilder.
      * @returns A string representation of this StringBuilder.
@@ -6964,7 +6971,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Resets this StringBuilder to its initial state.
      * @param capacity The new capacity, or None to keep the current capacity.
@@ -6976,7 +6983,7 @@ public class StringBuilder <: ToString {
         throwexception: true
     ]
     public func reset(capacity!: Option<Int64> = None): Unit
-    
+
     /**
      * @description Appends a rune to this StringBuilder.
      * @param r The rune to append.
@@ -6987,7 +6994,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(r: Rune): Unit
-    
+
     /**
      * @description Appends a string to this StringBuilder.
      * @param str The string to append.
@@ -6998,7 +7005,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(str: String): Unit
-    
+
     /**
      * @description Appends another StringBuilder to this StringBuilder.
      * @param sb The StringBuilder to append.
@@ -7009,7 +7016,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(sb: StringBuilder): Unit
-    
+
     /**
      * @description Appends UTF-8 data to this StringBuilder.
      * @param arr The array of bytes to append.
@@ -7022,7 +7029,7 @@ public class StringBuilder <: ToString {
         throwexception: true
     ]
     public func appendFromUtf8(arr: Array<Byte>): Unit
-    
+
     /**
      * @description Appends UTF-8 data to this StringBuilder without checking validity.
      * @param arr The array of bytes to append.
@@ -7035,7 +7042,7 @@ public class StringBuilder <: ToString {
         throwexception: true
     ]
     public unsafe func appendFromUtf8Unchecked(arr: Array<Byte>): Unit
-    
+
     /**
      * @description Appends an array of runes to this StringBuilder.
      * @param runeArr The array of runes to append.
@@ -7045,7 +7052,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(runeArr: Array<Rune>): Unit
-    
+
     /**
      * @description Appends a C string to this StringBuilder.
      * @param cstr The C string to append.
@@ -7055,7 +7062,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(cstr: CString): Unit
-    
+
     /**
      * @description Appends the string representation of an object to this StringBuilder.
      * @param v The object to append.
@@ -7065,7 +7072,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append<T>(v: T): Unit where T <: ToString
-    
+
     /**
      * @description Appends the string representations of an array of objects to this StringBuilder.
      * @param val The array of objects to append.
@@ -7075,7 +7082,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append<T>(val: Array<T>): Unit where T <: ToString
-    
+
     /**
      * @description Appends a boolean value to this StringBuilder.
      * @param b The boolean value to append.
@@ -7085,7 +7092,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(b: Bool): Unit
-    
+
     /**
      * @description Appends an Int64 value to this StringBuilder.
      * @param n The Int64 value to append.
@@ -7096,7 +7103,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: Int64): Unit
-    
+
     /**
      * @description Appends an Int32 value to this StringBuilder.
      * @param n The Int32 value to append.
@@ -7106,7 +7113,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: Int32): Unit
-    
+
     /**
      * @description Appends an Int16 value to this StringBuilder.
      * @param n The Int16 value to append.
@@ -7116,7 +7123,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: Int16): Unit
-    
+
     /**
      * @description Appends an Int8 value to this StringBuilder.
      * @param n The Int8 value to append.
@@ -7126,7 +7133,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: Int8): Unit
-    
+
     /**
      * @description Appends a UInt64 value to this StringBuilder.
      * @param n The UInt64 value to append.
@@ -7137,7 +7144,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: UInt64): Unit
-    
+
     /**
      * @description Appends a UInt32 value to this StringBuilder.
      * @param n The UInt32 value to append.
@@ -7147,7 +7154,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: UInt32): Unit
-    
+
     /**
      * @description Appends a UInt16 value to this StringBuilder.
      * @param n The UInt16 value to append.
@@ -7157,7 +7164,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: UInt16): Unit
-    
+
     /**
      * @description Appends a UInt8 value to this StringBuilder.
      * @param n The UInt8 value to append.
@@ -7167,7 +7174,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: UInt8): Unit
-    
+
     /**
      * @description Appends a Float64 value to this StringBuilder.
      * @param n The Float64 value to append.
@@ -7177,7 +7184,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: Float64): Unit
-    
+
     /**
      * @description Appends a Float32 value to this StringBuilder.
      * @param n The Float32 value to append.
@@ -7187,7 +7194,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: Float32): Unit
-    
+
     /**
      * @description Appends a Float16 value to this StringBuilder.
      * @param n The Float16 value to append.
@@ -7197,7 +7204,7 @@ public class StringBuilder <: ToString {
         since: "22"
     ]
     public func append(n: Float16): Unit
-    
+
     /**
      * @description Reserves additional capacity for this StringBuilder.
      * @param additional The additional capacity to reserve.
@@ -7205,8 +7212,7 @@ public class StringBuilder <: ToString {
     @Frozen
     @OverflowThrowing
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func reserve(additional: Int64): Unit
 }
@@ -7225,7 +7231,7 @@ public class Thread {
         since: "22"
     ]
     public static prop currentThread: Thread
-    
+
     /**
      * @description Gets the ID of this thread.
      */
@@ -7233,7 +7239,7 @@ public class Thread {
         since: "22"
     ]
     public prop id: Int64
-    
+
     /**
      * @description Gets or sets the name of this thread.
      */
@@ -7241,7 +7247,7 @@ public class Thread {
         since: "22"
     ]
     public mut prop name: String
-    
+
     /**
      * @description Checks if this thread has a pending cancellation.
      * @returns true if this thread has a pending cancellation, false otherwise.
@@ -7250,7 +7256,7 @@ public class Thread {
         since: "22"
     ]
     public prop hasPendingCancellation: Bool
-    
+
     /**
      * @description Sets the uncaught exception handler for all threads.
      * @param exHandler The exception handler.
@@ -7276,7 +7282,7 @@ public class ThreadLocal<T> {
         since: "22"
     ]
     public func get(): ?T
-    
+
     /**
      * @description Sets the value of this thread-local variable.
      * @param value The value to set.
@@ -7301,7 +7307,7 @@ public class TimeoutException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new TimeoutException with the specified detail message.
      * @param message The detail message.
@@ -7537,7 +7543,7 @@ public class UnsupportedException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new UnsupportedException with the specified detail message.
      * @param message The detail message.
