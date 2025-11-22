@@ -27,7 +27,7 @@ public interface AssertPrintable<T> {
     /**
      * @description Pretty-prints a comparison between two instances of the type, highlighting differences.
      * @param pp The `PrettyPrinter` to use for generating the output.
-     * @param other The other instance to compare against this one.
+     * @param that The other instance to compare against this one.
      * @param thisPrefix A prefix string for lines corresponding to 'this' instance, typically indicating additions or common lines.
      * @param otherPrefix A prefix string for lines corresponding to the 'that' instance, typically indicating removals.
      * @param level The current nesting level for indentation, used for structured output.
@@ -37,7 +37,7 @@ public interface AssertPrintable<T> {
         since: "22"
     ]
     func pprintForAssertion(
-        pp: PrettyPrinter, other: T, thisPrefix: String, thatPrefix: String, level: Int64
+        pp: PrettyPrinter, that: T, thisPrefix: String, thatPrefix: String, level: Int64
     ): PrettyPrinter
 }
 
@@ -53,7 +53,7 @@ extend Float16 <: AssertPrintable<Float16> {
     /**
      * @description Pretty-prints a diff between two Float16 values for assertion output.
      * @param pp The `PrettyPrinter` to use for generating the output.
-     * @param other The other instance to compare against this one.
+     * @param right The other instance to compare against this one.
      * @param leftPrefix A prefix string for lines corresponding to 'this' instance, typically indicating additions or common lines.
      * @param rightPrefix A prefix string for lines corresponding to the 'that' instance, typically indicating removals.
      * @param level The current nesting level for indentation, used for structured output.
@@ -62,7 +62,7 @@ extend Float16 <: AssertPrintable<Float16> {
     @!APILevel[
         since: "22"
     ]
-    public func pprintForAssertion(pp: PrettyPrinter, other: Float16, leftPrefix: String, rightPrefix: String,
+    public func pprintForAssertion(pp: PrettyPrinter, right: Float16, leftPrefix: String, rightPrefix: String,
         level: Int64): PrettyPrinter
 }
 
@@ -78,7 +78,7 @@ extend Float32 <: AssertPrintable<Float32> {
     /**
      * @description Pretty-prints a diff between two Float32 values for assertion output.
      * @param pp The `PrettyPrinter` to use for generating the output.
-     * @param other The other instance to compare against this one.
+     * @param right The other instance to compare against this one.
      * @param leftPrefix A prefix string for lines corresponding to 'this' instance, typically indicating additions or common lines.
      * @param rightPrefix A prefix string for lines corresponding to the 'that' instance, typically indicating removals.
      * @param level The current nesting level for indentation, used for structured output.
@@ -87,7 +87,7 @@ extend Float32 <: AssertPrintable<Float32> {
     @!APILevel[
         since: "22"
     ]
-    public func pprintForAssertion(pp: PrettyPrinter, other: Float32, leftPrefix: String, rightPrefix: String,
+    public func pprintForAssertion(pp: PrettyPrinter, right: Float32, leftPrefix: String, rightPrefix: String,
         level: Int64): PrettyPrinter
 }
 
@@ -103,7 +103,7 @@ extend Float64 <: AssertPrintable<Float64> {
     /**
      * @description Pretty-prints a diff between two Float64 values for assertion output.
      * @param pp The `PrettyPrinter` to use for generating the output.
-     * @param other The other instance to compare against this one.
+     * @param right The other instance to compare against this one.
      * @param leftPrefix A prefix string for lines corresponding to 'this' instance, typically indicating additions or common lines.
      * @param rightPrefix A prefix string for lines corresponding to the 'that' instance, typically indicating removals.
      * @param level The current nesting level for indentation, used for structured output.
@@ -112,7 +112,7 @@ extend Float64 <: AssertPrintable<Float64> {
     @!APILevel[
         since: "22"
     ]
-    public func pprintForAssertion(pp: PrettyPrinter, other: Float64, leftPrefix: String, rightPrefix: String,
+    public func pprintForAssertion(pp: PrettyPrinter, right: Float64, leftPrefix: String, rightPrefix: String,
         level: Int64): PrettyPrinter
 }
 
@@ -128,7 +128,7 @@ extend<T> Option<T> <: AssertPrintable<Option<T>> where T <: Equatable<T> {
     /**
      * @description Pretty-prints a diff between two Option<T> values for assertion output.
      * @param pp The `PrettyPrinter` to use for generating the output.
-     * @param other The other instance to compare against this one.
+     * @param right The other instance to compare against this one.
      * @param leftPrefix A prefix string for lines corresponding to 'this' instance, typically indicating additions or common lines.
      * @param rightPrefix A prefix string for lines corresponding to the 'that' instance, typically indicating removals.
      * @param level The current nesting level for indentation, used for structured output.
@@ -137,7 +137,7 @@ extend<T> Option<T> <: AssertPrintable<Option<T>> where T <: Equatable<T> {
     @!APILevel[
         since: "22"
     ]
-    public func pprintForAssertion(pp: PrettyPrinter, other: Option<T>, leftPrefix: String, rightPrefix: String,
+    public func pprintForAssertion(pp: PrettyPrinter, right: Option<T>, leftPrefix: String, rightPrefix: String,
         level: Int64): PrettyPrinter
 }
 
@@ -153,7 +153,7 @@ extend String <: AssertPrintable<String> {
     /**
      * @description Pretty-prints a diff between two String values for assertion output.
      * @param pp The `PrettyPrinter` to use for generating the output.
-     * @param other The other instance to compare against this one.
+     * @param right The other instance to compare against this one.
      * @param leftPrefix A prefix string for lines corresponding to 'this' instance, typically indicating additions or common lines.
      * @param rightPrefix A prefix string for lines corresponding to the 'that' instance, typically indicating removals.
      * @param level The current nesting level for indentation, used for structured output.
@@ -162,6 +162,6 @@ extend String <: AssertPrintable<String> {
     @!APILevel[
         since: "22"
     ]
-    public func pprintForAssertion(pp: PrettyPrinter, other: String, leftPrefix: String, rightPrefix: String,
+    public func pprintForAssertion(pp: PrettyPrinter, right: String, leftPrefix: String, rightPrefix: String,
         level: Int64): PrettyPrinter
 }

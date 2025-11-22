@@ -24,7 +24,7 @@ public class ConsoleReader <: InputStream {
         since: "22"
     ]
     public func read(): ?Rune
-    
+
     /**
      * @description Read one line from the console input stream.
      * @returns An optional String representing the line read, or None if no line is available.
@@ -33,7 +33,7 @@ public class ConsoleReader <: InputStream {
         since: "22"
     ]
     public func readln(): ?String
-    
+
     /**
      * @description Read all content from the console input stream until the end.
      * @returns An optional String containing all content read, or None if no content is available.
@@ -42,7 +42,7 @@ public class ConsoleReader <: InputStream {
         since: "22"
     ]
     public func readToEnd(): ?String
-    
+
     /**
      * @description Read content from the console input stream until a specific character is encountered.
      * @param ch The Rune character to read until.
@@ -52,7 +52,7 @@ public class ConsoleReader <: InputStream {
         since: "22"
     ]
     public func readUntil(ch: Rune): ?String
-    
+
     /**
      * @description Read content from the console input stream until a predicate condition is met.
      * @param predicate A function that takes a Rune and returns a Bool indicating whether to stop reading.
@@ -62,7 +62,7 @@ public class ConsoleReader <: InputStream {
         since: "22"
     ]
     public func readUntil(predicate: (Rune) -> Bool): ?String
-    
+
     /**
      * @description Read bytes from the console input stream into an array.
      * @param arr The Array of Byte to read into.
@@ -88,7 +88,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func flush(): Unit
-    
+
     /**
      * @description Write an array of bytes to the console output stream.
      * @param buffer The Array of Byte to write.
@@ -97,7 +97,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(buffer: Array<Byte>): Unit
-    
+
     /**
      * @description Write an array of bytes followed by a newline to the console output stream.
      * @param buffer The Array of Byte to write.
@@ -106,7 +106,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(buffer: Array<Byte>): Unit
-    
+
     /**
      * @description Write a string to the console output stream.
      * @param v The String to write.
@@ -115,7 +115,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: String): Unit
-    
+
     /**
      * @description Write a value that conforms to ToString to the console output stream.
      * @param v The value to write.
@@ -124,7 +124,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write<T>(v: T): Unit where T <: ToString
-    
+
     /**
      * @description Write a boolean value to the console output stream.
      * @param v The Bool value to write.
@@ -133,7 +133,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Bool): Unit
-    
+
     /**
      * @description Write an Int8 value to the console output stream.
      * @param v The Int8 value to write.
@@ -142,7 +142,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Int8): Unit
-    
+
     /**
      * @description Write an Int16 value to the console output stream.
      * @param v The Int16 value to write.
@@ -151,7 +151,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Int16): Unit
-    
+
     /**
      * @description Write an Int32 value to the console output stream.
      * @param v The Int32 value to write.
@@ -160,7 +160,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Int32): Unit
-    
+
     /**
      * @description Write an Int64 value to the console output stream.
      * @param v The Int64 value to write.
@@ -169,7 +169,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Int64): Unit
-    
+
     /**
      * @description Write a UInt8 value to the console output stream.
      * @param v The UInt8 value to write.
@@ -178,7 +178,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: UInt8): Unit
-    
+
     /**
      * @description Write a UInt16 value to the console output stream.
      * @param v The UInt16 value to write.
@@ -187,7 +187,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: UInt16): Unit
-    
+
     /**
      * @description Write a UInt32 value to the console output stream.
      * @param v The UInt32 value to write.
@@ -196,7 +196,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: UInt32): Unit
-    
+
     /**
      * @description Write a UInt64 value to the console output stream.
      * @param v The UInt64 value to write.
@@ -205,7 +205,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: UInt64): Unit
-    
+
     /**
      * @description Write a Float16 value to the console output stream.
      * @param v The Float16 value to write.
@@ -214,7 +214,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Float16): Unit
-    
+
     /**
      * @description Write a Float32 value to the console output stream.
      * @param v The Float32 value to write.
@@ -223,7 +223,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Float32): Unit
-    
+
     /**
      * @description Write a Float64 value to the console output stream.
      * @param v The Float64 value to write.
@@ -232,7 +232,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Float64): Unit
-    
+
     /**
      * @description Write a Rune character to the console output stream.
      * @param v The Rune character to write.
@@ -241,7 +241,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func write(v: Rune): Unit
-    
+
     /**
      * @description Write a string followed by a newline to the console output stream.
      * @param v The String to write.
@@ -250,7 +250,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: String): Unit
-    
+
     /**
      * @description Write a value that conforms to ToString followed by a newline to the console output stream.
      * @param v The value to write.
@@ -259,7 +259,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln<T>(v: T): Unit where T <: ToString
-    
+
     /**
      * @description Write a boolean value followed by a newline to the console output stream.
      * @param v The Bool value to write.
@@ -268,7 +268,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Bool): Unit
-    
+
     /**
      * @description Write an Int8 value followed by a newline to the console output stream.
      * @param v The Int8 value to write.
@@ -277,7 +277,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Int8): Unit
-    
+
     /**
      * @description Write an Int16 value followed by a newline to the console output stream.
      * @param v The Int16 value to write.
@@ -286,7 +286,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Int16): Unit
-    
+
     /**
      * @description Write an Int32 value followed by a newline to the console output stream.
      * @param v The Int32 value to write.
@@ -295,7 +295,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Int32): Unit
-    
+
     /**
      * @description Write an Int64 value followed by a newline to the console output stream.
      * @param v The Int64 value to write.
@@ -304,7 +304,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Int64): Unit
-    
+
     /**
      * @description Write a UInt8 value followed by a newline to the console output stream.
      * @param v The UInt8 value to write.
@@ -313,7 +313,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: UInt8): Unit
-    
+
     /**
      * @description Write a UInt16 value followed by a newline to the console output stream.
      * @param v The UInt16 value to write.
@@ -322,7 +322,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: UInt16): Unit
-    
+
     /**
      * @description Write a UInt32 value followed by a newline to the console output stream.
      * @param v The UInt32 value to write.
@@ -331,7 +331,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: UInt32): Unit
-    
+
     /**
      * @description Write a UInt64 value followed by a newline to the console output stream.
      * @param v The UInt64 value to write.
@@ -340,7 +340,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: UInt64): Unit
-    
+
     /**
      * @description Write a Float16 value followed by a newline to the console output stream.
      * @param v The Float16 value to write.
@@ -349,7 +349,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Float16): Unit
-    
+
     /**
      * @description Write a Float32 value followed by a newline to the console output stream.
      * @param v The Float32 value to write.
@@ -358,7 +358,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Float32): Unit
-    
+
     /**
      * @description Write a Float64 value followed by a newline to the console output stream.
      * @param v The Float64 value to write.
@@ -367,7 +367,7 @@ public class ConsoleWriter <: OutputStream {
         since: "22"
     ]
     public func writeln(v: Float64): Unit
-    
+
     /**
      * @description Write a Rune character followed by a newline to the console output stream.
      * @param v The Rune character to write.
@@ -434,8 +434,7 @@ public func getHomeDirectory(): Path
  * @returns The temporary directory as Path.
  */
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func getTempDirectory(): Path
 

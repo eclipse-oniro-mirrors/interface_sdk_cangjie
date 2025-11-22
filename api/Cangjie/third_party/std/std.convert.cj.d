@@ -96,7 +96,7 @@ extend UInt64 <: Formattable {
      * @description Formats the UInt64 value according to the given format string.
      * @param fmt The format string specifying how the value should be formatted.
      * @returns A string representation of the UInt64 value formatted according to the format string.
-     * @throws IllegalArgumentException if the format string does not match the expected unit format pattern.
+     * @throws IllegalArgumentException if the format string does not match the expected int format pattern.
      */
     @OverflowWrapping
     @!APILevel[
@@ -114,7 +114,7 @@ extend UInt32 <: Formattable {
      * @description Formats the UInt32 value according to the given format string.
      * @param fmt The format string specifying how the value should be formatted.
      * @returns A string representation of the UInt32 value formatted according to the format string.
-     * @throws IllegalArgumentException if the format string does not match the expected unit format pattern.
+     * @throws IllegalArgumentException if the format string does not match the expected int format pattern.
      */
     @!APILevel[
         since: "22",
@@ -131,7 +131,7 @@ extend UInt16 <: Formattable {
      * @description Formats the UInt16 value according to the given format string.
      * @param fmt The format string specifying how the value should be formatted.
      * @returns A string representation of the UInt16 value formatted according to the format string.
-     * @throws IllegalArgumentException if the format string does not match the expected unit format pattern.
+     * @throws IllegalArgumentException if the format string does not match the expected int format pattern.
      */
     @!APILevel[
         since: "22",
@@ -148,7 +148,7 @@ extend UInt8 <: Formattable {
      * @description Formats the UInt8 value according to the given format string.
      * @param fmt The format string specifying how the value should be formatted.
      * @returns A string representation of the UInt8 value formatted according to the format string.
-     * @throws IllegalArgumentException if the format string does not match the expected unit format pattern.
+     * @throws IllegalArgumentException if the format string does not match the expected int format pattern.
      */
     @!APILevel[
         since: "22",
@@ -866,48 +866,6 @@ extend UInt64 <: RadixConvertible<UInt64> {
         throwexception: true
     ]
     public func toString(radix!: Int64): String
-}
-
-extend Float16 <: FloatParsable<Float16> {
-    /**
-     * @description Creates a Float16 value from a Float64 value.
-     * @param n The Float64 value to convert.
-     * @returns A Float16 value converted from the Float64 value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(n: Float64): Float16
-}
-
-/**
- * @description Extends Float32 to support conversion from Float64 values.
- */
-extend Float32 <: FloatParsable<Float32> {
-    /**
-     * @description Creates a Float32 value from a Float64 value.
-     * @param n The Float64 value to convert.
-     * @returns A Float32 value converted from the Float64 value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(n: Float64): Float32
-}
-
-/**
- * @description Extends Float64 to support conversion from Float64 values.
- */
-extend Float64 <: FloatParsable<Float64> {
-    /**
-     * @description Creates a Float64 value from a Float64 value (identity conversion).
-     * @param n The Float64 value to convert.
-     * @returns The same Float64 value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public static func fromFloat64(n: Float64): Float64
 }
 
 /**

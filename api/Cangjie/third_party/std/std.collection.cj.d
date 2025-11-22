@@ -17,7 +17,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs an empty deque with the specified initial capacity.
      * @param capacity The initial capacity of the deque.
@@ -28,7 +28,7 @@ public class ArrayDeque<T> <: Deque<T> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description The number of elements in the deque.
      */
@@ -36,7 +36,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description The first element of the deque, or `null` if the deque is empty.
      */
@@ -44,7 +44,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public prop first: ?T
-    
+
     /**
      * @description The last element of the deque, or `null` if the deque is empty.
      */
@@ -52,7 +52,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public prop last: ?T
-    
+
     /**
      * @description The current capacity of the deque.
      */
@@ -60,7 +60,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public prop capacity: Int64
-    
+
     /**
      * @description Returns `true` if the deque contains no elements.
      * @returns `true` if this deque is empty, `false` otherwise.
@@ -69,7 +69,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Inserts the specified element at the front of this deque.
      * @param element The element to add.
@@ -79,7 +79,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public func addFirst(element: T): Unit
-    
+
     /**
      * @description Inserts the specified element at the end of this deque.
      * @param element The element to add.
@@ -89,7 +89,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public func addLast(element: T): Unit
-    
+
     /**
      * @description Retrieves and removes the first element of this deque.
      * @returns The head of the deque, or `null` if it is empty.
@@ -99,7 +99,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public func removeFirst(): ?T
-    
+
     /**
      * @description Retrieves and removes the last element of this deque.
      * @returns The tail of the deque, or `null` if it is empty.
@@ -109,7 +109,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public func removeLast(): ?T
-    
+
     /**
      * @description Returns an array containing all of the elements in this deque in proper sequence (from first to last element).
      * @returns An array containing all of the elements in this deque.
@@ -119,7 +119,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public func toArray(): Array<T>
-    
+
     /**
      * @description Removes all of the elements from this deque. The deque will be empty after this call returns.
      */
@@ -128,7 +128,7 @@ public class ArrayDeque<T> <: Deque<T> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Increases the capacity of this `ArrayDeque` instance, if necessary, to ensure that it can hold at least the number of elements specified by the `additional` argument.
      * @param additional The desired number of additional elements.
@@ -139,7 +139,7 @@ public class ArrayDeque<T> <: Deque<T> {
         throwexception: true
     ]
     public func reserve(additional: Int64): Unit
-    
+
     /**
      * @description Returns an iterator over the elements in this deque in proper sequence.
      * @returns An iterator over the elements in this deque.
@@ -177,7 +177,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public prop capacity: Int64
-    
+
     /**
      * @description Constructs an empty list with an initial default capacity.
      */
@@ -186,7 +186,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs an empty list with the specified initial capacity.
      * @param capacity The initial capacity of the list.
@@ -198,7 +198,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Constructs a list containing the elements returned by the given initializer function.
      * @param size The size of the list to create.
@@ -211,7 +211,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public init(size: Int64, initElement: (Int64) -> T)
-    
+
     /**
      * @description Constructs a list containing the elements of the specified collection, in the order they are returned by the collection's iterator.
      * @param elements The collection whose elements are to be placed into this list.
@@ -221,7 +221,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public init(elements: Collection<T>)
-    
+
     /**
      * @description Creates an `ArrayList` from an existing `Array`.
      * @param elements The array of elements.
@@ -232,7 +232,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public static func of(elements: Array<T>): ArrayList<T>
-    
+
     /**
      * @description Returns the internal backing array. This is an unsafe operation; modifications to the returned array may corrupt the list.
      * @returns The raw backing array.
@@ -242,7 +242,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public unsafe func getRawArray(): Array<T>
-    
+
     /**
      * @description Returns an array containing all of the elements in this list in proper sequence.
      * @returns An array containing all of the elements in this list.
@@ -252,7 +252,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func toArray(): Array<T>
-    
+
     /**
      * @description Returns the element at the specified position in this list, or `null` if the index is out of bounds.
      * @param index The index of the element to return.
@@ -263,7 +263,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func get(index: Int64): ?T
-    
+
     /**
      * @description The first element of the list, or `null` if the list is empty.
      */
@@ -272,7 +272,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public prop first: ?T
-    
+
     /**
      * @description The last element of the list, or `null` if the list is empty.
      */
@@ -281,7 +281,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public prop last: ?T
-    
+
     /**
      * @description Appends the specified element to the end of this list.
      * @param element The element to be appended to this list.
@@ -291,7 +291,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func add(element: T): Unit
-    
+
     /**
      * @description Appends all of the elements in the specified collection to the end of this list.
      * @param all The collection containing elements to be added to this list.
@@ -301,7 +301,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func add(all!: Collection<T>): Unit
-    
+
     /**
      * @description Inserts the specified element at the specified position in this list.
      * @param element The element to be inserted.
@@ -315,7 +315,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public func add(element: T, at!: Int64): Unit
-    
+
     /**
      * @description Inserts all of the elements in the specified collection into this list at the specified position.
      * @param all The collection containing elements to be added to this list.
@@ -329,7 +329,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public func add(all!: Collection<T>, at!: Int64): Unit
-    
+
     /**
      * @description Removes the element at the specified position in this list.
      * @param at The index of the element to be removed.
@@ -342,7 +342,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public func remove(at!: Int64): T
-    
+
     /**
      * @description Removes from this list all of the elements whose index is between `fromIndex`, inclusive, and `toIndex`, exclusive.
      * @param range The range of indices to remove.
@@ -355,7 +355,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public func remove(range: Range<Int64>): Unit
-    
+
     /**
      * @description Removes all of the elements of this collection that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for elements to be removed.
@@ -367,7 +367,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public func removeIf(predicate: (T) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the elements from this list. The list will be empty after this call returns.
      */
@@ -376,7 +376,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Increases the capacity of this `ArrayList` instance, if necessary, to ensure that it can hold at least the number of elements specified by the `additional` argument.
      * @param additional The desired number of additional elements.
@@ -388,7 +388,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public func reserve(additional: Int64): Unit
-    
+
     /**
      * @description Sorts this list according to the order induced by the specified comparator.
      * @param stable Whether to perform a stable sort.
@@ -399,7 +399,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func sortBy(stable!: Bool, comparator!: (T, T) -> Ordering): Unit
-    
+
     /**
      * @description Sorts this list according to the order induced by the specified comparator. Performs an unstable sort.
      * @param comparator The comparator to determine the order of the list.
@@ -409,7 +409,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func sortBy(comparator!: (T, T) -> Ordering): Unit
-    
+
     /**
      * @description Reverses the order of the elements in this list.
      */
@@ -418,7 +418,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func reverse(): Unit
-    
+
     /**
      * @description Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive.
      * @param range The range of indices for the slice.
@@ -432,7 +432,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public operator func [](range: Range<Int64>): ArrayList<T>
-    
+
     /**
      * @description Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive.
      * @param range The range of indices for the slice.
@@ -446,7 +446,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public func slice(range: Range<Int64>): ArrayList<T>
-    
+
     /**
      * @description Returns a shallow copy of this `ArrayList` instance.
      * @returns A clone of this `ArrayList` instance.
@@ -456,7 +456,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func clone(): ArrayList<T>
-    
+
     /**
      * @description Returns the element at the specified position in this list.
      * @param index The index of the element to return.
@@ -469,7 +469,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public operator func [](index: Int64): T
-    
+
     /**
      * @description Replaces the element at the specified position in this list with the specified element.
      * @param index The index of the element to replace.
@@ -482,7 +482,7 @@ public class ArrayList<T> <: List<T> {
         throwexception: true
     ]
     public operator func [](index: Int64, value!: T): Unit
-    
+
     /**
      * @description Returns an iterator over the elements in this list in proper sequence.
      * @returns An iterator over the elements in this list.
@@ -492,7 +492,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description Returns `true` if this list contains no elements.
      * @returns `true` if this list is empty, `false` otherwise.
@@ -502,7 +502,7 @@ public class ArrayList<T> <: List<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description The number of elements in the list.
      */
@@ -524,7 +524,7 @@ extend<T> ArrayList<T> <: Equatable<ArrayList<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public operator func ==(other: ArrayList<T>): Bool
-    
+
     /**
      * @description Compares the specified object with this list for inequality.
      * @param other The object to be compared for inequality with this list.
@@ -535,7 +535,7 @@ extend<T> ArrayList<T> <: Equatable<ArrayList<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public operator func !=(other: ArrayList<T>): Bool
-    
+
     /**
      * @description Returns `true` if this list contains the specified element.
      * @param element The element whose presence in this list is to be tested.
@@ -558,7 +558,7 @@ extend<T> ArrayList<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func sort(stable!: Bool): Unit
-    
+
     /**
      * @description Sorts this list into ascending order, according to the natural ordering of its elements. Performs an unstable sort.
      */
@@ -567,7 +567,7 @@ extend<T> ArrayList<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func sort(): Unit
-    
+
     /**
      * @description Sorts this list into descending order, according to the natural ordering of its elements.
      * @param stable Whether to perform a stable sort.
@@ -577,7 +577,7 @@ extend<T> ArrayList<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func sortDescending(stable!: Bool): Unit
-    
+
     /**
      * @description Sorts this list into descending order, according to the natural ordering of its elements. Performs an unstable sort.
      */
@@ -617,7 +617,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs an empty queue with the specified initial capacity.
      * @param capacity The initial capacity of the queue.
@@ -628,7 +628,7 @@ public class ArrayQueue<T> <: Queue<T> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns The head of this queue, or `null` if this queue is empty.
@@ -637,7 +637,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public func peek(): ?T
-    
+
     /**
      * @description Inserts the specified element into this queue.
      * @param element The element to add.
@@ -646,7 +646,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public func add(element: T): Unit
-    
+
     /**
      * @description Retrieves and removes the head of this queue.
      * @returns The head of this queue, or `null` if this queue is empty.
@@ -655,7 +655,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public func remove(): ?T
-    
+
     /**
      * @description The number of elements in the queue.
      */
@@ -663,7 +663,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description The current capacity of the queue.
      */
@@ -671,7 +671,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public prop capacity: Int64
-    
+
     /**
      * @description Returns `true` if the queue contains no elements.
      * @returns `true` if this queue is empty, `false` otherwise.
@@ -680,7 +680,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Removes all of the elements from this queue. The queue will be empty after this call returns.
      */
@@ -688,7 +688,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Returns an iterator over the elements in this queue.
      * @returns An iterator over the elements in this queue.
@@ -698,7 +698,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description Returns an array containing all of the elements in this queue.
      * @returns An array containing all of the elements in this queue.
@@ -707,7 +707,7 @@ public class ArrayQueue<T> <: Queue<T> {
         since: "22"
     ]
     public func toArray(): Array<T>
-    
+
     /**
      * @description Increases the capacity of this `ArrayQueue` instance, if necessary.
      * @param additional The desired number of additional elements.
@@ -748,7 +748,7 @@ public class ArrayStack<T> <: Stack<T> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Constructs an empty stack with an initial default capacity.
      */
@@ -756,7 +756,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Looks at the object at the top of this stack without removing it from the stack.
      * @returns The object at the top of this stack, or `null` if the stack is empty.
@@ -765,7 +765,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public func peek(): ?T
-    
+
     /**
      * @description Removes the object at the top of this stack and returns that object as the value of this function.
      * @returns The object at the top of this stack, or `null` if the stack is empty.
@@ -774,7 +774,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public func remove(): ?T
-    
+
     /**
      * @description Pushes an item onto the top of this stack.
      * @param element The item to be pushed onto this stack.
@@ -783,7 +783,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public func add(element: T): Unit
-    
+
     /**
      * @description The current capacity of the stack.
      */
@@ -791,7 +791,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public prop capacity: Int64
-    
+
     /**
      * @description The number of elements in the stack.
      */
@@ -799,7 +799,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Tests if this stack is empty.
      * @returns `true` if and only if this stack contains no items; `false` otherwise.
@@ -808,7 +808,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Increases the capacity of this `ArrayStack` instance, if necessary.
      * @param additional The desired number of additional elements.
@@ -819,7 +819,7 @@ public class ArrayStack<T> <: Stack<T> {
         throwexception: true
     ]
     public func reserve(additional: Int64): Unit
-    
+
     /**
      * @description Removes all of the elements from this stack. The stack will be empty after this call returns.
      */
@@ -827,7 +827,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Returns an array containing all of the elements in this stack.
      * @returns An array containing all of the elements in this stack.
@@ -836,7 +836,7 @@ public class ArrayStack<T> <: Stack<T> {
         since: "22"
     ]
     public func toArray(): Array<T>
-    
+
     /**
      * @description Returns an iterator over the elements in this stack.
      * @returns An iterator over the elements in this stack.
@@ -873,7 +873,7 @@ public class ConcurrentModificationException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a `ConcurrentModificationException` with the specified detail message.
      * @param message The detail message.
@@ -1041,7 +1041,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new `HashMap` with the same mappings as the specified `Collection` of pairs.
      * @param elements The collection of key-value pairs whose mappings are to be placed in this map.
@@ -1051,7 +1051,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public init(elements: Collection<(K, V)>)
-    
+
     /**
      * @description Constructs a new `HashMap` with the same mappings as the specified `Array` of pairs.
      * @param elements The array of key-value pairs whose mappings are to be placed in this map.
@@ -1061,7 +1061,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public init(elements: Array<(K, V)>)
-    
+
     /**
      * @description Constructs an empty `HashMap` with the specified initial capacity.
      * @param capacity The initial capacity.
@@ -1073,7 +1073,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Constructs a `HashMap` containing the elements returned by the given initializer function.
      * @param size The size of the map to create.
@@ -1086,7 +1086,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         throwexception: true
     ]
     public init(size: Int64, initElement: (Int64) -> (K, V))
-    
+
     /**
      * @description Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key.
      * @param key The key whose associated value is to be returned.
@@ -1097,7 +1097,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func get(key: K): ?V
-    
+
     /**
      * @description Associates the specified value with the specified key in this map.
      * @param key The key with which the specified value is to be associated.
@@ -1110,7 +1110,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func add(key: K, value: V): Option<V>
-    
+
     /**
      * @description Returns a `MapEntryView` for the given key, allowing in-place operations on the entry.
      * @param key The key of the entry.
@@ -1121,7 +1121,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func entryView(key: K): MapEntryView<K, V>
-    
+
     /**
      * @description Copies all of the mappings from the specified collection to this map.
      * @param all Mappings to be stored in this map.
@@ -1131,7 +1131,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func add(all!: Collection<(K, V)>): Unit
-    
+
     /**
      * @description Removes the mapping for a key from this map if it is present.
      * @param key The key whose mapping is to be removed from the map.
@@ -1143,7 +1143,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func remove(key: K): Option<V>
-    
+
     /**
      * @description Removes the mappings for the specified keys from this map.
      * @param all The collection of keys whose mappings are to be removed.
@@ -1153,7 +1153,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func remove(all!: Collection<K>): Unit
-    
+
     /**
      * @description Removes all of the entries of this map that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for entries to be removed.
@@ -1166,7 +1166,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         throwexception: true
     ]
     public func removeIf(predicate: (K, V) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the mappings from this map. The map will be empty after this call returns.
      */
@@ -1176,7 +1176,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Increases the capacity of this `HashMap` instance, if necessary.
      * @param additional The desired number of additional entries.
@@ -1188,7 +1188,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         throwexception: true
     ]
     public func reserve(additional: Int64): Unit
-    
+
     /**
      * @description The current capacity of the map.
      */
@@ -1197,7 +1197,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public prop capacity: Int64
-    
+
     /**
      * @description Returns `true` if this map contains a mapping for all of the specified keys.
      * @param all The collection of keys to check.
@@ -1208,7 +1208,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func contains(all!: Collection<K>): Bool
-    
+
     /**
      * @description Returns `true` if this map contains a mapping for the specified key.
      * @param key The key whose presence in this map is to be tested.
@@ -1219,7 +1219,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func contains(key: K): Bool
-    
+
     /**
      * @description Returns a shallow copy of this `HashMap` instance: the keys and values themselves are not cloned.
      * @returns A shallow copy of this map.
@@ -1229,7 +1229,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func clone(): HashMap<K, V>
-    
+
     /**
      * @description Returns a `Collection` view of the keys contained in this map.
      * @returns A collection view of the keys contained in this map.
@@ -1239,7 +1239,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func keys(): EquatableCollection<K>
-    
+
     /**
      * @description Returns a `Collection` view of the values contained in this map.
      * @returns A collection view of the values contained in this map.
@@ -1249,7 +1249,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func values(): Collection<V>
-    
+
     /**
      * @description Returns the value to which the specified key is mapped.
      * @param key The key whose associated value is to be returned.
@@ -1262,7 +1262,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         throwexception: true
     ]
     public operator func [](key: K): V
-    
+
     /**
      * @description Associates the specified value with the specified key in this map.
      * @param key The key with which the specified value is to be associated.
@@ -1275,7 +1275,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         throwexception: true
     ]
     public operator func [](key: K, value!: V): Unit
-    
+
     /**
      * @description The number of key-value mappings in this map.
      */
@@ -1284,7 +1284,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Returns an iterator over the key-value pairs in this map.
      * @returns An iterator over the entries in this map.
@@ -1294,7 +1294,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func iterator(): HashMapIterator<K, V>
-    
+
     /**
      * @description Returns `true` if this map contains no key-value mappings.
      * @returns `true` if this map is empty, `false` otherwise.
@@ -1304,7 +1304,7 @@ public class HashMap<K, V> <: Map<K, V> where K <: Hashable & Equatable<K> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns an array containing all of the key-value pairs in this map.
      * @returns An array of the key-value pairs in this map.
@@ -1339,7 +1339,7 @@ extend<K, V> HashMap<K, V> <: Equatable<HashMap<K, V>> where V <: Equatable<V> {
         since: "22"
     ]
     public operator func ==(right: HashMap<K, V>): Bool
-    
+
     /**
      * @description Compares the specified object with this map for inequality.
      * @param right The object to be compared for inequality with this map.
@@ -1368,7 +1368,7 @@ public class HashMapIterator<K, V> <: Iterator<(K, V)> where K <: Hashable & Equ
         since: "22"
     ]
     public init(map: HashMap<K, V>)
-    
+
     /**
      * @description Returns the next key-value pair in the iteration.
      * @returns The next entry, or `null` if the iteration has no more elements.
@@ -1378,7 +1378,7 @@ public class HashMapIterator<K, V> <: Iterator<(K, V)> where K <: Hashable & Equ
         since: "22"
     ]
     public func next(): ?(K, V)
-    
+
     /**
      * @description Removes from the underlying map the last element returned by this iterator.
      * @returns The removed entry, or `None` if `next()` has not yet been called or `remove()` has already been called after the last call to `next()`.
@@ -1407,7 +1407,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new set containing the elements in the specified collection.
      * @param elements The collection whose elements are to be placed into this set.
@@ -1417,7 +1417,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public init(elements: Collection<T>)
-    
+
     /**
      * @description Constructs a new set containing the elements in the specified array.
      * @param elements The array whose elements are to be placed into this set.
@@ -1427,7 +1427,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public init(elements: Array<T>)
-    
+
     /**
      * @description Constructs a new, empty set with the specified initial capacity.
      * @param capacity The initial capacity of the hash set.
@@ -1439,7 +1439,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         throwexception: true
     ]
     public init(capacity: Int64)
-    
+
     /**
      * @description Constructs a `HashSet` containing the elements returned by the given initializer function.
      * @param size The size of the set to create.
@@ -1452,7 +1452,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         throwexception: true
     ]
     public init(size: Int64, initElement: (Int64) -> T)
-    
+
     /**
      * @description Returns `true` if this set contains the specified element.
      * @param element The element whose presence in this set is to be tested.
@@ -1463,7 +1463,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func contains(element: T): Bool
-    
+
     /**
      * @description Returns `true` if this set is a subset of the given set.
      * @param other The set to check against.
@@ -1474,7 +1474,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func subsetOf(other: ReadOnlySet<T>): Bool
-    
+
     /**
      * @description Returns `true` if this set contains all of the elements of the specified collection.
      * @param all The collection to be checked for containment in this set.
@@ -1485,7 +1485,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func contains(all!: Collection<T>): Bool
-    
+
     /**
      * @description Adds the specified element to this set if it is not already present.
      * @param element The element to be added to this set.
@@ -1496,7 +1496,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func add(element: T): Bool
-    
+
     /**
      * @description Removes the specified element from this set if it is present.
      * @param element The object to be removed from this set, if present.
@@ -1507,7 +1507,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func remove(element: T): Bool
-    
+
     /**
      * @description Adds all of the elements in the specified collection to this set.
      * @param all The collection containing elements to be added to this set.
@@ -1517,7 +1517,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func add(all!: Collection<T>): Unit
-    
+
     /**
      * @description Removes from this set all of its elements that are contained in the specified collection.
      * @param all The collection containing elements to be removed from this set.
@@ -1527,7 +1527,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func remove(all!: Collection<T>): Unit
-    
+
     /**
      * @description Removes all of the elements of this set that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for elements to be removed.
@@ -1539,7 +1539,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         throwexception: true
     ]
     public func removeIf(predicate: (T) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the elements from this set. The set will be empty after this call returns.
      */
@@ -1548,7 +1548,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Retains only the elements in this set that are contained in the specified set.
      * @param all The set containing elements to be retained in this set.
@@ -1560,7 +1560,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         throwexception: true
     ]
     public func retain(all!: Set<T>): Unit
-    
+
     /**
      * @description Returns a shallow copy of this `HashSet` instance: the elements themselves are not cloned.
      * @returns A shallow copy of this set.
@@ -1570,7 +1570,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func clone(): HashSet<T>
-    
+
     /**
      * @description Increases the capacity of this `HashSet` instance, if necessary.
      * @param additional The desired number of additional elements.
@@ -1582,7 +1582,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         throwexception: true
     ]
     public func reserve(additional: Int64): Unit
-    
+
     /**
      * @description The current capacity of the set.
      */
@@ -1591,7 +1591,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public prop capacity: Int64
-    
+
     /**
      * @description Returns an iterator over the elements in this set.
      * @returns An iterator over the elements in this set.
@@ -1601,7 +1601,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description The number of elements in this set.
      */
@@ -1610,7 +1610,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Returns `true` if this set contains no elements.
      * @returns `true` if this set is empty, `false` otherwise.
@@ -1620,7 +1620,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns an array containing all of the elements in this set.
      * @returns An array containing all of the elements in this set.
@@ -1630,7 +1630,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public func toArray(): Array<T>
-    
+
     /**
      * @description Returns a new set containing the intersection of this set and the other set.
      * @param other The set to intersect with.
@@ -1641,7 +1641,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public operator func &(other: ReadOnlySet<T>): HashSet<T>
-    
+
     /**
      * @description Returns a new set containing the union of this set and the other set.
      * @param other The set to form the union with.
@@ -1652,7 +1652,7 @@ public class HashSet<T> <: Set<T> where T <: Hashable & Equatable<T> {
         since: "22"
     ]
     public operator func |(other: ReadOnlySet<T>): HashSet<T>
-    
+
     /**
      * @description Returns a new set containing the difference of this set and the other set (elements in this set but not in the other).
      * @param other The set of elements to remove.
@@ -1676,7 +1676,7 @@ extend<T> HashSet<T> <: Equatable<HashSet<T>> {
         since: "22"
     ]
     public operator func ==(other: HashSet<T>): Bool
-    
+
     /**
      * @description Compares the specified object with this set for inequality.
      * @param other The object to be compared for inequality with this set.
@@ -1718,7 +1718,7 @@ public class LinkedListNode<T> {
         throwexception: true
     ]
     public mut prop value: T
-    
+
     /**
      * @description The next node in the list, or `None` if this is the last node.
      * @throws IllegalStateException if the node has been detached from its list.
@@ -1729,7 +1729,7 @@ public class LinkedListNode<T> {
         throwexception: true
     ]
     public prop next: Option<LinkedListNode<T>>
-    
+
     /**
      * @description The previous node in the list, or `None` if this is the first node.
      * @throws IllegalStateException if the node has been detached from its list.
@@ -1756,7 +1756,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a list containing the elements of the specified collection.
      * @param elements The collection whose elements are to be placed into this list.
@@ -1765,7 +1765,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public init(elements: Collection<T>)
-    
+
     /**
      * @description Constructs a list containing the elements of the specified array.
      * @param elements The array whose elements are to be placed into this list.
@@ -1774,7 +1774,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public init(elements: Array<T>)
-    
+
     /**
      * @description Constructs a list containing elements returned by the given initializer function.
      * @param size The size of the list to create.
@@ -1786,7 +1786,7 @@ public class LinkedList<T> <: Collection<T> {
         throwexception: true
     ]
     public init(size: Int64, initElement: (Int64) -> T)
-    
+
     /**
      * @description The number of elements in this list.
      */
@@ -1794,7 +1794,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description The first element in this list.
      */
@@ -1802,7 +1802,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public prop first: ?T
-    
+
     /**
      * @description The last element in this list.
      */
@@ -1810,7 +1810,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public prop last: ?T
-    
+
     /**
      * @description The first node in this list, or `null` if the list is empty.
      */
@@ -1818,7 +1818,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public prop firstNode: ?LinkedListNode<T>
-    
+
     /**
      * @description The last node in this list, or `null` if the list is empty.
      */
@@ -1826,7 +1826,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public prop lastNode: ?LinkedListNode<T>
-    
+
     /**
      * @description Inserts the specified element at the beginning of this list.
      * @param element The element to add.
@@ -1837,7 +1837,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func addFirst(element: T): LinkedListNode<T>
-    
+
     /**
      * @description Appends the specified element to the end of this list.
      * @param element The element to add.
@@ -1848,7 +1848,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func addLast(element: T): LinkedListNode<T>
-    
+
     /**
      * @description Returns an array containing all of the elements in this list in proper sequence.
      * @returns An array containing all of the elements in this list.
@@ -1857,7 +1857,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func toArray(): Array<T>
-    
+
     /**
      * @description Inserts element `e` before non-null node `succ`.
      * @param node The node before which to insert the new element.
@@ -1868,7 +1868,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func addBefore(node: LinkedListNode<T>, element: T): LinkedListNode<T>
-    
+
     /**
      * @description Inserts element `e` after non-null node `pred`.
      * @param node The node after which to insert the new element.
@@ -1879,7 +1879,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func addAfter(node: LinkedListNode<T>, element: T): LinkedListNode<T>
-    
+
     /**
      * @description Removes the specified node from the list.
      * @param node The node to remove.
@@ -1890,7 +1890,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func remove(node: LinkedListNode<T>): T
-    
+
     /**
      * @description Removes all of the elements of this list that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for elements to be removed.
@@ -1901,7 +1901,7 @@ public class LinkedList<T> <: Collection<T> {
         throwexception: true
     ]
     public func removeIf(predicate: (T) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the elements from this list. The list will be empty after this call returns.
      */
@@ -1909,7 +1909,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Reverses the order of the elements in this list.
      */
@@ -1917,7 +1917,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func reverse(): Unit
-    
+
     /**
      * @description Returns `true` if this list contains no elements.
      * @returns `true` if this list is empty, `false` otherwise.
@@ -1926,7 +1926,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns an iterator over the elements in this list in proper sequence.
      * @returns An iterator over the elements in this list.
@@ -1936,7 +1936,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description Removes and returns the first element from this list.
      * @returns The first element from this list, or `null` if the list is empty.
@@ -1945,7 +1945,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func removeFirst(): ?T
-    
+
     /**
      * @description Removes and returns the last element from this list.
      * @returns The last element from this list, or `null` if the list is empty.
@@ -1954,7 +1954,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func removeLast(): ?T
-    
+
     /**
      * @description Returns the node at the specified element index.
      * @param index The index of the node to return.
@@ -1964,7 +1964,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func nodeAt(index: Int64): Option<LinkedListNode<T>>
-    
+
     /**
      * @description Splits the list into two at the specified node. The current list will contain all elements up to the given node (exclusive), and a new list is returned containing all elements from the given node onwards.
      * @param node The node at which to split the list.
@@ -1974,7 +1974,7 @@ public class LinkedList<T> <: Collection<T> {
         since: "22"
     ]
     public func splitOff(node: LinkedListNode<T>): LinkedList<T>
-    
+
     /**
      * @description Returns a forward iterator starting from the given node.
      * @param mark The node to start iterating from.
@@ -1986,7 +1986,7 @@ public class LinkedList<T> <: Collection<T> {
         throwexception: true
     ]
     public func forward(mark: LinkedListNode<T>): Iterator<T>
-    
+
     /**
      * @description Returns a backward iterator starting from the given node.
      * @param mark The node to start iterating from.
@@ -2021,7 +2021,7 @@ extend<T> LinkedList<T> <: Equatable<LinkedList<T>> where T <: Equatable<T> {
         since: "22"
     ]
     public operator func ==(right: LinkedList<T>): Bool
-    
+
     /**
      * @description Compares the specified object with this list for inequality.
      * @param right The object to be compared for inequality with this list.
@@ -2047,7 +2047,7 @@ public interface ReadOnlyList<T> <: Collection<T> {
         since: "22"
     ]
     prop first: ?T
-    
+
     /**
      * @description The last element of the list, or `null` if the list is empty.
      */
@@ -2055,7 +2055,7 @@ public interface ReadOnlyList<T> <: Collection<T> {
         since: "22"
     ]
     prop last: ?T
-    
+
     /**
      * @description Returns the element at the specified position in this list, or `null` if the index is out of bounds.
      * @param index The index of the element to return.
@@ -2065,7 +2065,7 @@ public interface ReadOnlyList<T> <: Collection<T> {
         since: "22"
     ]
     func get(index: Int64): ?T
-    
+
     /**
      * @description Returns the element at the specified position in this list.
      * @param index The index of the element to return.
@@ -2094,7 +2094,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func add(element: T): Unit
-    
+
     /**
      * @description Appends all of the elements in the specified collection to the end of this list.
      * @param all The collection containing elements to be added to this list.
@@ -2103,7 +2103,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func add(all!: Collection<T>): Unit
-    
+
     /**
      * @description Inserts the specified element at the specified position in this list.
      * @param element The element to be inserted.
@@ -2113,7 +2113,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func add(element: T, at!: Int64): Unit
-    
+
     /**
      * @description Inserts all of the elements in the specified collection into this list at the specified position.
      * @param all The collection containing elements to be added to this list.
@@ -2123,7 +2123,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func add(all!: Collection<T>, at!: Int64): Unit
-    
+
     /**
      * @description Removes the element at the specified position in this list.
      * @param at The index of the element to be removed.
@@ -2133,7 +2133,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func remove(at!: Int64): T
-    
+
     /**
      * @description Removes from this list all of the elements whose index is between `fromIndex`, inclusive, and `toIndex`, exclusive.
      * @param range The range of indices to remove.
@@ -2142,7 +2142,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func remove(range: Range<Int64>): Unit
-    
+
     /**
      * @description Removes all of the elements of this collection that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for elements to be removed.
@@ -2151,7 +2151,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func removeIf(predicate: (T) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the elements from this list.
      */
@@ -2159,7 +2159,7 @@ public interface List<T> <: ReadOnlyList<T> {
         since: "22"
     ]
     func clear(): Unit
-    
+
     /**
      * @description Replaces the element at the specified position in this list with the specified element.
      * @param index The index of the element to replace.
@@ -2187,7 +2187,7 @@ public interface MapEntryView<K, V> {
         since: "22"
     ]
     prop key: K
-    
+
     /**
      * @description The value of the map entry. Can be get or set.
      */
@@ -2213,7 +2213,7 @@ public interface ReadOnlyMap<K, V> <: Collection<(K, V)> {
         since: "22"
     ]
     func get(key: K): ?V
-    
+
     /**
      * @description Returns `true` if this map contains a mapping for the specified key.
      * @param key The key whose presence in this map is to be tested.
@@ -2223,7 +2223,7 @@ public interface ReadOnlyMap<K, V> <: Collection<(K, V)> {
         since: "22"
     ]
     func contains(key: K): Bool
-    
+
     /**
      * @description Returns `true` if this map contains a mapping for all of the specified keys.
      * @param all The collection of keys to check.
@@ -2233,7 +2233,7 @@ public interface ReadOnlyMap<K, V> <: Collection<(K, V)> {
         since: "22"
     ]
     func contains(all!: Collection<K>): Bool
-    
+
     /**
      * @description Returns a `Collection` view of the keys contained in this map.
      * @returns A collection view of the keys contained in this map.
@@ -2242,7 +2242,7 @@ public interface ReadOnlyMap<K, V> <: Collection<(K, V)> {
         since: "22"
     ]
     func keys(): EquatableCollection<K>
-    
+
     /**
      * @description Returns a `Collection` view of the values contained in this map.
      * @returns A collection view of the values contained in this map.
@@ -2251,7 +2251,7 @@ public interface ReadOnlyMap<K, V> <: Collection<(K, V)> {
         since: "22"
     ]
     func values(): Collection<V>
-    
+
     /**
      * @description Returns the value to which the specified key is mapped.
      * @param key The key whose associated value is to be returned.
@@ -2280,7 +2280,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func add(key: K, value: V): ?V
-    
+
     /**
      * @description Copies all of the mappings from the specified collection to this map.
      * @param all Mappings to be stored in this map.
@@ -2289,7 +2289,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func add(all!: Collection<(K, V)>): Unit
-    
+
     /**
      * @description Removes the mapping for a key from this map if it is present.
      * @param key The key whose mapping is to be removed from the map.
@@ -2299,7 +2299,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func remove(key: K): Option<V>
-    
+
     /**
      * @description Removes the mappings for the specified keys from this map.
      * @param all The collection of keys whose mappings are to be removed.
@@ -2308,7 +2308,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func remove(all!: Collection<K>): Unit
-    
+
     /**
      * @description Removes all of the entries of this map that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for entries to be removed.
@@ -2317,7 +2317,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func removeIf(predicate: (K, V) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the mappings from this map.
      */
@@ -2325,7 +2325,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func clear(): Unit
-    
+
     /**
      * @description Associates the specified value with the specified key in this map.
      * @param key The key with which the specified value is to be associated.
@@ -2335,7 +2335,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     operator func [](key: K, value!: V): Unit
-    
+
     /**
      * @description Returns a `MapEntryView` for the given key, allowing in-place operations on the entry.
      * @param k The key of the entry.
@@ -2345,7 +2345,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func entryView(k: K): MapEntryView<K, V>
-    
+
     /**
      * @description If the specified key is not already associated with a value, associates it with the given value.
      * @param key The key with which the specified value is to be associated.
@@ -2357,7 +2357,7 @@ public interface Map<K, V> <: ReadOnlyMap<K, V> {
         since: "22"
     ]
     func addIfAbsent(key: K, value: V): ?V
-    
+
     /**
      * @description Replaces the entry for the specified key only if it is currently mapped to some value.
      * @param key The key with which the specified value is to be associated.
@@ -2387,7 +2387,7 @@ public interface EquatableCollection<T> <: Collection<T> {
         since: "22"
     ]
     func contains(element: T): Bool
-    
+
     /**
      * @description Returns `true` if this collection contains all of the elements of the specified collection.
      * @param all The collection to be checked for containment in this collection.
@@ -2413,7 +2413,7 @@ public interface OrderedMap<K, V> <: Map<K, V> {
         since: "22"
     ]
     prop first: ?(K, V)
-    
+
     /**
      * @description The last key-value pair in the map, or `null` if the map is empty.
      */
@@ -2421,7 +2421,7 @@ public interface OrderedMap<K, V> <: Map<K, V> {
         since: "22"
     ]
     prop last: ?(K, V)
-    
+
     /**
      * @description Removes and returns the first key-value pair from this map.
      * @returns The first entry, or `null` if the map is empty.
@@ -2430,7 +2430,7 @@ public interface OrderedMap<K, V> <: Map<K, V> {
         since: "22"
     ]
     func removeFirst(): ?(K, V)
-    
+
     /**
      * @description Removes and returns the last key-value pair from this map.
      * @returns The last entry, or `null` if the map is empty.
@@ -2439,7 +2439,7 @@ public interface OrderedMap<K, V> <: Map<K, V> {
         since: "22"
     ]
     func removeLast(): ?(K, V)
-    
+
     /**
      * @description Returns an iterator over the elements of this map in reverse sequential order, starting from the specified key.
      * @param mark The key to start iterating from.
@@ -2450,7 +2450,7 @@ public interface OrderedMap<K, V> <: Map<K, V> {
         since: "22"
     ]
     func backward(mark: K, inclusive!: Bool): Iterator<(K, V)>
-    
+
     /**
      * @description Returns an iterator over the elements of this map in sequential order, starting from the specified key.
      * @param mark The key to start iterating from.
@@ -2606,7 +2606,7 @@ public interface Deque<T> <: Collection<T> {
         since: "22"
     ]
     prop first: ?T
-    
+
     /**
      * @description The last element of the deque, or `null` if the deque is empty.
      */
@@ -2614,7 +2614,7 @@ public interface Deque<T> <: Collection<T> {
         since: "22"
     ]
     prop last: ?T
-    
+
     /**
      * @description Inserts the specified element at the front of this deque.
      * @param element The element to add.
@@ -2623,7 +2623,7 @@ public interface Deque<T> <: Collection<T> {
         since: "22"
     ]
     func addFirst(element: T): Unit
-    
+
     /**
      * @description Inserts the specified element at the end of this deque.
      * @param element The element to add.
@@ -2632,7 +2632,7 @@ public interface Deque<T> <: Collection<T> {
         since: "22"
     ]
     func addLast(element: T): Unit
-    
+
     /**
      * @description Retrieves and removes the first element of this deque.
      * @returns The head of the deque, or `null` if it is empty.
@@ -2641,7 +2641,7 @@ public interface Deque<T> <: Collection<T> {
         since: "22"
     ]
     func removeFirst(): ?T
-    
+
     /**
      * @description Retrieves and removes the last element of this deque.
      * @returns The tail of the deque, or `null` if it is empty.
@@ -2667,7 +2667,7 @@ public interface Queue<T> <: Collection<T> {
         since: "22"
     ]
     func add(element: T): Unit
-    
+
     /**
      * @description Retrieves, but does not remove, the head of this queue.
      * @returns The head of this queue, or `null` if this queue is empty.
@@ -2676,7 +2676,7 @@ public interface Queue<T> <: Collection<T> {
         since: "22"
     ]
     func peek(): ?T
-    
+
     /**
      * @description Retrieves and removes the head of this queue.
      * @returns The head of this queue, or `null` if this queue is empty.
@@ -2703,7 +2703,7 @@ public interface ReadOnlySet<T> <: Collection<T> {
         since: "22"
     ]
     func contains(element: T): Bool
-    
+
     /**
      * @description Returns `true` if this set contains all of the elements of the specified collection.
      * @param all The collection to be checked for containment in this set.
@@ -2713,7 +2713,7 @@ public interface ReadOnlySet<T> <: Collection<T> {
         since: "22"
     ]
     func contains(all!: Collection<T>): Bool
-    
+
     /**
      * @description Returns `true` if this set is a subset of the given set.
      * @param other The set to check against.
@@ -2741,7 +2741,7 @@ public interface Set<T> <: ReadOnlySet<T> {
         since: "22"
     ]
     func add(element: T): Bool
-    
+
     /**
      * @description Adds all of the elements in the specified collection to this set.
      * @param all The collection containing elements to be added to this set.
@@ -2750,7 +2750,7 @@ public interface Set<T> <: ReadOnlySet<T> {
         since: "22"
     ]
     func add(all!: Collection<T>): Unit
-    
+
     /**
      * @description Removes the specified element from this set if it is present.
      * @param element The object to be removed from this set, if present.
@@ -2760,7 +2760,7 @@ public interface Set<T> <: ReadOnlySet<T> {
         since: "22"
     ]
     func remove(element: T): Bool
-    
+
     /**
      * @description Removes from this set all of its elements that are contained in the specified collection.
      * @param all The collection containing elements to be removed from this set.
@@ -2769,7 +2769,7 @@ public interface Set<T> <: ReadOnlySet<T> {
         since: "22"
     ]
     func remove(all!: Collection<T>): Unit
-    
+
     /**
      * @description Removes all of the elements of this set that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for elements to be removed.
@@ -2778,7 +2778,7 @@ public interface Set<T> <: ReadOnlySet<T> {
         since: "22"
     ]
     func removeIf(predicate: (T) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the elements from this set.
      */
@@ -2786,7 +2786,7 @@ public interface Set<T> <: ReadOnlySet<T> {
         since: "22"
     ]
     func clear(): Unit
-    
+
     /**
      * @description Retains only the elements in this set that are contained in the specified set.
      * @param all The set containing elements to be retained in this set.
@@ -2811,7 +2811,7 @@ public interface OrderedSet<T> <: Set<T> {
         since: "22"
     ]
     prop first: ?T
-    
+
     /**
      * @description The last element in the set, or `null` if the set is empty.
      */
@@ -2819,7 +2819,7 @@ public interface OrderedSet<T> <: Set<T> {
         since: "22"
     ]
     prop last: ?T
-    
+
     /**
      * @description Removes and returns the first element from this set.
      * @returns The first element, or `null` if the set is empty.
@@ -2828,7 +2828,7 @@ public interface OrderedSet<T> <: Set<T> {
         since: "22"
     ]
     func removeFirst(): ?T
-    
+
     /**
      * @description Removes and returns the last element from this set.
      * @returns The last element, or `null` if the set is empty.
@@ -2837,7 +2837,7 @@ public interface OrderedSet<T> <: Set<T> {
         since: "22"
     ]
     func removeLast(): ?T
-    
+
     /**
      * @description Returns an iterator over the elements of this set in reverse sequential order, starting from the specified element.
      * @param mark The element to start iterating from.
@@ -2848,7 +2848,7 @@ public interface OrderedSet<T> <: Set<T> {
         since: "22"
     ]
     func backward(mark: T, inclusive!: Bool): Iterator<T>
-    
+
     /**
      * @description Returns an iterator over the elements of this set in sequential order, starting from the specified element.
      * @param mark The element to start iterating from.
@@ -2876,7 +2876,7 @@ public interface Stack<T> <: Collection<T> {
         since: "22"
     ]
     func peek(): ?T
-    
+
     /**
      * @description Removes the object at the top of this stack and returns that object.
      * @returns The object at the top of this stack, or `null` if the stack is empty.
@@ -2885,7 +2885,7 @@ public interface Stack<T> <: Collection<T> {
         since: "22"
     ]
     func remove(): ?T
-    
+
     /**
      * @description Pushes an item onto the top of this stack.
      * @param element The item to be pushed onto this stack.
@@ -2912,12 +2912,10 @@ public func collectString<T>(delimiter!: String = ""): (Iterable<T>) -> String w
  * @description Collects all elements of an iterable into a new `Array`.
  * @param it The iterable to collect.
  * @returns A new `Array` containing the elements of the iterable.
- * @throws IllegalArgumentException if an allocation error occurs.
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func collectArray<T>(it: Iterable<T>): Array<T>
 
@@ -2925,12 +2923,10 @@ public func collectArray<T>(it: Iterable<T>): Array<T>
  * @description Collects all elements of an iterable into a new `ArrayList`.
  * @param it The iterable to collect.
  * @returns A new `ArrayList` containing the elements of the iterable.
- * @throws IllegalArgumentException if an allocation error occurs.
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func collectArrayList<T>(it: Iterable<T>): ArrayList<T>
 
@@ -2938,12 +2934,10 @@ public func collectArrayList<T>(it: Iterable<T>): ArrayList<T>
  * @description Collects all elements of an iterable into a new `HashSet`.
  * @param it The iterable to collect.
  * @returns A new `HashSet` containing the unique elements of the iterable.
- * @throws IllegalArgumentException if an allocation error occurs.
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func collectHashSet<T>(it: Iterable<T>): HashSet<T> where T <: Hashable & Equatable<T>
 
@@ -2951,12 +2945,10 @@ public func collectHashSet<T>(it: Iterable<T>): HashSet<T> where T <: Hashable &
  * @description Collects all key-value pairs of an iterable into a new `HashMap`.
  * @param it The iterable of pairs to collect.
  * @returns A new `HashMap` containing the key-value pairs from the iterable.
- * @throws IllegalArgumentException if an allocation error occurs.
  */
 @Frozen
 @!APILevel[
-    since: "22",
-    throwexception: true
+    since: "22"
 ]
 public func collectHashMap<K, V>(it: Iterable<(K, V)>): HashMap<K, V> where K <: Hashable & Equatable<K>
 
@@ -2974,7 +2966,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new `TreeMap` with the same mappings as the specified `Collection` of pairs.
      * @param elements The collection of key-value pairs.
@@ -2983,7 +2975,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public init(elements: Collection<(K, V)>)
-    
+
     /**
      * @description Constructs a new `TreeMap` with the same mappings as the specified `Array` of pairs.
      * @param elements The array of key-value pairs.
@@ -2992,7 +2984,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public init(elements: Array<(K, V)>)
-    
+
     /**
      * @description Constructs a `TreeMap` containing the elements returned by the given initializer function.
      * @param size The size of the map to create.
@@ -3004,7 +2996,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         throwexception: true
     ]
     public init(size: Int64, initElement: (Int64) -> (K, V))
-    
+
     /**
      * @description Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key.
      * @param key The key whose associated value is to be returned.
@@ -3014,7 +3006,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func get(key: K): ?V
-    
+
     /**
      * @description Returns `true` if this map contains a mapping for the specified key.
      * @param key The key whose presence in this map is to be tested.
@@ -3024,7 +3016,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func contains(key: K): Bool
-    
+
     /**
      * @description Returns `true` if this map contains a mapping for all of the specified keys.
      * @param all The collection of keys to check.
@@ -3034,7 +3026,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func contains(all!: Collection<K>): Bool
-    
+
     /**
      * @description Associates the specified value with the specified key in this map.
      * @param key The key with which the specified value is to be associated.
@@ -3045,7 +3037,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func add(key: K, value: V): Option<V>
-    
+
     /**
      * @description Copies all of the mappings from the specified collection to this map.
      * @param all Mappings to be stored in this map.
@@ -3054,7 +3046,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func add(all!: Collection<(K, V)>): Unit
-    
+
     /**
      * @description Removes the mapping for a key from this map if it is present.
      * @param key The key whose mapping is to be removed from the map.
@@ -3064,7 +3056,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func remove(key: K): Option<V>
-    
+
     /**
      * @description Removes the mappings for the specified keys from this map.
      * @param all The collection of keys whose mappings are to be removed.
@@ -3073,7 +3065,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func remove(all!: Collection<K>): Unit
-    
+
     /**
      * @description Removes all of the entries of this map that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for entries to be removed.
@@ -3084,7 +3076,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         throwexception: true
     ]
     public func removeIf(predicate: (K, V) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the mappings from this map.
      */
@@ -3092,7 +3084,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Returns a shallow copy of this `TreeMap` instance.
      * @returns A clone of this `TreeMap` instance.
@@ -3101,7 +3093,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func clone(): TreeMap<K, V>
-    
+
     /**
      * @description Returns the value to which the specified key is mapped.
      * @param key The key whose associated value is to be returned.
@@ -3111,7 +3103,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public operator func [](key: K): V
-    
+
     /**
      * @description Associates the specified value with the specified key in this map.
      * @param key The key with which the specified value is to be associated.
@@ -3121,7 +3113,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public operator func [](key: K, value!: V): Unit
-    
+
     /**
      * @description Returns a `Collection` view of the keys contained in this map.
      * @returns A collection view of the keys contained in this map.
@@ -3130,7 +3122,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func keys(): EquatableCollection<K>
-    
+
     /**
      * @description Returns a `Collection` view of the values contained in this map.
      * @returns A collection view of the values contained in this map.
@@ -3139,7 +3131,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func values(): Collection<V>
-    
+
     /**
      * @description The number of key-value mappings in this map.
      */
@@ -3147,7 +3139,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description Returns `true` if this map contains no key-value mappings.
      * @returns `true` if this map is empty, `false` otherwise.
@@ -3156,7 +3148,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns an iterator over the key-value pairs in this map.
      * @returns An iterator over the entries in this map.
@@ -3166,7 +3158,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func iterator(): Iterator<(K, V)>
-    
+
     /**
      * @description The first key-value pair in the map, or `null` if the map is empty.
      */
@@ -3174,7 +3166,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public prop first: ?(K, V)
-    
+
     /**
      * @description Removes and returns the first key-value pair from this map.
      * @returns The first entry, or `null` if the map is empty.
@@ -3183,7 +3175,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func removeFirst(): ?(K, V)
-    
+
     /**
      * @description The last key-value pair in the map, or `null` if the map is empty.
      */
@@ -3191,7 +3183,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public prop last: ?(K, V)
-    
+
     /**
      * @description Removes and returns the last key-value pair from this map.
      * @returns The last entry, or `null` if the map is empty.
@@ -3200,7 +3192,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func removeLast(): ?(K, V)
-    
+
     /**
      * @description Returns an iterator over the elements of this map in reverse sequential order, starting from the specified key.
      * @param mark The key to start iterating from.
@@ -3211,7 +3203,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func backward(mark: K, inclusive!: Bool = true): Iterator<(K, V)>
-    
+
     /**
      * @description Returns an iterator over the elements of this map in sequential order, starting from the specified key.
      * @param mark The key to start iterating from.
@@ -3222,7 +3214,7 @@ public class TreeMap<K, V> <: OrderedMap<K, V> where K <: Comparable<K> {
         since: "22"
     ]
     public func forward(mark: K, inclusive!: Bool = true): Iterator<(K, V)>
-    
+
     /**
      * @description Returns a `MapEntryView` for the given key, allowing in-place operations on the entry.
      * @param k The key of the entry.
@@ -3255,7 +3247,7 @@ extend<K, V> TreeMap<K, V> <: Equatable<TreeMap<K, V>> where V <: Equatable<V> {
         since: "22"
     ]
     public operator func ==(right: TreeMap<K, V>): Bool
-    
+
     /**
      * @description Compares the specified object with this map for inequality.
      * @param right The object to be compared for inequality with this map.
@@ -3281,7 +3273,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public prop size: Int64
-    
+
     /**
      * @description The first (lowest) element currently in this set.
      */
@@ -3289,7 +3281,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public prop first: ?T
-    
+
     /**
      * @description The last (highest) element currently in this set.
      */
@@ -3297,7 +3289,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public prop last: ?T
-    
+
     /**
      * @description Constructs a new, empty `TreeSet`.
      */
@@ -3305,7 +3297,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a new set containing the elements in the specified collection.
      * @param elements The collection whose elements are to be placed into this set.
@@ -3314,7 +3306,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public init(elements: Collection<T>)
-    
+
     /**
      * @description Constructs a `TreeSet` containing the elements returned by the given initializer function.
      * @param size The size of the set to create.
@@ -3326,7 +3318,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         throwexception: true
     ]
     public init(size: Int64, initElement: (Int64) -> T)
-    
+
     /**
      * @description Creates a `TreeSet` from an existing `Array` of elements.
      * @param elements The array of elements.
@@ -3336,7 +3328,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public static func of(elements: Array<T>): TreeSet<T>
-    
+
     /**
      * @description Returns `true` if this set contains the specified element.
      * @param element The element whose presence in this set is to be tested.
@@ -3346,7 +3338,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func contains(element: T): Bool
-    
+
     /**
      * @description Returns `true` if this set contains all of the elements of the specified collection.
      * @param all The collection to be checked for containment in this set.
@@ -3356,7 +3348,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func contains(all!: Collection<T>): Bool
-    
+
     /**
      * @description Adds the specified element to this set if it is not already present.
      * @param element The element to be added to this set.
@@ -3366,7 +3358,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func add(element: T): Bool
-    
+
     /**
      * @description Adds all of the elements in the specified collection to this set.
      * @param all The collection containing elements to be added to this set.
@@ -3375,7 +3367,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func add(all!: Collection<T>): Unit
-    
+
     /**
      * @description Removes the specified element from this set if it is present.
      * @param element The object to be removed from this set, if present.
@@ -3385,7 +3377,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func remove(element: T): Bool
-    
+
     /**
      * @description Removes from this set all of its elements that are contained in the specified collection.
      * @param all The collection containing elements to be removed from this set.
@@ -3394,7 +3386,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func remove(all!: Collection<T>): Unit
-    
+
     /**
      * @description Removes all of the elements of this set that satisfy the given predicate.
      * @param predicate A predicate which returns `true` for elements to be removed.
@@ -3405,7 +3397,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         throwexception: true
     ]
     public func removeIf(predicate: (T) -> Bool): Unit
-    
+
     /**
      * @description Removes all of the elements from this set.
      */
@@ -3413,7 +3405,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func clear(): Unit
-    
+
     /**
      * @description Returns a shallow copy of this `TreeSet` instance.
      * @returns A clone of this `TreeSet` instance.
@@ -3422,7 +3414,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func clone(): TreeSet<T>
-    
+
     /**
      * @description Returns `true` if this set contains no elements.
      * @returns `true` if this set is empty, `false` otherwise.
@@ -3431,7 +3423,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Returns an iterator over the elements in this set in ascending order.
      * @returns An iterator over the elements in this set.
@@ -3441,7 +3433,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func iterator(): Iterator<T>
-    
+
     /**
      * @description Removes and returns the first (lowest) element from this set.
      * @returns The first element, or `null` if the set is empty.
@@ -3450,7 +3442,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func removeFirst(): ?T
-    
+
     /**
      * @description Removes and returns the last (highest) element from this set.
      * @returns The last element, or `null` if the set is empty.
@@ -3459,7 +3451,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func removeLast(): ?T
-    
+
     /**
      * @description Returns an iterator over the elements of this set in reverse sequential order, starting from the specified element.
      * @param mark The element to start iterating from.
@@ -3470,7 +3462,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func backward(mark: T, inclusive!: Bool = true): Iterator<T>
-    
+
     /**
      * @description Returns an iterator over the elements of this set in sequential order, starting from the specified element.
      * @param mark The element to start iterating from.
@@ -3481,7 +3473,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func forward(mark: T, inclusive!: Bool = true): Iterator<T>
-    
+
     /**
      * @description Retains only the elements in this set that are contained in the specified set.
      * @param all The set containing elements to be retained in this set.
@@ -3492,7 +3484,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         throwexception: true
     ]
     public func retain(all!: Set<T>): Unit
-    
+
     /**
      * @description Returns an array containing all of the elements in this set.
      * @returns An array containing all of the elements in this set.
@@ -3501,7 +3493,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func toArray(): Array<T>
-    
+
     /**
      * @description Returns `true` if this set is a subset of the given set.
      * @param other The set to check against.
@@ -3511,7 +3503,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public func subsetOf(other: ReadOnlySet<T>): Bool
-    
+
     /**
      * @description Returns a new set containing the intersection of this set and the other set.
      * @param other The set to intersect with.
@@ -3521,7 +3513,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func &(other: ReadOnlySet<T>): TreeSet<T>
-    
+
     /**
      * @description Returns a new set containing the union of this set and the other set.
      * @param other The set to form the union with.
@@ -3531,7 +3523,7 @@ public class TreeSet<T> <: OrderedSet<T> where T <: Comparable<T> {
         since: "22"
     ]
     public operator func |(other: ReadOnlySet<T>): TreeSet<T>
-    
+
     /**
      * @description Returns a new set containing the difference of this set and the other set (elements in this set but not in the other).
      * @param other The set of elements to remove.
@@ -3553,7 +3545,7 @@ extend<T> TreeSet<T> <: Equatable<TreeSet<T>> {
         since: "22"
     ]
     public operator func ==(other: TreeSet<T>): Bool
-    
+
     /**
      * @description Compares the specified object with this set for inequality.
      * @param other The object to be compared for inequality with this set.

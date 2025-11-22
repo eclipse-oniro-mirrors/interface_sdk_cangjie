@@ -143,6 +143,9 @@ public func dumpHeapData(path: Path): Unit
     since: "22"
 ]
 public struct ProcessorInfo {
+    /**
+     * @description The number of processors available to the runtime
+     */
     @!APILevel[
         since: "22"
     ]
@@ -186,16 +189,25 @@ public func stopCPUProfiling(path: Path): Unit
     since: "22"
 ]
 public struct ThreadInfo {
+    /**
+     * @description The current number of threads in the runtime
+     */
     @!APILevel[
         since: "22"
     ]
     public static prop threadCount: Int64
     
+    /**
+     * @description The number of blocked threads in the runtime
+     */
     @!APILevel[
         since: "22"
     ]
     public static prop blockingThreadCount: Int64
     
+    /**
+     * @description The actual number of physical threads used by the runtime
+     */
     @!APILevel[
         since: "22"
     ]

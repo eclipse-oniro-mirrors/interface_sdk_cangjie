@@ -1101,17 +1101,6 @@ public class IPv6Address <: IPAddress & ToString & Equatable<IPv6Address> & Less
     public func toString(): String
 }
 
-extend<T> Result<T> <: ToString where T <: ToString {
-    /**
-     * @description Returns a string representation of the `Result`.
-     * @returns A string representing the success or failure value.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func toString(): String
-}
-
 /**
  * @description Represents a generic socket address. This is the base class for specific socket address types like `IPSocketAddress`.
  */

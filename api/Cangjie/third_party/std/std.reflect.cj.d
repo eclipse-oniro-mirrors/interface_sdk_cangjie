@@ -23,7 +23,7 @@ public class ClassTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public redef static func get(qualifiedName: String): ClassTypeInfo
-    
+
     /**
      * @description Gets the `ClassTypeInfo` for the runtime class of the given object.
      * @param a The object to get the class information from.
@@ -36,7 +36,7 @@ public class ClassTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public redef static func of(a: Any): ClassTypeInfo
-    
+
     /**
      * @description Gets the `ClassTypeInfo` for the runtime class of the given object.
      * @param a The object to get the class information from.
@@ -48,7 +48,7 @@ public class ClassTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public static func of(a: Object): ClassTypeInfo
-    
+
     /**
      * @description Gets the `ClassTypeInfo` for the specified type `T`.
      * @returns The `ClassTypeInfo` for type `T`.
@@ -60,69 +60,59 @@ public class ClassTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public redef static func of<T>(): ClassTypeInfo
-    
+
     /**
      * @description Gets a collection of `ConstructorInfo` objects for the public constructors of this class.
      * @returns A collection of `ConstructorInfo` objects.
-     * @throws InfoNotFoundException if constructor information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop constructors: Collection<ConstructorInfo>
-    
+
     /**
      * @description Gets a collection of `InstanceVariableInfo` objects for the instance variables of this class.
      * @returns A collection of `InstanceVariableInfo` objects.
-     * @throws InfoNotFoundException if instance variable information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop instanceVariables: Collection<InstanceVariableInfo>
-    
+
     /**
      * @description Gets a collection of `StaticVariableInfo` objects for the static variables of this class.
      * @returns A collection of `StaticVariableInfo` objects.
-     * @throws InfoNotFoundException if static variable information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop staticVariables: Collection<StaticVariableInfo>
-    
+
     /**
      * @description Gets the `ClassTypeInfo` for the superclass of this class, if it exists.
      * @returns An `Option` containing the `ClassTypeInfo` of the superclass, or `None` if this class is `std.core.Object`.
      * @throws MisMatchException if there is a type mismatch.
-     * @throws InfoNotFoundException if superclass information cannot be found.
      */
     @!APILevel[
         since: "22",
         throwexception: true
     ]
     public prop superClass: Option<ClassTypeInfo>
-    
+
     /**
      * @description Gets a collection of `ClassTypeInfo` objects for the direct sealed subclasses of this class.
      * @returns A collection of `ClassTypeInfo` objects for the sealed subclasses.
-     * @throws InfoNotFoundException if subclass information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop sealedSubclasses: Collection<ClassTypeInfo>
-    
+
     /**
      * @description Creates a new instance of this class by invoking the appropriate constructor with the given arguments.
      * @param args An array of arguments to be passed to the constructor.
      * @returns A new instance of the class.
      * @throws IllegalTypeException if a type is invalid for an operation.
-     * @throws InfoNotFoundException if constructor information cannot be found.
      * @throws InvocationTargetException if the constructor throws an exception.
      */
     @!APILevel[
@@ -130,7 +120,7 @@ public class ClassTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public func construct(args: Array<Any>): Any
-    
+
     /**
      * @description Determines if the class is declared as `open`.
      * @returns `true` if the class is `open`, `false` otherwise.
@@ -139,7 +129,7 @@ public class ClassTypeInfo <: TypeInfo {
         since: "22"
     ]
     public func isOpen(): Bool
-    
+
     /**
      * @description Determines if the class is declared as `abstract`.
      * @returns `true` if the class is `abstract`, `false` otherwise.
@@ -148,7 +138,7 @@ public class ClassTypeInfo <: TypeInfo {
         since: "22"
     ]
     public func isAbstract(): Bool
-    
+
     /**
      * @description Determines if the class is declared as `sealed`.
      * @returns `true` if the class is `sealed`, `false` otherwise.
@@ -157,40 +147,34 @@ public class ClassTypeInfo <: TypeInfo {
         since: "22"
     ]
     public func isSealed(): Bool
-    
+
     /**
      * @description Gets the `ConstructorInfo` for the constructor with the specified parameter types.
      * @param parameterTypes An array of `TypeInfo` objects representing the parameter types of the constructor.
      * @returns The `ConstructorInfo` for the matching constructor.
-     * @throws InfoNotFoundException if a matching constructor is not found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func getConstructor(parameterTypes: Array<TypeInfo>): ConstructorInfo
-    
+
     /**
      * @description Gets the `InstanceVariableInfo` for the instance variable with the specified name.
      * @param name The name of the instance variable.
      * @returns The `InstanceVariableInfo` for the matching instance variable.
-     * @throws InfoNotFoundException if a matching instance variable is not found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func getInstanceVariable(name: String): InstanceVariableInfo
-    
+
     /**
      * @description Gets the `StaticVariableInfo` for the static variable with the specified name.
      * @param name The name of the static variable.
      * @returns The `StaticVariableInfo` for the matching static variable.
-     * @throws InfoNotFoundException if a matching static variable is not found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func getStaticVariable(name: String): StaticVariableInfo
 }
@@ -209,7 +193,7 @@ public open class ReflectException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a `ReflectException` with the specified detail message.
      * @param message The detail message.
@@ -234,7 +218,7 @@ public class InfoNotFoundException <: ReflectException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs an `InfoNotFoundException` with the specified detail message.
      * @param message The detail message.
@@ -259,7 +243,7 @@ public class MisMatchException <: ReflectException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs a `MisMatchException` with the specified detail message.
      * @param message The detail message.
@@ -284,7 +268,7 @@ public class IllegalSetException <: ReflectException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs an `IllegalSetException` with the specified detail message.
      * @param message The detail message.
@@ -309,7 +293,7 @@ public class IllegalTypeException <: ReflectException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs an `IllegalTypeException` with the specified detail message.
      * @param message The detail message.
@@ -334,7 +318,7 @@ public class InvocationTargetException <: ReflectException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Constructs an `InvocationTargetException` with the specified detail message.
      * @param message The detail message.
@@ -380,7 +364,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         throwexception: true
     ]
     public prop genericParams: Collection<GenericTypeInfo>
-    
+
     /**
      * @description Gets the name of the function.
      * @returns The function name.
@@ -389,29 +373,25 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets a read-only list of `ParameterInfo` objects for the parameters of this function.
      * @returns A read-only list of `ParameterInfo` objects.
-     * @throws InfoNotFoundException if parameter information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop parameters: ReadOnlyList<ParameterInfo>
-    
+
     /**
      * @description Gets the `TypeInfo` for the return type of this function.
      * @returns The `TypeInfo` for the return type.
-     * @throws InfoNotFoundException if return type information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop returnType: TypeInfo
-    
+
     /**
      * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this function.
      * @returns A collection of `ModifierInfo` enums.
@@ -420,18 +400,16 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public prop modifiers: Collection<ModifierInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this function.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Determines if the function is declared as `open`.
      * @returns `true` if the function is `open`, `false` otherwise.
@@ -440,7 +418,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public func isOpen(): Bool
-    
+
     /**
      * @description Determines if the function is declared as `abstract`.
      * @returns `true` if the function is `abstract`, `false` otherwise.
@@ -449,14 +427,14 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public func isAbstract(): Bool
-    
+
     /**
      * @description Invokes the function on the specified instance with the given arguments.
      * @param instance The object instance on which to invoke the function.
      * @param args An array of arguments to pass to the function.
      * @returns The result of the function invocation.
      * @throws IllegalTypeException if a type is invalid for an operation.
-     * @throws IllegalArgumentException if the number of arguments in args is not equal to the number of parameters in 
+     * @throws IllegalArgumentException if the number of arguments in args is not equal to the number of parameters in
      *         the parameter list of the instance member function corresponding to the instance member function information.
      * @throws InvocationTargetException if the invoked function throws an exception.
      */
@@ -465,7 +443,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         throwexception: true
     ]
     public func apply(instance: Any, args: Array<Any>): Any
-    
+
     /**
      * @description Invokes the generic function on the specified instance with the given generic type arguments and arguments.
      * @param instance The object instance on which to invoke the function.
@@ -482,7 +460,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         throwexception: true
     ]
     public func apply(instance: Any, genericTypeArgs: Array<TypeInfo>, args: Array<Any>): Any
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this function.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -491,7 +469,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this function.
      * @returns An array of all annotations of type `T`.
@@ -502,7 +480,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this function.
      * @returns An array containing all annotations.
@@ -513,7 +491,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `InstanceFunctionInfo` to another for equality.
      * @param other The other `InstanceFunctionInfo` to compare with.
@@ -523,7 +501,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public operator func ==(other: InstanceFunctionInfo): Bool
-    
+
     /**
      * @description Compares this `InstanceFunctionInfo` to another for inequality.
      * @param other The other `InstanceFunctionInfo` to compare with.
@@ -533,7 +511,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public operator func !=(other: InstanceFunctionInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `InstanceFunctionInfo`.
      * @returns The hash code.
@@ -542,7 +520,7 @@ public class InstanceFunctionInfo <: Equatable<InstanceFunctionInfo> & Hashable 
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `InstanceFunctionInfo`.
      * @returns A string representation of the function.
@@ -570,7 +548,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public prop genericParams: Collection<GenericTypeInfo>
-    
+
     /**
      * @description Gets the name of the function.
      * @returns The function name.
@@ -579,29 +557,25 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets a read-only list of `ParameterInfo` objects for the parameters of this function.
      * @returns A read-only list of `ParameterInfo` objects.
-     * @throws InfoNotFoundException if parameter information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop parameters: ReadOnlyList<ParameterInfo>
-    
+
     /**
      * @description Gets the `TypeInfo` for the return type of this function.
      * @returns The `TypeInfo` for the return type.
-     * @throws InfoNotFoundException if return type information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop returnType: TypeInfo
-    
+
     /**
      * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this function.
      * @returns A collection of `ModifierInfo` enums.
@@ -610,18 +584,16 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         since: "22"
     ]
     public prop modifiers: Collection<ModifierInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this function.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Invokes the static function with the given arguments.
      * @param thisType The type on which the static function is defined.
@@ -637,7 +609,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func apply(thisType: TypeInfo, args: Array<Any>): Any
-    
+
     /**
      * @description Invokes the generic static function with the given generic type arguments and arguments.
      * @param thisType The type on which the static function is defined.
@@ -654,7 +626,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func apply(thisType: TypeInfo, genericTypeArgs: Array<TypeInfo>, args: Array<Any>): Any
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this function.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -663,7 +635,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this function.
      * @returns An array of all annotations of type `T`.
@@ -674,7 +646,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this function.
      * @returns An array containing all annotations.
@@ -685,7 +657,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `StaticFunctionInfo` to another for equality.
      * @param other The other `StaticFunctionInfo` to compare with.
@@ -695,7 +667,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         since: "22"
     ]
     public operator func ==(other: StaticFunctionInfo): Bool
-    
+
     /**
      * @description Compares this `StaticFunctionInfo` to another for inequality.
      * @param other The other `StaticFunctionInfo` to compare with.
@@ -705,7 +677,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         since: "22"
     ]
     public operator func !=(other: StaticFunctionInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `StaticFunctionInfo`.
      * @returns The hash code.
@@ -714,7 +686,7 @@ public class StaticFunctionInfo <: Equatable<StaticFunctionInfo> & Hashable & To
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `StaticFunctionInfo`.
      * @returns A string representation of the function.
@@ -740,7 +712,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the `TypeInfo` for the type of this property.
      * @returns The `TypeInfo` for the property's type.
@@ -751,7 +723,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         throwexception: true
     ]
     public prop typeInfo: TypeInfo
-    
+
     /**
      * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this property.
      * @returns A collection of `ModifierInfo` enums.
@@ -760,18 +732,16 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public prop modifiers: Collection<ModifierInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this property.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Determines if the property is declared as `open`.
      * @returns `true` if the property is `open`, `false` otherwise.
@@ -780,7 +750,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public func isOpen(): Bool
-    
+
     /**
      * @description Determines if the property is declared as `abstract`.
      * @returns `true` if the property is `abstract`, `false` otherwise.
@@ -789,7 +759,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public func isAbstract(): Bool
-    
+
     /**
      * @description Determines if the property is mutable (declared with `mut`).
      * @returns `true` if the property is mutable, `false` otherwise.
@@ -798,12 +768,12 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public func isMutable(): Bool
-    
+
     /**
      * @description Gets the value of this property from the specified instance.
      * @param instance The object instance from which to get the property value.
      * @returns The value of the property.
-     * @throws IllegalTypeException if the runtime type of the instance is not strictly the same as the type 
+     * @throws IllegalTypeException if the runtime type of the instance is not strictly the same as the type
      *         that the instance member property corresponding to the instance member property information belongs to.
      */
     @!APILevel[
@@ -811,7 +781,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         throwexception: true
     ]
     public func getValue(instance: Any): Any
-    
+
     /**
      * @description Sets the value of this property on the specified instance.
      * @param instance The object instance on which to set the property value.
@@ -824,7 +794,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         throwexception: true
     ]
     public func setValue(instance: Any, newValue: Any): Unit
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this property.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -833,7 +803,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this property.
      * @returns An array of all annotations of type `T`.
@@ -844,7 +814,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this property.
      * @returns An array containing all annotations.
@@ -855,7 +825,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `InstancePropertyInfo` to another for equality.
      * @param other The other `InstancePropertyInfo` to compare with.
@@ -865,7 +835,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public operator func ==(other: InstancePropertyInfo): Bool
-    
+
     /**
      * @description Compares this `InstancePropertyInfo` to another for inequality.
      * @param other The other `InstancePropertyInfo` to compare with.
@@ -875,7 +845,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public operator func !=(other: InstancePropertyInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `InstancePropertyInfo`.
      * @returns The hash code.
@@ -884,7 +854,7 @@ public class InstancePropertyInfo <: Equatable<InstancePropertyInfo> & Hashable 
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `InstancePropertyInfo`.
      * @returns A string representation of the property.
@@ -910,7 +880,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the `TypeInfo` for the type of this property.
      * @returns The `TypeInfo` for the property's type.
@@ -921,7 +891,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         throwexception: true
     ]
     public prop typeInfo: TypeInfo
-    
+
     /**
      * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this property.
      * @returns A collection of `ModifierInfo` enums.
@@ -930,18 +900,16 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         since: "22"
     ]
     public prop modifiers: Collection<ModifierInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this property.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Determines if the property is mutable (declared with `mut`).
      * @returns `true` if the property is mutable, `false` otherwise.
@@ -950,20 +918,16 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         since: "22"
     ]
     public func isMutable(): Bool
-    
+
     /**
      * @description Gets the value of this static property.
      * @returns The value of the property.
-     * @throws IllegalTypeException if a type is invalid for an operation.
-     * @throws InfoNotFoundException if the property information cannot be found.
-     * @throws InvocationTargetException if the property getter throws an exception.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public func getValue(): Any
-    
+
     /**
      * @description Sets the value of this static property.
      * @param newValue The new value for the property.
@@ -975,7 +939,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         throwexception: true
     ]
     public func setValue(newValue: Any): Unit
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this property.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -984,7 +948,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this property.
      * @returns An array of all annotations of type `T`.
@@ -995,7 +959,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this property.
      * @returns An array containing all annotations.
@@ -1006,7 +970,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `StaticPropertyInfo` to another for equality.
      * @param other The other `StaticPropertyInfo` to compare with.
@@ -1016,7 +980,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         since: "22"
     ]
     public operator func ==(other: StaticPropertyInfo): Bool
-    
+
     /**
      * @description Compares this `StaticPropertyInfo` to another for inequality.
      * @param other The other `StaticPropertyInfo` to compare with.
@@ -1026,7 +990,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         since: "22"
     ]
     public operator func !=(other: StaticPropertyInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `StaticPropertyInfo`.
      * @returns The hash code.
@@ -1035,7 +999,7 @@ public class StaticPropertyInfo <: Equatable<StaticPropertyInfo> & Hashable & To
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `StaticPropertyInfo`.
      * @returns A string representation of the property.
@@ -1056,31 +1020,27 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
     /**
      * @description Gets a read-only list of `ParameterInfo` objects for the parameters of this constructor.
      * @returns A read-only list of `ParameterInfo` objects.
-     * @throws InfoNotFoundException if parameter information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop parameters: ReadOnlyList<ParameterInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this constructor.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Creates a new instance by invoking this constructor with the given arguments.
      * @param args An array of arguments to pass to the constructor.
      * @returns A new instance of the class.
      * @throws IllegalTypeException if a type is invalid for an operation.
-     * @throws IllegalArgumentException if the number of actual parameters in args is not equal to the number of 
+     * @throws IllegalArgumentException if the number of actual parameters in args is not equal to the number of
      *         formal parameters in the parameter list of the constructor corresponding to this constructor information.
      * @throws InvocationTargetException if the constructor throws an exception.
      */
@@ -1089,7 +1049,7 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
         throwexception: true
     ]
     public func apply(args: Array<Any>): Any
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this constructor.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -1098,7 +1058,7 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this constructor.
      * @returns An array of all annotations of type `T`.
@@ -1109,7 +1069,7 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this constructor.
      * @returns An array containing all annotations.
@@ -1120,7 +1080,7 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `ConstructorInfo` to another for equality.
      * @param other The other `ConstructorInfo` to compare with.
@@ -1130,7 +1090,7 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
         since: "22"
     ]
     public operator func ==(other: ConstructorInfo): Bool
-    
+
     /**
      * @description Compares this `ConstructorInfo` to another for inequality.
      * @param other The other `ConstructorInfo` to compare with.
@@ -1140,7 +1100,7 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
         since: "22"
     ]
     public operator func !=(other: ConstructorInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `ConstructorInfo`.
      * @returns The hash code.
@@ -1149,7 +1109,7 @@ public class ConstructorInfo <: Equatable<ConstructorInfo> & Hashable & ToString
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `ConstructorInfo`.
      * @returns A string representation of the constructor.
@@ -1177,7 +1137,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public prop genericParams: Collection<GenericTypeInfo>
-    
+
     /**
      * @description Gets the name of the function.
      * @returns The function name.
@@ -1186,55 +1146,40 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets a read-only list of `ParameterInfo` objects for the parameters of this function.
      * @returns A read-only list of `ParameterInfo` objects.
-     * @throws InfoNotFoundException if parameter information cannot be found.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public prop parameters: ReadOnlyList<ParameterInfo>
-    
-    /**
-     * @description Gets the `TypeInfo` for the return type of this function.
-     * @returns The `TypeInfo` for the return type.
-     * @throws InfoNotFoundException if return type information cannot be found.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public prop returnType: TypeInfo
-    
-    /**
-     * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this function.
-     * @returns A collection of `ModifierInfo` enums.
      */
     @!APILevel[
         since: "22"
     ]
-    public prop modifiers: Collection<ModifierInfo>
-    
+    public prop parameters: ReadOnlyList<ParameterInfo>
+
+    /**
+     * @description Gets the `TypeInfo` for the return type of this function.
+     * @returns The `TypeInfo` for the return type.
+     */
+    @!APILevel[
+        since: "22"
+    ]
+    public prop returnType: TypeInfo
+
     /**
      * @description Gets a collection of annotations present on this function.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Invokes the global function with the given arguments.
      * @param args An array of arguments to pass to the function.
      * @returns The result of the function invocation.
      * @throws IllegalTypeException if a type is invalid for an operation.
-     * @throws IllegalArgumentException if the number of actual parameters in args is not equal to the number of 
+     * @throws IllegalArgumentException if the number of actual parameters in args is not equal to the number of
      *         formal parameters in the formal parameter list of the global function corresponding to the global function information GlobalFunctionInfo.
      * @throws InvocationTargetException if the invoked function throws an exception.
      */
@@ -1243,14 +1188,14 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func apply(args: Array<Any>): Any
-    
+
     /**
      * @description Invokes the generic global function with the given generic type arguments and arguments.
      * @param genericTypeArgs An array of `TypeInfo` objects for the generic type arguments.
      * @param args An array of arguments to pass to the function.
      * @returns The result of the function invocation.
      * @throws InfoNotFoundException if the function information cannot be found.
-     * @throws IllegalArgumentException if The number of parameters in the function generic parameter list 
+     * @throws IllegalArgumentException if The number of parameters in the function generic parameter list
      *         genericTypeArgs is not equal to the number of parameters in the generic parameter list genericParams of the global function corresponding to the global function information.
      * @throws IllegalTypeException if a type is invalid for an operation.
      * @throws InvocationTargetException if the invoked function throws an exception.
@@ -1260,7 +1205,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func apply(genericTypeArgs: Array<TypeInfo>, args: Array<Any>): Any
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this function.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -1269,7 +1214,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this function.
      * @returns An array of all annotations of type `T`.
@@ -1280,7 +1225,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this function.
      * @returns An array containing all annotations.
@@ -1291,7 +1236,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `GlobalFunctionInfo` to another for equality.
      * @param other The other `GlobalFunctionInfo` to compare with.
@@ -1301,7 +1246,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         since: "22"
     ]
     public operator func ==(other: GlobalFunctionInfo): Bool
-    
+
     /**
      * @description Compares this `GlobalFunctionInfo` to another for inequality.
      * @param other The other `GlobalFunctionInfo` to compare with.
@@ -1311,7 +1256,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         since: "22"
     ]
     public operator func !=(other: GlobalFunctionInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `GlobalFunctionInfo`.
      * @returns The hash code.
@@ -1320,7 +1265,7 @@ public class GlobalFunctionInfo <: Equatable<GlobalFunctionInfo> & Hashable & To
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `GlobalFunctionInfo`.
      * @returns A string representation of the function.
@@ -1350,7 +1295,7 @@ public class InterfaceTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public redef static func get(qualifiedName: String): InterfaceTypeInfo
-    
+
     /**
      * @description Gets the `InterfaceTypeInfo` for the runtime type of the given object, if it's an interface.
      * @param a The object to get the interface information from.
@@ -1363,7 +1308,7 @@ public class InterfaceTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public redef static func of(a: Any): InterfaceTypeInfo
-    
+
     /**
      * @description Gets the `InterfaceTypeInfo` for the specified interface type `T`, if it's an interface.
      * @returns The `InterfaceTypeInfo` for type `T`.
@@ -1375,18 +1320,16 @@ public class InterfaceTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public redef static func of<T>(): InterfaceTypeInfo
-    
+
     /**
      * @description Gets a collection of `TypeInfo` objects for the direct sealed subtypes of this interface.
      * @returns A collection of `TypeInfo` objects for the sealed subtypes.
-     * @throws InfoNotFoundException if subtype information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop sealedSubtypes: Collection<TypeInfo>
-    
+
     /**
      * @description Determines if the interface is declared as `sealed`.
      * @returns `true` if the interface is `sealed`, `false` otherwise.
@@ -1462,7 +1405,7 @@ public enum ModifierInfo <: Equatable<ModifierInfo> & Hashable & ToString {
         since: "22"
     ]
     public override operator func == (other: ModifierInfo): Bool
-    
+
     /**
      * @description Compares this `ModifierInfo` to another for inequality.
      * @param other The other `ModifierInfo` to compare with.
@@ -1472,7 +1415,7 @@ public enum ModifierInfo <: Equatable<ModifierInfo> & Hashable & ToString {
         since: "22"
     ]
     public override operator func != (other: ModifierInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `ModifierInfo`.
      * @returns The hash code.
@@ -1481,7 +1424,7 @@ public enum ModifierInfo <: Equatable<ModifierInfo> & Hashable & ToString {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `ModifierInfo`.
      * @returns A string representation of the modifier.
@@ -1510,7 +1453,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public static func get(qualifiedName: String): PackageInfo
-    
+
     /**
      * @description Loads a package from the specified path and returns its `PackageInfo`.
      * @param path The file system path to the package.
@@ -1524,7 +1467,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public static func load(path: String): PackageInfo
-    
+
     /**
      * @description Gets the fully qualified name of the package.
      * @returns The qualified name.
@@ -1533,7 +1476,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         since: "22"
     ]
     public prop qualifiedName: String
-    
+
     /**
      * @description Gets the simple name of the package.
      * @returns The simple name.
@@ -1542,7 +1485,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets a collection of `TypeInfo` objects for all types within this package.
      * @returns A collection of `TypeInfo` objects.
@@ -1553,7 +1496,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop typeInfos: Collection<TypeInfo>
-    
+
     /**
      * @description Gets the version of the package.
      * @returns The package version string.
@@ -1562,7 +1505,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         since: "22"
     ]
     public prop version: String
-    
+
     /**
      * @description Gets a collection of `PackageInfo` objects for the sub-packages of this package.
      * @returns A collection of `PackageInfo` objects.
@@ -1573,7 +1516,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop subPackages: Collection<PackageInfo>
-    
+
     /**
      * @description Gets the `PackageInfo` for the parent package of this package.
      * @returns The `PackageInfo` for the parent package.
@@ -1584,7 +1527,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop parentPackage: PackageInfo
-    
+
     /**
      * @description Gets the `PackageInfo` for the root package of this package hierarchy.
      * @returns The `PackageInfo` for the root package.
@@ -1595,7 +1538,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop rootPackage: PackageInfo
-    
+
     /**
      * @description Gets the `PackageInfo` for a sub-package with the specified qualified name.
      * @param qualifiedName The qualified name of the sub-package.
@@ -1608,7 +1551,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getSubPackage(qualifiedName: String): PackageInfo
-    
+
     /**
      * @description Gets a collection of `GlobalVariableInfo` objects for the global variables in this package.
      * @returns A collection of `GlobalVariableInfo` objects.
@@ -1619,7 +1562,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop variables: Collection<GlobalVariableInfo>
-    
+
     /**
      * @description Gets a collection of `GlobalFunctionInfo` objects for the global functions in this package.
      * @returns A collection of `GlobalFunctionInfo` objects.
@@ -1630,7 +1573,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop functions: Collection<GlobalFunctionInfo>
-    
+
     /**
      * @description Gets the `TypeInfo` for a type with the specified qualified name within this package.
      * @param qualifiedTypeName The qualified name of the type.
@@ -1642,7 +1585,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getTypeInfo(qualifiedTypeName: String): TypeInfo
-    
+
     /**
      * @description Gets the `GlobalVariableInfo` for a global variable with the specified name in this package.
      * @param name The name of the global variable.
@@ -1654,7 +1597,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getVariable(name: String): GlobalVariableInfo
-    
+
     /**
      * @description Gets the `GlobalFunctionInfo` for a global function with the specified name and parameter types.
      * @param name The name of the global function.
@@ -1667,7 +1610,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getFunction(name: String, parameterTypes: Array<TypeInfo>): GlobalFunctionInfo
-    
+
     /**
      * @description Gets all `GlobalFunctionInfo` objects for global functions with the specified name (handling overloads).
      * @param name The name of the global functions.
@@ -1677,7 +1620,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         since: "22"
     ]
     public func getFunctions(name: String): Array<GlobalFunctionInfo>
-    
+
     /**
      * @description Compares this `PackageInfo` to another for equality.
      * @param other The other `PackageInfo` to compare with.
@@ -1687,7 +1630,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         since: "22"
     ]
     public operator func ==(other: PackageInfo): Bool
-    
+
     /**
      * @description Compares this `PackageInfo` to another for inequality.
      * @param other The other `PackageInfo` to compare with.
@@ -1697,7 +1640,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         since: "22"
     ]
     public operator func !=(other: PackageInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `PackageInfo`.
      * @returns The hash code.
@@ -1706,7 +1649,7 @@ public class PackageInfo <: Equatable<PackageInfo> & Hashable & ToString {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `PackageInfo`.
      * @returns A string representation of the package.
@@ -1732,7 +1675,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         since: "22"
     ]
     public prop index: Int64
-    
+
     /**
      * @description Gets the name of the parameter.
      * @returns The parameter name.
@@ -1743,7 +1686,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the `TypeInfo` for the type of this parameter.
      * @returns The `TypeInfo` for the parameter's type.
@@ -1754,18 +1697,16 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop typeInfo: TypeInfo
-    
+
     /**
      * @description Gets a collection of annotations present on this parameter.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this parameter.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -1774,7 +1715,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this parameter.
      * @returns An array of all annotations of type `T`.
@@ -1785,7 +1726,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this parameter.
      * @returns An array containing all annotations.
@@ -1796,7 +1737,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `ParameterInfo` to another for equality.
      * @param other The other `ParameterInfo` to compare with.
@@ -1806,7 +1747,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         since: "22"
     ]
     public operator func ==(other: ParameterInfo): Bool
-    
+
     /**
      * @description Compares this `ParameterInfo` to another for inequality.
      * @param other The other `ParameterInfo` to compare with.
@@ -1816,7 +1757,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         since: "22"
     ]
     public operator func !=(other: ParameterInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `ParameterInfo`.
      * @returns The hash code.
@@ -1825,7 +1766,7 @@ public class ParameterInfo <: Equatable<ParameterInfo> & Hashable & ToString {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `ParameterInfo`.
      * @returns A string representation of the parameter.
@@ -1855,12 +1796,11 @@ public class PrimitiveTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public static redef func get(qualifiedName: String): PrimitiveTypeInfo
-    
+
     /**
      * @description Gets the `PrimitiveTypeInfo` for the runtime type of the given value.
      * @param a The value to get the type information from.
      * @returns The `PrimitiveTypeInfo` for the value's type.
-     * @throws InfoNotFoundException if the type information cannot be found.
      * @throws IllegalTypeException if the type is not a primitive.
      */
     @!APILevel[
@@ -1868,7 +1808,7 @@ public class PrimitiveTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public static redef func of(a: Any): PrimitiveTypeInfo
-    
+
     /**
      * @description Gets the `PrimitiveTypeInfo` for the specified primitive type `T`.
      * @returns The `PrimitiveTypeInfo` for type `T`.
@@ -1901,7 +1841,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public static redef func get(qualifiedName: String): StructTypeInfo
-    
+
     /**
      * @description Gets the `StructTypeInfo` for the runtime type of the given value.
      * @param a The value to get the struct information from.
@@ -1914,7 +1854,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public static redef func of(a: Any): StructTypeInfo
-    
+
     /**
      * @description Gets the `StructTypeInfo` for the specified struct type `T`.
      * @returns The `StructTypeInfo` for type `T`.
@@ -1926,7 +1866,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public static redef func of<T>(): StructTypeInfo
-    
+
     /**
      * @description Gets a collection of `ConstructorInfo` objects for the public constructors of this struct.
      * @returns A collection of `ConstructorInfo` objects.
@@ -1937,7 +1877,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public prop constructors: Collection<ConstructorInfo>
-    
+
     /**
      * @description Gets a collection of `InstanceVariableInfo` objects for the fields of this struct.
      * @returns A collection of `InstanceVariableInfo` objects.
@@ -1948,7 +1888,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public prop instanceVariables: Collection<InstanceVariableInfo>
-    
+
     /**
      * @description Gets a collection of `StaticVariableInfo` objects for the static variables of this struct.
      * @returns A collection of `StaticVariableInfo` objects.
@@ -1959,7 +1899,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public prop staticVariables: Collection<StaticVariableInfo>
-    
+
     /**
      * @description Creates a new instance of this struct by invoking the appropriate constructor with the given arguments.
      * @param args An array of arguments to be passed to the constructor.
@@ -1971,7 +1911,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public func construct(args: Array<Any>): Any
-    
+
     /**
      * @description Gets the `ConstructorInfo` for the constructor with the specified parameter types.
      * @param parameterTypes An array of `TypeInfo` objects representing the parameter types of the constructor.
@@ -1983,7 +1923,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public func getConstructor(parameterTypes: Array<TypeInfo>): ConstructorInfo
-    
+
     /**
      * @description Gets the `InstanceVariableInfo` for the field with the specified name.
      * @param name The name of the field.
@@ -1995,7 +1935,7 @@ public class StructTypeInfo <: TypeInfo {
         throwexception: true
     ]
     public func getInstanceVariable(name: String): InstanceVariableInfo
-    
+
     /**
      * @description Gets the `StaticVariableInfo` for the static variable with the specified name.
      * @param name The name of the static variable.
@@ -2026,7 +1966,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public static func of<T>(): TypeInfo
-    
+
     /**
      * @description Gets the `TypeInfo` for the runtime type of the given object.
      * @param a The object to get the type information from.
@@ -2038,7 +1978,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public static func of(a: Any): TypeInfo
-    
+
     /**
      * @description Gets the `ClassTypeInfo` for the runtime class of the given object.
      * @param a The object to get the class information from.
@@ -2050,7 +1990,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public static func of(a: Object): ClassTypeInfo
-    
+
     /**
      * @description Gets the `TypeInfo` for a type with the specified qualified name.
      * @param qualifiedName The fully qualified name of the type.
@@ -2062,7 +2002,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public static func get(qualifiedName: String): TypeInfo
-    
+
     /**
      * @description Gets the simple name of the type.
      * @returns The simple name of the type.
@@ -2071,7 +2011,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the fully qualified name of the type.
      * @returns The fully qualified name of the type.
@@ -2080,7 +2020,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public prop qualifiedName: String
-    
+
     /**
      * @description Gets a collection of `InstanceFunctionInfo` objects for the instance functions of this type.
      * @returns A collection of `InstanceFunctionInfo` objects.
@@ -2091,7 +2031,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop instanceFunctions: Collection<InstanceFunctionInfo>
-    
+
     /**
      * @description Gets a collection of `StaticFunctionInfo` objects for the static functions of this type.
      * @returns A collection of `StaticFunctionInfo` objects.
@@ -2102,7 +2042,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop staticFunctions: Collection<StaticFunctionInfo>
-    
+
     /**
      * @description Gets a collection of `InstancePropertyInfo` objects for the instance properties of this type.
      * @returns A collection of `InstancePropertyInfo` objects.
@@ -2113,7 +2053,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop instanceProperties: Collection<InstancePropertyInfo>
-    
+
     /**
      * @description Gets a collection of `StaticPropertyInfo` objects for the static properties of this type.
      * @returns A collection of `StaticPropertyInfo` objects.
@@ -2124,18 +2064,16 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop staticProperties: Collection<StaticPropertyInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this type.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Gets a collection of `InterfaceTypeInfo` objects for the interfaces implemented by this type.
      * @returns A collection of `InterfaceTypeInfo` objects.
@@ -2146,7 +2084,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public prop superInterfaces: Collection<InterfaceTypeInfo>
-    
+
     /**
      * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this type.
      * @returns A collection of `ModifierInfo` enums.
@@ -2155,7 +2093,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public prop modifiers: Collection<ModifierInfo>
-    
+
     /**
      * @description Checks if this type is a subtype of the specified supertype.
      * @param supertype The `TypeInfo` of the potential supertype.
@@ -2165,7 +2103,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public func isSubtypeOf(supertype: TypeInfo): Bool
-    
+
     /**
      * @description Gets the `InstanceFunctionInfo` for an instance function with the specified name and parameter types.
      * @param name The name of the instance function.
@@ -2178,7 +2116,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getInstanceFunction(name: String, parameterTypes: Array<TypeInfo>): InstanceFunctionInfo
-    
+
     /**
      * @description Gets all `InstanceFunctionInfo` objects for instance functions with the specified name (handling overloads).
      * @param name The name of the instance functions.
@@ -2188,7 +2126,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public func getInstanceFunctions(name: String): Array<InstanceFunctionInfo>
-    
+
     /**
      * @description Gets the `StaticFunctionInfo` for a static function with the specified name and parameter types.
      * @param name The name of the static function.
@@ -2201,7 +2139,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getStaticFunction(name: String, parameterTypes: Array<TypeInfo>): StaticFunctionInfo
-    
+
     /**
      * @description Gets all `StaticFunctionInfo` objects for static functions with the specified name (handling overloads).
      * @param name The name of the static functions.
@@ -2211,7 +2149,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public func getStaticFunctions(name: String): Array<StaticFunctionInfo>
-    
+
     /**
      * @description Gets the `InstancePropertyInfo` for an instance property with the specified name.
      * @param name The name of the instance property.
@@ -2223,7 +2161,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getInstanceProperty(name: String): InstancePropertyInfo
-    
+
     /**
      * @description Gets the `StaticPropertyInfo` for a static property with the specified name.
      * @param name The name of the static property.
@@ -2235,7 +2173,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getStaticProperty(name: String): StaticPropertyInfo
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this type.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -2244,7 +2182,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this type.
      * @returns An array of all annotations of type `T`.
@@ -2255,7 +2193,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this type.
      * @returns An array containing all annotations.
@@ -2266,7 +2204,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `TypeInfo` to another for equality.
      * @param other The other `TypeInfo` to compare with.
@@ -2276,7 +2214,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public operator func ==(other: TypeInfo): Bool
-    
+
     /**
      * @description Compares this `TypeInfo` to another for inequality.
      * @param other The other `TypeInfo` to compare with.
@@ -2286,7 +2224,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public operator func !=(other: TypeInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `TypeInfo`.
      * @returns The hash code.
@@ -2295,7 +2233,7 @@ sealed abstract class TypeInfo <: Equatable<TypeInfo> & Hashable & ToString {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `TypeInfo`.
      * @returns A string representation of the type.
@@ -2339,7 +2277,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the `TypeInfo` for the type of this instance variable.
      * @returns The `TypeInfo` for the variable's type.
@@ -2350,7 +2288,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         throwexception: true
     ]
     public prop typeInfo: TypeInfo
-    
+
     /**
      * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this instance variable.
      * @returns A collection of `ModifierInfo` enums.
@@ -2359,18 +2297,16 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         since: "22"
     ]
     public prop modifiers: Collection<ModifierInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this instance variable.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Determines if the instance variable is mutable (declared with `mut`).
      * @returns `true` if the variable is mutable, `false` otherwise.
@@ -2379,7 +2315,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         since: "22"
     ]
     public func isMutable(): Bool
-    
+
     /**
      * @description Gets the value of this instance variable from the specified instance.
      * @param instance The object instance from which to get the variable's value.
@@ -2391,7 +2327,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         throwexception: true
     ]
     public func getValue(instance: Any): Any
-    
+
     /**
      * @description Sets the value of this instance variable on the specified instance.
      * @param instance The object instance on which to set the variable's value.
@@ -2404,7 +2340,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         throwexception: true
     ]
     public func setValue(instance: Any, newValue: Any): Unit
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this instance variable.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -2413,7 +2349,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this instance variable.
      * @returns An array of all annotations of type `T`.
@@ -2424,7 +2360,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this instance variable.
      * @returns An array containing all annotations.
@@ -2435,7 +2371,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `InstanceVariableInfo` to another for equality.
      * @param other The other `InstanceVariableInfo` to compare with.
@@ -2445,7 +2381,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         since: "22"
     ]
     public operator func ==(other: InstanceVariableInfo): Bool
-    
+
     /**
      * @description Compares this `InstanceVariableInfo` to another for inequality.
      * @param other The other `InstanceVariableInfo` to compare with.
@@ -2455,7 +2391,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         since: "22"
     ]
     public operator func !=(other: InstanceVariableInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `InstanceVariableInfo`.
      * @returns The hash code.
@@ -2464,7 +2400,7 @@ public class InstanceVariableInfo <: Equatable<InstanceVariableInfo> & Hashable 
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `InstanceVariableInfo`.
      * @returns A string representation of the instance variable.
@@ -2490,7 +2426,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the `TypeInfo` for the type of this static variable.
      * @returns The `TypeInfo` for the variable's type.
@@ -2501,7 +2437,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         throwexception: true
     ]
     public prop typeInfo: TypeInfo
-    
+
     /**
      * @description Gets a collection of `ModifierInfo` enums representing the modifiers of this static variable.
      * @returns A collection of `ModifierInfo` enums.
@@ -2510,18 +2446,16 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public prop modifiers: Collection<ModifierInfo>
-    
+
     /**
      * @description Gets a collection of annotations present on this static variable.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Determines if the static variable is mutable (declared with `mut`).
      * @returns `true` if the variable is mutable, `false` otherwise.
@@ -2530,7 +2464,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public func isMutable(): Bool
-    
+
     /**
      * @description Gets the value of this static variable.
      * @returns The value of the variable.
@@ -2539,7 +2473,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public func getValue(): Any
-    
+
     /**
      * @description Sets the value of this static variable.
      * @param newValue The new value for the variable.
@@ -2551,7 +2485,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         throwexception: true
     ]
     public func setValue(newValue: Any): Unit
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this static variable.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -2560,7 +2494,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this static variable.
      * @returns An array of all annotations of type `T`.
@@ -2571,7 +2505,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this static variable.
      * @returns An array containing all annotations.
@@ -2582,7 +2516,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `StaticVariableInfo` to another for equality.
      * @param other The other `StaticVariableInfo` to compare with.
@@ -2592,7 +2526,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public operator func ==(other: StaticVariableInfo): Bool
-    
+
     /**
      * @description Compares this `StaticVariableInfo` to another for inequality.
      * @param other The other `StaticVariableInfo` to compare with.
@@ -2602,7 +2536,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public operator func !=(other: StaticVariableInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `StaticVariableInfo`.
      * @returns The hash code.
@@ -2611,7 +2545,7 @@ public class StaticVariableInfo <: Equatable<StaticVariableInfo> & Hashable & To
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `StaticVariableInfo`.
      * @returns A string representation of the static variable.
@@ -2637,29 +2571,25 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the `TypeInfo` for the type of this global variable.
      * @returns The `TypeInfo` for the variable's type.
-     * @throws InfoNotFoundException if type information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop typeInfo: TypeInfo
-    
+
     /**
      * @description Gets a collection of annotations present on this global variable.
      * @returns A collection of `Annotation` objects.
-     * @throws InfoNotFoundException if annotation information cannot be found.
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public prop annotations: Collection<Annotation>
-    
+
     /**
      * @description Determines if the global variable is mutable (declared with `mut`).
      * @returns `true` if the variable is mutable, `false` otherwise.
@@ -2668,7 +2598,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         since: "22"
     ]
     public func isMutable(): Bool
-    
+
     /**
      * @description Gets the value of this global variable.
      * @returns The value of the variable.
@@ -2677,7 +2607,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         since: "22"
     ]
     public func getValue(): Any
-    
+
     /**
      * @description Sets the value of this global variable.
      * @param newValue The new value for the variable.
@@ -2689,7 +2619,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         throwexception: true
     ]
     public func setValue(newValue: Any): Unit
-    
+
     /**
      * @description Finds an annotation of the specified type `T` on this global variable.
      * @returns An `Option` containing the annotation if present, otherwise `None`.
@@ -2698,7 +2628,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         since: "22"
     ]
     public func findAnnotation<T>(): ?T where T <: Annotation
-    
+
     /**
      * @description Finds all annotations of the specified type `T` on this global variable.
      * @returns An array of all annotations of type `T`.
@@ -2709,7 +2639,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         throwexception: true
     ]
     public func findAllAnnotations<T>(): Array<T> where T <: Annotation
-    
+
     /**
      * @description Gets all annotations present on this global variable.
      * @returns An array containing all annotations.
@@ -2720,7 +2650,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         throwexception: true
     ]
     public func getAllAnnotations(): Array<Annotation>
-    
+
     /**
      * @description Compares this `GlobalVariableInfo` to another for equality.
      * @param other The other `GlobalVariableInfo` to compare with.
@@ -2730,7 +2660,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         since: "22"
     ]
     public operator func ==(other: GlobalVariableInfo): Bool
-    
+
     /**
      * @description Compares this `GlobalVariableInfo` to another for inequality.
      * @param other The other `GlobalVariableInfo` to compare with.
@@ -2740,7 +2670,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         since: "22"
     ]
     public operator func !=(other: GlobalVariableInfo): Bool
-    
+
     /**
      * @description Computes the hash code for this `GlobalVariableInfo`.
      * @returns The hash code.
@@ -2749,7 +2679,7 @@ public class GlobalVariableInfo <: Equatable<GlobalVariableInfo> & Hashable & To
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Returns a string representation of this `GlobalVariableInfo`.
      * @returns A string representation of the global variable.

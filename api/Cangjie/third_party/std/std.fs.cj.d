@@ -166,7 +166,7 @@ public class Directory {
         throwexception: true
     ]
     public static func create(path: String, recursive!: Bool = false): Unit
-    
+
     /**
      * @description Creates a directory at the specified path
      * @param path - Path object to the directory to create
@@ -180,7 +180,7 @@ public class Directory {
         throwexception: true
     ]
     public static func create(path: Path, recursive!: Bool = false): Unit
-    
+
     /**
      * @description Creates a temporary directory in the specified directory path
      * @param directoryPath - Path string to the parent directory where temporary directory will be created
@@ -193,7 +193,7 @@ public class Directory {
         throwexception: true
     ]
     public static func createTemp(directoryPath: String): Path
-    
+
     /**
      * @description Creates a temporary directory in the specified directory path
      * @param directoryPath - Path object to the parent directory where temporary directory will be created
@@ -206,7 +206,7 @@ public class Directory {
         throwexception: true
     ]
     public static func createTemp(directoryPath: Path): Path
-    
+
     /**
      * @description Checks whether a directory is empty (contains no files or subdirectories)
      * @param path - Path object to the directory to check
@@ -219,7 +219,7 @@ public class Directory {
         throwexception: true
     ]
     public static func isEmpty(path: Path): Bool
-    
+
     /**
      * @description Checks whether a directory is empty (contains no files or subdirectories)
      * @param path - Path string to the directory to check
@@ -232,7 +232,7 @@ public class Directory {
         throwexception: true
     ]
     public static func isEmpty(path: String): Bool
-    
+
     /**
      * @description Reads all file and directory information from the specified directory
      * @param path - Path object to the directory to read from
@@ -245,7 +245,7 @@ public class Directory {
         throwexception: true
     ]
     public static func readFrom(path: Path): Array<FileInfo>
-    
+
     /**
      * @description Reads all file and directory information from the specified directory
      * @param path - Path string to the directory to read from
@@ -258,7 +258,7 @@ public class Directory {
         throwexception: true
     ]
     public static func readFrom(path: String): Array<FileInfo>
-    
+
     /**
      * @description Walks through a directory and calls a function for each entry
      * @param path - Path object to the directory to walk through
@@ -272,7 +272,7 @@ public class Directory {
         throwexception: true
     ]
     public static func walk(path: Path, f: (FileInfo) -> Bool): Unit
-    
+
     /**
      * @description Walks through a directory and calls a function for each entry
      * @param path - Path string to the directory to walk through
@@ -302,7 +302,7 @@ public enum OpenMode <: ToString & Equatable<OpenMode> {
         since: "22"
     ]
     Read |
-    
+
     /**
      * @description Open mode for writing to files
      */
@@ -310,7 +310,7 @@ public enum OpenMode <: ToString & Equatable<OpenMode> {
         since: "22"
     ]
     Write |
-    
+
     /**
      * @description Open mode for appending to files
      */
@@ -318,7 +318,7 @@ public enum OpenMode <: ToString & Equatable<OpenMode> {
         since: "22"
     ]
     Append |
-    
+
     /**
      * @description Open mode for both reading and writing to files
      */
@@ -326,7 +326,7 @@ public enum OpenMode <: ToString & Equatable<OpenMode> {
         since: "22"
     ]
     ReadWrite
-    
+
     /**
      * @description Compares this open mode with another for equality
      * @param other - OpenMode to compare with
@@ -336,7 +336,7 @@ public enum OpenMode <: ToString & Equatable<OpenMode> {
         since: "22"
     ]
     public operator func ==(other: OpenMode): Bool
-    
+
     /**
      * @description Compares this open mode with another for inequality
      * @param other - OpenMode to compare with
@@ -346,7 +346,7 @@ public enum OpenMode <: ToString & Equatable<OpenMode> {
         since: "22"
     ]
     public operator func !=(other: OpenMode): Bool
-    
+
     /**
      * @description Converts the open mode to its string representation
      * @returns String representation of the open mode
@@ -394,7 +394,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public init(path: String, mode: OpenMode)
-    
+
     /**
      * @description Creates a new file instance with the specified path and open mode
      * @param path - Path object to the file
@@ -407,7 +407,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public init(path: Path, mode: OpenMode)
-    
+
     /**
      * @description Gets the file information
      * @returns FileInfo object containing information about the file
@@ -416,7 +416,7 @@ public class File <: Resource & IOStream & Seekable {
         since: "22"
     ]
     public prop info: FileInfo
-    
+
     /**
      * @description Gets the file descriptor
      * @returns FileDescriptor object representing the file handle
@@ -425,7 +425,7 @@ public class File <: Resource & IOStream & Seekable {
         since: "22"
     ]
     public prop fileDescriptor: FileDescriptor
-    
+
     /**
      * @description Gets the length of the file
      * @returns Length of the file in bytes
@@ -434,7 +434,7 @@ public class File <: Resource & IOStream & Seekable {
         since: "22"
     ]
     public prop length: Int64
-    
+
     /**
      * @description Sets the length of the file
      * @param length - New length for the file
@@ -447,7 +447,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public func setLength(length: Int64): Unit
-    
+
     /**
      * @description Reads data from the file into a buffer
      * @param buffer - Byte array to read data into
@@ -460,7 +460,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public func read(buffer: Array<Byte>): Int64
-    
+
     /**
      * @description Writes data from a buffer to the file
      * @param buffer - Byte array containing data to write
@@ -472,7 +472,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public func write(buffer: Array<Byte>): Unit
-    
+
     /**
      * @description Flushes the file buffer
      * @returns Unit
@@ -481,7 +481,7 @@ public class File <: Resource & IOStream & Seekable {
         since: "22"
     ]
     public func flush(): Unit
-    
+
     /**
      * @description Sets the file pointer to a specific position
      * @param sp - Seek position to move to
@@ -493,7 +493,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public func seek(sp: SeekPosition): Int64
-    
+
     /**
      * @description Checks if the file can be read
      * @returns True if the file can be read, false otherwise
@@ -502,7 +502,7 @@ public class File <: Resource & IOStream & Seekable {
         since: "22"
     ]
     public func canRead(): Bool
-    
+
     /**
      * @description Checks if the file can be written
      * @returns True if the file can be written, false otherwise
@@ -511,7 +511,7 @@ public class File <: Resource & IOStream & Seekable {
         since: "22"
     ]
     public func canWrite(): Bool
-    
+
     /**
      * @description Closes the file
      * @returns Unit
@@ -522,7 +522,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public func close(): Unit
-    
+
     /**
      * @description Checks if the file is closed
      * @returns True if the file is closed, false otherwise
@@ -531,7 +531,7 @@ public class File <: Resource & IOStream & Seekable {
         since: "22"
     ]
     public func isClosed(): Bool
-    
+
     /**
      * @description Creates a new file at the specified path
      * @param path - Path object to the file to create
@@ -544,7 +544,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func create(path: Path): File
-    
+
     /**
      * @description Creates a new file at the specified path
      * @param path - Path string to the file to create
@@ -557,7 +557,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func create(path: String): File
-    
+
     /**
      * @description Creates a temporary file in the specified directory path
      * @param directoryPath - Path string to the parent directory where temporary file will be created
@@ -570,7 +570,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func createTemp(directoryPath: String): File
-    
+
     /**
      * @description Creates a temporary file in the specified directory path
      * @param directoryPath - Path object to the parent directory where temporary file will be created
@@ -583,7 +583,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func createTemp(directoryPath: Path): File
-    
+
     /**
      * @description Reads all data from a file at the specified path
      * @param path - Path object to the file to read from
@@ -596,7 +596,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func readFrom(path: Path): Array<Byte>
-    
+
     /**
      * @description Reads all data from a file at the specified path
      * @param path - Path string to the file to read from
@@ -609,7 +609,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func readFrom(path: String): Array<Byte>
-    
+
     /**
      * @description Writes data to a file at the specified path
      * @param path - Path object to the file to write to
@@ -623,7 +623,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func writeTo(path: Path, buffer: Array<Byte>): Unit
-    
+
     /**
      * @description Writes data to a file at the specified path
      * @param path - Path string to the file to write to
@@ -637,7 +637,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func writeTo(path: String, buffer: Array<Byte>): Unit
-    
+
     /**
      * @description Appends data to a file at the specified path
      * @param path - Path object to the file to append to
@@ -651,7 +651,7 @@ public class File <: Resource & IOStream & Seekable {
         throwexception: true
     ]
     public static func appendTo(path: Path, buffer: Array<Byte>): Unit
-    
+
     /**
      * @description Appends data to a file at the specified path
      * @param path - Path string to the file to append to
@@ -685,7 +685,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public init(path: Path)
-    
+
     /**
      * @description Creates a FileInfo instance for the specified path
      * @param path - Path string to get file information for
@@ -697,7 +697,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public init(path: String)
-    
+
     /**
      * @description Gets the name of the file or directory
      * @returns Name of the file or directory
@@ -706,7 +706,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         since: "22"
     ]
     public prop name: String
-    
+
     /**
      * @description Gets the parent directory information
      * @returns Option containing FileInfo of parent directory, or None if at root
@@ -715,7 +715,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         since: "22"
     ]
     public prop parentDirectory: Option<FileInfo>
-    
+
     /**
      * @description Gets the path
      * @returns Path object
@@ -724,7 +724,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         since: "22"
     ]
     public prop path: Path
-    
+
     /**
      * @description Gets the creation time of the file or directory
      * @returns DateTime representing when the file or directory was created
@@ -735,7 +735,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public prop creationTime: DateTime
-    
+
     /**
      * @description Gets the last access time of the file or directory
      * @returns DateTime representing when the file or directory was last accessed
@@ -746,7 +746,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public prop lastAccessTime: DateTime
-    
+
     /**
      * @description Gets the last modification time of the file or directory
      * @returns DateTime representing when the file or directory was last modified
@@ -757,7 +757,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public prop lastModificationTime: DateTime
-    
+
     /**
      * @description Gets the size of the file or directory
      * @returns Size in bytes
@@ -768,7 +768,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public prop size: Int64
-    
+
     /**
      * @description Checks if the path is a symbolic link
      * @returns True if the path is a symbolic link, false otherwise
@@ -779,7 +779,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func isSymbolicLink(): Bool
-    
+
     /**
      * @description Checks if the path is a regular file
      * @returns True if the path is a regular file, false otherwise
@@ -790,7 +790,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func isRegular(): Bool
-    
+
     /**
      * @description Checks if the path is a directory
      * @returns True if the path is a directory, false otherwise
@@ -801,7 +801,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func isDirectory(): Bool
-    
+
     /**
      * @description Checks if the file or directory is read-only
      * @returns True if read-only, false otherwise
@@ -812,7 +812,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func isReadOnly(): Bool
-    
+
     /**
      * @description Checks if the file or directory is hidden
      * @returns True if hidden, false otherwise
@@ -821,7 +821,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         since: "22"
     ]
     public func isHidden(): Bool
-    
+
     /**
      * @description Checks if the file or directory is executable
      * @returns True if executable, false otherwise
@@ -832,7 +832,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func canExecute(): Bool
-    
+
     /**
      * @description Checks if the file or directory is readable
      * @returns True if readable, false otherwise
@@ -843,7 +843,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func canRead(): Bool
-    
+
     /**
      * @description Checks if the file or directory is writable
      * @returns True if writable, false otherwise
@@ -854,7 +854,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func canWrite(): Bool
-    
+
     /**
      * @description Set executable or not for the file or directory
      * @returns True if set, false otherwise
@@ -865,7 +865,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func setExecutable(executable: Bool): Bool
-    
+
     /**
      * @description Set readable or not for the file or directory
      * @returns True if set, false otherwise
@@ -876,7 +876,7 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func setReadable(readable: Bool): Bool
-    
+
     /**
      * @description Set writable or not for the file or directory
      * @returns True if set, false otherwise
@@ -887,16 +887,14 @@ public struct FileInfo <: Equatable<FileInfo> {
         throwexception: true
     ]
     public func setWritable(writable: Bool): Bool
-    
+
     /**
      * @description Compares this FileInfo with another for equality
      * @param other - FileInfo object to compare with
      * @returns True if FileInfos are equal, false otherwise
-     * @throws IllegalArgumentException when path is empty or contains null characters
      */
     @!APILevel[
-        since: "22",
-        throwexception: true
+        since: "22"
     ]
     public operator func ==(other: FileInfo): Bool
 }
@@ -915,7 +913,7 @@ public class FSException <: IOException {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Creates a new FSException with the specified message.
      * @param message - The exception message.
@@ -1001,7 +999,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public static const Separator: String = PATH_SEPARATOR
-    
+
     /**
      * @description Path list separator character for the current platform
      */
@@ -1009,7 +1007,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public static const ListSeparator: String = PATH_LISTSEPARATOR
-    
+
     /**
      * @description Creates a new Path instance with the specified raw path string
      * @param rawPath - Raw path string
@@ -1018,7 +1016,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public init(rawPath: String)
-    
+
     /**
      * @description Gets the parent path
      * @returns Parent Path object
@@ -1027,7 +1025,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public prop parent: Path
-    
+
     /**
      * @description Gets the file name of the path
      * @returns File name as String
@@ -1036,7 +1034,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public prop fileName: String
-    
+
     /**
      * @description Gets the extension name of the file
      * @returns Extension name as String
@@ -1045,7 +1043,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public prop extensionName: String
-    
+
     /**
      * @description Gets the file name without extension
      * @returns File name without extension as String
@@ -1054,7 +1052,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public prop fileNameWithoutExtension: String
-    
+
     /**
      * @description Checks if the path is absolute
      * @returns True if path is absolute, false otherwise
@@ -1063,7 +1061,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public func isAbsolute(): Bool
-    
+
     /**
      * @description Checks if the path is relative
      * @returns True if path is relative, false otherwise
@@ -1072,7 +1070,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public func isRelative(): Bool
-    
+
     /**
      * @description Joins this path with another path string
      * @param path - Path string to join with
@@ -1085,7 +1083,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         throwexception: true
     ]
     public func join(path: String): Path
-    
+
     /**
      * @description Joins this path with another path
      * @param path - Path object to join with
@@ -1098,7 +1096,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         throwexception: true
     ]
     public func join(path: Path): Path
-    
+
     /**
      * @description Checks if the path is empty
      * @returns True if path is empty, false otherwise
@@ -1107,7 +1105,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public func isEmpty(): Bool
-    
+
     /**
      * @description Normalizes the path
      * @returns Normalized Path object
@@ -1116,7 +1114,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public func normalize(): Path
-    
+
     /**
      * @description Compares this path with another for equality
      * @param other - Path object to compare with
@@ -1128,7 +1126,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         throwexception: true
     ]
     public operator func ==(other: Path): Bool
-    
+
     /**
      * @description Computes the hash code of the path
      * @returns Hash code value
@@ -1137,7 +1135,7 @@ public struct Path <: Equatable<Path> & Hashable & ToString {
         since: "22"
     ]
     public func hashCode(): Int64
-    
+
     /**
      * @description Converts the path to its string representation
      * @returns String representation of the path
@@ -1167,7 +1165,7 @@ public class SymbolicLink {
         throwexception: true
     ]
     public static func create(link: Path, to!: Path): Unit
-    
+
     /**
      * @description Creates a symbolic link.
      * @param link - The path of the symbolic link to be created.
@@ -1180,7 +1178,7 @@ public class SymbolicLink {
         throwexception: true
     ]
     public static func create(link: String, to!: String): Unit
-    
+
     /**
      * @description Reads the target of a symbolic link
      * @param path - Path string to the symbolic link
@@ -1194,7 +1192,7 @@ public class SymbolicLink {
         throwexception: true
     ]
     public static func readFrom(path: String, recursive!: Bool = false): Path
-    
+
     /**
      * @description Reads the target of a symbolic link
      * @param path - Path object to the symbolic link

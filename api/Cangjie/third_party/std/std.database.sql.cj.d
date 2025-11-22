@@ -28,7 +28,7 @@ public interface ColumnInfo {
         since: "22"
     ]
     prop name: String
-    
+
     /**
      * @description The database-specific type name of the column.
      */
@@ -36,7 +36,7 @@ public interface ColumnInfo {
         since: "22"
     ]
     prop typeName: String
-    
+
     /**
      * @description The length or precision of the column.
      */
@@ -44,7 +44,7 @@ public interface ColumnInfo {
         since: "22"
     ]
     prop length: Int64
-    
+
     /**
      * @description The scale of the column, for decimal types.
      */
@@ -52,7 +52,7 @@ public interface ColumnInfo {
         since: "22"
     ]
     prop scale: Int64
-    
+
     /**
      * @description Indicates whether the column can hold `null` values.
      */
@@ -60,7 +60,7 @@ public interface ColumnInfo {
         since: "22"
     ]
     prop nullable: Bool
-    
+
     /**
      * @description The recommended display size for the column.
      */
@@ -84,7 +84,7 @@ public interface Connection <: Resource {
         since: "22"
     ]
     prop state: ConnectionState
-    
+
     /**
      * @description Retrieves metadata about the database.
      * @returns A `Map` containing database metadata properties.
@@ -93,7 +93,7 @@ public interface Connection <: Resource {
         since: "22"
     ]
     func getMetaData(): Map<String, String>
-    
+
     /**
      * @description Creates a `Statement` object for sending SQL statements to the database.
      * @param sql An SQL statement that may contain one or more '?' IN parameter placeholders.
@@ -103,7 +103,7 @@ public interface Connection <: Resource {
         since: "22"
     ]
     func prepareStatement(sql: String): Statement
-    
+
     /**
      * @description Creates a `Transaction` object for managing a database transaction.
      * @returns A new `Transaction` object.
@@ -158,7 +158,7 @@ public enum ConnectionState <: Equatable<ConnectionState> {
         since: "22"
     ]
     public operator func ==(other: ConnectionState): Bool
-    
+
     /**
      * @description Compares this connection state with another for inequality.
      * @param other The other `ConnectionState` to compare with.
@@ -186,7 +186,7 @@ public interface Datasource <: Resource {
         since: "22"
     ]
     func setOption(key: String, value: String): Unit
-    
+
     /**
      * @description Attempts to establish a connection with the data source.
      * @returns A `Connection` to the datasource.
@@ -211,7 +211,7 @@ public interface Driver {
         since: "22"
     ]
     prop name: String
-    
+
     /**
      * @description The version of the driver.
      */
@@ -219,7 +219,7 @@ public interface Driver {
         since: "22"
     ]
     prop version: String
-    
+
     /**
      * @description Indicates whether the driver prefers to be used with connection pooling.
      */
@@ -227,7 +227,7 @@ public interface Driver {
         since: "22"
     ]
     prop preferredPooling: Bool
-    
+
     /**
      * @description Opens a new datasource.
      * @param connectionString The connection string for the database.
@@ -258,7 +258,7 @@ public class DriverManager {
         throwexception: true
     ]
     public static func register(driverName: String, driver: Driver): Unit
-    
+
     /**
      * @description Removes a driver from the `DriverManager`.
      * @param driverName The name of the driver to deregister.
@@ -267,7 +267,7 @@ public class DriverManager {
         since: "22"
     ]
     public static func deregister(driverName: String): Unit
-    
+
     /**
      * @description Retrieves a driver by its name.
      * @param driverName The name of the driver.
@@ -277,7 +277,7 @@ public class DriverManager {
         since: "22"
     ]
     public static func getDriver(driverName: String): Option<Driver>
-    
+
     /**
      * @description Retrieves a list of all registered driver names.
      * @returns An `Array<String>` of driver names.
@@ -303,7 +303,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public init(datasource: Datasource)
-    
+
     /**
      * @description The maximum amount of time that a connection is allowed to sit idle in the pool.
      */
@@ -311,7 +311,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public mut prop idleTimeout: Duration
-    
+
     /**
      * @description The maximum lifetime of a connection in the pool.
      */
@@ -319,7 +319,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public mut prop maxLifeTime: Duration
-    
+
     /**
      * @description The frequency at which connections are checked to be kept alive.
      */
@@ -327,7 +327,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public mut prop keepaliveTime: Duration
-    
+
     /**
      * @description The maximum number of connections in the pool.
      */
@@ -335,7 +335,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public mut prop maxSize: Int32
-    
+
     /**
      * @description The maximum number of idle connections to maintain in the pool.
      */
@@ -343,7 +343,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public mut prop maxIdleSize: Int32
-    
+
     /**
      * @description The maximum time to wait for a connection from the pool.
      * @throws ArithmeticException if an arithmetic error occurs.
@@ -353,7 +353,7 @@ public class PooledDatasource <: Datasource {
         throwexception: true
     ]
     public mut prop connectionTimeout: Duration
-    
+
     /**
      * @description Sets a configuration option on the underlying datasource.
      * @param key The option key.
@@ -363,7 +363,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public func setOption(key: String, value: String): Unit
-    
+
     /**
      * @description Retrieves a connection from the pool.
      * @returns A `Connection` object.
@@ -374,7 +374,7 @@ public class PooledDatasource <: Datasource {
         throwexception: true
     ]
     public func connect(): Connection
-    
+
     /**
      * @description Checks if the datasource has been closed.
      * @returns `true` if the datasource is closed, `false` otherwise.
@@ -383,7 +383,7 @@ public class PooledDatasource <: Datasource {
         since: "22"
     ]
     public func isClosed(): Bool
-    
+
     /**
      * @description Closes the datasource and all its connections.
      * @throws SqlException if a database access error occurs.
@@ -409,7 +409,7 @@ public interface QueryResult <: Resource {
         since: "22"
     ]
     prop columnInfos: Array<ColumnInfo>
-    
+
     /**
      * @description Moves the cursor to the next row in the result set.
      * @param values An array to be populated with the values of the next row.
@@ -419,7 +419,7 @@ public interface QueryResult <: Resource {
         since: "22"
     ]
     func next(values: Array<SqlDbType>): Bool
-    
+
     /**
      * @description Moves the cursor to the next row in the result set.
      * @returns `true` if there is another row, `false` otherwise.
@@ -428,7 +428,7 @@ public interface QueryResult <: Resource {
         since: "22"
     ]
     func next(): Bool
-    
+
     /**
      * @description Gets the value of the specified column in the current row.
      * @param index The 1-based index of the column.
@@ -438,7 +438,7 @@ public interface QueryResult <: Resource {
         since: "22"
     ]
     func get<T>(index: Int64): T
-    
+
     /**
      * @description Gets the value of the specified column in the current row, which may be `null`.
      * @param index The 1-based index of the column.
@@ -490,7 +490,7 @@ public class SqlChar <: SqlDbType {
         since: "22"
     ]
     public init(v: String)
-    
+
     /**
      * @description The string value.
      */
@@ -498,7 +498,7 @@ public class SqlChar <: SqlDbType {
         since: "22"
     ]
     public mut prop value: String
-    
+
     /**
      * @description The name of the type.
      */
@@ -523,7 +523,7 @@ public class SqlNullableChar <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?String)
-    
+
     /**
      * @description The nullable string value.
      */
@@ -531,7 +531,7 @@ public class SqlNullableChar <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?String
-    
+
     /**
      * @description The name of the type.
      */
@@ -556,7 +556,7 @@ public class SqlVarchar <: SqlDbType {
         since: "22"
     ]
     public init(v: String)
-    
+
     /**
      * @description The string value.
      */
@@ -564,7 +564,7 @@ public class SqlVarchar <: SqlDbType {
         since: "22"
     ]
     public mut prop value: String
-    
+
     /**
      * @description The name of the type.
      */
@@ -589,7 +589,7 @@ public class SqlNullableVarchar <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?String)
-    
+
     /**
      * @description The nullable string value.
      */
@@ -597,7 +597,7 @@ public class SqlNullableVarchar <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?String
-    
+
     /**
      * @description The name of the type.
      */
@@ -622,7 +622,7 @@ public class SqlBinary <: SqlDbType {
         since: "22"
     ]
     public init(v: Array<Byte>)
-    
+
     /**
      * @description The byte array value.
      */
@@ -630,7 +630,7 @@ public class SqlBinary <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Array<Byte>
-    
+
     /**
      * @description The name of the type.
      */
@@ -655,7 +655,7 @@ public class SqlNullableBinary <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Array<Byte>)
-    
+
     /**
      * @description The nullable byte array value.
      */
@@ -663,7 +663,7 @@ public class SqlNullableBinary <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Array<Byte>
-    
+
     /**
      * @description The name of the type.
      */
@@ -688,7 +688,7 @@ public class SqlVarBinary <: SqlDbType {
         since: "22"
     ]
     public init(v: Array<Byte>)
-    
+
     /**
      * @description The byte array value.
      */
@@ -696,7 +696,7 @@ public class SqlVarBinary <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Array<Byte>
-    
+
     /**
      * @description The name of the type.
      */
@@ -721,7 +721,7 @@ public class SqlNullableVarBinary <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Array<Byte>)
-    
+
     /**
      * @description The nullable byte array value.
      */
@@ -729,7 +729,7 @@ public class SqlNullableVarBinary <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Array<Byte>
-    
+
     /**
      * @description The name of the type.
      */
@@ -754,7 +754,7 @@ public class SqlClob <: SqlDbType {
         since: "22"
     ]
     public init(v: InputStream)
-    
+
     /**
      * @description The `InputStream` value.
      */
@@ -762,7 +762,7 @@ public class SqlClob <: SqlDbType {
         since: "22"
     ]
     public mut prop value: InputStream
-    
+
     /**
      * @description The name of the type.
      */
@@ -787,7 +787,7 @@ public class SqlNullableClob <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?InputStream)
-    
+
     /**
      * @description The nullable `InputStream` value.
      */
@@ -795,7 +795,7 @@ public class SqlNullableClob <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?InputStream
-    
+
     /**
      * @description The name of the type.
      */
@@ -820,7 +820,7 @@ public class SqlBlob <: SqlDbType {
         since: "22"
     ]
     public init(v: InputStream)
-    
+
     /**
      * @description The `InputStream` value.
      */
@@ -828,7 +828,7 @@ public class SqlBlob <: SqlDbType {
         since: "22"
     ]
     public mut prop value: InputStream
-    
+
     /**
      * @description The name of the type.
      */
@@ -853,7 +853,7 @@ public class SqlNullableBlob <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?InputStream)
-    
+
     /**
      * @description The nullable `InputStream` value.
      */
@@ -861,7 +861,7 @@ public class SqlNullableBlob <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?InputStream
-    
+
     /**
      * @description The name of the type.
      */
@@ -886,7 +886,7 @@ public class SqlBool <: SqlDbType {
         since: "22"
     ]
     public init(v: Bool)
-    
+
     /**
      * @description The boolean value.
      */
@@ -894,7 +894,7 @@ public class SqlBool <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Bool
-    
+
     /**
      * @description The name of the type.
      */
@@ -919,7 +919,7 @@ public class SqlNullableBool <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Bool)
-    
+
     /**
      * @description The nullable boolean value.
      */
@@ -927,7 +927,7 @@ public class SqlNullableBool <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Bool
-    
+
     /**
      * @description The name of the type.
      */
@@ -952,7 +952,7 @@ public class SqlByte <: SqlDbType {
         since: "22"
     ]
     public init(v: Int8)
-    
+
     /**
      * @description The `Int8` value.
      */
@@ -960,7 +960,7 @@ public class SqlByte <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Int8
-    
+
     /**
      * @description The name of the type.
      */
@@ -985,7 +985,7 @@ public class SqlNullableByte <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Int8)
-    
+
     /**
      * @description The nullable `Int8` value.
      */
@@ -993,7 +993,7 @@ public class SqlNullableByte <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Int8
-    
+
     /**
      * @description The name of the type.
      */
@@ -1018,7 +1018,7 @@ public class SqlSmallInt <: SqlDbType {
         since: "22"
     ]
     public init(v: Int16)
-    
+
     /**
      * @description The `Int16` value.
      */
@@ -1026,7 +1026,7 @@ public class SqlSmallInt <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Int16
-    
+
     /**
      * @description The name of the type.
      */
@@ -1051,7 +1051,7 @@ public class SqlNullableSmallInt <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Int16)
-    
+
     /**
      * @description The nullable `Int16` value.
      */
@@ -1059,7 +1059,7 @@ public class SqlNullableSmallInt <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Int16
-    
+
     /**
      * @description The name of the type.
      */
@@ -1084,7 +1084,7 @@ public class SqlInteger <: SqlDbType {
         since: "22"
     ]
     public init(v: Int32)
-    
+
     /**
      * @description The `Int32` value.
      */
@@ -1092,7 +1092,7 @@ public class SqlInteger <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Int32
-    
+
     /**
      * @description The name of the type.
      */
@@ -1117,7 +1117,7 @@ public class SqlNullableInteger <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Int32)
-    
+
     /**
      * @description The nullable `Int32` value.
      */
@@ -1125,7 +1125,7 @@ public class SqlNullableInteger <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Int32
-    
+
     /**
      * @description The name of the type.
      */
@@ -1150,7 +1150,7 @@ public class SqlBigInt <: SqlDbType {
         since: "22"
     ]
     public init(v: Int64)
-    
+
     /**
      * @description The `Int64` value.
      */
@@ -1158,7 +1158,7 @@ public class SqlBigInt <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Int64
-    
+
     /**
      * @description The name of the type.
      */
@@ -1183,7 +1183,7 @@ public class SqlNullableBigInt <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Int64)
-    
+
     /**
      * @description The nullable `Int64` value.
      */
@@ -1191,7 +1191,7 @@ public class SqlNullableBigInt <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Int64
-    
+
     /**
      * @description The name of the type.
      */
@@ -1216,7 +1216,7 @@ public class SqlReal <: SqlDbType {
         since: "22"
     ]
     public init(v: Float32)
-    
+
     /**
      * @description The `Float32` value.
      */
@@ -1224,7 +1224,7 @@ public class SqlReal <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Float32
-    
+
     /**
      * @description The name of the type.
      */
@@ -1249,7 +1249,7 @@ public class SqlNullableReal <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Float32)
-    
+
     /**
      * @description The nullable `Float32` value.
      */
@@ -1257,7 +1257,7 @@ public class SqlNullableReal <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Float32
-    
+
     /**
      * @description The name of the type.
      */
@@ -1282,7 +1282,7 @@ public class SqlDouble <: SqlDbType {
         since: "22"
     ]
     public init(v: Float64)
-    
+
     /**
      * @description The `Float64` value.
      */
@@ -1290,7 +1290,7 @@ public class SqlDouble <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Float64
-    
+
     /**
      * @description The name of the type.
      */
@@ -1315,7 +1315,7 @@ public class SqlNullableDouble <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Float64)
-    
+
     /**
      * @description The nullable `Float64` value.
      */
@@ -1323,7 +1323,7 @@ public class SqlNullableDouble <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Float64
-    
+
     /**
      * @description The name of the type.
      */
@@ -1348,7 +1348,7 @@ public class SqlDate <: SqlDbType {
         since: "22"
     ]
     public init(v: DateTime)
-    
+
     /**
      * @description The `DateTime` value.
      */
@@ -1356,7 +1356,7 @@ public class SqlDate <: SqlDbType {
         since: "22"
     ]
     public mut prop value: DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1381,7 +1381,7 @@ public class SqlNullableDate <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?DateTime)
-    
+
     /**
      * @description The nullable `DateTime` value.
      */
@@ -1389,7 +1389,7 @@ public class SqlNullableDate <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1414,7 +1414,7 @@ public class SqlTime <: SqlDbType {
         since: "22"
     ]
     public init(v: DateTime)
-    
+
     /**
      * @description The `DateTime` value.
      */
@@ -1422,7 +1422,7 @@ public class SqlTime <: SqlDbType {
         since: "22"
     ]
     public mut prop value: DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1447,7 +1447,7 @@ public class SqlNullableTime <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?DateTime)
-    
+
     /**
      * @description The nullable `DateTime` value.
      */
@@ -1455,7 +1455,7 @@ public class SqlNullableTime <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1480,7 +1480,7 @@ public class SqlTimeTz <: SqlDbType {
         since: "22"
     ]
     public init(v: DateTime)
-    
+
     /**
      * @description The `DateTime` value.
      */
@@ -1488,7 +1488,7 @@ public class SqlTimeTz <: SqlDbType {
         since: "22"
     ]
     public mut prop value: DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1513,7 +1513,7 @@ public class SqlNullableTimeTz <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?DateTime)
-    
+
     /**
      * @description The nullable `DateTime` value.
      */
@@ -1521,7 +1521,7 @@ public class SqlNullableTimeTz <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1546,7 +1546,7 @@ public class SqlTimestamp <: SqlDbType {
         since: "22"
     ]
     public init(v: DateTime)
-    
+
     /**
      * @description The `DateTime` value.
      */
@@ -1554,7 +1554,7 @@ public class SqlTimestamp <: SqlDbType {
         since: "22"
     ]
     public mut prop value: DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1579,7 +1579,7 @@ public class SqlNullableTimestamp <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?DateTime)
-    
+
     /**
      * @description The nullable `DateTime` value.
      */
@@ -1587,7 +1587,7 @@ public class SqlNullableTimestamp <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?DateTime
-    
+
     /**
      * @description The name of the type.
      */
@@ -1612,7 +1612,7 @@ public class SqlInterval <: SqlDbType {
         since: "22"
     ]
     public init(v: Duration)
-    
+
     /**
      * @description The `Duration` value.
      */
@@ -1620,7 +1620,7 @@ public class SqlInterval <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Duration
-    
+
     /**
      * @description The name of the type.
      */
@@ -1645,7 +1645,7 @@ public class SqlNullableInterval <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Duration)
-    
+
     /**
      * @description The nullable `Duration` value.
      */
@@ -1653,7 +1653,7 @@ public class SqlNullableInterval <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Duration
-    
+
     /**
      * @description The name of the type.
      */
@@ -1678,7 +1678,7 @@ public class SqlDecimal <: SqlDbType {
         since: "22"
     ]
     public init(v: Decimal)
-    
+
     /**
      * @description Gets or sets the decimal value of the DECIMAL field.
      * @returns The decimal value when getting
@@ -1687,7 +1687,7 @@ public class SqlDecimal <: SqlDbType {
         since: "22"
     ]
     public mut prop value: Decimal
-    
+
     /**
      * @description Gets the name of the SQL data type.
      * @returns The type name as a string.
@@ -1713,7 +1713,7 @@ public class SqlNullableDecimal <: SqlNullableDbType {
         since: "22"
     ]
     public init(v: ?Decimal)
-    
+
     /**
      * @description Gets or sets the optional decimal value of the DECIMAL field.
      * @returns The optional decimal value when getting
@@ -1722,7 +1722,7 @@ public class SqlNullableDecimal <: SqlNullableDbType {
         since: "22"
     ]
     public mut prop value: ?Decimal
-    
+
     /**
      * @description Gets the name of the SQL data type.
      * @returns The type name as a string.
@@ -1748,7 +1748,7 @@ public open class SqlException <: Exception {
         since: "22"
     ]
     public prop sqlState: String
-    
+
     /**
      * @description Gets the vendor-specific error code associated with this exception.
      * @returns The error code as an integer.
@@ -1757,7 +1757,7 @@ public open class SqlException <: Exception {
         since: "22"
     ]
     public prop errorCode: Int64
-    
+
     /**
      * @description Gets the descriptive message for this exception.
      * @returns The exception message as a string.
@@ -1766,7 +1766,7 @@ public open class SqlException <: Exception {
         since: "22"
     ]
     public override prop message: String
-    
+
     /**
      * @description Creates a new SqlException with default values.
      */
@@ -1774,7 +1774,7 @@ public open class SqlException <: Exception {
         since: "22"
     ]
     public init()
-    
+
     /**
      * @description Creates a new SqlException with the specified message, SQL state, and error code.
      * @param message - The descriptive message for the exception
@@ -1785,7 +1785,7 @@ public open class SqlException <: Exception {
         since: "22"
     ]
     public init(message: String, sqlState: String, errorCode: Int64)
-    
+
     /**
      * @description Creates a new SqlException with the specified message.
      * @param message - The descriptive message for the exception
@@ -1810,7 +1810,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const URL: String = "url"
-    
+
     /**
      * @description Host, host name or IP address of the database server.
      */
@@ -1818,7 +1818,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Host: String = "host"
-    
+
     /**
      * @description Username, user name for connecting to the database.
      */
@@ -1826,7 +1826,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Username: String = "username"
-    
+
     /**
      * @description Password, password for connecting to the database.
      */
@@ -1834,7 +1834,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Password: String = "password"
-    
+
     /**
      * @description Driver, database driver name, for example, postgres and opengauss.
      */
@@ -1842,7 +1842,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Driver: String = "driver"
-    
+
     /**
      * @description Database, database name.
      */
@@ -1850,7 +1850,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Database: String = "database"
-    
+
     /**
      * @description Encoding, encoding type of the database character set.
      */
@@ -1858,7 +1858,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Encoding: String = "encoding"
-    
+
     /**
      * @description ConnectionTimeout, timeout interval of the connect operation, in milliseconds.
      */
@@ -1866,7 +1866,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const ConnectionTimeout: String = "connection_timeout"
-    
+
     /**
      * @description UpdateTimeout, timeout interval of the update operation, in milliseconds.
      */
@@ -1874,7 +1874,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const UpdateTimeout: String = "update_timeout"
-    
+
     /**
      * @description QueryTimeout, timeout interval of the query operation, in milliseconds.
      */
@@ -1882,7 +1882,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const QueryTimeout: String = "query_timeout"
-    
+
     /**
      * @description FetchRows, the number of rows to fetch in a single network trip.
      */
@@ -1890,7 +1890,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const FetchRows: String = "fetch_rows"
-    
+
     /**
      * @description SSLMode, SSL connection mode.
      */
@@ -1898,7 +1898,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLMode: String = "ssl.mode"
-    
+
     /**
      * @description SSLModePreferred, SSL connection mode preferred.
      */
@@ -1906,7 +1906,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLModePreferred: String = "ssl.mode.preferred"
-    
+
     /**
      * @description SSLModeDisabled, SSL connection mode disabled.
      */
@@ -1914,7 +1914,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLModeDisabled: String = "ssl.mode.disabled"
-    
+
     /**
      * @description SSLModeRequired, SSL connection mode required.
      */
@@ -1922,7 +1922,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLModeRequired: String = "ssl.mode.required"
-    
+
     /**
      * @description SSLModeVerifyCA, SSL connection mode verify CA.
      */
@@ -1930,7 +1930,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLModeVerifyCA: String = "ssl.mode.verify_ca"
-    
+
     /**
      * @description SSLModeVerifyFull, SSL connection mode verify full.
      */
@@ -1938,7 +1938,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLModeVerifyFull: String = "ssl.mode.verify_full"
-    
+
     /**
      * @description SSLCA, SSL certificate authority file path.
      */
@@ -1946,7 +1946,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLCA: String = "ssl.ca"
-    
+
     /**
      * @description SSLCert, SSL certificate file path.
      */
@@ -1954,7 +1954,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLCert: String = "ssl.cert"
-    
+
     /**
      * @description SSLKey, SSL key file path.
      */
@@ -1962,7 +1962,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLKey: String = "ssl.key"
-    
+
     /**
      * @description SSLKeyPassword, SSL key password.
      */
@@ -1970,7 +1970,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLKeyPassword: String = "ssl.key.password"
-    
+
     /**
      * @description SSLSni, SSL server name indication.
      */
@@ -1978,7 +1978,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const SSLSni: String = "ssl.sni"
-    
+
     /**
      * @description Tls12Ciphersuites, TLS 1.2 cipher suites.
      */
@@ -1986,7 +1986,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Tls12Ciphersuites: String = "tls1.2.ciphersuites"
-    
+
     /**
      * @description Tls13Ciphersuites, TLS 1.3 cipher suites.
      */
@@ -1994,7 +1994,7 @@ public class SqlOption {
         since: "22"
     ]
     public static const Tls13Ciphersuites: String = "tls1.3.ciphersuites"
-    
+
     /**
      * @description TlsVersion, TLS version.
      */
@@ -2019,7 +2019,7 @@ public interface Statement <: Resource {
         since: "22"
     ]
     prop parameterColumnInfos: Array<ColumnInfo>
-    
+
     /**
      * @description Sets a string option on this statement.
      * @param key - The option key
@@ -2029,27 +2029,31 @@ public interface Statement <: Resource {
         since: "22"
     ]
     func setOption(key: String, value: String): Unit
-    
+
     /**
      * @description Executes a prepared statement with the given parameters and returns an update result.
      * @param params - An array of parameters for the prepared statement
      * @returns An UpdateResult summarizing the effect of the statement
+     * @throws SqlException if a database access error occurs.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     func update(params: Array<SqlDbType>): UpdateResult
-    
+
     /**
      * @description Executes a prepared query statement with the given parameters and returns the query results.
      * @param params - An array of parameters for the prepared statement
      * @returns A QueryResult containing the query results
+     * @throws SqlException if a database access error occurs.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     func query(params: Array<SqlDbType>): QueryResult
-    
+
     /**
      * @description Sets the value of a parameter at the specified index.
      * @param index - The zero-based index of the parameter
@@ -2059,7 +2063,7 @@ public interface Statement <: Resource {
         since: "22"
     ]
     func set<T>(index: Int64, value: T): Unit
-    
+
     /**
      * @description Sets a parameter at the specified index to NULL.
      * @param index - The zero-based index of the parameter
@@ -2068,7 +2072,7 @@ public interface Statement <: Resource {
         since: "22"
     ]
     func setNull(index: Int64): Unit
-    
+
     /**
      * @description Executes a prepared statement and returns an update result.
      * @returns An UpdateResult summarizing the effect of the statement
@@ -2077,7 +2081,7 @@ public interface Statement <: Resource {
         since: "22"
     ]
     func update(): UpdateResult
-    
+
     /**
      * @description Executes a prepared query statement and returns the query results.
      * @returns A QueryResult containing the query results
@@ -2159,7 +2163,7 @@ public enum TransactionIsoLevel <: ToString & Hashable & Equatable<TransactionIs
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Compares this transaction isolation level with another for equality.
      * @param other - The TransactionIsoLevel to compare with
@@ -2169,7 +2173,7 @@ public enum TransactionIsoLevel <: ToString & Hashable & Equatable<TransactionIs
         since: "22"
     ]
     public operator func ==(other: TransactionIsoLevel): Bool
-    
+
     /**
      * @description Compares this transaction isolation level with another for inequality.
      * @param other - The TransactionIsoLevel to compare with
@@ -2179,7 +2183,7 @@ public enum TransactionIsoLevel <: ToString & Hashable & Equatable<TransactionIs
         since: "22"
     ]
     public operator func !=(other: TransactionIsoLevel): Bool
-    
+
     /**
      * @description Computes a hash code for this transaction isolation level.
      * @returns The hash code as an integer.
@@ -2226,7 +2230,7 @@ public enum TransactionAccessMode <: ToString & Hashable & Equatable<Transaction
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Compares this transaction access mode with another for equality.
      * @param other - The TransactionAccessMode to compare with
@@ -2236,7 +2240,7 @@ public enum TransactionAccessMode <: ToString & Hashable & Equatable<Transaction
         since: "22"
     ]
     public operator func ==(other: TransactionAccessMode): Bool
-    
+
     /**
      * @description Compares this transaction access mode with another for inequality.
      * @param other - The TransactionAccessMode to compare with
@@ -2246,7 +2250,7 @@ public enum TransactionAccessMode <: ToString & Hashable & Equatable<Transaction
         since: "22"
     ]
     public operator func !=(other: TransactionAccessMode): Bool
-    
+
     /**
      * @description Computes a hash code for this transaction access mode.
      * @returns The hash code as an integer.
@@ -2293,7 +2297,7 @@ public enum TransactionDeferrableMode <: ToString & Hashable & Equatable<Transac
         since: "22"
     ]
     public func toString(): String
-    
+
     /**
      * @description Compares this transaction deferrable mode with another for equality.
      * @param other - The TransactionDeferrableMode to compare with
@@ -2303,7 +2307,7 @@ public enum TransactionDeferrableMode <: ToString & Hashable & Equatable<Transac
         since: "22"
     ]
     public operator func ==(other: TransactionDeferrableMode): Bool
-    
+
     /**
      * @description Compares this transaction deferrable mode with another for inequality.
      * @param other - The TransactionDeferrableMode to compare with
@@ -2313,7 +2317,7 @@ public enum TransactionDeferrableMode <: ToString & Hashable & Equatable<Transac
         since: "22"
     ]
     public operator func !=(other: TransactionDeferrableMode): Bool
-    
+
     /**
      * @description Computes a hash code for this transaction deferrable mode.
      * @returns The hash code as an integer.
@@ -2339,7 +2343,7 @@ public interface Transaction {
         since: "22"
     ]
     mut prop isoLevel: TransactionIsoLevel
-    
+
     /**
      * @description Gets or sets the access mode for this transaction.
      * @returns The current TransactionAccessMode when getting
@@ -2348,7 +2352,7 @@ public interface Transaction {
         since: "22"
     ]
     mut prop accessMode: TransactionAccessMode
-    
+
     /**
      * @description Gets or sets the deferrable mode for this transaction.
      * @returns The current TransactionDeferrableMode when getting
@@ -2357,7 +2361,7 @@ public interface Transaction {
         since: "22"
     ]
     mut prop deferrableMode: TransactionDeferrableMode
-    
+
     /**
      * @description Begins the transaction.
      */
@@ -2365,7 +2369,7 @@ public interface Transaction {
         since: "22"
     ]
     func begin(): Unit
-    
+
     /**
      * @description Commits the transaction, making all changes permanent.
      */
@@ -2373,7 +2377,7 @@ public interface Transaction {
         since: "22"
     ]
     func commit(): Unit
-    
+
     /**
      * @description Rolls back the transaction, reverting all changes.
      */
@@ -2381,7 +2385,7 @@ public interface Transaction {
         since: "22"
     ]
     func rollback(): Unit
-    
+
     /**
      * @description Rolls back the transaction to a specific savepoint.
      * @param savePointName - The name of the savepoint to roll back to
@@ -2390,7 +2394,7 @@ public interface Transaction {
         since: "22"
     ]
     func rollback(savePointName: String): Unit
-    
+
     /**
      * @description Creates a savepoint in the transaction.
      * @param savePointName - The name of the savepoint to create
@@ -2399,7 +2403,7 @@ public interface Transaction {
         since: "22"
     ]
     func save(savePointName: String): Unit
-    
+
     /**
      * @description Releases a savepoint, removing it from the transaction.
      * @param savePointName - The name of the savepoint to release
@@ -2425,7 +2429,7 @@ public interface UpdateResult {
         since: "22"
     ]
     prop rowCount: Int64
-    
+
     /**
      * @description Gets the ID of the last inserted row, if applicable.
      * @returns The last insert ID as an integer.

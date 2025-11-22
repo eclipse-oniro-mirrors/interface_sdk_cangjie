@@ -334,9 +334,11 @@ public struct DateTime <: ToString & Hashable & Comparable<DateTime> & Formattab
      * @description Attempts to parse a DateTime from a string, returning None if parsing fails
      * @param str the string to parse in ISO 8601 format
      * @returns Some(DateTime) if parsing succeeds, None if parsing fails
+     * @throws TimeParseException if the parsing is incorrect.
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public static func tryParse(str: String): Option<DateTime>
     
@@ -369,18 +371,22 @@ public struct DateTime <: ToString & Hashable & Comparable<DateTime> & Formattab
     /**
      * @description Converts this DateTime to UTC time zone
      * @returns a new DateTime in UTC time zone
+     * @throws ArithmeticException if the result of year in UTC is outside the range [-999,999,999, 999,999,999].
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func inUTC(): DateTime
     
     /**
      * @description Converts this DateTime to local time zone
      * @returns a new DateTime in local time zone
+     * @throws ArithmeticException if the result of year in Local is outside the range [-999,999,999, 999,999,999].
      */
     @!APILevel[
-        since: "22"
+        since: "22",
+        throwexception: true
     ]
     public func inLocal(): DateTime
     
