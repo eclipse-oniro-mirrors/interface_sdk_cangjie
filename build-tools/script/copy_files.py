@@ -15,7 +15,7 @@
 
 import os
 import sys
-import optparse
+import argparse
 import shutil
 from collect_dir_sources import get_sources
 
@@ -42,13 +42,12 @@ def copy_files_endswith(input_path, output_path, extension, exclude_dirs):
     return
 
 def parse_args(args):
-    parser = optparse.OptionParser()
-    parser.add_option('--input', help='input path')
-    parser.add_option('--output', help='output path')
-    parser.add_option('--extension', help='extension')
-    parser.add_option('--exclude-dirs', help='exculde dir')
-    options, _ = parser.parse_args(args)
-    return options
+    parser = argparse.ArgumentParser(description='Copy files or trees, optionally filtering by extension')
+    parser.add_argument('--input', help='input path')
+    parser.add_argument('--output', help='output path')
+    parser.add_argument('--extension', help='extension')
+    parser.add_argument('--exclude-dirs', help='exculde dir')
+    return parser.parse_args(args)
 
 def main(argv):
     options = parse_args(argv)
@@ -64,4 +63,4 @@ def main(argv):
 
 
 if __name__ == "__main__":
-    exit(main(sys.argv))
+    exit(main(sys.argv[1:]))

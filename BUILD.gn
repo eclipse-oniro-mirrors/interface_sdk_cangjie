@@ -11,8 +11,79 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import("//build/templates/cangjie/cjc.gni")
 import("//build/templates/cangjie/cjc_toolchain.gni")
 import("sdk_cangjie.gni")
+
+sdk_packages_api_libs = [
+  "cangjie_ark_interop:copy_cangjie_ark_interop_libs",
+  "hiviewdfx_cangjie_wrapper:copy_sdk_hiviewdfx_cangjie_libs",
+  "hiviewdfx_cangjie_wrapper:copy_sdk_hiviewdfx_cangjie_libs_kit",
+  "arkui_cangjie_wrapper:copy_sdk_arkui_cangjie_libs",
+  "arkui_cangjie_wrapper:copy_sdk_arkui_cangjie_libs_kit",
+  "global_cangjie_wrapper:copy_sdk_global_cangjie_libs",
+  "global_cangjie_wrapper:copy_sdk_global_cangjie_libs_kit",
+  "arkweb_cangjie_wrapper:copy_sdk_arkweb_cangjie_libs",
+  "arkweb_cangjie_wrapper:copy_sdk_arkweb_cangjie_libs_kit",
+  "applications_cangjie_wrapper:copy_sdk_applications_cangjie_libs",
+  "applications_cangjie_wrapper:copy_sdk_applications_cangjie_libs_kit",
+  "window_cangjie_wrapper:copy_sdk_window_cangjie_libs",
+  "time_cangjie_wrapper:copy_sdk_time_cangjie_libs",
+  "powermgr_cangjie_wrapper:copy_sdk_powermgr_cangjie_libs",
+  "location_cangjie_wrapper:copy_sdk_location_cangjie_libs",
+  "location_cangjie_wrapper:copy_sdk_location_cangjie_libs_kit",
+  "multimedia_cangjie_wrapper:copy_sdk_multimedia_cangjie_libs",
+  "multimedia_cangjie_wrapper:copy_sdk_multimedia_cangjie_libs_kit",
+  "ability_cangjie_wrapper:copy_sdk_ability_cangjie_libs",
+  "ability_cangjie_wrapper:copy_sdk_ability_cangjie_libs_kit",
+  "testfwk_cangjie_wrapper:copy_sdk_testfwk_cangjie_libs",
+  "testfwk_cangjie_wrapper:copy_sdk_testfwk_cangjie_libs_kit",
+  "telephony_cangjie_wrapper:copy_sdk_telephony_cangjie_libs",
+  "telephony_cangjie_wrapper:copy_sdk_telephony_cangjie_libs_kit",
+  "distributeddatamgr_cangjie_wrapper:copy_sdk_distributeddatamgr_cangjie_libs",
+  "distributeddatamgr_cangjie_wrapper:copy_sdk_distributeddatamgr_cangjie_libs_kit",
+  "request_cangjie_wrapper:copy_sdk_request_cangjie_libs",
+  "netmanager_cangjie_wrapper:copy_sdk_netmanager_cangjie_libs",
+  "netmanager_cangjie_wrapper:copy_sdk_netmanager_cangjie_libs_kit",
+  "security_cangjie_wrapper:copy_sdk_security_cangjie_libs",
+  "security_cangjie_wrapper:copy_sdk_security_cangjie_libs_kit",
+  "accesscontrol_cangjie_wrapper:copy_sdk_accesscontrol_cangjie_libs",
+  "connectivity_cangjie_wrapper:copy_sdk_connectivity_cangjie_libs",
+  "connectivity_cangjie_wrapper:copy_sdk_connectivity_cangjie_libs_kit",
+  "communication_cangjie_wrapper:copy_sdk_communication_cangjie_libs",
+  "communication_cangjie_wrapper:copy_sdk_communication_cangjie_libs_kit",
+  "graphic_cangjie_wrapper:copy_sdk_graphic_cangjie_libs",
+  "graphic_cangjie_wrapper:copy_sdk_graphic_cangjie_libs_kit",
+  "filemanagement_cangjie_wrapper:copy_sdk_filemanagement_cangjie_libs",
+  "filemanagement_cangjie_wrapper:copy_sdk_filemanagement_cangjie_libs_kit",
+  "sensors_cangjie_wrapper:copy_sdk_sensors_cangjie_libs",
+  "sensors_cangjie_wrapper:copy_sdk_sensors_cangjie_libs_kit",
+  "bundlemanager_cangjie_wrapper:copy_sdk_bundlemanager_cangjie_libs",
+  "startup_cangjie_wrapper:copy_sdk_startup_cangjie_libs",
+  "notification_cangjie_wrapper:copy_sdk_notification_cangjie_libs",
+]
+not_needed([ "sdk_packages_api_libs" ])
+
+if (sdk_build_cangjie_previewer == true) {
+  group("sdk_cangjie_previewer_windows") {
+    external_deps = []
+    foreach(lib, sdk_packages_api_libs) {
+      external_deps += [ "${lib}(${cangjie_sdk_toolchain.windows})" ]
+    }
+  }
+
+  group("sdk_cangjie_previewer_mac") {
+    external_deps = []
+    foreach(lib, sdk_packages_api_libs) {
+      external_deps += [ "${lib}(${cangjie_sdk_toolchain.mac})" ]
+    }
+  }
+} else {
+  group("sdk_cangjie_previewer_windows") {
+  }
+  group("sdk_cangjie_previewer_mac") {
+  }
+}
 
 # collect cangjie header files
 cj_ohos_sdk_header_copy("sdk_header_ohos_aarch64_api") {
@@ -35,7 +106,7 @@ group("sdk_header_ohos_aarch64") {
   ]
 }
 
-# libs so and cjo
+# libs so
 cj_ohos_sdk_shared_lib("sdk_ohos_aarch64_libs") {
   toolchain = "//build/toolchain/ohos:ohos_clang_arm64"
   platform = "linux_ohos_aarch64_cjnative"
@@ -58,6 +129,47 @@ cj_ohos_sdk_shared_lib("sdk_kit_x86_64_libs") {
   toolchain = "//build/toolchain/ohos:ohos_clang_x86_64"
   platform = "linux_ohos_x86_64_cjnative"
   module_name = "kit"
+}
+
+group("ohos_aarch64_libs") {
+  deps = [
+    ":sdk_kit_aarch64_libs",
+    ":sdk_ohos_aarch64_libs",
+  ]
+}
+
+group("ohos_x86_64_libs") {
+  deps = [
+    ":sdk_kit_x86_64_libs",
+    ":sdk_ohos_x86_64_libs",
+  ]
+}
+
+# lib cjo
+cj_ohos_sdk_shared_lib_cjo("sdk_ohos_aarch64_libs_cjo") {
+  platform = cangjie_sdk_platform.ohos_aarch64
+  toolchain = cangjie_sdk_toolchain.ohos_aarch64
+  if (sdk_build_cjo_from_source == true) {
+    external_deps = []
+    foreach(lib, sdk_packages_api_libs) {
+      external_deps += [ "${lib}(${cangjie_sdk_toolchain.ohos_aarch64})" ]
+    }
+
+    target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
+  }
+}
+
+cj_ohos_sdk_shared_lib_cjo("sdk_ohos_x86_64_libs_cjo") {
+  platform = cangjie_sdk_platform.ohos_x86_64
+  toolchain = cangjie_sdk_toolchain.ohos_x86_64
+  if (sdk_build_cjo_from_source == true) {
+    external_deps = []
+    foreach(lib, sdk_packages_api_libs) {
+      external_deps += [ "${lib}(${cangjie_sdk_toolchain.ohos_x86_64})" ]
+    }
+
+    target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
+  }
 }
 
 # macro
@@ -87,48 +199,6 @@ if (host_os == "mac") {
       module_name = "ohos"
     }
   }
-}
-
-group("ohos_aarch64_libs") {
-  deps = [
-    ":sdk_kit_aarch64_libs",
-    ":sdk_ohos_aarch64_libs",
-  ]
-}
-
-group("ohos_x86_64_libs") {
-  deps = [
-    ":sdk_kit_x86_64_libs",
-    ":sdk_ohos_x86_64_libs",
-  ]
-}
-
-group("sdk_cangjie_wrapper") {
-  deps = [ ":ohos_aarch64_libs" ]
-  if (host_cpu == "x64") {
-    deps += [ ":ohos_x86_64_libs" ]
-  }
-
-  if (is_mingw) {
-    deps += [
-      ":sdk_header_ohos_aarch64",
-      ":sdk_windows_x86_64_macro",
-    ]
-  } else if (host_os == "mac") {
-    deps += [ ":sdk_header_ohos_aarch64" ]
-    if (host_cpu == "arm64") {
-      deps += [ ":sdk_darwin_aarch64_macro" ]
-    } else if (host_cpu == "x64") {
-      deps += [ ":sdk_darwin_x86_64_macro" ]
-    }
-  } else if (is_linux) {
-    deps += [ ":sdk_linux_x86_64_macro" ]
-  }
-}
-
-cj_ohos_sdk_copy("sdk_api") {
-  out_relative_dir = "cangjie_sdk/api"
-  deps = [ ":sdk_cangjie_wrapper" ]
 }
 
 cj_ohos_sdk_copy("sdk_compiler") {
@@ -167,7 +237,42 @@ action_with_pydeps("sdk_build_tools_copy") {
 ohos_copy("sdk_compiler_modules") {
   deps = [ ":sdk_compiler" ]
   sources = [ "//interface/sdk_cangjie/api/Cangjie/third_party" ]
-  outputs = [ "${target_out_dir}/cangjie_sdk/std/modules/linux_ohos_aarch64_cjnative" ]
+  outputs = [
+    "${target_out_dir}/cangjie_sdk/std/modules/linux_ohos_aarch64_cjnative",
+  ]
   module_source_dir = "${target_out_dir}/cangjie_sdk/std/modules/"
   module_install_name = ""
+}
+
+cj_ohos_sdk_copy("sdk_api") {
+  out_relative_dir = "cangjie_sdk/api"
+  deps = [
+    ":sdk_ohos_aarch64_libs_cjo",
+    ":ohos_aarch64_libs"
+  ]
+  if (host_cpu == "x64") {
+    deps += [
+      ":sdk_ohos_x86_64_libs_cjo",
+      ":ohos_x86_64_libs"
+    ]
+  }
+  if (is_mingw) {
+    deps += [
+      ":sdk_cangjie_previewer_windows",
+      ":sdk_header_ohos_aarch64",
+      ":sdk_windows_x86_64_macro",
+    ]
+  } else if (host_os == "mac") {
+    deps += [
+      ":sdk_cangjie_previewer_mac",
+      ":sdk_header_ohos_aarch64",
+    ]
+    if (host_cpu == "arm64") {
+      deps += [ ":sdk_darwin_aarch64_macro" ]
+    } else if (host_cpu == "x64") {
+      deps += [ ":sdk_darwin_x86_64_macro" ]
+    }
+  } else if (is_linux) {
+    deps += [ ":sdk_linux_x86_64_macro" ]
+  }
 }
