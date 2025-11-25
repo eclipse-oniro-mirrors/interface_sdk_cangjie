@@ -106,70 +106,25 @@ group("sdk_header_ohos_aarch64") {
   ]
 }
 
-# libs so
+# lib cjo and so
 cj_ohos_sdk_shared_lib("sdk_ohos_aarch64_libs") {
-  toolchain = "//build/toolchain/ohos:ohos_clang_arm64"
-  platform = "linux_ohos_aarch64_cjnative"
-  module_name = "ohos"
-}
-
-cj_ohos_sdk_shared_lib("sdk_kit_aarch64_libs") {
-  toolchain = "//build/toolchain/ohos:ohos_clang_arm64"
-  platform = "linux_ohos_aarch64_cjnative"
-  module_name = "kit"
+  platform = cangjie_sdk_platform.ohos_aarch64
+  toolchain = cangjie_sdk_toolchain.ohos_aarch64
+  external_deps = []
+  foreach(lib, sdk_packages_api_libs) {
+    external_deps += [ "${lib}(${cangjie_sdk_toolchain.ohos_aarch64})" ]
+  }
+  target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
 }
 
 cj_ohos_sdk_shared_lib("sdk_ohos_x86_64_libs") {
-  toolchain = "//build/toolchain/ohos:ohos_clang_x86_64"
-  platform = "linux_ohos_x86_64_cjnative"
-  module_name = "ohos"
-}
-
-cj_ohos_sdk_shared_lib("sdk_kit_x86_64_libs") {
-  toolchain = "//build/toolchain/ohos:ohos_clang_x86_64"
-  platform = "linux_ohos_x86_64_cjnative"
-  module_name = "kit"
-}
-
-group("ohos_aarch64_libs") {
-  deps = [
-    ":sdk_kit_aarch64_libs",
-    ":sdk_ohos_aarch64_libs",
-  ]
-}
-
-group("ohos_x86_64_libs") {
-  deps = [
-    ":sdk_kit_x86_64_libs",
-    ":sdk_ohos_x86_64_libs",
-  ]
-}
-
-# lib cjo
-cj_ohos_sdk_shared_lib_cjo("sdk_ohos_aarch64_libs_cjo") {
-  platform = cangjie_sdk_platform.ohos_aarch64
-  toolchain = cangjie_sdk_toolchain.ohos_aarch64
-  if (sdk_build_cjo_from_source == true) {
-    external_deps = []
-    foreach(lib, sdk_packages_api_libs) {
-      external_deps += [ "${lib}(${cangjie_sdk_toolchain.ohos_aarch64})" ]
-    }
-
-    target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
-  }
-}
-
-cj_ohos_sdk_shared_lib_cjo("sdk_ohos_x86_64_libs_cjo") {
   platform = cangjie_sdk_platform.ohos_x86_64
   toolchain = cangjie_sdk_toolchain.ohos_x86_64
-  if (sdk_build_cjo_from_source == true) {
-    external_deps = []
-    foreach(lib, sdk_packages_api_libs) {
-      external_deps += [ "${lib}(${cangjie_sdk_toolchain.ohos_x86_64})" ]
-    }
-
-    target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
+  external_deps = []
+  foreach(lib, sdk_packages_api_libs) {
+    external_deps += [ "${lib}(${cangjie_sdk_toolchain.ohos_x86_64})" ]
   }
+  target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
 }
 
 # macro
@@ -247,13 +202,11 @@ ohos_copy("sdk_compiler_modules") {
 cj_ohos_sdk_copy("sdk_api") {
   out_relative_dir = "cangjie_sdk/api"
   deps = [
-    ":sdk_ohos_aarch64_libs_cjo",
-    ":ohos_aarch64_libs"
+    ":sdk_ohos_aarch64_libs",
   ]
   if (host_cpu == "x64") {
     deps += [
-      ":sdk_ohos_x86_64_libs_cjo",
-      ":ohos_x86_64_libs"
+      ":sdk_ohos_x86_64_libs",
     ]
   }
   if (is_mingw) {
