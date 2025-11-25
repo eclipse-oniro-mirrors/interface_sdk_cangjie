@@ -24,3 +24,8 @@ FfiOHOSPreferencesOffAll;
 FfiOHOSPreferencesOn;
 FfiOHOSPreferencesPut;
 FfiOHOSPreferencesRemovePreferencesFromCache;
+FfiOHOSPreferencesGetPreferencesV1;
+FfiOHOSPreferencesDeletePreferencesV1;
+FfiOHOSPreferencesRemovePreferencesFromCacheV1;
+FfiOHOSPreferencesFreeValueType;
+FfiOHOSPreferencesFreeValueTypes;
