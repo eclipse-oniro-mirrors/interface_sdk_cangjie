@@ -7,7 +7,7 @@ import ohos.base.*
 import ohos.labels.APILevel
 
 /**
- * A shape component that renders a rectangular graphic element with optional rounded corners.
+ * Round rect.
  */
 @!APILevel[
     since: "22",
@@ -27,8 +27,7 @@ public class Rect <: CommonShapeMethodComponent<Rect> & RectAttribute {
     public init(width!: ?Length = None, height!: ?Length = None)
 
 /**
- * Set the corner radius width.
- * Configures the horizontal radius of the rectangle's rounded corners.
+ * Sets the radius of the corner around the menu. When the radius is more than the menu width, the default border radius is used
  *
  * @param { ?Length } value - Radius width of the rectangle corners.
  * @returns { This } Returns the Rect instance.
@@ -40,8 +39,7 @@ public class Rect <: CommonShapeMethodComponent<Rect> & RectAttribute {
     public func radiusWidth(value: ?Length): This
 
 /**
- * Set the corner radius height.
- * Configures the vertical radius of the rectangle's rounded corners.
+ * Sets the fillet height.
  *
  * @param { ?Length } value - Radius height of the rectangle corners.
  * @returns { This } Returns the Rect instance.
@@ -53,10 +51,10 @@ public class Rect <: CommonShapeMethodComponent<Rect> & RectAttribute {
     public func radiusHeight(value: ?Length): This
 
 /**
- * Set the corner radius size.
- * Configures the radius of all rectangle corners with a single value.
+ * Sets the radius of the corner around the menu.
+ * When the radius is more than the menu width, the default border radius is used.
  *
- * @param { ?Length } value - Radius of the rectangle corners.
+ * @param { ?Length } value - the border radius.
  * @returns { This } Returns the Rect instance.
  */
 @!APILevel[
@@ -66,10 +64,10 @@ public class Rect <: CommonShapeMethodComponent<Rect> & RectAttribute {
     public func radius(value: ?Length): This
 
 /**
- * Set the corner radius size.
- * Configures the radius of each rectangle corner with individual values.
+ * Sets the radius of the corner around the menu.
+ * When the radius is more than the menu width, the default border radius is used.
  *
- * @param { ?Array<Length> } value - Array of radius values for rectangle corners.
+ * @param { ?Array<Length> } value - the border radius.
  * @returns { This } Returns the Rect instance.
  */
 @!APILevel[
@@ -79,10 +77,10 @@ public class Rect <: CommonShapeMethodComponent<Rect> & RectAttribute {
     public func radius(value: ?Array<Length>): This
 
 /**
- * Set the corner radius size.
- * Configures the radius width and height of each rectangle corner with individual values.
+ * Sets the radius of the corner around the menu.
+ * When the radius is more than the menu width, the default border radius is used.
  *
- * @param { ?Array<(Length, Length)> } value - Array of radius values (width, height) for rectangle corners.
+ * @param { ?Array<(Length, Length)> } value - the border radius.
  * @returns { This } Returns itself.
  */
 @!APILevel[
@@ -93,8 +91,7 @@ public class Rect <: CommonShapeMethodComponent<Rect> & RectAttribute {
 }
 
 /**
- * Defines Rect Component.
- * Provides methods for configuring the appearance and behavior of the Rect component.
+ * rect attribute declaration.
  */
 @!APILevel[
     since: "22",
@@ -102,8 +99,7 @@ public class Rect <: CommonShapeMethodComponent<Rect> & RectAttribute {
 ]
 sealed interface RectAttribute <: CommonShapeMethod<RectAttribute> {
 /**
- * Set the corner radius width.
- * Configures the horizontal radius of the rectangle's rounded corners.
+ * Sets the fillet width.
  *
  * @param { ?Length } value - Radius width of the rectangle corners.
  * @returns { RectAttribute } Returns the rect attribute.
@@ -115,7 +111,7 @@ sealed interface RectAttribute <: CommonShapeMethod<RectAttribute> {
     func radiusWidth(value: ?Length): RectAttribute
 
 /**
- * Configures the vertical radius of the rectangle's rounded corners.
+ * Sets the fillet height.
  *
  * @param { ?Length } value - Radius height of the rectangle corners.
  * @returns { RectAttribute } Returns the rect attribute.
@@ -127,9 +123,10 @@ sealed interface RectAttribute <: CommonShapeMethod<RectAttribute> {
     func radiusHeight(value: ?Length): RectAttribute
 
 /**
- * Configures the radius of all rectangle corners with a single value.
+ * Sets the radius of the corner around the menu.
+ * When the radius is more than the menu width, the default border radius is used.
  *
- * @param { ?Length } value - Radius of the rectangle corners.
+ * @param { ?Length } value - the border radius.
  * @returns { RectAttribute } Returns the rect attribute.
  */
 @!APILevel[
@@ -139,9 +136,10 @@ sealed interface RectAttribute <: CommonShapeMethod<RectAttribute> {
     func radius(value: ?Length): RectAttribute
 
 /**
- * Configures the radius of each rectangle corner with individual values.
+ * Sets the radius of the corner around the menu.
+ * When the radius is more than the menu width, the default border radius is used.
  *
- * @param { ?Array<Length> } value - Array of radius values for rectangle corners.
+ * @param { ?Array<Length> } value - the border radius.
  * @returns { RectAttribute } Returns the rect attribute.
  */
 @!APILevel[
@@ -151,10 +149,10 @@ sealed interface RectAttribute <: CommonShapeMethod<RectAttribute> {
     func radius(value: ?Array<Length>): RectAttribute
 
 /**
- * Set the corner radius size.
- * Configures the radius width and height of each rectangle corner with individual values.
+ * Sets the radius of the corner around the menu.
+ * When the radius is more than the menu width, the default border radius is used.
  *
- * @param { ?Array<(Length, Length)> } value - Array of radius values (width, height) for rectangle corners.
+ * @param { ?Array<(Length, Length)> } value - the border radius.
  * @returns { RectAttribute } Returns the rect attribute.
  */
 @!APILevel[

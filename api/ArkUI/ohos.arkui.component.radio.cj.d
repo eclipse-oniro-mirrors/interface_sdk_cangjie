@@ -31,14 +31,14 @@ public class Radio <: CommonMethodComponent<Radio> & RadioAttribute {
 /**
  * Called when the radio box is selected.
  *
- * @param { ?Bool } isChecked - Whether the radio box is selected.
+ * @param { ?Bool } value - Whether the radio box is selected.
  * @returns { This }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func checked(isChecked: ?Bool): This
+    public func checked(value: ?Bool): This
 
 /**
  * Called when the radio box selection status changes.
@@ -54,7 +54,7 @@ public class Radio <: CommonMethodComponent<Radio> & RadioAttribute {
 }
 
 /**
- * Defines the Radio component attributes.
+ * Provides methods for radio method component.
  */
 @!APILevel[
     since: "22",
@@ -64,14 +64,14 @@ sealed interface RadioAttribute <: CommonMethod<RadioAttribute> {
 /**
  * Called when the radio box is selected.
  *
- * @param { ?Bool } isChecked - Whether the radio box is selected.
+ * @param { ?Bool } value - Whether the radio box is selected.
  * @returns { RadioAttribute }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func checked(isChecked: ?Bool): RadioAttribute
+    func checked(value: ?Bool): RadioAttribute
 
 /**
  * Called when the radio box selection status changes.

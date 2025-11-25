@@ -8,7 +8,7 @@ import ohos.labels.APILevel
 import ohos.resource.*
 
 /**
- * Defines the QRCode component.
+ * Defines QRCode Component.
  */
 @!APILevel[
     since: "22",
@@ -64,7 +64,7 @@ public class QRCode <: CommonMethodComponent<QRCode> & QRCodeAttribute {
 }
 
 /**
- * Defines the QRCode component attributes.
+ * Defines the qrcode attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -74,7 +74,7 @@ sealed interface QRCodeAttribute <: CommonMethod<QRCodeAttribute> {
 /**
  * Called when the QR code color is set.
  *
- * @param { ?ResourceColor } value - Color of the QR code. The default value is #ff000000.
+ * @param { ?ResourceColor } value - Color of the QR code. The default value is 0xff000000.
  * @returns { QRCodeAttribute }
  */
 @!APILevel[

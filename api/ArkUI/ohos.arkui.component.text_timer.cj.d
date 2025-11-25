@@ -25,7 +25,7 @@ public class TextTimerController <: RemoteDataLite {
     public init()
 
 /**
- * Provides a start event for timer.
+ * Starts the timer.
  *
  * @returns { Unit } Returns nothing.
  */
@@ -36,7 +36,7 @@ public class TextTimerController <: RemoteDataLite {
     public func start(): Unit
 
 /**
- * Provides a pause event for timer.
+ * Pauses the timer.
  *
  * @returns { Unit } Returns nothing.
  */
@@ -47,7 +47,7 @@ public class TextTimerController <: RemoteDataLite {
     public func pause(): Unit
 
 /**
- * Provides an event to reset timer.
+ * Resets the timer.
  *
  * @returns { Unit } Returns nothing.
  */
@@ -59,7 +59,7 @@ public class TextTimerController <: RemoteDataLite {
 }
 
 /**
- * Defines the TextTimer Component.
+ * Defines TextTimer Component.
  */
 @!APILevel[
     since: "22",
@@ -83,11 +83,10 @@ public class TextTimer <: CommonMethodComponent<TextTimer> & TextTimerAttribute 
  * Sets the custom format.
  * The value must contain at least one of the following keywords: HH, mm, ss, and SS.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the specified date format is yy, MM, or dd, the default value is used instead.
- * </p>
+ * NOTE:
+ * If the specified date format is yy, MM, or dd, the default value is used instead.
  *
- * @param { ?String } value - Custom format. Default value: 'HH:mm:ss.SS'
+ * @param { ?String } value - Custom format.Default value: 'HH:mm:ss.SS'
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -115,9 +114,9 @@ public class TextTimer <: CommonMethodComponent<TextTimer> & TextTimerAttribute 
 /**
  * Sets the font size.
  *
- * @param { ?Length } value - Font size. The default font size is 16.fp.
- *      <br>If fontSize is of the number type, the unit fp is used.
- *      <br>The value cannot be a percentage.
+ * @param { ?Length } value - Font size.The default font size is 16 fp.
+ *     If fontSize is of the number type, the unit fp is used.
+ *     The value cannot be a percentage.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -141,7 +140,7 @@ public class TextTimer <: CommonMethodComponent<TextTimer> & TextTimerAttribute 
 /**
  * Sets the font style.
  *
- * @param { ?FontStyle } value - Font style. Default value: FontStyle.Normal
+ * @param { ?FontStyle } value - Font style.Default value: FontStyle.Normal
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -153,14 +152,13 @@ public class TextTimer <: CommonMethodComponent<TextTimer> & TextTimerAttribute 
 /**
  * Sets the font weight.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the value is too large, the text may be clipped depending on the font.
- * </p>
+ * NOTE:
+ * If the value is too large, the text may be clipped depending on the font.
  *
  * @param { ?FontWeight } value - Font weight.
- * <br>For the number type, Value range: [100, 900], at an interval of 100. The default value is 400.
- * <br>A larger value indicates a heavier font weight.
- * <br>For the string type, only strings that represent a number.
+ *     For the number type, Value range: [100, 900], at an interval of 100.The default value is 400.
+ *     A larger value indicates a heavier font weight.
+ *     For the string type, only strings that represent a number.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -197,7 +195,6 @@ public class TextTimer <: CommonMethodComponent<TextTimer> & TextTimerAttribute 
 
 /**
  * Sets the text shadow.
- * It supports input parameters in an array to implement multiple text shadows.
  * This API does not work with the fill attribute or coloring strategy.
  *
  * @param { ?ShadowOptions } value - The shadow options.
@@ -211,7 +208,7 @@ public class TextTimer <: CommonMethodComponent<TextTimer> & TextTimerAttribute 
 }
 
 /**
- * Defines the TextTimer component attributes.
+ * Defines the TextTimer attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -222,11 +219,10 @@ sealed interface TextTimerAttribute <: CommonMethod<TextTimerAttribute> {
  * Sets the custom format.
  * The value must contain at least one of the following keywords: HH, mm, ss, and SS.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the specified date format is yy, MM, or dd, the default value is used instead.
- * </p>
+ * NOTE:
+ * If the specified date format is yy, MM, or dd, the default value is used instead.
  *
- * @param { ?String } value - Custom format. Default value: 'HH:mm:ss.SS'
+ * @param { ?String } value - Custom format.Default value: 'HH:mm:ss.SS'
  * @returns { TextTimerAttribute } Returns the text timer attribute to allow method chaining.
  */
 @!APILevel[
@@ -254,9 +250,9 @@ sealed interface TextTimerAttribute <: CommonMethod<TextTimerAttribute> {
 /**
  * Sets the font size.
  *
- * @param { ?Length } value - Font size. The default font size is 16 fp.
- * <br>If fontSize is of the number type, the unit fp is used.
- * <br>The value cannot be a percentage.
+ * @param { ?Length } value - Font size.The default font size is 16 fp.
+ *     If fontSize is of the number type, the unit fp is used.
+ *     The value cannot be a percentage.
  * @returns { TextTimerAttribute } Returns the text timer attribute to allow method chaining.
  */
 @!APILevel[
@@ -280,7 +276,7 @@ sealed interface TextTimerAttribute <: CommonMethod<TextTimerAttribute> {
 /**
  * Sets the font style.
  *
- * @param { ?FontStyle } value - Font style. Default value: FontStyle.Normal
+ * @param { ?FontStyle } value - Font style.Default value: FontStyle.Normal
  * @returns { TextTimerAttribute } Returns the text timer attribute to allow method chaining.
  */
 @!APILevel[
@@ -292,14 +288,13 @@ sealed interface TextTimerAttribute <: CommonMethod<TextTimerAttribute> {
 /**
  * Sets the font weight.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the value is too large, the text may be clipped depending on the font.
- * </p>
+ * NOTE:
+ * If the value is too large, the text may be clipped depending on the font.
  *
  * @param { ?FontWeight } value - Font weight.
- * <br>For the number type, Value range: [100, 900], at an interval of 100. The default value is 400.
- * <br>A larger value indicates a heavier font weight.
- * <br>For the string type, only strings that represent a number.
+ *     For the number type, Value range: [100, 900], at an interval of 100.The default value is 400.
+ *     A larger value indicates a heavier font weight.
+ *     For the string type, only strings that represent a number.
  * @returns { TextTimerAttribute } Returns the text timer attribute to allow method chaining.
  */
 @!APILevel[
@@ -336,7 +331,6 @@ sealed interface TextTimerAttribute <: CommonMethod<TextTimerAttribute> {
 
 /**
  * Sets the text shadow.
- * It supports input parameters in an array to implement multiple text shadows.
  * This API does not work with the fill attribute or coloring strategy.
  *
  * @param { ?ShadowOptions } value - The shadow options.

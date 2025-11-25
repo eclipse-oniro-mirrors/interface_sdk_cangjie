@@ -26,7 +26,7 @@ public class SearchController <: RemoteDataLite & TextContentControllerBase {
     public init()
 
 /**
- * Set the position of the insertion cursor.
+ * Called when the position of the insertion cursor is set.
  *
  * @param { ?Int32 } value - Length from the start of the character string to the position where the caret is located.
  * @returns { Unit }
@@ -39,7 +39,7 @@ public class SearchController <: RemoteDataLite & TextContentControllerBase {
 }
 
 /**
- * A component that provides a search input field with a search button.
+ * Defines Search Component.
  */
 @!APILevel[
     since: "22",
@@ -69,7 +69,7 @@ public class Search <: CommonMethodComponent<Search> & SearchAttribute {
 /**
  * Set the search button text, fontSize and fontColor.
  *
- * @param { ?ResourceStr } value - Indicates the text of the search button.
+ * @param { ?ResourceStr } value - indicates the text of the search button.
  * @returns { This } Returns the Search instance.
  */
 @!APILevel[
@@ -79,9 +79,9 @@ public class Search <: CommonMethodComponent<Search> & SearchAttribute {
     public func searchButton(value: ?ResourceStr): This
 
 /**
- * Set the place hold text color.
+ * Set the place hold text color
  *
- * @param { ?ResourceColor } value - Default value is '0x99182431'.The default value on wearable devices is '0x99ffffff'.
+ * @param { ?ResourceColor } value - Default value is 0x99182431.The default value on wearable devices is 0x99ffffff.
  * @returns { This } Returns the Search instance.
  */
 @!APILevel[
@@ -92,11 +92,10 @@ public class Search <: CommonMethodComponent<Search> & SearchAttribute {
 
 /**
  * Set the font used for place holder text
+ * NOTE:
+ * The 'HarmonyOS Sans' font and registered custom fonts are supported.
+ * The default font size on wearable devices is 18.px.
  *
- * <p><strong>NOTE</strong>:
- * <br>The 'HarmonyOS Sans' font and registered custom fonts are supported.
- * <br>The default font size on wearable devices is 18.px.
- * </p>
  *
  * @param { ?Length } [size] - The placeholder font size.
  * @param { ?FontWeight } [weight] - The placeholder font weight.
@@ -117,11 +116,10 @@ public class Search <: CommonMethodComponent<Search> & SearchAttribute {
 
 /**
  * Set the font used for input text
+ * NOTE:
+ * Currently, only the default font family is supported.
+ * The default font size on wearable devices is 18 fp.
  *
- * <p><strong>NOTE</strong>:
- * <br>Currently, only the default font family is supported.
- * <br>The default font size on wearable devices is 18.fp.
- * </p>
  *
  * @param { ?Length } [size] - Font size.
  * @param { ?FontWeight } [weight] - Font weight.
@@ -141,12 +139,9 @@ public class Search <: CommonMethodComponent<Search> & SearchAttribute {
     ): This
 
 /**
- * Called when the copy option is set.
- * If this attribute is set to CopyOptions.None, the text can only be pasted;
- * all other actions, such as copying, cutting, and sharing, are disabled.
- * Dragging is not allowed when CopyOptions.None is set.
+ * Called when the copy option is set. NOTE: If this attribute is set to CopyOptions.None, the text can only be pasted; all other actions, such as copying, cutting, and sharing, are disabled. Dragging is not allowed when CopyOptions.None is set
  *
- * @param { ?CopyOptions } value - Copy options for the search input. The default value is CopyOptions.LocalDevice.
+ * @param { ?CopyOptions } value - Default value is CopyOptions.LocalDevice.
  * @returns { This } RReturns the Search instance.
  */
 @!APILevel[
@@ -170,10 +165,9 @@ public class Search <: CommonMethodComponent<Search> & SearchAttribute {
 /**
  * Call the function when editing the input text
  *
- * <p><strong>NOTE</strong>:
- * <br>In this callback, if cursor operations are performed,
+ * NOTE:
+ * In this callback, if cursor operations are performed,
  * developers need to adjust the cursor logic based on the previewText parameter to ensure it works seamlessly within the preview display scenario.
- * </p>
  *
  * @param { ?(String) -> Unit } callback - Text change callback, which returns the current text content in the search box.
  * @returns { This } Returns the Search instance.
@@ -211,8 +205,8 @@ public class Search <: CommonMethodComponent<Search> & SearchAttribute {
 /**
  * Called when using the Clipboard menu.
  *
- * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed. Callback used to return the pasted text content.
- * @returns { This } Returns the Search instance.
+ * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed. { string } value - The text content to be pasted. { PasteEvent } event - The user-defined paste event
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -232,7 +226,7 @@ sealed interface SearchAttribute <: CommonMethod<SearchAttribute> {
 /**
  * Set the search button text, fontSize and fontColor.
  *
- * @param { ?ResourceStr } value - Indicates the text of the search button.
+ * @param { ?ResourceStr } value - indicates the text of the search button.
  * @returns { SearchAttribute } Returns the search attribute.
  */
 @!APILevel[
@@ -242,9 +236,9 @@ sealed interface SearchAttribute <: CommonMethod<SearchAttribute> {
     func searchButton(value: ?ResourceStr): SearchAttribute
 
 /**
- * Set the search button text, fontSize and fontColor.
+ * Set the place hold text color
  *
- * @param { ?ResourceColor } value - indicates the color of the placeholder text. The default value is 0x99182431. The default value on wearable devices is 0x99ffffff.
+ * @param { ?ResourceColor } value - Default value is 0x99182431.The default value on wearable devices is 0x99ffffff.
  * @returns { SearchAttribute } Returns the search attribute.
  */
 @!APILevel[
@@ -256,10 +250,9 @@ sealed interface SearchAttribute <: CommonMethod<SearchAttribute> {
 /**
  * Set the font used for place holder text
  *
- * <p><strong>NOTE</strong>:
- * <br>The 'HarmonyOS Sans' font and registered custom fonts are supported.
- * <br>The default font size on wearable devices is 18.px.
- * </p>
+ * NOTE:
+ * The 'HarmonyOS Sans' font and registered custom fonts are supported.
+ * The default font size on wearable devices is 18.px.
  *
  * @param { ?Length } size - The placeholder font size.
  * @param { ?FontWeight } weight - The placeholder font weight.
@@ -281,10 +274,9 @@ sealed interface SearchAttribute <: CommonMethod<SearchAttribute> {
 /**
  * Set the font used for input text
  *
- * <p><strong>NOTE</strong>:
- * <br>Currently, only the default font family is supported.
- * <br>The default font size on wearable devices is 18.fp.
- * </p>
+ * NOTE:
+ * Currently, only the default font family is supported.
+ * The default font size on wearable devices is 18.fp.
  *
  * @param { ?Length } size - Font size.
  * @param { ?FontWeight } weight - Font weight.
@@ -305,11 +297,12 @@ sealed interface SearchAttribute <: CommonMethod<SearchAttribute> {
 
 /**
  * Called when the copy option is set.
+ * NOTE:
  * If this attribute is set to CopyOptions.None, the text can only be pasted;
  * all other actions, such as copying, cutting, and sharing, are disabled.
  * Dragging is not allowed when CopyOptions.None is set.
  *
- * @param { ?CopyOptions } value - Copy options for the search input. The default value is CopyOptions.LocalDevice.
+ * @param { ?CopyOptions } value - Default value is CopyOptions.LocalDevice.
  * @returns { SearchAttribute } Returns the search attribute.
  */
 @!APILevel[
@@ -333,10 +326,9 @@ sealed interface SearchAttribute <: CommonMethod<SearchAttribute> {
 /**
  * Call the function when editing the input text
  *
- * <p><strong>NOTE</strong>:
- * <br>In this callback, if cursor operations are performed,
+ * NOTE:
+ * In this callback, if cursor operations are performed,
  * developers need to adjust the cursor logic based on the previewText parameter to ensure it works seamlessly within the preview display scenario.
- * </p>
  *
  * @param { ?(String) -> Unit } callback - Text change callback, which returns the current text content in the search box.
  * @returns { SearchAttribute } Returns the search attribute.
@@ -374,7 +366,8 @@ sealed interface SearchAttribute <: CommonMethod<SearchAttribute> {
 /**
  * Called when using the Clipboard menu.
  *
- * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed. Callback used to return the pasted text content.
+ * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed.
+ *      Callback used to return the pasted text content.
  * @returns { SearchAttribute } Returns the search attribute.
  */
 @!APILevel[

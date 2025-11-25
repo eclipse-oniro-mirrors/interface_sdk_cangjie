@@ -23,7 +23,6 @@ import ohos.labels.APILevel
 
 /**
  * Defines class UIContext.
- *
  */
 @!APILevel[
     since: "22",
@@ -33,7 +32,7 @@ public class UIContext {
 /**
  * Obtains a PromptAction object.
  *
- * @returns { PromptAction } object PromptAction.
+ * @returns { PromptAction } PromptAction object
  */
 @!APILevel[
     since: "22",
@@ -42,9 +41,9 @@ public class UIContext {
     public func getPromptAction(): PromptAction
 
 /**
-  * Get MeasureUtils.
-  * @returns { MeasureUtils } the MeasureUtils.
-  */
+ * Get MeasureUtils.
+ * @returns { MeasureUtils } the MeasureUtils.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
@@ -149,7 +148,7 @@ public class UIContext {
 /**
  * Obtains a Router object.
  *
- * @returns { Router } object Router.
+ * @returns { Router } Router object
  */
 @!APILevel[
     since: "22",
@@ -230,7 +229,6 @@ public class UIContext {
 
 /**
  * Defines class ContextMenuController.
- *
  */
 @!APILevel[
     since: "22",
@@ -238,7 +236,7 @@ public class UIContext {
 ]
 public class ContextMenuController {
 /**
- * Close the context menu.
+ * Close context menu.
  */
 @!APILevel[
     since: "22",
@@ -249,7 +247,6 @@ public class ContextMenuController {
 
 /**
  * Whether to resume to the initial state after the animation is executed.
- *
  */
 @!APILevel[
     since: "22",
@@ -257,7 +254,7 @@ public class ContextMenuController {
 ]
 public enum AnimatorFill {
 /**
- * None Type, nothing to do when keyboard height changed.
+ * None Type, the layout is not adjusted to avoid the keyboard.
  */
 @!APILevel[
     since: "22",
@@ -276,7 +273,6 @@ public enum AnimatorFill {
     |
 /**
  * Applies the start attribute value for the period specified by animation-delay before the animation is displayed.
- *
  */
 @!APILevel[
     since: "22",
@@ -286,7 +282,6 @@ public enum AnimatorFill {
     |
 /**
  * Both forward and backward fill modes are applied.
- *
  */
 @!APILevel[
     since: "22",
@@ -329,7 +324,6 @@ extend AnimatorFill <: Equatable<AnimatorFill> {
 public enum AnimatorDirection {
 /**
  * The animation plays normally.
- *
  */
 @!APILevel[
     since: "22",
@@ -339,7 +333,6 @@ public enum AnimatorDirection {
     |
 /**
  * The animation plays backwards.
- *
  */
 @!APILevel[
     since: "22",
@@ -349,7 +342,6 @@ public enum AnimatorDirection {
     |
 /**
  * The animation plays forward on odd numbers (1, 3, 7...) and backward on even numbers (2, 4, 6...).
- *
  */
 @!APILevel[
     since: "22",
@@ -359,7 +351,6 @@ public enum AnimatorDirection {
     |
 /**
  * The animation plays backwards on odd numbers (1, 3, 7...) and forwards on even numbers (2, 4, 6...).
- *
  */
 @!APILevel[
     since: "22",
@@ -394,7 +385,6 @@ extend AnimatorDirection <: Equatable<AnimatorDirection> {
 
 /**
  * Defines the animator options.
- *
  */
 @!APILevel[
     since: "22",
@@ -452,7 +442,6 @@ public class AnimatorOptions {
 
 /**
  * Whether to resume to the initial state after the animation is executed.
- *
  */
 @!APILevel[
     since: "22",
@@ -462,7 +451,6 @@ public class AnimatorOptions {
 
 /**
  * The animation playback mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -537,7 +525,6 @@ public class AnimatorOptions {
 
 /**
  * Defines the Animator result class.
- *
  */
 @!APILevel[
     since: "22",
@@ -585,7 +572,7 @@ public class AnimatorResult <: RemoteDataLite {
  *
  * @param { AnimatorOptions } options
  * @throws { BusinessException } 100001 - Internal error. Possible causes:
- * <br> The specified page is not found or the object property list is not obtained.
+ *  The specified page is not found or the object property list is not obtained.
  */
 @!APILevel[
     since: "22",
@@ -649,12 +636,11 @@ public class AnimatorResult <: RemoteDataLite {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func setFrameRateRange(rateRange: ExpectedFrameRateRange): Unit
+    public func setExpectedFrameRateRange(rateRange: ExpectedFrameRateRange): Unit
 }
 
 /**
  * Provides a font component.
- *
  */
 @!APILevel[
     since: "22",
@@ -663,7 +649,6 @@ public class AnimatorResult <: RemoteDataLite {
 public class FontInfo {
 /**
  * The path of the font file.
- *
  */
 @!APILevel[
     since: "22",
@@ -673,7 +658,6 @@ public class FontInfo {
 
 /**
  * The name of postscript.
- *
  */
 @!APILevel[
     since: "22",
@@ -683,7 +667,6 @@ public class FontInfo {
 
 /**
  * The font name.
- *
  */
 @!APILevel[
     since: "22",
@@ -693,7 +676,6 @@ public class FontInfo {
 
 /**
  * A set of fonts with a common design.
- *
  */
 @!APILevel[
     since: "22",
@@ -703,7 +685,6 @@ public class FontInfo {
 
 /**
  * A subset of the font family.
- *
  */
 @!APILevel[
     since: "22",
@@ -713,7 +694,6 @@ public class FontInfo {
 
 /**
  * The weight of the font.
- *
  */
 @!APILevel[
     since: "22",
@@ -723,7 +703,6 @@ public class FontInfo {
 
 /**
  * The width of the font style.
- *
  */
 @!APILevel[
     since: "22",
@@ -733,7 +712,6 @@ public class FontInfo {
 
 /**
  * Whether it is italic.
- *
  */
 @!APILevel[
     since: "22",
@@ -743,7 +721,6 @@ public class FontInfo {
 
 /**
  * Whether it is compact.
- *
  */
 @!APILevel[
     since: "22",
@@ -753,7 +730,6 @@ public class FontInfo {
 
 /**
  * Whether symbol fonts are supported.
- *
  */
 @!APILevel[
     since: "22",
@@ -765,10 +741,9 @@ public class FontInfo {
 /**
  * class Font
  *
- * <p><strong>NOTE</strong>:
- * <br>You must first use getFont() in UIContext to obtain a Font instance,
+ * NOTE:
+ * You must first use getFont() in UIContext to obtain a Font instance,
  * and then call the APIs using the obtained instance.
- * </p>
  */
 @!APILevel[
     since: "22",
@@ -814,7 +789,6 @@ public class Font {
 
 /**
  * Defines the options of MeasureText.
- *
  */
 @!APILevel[
     since: "22",
@@ -865,7 +839,6 @@ public class MeasureOptions {
 
 /**
  * Defines the size options.
- *
  */
 @!APILevel[
     since: "22",
@@ -874,7 +847,6 @@ public class MeasureOptions {
 public class SizeOptions {
 /**
  * Defines the width.
- *
  */
 @!APILevel[
     since: "22",
@@ -884,7 +856,6 @@ public class SizeOptions {
 
 /**
  * Defines the height.
- *
  */
 @!APILevel[
     since: "22",
@@ -892,7 +863,7 @@ public class SizeOptions {
 ]
     public var height: Length = 0
 
-    /*
+/**
  * SizeOptions constructor.
  *
  * @param { Length } [width]
@@ -906,8 +877,11 @@ public class SizeOptions {
 }
 
 /**
- * Defines the Measure class.
+ * class MeasureUtils
  *
+ * NOTE:
+ * You must first use getMeasureUtils() in UIContext to obtain a MeasureUtils instance,
+ * and then call the APIs using the obtained instance.
  */
 @!APILevel[
     since: "22",
@@ -950,7 +924,7 @@ public type ShowDialogCallBack = AsyncCallback<Int32>
 public type ShowActionMenuCallBack = AsyncCallback<Int32>
 
 /**
- * Provides a ButtonInfo component..
+ * Provides a ButtonInfo component.
  */
 @!APILevel[
     since: "22",
@@ -1000,7 +974,6 @@ public class ButtonInfo {
 
 /**
  * Enum for the toast showMode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1060,7 +1033,6 @@ extend ToastShowMode <: Equatable<ToastShowMode> {
 public class EdgeColors {
 /**
  * The top of the EdgeColor.
- *
  */
 @!APILevel[
     since: "22",
@@ -1070,7 +1042,6 @@ public class EdgeColors {
 
 /**
  * The right of the EdgeColor.
- *
  */
 @!APILevel[
     since: "22",
@@ -1080,7 +1051,6 @@ public class EdgeColors {
 
 /**
  * The bottom of the EdgeColor.
- *
  */
 @!APILevel[
     since: "22",
@@ -1090,7 +1060,6 @@ public class EdgeColors {
 
 /**
  * The left of the EdgeColor.
- *
  */
 @!APILevel[
     since: "22",
@@ -1120,7 +1089,6 @@ public class EdgeColors {
 
 /**
  * Provides a EdgeColor component.
- *
  */
 @!APILevel[
     since: "22",
@@ -1172,7 +1140,6 @@ extend HoverModeAreaType <: Equatable<HoverModeAreaType> {
 
 /**
  * Enum of KeyBoardAvoidMethodType.
- *
  */
 @!APILevel[
     since: "22",
@@ -1189,7 +1156,7 @@ public enum KeyboardAvoidMode {
     Default
     |
 /**
- * None Type, nothing to do when keyboard height changed.
+ * None Type, the layout is not adjusted to avoid the keyboard.
  */
 @!APILevel[
     since: "22",
@@ -1224,7 +1191,6 @@ extend KeyboardAvoidMode <: Equatable<KeyboardAvoidMode> {
 
 /**
  * Dialog base options
- *
  */
 @!APILevel[
     since: "22",
@@ -1233,7 +1199,6 @@ extend KeyboardAvoidMode <: Equatable<KeyboardAvoidMode> {
 public open class BaseDialogOptions {
 /**
  * Mask Region of dialog. The size can't exceed the main window.
- *
  */
 @!APILevel[
     since: "22",
@@ -1243,7 +1208,6 @@ public open class BaseDialogOptions {
 
 /**
  * Defines the dialog alignment of the screen.
- *
  */
 @!APILevel[
     since: "22",
@@ -1253,7 +1217,6 @@ public open class BaseDialogOptions {
 
 /**
  * Defines the dialog offset.
- *
  */
 @!APILevel[
     since: "22",
@@ -1272,7 +1235,6 @@ public open class BaseDialogOptions {
 
 /**
  * Whether to display in the sub window.
- *
  */
 @!APILevel[
     since: "22",
@@ -1282,7 +1244,6 @@ public open class BaseDialogOptions {
 
 /**
  * Allows users to click the mask layer to exit.
- *
  */
 @!APILevel[
     since: "22",
@@ -1292,7 +1253,6 @@ public open class BaseDialogOptions {
 
 /**
  * Defines custom dialog maskColor
- *
  */
 @!APILevel[
     since: "22",
@@ -1302,7 +1262,6 @@ public open class BaseDialogOptions {
 
 /**
  * Transition parameters of opening/closing custom dialog.
- *
  */
 @!APILevel[
     since: "22",
@@ -1312,7 +1271,6 @@ public open class BaseDialogOptions {
 
 /**
  * Callback function when the dialog appears.
- *
  */
 @!APILevel[
     since: "22",
@@ -1322,7 +1280,6 @@ public open class BaseDialogOptions {
 
 /**
  * Callback function when the dialog disappears.
- *
  */
 @!APILevel[
     since: "22",
@@ -1332,7 +1289,6 @@ public open class BaseDialogOptions {
 
 /**
  * Callback function before the dialog openAnimation starts.
- *
  */
 @!APILevel[
     since: "22",
@@ -1342,7 +1298,6 @@ public open class BaseDialogOptions {
 
 /**
  * Callback function before the dialog closeAnimation starts.
- *
  */
 @!APILevel[
     since: "22",
@@ -1351,7 +1306,7 @@ public open class BaseDialogOptions {
     public var onWillDisappear: () -> Unit
 
 /**
- * Get KeyboardAvoidMode.
+ * Obtains the avoidance mode of the virtual keyboard.
  */
 @!APILevel[
     since: "22",
@@ -1361,7 +1316,6 @@ public open class BaseDialogOptions {
 
 /**
  * Defines whether to respond to the hover mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1371,7 +1325,6 @@ public open class BaseDialogOptions {
 
 /**
  * Defines the dialog's display area in hover mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1423,7 +1376,6 @@ public open class BaseDialogOptions {
 
 /**
  * Dialog's custom content options.
- *
  */
 @!APILevel[
     since: "22",
@@ -1432,7 +1384,6 @@ public open class BaseDialogOptions {
 public class CustomDialogOptions <: BaseDialogOptions {
 /**
  * Allow developer custom dialog's content.
- *
  */
 @!APILevel[
     since: "22",
@@ -1442,7 +1393,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the custom dialog's background color.
- *
  */
 @!APILevel[
     since: "22",
@@ -1452,7 +1402,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the custom dialog's corner radius.
- *
  */
 @!APILevel[
     since: "22",
@@ -1462,7 +1411,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the custom dialog's border width.
- *
  */
 @!APILevel[
     since: "22",
@@ -1472,7 +1420,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the custom dialog's border color.
- *
  */
 @!APILevel[
     since: "22",
@@ -1482,7 +1429,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the custom dialog's border style.
- *
  */
 @!APILevel[
     since: "22",
@@ -1492,7 +1438,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the dialog's width.
- *
  */
 @!APILevel[
     since: "22",
@@ -1502,7 +1447,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the dialog's height.
- *
  */
 @!APILevel[
     since: "22",
@@ -1512,7 +1456,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the dialog's shadow.
- *
  */
 @!APILevel[
     since: "22",
@@ -1522,7 +1465,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Defines the dialog's background blur Style.
- *
  */
 @!APILevel[
     since: "22",
@@ -1596,7 +1538,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 
 /**
  * Dialog's show options.
- *
  */
 @!APILevel[
     since: "22",
@@ -1605,7 +1546,6 @@ public class CustomDialogOptions <: BaseDialogOptions {
 public open class ShowDialogOptions {
 /**
  * Title of the text to display.
- *
  */
 @!APILevel[
     since: "22",
@@ -1615,7 +1555,6 @@ public open class ShowDialogOptions {
 
 /**
  * Text body.
- *
  */
 @!APILevel[
     since: "22",
@@ -1635,7 +1574,6 @@ public open class ShowDialogOptions {
 
 /**
  * Defines the dialog alignment of the screen.
- *
  */
 @!APILevel[
     since: "22",
@@ -1645,7 +1583,6 @@ public open class ShowDialogOptions {
 
 /**
  * Defines the dialog offset.
- *
  */
 @!APILevel[
     since: "22",
@@ -1655,7 +1592,6 @@ public open class ShowDialogOptions {
 
 /**
  * Mask Region of dialog. The size can't exceed the main window.
- *
  */
 @!APILevel[
     since: "22",
@@ -1665,7 +1601,6 @@ public open class ShowDialogOptions {
 
 /**
  * Whether to display in the sub window.
- *
  */
 @!APILevel[
     since: "22",
@@ -1684,7 +1619,6 @@ public open class ShowDialogOptions {
 
 /**
  * Defines the dialog's background color.
- *
  */
 @!APILevel[
     since: "22",
@@ -1694,7 +1628,6 @@ public open class ShowDialogOptions {
 
 /**
  * Defines the dialog's background blur Style.
- *
  */
 @!APILevel[
     since: "22",
@@ -1704,7 +1637,6 @@ public open class ShowDialogOptions {
 
 /**
  * Defines the dialog's shadow option.
- *
  */
 @!APILevel[
     since: "22",
@@ -1714,7 +1646,6 @@ public open class ShowDialogOptions {
 
 /**
  * Defines whether to respond to the hover mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1724,7 +1655,6 @@ public open class ShowDialogOptions {
 
 /**
  * Defines the dialog's display area in hover mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1772,7 +1702,6 @@ public open class ShowDialogOptions {
 
 /**
  * Menu's Action options.
- *
  */
 @!APILevel[
     since: "22",
@@ -1781,7 +1710,6 @@ public open class ShowDialogOptions {
 public open class ActionMenuOptions {
 /**
  * Title of the text to display.
- *
  */
 @!APILevel[
     since: "22",
@@ -1792,7 +1720,6 @@ public open class ActionMenuOptions {
 /**
  * Array of buttons in the dialog box.
  * One to six buttons are supported.
- *
  */
 @!APILevel[
     since: "22",
@@ -1802,7 +1729,6 @@ public open class ActionMenuOptions {
 
 /**
  * Whether to display in the sub window.
- *
  */
 @!APILevel[
     since: "22",
@@ -1841,7 +1767,6 @@ public open class ActionMenuOptions {
 
 /**
  * Toast's show options.
- *
  */
 @!APILevel[
     since: "22",
@@ -1850,7 +1775,6 @@ public open class ActionMenuOptions {
 public class ShowToastOptions {
 /**
  * Text to display.
- *
  */
 @!APILevel[
     since: "22",
@@ -1869,7 +1793,6 @@ public class ShowToastOptions {
 
 /**
  * The distance between toast dialog box and the bottom of screen.
- *
  */
 @!APILevel[
     since: "22",
@@ -1879,7 +1802,6 @@ public class ShowToastOptions {
 
 /**
  * Determine the show mode of the toast.
- *
  */
 @!APILevel[
     since: "22",
@@ -1889,7 +1811,6 @@ public class ShowToastOptions {
 
 /**
  * Defines the toast alignment of the screen.
- *
  */
 @!APILevel[
     since: "22",
@@ -1899,7 +1820,6 @@ public class ShowToastOptions {
 
 /**
  * Defines the toast offset.
- *
  */
 @!APILevel[
     since: "22",
@@ -1909,7 +1829,6 @@ public class ShowToastOptions {
 
 /**
  * Background color of toast.
- *
  */
 @!APILevel[
     since: "22",
@@ -1919,7 +1838,6 @@ public class ShowToastOptions {
 
 /**
  * Text color of toast.
- *
  */
 @!APILevel[
     since: "22",
@@ -1929,7 +1847,6 @@ public class ShowToastOptions {
 
 /**
  * Background blur Style of toast.
- *
  */
 @!APILevel[
     since: "22",
@@ -1939,7 +1856,6 @@ public class ShowToastOptions {
 
 /**
  * Shadow of toast's option.
- *
  */
 @!APILevel[
     since: "22",
@@ -1949,7 +1865,6 @@ public class ShowToastOptions {
 
 /**
  * Define whether to respond to the hover mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1959,7 +1874,6 @@ public class ShowToastOptions {
 
 /**
  * Defines the toast's display area in hover mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -2005,7 +1919,6 @@ public class ShowToastOptions {
 
 /**
  * class PromptAction.
- *
  */
 @!APILevel[
     since: "22",
@@ -2037,7 +1950,7 @@ public class PromptAction {
     public func closeCustomDialog(dialogId: Int32): Unit
 
 /**
- * Displays the notification text.
+ * Shows a toast in the given settings.
  *
  * @param { ShowToastOptions } option - Toast options.
  */
@@ -2079,7 +1992,6 @@ public class PromptAction {
 
 /**
  * Router Mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -2089,7 +2001,6 @@ public enum RouterMode {
 /**
  * Default route mode.
  * The page will be added to the top of the page stack.
- *
  */
 @!APILevel[
     since: "22",
@@ -2102,7 +2013,6 @@ public enum RouterMode {
  * If the target page already has the same url page in the page stack,
  * the same url page closest to the top of the stack will be moved to the top of the stack.
  * If the target page url does not exist in the page stack, route will use default route mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -2137,7 +2047,6 @@ extend RouterMode <: Equatable<RouterMode> {
 
 /**
  * Router State.
- *
  */
 @!APILevel[
     since: "22",
@@ -2203,7 +2112,6 @@ public class RouterState {
 
 /**
  * class Router.
- *
  */
 @!APILevel[
     since: "22",
@@ -2224,7 +2132,7 @@ public class Router {
     public func pushUrl(url!: String, params!: String = ""): Unit
 
 /**
- * Returns to the previous page or a specified page.
+ * Returns to the specified page
  *
  * @param { String } url
  * @param { String } [params]
@@ -2236,7 +2144,7 @@ public class Router {
     public func back(url!: ?String = None, params!: String = ""): Unit
 
 /**
- * Returns to the previous page or a specified page.
+ * Returns to the specified page.
  *
  * @param { Int32 } index
  * @param { String } [params]

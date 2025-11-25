@@ -28,7 +28,7 @@ public class TextAreaController <: RemoteDataLite {
     public init()
 
 /**
- * Set the position of the insertion cursor.
+ * Called when the position of the insertion cursor is set.
  *
  * @param { ?Int32 } value  - Length from the start of the string to the position where the caret is located.
  */
@@ -40,8 +40,7 @@ public class TextAreaController <: RemoteDataLite {
 }
 
 /**
- * Defines the options of TextArea.
- * TextArea is a multi-line text input component that allows users to input and edit text.
+ * Defines TextArea Component.
  */
 @!APILevel[
     since: "22",
@@ -62,10 +61,10 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public init(placeholder!: ?ResourceStr = None, text!: ?ResourceStr = None, controller!: ?TextAreaController = None)
 
 /**
- * Set the insertion cursor color.
+ * Called when the insertion cursor color is set. NOTE: this API can be used to set the text handle color, which is the same as the caret color
  *
- * @param { ?ResourceColor } value - Default value is 0x007DFF.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @param { ?ResourceColor } value - Default value is 0X007DFF.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -74,14 +73,13 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func caretColor(value: ?ResourceColor): This
 
 /**
- * Set the font property of the placeholder.
- * The 'HarmonyOS Sans' font and registered custom fonts are supported.
+ * Called when the font property of the placeholder is set. The 'HarmonyOS Sans' font and registered custom fonts are supported
  *
  * @param { ?Length } size - Font size of the placeholder text.
  * @param { ?FontWeight } [weight] - Font weight of the placeholder text.
  * @param { ?String } [family] - Font family of the placeholder text.
  * @param { ?FontStyle } [style] - Font style of the placeholder text.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -92,18 +90,15 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
 
 /**
  * Called when the alignment of the contents of a multiline text box is set.
- *
- * NOTE:
- * <br>To set vertical alignment for the text, use the align attribute.
- * <br>The align attribute alone does not control the horizontal position of the text.
- * <br>In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect,
- * top-aligning the text; Alignment.Start, Alignment.Center, and Alignment.End produce the same effect,
- * centered-aligning the text vertically; Alignment.BottomStart, Alignment.Bottom,
- * and Alignment.BottomEnd produce the same effect, bottom-aligning the text.
- * <br>When textAlign is set to TextAlign.Justify, the text in the last line is horizontally aligned with the start edge.
+ * NOTE: To set vertical alignment for the text, use the align attribute.
+ * The align attribute alone does not control the horizontal position of the text.
+ * In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect, top-aligning the text;
+ * Alignment.Start, Alignment.Center, and Alignment.End produce the same effect, centered-aligning the text vertically;
+ * Alignment.BottomStart, Alignment.Bottom, and Alignment.BottomEnd produce the same effect, bottom-aligning the text.
+ * When textAlign is set to TextAlign.JUSTIFY, the text in the last line is horizontally aligned with the start edge.
  *
  * @param { ?TextAlign } value - Default value is TextAlign.Start.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -112,12 +107,12 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func textAlign(value: ?TextAlign): This
 
 /**
- * Set font size.
+ * Sets the font size
  *
- * @param { ?Length } value - Default value is 16.fp.
- * The default value on wearable devices is 18.fp. If fontSize is of the number type, the unit fp is used.
- * This parameter cannot be set in percentage.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @param { ?Length } value - Font size.The default font size is 16 fp.
+ *     If fontSize is of the number type, the unit fp is used.
+ *     The value cannot be a percentage.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -126,10 +121,10 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func fontSize(value: ?Length): This
 
 /**
- * Set font color.
+ * Sets the font color
  *
  * @param { ?ResourceColor } value - Color of the text. The default value is 0xe6182431.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -138,10 +133,10 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func fontColor(value: ?ResourceColor): This
 
 /**
- * Set font weight.
+ * Called when the font weight is set
  *
  * @param { ?FontWeight } value - Weight of the font.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -150,10 +145,10 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func fontWeight(value: ?FontWeight): This
 
 /**
- * Set font style.
+ * Sets the font style
  *
- * @param { ?FontStyle } value - Default value is FontStyle.Normal.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @param { ?FontStyle } value - Font style.Default value: FontStyle.Normal
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -162,13 +157,10 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func fontStyle(value: ?FontStyle): This
 
 /**
- * Set font family.
- * <br>Default font: 'HarmonyOS Sans'
- * <br>The 'HarmonyOS Sans' font and registered custom fonts are supported for applications.
- * <br>Only the 'HarmonyOS Sans' font is supported for widgets.
+ * Called when the font list of text is set. NOTE: The 'HarmonyOS Sans' font and registered custom fonts are supported for applications. Only the 'HarmonyOS Sans' font is supported for widgets
  *
  * @param { ?ResourceStr } value - Default value is 'HarmonyOS Sans'.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -177,10 +169,10 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func fontFamily(value: ?ResourceStr): This
 
 /**
- * Set the type of soft keyboard input button.
+ * Set enter key type of soft keyboard
  *
- * @param { ?EnterKeyType } value - Type of the enter key.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @param { ?EnterKeyType } value - the enter key type of soft keyboard
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -191,15 +183,14 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
 /**
  * Called when the inputFilter of text is set.
  *
- * <p><strong>NOTE</strong>:
- * <br>Only inputs that comply with the regular expression can be displayed.
- * <br>Other inputs are filtered out.
- * <br>The specified regular expression can match single characters, but not strings.
- * </p>
+ * NOTE:
+ * Only inputs that comply with the regular expression can be displayed.
+ * Other inputs are filtered out.
+ * The specified regular expression can match single characters, but not strings.
  *
  * @param { ?ResourceStr } value - Regular expression pattern for input filtering.
  * @param { ?(String) -> Unit } [error] - Callback function executed when input doesn't match the pattern.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -214,7 +205,7 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
  * no more characters can be entered, and the border turns red.
  *
  * @param { ?UInt32 } value - Maximum number of characters allowed.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -223,10 +214,10 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
     public func maxLength(value: ?UInt32): This
 
 /**
- * Set the placeholder color.
+ * Called when the color of the placeholder is set
  *
  * @param { ?ResourceColor } value - Default value follows the theme.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -237,8 +228,8 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
 /**
  * Called when submitted.
  *
- * @param { ?(EnterKeyType) -> Unit } callback - Callback function executed when the enter key is pressed.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @param { ?(EnterKeyType) -> Unit } callback - If it is EnterKeyType.NewLine and the text box is in inline input style, onSubmit is not triggered.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -253,7 +244,7 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
  * to make sure it works seamlessly under the preview display scenario.
  *
  * @param { ?(String) -> Unit }  callback - Callback function executed when the text content changes.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -265,7 +256,7 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
  * Called when using the Clipboard menu.
  *
  * @param { ?(String) -> Unit } callback - Callback function executed when copy operation is performed.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -277,7 +268,7 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
  * Called when using the Clipboard menu.
  *
  * @param { ?(String) -> Unit } callback - Callback function executed when cut operation is performed.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -288,8 +279,8 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
 /**
  * Called when using the Clipboard menu.
  *
- * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed. { string } value - The text content to be pasted. { PasteEvent } event - The user-defined paste event
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -302,7 +293,7 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
  * The text box is in the editing state when it has the caret placed in it, and is in the non-editing state otherwise.
  *
  * @param { ?(Bool) -> Unit} callback - Triggered when the text area status changes. If the value of isEditing is true, text area is in progress.
- * @returns { This } Returns the component instance itself for method chaining.
+ * @returns { This } returns the instance of the TextArea.
  */
 @!APILevel[
     since: "22",
@@ -312,8 +303,7 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
 }
 
 /**
- * Defines the TextArea attribute functions.
- * This interface provides the attribute methods for the TextArea component.
+ * Defines the attribute functions of TextArea.
  */
 @!APILevel[
     since: "22",
@@ -321,7 +311,7 @@ public class TextArea <: CommonMethodComponent<TextArea> & TextAreaAttribute {
 ]
 sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
 /**
- * Set the insertion cursor color.
+ * Called when the insertion cursor color is set.
  *
  * @param { ?ResourceColor } value - Default value is 0x007DFF.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
@@ -333,7 +323,7 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func caretColor(value: ?ResourceColor): TextAreaAttribute
 
 /**
- * Set the font property of the placeholder.
+ * Called when the font property of the placeholder is set.
  * The 'HarmonyOS Sans' font and registered custom fonts are supported.
  *
  * @param { ?Length } size - Font size of the placeholder text.
@@ -350,15 +340,14 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
 
 /**
  * Called when the alignment of the contents of a multiline text box is set.
- *
  * NOTE:
- * <br>To set vertical alignment for the text, use the align attribute.
- * <br>The align attribute alone does not control the horizontal position of the text.
- * <br>In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect,
+ * To set vertical alignment for the text, use the align attribute.
+ * The align attribute alone does not control the horizontal position of the text.
+ * In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect,
  * top-aligning the text; Alignment.Start, Alignment.Center, and Alignment.End produce the same effect,
  * centered-aligning the text vertically; Alignment.BottomStart, Alignment.Bottom,
  * and Alignment.BottomEnd produce the same effect, bottom-aligning the text.
- * <br>When textAlign is set to TextAlign.Justify, the text in the last line is horizontally aligned with the start edge.
+ * When textAlign is set to TextAlign.Justify, the text in the last line is horizontally aligned with the start edge.
  *
  * @param { ?TextAlign } value - Default value is TextAlign.Start.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
@@ -370,9 +359,11 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func textAlign(value: ?TextAlign): TextAreaAttribute
 
 /**
- * Set font size.
+ * Sets the font size.
  *
- * @param { ?Length } value - Default value is 16.fp. The default value on wearable devices is 18.fp. If fontSize is of the number type, the unit fp is used. This parameter cannot be set in percentage.
+ * @param { ?Length } value - Font size.The default font size is 16 fp.
+ *     If fontSize is of the number type, the unit fp is used.
+ *     The value cannot be a percentage.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
  */
 @!APILevel[
@@ -382,7 +373,7 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func fontSize(value: ?Length): TextAreaAttribute
 
 /**
- * Set font color.
+ * Sets the font color.
  *
  * @param { ?ResourceColor } value - Color of the text.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
@@ -394,7 +385,7 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func fontColor(value: ?ResourceColor): TextAreaAttribute
 
 /**
- * Set font weight.
+ * Called when the font weight is set.
  *
  * @param { ?FontWeight } value - Weight of the font.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
@@ -406,9 +397,9 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func fontWeight(value: ?FontWeight): TextAreaAttribute
 
 /**
- * Set font style.
+ * Sets the font style.
  *
- * @param { ?FontStyle } value - Default value is FontStyle.Normal.
+ * @param { ?FontStyle } value - Font style.Default value: FontStyle.Normal
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
  */
 @!APILevel[
@@ -418,10 +409,10 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func fontStyle(value: ?FontStyle): TextAreaAttribute
 
 /**
- * Set font family.
- * <br>Default font: 'HarmonyOS Sans'
- * <br>The 'HarmonyOS Sans' font and registered custom fonts are supported for applications.
- * <br>Only the 'HarmonyOS Sans' font is supported for widgets.
+ * Called when the font list of text is set.
+ * NOTE:
+ * The 'HarmonyOS Sans' font and registered custom fonts are supported for applications.
+ * Only the 'HarmonyOS Sans' font is supported for widgets.
  *
  * @param { ?ResourceStr } value - Default value is 'HarmonyOS Sans'.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
@@ -433,9 +424,9 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func fontFamily(value: ?ResourceStr): TextAreaAttribute
 
 /**
- * Set the type of soft keyboard input button.
+ * Set enter key type of soft keyboard.
  *
- * @param { ?EnterKeyType } value - Type of the enter key.
+ * @param { ?EnterKeyType } value - the enter key type of soft keyboard
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
  */
 @!APILevel[
@@ -447,11 +438,10 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
 /**
  * Called when the inputFilter of text is set.
  *
- * <p><strong>NOTE</strong>:
- * <br>Only inputs that comply with the regular expression can be displayed.
- * <br>Other inputs are filtered out.
- * <br>The specified regular expression can match single characters, but not strings.
- * </p>
+ * NOTE:
+ * Only inputs that comply with the regular expression can be displayed.
+ * Other inputs are filtered out.
+ * The specified regular expression can match single characters, but not strings.
  *
  * @param { ?ResourceStr } value - Regular expression pattern for input filtering.
  * @param { ?(String) -> Unit } error - Callback function executed when input doesn't match the pattern.
@@ -479,7 +469,7 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
     func maxLength(value: ?UInt32): TextAreaAttribute
 
 /**
- * Set placeholder color.
+ * Called when the color of the placeholder is set.
  *
  * @param { ?ResourceColor } value - Default value follows the theme.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
@@ -493,7 +483,7 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
 /**
  * Called when submitted.
  *
- * @param { ?(EnterKeyType) -> Unit } callback - Callback function executed when the enter key is pressed.
+ * @param { ?(EnterKeyType) -> Unit } callback - If it is EnterKeyType.NewLine and the text box is in inline input style, onSubmit is not triggered.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
  */
 @!APILevel[
@@ -544,7 +534,8 @@ sealed interface TextAreaAttribute <: CommonMethod<TextAreaAttribute> {
 /**
  * Called when using the Clipboard menu.
  *
- * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed. { String } value - The text content to be pasted.
+ * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed.
+ *      String value - The text content to be pasted.
  * @returns { TextAreaAttribute } Returns the attribute of TextArea.
  */
 @!APILevel[

@@ -391,7 +391,7 @@ public class BreakPoints {
 public class GridRow <: CommonMethodComponent<GridRow> & GridRowAttribute {
 /**
  * Defines the constructor of GridRow.
- * 
+ *
  * @param { ?Int32 } columns - Sets the total number of columns in the current layout.
  * @param { ?Length } [gutter] - Layout spacing between sub-components.
  * @param { ?BreakPoints } [breakpoints] - Grid-row layout breakpoints.
@@ -412,7 +412,7 @@ public class GridRow <: CommonMethodComponent<GridRow> & GridRowAttribute {
 
 /**
  * Defines the constructor of GridRow.
- * 
+ *
  * @param { ?GridRowOptions } [columns] - Sets the total number of columns in the current layout.
  * @param { ?Length } [gutter] - Layout spacing between sub-components.
  * @param { ?BreakPoints } [breakpoints] - Grid-row layout breakpoints.
@@ -433,7 +433,7 @@ public class GridRow <: CommonMethodComponent<GridRow> & GridRowAttribute {
 
 /**
  * Defines the constructor of GridRow.
- * 
+ *
  * @param { ?Int32 } columns - Sets the total number of columns in the current layout.
  * @param { ?GutterOption } gutter - layout spacing between sub-components.
  * @param { ?BreakPoints } [breakpoints] - grid-row layout breakpoints.
@@ -454,7 +454,7 @@ public class GridRow <: CommonMethodComponent<GridRow> & GridRowAttribute {
 
 /**
  * Defines the constructor of GridRow.
- * 
+ *
  * @param { ?GridRowOptions } [columns] - Sets the total number of columns in the current layout.
  * @param { ?GutterOption } gutter - layout spacing between sub-components.
  * @param { ?BreakPoints } [breakpoints] - grid-row layout breakpoints.
@@ -476,7 +476,7 @@ public class GridRow <: CommonMethodComponent<GridRow> & GridRowAttribute {
 /**
  * Cross axis alignment of each line in GridRow.
  *
- * @param { ?ItemAlign } value - Element alignment.
+ * @param { ?ItemAlign } value - element alignment
  * @returns { This }
  */
 @!APILevel[
@@ -509,7 +509,7 @@ sealed interface GridRowAttribute <: CommonMethod<GridRowAttribute> {
 /**
  * Cross axis alignment of each line in GridRow.
  *
- * @param { ?ItemAlign } value - Element alignment.
+ * @param { ?ItemAlign } value - element alignment
  * @returns { GridRowAttribute }
  */
 @!APILevel[

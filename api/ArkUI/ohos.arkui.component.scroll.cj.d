@@ -13,7 +13,7 @@ import std.convert.*
 import std.deriving.Derive
 
 /**
- * Represents the scroll values resulting from a scroll operation.
+ * The actual offset by which the scrollable scrolls.
  */
 @!APILevel[
     since: "22",
@@ -21,7 +21,7 @@ import std.deriving.Derive
 ]
 public class ScrollResult {
 /**
- * The offset remain of scroll.
+ * Actual offset by which the scrollable scrolls in vp.
  */
 @!APILevel[
     since: "22",
@@ -83,7 +83,7 @@ public class OffsetResult {
 }
 
 /**
- * Represents the offset values resulting from a scroll operation.
+ * Describe the position, width, and height of a component.
  */
 @!APILevel[
     since: "22",
@@ -91,7 +91,7 @@ public class OffsetResult {
 ]
 public class RectResult {
 /**
- * Representing the x in the rect values.
+ * Horizontal coordinate.
  */
 @!APILevel[
     since: "22",
@@ -100,7 +100,7 @@ public class RectResult {
     public var x: ?Float64
 
 /**
- * Representing the y in the rect values.
+ * Vertical coordinate.
  */
 @!APILevel[
     since: "22",
@@ -109,7 +109,7 @@ public class RectResult {
     public var y: ?Float64
 
 /**
- * Representing the width in the rect values
+ * Rectangle width.
  */
 @!APILevel[
     since: "22",
@@ -118,7 +118,7 @@ public class RectResult {
     public var width: ?Float64
 
 /**
- * Representing the height in the rect values
+ * Rectangle height.
  */
 @!APILevel[
     since: "22",
@@ -127,7 +127,7 @@ public class RectResult {
     public var height: ?Float64
 
 /**
- * Constructs an rect result.
+ * Constructs a rect result.
  *
  * @param { Float64 } x - Representing the x in the rect values.
  * @param { Float64 } y - Representing the y in the rect values.
@@ -157,10 +157,9 @@ public class ScrollAnimationOptions {
 /**
  * Scrolling duration.
  *
- * <p><strong>NOTE</strong>
- * <br>A value less than 0 evaluates to the default value.
- * </p>
- * 
+ * NOTE
+ * A value less than 0 evaluates to the default value.
+ *
  * @default 1000.0
  */
 @!APILevel[
@@ -171,7 +170,7 @@ public class ScrollAnimationOptions {
 
 /**
  * Scrolling curve.
- * 
+ *
  * @default Curve.Ease
  */
 @!APILevel[
@@ -183,11 +182,9 @@ public class ScrollAnimationOptions {
 /**
  * Whether to enable overscroll.
  *
- * <p><strong>NOTE</strong>
- * <br> Scrolling can exceed the boundary and initiate a bounce animation when this parameter is set to <em>true</em>,
+ * NOTE
+ * Scrolling can exceed the boundary and initiate a bounce animation when this parameter is set to true,
  * and the component's edgeEffect attribute is set to EdgeEffect.Spring.
- * </p>
- * 
  * @default false
  */
 @!APILevel[
@@ -287,7 +284,7 @@ extend ScrollAlign <: Equatable<ScrollAlign> {
 }
 
 /**
- * Provides parameters for customizing scroll animations.
+ * Define nested scroll options
  */
 @!APILevel[
     since: "22",
@@ -295,7 +292,7 @@ extend ScrollAlign <: Equatable<ScrollAlign> {
 ]
 public class NestedScrollOptions {
 /**
- * Representing the forward in the customizing scroll nested.
+ * Set NestedScrollMode when the scrollable component scrolls forward
  */
 @!APILevel[
     since: "22",
@@ -304,7 +301,7 @@ public class NestedScrollOptions {
     public var scrollForward: ?NestedScrollMode
 
 /**
- * Representing the backward in the customizing scroll nested.
+ * Set NestedScrollMode when the scrollable component scrolls backward
  */
 @!APILevel[
     since: "22",
@@ -327,7 +324,7 @@ public class NestedScrollOptions {
 }
 
 /**
- * Provides a parameter for customizing fading edge.
+ * Defines the fadingEdge options.
  */
 @!APILevel[
     since: "22",
@@ -335,8 +332,8 @@ public class NestedScrollOptions {
 ]
 public class FadingEdgeOptions {
 /**
- * Representing the length in the customizing fading edge.
- * 
+ * The length of FadingEdge.
+ *
  * @default 32.vp
  */
 @!APILevel[
@@ -359,7 +356,7 @@ public class FadingEdgeOptions {
 }
 
 /**
- * Enumerates content clip modes.
+ * Enum of scrollable containers' content clip mode.
  */
 @!APILevel[
     since: "22",
@@ -367,7 +364,7 @@ public class FadingEdgeOptions {
 ]
 public enum ContentClipMode {
 /**
- * The only content mode of content clip modes.
+ * Clip to content rect inside margin & padding.
  */
 @!APILevel[
     since: "22",
@@ -376,7 +373,7 @@ public enum ContentClipMode {
     ContentOnly
     | 
 /**
- * The boundary mode of content clip modes.
+ * Clip to scrollable's outer rect, including padding but inside margin.
  */
 @!APILevel[
     since: "22",
@@ -385,7 +382,7 @@ public enum ContentClipMode {
     Boundary
     | 
 /**
- * The safe area mode of content clip modes.
+ * Clip to the safeArea of scrollable container.
  */
 @!APILevel[
     since: "22",
@@ -439,20 +436,19 @@ public type OnWillScrollCallBack = (Float64, ScrollState, ScrollSource) -> Scrol
 public type OnScrollCallBack = (scrollOffset: Float64, scrollState: ScrollState) -> Unit
 
 /**
- * Represents the callback triggered when the <em>Scroll</em> component scrolls.
- * 
- * <p><strong>NOTE</strong>
- * <br>If the <em>onScrollFrameBegin</em> event and <em>scrollBy</em> method are used to implement nested scrolling,
- * set the <em>edgeEffect</em> attribute of the scrollable child component to <em>None</em>. For example,
- * if a <em>List</em> is nested in the <em>Scroll</em> component, <em>edgeEffect</em> of the <em>List</em> must be set to <em>EdgeEffect.None</em>.
- * </p>
- * 
+ * Represents the callback triggered when the Scroll component scrolls.
+ *
+ * NOTE
+ * If the onScrollFrameBegin event and scrollBy method are used to implement nested scrolling,
+ * Set the edgeEffect attribute of the scrollable child component to None. For example,
+ * if a List is nested in the Scroll component, edgeEffect of the List must be set to EdgeEffect.None.
+ *
  * @param { Float64 } xOffset - Horizontal offset per frame during scrolling. A positive offset indicates scrolling to the left,
  * and a negative offset indicates scrolling to the right.
- * <br>Unit: vp
+ * Unit: vp
  * @param { Float64 } yOffset - Vertical offset per frame during scrolling.
  * A positive offset indicates scrolling upward, and a negative offset indicates scrolling downward.
- * <br>Unit: vp
+ * Unit: vp
  * @param { ScrollState } scrollState - Current scrolling state.
  */
 public type ScrollOnScrollCallback = (Float64, Float64, ScrollState) -> Unit
@@ -491,18 +487,18 @@ public class ScrollEdgeOptions {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var velocity: ?Float64
+    public var velocity: ?Float32
 
 /**
  * The constructor.
  *
- * @param { ?Float64 } [velocity] - Fixed velocity for scrolling to the edge of the container. The default value is 0vp/s.
+ * @param { ?Float32 } [velocity] - Fixed velocity for scrolling to the edge of the container. The default value is 0vp/s.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public init(velocity!: ?Float64 = None)
+    public init(velocity!: ?Float32 = None)
 }
 
 /**
@@ -535,7 +531,7 @@ public class ScrollToIndexOptions {
 }
 
 /**
- * Defines scroll component.
+ * Defines Scroll Component.
  */
 @!APILevel[
     since: "22",
@@ -581,24 +577,24 @@ public class Scroll <: ScrollableCommonMethodComponent<Scroll> & ScrollAttribute
 /**
  * Sets the scrolling direction.
  *
- * @param { ?ScrollDirection } value - The direction to apply setting. Default value: ScrollDirection.Vertical.
+ * @param { ?ScrollDirection } scrollDirection - Scrolling direction. Default value: ScrollDirection.Vertical
  * @returns { This }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func scrollable(value: ?ScrollDirection): This
+    public func scrollable(scrollDirection: ?ScrollDirection): This
 
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
+ *
  *
  * @param { ?(Float64, Float64, ScrollState, ScrollSource) -> OffsetResult } handler - Callback triggered before scrolling.
  * @returns { This }
@@ -612,12 +608,12 @@ public class Scroll <: ScrollableCommonMethodComponent<Scroll> & ScrollAttribute
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
+ *
  *
  * @param { ?(Float64, Float64, ScrollState, ScrollSource) -> Unit } handler - Callback triggered before scrolling.
  * @returns { This }
@@ -629,14 +625,7 @@ public class Scroll <: ScrollableCommonMethodComponent<Scroll> & ScrollAttribute
     public func onWillScroll(handler: ?(Float64, Float64, ScrollState, ScrollSource) -> Unit): This
 
 /**
- * Triggered when the Scroll component scrolls.
- *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
- * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * Triggered when the Scroll component scrolls. NOTE 1. This event is triggered when scrolling is started by the Scroll component or other input settings, such as keyboard and mouse operations. 2. This event is triggered when the controller API is called. 3. This event supports the out-of-bounds bounce effect
  *
  * @param { ?ScrollOnScrollCallback } callback - Callback triggered when the Scroll component scrolls.
  * @returns { This }
@@ -661,16 +650,16 @@ public class Scroll <: ScrollableCommonMethodComponent<Scroll> & ScrollAttribute
 
 /**
  * Triggered when scrolling reaches the edge.
- * Anonymous Object Rectification.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling reaches the edge after being started by the <em>Scroll</em> component or other input settings,
+ *
+ * NOTE
+ * 1. This event is triggered when scrolling reaches the edge after being started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
  *
- * @param { ?OnScrollEdgeCallback } event - Callback triggered when scrolling reaches the edge.
+ *
+ * @param { ?OnScrollEdgeCallback } event - Edge position to scroll to.
  * @returns { This }
  */
 @!APILevel[
@@ -683,16 +672,15 @@ public class Scroll <: ScrollableCommonMethodComponent<Scroll> & ScrollAttribute
 /**
  * Defines a controller for scrollable container components.
  *
- * <p><strong>NOTE</strong>
- * <br>1. The binding of a <em>Scroller</em> instance to a scrollable container component occurs during the component creation phase.
- * <br>2. <em>Scroller</em> APIs can only be effectively called after the <em>Scroller</em> instance is bound to a scrollable container component.
+ * NOTE
+ * 1. The binding of a Scroller instance to a scrollable container component occurs during the component creation phase.
+ * 2. Scroller APIs can only be effectively called after the Scroller instance is bound to a scrollable container component.
  * Otherwise, depending on the API called, it may have no effect or throw an exception.
- * <br>3. For example, with aboutToAppear, this callback is executed after a new instance of a custom component is
- * created and before its <em>build()</em> method is called.
- * Therefore, if a scrollable component is defined within the <em>build</em> method of a custom component,
- * the internal scrollable component has not yet been created during the <em>aboutToAppear</em> callback
- * of that custom component, and therefore the <em>Scroller</em> APIs cannot be called effectively.
- * </p>
+ * 3. For example, with aboutToAppear, this callback is executed after a new instance of a custom component is
+ * created and before its build() method is called.
+ * Therefore, if a scrollable component is defined within the build method of a custom component,
+ * the internal scrollable component has not yet been created during the aboutToAppear callback
+ * of that custom component, and therefore the Scroller APIs cannot be called effectively.
  */
 @!APILevel[
     since: "22",
@@ -709,7 +697,7 @@ public class Scroller {
     public init()
 
 /**
- * Sets slides to the specified position.
+ * Scrolls to the specified position.
  *
  * @param { Length } xOffset - Horizontal scrolling offset.
  * @param { Length } yOffset - Vertical scrolling offset.
@@ -722,7 +710,8 @@ public class Scroller {
     public func scrollTo(xOffset!: Length, yOffset!: Length): Unit
 
 /**
- * Sets slides to the specified position.
+ * Scrolls to the specified position.
+ *
  *
  * @param { Length } xOffset - Horizontal scrolling offset.
  * @param { Length } yOffset - Vertical scrolling offset.
@@ -736,7 +725,8 @@ public class Scroller {
     public func scrollTo(xOffset!: Length, yOffset!: Length, animation!: ?ScrollAnimationOptions): Unit
 
 /**
- * Sets slides to the specified position.
+ * Scrolls to the specified position.
+ *
  *
  * @param { Length } xOffset - Horizontal scrolling offset.
  * @param { Length } yOffset - Vertical scrolling offset.
@@ -750,22 +740,27 @@ public class Scroller {
     public func scrollTo(xOffset!: Length, yOffset!: Length, animation!: ?Bool): Unit
 
 /**
- * Called when the setting slides by offset.
+ * Scrolls by the specified amount.
+ * NOTE
+ * This API is available for the ArcList, Scroll, List, Grid, and WaterFlow components.
  *
- * @param { Length } dx - X coordinate to scroll to.
- * @param { Length } dy - Y coordinate to scroll to.
+ *
+ * @param { Length } xOffset - Amount to scroll by in the horizontal direction. The percentage format is not supported.
+ *     Value range: (-∞, +∞).
+ * @param { Length } yOffset - Amount to scroll by in the vertical direction. The percentage format is not supported.
+ *     Value range: (-∞, +∞).
  * @returns { Unit }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func scrollBy(dx: Length, dy: Length): Unit
+    public func scrollBy(xOffset!: Length, yOffset!: Length): Unit
 
 /**
- * Called when scrolling to the edge of the container.
+ * Scrolls to the edge of the container, regardless of the scroll axis direction
  *
- * @param { Edge } value - The edge to scroll by.
+ * @param { Edge } value - Edge position to scroll to.
  * @returns { Unit }
  */
 @!APILevel[
@@ -775,10 +770,10 @@ public class Scroller {
     public func scrollEdge(value: Edge): Unit
 
 /**
- * Called when scrolling to the edge of the container.
+ * Scrolls to the edge of the container, regardless of the scroll axis direction.
  *
- * @param { Edge } value - The edge to scroll by.
- * @param { ?ScrollEdgeOptions } options - The scroll edge option.
+ * @param { Edge } value - Edge position to scroll to.
+ * @param { ?ScrollEdgeOptions } options - Mode of scrolling to the edge position.
  * @returns { Unit }
  */
 @!APILevel[
@@ -791,8 +786,8 @@ public class Scroller {
  * Performs inertial scrolling based on the initial velocity passed in.
  *
  * @param { Float64 } velocity -  Initial velocity of inertial scrolling. Unit: vp/s
- * <br><em>NOTE</em>
- * <br>If the value specified is 0, it is considered as invalid, and the scrolling for this instance will not take effect.
+ * NOTE
+ * If the value specified is 0, it is considered as invalid, and the scrolling for this instance will not take effect.
  * A positive value indicates scrolling towards the top, while a negative value indicates scrolling towards the bottom.
  * @returns { Unit }
  */
@@ -803,9 +798,10 @@ public class Scroller {
     public func fling(velocity: Float64): Unit
 
 /**
- * Applied when page turning mode is set.
+ * Scrolls to the next or previous page.
  *
- * @param { Bool } next - Whether scroll from page to page.
+ * @param { Bool } next - Whether to turn to the next page.
+ *     The value true means to scroll to the next page, and false means to scroll to the previous page.
  * @param { ?Bool } [animation] - Whether enable animation on page scroll. The default value is false.
  */
 @!APILevel[
@@ -827,9 +823,13 @@ public class Scroller {
 
 /**
  * Scrolls to a specified index, with support for setting an extra offset for the scroll.
+ * NOTE:
  * This API only works for the ArcList, Grid, List, and WaterFlow components.
  *
- * @param { Int32 } value - Index to jump to.
+ * @param { Int32 } index - Index of the item to be scrolled to in the container.
+ *     NOTE:
+ *     If the value set is a negative value or greater than the maximum index of the items in the container,
+ *     the value is deemed abnormal, and no scrolling will be performed.
  * @param { ?Bool } [smooth] - If true, scroll to index item with animation. If false, scroll to index item without animation. The default value is false.
  * @param { ?ScrollAlign } [align] - Sets the alignment mode of a specified index.
  * @param { ?ScrollToIndexOptions } [options] - Sets the options of a specified index, such as extra offset.
@@ -840,18 +840,18 @@ public class Scroller {
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func scrollToIndex(
-        value: Int32,
+        index: Int32,
         smooth!: ?Bool = None,
         align!: ?ScrollAlign = None,
         options!: ?ScrollToIndexOptions = None
-    ): This
+    ): Unit
 
 /**
  * Checks whether the component has scrolled to the bottom.
  *
- * <p><strong>NOTE</strong>
- * <br>This API is available for the <em>ArcList</em>, <em>Scroll</em>, <em>List</em>, <em>Grid</em>, and <em>WaterFlow</em> components.
- * </p>
+ * NOTE
+ * This API is available for the ArcList, Scroll, List, Grid, and WaterFlow components.
+ *
  * @returns { Bool } Returns whether the component scrolls to the end position.
  */
 @!APILevel[
@@ -863,12 +863,11 @@ public class Scroller {
 /**
  * Obtains the size and position of a child component relative to its container.
  *
- * <p><strong>NOTE</strong>
- * <br>- The value of <em>index</em> must be the index of a child component visible in the display area.
+ * NOTE
+ * - The value of index must be the index of a child component visible in the display area.
  * Otherwise, the value is considered invalid.
- * <br>- The value of <em>index</em> must be the index of a child component visible in the display area. Otherwise,
+ * - The value of index must be the index of a child component visible in the display area. Otherwise,
  * the value is considered invalid.
- * </p>
  *
  * @param { ?Int32 } index - Index of the target child component.
  * @returns { RectResult } Returns the size and position.
@@ -882,9 +881,8 @@ public class Scroller {
 /**
  * Obtains the index of a child component based on coordinates.
  *
- * <p><strong>NOTE</strong>
- * <br>The returned index is <em>-1</em> for invalid coordinates.
- * </p>
+ * NOTE
+ * The returned index is -1 for invalid coordinates.
  *
  * @param { Float64 } x - X-coordinate, in vp.
  * @param { Float64 } y - Y-coordinate, in vp.
@@ -898,7 +896,7 @@ public class Scroller {
 }
 
 /**
- * Defines the Scroll attribute functions.
+ * Defines the scroll attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -908,7 +906,7 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
 /**
  * Sets the scrolling direction.
  *
- * @param { ?ScrollDirection } value - The direction to apply setting. The default value is ScrollDirection.Vertical.
+ * @param { ?ScrollDirection } scrollDirection - Scrolling direction.Default value: ScrollDirection.Vertical
  * @returns { ScrollAttribute }
  */
 @!APILevel[
@@ -920,12 +918,11 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
  *
  * @param { ?(Float64, Float64, ScrollState, ScrollSource) -> OffsetResult } handler - Callback triggered before scrolling.
  * @returns { ScrollAttribute }
@@ -939,12 +936,11 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
  *
  * @param { ?(Float64, Float64, ScrollState, ScrollSource) -> Unit } handler - Callback triggered before scrolling.
  * @returns { ScrollAttribute }
@@ -958,21 +954,20 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
 /**
  * Triggered when the Scroll component scrolls.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
  *
- * @param { ?ScrollOnScrollCallback } handler -  Callback triggered when the Scroll component scrolls.
+ * @param { ?ScrollOnScrollCallback } callback -  Callback triggered when the Scroll component scrolls.
  * @returns { ScrollAttribute }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func onDidScroll(handler: ?ScrollOnScrollCallback): ScrollAttribute
+    func onDidScroll(callback: ?ScrollOnScrollCallback): ScrollAttribute
 
 /**
  * Triggered when each frame scrolling starts.
@@ -988,16 +983,15 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
 
 /**
  * Triggered when scrolling reaches the edge.
- * Anonymous Object Rectification.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling reaches the edge after being started by the <em>Scroll</em> component or other input settings,
+ *
+ * NOTE
+ * 1. This event is triggered when scrolling reaches the edge after being started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
  *
- * @param { ?OnScrollEdgeCallback } event - Callback triggered when scrolling reaches the edge.
+ * @param { ?OnScrollEdgeCallback } event - Edge position to scroll to.
  * @returns { ScrollAttribute }
  */
 @!APILevel[
@@ -1008,7 +1002,7 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
 }
 
 /**
- * Provides functions for scrollable Base.
+ * CommonScrollableMethod
  */
 @!APILevel[
     since: "22",
@@ -1026,7 +1020,8 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 /**
  * Sets the scrollbar state.
  *
- * @param { ?BarState } barState - Scrollbar state. The default value is BarState.Auto.
+ * @param { ?BarState } barState - Scrollbar state.Default value: BarState.Auto for the List, Grid,
+ *     and Scroll components and BarState.Off for the WaterFlow component
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1040,7 +1035,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 /**
  * Sets the scrollbar color.
  *
- * @param { ?ResourceColor } color - Scrollbar color. The default value is 0x182431.
+ * @param { ?ResourceColor } color - Scrollbar color.Default value: 0x182431 (40% opacity)
+ *     A number value indicates a HEX color in RGB or ARGB format,
+ *     for example, 0xffffff. A string value indicates a color in RGB or ARGB format, for example, 0xffffff.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1054,7 +1051,10 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 /**
  * Sets the scrollbar width.
  *
- * @param { ?Length } value - Scrollbar width. The default value is 4.vp.
+ * @param { ?Length } value - Scrollbar width.Default value: 4
+ *     Unit: vp
+ *     If this parameter is set to a value less than or equal to 0, the default value is used.
+ *     The value 0 means not to show the scrollbar.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1069,8 +1069,8 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
  * Sets the nested scrolling options. You can set the nested scrolling mode in the forward and backward directions
  * to implement scrolling linkage with the parent component.
  *
- * @param { ?NestedScrollOptions } value - Nested scrolling options.
- *      <br>Default value: scrollForward: NestedScrollMode.SelfOnly, scrollBackward: NestedScrollMode.SelfOnly.
+ * @param { ?NestedScrollOptions } value - options for nested scrolling.
+ *      Default value: scrollForward: NestedScrollMode.SelfOnly, scrollBackward: NestedScrollMode.SelfOnly.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1082,10 +1082,10 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     protected func nestedScrollInner(value: ?NestedScrollOptions): T
 
 /**
- * Sets whether to support scroll gestures. When this attribute is set to <em>false</em>,
+ * Sets whether to support scroll gestures. When this attribute is set to false,
  * scrolling by finger or mouse is not supported, but the scroll controller API is not affected.
  *
- * @param { ?Bool } value - Whether to support scroll gestures. The default value is true.
+ * @param { ?Bool } value - Whether to support scroll gestures.Default value: true
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1102,7 +1102,7 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
  * If this attribute is set to a value less than or equal to 0, the default value is used.
  *
  * @param { ?Float64 } value - Friction coefficient.
- *      <br>Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
+ *      Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1119,7 +1119,7 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
  * If this attribute is set to a value less than or equal to 0, the default value is used.
  *
  * @param { ?Float64 } value - Friction coefficient.
- *      <br>Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
+ *      Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1131,9 +1131,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     protected func frictionInner(value: ?AppResource): T
 
 /**
- * Sets the reach start.
+ * Triggered when the scrollable component reaches the start position.
  *
- * @param { ?() -> Unit } event - The callback on reach start.
+ * @param { ?() -> Unit } event - Callback function, triggered when the scrollable reaches the start position.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1145,9 +1145,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     protected func onReachStartInner(event: () -> Unit): T
 
 /**
- * Sets the reach end.
+ * Triggered when the scrollable component reaches the end position.
  *
- * @param { ?() -> Unit } event - The callback on reach end.
+ * @param { ?() -> Unit } event - Callback function, triggered when the scrollable reaches the end position.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1159,9 +1159,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     protected func onReachEndInner(event: () -> Unit): T
 
 /**
- * Called when scrolling start.
+ * Triggered when the scrollable component starts scrolling initiated by the user's finger dragging the component or its scrollbar.
  *
- * @param { ?() -> Unit } event - The callback on scroll start.
+ * @param { ?() -> Unit } event - Callback function, triggered when the scrollable starts scrolling.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1175,11 +1175,11 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 /**
  * Called when scrolling has stopped.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is stopped by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called, accompanied by a transition animation.
- * </p>
- * @param { ?() -> Unit } event - Callback triggered when scrolling stops.
+ * NOTE
+ * 1. This event is triggered when scrolling is stopped by the Scroll component or other input settings, such as keyboard and mouse operations.
+ * 2. This event is triggered when the controller API is called, accompanied by a transition animation.
+ *
+ * @param { ?() -> Unit } event - Callback function, triggered when the scrollable stops scrolling.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1191,9 +1191,12 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     protected func onScrollStopInner(event: () -> Unit): T
 
 /**
- * Fling Speed Limit.
+ * Sets the maximum initial velocity at the start of the fling animation that occurs after gesture-driven scrolling ends.
  *
- * @param { ?Float64 } speedLimit - The speed limit.
+ * @param { ?Float64 } speedLimit - Maximum initial velocity at the start of the fling animation.
+ *     Default value: 9000
+ *     Unit: vp/s
+ *     Value range: (0, +∞). If this parameter is set to a value less than or equal to 0, the default value is used.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1205,9 +1208,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     protected func flingSpeedLimitInner(speedLimit: Float64): T
 
 /**
- * The options of fading Edge.
+ * Called when setting whether to enable fading Edge effect.
  *
- * @param { Option<Bool> } enabled - Whether enable fading edge.
+ * @param { Option<Bool> } enabled - Whether to turn on the edge fade effect
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1217,9 +1220,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     public func fadingEdge(enabled: Option<Bool>): T
 
 /**
- * The options of fading Edge.
+ * Called when setting whether to enable fading Edge effect.
  *
- * @param { Option<Bool> } enabled - Whether enable fading edge.
+ * @param { Option<Bool> } enabled - Whether to turn on the edge fade effect
  * @param { ?FadingEdgeOptions } options - Fading edge options.
  * @returns { T } the instantiated type of the scrollable base.
  */
@@ -1230,9 +1233,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     public func fadingEdge(enabled: Option<Bool>, options: ?FadingEdgeOptions): T
 
 /**
- * The clip mode of content.
+ * Sets the content clipping area for this scrollable component.
  *
- * @param { ?ContentClipMode } clip - The clip mode.
+ * @param { ?ContentClipMode } clip - A value from enum ContentClipMode or a customized clip rect.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1242,9 +1245,9 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     public func clipContent(clip: ?ContentClipMode): T
 
 /**
- * The clip mode of content.
+ * Sets the content clipping area for this scrollable component.
  *
- * @param { ?RectShape } clip - The clip mode.
+ * @param { ?RectShape } clip - A value from enum ContentClipMode or a customized clip rect.
  * @returns { T } the instantiated type of the scrollable base.
  */
 @!APILevel[
@@ -1256,12 +1259,12 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
+ *
  *
  * @param { Option<(Float64, ScrollState, ScrollSource) -> ScrollResult> } handler - Callback triggered before scrolling.
  * @returns { T } the instantiated type of the scrollable base.
@@ -1275,12 +1278,12 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
+ *
  *
  * @param { Option<(Float64, ScrollState, ScrollSource) -> Unit> } handler - Callback triggered before scrolling.
  * @returns { T } the instantiated type of the scrollable base.
@@ -1293,8 +1296,10 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 
 /**
  * Triggered when the Scroll component scrolls.
- * 1. This event is triggered when scrolling is started by the Scroll component or other input settings, such as keyboard and mouse operations;
- * 2. This event is triggered when the controller API is called;
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
+ * such as keyboard and mouse operations.
+ * 2. This event is triggered when the controller API is called.
  * 3. This event supports the out-of-bounds bounce effect.
  *
  * @param { ?OnScrollCallBack } handler - Callback triggered when the Scroll component scrolls.
@@ -1310,7 +1315,7 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 }
 
 /**
- * Provides functions for scrollable Base.
+ * CommonScrollableMethod
  */
 @!APILevel[
     since: "22",
@@ -1320,7 +1325,8 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
 /**
  * Sets the scrollbar state.
  *
- * @param { ?BarState } barState - Scrollbar state. The default value is BarState.Auto.
+ * @param { ?BarState } barState - Scrollbar state.Default value: BarState.Auto for the List, Grid,
+ *     and Scroll components and BarState.Off for the WaterFlow component
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1332,7 +1338,9 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
 /**
  * Sets the scrollbar color.
  *
- * @param { ?ResourceColor } color - Scrollbar color. The default value is 0x182431.
+ * @param { ?ResourceColor } color - Scrollbar color. Default value: 0x182431 (40% opacity)
+ *     A number value indicates a HEX color in RGB or ARGB format,
+ *     for example, 0xffffff. A string value indicates a color in RGB or ARGB format, for example, 0xffffff.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1344,7 +1352,10 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
 /**
  * Sets the scrollbar width.
  *
- * @param { ?Length } value - Scrollbar width. The default value is 4.vp.
+ * @param { ?Length } value - Scrollbar width. Default value: 4
+ *     Unit: vp
+ *     If this parameter is set to a value less than or equal to 0, the default value is used.
+ *     The value 0 means not to show the scrollbar.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1358,7 +1369,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
  * to implement scrolling linkage with the parent component.
  *
  * @param { ?NestedScrollOptions } value - Nested scrolling options.
- *      <br>Default value: scrollForward: NestedScrollMode.SelfOnly, scrollBackward: NestedScrollMode.SelfOnly.
+ *      Default value: scrollForward: NestedScrollMode.SelfOnly, scrollBackward: NestedScrollMode.SelfOnly.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1368,7 +1379,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func nestedScroll(value: ?NestedScrollOptions): T
 
 /**
- * Sets whether to support scroll gestures. When this attribute is set to <em>false</em>,
+ * Sets whether to support scroll gestures. When this attribute is set to false,
  * scrolling by finger or mouse is not supported, but the scroll controller API is not affected.
  *
  * @param { ?Bool } value - Whether to support scroll gestures. The default value is true.
@@ -1386,7 +1397,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
  * If this attribute is set to a value less than or equal to 0, the default value is used.
  *
  * @param { ?Float64 } value - Friction coefficient.
- *      <br>Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
+ *      Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1401,7 +1412,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
  * If this attribute is set to a value less than or equal to 0, the default value is used.
  *
  * @param { ?Float64 } value - Friction coefficient.
- *      <br>Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
+ *      Default value: 0.9 for wearable devices and 0.6 for non-wearable devices.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1411,7 +1422,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func friction(value: ?AppResource): T
 
 /**
- * Sets the reach start.
+ * Triggered when the scrollable component reaches the start position.
  *
  * @param { ?() -> Unit } event - The callback on reach start.
  * @returns { T } Specifically instantiated type of scrollable common method.
@@ -1423,7 +1434,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func onReachStart(event: ?() -> Unit): T
 
 /**
- * Sets the reach end.
+ * Triggered when the scrollable component reaches the end position.
  *
  * @param { ?() -> Unit } event - The callback on reach end.
  * @returns { T } Specifically instantiated type of scrollable common method.
@@ -1435,9 +1446,9 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func onReachEnd(event: ?() -> Unit): T
 
 /**
- * Called when scrolling start.
+ * Triggered when the scrollable component starts scrolling initiated by the user's finger dragging the component or its scrollbar.
  *
- * @param { ?() -> Unit } event - The callback on scroll start.
+ * @param { ?() -> Unit } event - Callback function, triggered when the scrollable starts scrolling.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1447,12 +1458,12 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func onScrollStart(event: ?() -> Unit): T
 
 /**
- * Called when scrolling has stopped.
+ * Triggered when scrolling stops after the user's finger leaves the screen.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is stopped by the <em>Scroll</em> component or other input settings, such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called, accompanied by a transition animation.
- * </p>
+ * NOTE
+ * 1. This event is triggered when scrolling is stopped by the Scroll component or other input settings, such as keyboard and mouse operations.
+ * 2. This event is triggered when the controller API is called, accompanied by a transition animation.
+ *
  * @param { ?() -> Unit } event - Callback triggered when scrolling stops.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
@@ -1463,9 +1474,12 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func onScrollStop(event: ?() -> Unit): T
 
 /**
- * Fling Speed Limit.
+ * Sets the maximum initial velocity at the start of the fling animation that occurs after gesture-driven scrolling ends.
  *
- * @param { ?Float64 } speedLimit - The speed limit.
+ * @param { ?Float64 } speedLimit - Maximum initial velocity at the start of the fling animation.
+ * Default value: 9000
+ * Unit: vp/s
+ * Value range: (0, +∞). If this parameter is set to a value less than or equal to 0, the default value is used.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1475,7 +1489,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func flingSpeedLimit(speedLimit: ?Float64): T
 
 /**
- * The options of fading Edge.
+ * Called when setting whether to enable fading Edge effect.
  *
  * @param { Option<Bool> } enabled - Whether enable fading edge.
  * @returns { T } Specifically instantiated type of scrollable common method.
@@ -1487,7 +1501,7 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func fadingEdge(enabled: Option<Bool>): T
 
 /**
- * The options of fading Edge.
+ * Called when setting whether to enable fading Edge effect.
  *
  * @param { Option<Bool> } enabled - Whether enable fading edge.
  * @param { ?FadingEdgeOptions } options - Fading edge options.
@@ -1500,9 +1514,9 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func fadingEdge(enabled: Option<Bool>, options: ?FadingEdgeOptions): T
 
 /**
- * The clip mode of content.
+ * Sets the content clipping area for this scrollable component.
  *
- * @param { ?ContentClipMode } clip - The clip mode.
+ * @param { ?ContentClipMode } clip - A value from enum ContentClipMode or a customized clip rect.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1512,9 +1526,9 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
     func clipContent(clip: ?ContentClipMode): T
 
 /**
- * The clip mode of content.
+ * Sets the content clipping area for this scrollable component.
  *
- * @param { ?RectShape } clip - The clip mode.
+ * @param { ?RectShape } clip - A value from enum ContentClipMode or a customized clip rect.
  * @returns { T } Specifically instantiated type of scrollable common method.
  */
 @!APILevel[
@@ -1526,12 +1540,12 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
+ *
  *
  * @param { Option<(Float64, ScrollState, ScrollSource) -> ScrollResult> } handler - Callback triggered before scrolling.
  * @returns { T } Specifically instantiated type of scrollable common method.
@@ -1545,12 +1559,12 @@ public interface ScrollableCommonMethod<T> <: CommonMethod<T> {
 /**
  * Triggered before scrolling.
  *
- * <p><strong>NOTE</strong>
- * <br>1. This event is triggered when scrolling is started by the <em>Scroll</em> component or other input settings,
+ * NOTE
+ * 1. This event is triggered when scrolling is started by the Scroll component or other input settings,
  * such as keyboard and mouse operations.
- * <br>2. This event is triggered when the controller API is called.
- * <br>3. This event supports the out-of-bounds bounce effect.
- * </p>
+ * 2. This event is triggered when the controller API is called.
+ * 3. This event supports the out-of-bounds bounce effect.
+ *
  *
  * @param { Option<(Float64, ScrollState, ScrollSource) -> Unit> } handler - Callback triggered before scrolling.
  * @returns { T } Specifically instantiated type of scrollable common method.

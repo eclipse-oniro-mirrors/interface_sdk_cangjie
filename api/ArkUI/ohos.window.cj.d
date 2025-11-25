@@ -178,8 +178,8 @@ public class Configuration {
  * @param { String } name - Indicates window id.
  * @param { WindowType } windowType - Indicates window type.
  * @param { BaseContext } ctx - Indicates window context.
- * @param { Int64 } [displayID] - Indicates display ID.
- * @param { Int64 } [parentID] - Indicates Parent window id.
+ * @param { Int64 } [displayId] - Indicates display ID.
+ * @param { Int64 } [parentId] - Indicates Parent window id.
  */
 @!APILevel[
     since: "22",
@@ -189,8 +189,8 @@ public class Configuration {
         name!: String,
         windowType!: WindowType,
         ctx!: BaseContext,
-        displayID!: Int64 = -1,
-        parentID!: Int64 = -1
+        displayId!: Int64 = -1,
+        parentId!: Int64 = -1
     )
 }
 
@@ -291,7 +291,7 @@ public class WindowProperties {
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
-    public var winType: WindowType
+    public var windowType: WindowType
 
 /**
  * Whether the window is displayed in full screen mode.
@@ -305,7 +305,7 @@ public class WindowProperties {
 
 /**
  * Whether the window layout is in full screen mode(whether the window is immersive).
- * 
+ *
  * @default false
  */
 @!APILevel[
@@ -508,7 +508,7 @@ public class SystemBarProperties {
     public var statusBarColor: String = "#66000000"
 
 /**
- * The light icon of the status bar..
+ * The light icon of the status bar.
  */
 @!APILevel[
     since: "22",
@@ -894,8 +894,8 @@ extend AvoidAreaType <: Equatable<AvoidAreaType> {
 }
 
 /**
-* Enum for window callback event type.
-*/
+ * Enum for window callback event type
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
@@ -974,7 +974,7 @@ extend WindowEventType <: Equatable<WindowEventType> {
 }
 
 /**
- * Window stage callback event type.
+ * Window stage callback event type
  */
 @!APILevel[
     since: "22",
@@ -1205,15 +1205,15 @@ extend ColorSpace <: Equatable<ColorSpace> {
 }
 
 /**
-* Enumerates of listening event.
-*/
+ * Enumerates of listening event.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
 public enum WindowCallbackType {
 /**
- * Indicating the window stage lifecycle change event.
+ * The value is fixed at 'windowStageEvent', indicating the window stage lifecycle change event.
  */
 @!APILevel[
     since: "22",
@@ -1222,7 +1222,7 @@ public enum WindowCallbackType {
     WindowStageEvent
     | 
 /**
- * Indicating the window size change event.
+ * The value is fixed at 'windowSizeChange', indicating the window size change event.
  */
 @!APILevel[
     since: "22",
@@ -1231,7 +1231,7 @@ public enum WindowCallbackType {
     WindowSizeChange
     | 
 /**
- * Indicating the event of changes to the avoid area.
+ * The value is fixed at 'avoidAreaChange', indicating the event of changes to the avoid area.
  */
 @!APILevel[
     since: "22",
@@ -1240,7 +1240,7 @@ public enum WindowCallbackType {
     WindowAvoidAreaChange
     | 
 /**
- * Indicating the keyboard height change event.
+ * The value is fixed at 'keyboardHeightChange', indicating the keyboard height change event.
  */
 @!APILevel[
     since: "22",
@@ -1249,7 +1249,7 @@ public enum WindowCallbackType {
     KeyboardHeightChange
     | 
 /**
- * Indicating the click event outside this window.
+ * The value is fixed at 'touchOutside', indicating the click event outside this window.
  */
 @!APILevel[
     since: "22",
@@ -1258,7 +1258,7 @@ public enum WindowCallbackType {
     TouchOutside
     | 
 /**
- * Indicating the window visibility change.
+ * The value is fixed at 'windowVisibilityChange', indicating the visibility status change event.
  */
 @!APILevel[
     since: "22",
@@ -1267,7 +1267,7 @@ public enum WindowCallbackType {
     WindowVisibilityChange
     | 
 /**
- * Indicating the window has no interaction for a long time.
+ * The value is fixed at 'noInteractionDetected', indicating the window has no interaction for a long time.
  */
 @!APILevel[
     since: "22",
@@ -1276,7 +1276,7 @@ public enum WindowCallbackType {
     NoInteractionDetected
     | 
 /**
- * Indicating the screenshot event.
+ * The value is fixed at 'screenshot', indicating the screenshot event.
  */
 @!APILevel[
     since: "22",
@@ -1285,7 +1285,7 @@ public enum WindowCallbackType {
     Screenshot
     | 
 /**
- * Indicating the click event of the target window in the modal window mode.
+ * The value is fixed at 'dialogTargetTouch', indicating the click event of the target window in the modal window mode.
  */
 @!APILevel[
     since: "22",
@@ -1294,7 +1294,7 @@ public enum WindowCallbackType {
     DialogTargetTouch
     | 
 /**
- * Indicating the window lifecycle change event.
+ * The value is fixed at 'windowEvent', indicating the window lifecycle change event.
  */
 @!APILevel[
     since: "22",
@@ -1303,7 +1303,7 @@ public enum WindowCallbackType {
     WindowEvent
     | 
 /**
- * Indicating the window status change event.
+ * The value is fixed at 'windowStatusChange', indicating the window status change event.
  */
 @!APILevel[
     since: "22",
@@ -1312,7 +1312,7 @@ public enum WindowCallbackType {
     WindowStatusChange
     | 
 /**
- * Indicating the child window close event.
+ * The value is fixed at 'subWindowClose', indicating the child window close event.
  */
 @!APILevel[
     since: "22",
@@ -1321,7 +1321,7 @@ public enum WindowCallbackType {
     SubWindowClose
     | 
 /**
- * Indicating the title buttons area change event.
+ * The value is fixed at 'windowTitleButtonRectChange', indicating that the change event of the rectangle that holds the minimize, maximize, and close buttons.
  */
 @!APILevel[
     since: "22",
@@ -1330,7 +1330,7 @@ public enum WindowCallbackType {
     WindowTitleButtonRectChange
     | 
 /**
- * Indicating the window rect change event.
+ * The value is fixed at 'windowRectChange', indicating the window rect change event.
  */
 @!APILevel[
     since: "22",
@@ -1419,7 +1419,7 @@ extend SystemBarType <: Equatable<SystemBarType> {
 }
 
 /**
- * Find the window by name.
+ * Finds a window based on the name.
  *
  * @param { String } name - Window name, that is, the value of name in Configuration.
  * @returns { Window } Window found.
@@ -1444,6 +1444,7 @@ public func findWindow(name: String): Window
  */
 @!APILevel[
     since: "22",
+    permission: "ohos.permission.SYSTEM_FLOAT_WINDOW",
     syscap: "SystemCapability.WindowManager.WindowManager.Core",
     throwexception: true,
     workerthread: true
@@ -1471,8 +1472,8 @@ public func getLastWindow(ctx: BaseContext): Window
  * Shifts the window focus from the source window to the target window in the same application.
  * The window focus can be shifted between the main window and a child window.
  *
- * @param { Int32 } sourceWindowID - Window id which the focus shift from.
- * @param { Int32 } targetWindowID - Window id which the focus shift to.
+ * @param { Int32 } sourceWindowId - Window id which the focus shift from.
+ * @param { Int32 } targetWindowId - Window id which the focus shift to.
  * @throws { BusinessException } 801 - Capability not supported. Failed to call the API due to limited device capabilities.
  * @throws { BusinessException } 1300002 - This window state is abnormal.
  * @throws { BusinessException } 1300003 - This window manager service works abnormally.
@@ -1484,7 +1485,7 @@ public func getLastWindow(ctx: BaseContext): Window
     throwexception: true,
     workerthread: true
 ]
-public func shiftAppWindowFocus(sourceWindowID: Int32, targetWindowID: Int32): Unit
+public func shiftAppWindowFocus(sourceWindowId: Int32, targetWindowId: Int32): Unit
 
 /**
  * Window.
@@ -1504,7 +1505,8 @@ public class Window <: RemoteDataLite {
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core",
-    throwexception: true
+    throwexception: true,
+    workerthread: true
 ]
     public func showWindow(): Unit
 
@@ -1532,7 +1534,7 @@ public class Window <: RemoteDataLite {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.WindowManager.WindowManager.Core",
+    syscap: "SystemCapability.Window.SessionManager",
     throwexception: true,
     workerthread: true
 ]
@@ -1580,7 +1582,7 @@ public class Window <: RemoteDataLite {
     public func setWindowLayoutFullScreen(isLayoutFullScreen: Bool): Unit
 
 /**
- * Whether the window supports the wide gamut setting.
+ * Whether the window supports thr wide gamut setting.
  *
  * @returns { Bool } The value true means that the wide-gamut color space is supported, and false means the opposite.
  * @throws { BusinessException } 1300002 - This window state is abnormal.
@@ -1591,10 +1593,10 @@ public class Window <: RemoteDataLite {
     throwexception: true,
     workerthread: true
 ]
-    public func isSupportWideGamut(): Bool
+    public func isWideGamutSupported(): Bool
 
 /**
- * Whether the window supports the wide gamut setting.
+ * Checks whether the window is displayed
  *
  * @returns { Bool }  Whether the window is displayed. The value true means that the window is displayed, and false means the opposite.
  * @throws { BusinessException } 1300002 - This window state is abnormal.
@@ -1669,7 +1671,7 @@ public class Window <: RemoteDataLite {
  */
 @!APILevel[
     since: "22",
-        permission: "ohos.permission.PRIVACY_WINDOW",
+    permission: "ohos.permission.PRIVACY_WINDOW",
     syscap: "SystemCapability.WindowManager.WindowManager.Core",
     throwexception: true,
     workerthread: true
@@ -1793,7 +1795,7 @@ public class Window <: RemoteDataLite {
 /**
  * Obtains snapshot of window.
  *
- * @returns { PixelMap } Promise that returns no value.
+ * @returns { PixelMap } Return pixel map of snapshot.
  * @throws { BusinessException } 1300002 - This window state is abnormal.
  */
 @!APILevel[
@@ -1816,7 +1818,7 @@ public class Window <: RemoteDataLite {
     throwexception: true,
     workerthread: true
 ]
-    public func setWindowSystemBarEnable(names: Array<SystemBarType>): Unit
+    public func setWindowSystemBarEnabled(names: Array<SystemBarType>): Unit
 
 /**
  * Set the properties of system bar.
@@ -1871,8 +1873,8 @@ public class Window <: RemoteDataLite {
  *
  * @param { WindowCallbackType } callbackType - the event type
  * @throws { BusinessException } 1300016 - Parameter error. Possible cause: 1. Mandatory parameters are left unspecified;
- * <br> 2. Incorrect parameter types;
- * <br> 3. Parameter verification failed.
+ *  2. Incorrect parameter types;
+ *  3. Parameter verification failed.
  */
 @!APILevel[
     since: "22",

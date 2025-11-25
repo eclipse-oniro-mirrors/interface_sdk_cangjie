@@ -6,8 +6,7 @@ import ohos.base.*
 import ohos.labels.APILevel
 
 /**
- * A layout container that positions its child components relative to its edges.
- * Child components are stacked on top of each other in the order they are added.
+ * Defines Stack Component.
  */
 @!APILevel[
     since: "22",

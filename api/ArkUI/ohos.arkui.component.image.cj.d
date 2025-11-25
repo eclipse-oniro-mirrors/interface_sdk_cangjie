@@ -36,7 +36,7 @@ public class ImageError {
     public var componentHeight: Float64
 
 /**
- * A descriptive error message indicating the reason for the image loading failure.
+ * Content of the popup message.
  */
 @!APILevel[
     since: "22",
@@ -46,7 +46,7 @@ public class ImageError {
 }
 
 /**
- * Contains details about a successfully loaded image, including dimensions and loading status.
+ * The information about the successfully loaded image.
  */
 @!APILevel[
     since: "22",
@@ -119,7 +119,7 @@ public class ImageLoadResult {
     public var contentHeight: Float64
 
 /**
- * The actual draw is offset from the x-axis of the component itself.
+ * The offset between image content and image component on the X-axis.
  */
 @!APILevel[
     since: "22",
@@ -128,7 +128,7 @@ public class ImageLoadResult {
     public var contentOffsetX: Float64
 
 /**
- * The actual draw is offset from the y-axis of the component itself.
+ * The offset between image content and image component on the Y-axis.
  */
 @!APILevel[
     since: "22",
@@ -174,12 +174,6 @@ public class ColorFilter {
 
 /**
  * Defines Image Component.
- *
- * <p>If flickering occurs during image loading, set <b>syncLoad</b> to <b>true</b>.
- *
- * <p>If white blocks persist during image loading.
- *
- * <p>If image loading takes a long time.
  */
 @!APILevel[
     since: "22",
@@ -213,18 +207,17 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 /**
  * Sets the placeholder image displayed during loading.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?ResourceStr } value - Placeholder image displayed during loading. Default value is null.
+ * @param { ?ResourceStr } src - Placeholder image displayed during loading. Default value is null.
  * @returns { This }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func alt(value: ?ResourceStr): This
+    public func alt(src: ?ResourceStr): This
 
 /**
  * Sets how the image is resized to fit its container.
@@ -239,12 +232,8 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
     public func objectFit(value: ?ImageFit): This
 
 /**
- * Set the repeat style of the picture
- *
- * <p><strong>NOTE</strong>:
- * <br>This attribute is not applicable to SVG images.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * Set the repeat style of the picture NOTE: This attribute is not applicable to SVG images.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor
  *
  * @param { ?ImageRepeat } value - How the image is repeated. Default value is ImageRepeat.NoRepeat.
  * @returns { This }
@@ -258,10 +247,9 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 /**
  * Sets the interpolation effect of the image, which can alleviate aliasing that occurs when the image is zoomed.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute is not applicable to SVG images.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute is not applicable to SVG images.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?ImageInterpolation } value - Interpolation effect of the image. Default value is ImageInterpolation.Low.
  * @returns { This }
@@ -275,11 +263,10 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 /**
  * Sets the rendering mode of the image.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute is not applicable to SVG images.
- * <br>When ColorFilter is set, this attribute is not effective.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute is not applicable to SVG images.
+ * When ColorFilter is set, this attribute is not effective.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?ImageRenderMode } value - Rendering mode of the image. Default value is ImageRenderMode.Original.
  * @returns { This }
@@ -292,13 +279,10 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 
 /**
  * Sets the decoding size of the image.
- * The original picture is decoded into a picture of a specified size. The unit of the number type is px.
- *
- * <p><strong>NOTE</strong>:
- * <br>This attribute works only when the target size is smaller than the source size.
- * <br>This attribute is not applicable to SVG images or PixelMap objects.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * The original picture is decoded into a picture of a specified size.
+ * NOTE: This attribute works only when the target size is smaller than the source size.
+ * This attribute is not applicable to SVG images or PixelMap objects.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?Length } width - Decoding size of the image.
  * @param { ?Length } height - Decoding size of the image.
@@ -313,9 +297,8 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 /**
  * Specifies whether to load the image synchronously.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?Bool } value - Whether to load the image synchronously. Default value is false.
  * @returns { This }
@@ -331,27 +314,25 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
  * By default, no fill color is applied. If an invalid value is passed, the system uses the default theme color:
  * black in light mode and white in dark mode.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute applies only to SVG images.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute applies only to SVG images.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?ResourceColor } color - Fill color to be superimposed on the image.
+ * @param { ?ResourceColor } value - Fill color to be superimposed on the image.
  * @returns { This }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func fillColor(color: ?ResourceColor): This
+    public func fillColor(value: ?ResourceColor): This
 
 /**
  * Specifies whether to resize the image source based on the size of the display area during image decoding.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor
  * or SVG.
- * </p>
  *
  * @param { ?Bool } value - Whether to resize the image source based on the size of the display area
  * during image decoding. Default value is false.
@@ -366,9 +347,8 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 /**
  * Specifies whether to display the image in the system language direction.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?Bool } value - Whether to display the image in the system language direction. Default value is false.
  * @returns { This }
@@ -382,9 +362,8 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 /**
  * Sets whether the display size of the image follows the source size.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?Bool } value - Whether to fit the image to the size of the image source. Default value is false.
  * @returns { This }
@@ -396,8 +375,7 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
     public func fitOriginalSize(value: ?Bool): This
 
 /**
- * Triggered when an image is successfully loaded or decoded.
- * The size of the image source that is successfully loaded is returned, in pixels.
+ * Sets a callback which is triggered when the image is successfully loaded. The size of the image source that is successfully loaded is returned, in pixels
  *
  * @param { ?ImageCompleteCallback } callback - The callback function triggered when image loading is complete.
  * @returns { This }
@@ -412,9 +390,8 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
  * Triggered when an error occurs during image loading.
  * The field of "message" carries the detailed information of failed image loading.
  *
- * <p><strong>NOTE</strong>:
- * <br>This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?ImageErrorCallback } callback - The callback function triggered when an error occurs.
  * @returns { This }
@@ -429,10 +406,9 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
  * When the loaded source file is a svg image, this callback is triggered when the playback of the svg image is complete.
  * If the svg image is a wireless loop image, this callback is not triggered.
  *
- * <p><strong>NOTE</strong>:
- * <br>Only SVG images are supported.
- * <br>This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * Only SVG images are supported.
+ * This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?() -> Unit } event - The callback function triggered when SVG playback is complete.
  * @returns { This }
@@ -445,7 +421,7 @@ public class Image <: CommonMethodComponent<Image> & ImageAttribute {
 }
 
 /**
- * Defines the Image component attributes.
+ * Define the ImageSpan attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -455,11 +431,10 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 /**
  * Sets the placeholder image displayed during loading.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?ResourceStr } value - Placeholder image displayed during loading. Default value is null.
+ * @param { ?ResourceStr } value - Placeholder image displayed during loading, Default value is null.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -471,7 +446,7 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 /**
  * Sets how the image is resized to fit its container.
  *
- * @param { ?ImageFit } value - How the image is resized to fit its container. Default value is ImageFit.Cover.
+ * @param { ?ImageFit } value - How the image is resized to fit its container, Default value is ImageFit.Cover.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -481,14 +456,12 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
     func objectFit(value: ?ImageFit): ImageAttribute
 
 /**
- * Set the repeat style of the picture.
+ * Set the repeat style of the picture
+ * NOTE:
+ * This attribute is not applicable to SVG images.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute is not applicable to SVG images.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
- *
- * @param { ?ImageRepeat } value - How the image is repeated. Default value is ImageRepeat.NoRepeat.
+ * @param { ?ImageRepeat } value - How the image is repeated, Default value is ImageRepeat.NoRepeat.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -500,12 +473,11 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 /**
  * Sets the interpolation effect of the image, which can alleviate aliasing that occurs when the image is zoomed.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute is not applicable to SVG images.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute is not applicable to SVG images.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?ImageInterpolation } value - Interpolation effect of the image. Default value is ImageInterpolation.Low.
+ * @param { ?ImageInterpolation } value - Interpolation effect of the image, Default value is ImageInterpolation.Low.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -517,13 +489,12 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 /**
  * Sets the rendering mode of the image.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute is not applicable to SVG images.
- * <br>When ColorFilter is set, this attribute is not effective.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute is not applicable to SVG images.
+ * When ColorFilter is set, this attribute is not effective.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?ImageRenderMode } value - Rendering mode of the image. Default value is ImageRenderMode.Original.
+ * @param { ?ImageRenderMode } value - Rendering mode of the image, Default value is ImageRenderMode.Original.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -534,13 +505,12 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 
 /**
  * Sets the decoding size of the image.
- * The original picture is decoded into a picture of a specified size. The unit of the number type is px.
+ * The original picture is decoded into a picture of a specified size.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute works only when the target size is smaller than the source size.
- * <br>This attribute is not applicable to SVG images or PixelMap objects.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute works only when the target size is smaller than the source size.
+ * This attribute is not applicable to SVG images or PixelMap objects.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?Length } width - Decoding size of the image.
  * @param { ?Length } height - Decoding size of the image.
@@ -555,11 +525,10 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 /**
  * Specifies whether to load the image synchronously.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?Bool } value - Whether to load the image synchronously. Default value is false.
+ * @param { ?Bool } value - Whether to load the image synchronously, Default value is false.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -573,30 +542,28 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
  * By default, no fill color is applied. If an invalid value is passed, the system uses the default theme color:
  * black in light mode and white in dark mode.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute applies only to SVG images.
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute applies only to SVG images.
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?ResourceColor } color - Fill color to be superimposed on the image.
+ * @param { ?ResourceColor } value - Fill color to be superimposed on the image.
  * @returns { ImageAttribute }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func fillColor(color: ?ResourceColor): ImageAttribute
+    func fillColor(value: ?ResourceColor): ImageAttribute
 
 /**
  * Specifies whether to resize the image source based on the size of the display area during image decoding.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor
  * or SVG.
- * </p>
  *
  * @param { ?Bool } value - Whether to resize the image source based on the size of the display area
- * during image decoding. Default value is false.
+ *     during image decoding, Default value is false.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -608,11 +575,10 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 /**
  * Specifies whether to display the image in the system language direction.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?Bool } value - Whether to display the image in the system language direction. Default value is false.
+ * @param { ?Bool } value - Whether to display the image in the system language direction, Default value is false.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -624,11 +590,10 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
 /**
  * Sets whether the display size of the image follows the source size.
  *
- * <p><strong>NOTE</strong>:
- * <br>This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This attribute does not take effect when the parameter type of the component is AnimatedDrawableDescriptor.
  *
- * @param { ?Bool } value - Whether to fit the image to the size of the image source. Default value is false.
+ * @param { ?Bool } value - Whether to fit the image to the size of the image source, Default value is false.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -638,10 +603,10 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
     func fitOriginalSize(value: ?Bool): ImageAttribute
 
 /**
- * Triggered when an image is successfully loaded or decoded.
+ * Sets a callback which is triggered when the image is successfully loaded.
  * The size of the image source that is successfully loaded is returned, in pixels.
  *
- * @param { ?ImageCompleteCallback } callback - The callback function triggered when image loading is complete.
+ * @param { ?ImageCompleteCallback } callback - Triggered when the image is successfully loaded.
  * @returns { ImageAttribute }
  */
 @!APILevel[
@@ -654,9 +619,8 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
  * Triggered when an error occurs during image loading.
  * The field of "message" carries the detailed information of failed image loading.
  *
- * <p><strong>NOTE</strong>:
- * <br>This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?ImageErrorCallback } callback - The callback function triggered when an error occurs.
  * @returns { ImageAttribute }
@@ -671,10 +635,9 @@ sealed interface ImageAttribute <: CommonMethod<ImageAttribute> {
  * When the loaded source file is a svg image, this callback is triggered when the playback of the svg image is complete.
  * If the svg image is a wireless loop image, this callback is not triggered.
  *
- * <p><strong>NOTE</strong>:
- * <br>Only SVG images are supported.
- * <br>This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
- * </p>
+ * NOTE:
+ * Only SVG images are supported.
+ * This event is not triggered if the parameter type of the component is AnimatedDrawableDescriptor.
  *
  * @param { ?() -> Unit } event - The callback function triggered when SVG playback is complete.
  * @returns { ImageAttribute }

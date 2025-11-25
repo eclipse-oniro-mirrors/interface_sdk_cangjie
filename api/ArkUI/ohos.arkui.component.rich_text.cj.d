@@ -7,7 +7,7 @@ import ohos.labels.APILevel
 import ohos.resource.*
 
 /**
- * A component that displays rich text content formatted in HTML or loaded from a resource file.
+ * Defines RichText Component.
  */
 @!APILevel[
     since: "22",
@@ -27,7 +27,7 @@ public class RichText <: CommonMethodComponent<RichText> & RichTextAttribute {
     public init(content: ?ResourceStr)
 
 /**
- * Triggered when the RichText loading starts.
+ * Triggered when the RichText loading starts
  *
  * @param { ?() -> Unit } callback - Callback function when loading starts.
  * @returns { This } Returns the RichText instance.
@@ -60,7 +60,7 @@ public class RichText <: CommonMethodComponent<RichText> & RichTextAttribute {
 ]
 sealed interface RichTextAttribute <: CommonMethod<RichTextAttribute> {
 /**
- * Called when the rich text content begins loading.
+ * Triggered when the RichText loading starts.
  *
  * @param { ?() -> Unit } callback - Callback function when loading starts.
  * @returns { RichTextAttribute } Returns the rich text attribute.

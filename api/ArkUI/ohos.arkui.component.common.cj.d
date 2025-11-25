@@ -121,7 +121,9 @@ public class Area {
 ]
 public class Position {
 /**
- * The x-coordinate of the position.
+ * Translation distance along the x-axis.
+ * For the number type, the unit is Vp, and the value range is (-∞, +∞).
+ * For the string type, the value follows the format of length string type.
  */
 @!APILevel[
     since: "22",
@@ -130,7 +132,9 @@ public class Position {
     public var x: ?Length
 
 /**
- * The y-coordinate of the position.
+ * Translation distance along the y-axis.
+ * For the number type, the unit is Vp, and the value range is (-∞, +∞).
+ * For the string type, the value follows the format of length string type.
  */
 @!APILevel[
     since: "22",
@@ -186,10 +190,7 @@ public class MotionPathOptions {
     public var from: ?Float64
 
 /**
- * End point of the motion path.
- * Value range: [0, 1].
- * A value less than 0 or greater than 1 evaluates to the default value **1**,
- * provided that the value of **to** is greater than or equal to the value of **from**.
+ * Top alignment in the vertical direction.
  *
  * @default 1.0
  */
@@ -240,9 +241,9 @@ public class MotionPathOptions {
 public class SharedTransitionOptions {
 /**
  * Animation duration.
- * <br>Default value: **1000**.
- * <br>Unit: ms.
- * <br>Value range: [0, +∞).
+ * Default value: **1000**.
+ * Unit: ms.
+ * Value range: [0, +∞).
  *
  * @default 1000
  */
@@ -253,11 +254,7 @@ public class SharedTransitionOptions {
     public var duration: ?Int32
 
 /**
- * Animation curve.<br>You are advised to specify the curve using the **Curve** or
- * ** ICurve** type.<br>For the string type, this parameter indicates an animation
- * interpolation curve. For available values, see the **curve** parameter in
- * AnimateParam.
- * <br>Default value: **Curve.Linear**.
+ * Animation curve.
  *
  * @default Curve.Linear
  */
@@ -363,7 +360,7 @@ public class AnimateParam {
     public var tempo: ?Float32
 
 /**
- * Animation curve.
+ * Indicates that the animation starts and ends at a slow speed, CubicBezier(0.42, 0.0, 0.78, 1.0).
  *
  * @default Curve.EaseInOut
  */
@@ -468,7 +465,7 @@ public class AnimateParam {
 }
 
 /**
- * Defines the horizontal align rule options of relative container.
+ * Define the horizontal align rule options of relative container.
  */
 @!APILevel[
     since: "22",
@@ -485,7 +482,7 @@ public class HorizontalAlignParam {
     public var anchor: ?String
 
 /**
- * Sets the horizontal alignment relative to the anchor component.
+ * Horizontal alignment mode relative to the anchor component.
  */
 @!APILevel[
     since: "22",
@@ -507,8 +504,7 @@ public class HorizontalAlignParam {
 }
 
 /**
- * Controls how components are aligned vertically within their container or relative to an anchor.
- * Provides precise vertical positioning capabilities for UI layout.
+ * Define the vertical align rule options of relative container.
  */
 @!APILevel[
     since: "22",
@@ -516,8 +512,7 @@ public class HorizontalAlignParam {
 ]
 public class VerticalAlignParam {
 /**
- * ID of the component that functions as the anchor point.
- * Specifies the reference component for relative alignment positioning.
+ * ID of the component that serves as the anchor.
  */
 @!APILevel[
     since: "22",
@@ -526,8 +521,7 @@ public class VerticalAlignParam {
     public var anchor: ?String
 
 /**
- * Alignment mode relative to the anchor component.
- * Defines how this component should be vertically positioned relative to the anchor.
+ * Vertical alignment mode relative to the anchor component.
  */
 @!APILevel[
     since: "22",
@@ -549,7 +543,7 @@ public class VerticalAlignParam {
 }
 
 /**
- * Defines the bias ratio in horizontal and vertical direction.
+ * Defines the Bias.
  */
 @!APILevel[
     since: "22",
@@ -565,7 +559,7 @@ public class Bias {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var horizontal: ?Float64
+    public var horizontal: ?Float32
 
 /**
  * Vertical ratio of the Bias, it must be >= 0.
@@ -576,19 +570,19 @@ public class Bias {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var vertical: ?Float64
+    public var vertical: ?Float32
 
 /**
  * Defines the constructor of Bias.
  *
- * @param { ?Float64 } [horizontal] - Horizontal ratio of the Bias, it must be >= 0.
- * @param { ?Float64 } [vertical] - Vertical ratio of the Bias, it must be >= 0.
+ * @param { ?Float32 } [horizontal] - Horizontal ratio of the Bias, it must be >= 0.
+ * @param { ?Float32 } [vertical] - Vertical ratio of the Bias, it must be >= 0.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public init(horizontal!: ?Float64 = None, vertical!: ?Float64 = None)
+    public init(horizontal!: ?Float32 = None, vertical!: ?Float32 = None)
 }
 
 /**
@@ -600,7 +594,7 @@ public class Bias {
 ]
 public class Fonts {
 /**
- * Font size.
+ * font size.
  */
 @!APILevel[
     since: "22",
@@ -609,7 +603,7 @@ public class Fonts {
     public var size: ?Length
 
 /**
- * Font weight.
+ * font weight.
  */
 @!APILevel[
     since: "22",
@@ -618,7 +612,7 @@ public class Fonts {
     public var weight: ?FontWeight
 
 /**
- * Font family.
+ * font family.
  */
 @!APILevel[
     since: "22",
@@ -627,7 +621,7 @@ public class Fonts {
     public var family: ?String
 
 /**
- * Font style.
+ * font style.
  */
 @!APILevel[
     since: "22",
@@ -660,7 +654,7 @@ public class Fonts {
 ]
 public class BorderRadiuses {
 /**
- * top-left property.
+ * top property. value range (-∞, ∞) If value > 0, expand outward elements. Else first shrink by value and then expand outward pixels
  */
 @!APILevel[
     since: "22",
@@ -669,7 +663,7 @@ public class BorderRadiuses {
     public var topLeft: ?Length
 
 /**
- * top-right property.
+ * Set the indicator to the right.
  */
 @!APILevel[
     since: "22",
@@ -678,7 +672,7 @@ public class BorderRadiuses {
     public var topRight: ?Length
 
 /**
- * bottom-left property.
+ * bottom property. value range (-∞, ∞) If value > 0, expand outward elements. Else first shrink by value and then expand outward pixels
  */
 @!APILevel[
     since: "22",
@@ -687,7 +681,7 @@ public class BorderRadiuses {
     public var bottomLeft: ?Length
 
 /**
- * bottom-right property.
+ * bottom-start property.
  */
 @!APILevel[
     since: "22",
@@ -735,8 +729,7 @@ public class Margin {
 }
 
 /**
- * Provides configuration options for rendering shadows behind UI components.
- * Allows fine-tuning of shadow appearance including blur, color, offset, and fill properties.
+ * Define the options of shadow
  */
 @!APILevel[
     since: "22",
@@ -745,9 +738,6 @@ public class Margin {
 public class ShadowOptions {
 /**
  * Blur radius of the shadow.
- * Controls the softness of the shadow edges. Higher values create more blurred shadows.
- *
- * @default 0.0
  */
 @!APILevel[
     since: "22",
@@ -756,7 +746,7 @@ public class ShadowOptions {
     public var radius: ?Float64
 
 /**
- * Specifies the rendering method for the shadow, affecting performance and visual quality.
+ * Defines the dialog's shadow.
  *
  * @default ShadowType.Color
  */
@@ -767,8 +757,7 @@ public class ShadowOptions {
     public var shadowType: ?ShadowType
 
 /**
- * Color of the shadow.
- * Defines the color tint applied to the shadow. Can be any valid resource color.
+ * Set the icon color
  *
  * @default Black
  */
@@ -779,9 +768,7 @@ public class ShadowOptions {
     public var color: ?ResourceColor
 
 /**
- * Offset of the shadow along the x-axis. Unit is px.
- * Controls the horizontal positioning of the shadow relative to the component.
- * Positive values shift the shadow to the right, negative values to the left.
+ * Offset for showing the context menu, which should not cause the menu to extend beyond the screen. NOTE: When the menu is displayed relative to the parent component area, the width or height of the area is automatically counted into the offset based on the placement attribute of the menu. When the menu is displayed above the parent component (that is, placement is set to Placement.TopLeft, Placement.Top, or Placement.TopRight), a positive value of x indicates rightward movement relative to the parent component, and a positive value of y indicates upward movement. When the menu is displayed below the parent component (that is, placement is set to Placement.BottomLeft, Placement.Bottom, or Placement.BottomRight), a positive value of x indicates rightward movement relative to the parent component, and a positive value of y indicates downward movement. When the menu is displayed on the left of the parent component (that is, placement is set to Placement.LeftTop, Placement.Left, or Placement.LeftBottom), a positive value of x indicates leftward movement relative to the parent component, and a positive value of y indicates downward movement. When the menu is displayed on the right of the parent component (that is, placement is set to Placement.RightTop, Placement.Right, or Placement.RightBottom), a positive value of x indicates rightward movement relative to the parent component, and a positive value of y indicates downward movement. If the display position of the menu is adjusted (different from the main direction of the initial placement value), the offset value is invalid
  *
  * @default 0.0
  */
@@ -792,9 +779,7 @@ public class ShadowOptions {
     public var offsetX: ?Float64
 
 /**
- * Offset of the shadow along the y-axis. Unit is px.
- * Controls the vertical positioning of the shadow relative to the component.
- * Positive values shift the shadow downward, negative values upward.
+ * Offset of the shadow along the y-axis. Unit is px. Default value is 0.
  *
  * @default 0.0
  */
@@ -804,11 +789,11 @@ public class ShadowOptions {
 ]
     public var offsetY: ?Float64
 /**
- * Whether to fill the inside of the component with shadow. **true**: Fill
+ * Whether to fill the inside of the component with shadow. true: Fill
  * the inside of the component with shadow.
- * <br>**false**: Do not fill the inside of the component with shadow.
- * <br>The default value is **false**.
- * <br>**NOTE**<br>This attribute does not take effect in textShadow.
+ * false: Do not fill the inside of the component with shadow.
+ * The default value is false.
+ * NOTE: This attribute does not take effect in textShadow.
  *
  * @default false
  */
@@ -882,8 +867,7 @@ public class Offset {
 }
 
 /**
- * Defines the frame rate range for animations, allowing control over animation smoothness and performance.
- * Provides fine-grained control over animation frame rates for optimal balance between visual quality and resource usage.
+ * class for ExpectedFrameRateRange.
  */
 @!APILevel[
     since: "22",
@@ -912,7 +896,6 @@ public class ExpectedFrameRateRange {
 
 /**
  * The expected frame rate of dynamical callback rate range.
- * Represents the target frame rate that the animation should attempt to maintain.
  * The value should be between the minimum and maximum value.
  * Otherwise, the actual callback rate will be dynamically
  * adjusted to better align with other animation sources.
@@ -949,7 +932,9 @@ public class ExpectedFrameRateRange {
 ]
 public class AlignRuleOption {
 /**
- * The param of left align.
+ * Left alignment.
+ * anchor: ID of the component that functions as the anchor point.
+ * align: alignment mode relative to the anchor component.
  */
 @!APILevel[
     since: "22",
@@ -958,7 +943,7 @@ public class AlignRuleOption {
     public var left: ?HorizontalAlignParam
 
 /**
- * The param of right align.
+ * right property. value range (-∞, ∞) If value > 0, expand outward elements. Else first shrink by value and then expand outward pixels
  */
 @!APILevel[
     since: "22",
@@ -985,7 +970,7 @@ public class AlignRuleOption {
     public var top: ?VerticalAlignParam
 
 /**
- * Bottom alignment in the vertical direction..
+ * Bottom alignment in the vertical direction.
  */
 @!APILevel[
     since: "22",
@@ -1004,7 +989,7 @@ public class AlignRuleOption {
 
 /**
  * Offset of the component under the anchor constraints.
- * <br>The value is the ratio of the distance to the left/upper anchor to the total distance between anchors.
+ * The value is the ratio of the distance to the left/upper anchor to the total distance between anchors.
  * @default horizontal: 0.5, vertical: 0.5 
  */
 @!APILevel[
@@ -1084,7 +1069,7 @@ public class EdgeStyles {
     public var left: ?BorderStyle
 
 /**
- * Defines the constructor of EdgeStyles.
+ * Define the constructor of EdgeStyles.
  *
  * @param { ?BorderStyle } [top] - Top border style.
  * @param { ?BorderStyle } [right] - Right border style.
@@ -1115,9 +1100,8 @@ public open class MultiShadowOptions {
 
 /**
  * Shadow blur radius. Unit: vp.
- * <p>**NOTE**:
- * <br>A value less than or equal to 0 is handled as the default value.
- * </p>
+ * NOTE:
+ * A value less than or equal to 0 is handled as the default value.
  *
  * @default 20
  */
@@ -1192,7 +1176,7 @@ public class PickerTextStyle {
 }
 
 /**
- * Provide a class for the text style of picker.
+ * Defines the font used for text.
  */
 @!APILevel[
     since: "22",
@@ -1260,7 +1244,7 @@ public class Font {
 ]
 public class Bindable<T> {
 /**
- * Defines value of the bindable property.
+ * The value attribute of the param element.
  */
 @!APILevel[
     since: "22",
@@ -1269,25 +1253,25 @@ public class Bindable<T> {
     public let value: T
 
 /**
- * Defines the callback of the bindable property which will be invork when the property is changed.
+ * Callback invoked when the selected item in the picker changes.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public let onchange: (T) -> Unit
+    public let onChange: (T) -> Unit
 
 /**
  * Bindable constructor.
  *
  * @param { T } value - value of the bindable property.
- * @param { (T) -> Unit } onchange - callback of the bindable property.
+ * @param { (T) -> Unit } onChange - callback of the bindable property.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public init(value: T, onchange: (T) -> Unit)
+    public init(value: T, onChange: (T) -> Unit)
 }
 
 /**
@@ -1300,7 +1284,7 @@ public class Bindable<T> {
 public interface TextContentControllerBase {}
 
 /**
- * Obtains all attributes of the component with the specified ID.
+ * All checkboxes are selected.
  *
  * @param { String } id - ID of the component for which the event is to be sent.
  * @returns { String } All attributes of the component.
@@ -1323,7 +1307,7 @@ public func getInspectorByKey(id: String): String
 public func getInspectorTree(): String
 
 /**
- * Sends an event to the component with the specified ID.
+ * The user moves the thumb by touching or clicking the track.
  *
  * @param { String } id - ID of the component for which the event is to be sent.
  * @param { IntNative } action - Type of the event to be sent. The options are as follows: Click event: 10 LongClick: 11.
@@ -1374,7 +1358,6 @@ public func sendMouseEvent(event: MouseEvent): Bool
 
 /**
  * indexer align property.
- *
  */
 @!APILevel[
     since: "22",
@@ -1382,8 +1365,8 @@ public func sendMouseEvent(event: MouseEvent): Bool
 ]
 public enum IndexerAlign {
 /**
- * A dialog box is displayed on the right of the index bar.
- *
+ * Right to left
+*
  */
 @!APILevel[
     since: "22",
@@ -1392,8 +1375,8 @@ public enum IndexerAlign {
     Left
     | 
 /**
- * A dialog box is displayed on the left of the index bar.
- *
+ * From left to right
+*
  */
 @!APILevel[
     since: "22",
@@ -1430,7 +1413,6 @@ extend IndexerAlign <: Equatable<IndexerAlign> {
 
 /**
  * Declare the type of input box.
- *
  */
 @!APILevel[
     since: "22",
@@ -1438,8 +1420,7 @@ extend IndexerAlign <: Equatable<IndexerAlign> {
 ]
 public enum InputType {
 /**
- * Basic input mode.
- *
+ * Default State
  */
 @!APILevel[
     since: "22",
@@ -1449,7 +1430,6 @@ public enum InputType {
     | 
 /**
  * Pure digital input mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1460,11 +1440,9 @@ public enum InputType {
 /**
  * E-mail address input mode.
  *
- * <p><strong>NOTE</strong>:
- * <br>This mode accepts only digits, letters, underscores (_), dots (.),
+ * NOTE:
+ * This mode accepts only digits, letters, underscores (_), dots (.),
  * and the following special characters: ! # $ % & ' " * + - / = ? ^ ` { | } ~ @ (which can only appear once)
- * </p>
- *
  */
 @!APILevel[
     since: "22",
@@ -1475,14 +1453,11 @@ public enum InputType {
 /**
  * Password entry mode.
  *
- * <p><strong>NOTE</strong>:
- * <br>An eye icon is used to show or hide the password.
- * <br>By default, the entered characters are temporarily shown before being obscured by dots;
- * they are directly obscured by dots since API version 12 on certain devices.
- * <br>The password input mode does not support underlines.
- * <br>If Password Vault is enabled, autofill is available for the username and password.
- * </p>
- *
+ * NOTE:
+ * An eye icon is used to show or hide the password.
+ * By default, the entered characters are temporarily shown before being obscured by dots;
+ * The password input mode does not support underlines.
+ * If Password Vault is enabled, autofill is available for the username and password.
  */
 @!APILevel[
     since: "22",
@@ -1492,7 +1467,6 @@ public enum InputType {
     | 
 /**
  * Phone number entry mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1529,7 +1503,6 @@ extend InputType <: Equatable<InputType> {
 
 /**
  * Declare the type of soft keyboard.
- *
  */
 @!APILevel[
     since: "22",
@@ -1538,7 +1511,6 @@ extend InputType <: Equatable<InputType> {
 public enum EnterKeyType {
 /**
  * Go.
- *
  */
 @!APILevel[
     since: "22",
@@ -1547,8 +1519,7 @@ public enum EnterKeyType {
     Go
     | 
 /**
- * Search component type.
- *
+ * search component type
  */
 @!APILevel[
     since: "22",
@@ -1558,7 +1529,6 @@ public enum EnterKeyType {
     | 
 /**
  * Send.
- *
  */
 @!APILevel[
     since: "22",
@@ -1568,7 +1538,6 @@ public enum EnterKeyType {
     | 
 /**
  * Next.
- *
  */
 @!APILevel[
     since: "22",
@@ -1577,8 +1546,7 @@ public enum EnterKeyType {
     Next
     | 
 /**
- * Done.
- *
+ * After refresh, return to the initial state.
  */
 @!APILevel[
     since: "22",
@@ -1588,7 +1556,6 @@ public enum EnterKeyType {
     | 
 /**
  * Showed as 'previous' pattern.
- *
  */
 @!APILevel[
     since: "22",
@@ -1598,7 +1565,6 @@ public enum EnterKeyType {
     | 
 /**
  * Showed as 'new line' pattern.
- *
  */
 @!APILevel[
     since: "22",
@@ -1634,8 +1600,7 @@ extend EnterKeyType <: Equatable<EnterKeyType> {
 }
 
 /**
- * FlexDirection enum description.
- *
+ * FlexDirection enumeration description
  */
 @!APILevel[
     since: "22",
@@ -1644,7 +1609,6 @@ extend EnterKeyType <: Equatable<EnterKeyType> {
 public enum FlexDirection {
 /**
  * The main axis is consistent with the row direction as the layout mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1654,7 +1618,6 @@ public enum FlexDirection {
     | 
 /**
  * The main axis is consistent with the column direction as the layout mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -1664,7 +1627,6 @@ public enum FlexDirection {
     | 
 /**
  * The layout is in the opposite direction to the Row direction.
- *
  */
 @!APILevel[
     since: "22",
@@ -1674,7 +1636,6 @@ public enum FlexDirection {
     | 
 /**
  * Layout in the opposite direction to the column.
- *
  */
 @!APILevel[
     since: "22",
@@ -1710,8 +1671,7 @@ extend FlexDirection <: Equatable<FlexDirection> {
 }
 
 /**
- * FlexWrap enum description.
- *
+ * FlexWrap enumeration description
  */
 @!APILevel[
     since: "22",
@@ -1719,8 +1679,7 @@ extend FlexDirection <: Equatable<FlexDirection> {
 ]
 public enum FlexWrap {
 /**
- * The Flex container has a single row/column layout of elements, and children are allowed to go beyond the container.
- *
+ * The Flex container has a single row/column layout of elements, and children are not allowed to go beyond the container.
  */
 @!APILevel[
     since: "22",
@@ -1730,7 +1689,6 @@ public enum FlexWrap {
     | 
 /**
  * The elements of the Flex container are arranged in multiple rows or columns, and the sub-items are allowed to exceed the container.
- *
  */
 @!APILevel[
     since: "22",
@@ -1740,7 +1698,6 @@ public enum FlexWrap {
     | 
 /**
  * The elements of the Flex container are arranged in reverse multiple rows/columns, and children are allowed to exceed the container.
- *
  */
 @!APILevel[
     since: "22",
@@ -1776,8 +1733,7 @@ extend FlexWrap <: Equatable<FlexWrap> {
 }
 
 /**
- * FlexAlign enum description.
- *
+ * FlexAlign enumeration description.
  */
 @!APILevel[
     since: "22",
@@ -1785,8 +1741,8 @@ extend FlexWrap <: Equatable<FlexWrap> {
 ]
 public enum FlexAlign {
 /**
- * Start edge of the window,
- * which is the left edge for left-to-right scripts and the right edge for right-to-left scripts.
+ * The value of menu align type start
+*
  */
 @!APILevel[
     since: "22",
@@ -1797,7 +1753,6 @@ public enum FlexAlign {
 /**
  * The elements are centered in the direction of the principal axis,
  * and the first element is the same distance from the beginning of the row as the last element is from the end of the row.
- *
  */
 @!APILevel[
     since: "22",
@@ -1806,8 +1761,7 @@ public enum FlexAlign {
     Center
     | 
 /**
- * End edge of the window,
- * which is the right edge for left-to-right scripts and the left edge for right-to-left scripts.
+ * Align the head of the cross axis direction.
  */
 @!APILevel[
     since: "22",
@@ -1819,7 +1773,6 @@ public enum FlexAlign {
  * Elastic elements are evenly distributed in the direction of the Flex principal axis,
  * with the same distance between adjacent elements.
  * The first element aligns with the beginning of the line, and the last element aligns with the end of the line.
- *
  */
 @!APILevel[
     since: "22",
@@ -1831,7 +1784,6 @@ public enum FlexAlign {
  * Elastic elements are evenly distributed in the direction of the Flex principal axis,
  *  with the same distance between adjacent elements. Half the distance between adjacent elements as the distance between
  * the first element and the distance between the last element and the end of the row.
- *
  */
 @!APILevel[
     since: "22",
@@ -1843,7 +1795,6 @@ public enum FlexAlign {
  * Elements in the Flex axis direction are evenly spaced.
  * The spacing between adjacent elements, the spacing between the first element and the beginning of the row,
  * and the spacing between the last element and the end of the row are the same.
- *
  */
 @!APILevel[
     since: "22",
@@ -1879,8 +1830,7 @@ extend FlexAlign <: Equatable<FlexAlign> {
 }
 
 /**
- * ItemAlign enum description.
- *
+ * ItemAlign enumeration description
  */
 @!APILevel[
     since: "22",
@@ -1908,7 +1858,6 @@ public enum ItemAlign {
     | 
 /**
  * The element is centered in the Flex container with the cross axis direction aligned.
- *
  */
 @!APILevel[
     since: "22",
@@ -1936,8 +1885,7 @@ public enum ItemAlign {
     Stretch
     | 
 /**
- * Element In a Flex container, the fill is stretched across the axis and, when no dimension is set, to the container size.
- *
+ * Element In the Flex container, the cross-axis direction text baseline is aligned.
  */
 @!APILevel[
     since: "22",
@@ -1974,7 +1922,6 @@ extend ItemAlign <: Equatable<ItemAlign> {
 
 /**
  * Declare the type of status button.
- *
  */
 @!APILevel[
     since: "22",
@@ -1982,7 +1929,7 @@ extend ItemAlign <: Equatable<ItemAlign> {
 ]
 public enum ToggleType {
 /**
- * checkbox component type.
+ * Checkbox
  */
 @!APILevel[
     since: "22",
@@ -1992,7 +1939,6 @@ public enum ToggleType {
     | 
 /**
  * Switch component type.
- *
  */
 @!APILevel[
     since: "22",
@@ -2001,8 +1947,7 @@ public enum ToggleType {
     Switch
     | 
 /**
- * Button component type.
- *
+ * The two ends of the dividing line are parallel lines.
  */
 @!APILevel[
     since: "22",
@@ -2038,7 +1983,7 @@ extend ToggleType <: Equatable<ToggleType> {
 }
 
 /**
- * Outline Style.
+ * Text style.
  */
 @!APILevel[
     since: "22",
@@ -2047,7 +1992,6 @@ extend ToggleType <: Equatable<ToggleType> {
 public enum FontStyle {
 /**
  * Default style.
- *
  */
 @!APILevel[
     since: "22",
@@ -2057,7 +2001,6 @@ public enum FontStyle {
     | 
 /**
  * Italic style.
- *
  */
 @!APILevel[
     since: "22",
@@ -2093,8 +2036,7 @@ extend FontStyle <: Equatable<FontStyle> {
 }
 
 /**
- * Alignment enum description.
- *
+ * Alignment enumeration description.
  */
 @!APILevel[
     since: "22",
@@ -2103,7 +2045,6 @@ extend FontStyle <: Equatable<FontStyle> {
 public enum Alignment {
 /**
  * Top Start.
- *
  */
 @!APILevel[
     since: "22",
@@ -2112,8 +2053,8 @@ public enum Alignment {
     TopStart
     | 
 /**
- * The top is centered horizontally.
- *
+ * The top is centered horizontally
+*
  */
 @!APILevel[
     since: "22",
@@ -2123,7 +2064,6 @@ public enum Alignment {
     | 
 /**
  * Top tail end.
- *
  */
 @!APILevel[
     since: "22",
@@ -2160,7 +2100,6 @@ public enum Alignment {
     | 
 /**
  * Bottom starting end.
- *
  */
 @!APILevel[
     since: "22",
@@ -2169,7 +2108,8 @@ public enum Alignment {
     BottomStart
     | 
 /**
- * Bottom edge of the window.
+ * From the top down
+*
  */
 @!APILevel[
     since: "22",
@@ -2179,7 +2119,6 @@ public enum Alignment {
     | 
 /**
  * Bottom end.
- *
  */
 @!APILevel[
     since: "22",
@@ -2215,7 +2154,7 @@ extend Alignment <: Equatable<Alignment> {
 }
 
 /**
- * Defines the horizontal align rule options of relative container.
+ * HorizontalAlign enumeration description.
  */
 @!APILevel[
     since: "22",
@@ -2224,7 +2163,6 @@ extend Alignment <: Equatable<Alignment> {
 public enum HorizontalAlign {
 /**
  * Effective only for the starting edge.
- *
  */
 @!APILevel[
     since: "22",
@@ -2234,7 +2172,6 @@ public enum HorizontalAlign {
     | 
 /**
  * Center alignment. The default alignment mode is used.
- *
  */
 @!APILevel[
     since: "22",
@@ -2279,8 +2216,7 @@ extend HorizontalAlign <: Equatable<HorizontalAlign> {
 }
 
 /**
- * VerticalAlign enum description.
- *
+ * VerticalAlign enumeration description
  */
 @!APILevel[
     since: "22",
@@ -2343,7 +2279,6 @@ extend VerticalAlign <: Equatable<VerticalAlign> {
 
 /**
  * The font weight of the text.
- *
  */
 @!APILevel[
     since: "22",
@@ -2352,7 +2287,6 @@ extend VerticalAlign <: Equatable<VerticalAlign> {
 public enum FontWeight {
 /**
  * Normal font. Equivalent to a digital value of 400.
- *
  */
 @!APILevel[
     since: "22",
@@ -2362,7 +2296,6 @@ public enum FontWeight {
     | 
 /**
  * Bold. Equivalent to a numeric value of 700.
- *
  */
 @!APILevel[
     since: "22",
@@ -2372,7 +2305,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a value that is heavier than [Inherited Value].
- *
  */
 @!APILevel[
     since: "22",
@@ -2382,7 +2314,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a lighter value than [Inherited Value].
- *
  */
 @!APILevel[
     since: "22",
@@ -2401,7 +2332,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a more general value than [Inherited Value].
- *
  */
 @!APILevel[
     since: "22",
@@ -2411,7 +2341,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W100.
- *
  */
 @!APILevel[
     since: "22",
@@ -2421,7 +2350,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W200.
- *
  */
 @!APILevel[
     since: "22",
@@ -2431,7 +2359,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W300.
- *
  */
 @!APILevel[
     since: "22",
@@ -2441,7 +2368,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W400.
- *
  */
 @!APILevel[
     since: "22",
@@ -2451,7 +2377,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W500.
- *
  */
 @!APILevel[
     since: "22",
@@ -2461,7 +2386,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W600.
- *
  */
 @!APILevel[
     since: "22",
@@ -2471,7 +2395,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W700.
- *
  */
 @!APILevel[
     since: "22",
@@ -2481,7 +2404,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W800.
- *
  */
 @!APILevel[
     since: "22",
@@ -2491,7 +2413,6 @@ public enum FontWeight {
     | 
 /**
  * Defines a FontWeight value W900.
- *
  */
 @!APILevel[
     since: "22",
@@ -2528,7 +2449,6 @@ extend FontWeight <: Equatable<FontWeight> {
 
 /**
  * Declare the location of the bar chart.
- *
  */
 @!APILevel[
     since: "22",
@@ -2538,7 +2458,6 @@ public enum BarPosition {
 /**
  * Start edge of the window, which is the left edge for left-to-right
  * scripts and the right edge for right-to-left scripts.
- *
  */
 @!APILevel[
     since: "22",
@@ -2549,7 +2468,6 @@ public enum BarPosition {
 /**
  * End edge of the window, which is the right edge for left-to-right scripts
  * and the left edge for right-to-left scripts.
- *
  */
 @!APILevel[
     since: "22",
@@ -2586,7 +2504,6 @@ extend BarPosition <: Equatable<BarPosition> {
 
 /**
  * Declare the graphic format of the bar chart.
- *
  */
 @!APILevel[
     since: "22",
@@ -2596,7 +2513,6 @@ public enum BarMode {
 /**
  * The width of each tab is determined by equally dividing the number of tabs by the bar width
  * (or bar height in the vertical layout).
- *
  */
 @!APILevel[
     since: "22",
@@ -2608,7 +2524,6 @@ public enum BarMode {
  * The width of each tab is determined by the actual layout. The tabs are scrollable in the following case:
  * In horizontal layout, the total width exceeds the tab bar width; in vertical layout,
  * the total height exceeds the tab bar height.
- *
  */
 @!APILevel[
     since: "22",
@@ -2645,7 +2560,6 @@ extend BarMode <: Equatable<BarMode> {
 
 /**
  * Define the type of shadow.
- *
  */
 @!APILevel[
     since: "22",
@@ -2654,7 +2568,6 @@ extend BarMode <: Equatable<BarMode> {
 public enum ShadowType {
 /**
  * Define a color type of shadow.
- *
  */
 @!APILevel[
     since: "22",
@@ -2664,7 +2577,6 @@ public enum ShadowType {
     | 
 /**
  * Blur.
- *
  */
 @!APILevel[
     since: "22",
@@ -2701,7 +2613,6 @@ extend ShadowType <: Equatable<ShadowType> {
 
 /**
  * Type of text modifier.
- *
  */
 @!APILevel[
     since: "22",
@@ -2709,8 +2620,7 @@ extend ShadowType <: Equatable<ShadowType> {
 ]
 public enum TextDecorationType {
 /**
- * No transition animation for the modal.
- *
+ * Show none style
  */
 @!APILevel[
     since: "22",
@@ -2720,7 +2630,6 @@ public enum TextDecorationType {
     | 
 /**
  * Underline the words.
- *
  */
 @!APILevel[
     since: "22",
@@ -2730,7 +2639,6 @@ public enum TextDecorationType {
     | 
 /**
  * Text is in all uppercase.
- *
  */
 @!APILevel[
     since: "22",
@@ -2740,7 +2648,6 @@ public enum TextDecorationType {
     | 
 /**
  * A modifier line that passes through the text.
- *
  */
 @!APILevel[
     since: "22",
@@ -2777,7 +2684,6 @@ extend TextDecorationType <: Equatable<TextDecorationType> {
 
 /**
  * Alignment of text.
- *
  */
 @!APILevel[
     since: "22",
@@ -2840,7 +2746,6 @@ extend TextAlign <: Equatable<TextAlign> {
 
 /**
  * Declare how text overflows.
- *
  */
 @!APILevel[
     since: "22",
@@ -2848,8 +2753,7 @@ extend TextAlign <: Equatable<TextAlign> {
 ]
 public enum TextOverflow {
 /**
- * When the text overflows its dimensions, the text will not be cropped.
- *
+ * When the text overflows its dimensions, the text will be cropped and displayed.
  */
 @!APILevel[
     since: "22",
@@ -2859,7 +2763,6 @@ public enum TextOverflow {
     | 
 /**
  * If the text overflows its dimensions, the text that cannot be displayed shall be replaced by ellipsis.
- *
  */
 @!APILevel[
     since: "22",
@@ -2905,7 +2808,6 @@ extend TextOverflow <: Equatable<TextOverflow> {
 
 /**
  * Enum of word break.
- *
  */
 @!APILevel[
     since: "22",
@@ -2914,7 +2816,6 @@ extend TextOverflow <: Equatable<TextOverflow> {
 public enum WordBreak {
 /**
  * By default, CJK text can be wrapped between any 2 characters, and non-CJK text can only be wrapped in spaces.
- *
  */
 @!APILevel[
     since: "22",
@@ -2924,7 +2825,6 @@ public enum WordBreak {
     | 
 /**
  * Non-CJK text be wrapped at any character.
- *
  */
 @!APILevel[
     since: "22",
@@ -2935,7 +2835,6 @@ public enum WordBreak {
 /**
  * Non-CJK text can be wrapped at any character
  * and if a complete word can be preserved in space breaks, the word must be kept on the line.
- *
  */
 @!APILevel[
     since: "22",
@@ -2971,8 +2870,7 @@ extend WordBreak <: Equatable<WordBreak> {
 }
 
 /**
- * ImageRepeat enum description.
- *
+ * ImageRepeat enumeration description
  */
 @!APILevel[
     since: "22",
@@ -2981,7 +2879,6 @@ extend WordBreak <: Equatable<WordBreak> {
 public enum ImageRepeat {
 /**
  * Do not draw the picture again.
- *
  */
 @!APILevel[
     since: "22",
@@ -2991,7 +2888,6 @@ public enum ImageRepeat {
     | 
 /**
  * Repeat the drawing only on the horizontal axis.
- *
  */
 @!APILevel[
     since: "22",
@@ -3001,7 +2897,6 @@ public enum ImageRepeat {
     | 
 /**
  * Repeat the drawing only on the vertical axis.
- *
  */
 @!APILevel[
     since: "22",
@@ -3011,7 +2906,6 @@ public enum ImageRepeat {
     | 
 /**
  * Draw the picture repeatedly on both axes.
- *
  */
 @!APILevel[
     since: "22",
@@ -3047,8 +2941,7 @@ extend ImageRepeat <: Equatable<ImageRepeat> {
 }
 
 /**
- * ImageSize enum description.
- *
+ * ImageSize enumeration description.
  */
 @!APILevel[
     since: "22",
@@ -3057,7 +2950,6 @@ extend ImageRepeat <: Equatable<ImageRepeat> {
 public enum ImageSize {
 /**
  * Keep the aspect ratio to zoom out or zoom in so that the image is completely displayed within the display boundary.
- *
  */
 @!APILevel[
     since: "22",
@@ -3066,8 +2958,7 @@ public enum ImageSize {
     Contain
     | 
 /**
- * Keep the aspect ratio to zoom in or out the image so that both sides of the image are greater than or equal to the display boundary.
- *
+ * Keep the aspect ratio to zoom out or zoom in so that both sides of the image are greater than or equal to the display boundary.
  */
 @!APILevel[
     since: "22",
@@ -3077,7 +2968,6 @@ public enum ImageSize {
     | 
 /**
  * Defines menu automatically haptic feedback.
- *
  */
 @!APILevel[
     since: "22",
@@ -3087,9 +2977,33 @@ public enum ImageSize {
     | ...
 }
 
+extend ImageSize <: Equatable<ImageSize> {
+/**
+ * Compares this ImageSize with another for equality.
+ *
+ * @param { ImageSize } other - The ImageSize to compare with.
+ * @returns { Bool } True if both modes are equal, false otherwise.
+ */
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+    public operator func ==(other: ImageSize): Bool
+/**
+ * Compares this ImageSize with another for inequality.
+ *
+ * @param { ImageSize } other - The ImageSize to compare with.
+ * @returns { Bool } True if both modes are not equal, false otherwise.
+ */
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+    public operator func !=(other: ImageSize): Bool
+}
+
 /**
  * enum Shadow style
- *
  */
 @!APILevel[
     since: "22",
@@ -3098,7 +3012,6 @@ public enum ImageSize {
 public enum ShadowStyle {
 /**
  * Defines the super small default shadow style.
- *
  */
 @!APILevel[
     since: "22",
@@ -3108,7 +3021,6 @@ public enum ShadowStyle {
     | 
 /**
  * Defines the small default shadow style.
- *
  */
 @!APILevel[
     since: "22",
@@ -3118,7 +3030,6 @@ public enum ShadowStyle {
     | 
 /**
  * Medium shadow.
- *
  */
 @!APILevel[
     since: "22",
@@ -3128,7 +3039,6 @@ public enum ShadowStyle {
     | 
 /**
  * Large shadow.
- *
  */
 @!APILevel[
     since: "22",
@@ -3137,8 +3047,7 @@ public enum ShadowStyle {
     OuterDefaultLG
     | 
 /**
- * Floating small shadow.
- *
+ * Floating medium shadow.
  */
 @!APILevel[
     since: "22",
@@ -3148,7 +3057,6 @@ public enum ShadowStyle {
     | 
 /**
  * Floating medium shadow.
- *
  */
 @!APILevel[
     since: "22",
@@ -3184,8 +3092,7 @@ extend ShadowStyle <: Equatable<ShadowStyle> {
 }
 
 /**
- * Letter type in text
- *
+ * Letter type in text.
  */
 @!APILevel[
     since: "22",
@@ -3194,7 +3101,6 @@ extend ShadowStyle <: Equatable<ShadowStyle> {
 public enum TextCase {
 /**
  * The default is normal.
- *
  */
 @!APILevel[
     since: "22",
@@ -3203,8 +3109,7 @@ public enum TextCase {
     Normal
     | 
 /**
- * The text is all lowercase.
- *
+ * Bilinear Interpolation.
  */
 @!APILevel[
     since: "22",
@@ -3214,7 +3119,6 @@ public enum TextCase {
     | 
 /**
  * The text is all uppercase.
- *
  */
 @!APILevel[
     since: "22",
@@ -3251,7 +3155,6 @@ extend TextCase <: Equatable<TextCase> {
 
 /**
  * Border Style
- *
  */
 @!APILevel[
     since: "22",
@@ -3260,7 +3163,6 @@ extend TextCase <: Equatable<TextCase> {
 public enum BorderStyle {
 /**
  * Shows as a solid line.
- *
  */
 @!APILevel[
     since: "22",
@@ -3270,14 +3172,13 @@ public enum BorderStyle {
     | 
 /**
  * Shows as a series of short square dashed lines.
- *
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     Dashed
-    | 
+    |
 /**
  * Dotted border. The radius of a dot is half of outlineWidth.
  */
@@ -3316,7 +3217,6 @@ extend BorderStyle <: Equatable<BorderStyle> {
 
 /**
  * Image display mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -3325,7 +3225,6 @@ extend BorderStyle <: Equatable<BorderStyle> {
 public enum ImageFit {
 /**
  * Zoom in or out without maintaining the aspect ratio so that the image fills the display boundary.
- *
  */
 @!APILevel[
     since: "22",
@@ -3335,7 +3234,6 @@ public enum ImageFit {
     | 
 /**
  * Keep the aspect ratio to zoom out or zoom in so that the image is completely displayed within the display boundary.
- *
  */
 @!APILevel[
     since: "22",
@@ -3344,8 +3242,7 @@ public enum ImageFit {
     Contain
     | 
 /**
- * Keep the aspect ratio to zoom in or out so that both sides of the image are greater than or equal to the display boundary.
- *
+ * Keep the aspect ratio to zoom out or zoom in so that both sides of the image are greater than or equal to the display boundary.
  */
 @!APILevel[
     since: "22",
@@ -3373,7 +3270,6 @@ public enum ImageFit {
     | 
 /**
  * Keep the aspect ratio displayed, and the image zooms out or remains unchanged.
- *
  */
 @!APILevel[
     since: "22",
@@ -3410,7 +3306,6 @@ extend ImageFit <: Equatable<ImageFit> {
 
 /**
  * Sets the horizontal layout of elements.
- *
  */
 @!APILevel[
     since: "22",
@@ -3419,7 +3314,6 @@ extend ImageFit <: Equatable<ImageFit> {
 public enum Direction {
 /**
  * Elements are laid out from left to right.
- *
  */
 @!APILevel[
     since: "22",
@@ -3429,7 +3323,6 @@ public enum Direction {
     | 
 /**
  * Elements are laid out from right to left.
- *
  */
 @!APILevel[
     since: "22",
@@ -3483,8 +3376,7 @@ extend Direction <: Equatable<Direction> {
 ]
 public enum ScrollDirection {
 /**
- * Only vertical scrolling is supported.
- * Can scrolling up and down, but not left and right.
+ * Longitudinal arrangement
  */
 @!APILevel[
     since: "22",
@@ -3493,8 +3385,7 @@ public enum ScrollDirection {
     Vertical
     | 
 /**
- * Only horizontal scrolling is supported.
- * Can scrolling left and right, but not up and down.
+ * Horizontal arrangement
  */
 @!APILevel[
     since: "22",
@@ -3586,7 +3477,7 @@ extend ScrollBarDirection <: Equatable<ScrollBarDirection> {
 }
 
 /**
- * Defines the different interaction modes that can trigger slider value changes.
+ * State triggered by the event.
  */
 @!APILevel[
     since: "22",
@@ -3594,7 +3485,7 @@ extend ScrollBarDirection <: Equatable<ScrollBarDirection> {
 ]
 public enum SliderChangeMode {
 /**
- * Triggered when the user initially interacts with the slider thumb control.
+ * The user touches or clicks the thumb.
  */
 @!APILevel[
     since: "22",
@@ -3603,7 +3494,7 @@ public enum SliderChangeMode {
     Begin
     | 
 /**
- * Triggered continuously while the user is dragging the slider thumb to change its value.
+ * The user is dragging the slider.
  */
 @!APILevel[
     since: "22",
@@ -3613,10 +3504,10 @@ public enum SliderChangeMode {
     | 
 /**
  * The user stops dragging the slider by lifting their finger or releasing the mouse device.
- * <p><strong>NOTE</strong>:
- * <br>The trigger occurs when an invalid value is restored to the default value, that is, when the value is set to
+ * NOTE:
+ * The trigger occurs when an invalid value is restored to the default value, that is, when the value is set to
  * less than min or greater than max.
- * </p>
+ *
  * Triggered when the user completes their interaction with the slider, releasing the thumb control.
  */
 @!APILevel[
@@ -3626,8 +3517,7 @@ public enum SliderChangeMode {
     End
     | 
 /**
- * Triggered when the user directly interacts with the slider track rather than the thumb,
- * causing an immediate jump to the selected position.
+ * The user moves the thumb by touching or clicking the track
  */
 @!APILevel[
     since: "22",
@@ -3664,7 +3554,6 @@ extend SliderChangeMode <: Equatable<SliderChangeMode> {
 
 /**
  * Style of the slider thumb and track.
- *
  */
 @!APILevel[
     since: "22",
@@ -3673,7 +3562,6 @@ extend SliderChangeMode <: Equatable<SliderChangeMode> {
 public enum SliderStyle {
 /**
  * The thumb is on the track.
- *
  */
 @!APILevel[
     since: "22",
@@ -3683,7 +3571,6 @@ public enum SliderStyle {
     | 
 /**
  * The thumb is in the track.
- *
  */
 @!APILevel[
     since: "22",
@@ -3719,9 +3606,7 @@ extend SliderStyle <: Equatable<SliderStyle> {
 }
 
 /**
- * The interpolation effect of the image.
- * Defines the quality level of image interpolation algorithms used when scaling images.
- * Higher interpolation quality results in smoother images but may impact rendering performance.
+ * Cubic interpolation offers the highest interpolation quality, but may impact image rendering speed.
  */
 @!APILevel[
     since: "22",
@@ -3729,8 +3614,7 @@ extend SliderStyle <: Equatable<SliderStyle> {
 ]
 public enum ImageInterpolation {
 /**
- * Do not use interpolated image data.
- * Images are rendered using nearest-neighbor algorithm which is fastest but may result in pixelation.
+ * Not a special node or other media types.
  */
 @!APILevel[
     since: "22",
@@ -3739,9 +3623,7 @@ public enum ImageInterpolation {
     None
     | 
 /**
- * High usage of interpolated image data may affect the speed of image rendering.
- * Uses high-quality interpolation algorithms such as bicubic for smooth image scaling,
- * but may reduce rendering performance, especially with large images or animations.
+ * Cubic interpolation offers the highest interpolation quality, but may impact image rendering speed.
  */
 @!APILevel[
     since: "22",
@@ -3750,8 +3632,7 @@ public enum ImageInterpolation {
     High
     | 
 /**
- * Interpolated image data is used moderately.
- * Balances image quality and rendering performance with moderate interpolation algorithms.
+ * MipMap Interpolation.
  */
 @!APILevel[
     since: "22",
@@ -3760,8 +3641,7 @@ public enum ImageInterpolation {
     Medium
     | 
 /**
- * Low usage of interpolated image data.
- * Uses basic interpolation with lower quality but better performance compared to High setting.
+ * Bilinear Interpolation.
  */
 @!APILevel[
     since: "22",
@@ -3806,7 +3686,7 @@ extend ImageInterpolation <: Equatable<ImageInterpolation> {
 ]
 public enum BarState {
 /**
- * The scroll bar is completely hidden and never shown, regardless of user interaction.
+ * Not displayed
  */
 @!APILevel[
     since: "22",
@@ -3826,7 +3706,7 @@ public enum BarState {
     Auto
     | 
 /**
- * The scroll bar is always visible and remains on screen regardless of user interaction.
+ * Resident display
  */
 @!APILevel[
     since: "22",
@@ -3871,8 +3751,7 @@ extend BarState <: Equatable<BarState> {
 ]
 public enum Visibility {
 /**
- * Resident display.
- * The component is fully visible and participates in both rendering and layout calculations.
+ * Show
  */
 @!APILevel[
     since: "22",
@@ -3891,8 +3770,7 @@ public enum Visibility {
     Hidden
     | 
 /**
- * Hides but does not participate in layout and does not take place.
- * The component is completely hidden, does not render, and does not occupy any space in the layout.
+ * The edge of the viewport is in the position of none.
  */
 @!APILevel[
     since: "22",
@@ -3928,9 +3806,7 @@ extend Visibility <: Equatable<Visibility> {
 }
 
 /**
- * LineCapStyle enum description.
- * Defines the style of the endpoints of lines and paths when they are stroked.
- * Determines how the ends of lines are rendered in drawing operations.
+ * LineCapStyle enumeration description
  */
 @!APILevel[
     since: "22",
@@ -3938,7 +3814,7 @@ extend Visibility <: Equatable<Visibility> {
 ]
 public enum LineCapStyle {
 /**
- * The stroke ends exactly at the path endpoint with no additional decoration.
+ * The two ends of the dividing line are parallel lines
  */
 @!APILevel[
     since: "22",
@@ -3947,7 +3823,7 @@ public enum LineCapStyle {
     Butt
     | 
 /**
- * Adds a semicircular cap to each end of the stroke, extending beyond the path endpoint by half the stroke width.
+ * Connect path segments using sharp corners.
  */
 @!APILevel[
     since: "22",
@@ -3956,7 +3832,7 @@ public enum LineCapStyle {
     Round
     | 
 /**
- * Adds a rectangular cap to each end of the stroke, extending beyond the path endpoint by half the stroke width.
+ * Extends half a circle at the end of the path with a width equal to half the dividing line width and a height equal to the dividing line width.
  */
 @!APILevel[
     since: "22",
@@ -3993,7 +3869,6 @@ extend LineCapStyle <: Equatable<LineCapStyle> {
 
 /**
  * Type of progress bar
- *
  */
 @!APILevel[
     since: "22",
@@ -4002,7 +3877,6 @@ extend LineCapStyle <: Equatable<LineCapStyle> {
 public enum ProgressType {
 /**
  * Linear progress bar style.
- *
  */
 @!APILevel[
     since: "22",
@@ -4012,7 +3886,6 @@ public enum ProgressType {
     | 
 /**
  * Ring progress bar.
- *
  */
 @!APILevel[
     since: "22",
@@ -4022,7 +3895,6 @@ public enum ProgressType {
     | 
 /**
  * Eclipse progress bar.
- *
  */
 @!APILevel[
     since: "22",
@@ -4032,7 +3904,6 @@ public enum ProgressType {
     | 
 /**
  * ScaleRing progress bar.
- *
  */
 @!APILevel[
     since: "22",
@@ -4042,7 +3913,6 @@ public enum ProgressType {
     | 
 /**
  * Capsule progress bar.
- *
  */
 @!APILevel[
     since: "22",
@@ -4087,7 +3957,6 @@ extend ProgressType <: Equatable<ProgressType> {
 public enum ImageRenderMode {
 /**
  * Render according to the original image, including colors.
- *
  */
 @!APILevel[
     since: "22",
@@ -4097,7 +3966,6 @@ public enum ImageRenderMode {
     | 
 /**
  * Render the image as a template image, ignoring the color information of the image.
- *
  */
 @!APILevel[
     since: "22",
@@ -4133,8 +4001,7 @@ extend ImageRenderMode <: Equatable<ImageRenderMode> {
 }
 
 /**
- * Defines the navigation types for page transitions in application routing.
- * Controls how the navigation stack is modified during page transitions.
+ * Route jump.
  */
 @!APILevel[
     since: "22",
@@ -4142,7 +4009,7 @@ extend ImageRenderMode <: Equatable<ImageRenderMode> {
 ]
 public enum NavigationType {
 /**
- * Pushes a new page onto the navigation stack, preserving the current page in the stack.
+ * Create a new page to cover the current. The old page is remained and kept in the stack.
  */
 @!APILevel[
     since: "22",
@@ -4151,7 +4018,7 @@ public enum NavigationType {
     Push
     | 
 /**
- * Replaces the current page in the navigation stack with a new page, removing the current page from the stack.
+ * Replace page.
  */
 @!APILevel[
     since: "22",
@@ -4160,7 +4027,7 @@ public enum NavigationType {
     Replace
     | 
 /**
- * Navigates back to the previous page by popping the current page from the navigation stack.
+ * Mouse Back Button.
  */
 @!APILevel[
     since: "22",
@@ -4197,7 +4064,6 @@ extend NavigationType <: Equatable<NavigationType> {
 
 /**
  * Declare the size of the swiper on the spindle.
- *
  */
 @!APILevel[
     since: "22",
@@ -4241,7 +4107,6 @@ extend SwiperDisplayMode <: Equatable<SwiperDisplayMode> {
 
 /**
  * Sets the animation playback mode. By default, the animation starts to play again after the playback is complete.
- *
  */
 @!APILevel[
     since: "22",
@@ -4250,7 +4115,6 @@ extend SwiperDisplayMode <: Equatable<SwiperDisplayMode> {
 public enum Curve {
 /**
  * Indicates that the speed of the animation is the same from start to finish.
- *
  */
 @!APILevel[
     since: "22",
@@ -4260,7 +4124,6 @@ public enum Curve {
     | 
 /**
  * Indicates that the animation starts at a low speed, then accelerates, and then slows down before it ends, CubicBezier(0.25, 0.1, 0.25, 1.0).
- *
  */
 @!APILevel[
     since: "22",
@@ -4270,7 +4133,6 @@ public enum Curve {
     | 
 /**
  * Indicates that the animation starts at a low speed, CubicBezier(0.42, 0.0, 1.0, 1.0).
- *
  */
 @!APILevel[
     since: "22",
@@ -4279,8 +4141,7 @@ public enum Curve {
     EaseIn
     | 
 /**
- * Indicates that the animation ends at a low speed, CubicBezier(0.0, 0.0, 0.58, 1.0).
- *
+ * Indicates that the animation ends at a low speed, CubicBezier(0.0, 0.0, 0.78, 1.0).
  */
 @!APILevel[
     since: "22",
@@ -4289,8 +4150,7 @@ public enum Curve {
     EaseOut
     | 
 /**
- * Indicates that the animation starts and ends at a slow speed, CubicBezier(0.42, 0.0, 0.58, 1.0).
- *
+ * Indicates that the animation starts and ends at a slow speed, CubicBezier(0.42, 0.0, 0.78, 1.0)
  */
 @!APILevel[
     since: "22",
@@ -4299,8 +4159,7 @@ public enum Curve {
     EaseInOut
     | 
 /**
- * Animation curve that starts slowly, accelerates in the middle, and ends slowly.
- * Provides a natural and pleasing transition effect.
+ * Slow-in, fast-out
  */
 @!APILevel[
     since: "22",
@@ -4309,8 +4168,7 @@ public enum Curve {
     FastOutSlowIn
     | 
 /**
- * Animation curve that starts at a constant speed and decelerates towards the end.
- * Useful for elements that need to smoothly come to rest.
+ * Linear Out Slow In
  */
 @!APILevel[
     since: "22",
@@ -4319,8 +4177,7 @@ public enum Curve {
     LinearOutSlowIn
     | 
 /**
- * Animation curve that accelerates quickly at the start and maintains constant speed towards the end.
- * Good for elements that need to quickly appear and then move steadily.
+ * Fast Out Linear In.
  */
 @!APILevel[
     since: "22",
@@ -4329,8 +4186,7 @@ public enum Curve {
     FastOutLinearIn
     | 
 /**
- * Animation curve with strong initial speed that rapidly decelerates.
- * Creates a dramatic entrance effect for elements.
+ * Extreme Deceleration.
  */
 @!APILevel[
     since: "22",
@@ -4339,8 +4195,7 @@ public enum Curve {
     ExtremeDeceleration
     | 
 /**
- * Animation curve with a sharp, pronounced acceleration and deceleration.
- * Provides crisp and decisive motion for UI elements.
+ * Sharp.
  */
 @!APILevel[
     since: "22",
@@ -4349,8 +4204,7 @@ public enum Curve {
     Sharp
     | 
 /**
- * Animation curve designed to create rhythmic and harmonious transitions.
- * Well-suited for sequences of animations that need to feel coordinated.
+ * Rhythm.
  */
 @!APILevel[
     since: "22",
@@ -4359,8 +4213,7 @@ public enum Curve {
     Rhythm
     | 
 /**
- * Animation curve with gentle acceleration and deceleration.
- * Creates a soft and fluid motion that is pleasing to the eye.
+ * Smooth.
  */
 @!APILevel[
     since: "22",
@@ -4407,8 +4260,7 @@ extend Curve <: Equatable<Curve> {
 }
 
 /**
- * Defines the visual effects that occur when scrolling reaches the boundary of scrollable components.
- * Controls how the UI responds when users attempt to scroll beyond content boundaries.
+ * Sliding effect
  */
 @!APILevel[
     since: "22",
@@ -4417,7 +4269,6 @@ extend Curve <: Equatable<Curve> {
 public enum EdgeEffect {
 /**
  * Elastic physical action, sliding to the edge can continue to slide for a distance based on the initial speed or touch event, and spring back when released.
- * Provides a spring-like resistance effect that gives tactile feedback when reaching content boundaries.
  */
 @!APILevel[
     since: "22",
@@ -4426,7 +4277,7 @@ public enum EdgeEffect {
     Spring
     | 
 /**
- * Shows a fading effect at the content boundaries to indicate there is no more content to scroll to.
+ * Fade.
  */
 @!APILevel[
     since: "22",
@@ -4435,8 +4286,7 @@ public enum EdgeEffect {
     Fade
     | 
 /**
- * Sliding to the edge has no effect.
- * Disables any visual feedback when reaching content boundaries, scrolling simply stops without any effect.
+ * The edge of the viewport is in the position of none.
  */
 @!APILevel[
     since: "22",
@@ -4472,8 +4322,7 @@ extend EdgeEffect <: Equatable<EdgeEffect> {
 }
 
 /**
- * Defines the edges or sides of a component or container for positioning and alignment operations.
- * Represents specific boundaries in layout calculations and component placement.
+ * Edge.
  */
 @!APILevel[
     since: "22",
@@ -4511,8 +4360,7 @@ public enum Edge {
     Bottom
     | 
 /**
- * Align the end of the cross axis direction.
- * Refers to the end edge in the cross axis direction, which is right in LTR layouts and left in RTL layouts.
+ * Align the head of the cross axis direction.
  */
 @!APILevel[
     since: "22",
@@ -4548,8 +4396,7 @@ extend Edge <: Equatable<Edge> {
 }
 
 /**
- * Defines the positioning options for components relative to their anchor or container.
- * Used for specifying where popups, tooltips, and other overlay elements should appear.
+ * Placement enumeration description.
  */
 @!APILevel[
     since: "22",
@@ -4557,7 +4404,7 @@ extend Edge <: Equatable<Edge> {
 ]
 public enum Placement {
 /**
- * Positions the component to the left of its anchor point or container.
+ * Left placement.
  */
 @!APILevel[
     since: "22",
@@ -4566,7 +4413,7 @@ public enum Placement {
     Left
     | 
 /**
- * Positions the component to the right of its anchor point or container.
+ * Right placement.
  */
 @!APILevel[
     since: "22",
@@ -4575,7 +4422,7 @@ public enum Placement {
     Right
     | 
 /**
- * Positions the component above its anchor point or container.
+ * Top placement.
  */
 @!APILevel[
     since: "22",
@@ -4584,7 +4431,7 @@ public enum Placement {
     Top
     | 
 /**
- * Positions the component below its anchor point or container.
+ * Bottom placement.
  */
 @!APILevel[
     since: "22",
@@ -4593,7 +4440,7 @@ public enum Placement {
     Bottom
     | 
 /**
- * Positions the component above and to the left of its anchor point or container.
+ * TopLeft placement
  */
 @!APILevel[
     since: "22",
@@ -4602,7 +4449,7 @@ public enum Placement {
     TopLeft
     | 
 /**
- * Positions the component above and to the right of its anchor point or container.
+ * TopRight placement
  */
 @!APILevel[
     since: "22",
@@ -4611,7 +4458,7 @@ public enum Placement {
     TopRight
     | 
 /**
- * Positions the component below and to the left of its anchor point or container.
+ * BottomLeft placement
  */
 @!APILevel[
     since: "22",
@@ -4620,7 +4467,7 @@ public enum Placement {
     BottomLeft
     | 
 /**
- * Positions the component below and to the right of its anchor point or container.
+ * BottomRight placement
  */
 @!APILevel[
     since: "22",
@@ -4629,7 +4476,7 @@ public enum Placement {
     BottomRight
     | 
 /**
- * Positions the component to the left and above its anchor point or container.
+ * Top Left
  */
 @!APILevel[
     since: "22",
@@ -4638,7 +4485,7 @@ public enum Placement {
     LeftTop
     | 
 /**
- * Positions the component to the left and below its anchor point or container.
+ * Left Bottom
  */
 @!APILevel[
     since: "22",
@@ -4647,7 +4494,7 @@ public enum Placement {
     LeftBottom
     | 
 /**
- * Positions the component to the right and above its anchor point or container.
+ * Right Top
  */
 @!APILevel[
     since: "22",
@@ -4656,7 +4503,7 @@ public enum Placement {
     RightTop
     | 
 /**
- * Positions the component to the right and below its anchor point or container.
+ * Right Bottom
  */
 @!APILevel[
     since: "22",
@@ -4692,8 +4539,7 @@ extend Placement <: Equatable<Placement> {
 }
 
 /**
- * Defines how the corners between connected line segments are rendered in path drawing.
- * Controls the visual appearance of joints in shapes and paths for consistent styling.
+ * Line Join Style.
  */
 @!APILevel[
     since: "22",
@@ -4701,8 +4547,7 @@ extend Placement <: Equatable<Placement> {
 ]
 public enum LineJoinStyle {
 /**
- * Joins path segments with a straight line between the outer edges of the strokes,
- * creating a sharp, angular corner at the joint.
+ * Connect path segments using bevels.
  */
 @!APILevel[
     since: "22",
@@ -4711,8 +4556,7 @@ public enum LineJoinStyle {
     Miter
     | 
 /**
- * Joins path segments by extending the outer edges of the strokes until they meet,
- * creating a pointed corner that extends beyond the original path corner.
+ * Connect path segments using sharp corners.
  */
 @!APILevel[
     since: "22",
@@ -4721,8 +4565,7 @@ public enum LineJoinStyle {
     Round
     | 
 /**
- * Joins path segments by connecting the outer edges with a circular arc,
- * creating a smooth, rounded corner at the joint.
+ * Connect path segments using fillets.
  */
 @!APILevel[
     since: "22",
@@ -4758,9 +4601,7 @@ extend LineJoinStyle <: Equatable<LineJoinStyle> {
 }
 
 /**
- * Sets the image smoothness attribute.
- * This enum defines the quality levels for image smoothing operations.
- * Higher quality levels result in better image quality but may require more processing time.
+ * Smoothness level of the current image.
  */
 @!APILevel[
     since: "22",
@@ -4768,9 +4609,7 @@ extend LineJoinStyle <: Equatable<LineJoinStyle> {
 ]
 public enum ImageSmoothingQuality {
 /**
- * Low quality image smoothing.
- * Provides faster performance but lower image quality.
- * This is the default setting.
+ * Bilinear Interpolation.
  */
 @!APILevel[
     since: "22",
@@ -4779,8 +4618,7 @@ public enum ImageSmoothingQuality {
     Low
     | 
 /**
- * Medium quality image smoothing.
- * Balances performance and image quality.
+ * MipMap Interpolation.
  */
 @!APILevel[
     since: "22",
@@ -4789,8 +4627,7 @@ public enum ImageSmoothingQuality {
     Medium
     | 
 /**
- * High quality image smoothing.
- * Provides the best image quality but may require more processing time.
+ * Cubic interpolation offers the highest interpolation quality, but may impact image rendering speed.
  */
 @!APILevel[
     since: "22",
@@ -4826,8 +4663,7 @@ extend ImageSmoothingQuality <: Equatable<ImageSmoothingQuality> {
 }
 
 /**
- * Controls how gestures are recognized and prioritized when multiple gestures overlap or compete.
- * Defines the strategy for handling gesture recognition in complex UI interactions.
+ * Creating an Object
  */
 @!APILevel[
     since: "22",
@@ -4846,8 +4682,7 @@ public enum GestureMask {
     Normal
     | 
 /**
- * Current gesture takes precedence over nested or internal gestures.
- * Useful for ensuring parent gestures are recognized before child component gestures.
+ * Ignore internal gestures and recognize the current gesture first.
  */
 @!APILevel[
     since: "22",
@@ -4883,8 +4718,7 @@ extend GestureMask <: Equatable<GestureMask> {
 }
 
 /**
- * Defines the allowed directions for swipe gesture recognition.
- * Controls which axes a swipe gesture can be detected on.
+ * Only vertical scrolling is supported.
  */
 @!APILevel[
     since: "22",
@@ -4892,7 +4726,7 @@ extend GestureMask <: Equatable<GestureMask> {
 ]
 public enum SwipeDirection {
 /**
- * Swipe gesture is recognized only when the movement is primarily horizontal (left or right).
+ * Only horizontal scrolling is supported.
  */
 @!APILevel[
     since: "22",
@@ -4901,7 +4735,7 @@ public enum SwipeDirection {
     Horizontal
     | 
 /**
- * Swipe gesture is recognized only when the movement is primarily vertical (up or down).
+ * Only vertical scrolling is supported.
  */
 @!APILevel[
     since: "22",
@@ -4910,8 +4744,8 @@ public enum SwipeDirection {
     Vertical
     | 
 /**
- * Swipe gesture is recognized regardless of the direction of movement.
- * Provides the most flexible swipe detection for any directional swipe.
+ * All checkboxes are selected
+*
  */
 @!APILevel[
     since: "22",
@@ -4947,8 +4781,7 @@ extend SwipeDirection <: Equatable<SwipeDirection> {
 }
 
 /**
- * Defines the allowed directions for swipe gesture recognition.
- * Controls which axes a swipe gesture can be detected on.
+ * Creating an Object.
  */
 @!APILevel[
     since: "22",
@@ -4966,7 +4799,6 @@ public enum PanDirection {
     | 
 /**
  * Pan gesture recognizes movement to the left.
- *
  */
 @!APILevel[
     since: "22",
@@ -4976,7 +4808,6 @@ public enum PanDirection {
     | 
 /**
  * Pan gesture recognizes movement to the right.
- *
  */
 @!APILevel[
     since: "22",
@@ -4986,7 +4817,6 @@ public enum PanDirection {
     | 
 /**
  * Pan gesture recognizes horizontal movement (both left and right).
- *
  */
 @!APILevel[
     since: "22",
@@ -4995,8 +4825,7 @@ public enum PanDirection {
     Horizontal
     | 
 /**
- * Pan gesture recognizes upward movement.
- *
+ * The key is released
  */
 @!APILevel[
     since: "22",
@@ -5005,8 +4834,7 @@ public enum PanDirection {
     Up
     | 
 /**
- * Pan gesture recognizes downward movement.
- *
+ * Triggered when the mouse is pressed.
  */
 @!APILevel[
     since: "22",
@@ -5016,7 +4844,6 @@ public enum PanDirection {
     | 
 /**
  * Pan gesture recognizes vertical movement (both up and down).
- *
  */
 @!APILevel[
     since: "22",
@@ -5026,7 +4853,6 @@ public enum PanDirection {
     | 
 /**
  * Pan gesture recognizes movement in all directions (horizontal and vertical).
- *
  */
 @!APILevel[
     since: "22",
@@ -5102,8 +4928,7 @@ extend PanDirection <: Equatable<PanDirection> {
 extend PanDirection {}
 
 /**
- * Defines how gestures are processed and recognized within the UI framework.
- * Controls the behavior of gesture detection and event handling for interactive components.
+ * Creating an Object.
  */
 @!APILevel[
     since: "22",
@@ -5111,8 +4936,15 @@ extend PanDirection {}
 ]
 public enum GestureMode {
 /**
- * Parallel recognition mode.
- * Multiple gestures can be recognized simultaneously, allowing for complex multi-gesture interactions.
+ * Sequential gesture recognition is performed in sequence according to the gesture registration sequence.
+ */
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+    Sequence |
+/**
+ * Simultaneous recognition. Registration gestures participate in recognition. Everything can be triggered.
  */
 @!APILevel[
     since: "22",
@@ -5121,8 +4953,7 @@ public enum GestureMode {
     Parallel
     | 
 /**
- * Exclusive recognition mode.
- * Only one gesture is recognized at a time, with higher priority gestures taking precedence.
+ * Mutually exclusive recognition. Only one gesture is successfully recognized.
  */
 @!APILevel[
     since: "22",
@@ -5158,8 +4989,7 @@ extend GestureMode <: Equatable<GestureMode> {
 }
 
 /**
- * Defines the primary direction or orientation for layout arrangements and component organization.
- * Used to specify the main axis in layout containers and directional operations.
+ * Axis enumeration description.
  */
 @!APILevel[
     since: "22",
@@ -5212,8 +5042,7 @@ extend Axis <: Equatable<Axis> {
 }
 
 /**
- * Response type for context menu.
- * This enum defines the user interaction methods that can trigger a context menu.
+ * ResponseType for contextMenu
  */
 @!APILevel[
     since: "22",
@@ -5221,8 +5050,7 @@ extend Axis <: Equatable<Axis> {
 ]
 public enum ResponseType {
 /**
- * Context menu is triggered by a right mouse click.
- * On touch devices, this corresponds to a long press gesture.
+ * Right click.
  */
 @!APILevel[
     since: "22",
@@ -5231,8 +5059,7 @@ public enum ResponseType {
     RightClick
     | 
 /**
- * Context menu is triggered by a long press gesture.
- * On mouse-enabled devices, this may correspond to a right click.
+ * Long press.
  */
 @!APILevel[
     since: "22",
@@ -5289,8 +5116,7 @@ public enum CopyOptions {
     None
     | 
 /**
- * Content can only be shared within the current application context.
- * Limits sharing to internal app features and prevents external sharing.
+ * Share in app.
  */
 @!APILevel[
     since: "22",
@@ -5299,8 +5125,7 @@ public enum CopyOptions {
     InApp
     | 
 /**
- * Content can be shared anywhere on the local device, including other applications.
- * Provides the broadest sharing capability within the device boundaries.
+ * Share in local device.
  */
 @!APILevel[
     since: "22",
@@ -5336,7 +5161,7 @@ extend CopyOptions <: Equatable<CopyOptions> {
 }
 
 /**
- * Defines the event source type.
+ * Function Called by Touch
  */
 @!APILevel[
     since: "22",
@@ -5345,7 +5170,6 @@ extend CopyOptions <: Equatable<CopyOptions> {
 public enum TouchType {
 /**
  * Triggered when the finger is pressed.
- *
  */
 @!APILevel[
     since: "22",
@@ -5355,7 +5179,6 @@ public enum TouchType {
     | 
 /**
  * Triggered when the finger is raised.
- *
  */
 @!APILevel[
     since: "22",
@@ -5364,8 +5187,7 @@ public enum TouchType {
     Up
     | 
 /**
- * Triggered when the finger presses and moves on the screen.
- *
+ * Triggered when the mouse is Moved.
  */
 @!APILevel[
     since: "22",
@@ -5374,8 +5196,7 @@ public enum TouchType {
     Move
     | 
 /**
- * Triggers when the touch event is canceled.
- *
+ * Triggers when the touch event cancels.
  */
 @!APILevel[
     since: "22",
@@ -5384,8 +5205,7 @@ public enum TouchType {
     Cancel
     | 
 /**
- * Unknown touch type.
- *
+ * Unknown device type.
  */
 @!APILevel[
     since: "22",
@@ -5421,8 +5241,7 @@ extend TouchType <: Equatable<TouchType> {
 }
 
 /**
- * Sets the sidebar display style.
- *
+ * Sets the sidebar style of showing
  */
 @!APILevel[
     since: "22",
@@ -5430,8 +5249,7 @@ extend TouchType <: Equatable<TouchType> {
 ]
 public enum SideBarContainerType {
 /**
- * The sidebar is embedded within the container.
- *
+ * The sidebar invisible
  */
 @!APILevel[
     since: "22",
@@ -5442,7 +5260,6 @@ public enum SideBarContainerType {
 /**
  * The sheet is displayed at the top of the window corresponding to the current **UIContext** instance,
  * above all pages. It is displayed at the same level as dialog boxes.
- *
  */
 @!APILevel[
     since: "22",
@@ -5488,7 +5305,6 @@ extend SideBarContainerType <: Equatable<SideBarContainerType> {
 
 /**
  * Sets the sidebar position.
- *
  */
 @!APILevel[
     since: "22",
@@ -5542,7 +5358,6 @@ extend SideBarPosition <: Equatable<SideBarPosition> {
 
 /**
  * Defines the event source type.
- *
  */
 @!APILevel[
     since: "22",
@@ -5551,7 +5366,6 @@ extend SideBarPosition <: Equatable<SideBarPosition> {
 public enum SourceType {
 /**
  * Unknown device type.
- *
  */
 @!APILevel[
     since: "22",
@@ -5561,7 +5375,6 @@ public enum SourceType {
     | 
 /**
  * The mouse type.
- *
  */
 @!APILevel[
     since: "22",
@@ -5571,7 +5384,6 @@ public enum SourceType {
     | 
 /**
  * The touch screen type.
- *
  */
 @!APILevel[
     since: "22",
@@ -5607,7 +5419,7 @@ extend SourceType <: Equatable<SourceType> {
 }
 
 /**
- * Mouse button of the click event.
+ * Function Called by Mouse.
  */
 @!APILevel[
     since: "22",
@@ -5616,7 +5428,6 @@ extend SourceType <: Equatable<SourceType> {
 public enum MouseButton {
 /**
  * No mouse button.
- *
  */
 @!APILevel[
     since: "22",
@@ -5626,7 +5437,6 @@ public enum MouseButton {
     | 
 /**
  * Mouse left button.
- *
  */
 @!APILevel[
     since: "22",
@@ -5636,7 +5446,6 @@ public enum MouseButton {
     | 
 /**
  * Mouse right button.
- *
  */
 @!APILevel[
     since: "22",
@@ -5645,8 +5454,7 @@ public enum MouseButton {
     Right
     | 
 /**
- * Mouse middle button.
- *
+ * Mouse Middle Button.
  */
 @!APILevel[
     since: "22",
@@ -5656,7 +5464,6 @@ public enum MouseButton {
     | 
 /**
  * Mouse back button.
- *
  */
 @!APILevel[
     since: "22",
@@ -5665,8 +5472,7 @@ public enum MouseButton {
     Back
     | 
 /**
- * Mouse forward button.
- *
+ * Mouse Forward Button.
  */
 @!APILevel[
     since: "22",
@@ -5702,7 +5508,7 @@ extend MouseButton <: Equatable<MouseButton> {
 }
 
 /**
- * Mouse action of the click event.
+ * Function Called by Mouse.
  */
 @!APILevel[
     since: "22",
@@ -5711,7 +5517,6 @@ extend MouseButton <: Equatable<MouseButton> {
 public enum MouseAction {
 /**
  * No mouse action.
- *
  */
 @!APILevel[
     since: "22",
@@ -5720,8 +5525,8 @@ public enum MouseAction {
     None
     | 
 /**
- * Triggered when the mouse button is pressed.
- *
+ * Triggered when the mouse is pressed
+*
  */
 @!APILevel[
     since: "22",
@@ -5730,8 +5535,7 @@ public enum MouseAction {
     Press
     | 
 /**
- * Triggered when the mouse button is released.
- *
+ * Triggered when the mouse is released.
  */
 @!APILevel[
     since: "22",
@@ -5741,7 +5545,6 @@ public enum MouseAction {
     | 
 /**
  * Triggered when the mouse is moved.
- *
  */
 @!APILevel[
     since: "22",
@@ -5750,8 +5553,7 @@ public enum MouseAction {
     Move
     | 
 /**
- * Triggered when the mouse hovers over an element.
- *
+ * Triggered when the mouse is Hovered.
  */
 @!APILevel[
     since: "22",
@@ -5788,7 +5590,6 @@ extend MouseAction <: Equatable<MouseAction> {
 
 /**
  * Type of the input device that triggers the current key, such as the keyboard or handle.
- *
  */
 @!APILevel[
     since: "22",
@@ -5797,7 +5598,6 @@ extend MouseAction <: Equatable<MouseAction> {
 public enum KeySource {
 /**
  * The input device type is unknown.
- *
  */
 @!APILevel[
     since: "22",
@@ -5806,8 +5606,7 @@ public enum KeySource {
     Unknown
     | 
 /**
- * Set device type to keyboard.
- *
+ * Set Device Type to Keyboard.
  */
 @!APILevel[
     since: "22",
@@ -5844,7 +5643,6 @@ extend KeySource <: Equatable<KeySource> {
 
 /**
  * Type of a key.
- *
  */
 @!APILevel[
     since: "22",
@@ -5852,8 +5650,7 @@ extend KeySource <: Equatable<KeySource> {
 ]
 public enum KeyType {
 /**
- * Unknown key type.
- *
+ * Unknown device type.
  */
 @!APILevel[
     since: "22",
@@ -5863,7 +5660,6 @@ public enum KeyType {
     | 
 /**
  * Key is pressed.
- *
  */
 @!APILevel[
     since: "22",
@@ -5873,7 +5669,6 @@ public enum KeyType {
     | 
 /**
  * Key is released.
- *
  */
 @!APILevel[
     since: "22",
@@ -5910,7 +5705,6 @@ extend KeyType <: Equatable<KeyType> {
 
 /**
  * Modifier key for hot key.
- *
  */
 @!APILevel[
     since: "22",
@@ -5918,8 +5712,7 @@ extend KeyType <: Equatable<KeyType> {
 ]
 public enum ModifierKey {
 /**
- * Ctrl key.
- *
+ * ctrl.
  */
 @!APILevel[
     since: "22",
@@ -5928,8 +5721,7 @@ public enum ModifierKey {
     Ctrl
     | 
 /**
- * Shift key.
- *
+ * shift.
  */
 @!APILevel[
     since: "22",
@@ -5938,8 +5730,7 @@ public enum ModifierKey {
     Shift
     | 
 /**
- * Alt key.
- *
+ * alt.
  */
 @!APILevel[
     since: "22",
@@ -5975,8 +5766,7 @@ extend ModifierKey <: Equatable<ModifierKey> {
 }
 
 /**
- * Function key for hot key.
- * This enum defines the standard function keys that can be used in keyboard shortcuts and hotkeys.
+ * CheckboxGroup SelectStatus.
  */
 @!APILevel[
     since: "22",
@@ -5985,7 +5775,6 @@ extend ModifierKey <: Equatable<ModifierKey> {
 public enum FunctionKey {
 /**
  * Escape key. Typically used to cancel or exit current operation.
- *
  */
 @!APILevel[
     since: "22",
@@ -5994,8 +5783,7 @@ public enum FunctionKey {
     Esc
     | 
 /**
- * F1 function key. Often used for help functionality.
- *
+ * F1 key.
  */
 @!APILevel[
     since: "22",
@@ -6004,8 +5792,7 @@ public enum FunctionKey {
     F1
     | 
 /**
- * F2 function key. Commonly used for renaming files or objects.
- *
+ * F2 key.
  */
 @!APILevel[
     since: "22",
@@ -6014,8 +5801,7 @@ public enum FunctionKey {
     F2
     | 
 /**
- * F3 function key. Frequently used for search functionality.
- *
+ * F3 key.
  */
 @!APILevel[
     since: "22",
@@ -6024,8 +5810,7 @@ public enum FunctionKey {
     F3
     | 
 /**
- * F4 function key. Often used for closing tabs or windows.
- *
+ * F4 key.
  */
 @!APILevel[
     since: "22",
@@ -6034,8 +5819,7 @@ public enum FunctionKey {
     F4
     | 
 /**
- * F5 function key. Commonly used for refreshing or reloading content.
- *
+ * F5 key.
  */
 @!APILevel[
     since: "22",
@@ -6044,8 +5828,7 @@ public enum FunctionKey {
     F5
     | 
 /**
- * F6 function key. Often used for navigating to address bars or search fields.
- *
+ * F6 key.
  */
 @!APILevel[
     since: "22",
@@ -6054,8 +5837,7 @@ public enum FunctionKey {
     F6
     | 
 /**
- * F7 function key. Sometimes used for spell checking or caret browsing.
- *
+ * F7 key.
  */
 @!APILevel[
     since: "22",
@@ -6064,8 +5846,7 @@ public enum FunctionKey {
     F7
     | 
 /**
- * F8 function key. Frequently used for entering safe mode during system boot.
- *
+ * F8 key.
  */
 @!APILevel[
     since: "22",
@@ -6074,8 +5855,7 @@ public enum FunctionKey {
     F8
     | 
 /**
- * F9 function key. Often used for refreshing in email clients or debugging.
- *
+ * F9 key.
  */
 @!APILevel[
     since: "22",
@@ -6084,8 +5864,7 @@ public enum FunctionKey {
     F9
     | 
 /**
- * F10 function key. Commonly used for activating menu bar or context menu.
- *
+ * F10 key.
  */
 @!APILevel[
     since: "22",
@@ -6094,8 +5873,7 @@ public enum FunctionKey {
     F10
     | 
 /**
- * F11 function key. Frequently used for toggling full-screen mode.
- *
+ * F11 key.
  */
 @!APILevel[
     since: "22",
@@ -6104,8 +5882,7 @@ public enum FunctionKey {
     F11
     | 
 /**
- * F12 function key. Often used for developer tools or saving documents.
- *
+ * F12 key.
  */
 @!APILevel[
     since: "22",
@@ -6115,7 +5892,6 @@ public enum FunctionKey {
     | 
 /**
  * Tab key. Used for moving focus between UI elements or inserting tab characters.
- *
  */
 @!APILevel[
     since: "22",
@@ -6160,8 +5936,7 @@ extend FunctionKey <: Equatable<FunctionKey> {
 ]
 public enum DataPanelType {
 /**
- * Circle type data panel. Displays data in a circular format.
- *
+ * The circle shape.
  */
 @!APILevel[
     since: "22",
@@ -6170,8 +5945,8 @@ public enum DataPanelType {
     Circle
     | 
 /**
- * Line type data panel. Displays data in a linear format.
- *
+ * Line Type
+*
  */
 @!APILevel[
     since: "22",
@@ -6207,8 +5982,7 @@ extend DataPanelType <: Equatable<DataPanelType> {
 }
 
 /**
- * Item state enum.
- * This enum defines the various states an item can be in.
+ * ItemState
  */
 @!APILevel[
     since: "22",
@@ -6217,7 +5991,6 @@ extend DataPanelType <: Equatable<DataPanelType> {
 public enum ItemState {
 /**
  * Normal state. The item is in its default, active state.
- *
  */
 @!APILevel[
     since: "22",
@@ -6226,8 +5999,7 @@ public enum ItemState {
     Normal
     | 
 /**
- * Disabled state. The item is not interactive and typically appears dimmed.
- *
+ * Disabled State
  */
 @!APILevel[
     since: "22",
@@ -6236,8 +6008,7 @@ public enum ItemState {
     Disabled
     | 
 /**
- * Waiting state. The item is in a pending state, often showing a loading indicator.
- *
+ * Waiting State
  */
 @!APILevel[
     since: "22",
@@ -6246,8 +6017,7 @@ public enum ItemState {
     Waiting
     | 
 /**
- * Skip state. The item is bypassed or ignored in the current context.
- *
+ * Skip State
  */
 @!APILevel[
     since: "22",
@@ -6283,8 +6053,7 @@ extend ItemState <: Equatable<ItemState> {
 }
 
 /**
- * The refresh status of the pull-down refresh component.
- * This enum defines the various states during a pull-to-refresh interaction.
+ * The refresh status of the drop-down refresh.
  */
 @!APILevel[
     since: "22",
@@ -6292,8 +6061,7 @@ extend ItemState <: Equatable<ItemState> {
 ]
 public enum RefreshStatus {
 /**
- * Inactive state. No refresh action is taking place.
- *
+ * The refresh status of the drop-down refresh.
  */
 @!APILevel[
     since: "22",
@@ -6302,8 +6070,7 @@ public enum RefreshStatus {
     Inactive
     | 
 /**
- * Drag state. User is pulling down, but the pull distance is less than the refresh threshold.
- *
+ * Drop down, but the drop-down distance is less than the refresh distance.
  */
 @!APILevel[
     since: "22",
@@ -6313,7 +6080,6 @@ public enum RefreshStatus {
     | 
 /**
  * Over-drag state. The pull-down exceeds the refresh distance threshold.
- *
  */
 @!APILevel[
     since: "22",
@@ -6322,8 +6088,7 @@ public enum RefreshStatus {
     OverDrag
     | 
 /**
- * Refresh state. After pull-down, the component rebounds to the refresh distance and begins refreshing.
- *
+ * After the pull-down, it rebounds to the refresh distance and enters the refresh state
  */
 @!APILevel[
     since: "22",
@@ -6333,7 +6098,6 @@ public enum RefreshStatus {
     | 
 /**
  * Done state. Refresh is complete, and the component is returning to its initial state.
- *
  */
 @!APILevel[
     since: "22",
@@ -6378,8 +6142,7 @@ extend RefreshStatus <: Equatable<RefreshStatus> {
 ]
 public enum SeekMode {
 /**
- * Seek to keyframes before the specified time point.
- *
+ * Sync to keyframes before the time point.
  */
 @!APILevel[
     since: "22",
@@ -6388,8 +6151,7 @@ public enum SeekMode {
     PreviousKeyframe
     | 
 /**
- * Seek to keyframes after the specified time point.
- *
+ * Sync to keyframes after the time point.
  */
 @!APILevel[
     since: "22",
@@ -6398,8 +6160,7 @@ public enum SeekMode {
     NextKeyframe
     | 
 /**
- * Seek to the closest keyframes to the specified time point.
- *
+ * Sync to closest keyframes.
  */
 @!APILevel[
     since: "22",
@@ -6408,8 +6169,7 @@ public enum SeekMode {
     ClosestKeyframe
     | 
 /**
- * Seek to frames closest to the specified time point for precise positioning.
- *
+ * Seek to frames closest the time point.
  */
 @!APILevel[
     since: "22",
@@ -6455,7 +6215,6 @@ extend SeekMode <: Equatable<SeekMode> {
 public enum PlaybackSpeed {
 /**
  * 0.75x speed playback. Slower than normal speed.
- *
  */
 @!APILevel[
     since: "22",
@@ -6465,7 +6224,6 @@ public enum PlaybackSpeed {
     | 
 /**
  * 1.00x speed playback. Normal playback speed.
- *
  */
 @!APILevel[
     since: "22",
@@ -6475,7 +6233,6 @@ public enum PlaybackSpeed {
     | 
 /**
  * 1.25x speed playback. Faster than normal speed.
- *
  */
 @!APILevel[
     since: "22",
@@ -6485,7 +6242,6 @@ public enum PlaybackSpeed {
     | 
 /**
  * 1.75x speed playback. Significantly faster than normal speed.
- *
  */
 @!APILevel[
     since: "22",
@@ -6495,7 +6251,6 @@ public enum PlaybackSpeed {
     | 
 /**
  * 2.00x speed playback. Twice the normal playback speed.
- *
  */
 @!APILevel[
     since: "22",
@@ -6531,8 +6286,7 @@ extend PlaybackSpeed <: Equatable<PlaybackSpeed> {
 }
 
 /**
- * CheckboxGroup selection status.
- * This enum defines the selection states for a group of checkboxes.
+ * All checkboxes are selected.
  */
 @!APILevel[
     since: "22",
@@ -6541,7 +6295,6 @@ extend PlaybackSpeed <: Equatable<PlaybackSpeed> {
 public enum SelectStatus {
 /**
  * All checkboxes in the group are selected.
- *
  */
 @!APILevel[
     since: "22",
@@ -6550,8 +6303,7 @@ public enum SelectStatus {
     All
     | 
 /**
- * Some, but not all, checkboxes in the group are selected.
- *
+ * Part of the checkbox is selected.
  */
 @!APILevel[
     since: "22",
@@ -6561,7 +6313,6 @@ public enum SelectStatus {
     | 
 /**
  * None of the checkboxes in the group are selected.
- *
  */
 @!APILevel[
     since: "22",
@@ -6607,7 +6358,6 @@ extend SelectStatus <: Equatable<SelectStatus> {
 public enum AnimationStatus {
 /**
  * Initial state of the animation. The animation has not yet started.
- *
  */
 @!APILevel[
     since: "22",
@@ -6616,8 +6366,7 @@ public enum AnimationStatus {
     Initial
     | 
 /**
- * The animation is currently playing.
- *
+ * The animation is playing.
  */
 @!APILevel[
     since: "22",
@@ -6627,7 +6376,6 @@ public enum AnimationStatus {
     | 
 /**
  * The animation is paused and can be resumed.
- *
  */
 @!APILevel[
     since: "22",
@@ -6637,7 +6385,6 @@ public enum AnimationStatus {
     | 
 /**
  * The animation is stopped and must be restarted from the beginning.
- *
  */
 @!APILevel[
     since: "22",
@@ -6683,7 +6430,6 @@ extend AnimationStatus <: Equatable<AnimationStatus> {
 public enum FillMode {
 /**
  * No fill mode. The animation does not apply any styles before starting or after ending.
- *
  */
 @!APILevel[
     since: "22",
@@ -6692,8 +6438,7 @@ public enum FillMode {
     None
     | 
 /**
- * Forward fill mode. Retains the state at the end of the animation after playback completes.
- *
+ * Retains the state at the end of the animation when the playback is complete.
  */
 @!APILevel[
     since: "22",
@@ -6702,8 +6447,7 @@ public enum FillMode {
     Forwards
     | 
 /**
- * Backward fill mode. Applies the start attribute value during the animation-delay period before the animation starts.
- *
+ * Applies the start attribute value for the period specified by animation-delay before the animation is displayed.
  */
 @!APILevel[
     since: "22",
@@ -6713,7 +6457,6 @@ public enum FillMode {
     | 
 /**
  * Both forward and backward fill modes are applied.
- *
  */
 @!APILevel[
     since: "22",
@@ -6749,8 +6492,7 @@ extend FillMode <: Equatable<FillMode> {
 }
 
 /**
- * Swipe edge effect.
- * This enum defines the visual effects when swiping to the edge of a scrollable area.
+ * Sliding effect
  */
 @!APILevel[
     since: "22",
@@ -6759,7 +6501,6 @@ extend FillMode <: Equatable<FillMode> {
 public enum SwipeEdgeEffect {
 /**
  * Spring effect. Provides an elastic physical action when sliding to the edge, allowing continued sliding based on initial speed or touch events, with a spring-back when released.
- *
  */
 @!APILevel[
     since: "22",
@@ -6769,7 +6510,6 @@ public enum SwipeEdgeEffect {
     | 
 /**
  * No effect. Sliding to the edge has no visual effect.
- *
  */
 @!APILevel[
     since: "22",
@@ -6805,8 +6545,7 @@ extend SwipeEdgeEffect <: Equatable<SwipeEdgeEffect> {
 }
 
 /**
- * Shared transition effect type.
- * This enum defines the types of shared transition effects between pages.
+ * SharedTransitionEffectType enumeration description
  */
 @!APILevel[
     since: "22",
@@ -6816,7 +6555,6 @@ public enum SharedTransitionEffectType {
 /**
  * Static effect. The location of the destination page element remains unchanged, and you can configure the transparency animation. Currently,
  * only the static effect configured for redirecting to the target page takes effect.
- *
  */
 @!APILevel[
     since: "22",
@@ -6826,7 +6564,6 @@ public enum SharedTransitionEffectType {
     | 
 /**
  * Exchange effect. Move the source page element to the destination page element location and scale it appropriately.
- *
  */
 @!APILevel[
     since: "22",
@@ -6862,8 +6599,7 @@ extend SharedTransitionEffectType <: Equatable<SharedTransitionEffectType> {
 }
 
 /**
- * Scroll state.
- * This enum defines the various states of scrolling behavior.
+ * Declare scroll status
  */
 @!APILevel[
     since: "22",
@@ -6871,8 +6607,8 @@ extend SharedTransitionEffectType <: Equatable<SharedTransitionEffectType> {
 ]
 public enum ScrollState {
 /**
- * Idle state. No scrolling activity is taking place.
- *
+ * Idle state. Triggered when the scroll state returns to idle, and when the controller's
+ * non-animated methods are used to control the scroll.
  */
 @!APILevel[
     since: "22",
@@ -6881,18 +6617,17 @@ public enum ScrollState {
     Idle
     | 
 /**
- * Scrolling state. Active scrolling is in progress.
- *
+ * Scroll state. Triggered when the list is dragged with the finger,
+ * when the scrollbar is dragged, or when the mouse scroll wheel is used.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    Scrolling
+    Scroll
     | 
 /**
- * Fling state. Inertial scrolling after a swipe gesture.
- *
+ * Inertial scrolling state.
  */
 @!APILevel[
     since: "22",
@@ -6928,8 +6663,7 @@ extend ScrollState <: Equatable<ScrollState> {
 }
 
 /**
- * List item alignment.
- * This enum defines how list items are aligned within a List component along the cross axis.
+ * Declare list item alignment status
  */
 @!APILevel[
     since: "22",
@@ -6938,7 +6672,6 @@ extend ScrollState <: Equatable<ScrollState> {
 public enum ListItemAlign {
 /**
  * Start alignment. The list items are packed toward the start edge of the List component along the cross axis.
- *
  */
 @!APILevel[
     since: "22",
@@ -6948,7 +6681,6 @@ public enum ListItemAlign {
     | 
 /**
  * Center alignment. The list items are centered in the List component along the cross axis.
- *
  */
 @!APILevel[
     since: "22",
@@ -6958,7 +6690,6 @@ public enum ListItemAlign {
     | 
 /**
  * End alignment. The list items are packed toward the end edge of the List component along the cross axis.
- *
  */
 @!APILevel[
     since: "22",
@@ -6995,7 +6726,6 @@ extend ListItemAlign <: Equatable<ListItemAlign> {
 
 /**
  * Declare item group sticky style.
- *
  */
 @!APILevel[
     since: "22",
@@ -7005,7 +6735,6 @@ public enum StickyStyle {
 /**
  * In the ListItemGroup component, the header is not pinned to the top,
  * and the footer is not pinned to the bottom.
- *
  */
 @!APILevel[
     since: "22",
@@ -7016,7 +6745,6 @@ public enum StickyStyle {
 /**
  * In the ListItemGroup component, the header is pinned to the top,
  * and the footer is not pinned to the bottom.
- *
  */
 @!APILevel[
     since: "22",
@@ -7025,9 +6753,8 @@ public enum StickyStyle {
     Header
     | 
 /**
- * In the <em>ListItemGroup</em> component, the footer is pinned to the bottom,
+ * In the ListItemGroup component, the footer is pinned to the bottom,
  * and the header is not pinned to the top.
- *
  */
 @!APILevel[
     since: "22",
@@ -7064,7 +6791,6 @@ extend StickyStyle <: Equatable<StickyStyle> {
 
 /**
  * Defines span type.
- *
  */
 @!APILevel[
     since: "22",
@@ -7072,8 +6798,8 @@ extend StickyStyle <: Equatable<StickyStyle> {
 ]
 public enum RichEditorSpanType {
 /**
- * Text, corresponding textSpan type.
- *
+ * Text,corresponding textSpan type
+*
  */
 @!APILevel[
     since: "22",
@@ -7082,8 +6808,8 @@ public enum RichEditorSpanType {
     Text
     | 
 /**
- * Image, corresponding imageSpan type.
- *
+ * Image,corresponding imageSpan type
+*
  */
 @!APILevel[
     since: "22",
@@ -7092,8 +6818,7 @@ public enum RichEditorSpanType {
     Image
     | 
 /**
- * Mixed, corresponding mixed span type.
- *
+ * Mixed,corresponding mixed span type.
  */
 @!APILevel[
     since: "22",
@@ -7130,7 +6855,6 @@ extend RichEditorSpanType <: Equatable<RichEditorSpanType> {
 
 /**
  * The alignment of ImageSpan
- *
  */
 @!APILevel[
     since: "22",
@@ -7139,7 +6863,6 @@ extend RichEditorSpanType <: Equatable<RichEditorSpanType> {
 public enum ImageSpanAlignment {
 /**
  * Indicating that the top of the ImageSpan should be aligned with the top of the surrounding text.
- *
  */
 @!APILevel[
     since: "22",
@@ -7149,7 +6872,6 @@ public enum ImageSpanAlignment {
     | 
 /**
  * Indicating that the center of the ImageSpan should be aligned with the center of the surrounding text.
- *
  */
 @!APILevel[
     since: "22",
@@ -7159,7 +6881,6 @@ public enum ImageSpanAlignment {
     | 
 /**
  * Indicating that the bottom of the ImageSpan should be aligned with the bottom of the surrounding text.
- *
  */
 @!APILevel[
     since: "22",
@@ -7169,7 +6890,6 @@ public enum ImageSpanAlignment {
     | 
 /**
  * Indicating that the bottom of the ImageSpan should be aligned with the baseline of the surrounding text.
- *
  */
 @!APILevel[
     since: "22",
@@ -7206,7 +6926,6 @@ extend ImageSpanAlignment <: Equatable<ImageSpanAlignment> {
 
 /**
  * Defines delete text direction.
- *
  */
 @!APILevel[
     since: "22",
@@ -7215,7 +6934,6 @@ extend ImageSpanAlignment <: Equatable<ImageSpanAlignment> {
 public enum RichEditorDeleteDirection {
 /**
  * Delete backward.
- *
  */
 @!APILevel[
     since: "22",
@@ -7225,7 +6943,6 @@ public enum RichEditorDeleteDirection {
     | 
 /**
  * Delete forward.
- *
  */
 @!APILevel[
     since: "22",
@@ -7262,40 +6979,36 @@ extend RichEditorDeleteDirection <: Equatable<RichEditorDeleteDirection> {
 
 /**
  * The Web's behavior to load from HTTP or HTTPS. Defaults to MixedMode.None.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
 public enum MixedMode {
 /**
  * Loose Mode: HTTP and HTTPS hybrid content can be loaded. This means that all insecure content can be loaded.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     All
     | 
 /**
  * Compatibility Modes: HTTP and HTTPS hybrid content can be loaded in compatibility mode. This means that some insecure content may be loaded.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     Compatible
     | 
 /**
  * Strict Mode: HTTP and HTTPS hybrid content cannot be loaded.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     None
     | ...
@@ -7310,7 +7023,7 @@ extend MixedMode <: Equatable<MixedMode> {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     public operator func ==(other: MixedMode): Bool
 /**
@@ -7321,14 +7034,13 @@ extend MixedMode <: Equatable<MixedMode> {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     public operator func !=(other: MixedMode): Bool
 }
 
 /**
  * Play Mode
- *
  */
 @!APILevel[
     since: "22",
@@ -7337,7 +7049,6 @@ extend MixedMode <: Equatable<MixedMode> {
 public enum PlayMode {
 /**
  * The animation plays normally.
- *
  */
 @!APILevel[
     since: "22",
@@ -7347,7 +7058,6 @@ public enum PlayMode {
     | 
 /**
  * The animation plays backwards.
- *
  */
 @!APILevel[
     since: "22",
@@ -7357,7 +7067,6 @@ public enum PlayMode {
     | 
 /**
  * The animation plays forward on odd numbers (1, 3, 7...) and backward on even numbers (2, 4, 6...).
- *
  */
 @!APILevel[
     since: "22",
@@ -7367,7 +7076,6 @@ public enum PlayMode {
     | 
 /**
  * The animation plays backwards on odd numbers (1, 3, 7...) and forwards on even numbers (2, 4, 6...).
- *
  */
 @!APILevel[
     since: "22",
@@ -7403,9 +7111,7 @@ extend PlayMode <: Equatable<PlayMode> {
 }
 
 /**
- * GradientDirection enum description.
- * Defines the direction of gradient fills for visual components.
- * Controls how color gradients are rendered across components, from simple linear gradients to complex diagonal ones.
+ * GradientDirection enumeration description.
  */
 @!APILevel[
     since: "22",
@@ -7522,7 +7228,6 @@ extend GradientDirection <: Equatable<GradientDirection> {
 
 /**
  * Enum of RenderFit
- *
  */
 @!APILevel[
     since: "22",
@@ -7531,7 +7236,6 @@ extend GradientDirection <: Equatable<GradientDirection> {
 public enum RenderFit {
 /**
  * Without scaling the content area, the content area is drawn in the center of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7541,7 +7245,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the top center of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7551,7 +7254,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the bottom center of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7561,7 +7263,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the left center of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7571,7 +7272,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the right center of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7581,7 +7281,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the top left of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7591,7 +7290,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the top right of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7601,7 +7299,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the bottom left of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7611,7 +7308,6 @@ public enum RenderFit {
     | 
 /**
  * Without scaling the content area, the content area is drawn in the bottom right of the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7621,7 +7317,6 @@ public enum RenderFit {
     | 
 /**
  * Scale the length and width of the content area to the node size to fill the node.
- *
  */
 @!APILevel[
     since: "22",
@@ -7633,7 +7328,6 @@ public enum RenderFit {
  * Scale the length or width of the content to the length or width of the node, ensuring that one side is equal,
  * the other side is less than or equal to the corresponding side of the node, and the content after scaling
  * is centered.
- *
  */
 @!APILevel[
     since: "22",
@@ -7647,7 +7341,6 @@ public enum RenderFit {
  * is less than or equal to the height of the node, the scaled content area is displayed at the top; otherwise,
  * the width of the scaled content is less than or equal to the width of the node, the scaled content area is
  * displayed at the left.
- *
  */
 @!APILevel[
     since: "22",
@@ -7661,7 +7354,6 @@ public enum RenderFit {
  * is less than or equal to the height of the node, the scaled content area is displayed at the bottom; otherwise,
  * the width of the scaled content is less than or equal to the width of the node, the scaled content area is
  * displayed at the right.
- *
  */
 @!APILevel[
     since: "22",
@@ -7673,7 +7365,6 @@ public enum RenderFit {
  * Scale the length or width of the content to the length or width of the node, ensuring that one side is equal,
  * the other side is greater than or equal to the corresponding side of the node, and the content after scaling
  * displays the center area.
- *
  */
 @!APILevel[
     since: "22",
@@ -7687,7 +7378,6 @@ public enum RenderFit {
  * is greater than or equal to the height of the node, the scaled content area displays the top area; otherwise,
  * the width of the scaled content is greater than or equal to the width of the node, the scaled content area
  * displays the left area.
- *
  */
 @!APILevel[
     since: "22",
@@ -7701,7 +7391,6 @@ public enum RenderFit {
  * is greater than or equal to the height of the node, the scaled content area displays the bottom area; otherwise,
  * the width of the scaled content is greater than or equal to the width of the node, the scaled content area
  * displays the right area.
- *
  */
 @!APILevel[
     since: "22",
@@ -7738,7 +7427,6 @@ extend RenderFit <: Equatable<RenderFit> {
 
 /**
  * The alignment of dialog,
- *
  */
 @!APILevel[
     since: "22",
@@ -7747,7 +7435,6 @@ extend RenderFit <: Equatable<RenderFit> {
 public enum DialogAlignment {
 /**
  * Vertical top alignment.
- *
  */
 @!APILevel[
     since: "22",
@@ -7757,7 +7444,6 @@ public enum DialogAlignment {
     | 
 /**
  * Align vertically to the center.
- *
  */
 @!APILevel[
     since: "22",
@@ -7767,7 +7453,6 @@ public enum DialogAlignment {
     | 
 /**
  * Vertical bottom alignment.
- *
  */
 @!APILevel[
     since: "22",
@@ -7776,8 +7461,8 @@ public enum DialogAlignment {
     Bottom
     | 
 /**
- * Default alignment.
- *
+ * Use default animation.
+ * Upward animation when entering and downward animation when exiting.
  */
 @!APILevel[
     since: "22",
@@ -7787,7 +7472,6 @@ public enum DialogAlignment {
     | 
 /**
  * Align the upper left corner.
- *
  */
 @!APILevel[
     since: "22",
@@ -7797,7 +7481,6 @@ public enum DialogAlignment {
     | 
 /**
  * Align the upper right corner.
- *
  */
 @!APILevel[
     since: "22",
@@ -7807,7 +7490,6 @@ public enum DialogAlignment {
     | 
 /**
  * Left center alignment.
- *
  */
 @!APILevel[
     since: "22",
@@ -7817,7 +7499,6 @@ public enum DialogAlignment {
     | 
 /**
  * Right center alignment.
- *
  */
 @!APILevel[
     since: "22",
@@ -7827,7 +7508,6 @@ public enum DialogAlignment {
     | 
 /**
  * Align the lower left corner.
- *
  */
 @!APILevel[
     since: "22",
@@ -7837,7 +7517,6 @@ public enum DialogAlignment {
     | 
 /**
  * Align the lower right corner.
- *
  */
 @!APILevel[
     since: "22",
@@ -7874,7 +7553,6 @@ extend DialogAlignment <: Equatable<DialogAlignment> {
 
 /**
  * Specifies the direction value of Barrier.
- *
  */
 @!APILevel[
     since: "22",
@@ -7883,7 +7561,6 @@ extend DialogAlignment <: Equatable<DialogAlignment> {
 public enum BarrierDirection {
 /**
  * Barrier will be positioned to the far left of all referenced components.
- *
  */
 @!APILevel[
     since: "22",
@@ -7893,7 +7570,6 @@ public enum BarrierDirection {
     | 
 /**
  * Barrier will be positioned to the far right of all referenced components.
- *
  */
 @!APILevel[
     since: "22",
@@ -7903,7 +7579,6 @@ public enum BarrierDirection {
     | 
 /**
  * Barrier will be positioned to the top of all referenced components.
- *
  */
 @!APILevel[
     since: "22",
@@ -7913,7 +7588,6 @@ public enum BarrierDirection {
     | 
 /**
  * Barrier will be positioned to the bottom of all referenced components.
- *
  */
 @!APILevel[
     since: "22",
@@ -7950,7 +7624,6 @@ extend BarrierDirection <: Equatable<BarrierDirection> {
 
 /**
  * The types of expanded safe areas.
- *
  */
 @!APILevel[
     since: "22",
@@ -7959,7 +7632,6 @@ extend BarrierDirection <: Equatable<BarrierDirection> {
 public enum SafeAreaType {
 /**
  * Default non-safe area of the system, including the status bar and navigation bar.
- *
  */
 @!APILevel[
     since: "22",
@@ -7969,7 +7641,6 @@ public enum SafeAreaType {
     | 
 /**
  * Non-safe area of the device like Notch or punch hole.
- *
  */
 @!APILevel[
     since: "22",
@@ -7979,7 +7650,6 @@ public enum SafeAreaType {
     | 
 /**
  * Soft keyboard area.
- *
  */
 @!APILevel[
     since: "22",
@@ -8016,7 +7686,6 @@ extend SafeAreaType <: Equatable<SafeAreaType> {
 
 /**
  * Enumerates the safe area edges.
- *
  */
 @!APILevel[
     since: "22",
@@ -8025,7 +7694,6 @@ extend SafeAreaType <: Equatable<SafeAreaType> {
 public enum SafeAreaEdge {
 /**
  * Top edge.
- *
  */
 @!APILevel[
     since: "22",
@@ -8035,7 +7703,6 @@ public enum SafeAreaEdge {
     | 
 /**
  * Bottom edge of the safe area.
- *
  */
 @!APILevel[
     since: "22",
@@ -8045,7 +7712,6 @@ public enum SafeAreaEdge {
     | 
 /**
  * Start edge.
- *
  */
 @!APILevel[
     since: "22",
@@ -8055,7 +7721,6 @@ public enum SafeAreaEdge {
     | 
 /**
  * End edge.
- *
  */
 @!APILevel[
     since: "22",
@@ -8092,7 +7757,6 @@ extend SafeAreaEdge <: Equatable<SafeAreaEdge> {
 
 /**
  * Common enum of color strategy
- *
  */
 @!APILevel[
     since: "22",
@@ -8101,7 +7765,6 @@ extend SafeAreaEdge <: Equatable<SafeAreaEdge> {
 public enum ColoringStrategy {
 /**
  * Use the inverse color strategy. Gets the inverse of the background color. Only applies to foregroundColor.
- *
  */
 @!APILevel[
     since: "22",
@@ -8137,7 +7800,6 @@ extend ColoringStrategy <: Equatable<ColoringStrategy> {
 
 /**
  * Nested scroll nested mode
- *
  */
 @!APILevel[
     since: "22",
@@ -8146,7 +7808,6 @@ extend ColoringStrategy <: Equatable<ColoringStrategy> {
 public enum NestedScrollMode {
 /**
  * Only Self response scrolling.
- *
  */
 @!APILevel[
     since: "22",
@@ -8156,7 +7817,6 @@ public enum NestedScrollMode {
     | 
 /**
  * Self priority response scrolling.
- *
  */
 @!APILevel[
     since: "22",
@@ -8166,7 +7826,6 @@ public enum NestedScrollMode {
     | 
 /**
  * Parent scrollable component priority response scrolling.
- *
  */
 @!APILevel[
     since: "22",
@@ -8176,7 +7835,6 @@ public enum NestedScrollMode {
     | 
 /**
  * Both self and parent scrollable component response scrolling.
- *
  */
 @!APILevel[
     since: "22",
@@ -8212,8 +7870,7 @@ extend NestedScrollMode <: Equatable<NestedScrollMode> {
 }
 
 /**
- * Enum of color mode
- *
+ * enum color mode
  */
 @!APILevel[
     since: "22",
@@ -8222,7 +7879,6 @@ extend NestedScrollMode <: Equatable<NestedScrollMode> {
 public enum ThemeColorMode {
 /**
  * Defines the mode which is follow up with system.
- *
  */
 @!APILevel[
     since: "22",
@@ -8232,7 +7888,6 @@ public enum ThemeColorMode {
     | 
 /**
  * Defines the light mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -8241,8 +7896,7 @@ public enum ThemeColorMode {
     Light
     | 
 /**
- * Defines the dark mode.
- *
+ * Dark mode.
  */
 @!APILevel[
     since: "22",
@@ -8279,7 +7933,6 @@ extend ThemeColorMode <: Equatable<ThemeColorMode> {
 
 /**
  * Defines adaptive color
- *
  */
 @!APILevel[
     since: "22",
@@ -8289,7 +7942,6 @@ public enum AdaptiveColor {
 /**
  * Adaptive color mode is not used.
  * The default color is used as the mask color. Using a mode other than **Default** can be more time-consuming.
- *
  */
 @!APILevel[
     since: "22",
@@ -8299,7 +7951,6 @@ public enum AdaptiveColor {
     | 
 /**
  * Adaptive color mode is used. The average color value of the color picking area is used as the mask color.
- *
  */
 @!APILevel[
     since: "22",
@@ -8335,7 +7986,7 @@ extend AdaptiveColor <: Equatable<AdaptiveColor> {
 }
 
 /**
- * Define the scroll size mode of the sheet.
+ * Enum for Control Size.
  */
 @!APILevel[
     since: "22",
@@ -8344,7 +7995,6 @@ extend AdaptiveColor <: Equatable<AdaptiveColor> {
 public enum ControlSize {
 /**
  * The component size is small.
- *
  */
 @!APILevel[
     since: "22",
@@ -8354,7 +8004,6 @@ public enum ControlSize {
     | 
 /**
  * The component size is normal.
- *
  */
 @!APILevel[
     since: "22",
@@ -8391,7 +8040,6 @@ extend ControlSize <: Equatable<ControlSize> {
 
 /**
  * Decide whether the width of select menu fit the trigger or content
- *
  */
 @!APILevel[
     since: "22",
@@ -8399,8 +8047,7 @@ extend ControlSize <: Equatable<ControlSize> {
 ]
 public enum OptionWidthMode {
 /**
- * The menu width fit the content.
- *
+ * The sheet height automatically adapts to the content.
  */
 @!APILevel[
     since: "22",
@@ -8410,7 +8057,6 @@ public enum OptionWidthMode {
     | 
 /**
  * The menu width fit the trigger.
- *
  */
 @!APILevel[
     since: "22",
@@ -8447,7 +8093,6 @@ extend OptionWidthMode <: Equatable<OptionWidthMode> {
 
 /**
  * The enum for arrow position in the select
- *
  */
 @!APILevel[
     since: "22",
@@ -8456,7 +8101,6 @@ extend OptionWidthMode <: Equatable<OptionWidthMode> {
 public enum ArrowPosition {
 /**
  * The value of arrow position end
- *
  */
 @!APILevel[
     since: "22",
@@ -8466,7 +8110,6 @@ public enum ArrowPosition {
     | 
 /**
  * The value of arrow position start
- *
  */
 @!APILevel[
     since: "22",
@@ -8503,7 +8146,6 @@ extend ArrowPosition <: Equatable<ArrowPosition> {
 
 /**
  * The type of alignment between select and menu.
- *
  */
 @!APILevel[
     since: "22",
@@ -8512,7 +8154,6 @@ extend ArrowPosition <: Equatable<ArrowPosition> {
 public enum MenuAlignType {
 /**
  * The type of alignment between select and menu.
- *
  */
 @!APILevel[
     since: "22",
@@ -8522,7 +8163,6 @@ public enum MenuAlignType {
     | 
 /**
  * The value of menu align type center.
- *
  */
 @!APILevel[
     since: "22",
@@ -8532,7 +8172,6 @@ public enum MenuAlignType {
     | 
 /**
  * The value of menu align type end.
- *
  */
 @!APILevel[
     since: "22",
@@ -8568,41 +8207,37 @@ extend MenuAlignType <: Equatable<MenuAlignType> {
 }
 
 /**
- * Enum type supplied to {@link darkMode} for setting the web dark mode.
- *
+ * Enum type supplied to darkMode for setting the web dark mode.
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
 public enum WebDarkMode {
 /**
  * Disable the web dark mode.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     Off
     | 
 /**
  * Enable the web dark mode.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     On
     | 
 /**
  * Make web dark mode follow the system.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     Auto
     | ...
@@ -8617,7 +8252,7 @@ extend WebDarkMode <: Equatable<WebDarkMode> {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     public operator func ==(other: WebDarkMode): Bool
 /**
@@ -8628,14 +8263,13 @@ extend WebDarkMode <: Equatable<WebDarkMode> {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     public operator func !=(other: WebDarkMode): Bool
 }
 
 /**
  * Defines the event tool type.
- *
  */
 @!APILevel[
     since: "22",
@@ -8644,7 +8278,6 @@ extend WebDarkMode <: Equatable<WebDarkMode> {
 public enum SourceTool {
 /**
  * Unknown type.
- *
  */
 @!APILevel[
     since: "22",
@@ -8654,7 +8287,6 @@ public enum SourceTool {
     | 
 /**
  * The finger type.
- *
  */
 @!APILevel[
     since: "22",
@@ -8664,7 +8296,6 @@ public enum SourceTool {
     | 
 /**
  * The pen type.
- *
  */
 @!APILevel[
     since: "22",
@@ -8674,7 +8305,6 @@ public enum SourceTool {
     | 
 /**
  * The mouse type.
- *
  */
 @!APILevel[
     since: "22",
@@ -8684,7 +8314,6 @@ public enum SourceTool {
     | 
 /**
  * The touchpad type.
- *
  */
 @!APILevel[
     since: "22",
@@ -8694,7 +8323,6 @@ public enum SourceTool {
     | 
 /**
  * The joystick type.
- *
  */
 @!APILevel[
     since: "22",
@@ -8730,7 +8358,7 @@ extend SourceTool <: Equatable<SourceTool> {
 }
 
 /**
- * Repetition mode.
+ * Do not draw the picture again.
  */
 @!APILevel[
     since: "22",
@@ -8738,7 +8366,7 @@ extend SourceTool <: Equatable<SourceTool> {
 ]
 public enum Repetition {
 /**
- * The repeat method of image repetition.
+ * The source image's slices are tiled. Tiles beyond the border box will be clipped
  */
 @!APILevel[
     since: "22",
@@ -8747,7 +8375,7 @@ public enum Repetition {
     Repeat
     | 
 /**
- * The repeat-x method of image repetition.
+ * The source image's slices are tiled. Tiles beyond the border box will be clipped.
  */
 @!APILevel[
     since: "22",
@@ -8756,7 +8384,7 @@ public enum Repetition {
     RepeatX
     | 
 /**
- * The repeat-y method of image repetition.
+ * The source image's slices are tiled. Tiles beyond the border box will be clipped.
  */
 @!APILevel[
     since: "22",
@@ -8783,7 +8411,7 @@ public enum Repetition {
     Clamp
     | 
 /**
- * The mirror method of image repetition.
+ * Flip the orignial image horizontally
  */
 @!APILevel[
     since: "22",
@@ -8820,7 +8448,6 @@ extend Repetition <: Equatable<Repetition> {
 
 /**
  * The possible source of scroll event
- *
  */
 @!APILevel[
     since: "22",
@@ -8829,7 +8456,6 @@ extend Repetition <: Equatable<Repetition> {
 public enum ScrollSource {
 /**
  * Drag events.
- *
  */
 @!APILevel[
     since: "22",
@@ -8839,7 +8465,6 @@ public enum ScrollSource {
     | 
 /**
  * Fling after the drag has ended with velocity.
- *
  */
 @!APILevel[
     since: "22",
@@ -8849,7 +8474,6 @@ public enum ScrollSource {
     | 
 /**
  * Over scroll with EdgeEffect.Spring.
- *
  */
 @!APILevel[
     since: "22",
@@ -8859,7 +8483,6 @@ public enum ScrollSource {
     | 
 /**
  * Other user input except drag, such as mouse wheel, key event.
- *
  */
 @!APILevel[
     since: "22",
@@ -8869,7 +8492,6 @@ public enum ScrollSource {
     | 
 /**
  * Drag events of scroll bar.
- *
  */
 @!APILevel[
     since: "22",
@@ -8879,7 +8501,6 @@ public enum ScrollSource {
     | 
 /**
  * Fling after the drag on scroll bar has ended with velocity.
- *
  */
 @!APILevel[
     since: "22",
@@ -8889,7 +8510,6 @@ public enum ScrollSource {
     | 
 /**
  * Member methods of Scroller without animation.
- *
  */
 @!APILevel[
     since: "22",
@@ -8899,7 +8519,6 @@ public enum ScrollSource {
     | 
 /**
  * Member methods of Scroller with animation.
- *
  */
 @!APILevel[
     since: "22",
@@ -8936,7 +8555,6 @@ extend ScrollSource <: Equatable<ScrollSource> {
 
 /**
  * Declare the type of input content
- *
  */
 @!APILevel[
     since: "22",
@@ -8945,7 +8563,6 @@ extend ScrollSource <: Equatable<ScrollSource> {
 public enum ContentType {
 /**
  * Password Vault, when enabled, can automatically save and fill in usernames.
- *
  */
 @!APILevel[
     since: "22",
@@ -8955,7 +8572,6 @@ public enum ContentType {
     | 
 /**
  * Password Vault, when enabled, can automatically save and fill in passwords.
- *
  */
 @!APILevel[
     since: "22",
@@ -8965,7 +8581,6 @@ public enum ContentType {
     | 
 /**
  * Password Vault, when enabled, can automatically generate a new password.
- *
  */
 @!APILevel[
     since: "22",
@@ -8976,7 +8591,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in full street addresses.
- *
  */
 @!APILevel[
     since: "22",
@@ -8987,7 +8601,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in house numbers.
- *
  */
 @!APILevel[
     since: "22",
@@ -8998,7 +8611,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in districts and counties.
- *
  */
 @!APILevel[
     since: "22",
@@ -9009,7 +8621,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in cities.
- *
  */
 @!APILevel[
     since: "22",
@@ -9020,7 +8631,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in provinces.
- *
  */
 @!APILevel[
     since: "22",
@@ -9031,7 +8641,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in countries.
- *
  */
 @!APILevel[
     since: "22",
@@ -9042,7 +8651,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in full names.
- *
  */
 @!APILevel[
     since: "22",
@@ -9053,7 +8661,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in last names.
- *
  */
 @!APILevel[
     since: "22",
@@ -9064,7 +8671,6 @@ public enum ContentType {
 /**
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in first names.
- *
  */
 @!APILevel[
     since: "22",
@@ -9076,7 +8682,6 @@ public enum ContentType {
  * Phone number content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in phone numbers.
- *
  */
 @!APILevel[
     since: "22",
@@ -9088,7 +8693,6 @@ public enum ContentType {
  * Phone country code content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in country codes.
- *
  */
 @!APILevel[
     since: "22",
@@ -9100,7 +8704,6 @@ public enum ContentType {
  * Full phone number content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in phone numbers with country codes.
- *
  */
 @!APILevel[
     since: "22",
@@ -9112,7 +8715,6 @@ public enum ContentType {
  * Email address content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in email addresses.
- *
  */
 @!APILevel[
     since: "22",
@@ -9124,7 +8726,6 @@ public enum ContentType {
  * Bank card number content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in bank card numbers.
- *
  */
 @!APILevel[
     since: "22",
@@ -9136,7 +8737,6 @@ public enum ContentType {
  * ID card number content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in ID card numbers.
- *
  */
 @!APILevel[
     since: "22",
@@ -9148,7 +8748,6 @@ public enum ContentType {
  * Nickname content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in nicknames.
- *
  */
 @!APILevel[
     since: "22",
@@ -9160,7 +8759,6 @@ public enum ContentType {
  * Detail info without street content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in address information without street addresses.
- *
  */
 @!APILevel[
     since: "22",
@@ -9172,7 +8770,6 @@ public enum ContentType {
  * Format address content type.
  * The scenario-based autofill feature, when enabled,
  * can automatically save and fill in standard addresses.
- *
  */
 @!APILevel[
     since: "22",
@@ -9209,7 +8806,6 @@ extend ContentType <: Equatable<ContentType> {
 
 /**
  * Define the menu pop-up policy
- *
  */
 @!APILevel[
     since: "22",
@@ -9218,7 +8814,6 @@ extend ContentType <: Equatable<ContentType> {
 public enum MenuPolicy {
 /**
  * Default value. The default logic of whether to pop up a menu depends on the scene.
- *
  */
 @!APILevel[
     since: "22",
@@ -9228,7 +8823,6 @@ public enum MenuPolicy {
     | 
 /**
  * The menu is always hidden.
- *
  */
 @!APILevel[
     since: "22",
@@ -9238,7 +8832,6 @@ public enum MenuPolicy {
     | 
 /**
  * The menu is always displayed.
- *
  */
 @!APILevel[
     since: "22",
@@ -9275,7 +8868,6 @@ extend MenuPolicy <: Equatable<MenuPolicy> {
 
 /**
  * Type of text decoration line style.
- *
  */
 @!APILevel[
     since: "22",
@@ -9284,7 +8876,6 @@ extend MenuPolicy <: Equatable<MenuPolicy> {
 public enum TextDecorationStyle {
 /**
  * Solid line.
- *
  */
 @!APILevel[
     since: "22",
@@ -9294,7 +8885,6 @@ public enum TextDecorationStyle {
     | 
 /**
  * Double lines.
- *
  */
 @!APILevel[
     since: "22",
@@ -9304,7 +8894,6 @@ public enum TextDecorationStyle {
     | 
 /**
  * Dotted lines.
- *
  */
 @!APILevel[
     since: "22",
@@ -9314,7 +8903,6 @@ public enum TextDecorationStyle {
     | 
 /**
  * Dashed line.
- *
  */
 @!APILevel[
     since: "22",
@@ -9324,7 +8912,6 @@ public enum TextDecorationStyle {
     | 
 /**
  * Wavy line.
- *
  */
 @!APILevel[
     since: "22",
@@ -9361,7 +8948,6 @@ extend TextDecorationStyle <: Equatable<TextDecorationStyle> {
 
 /**
  * Enum of line break strategy
- *
  */
 @!APILevel[
     since: "22",
@@ -9371,7 +8957,6 @@ public enum LineBreakStrategy {
 /**
  * By default. Display as many characters as possible on each line until no more characters
  * can be displayed on that line, and do not automatically add hyphens under this strategy
- *
  */
 @!APILevel[
     since: "22",
@@ -9382,7 +8967,6 @@ public enum LineBreakStrategy {
 /**
  * High quality folding. Optimize the layout of the entire text's line breaks and automatically
  * add hyphens if necessary.
- *
  */
 @!APILevel[
     since: "22",
@@ -9393,7 +8977,6 @@ public enum LineBreakStrategy {
 /**
  * Balanced folding. We will try our best to ensure that the width of each line in a paragraph
  * is the same, and if necessary, we will add conjunction
- *
  */
 @!APILevel[
     since: "22",
@@ -9430,7 +9013,6 @@ extend LineBreakStrategy <: Equatable<LineBreakStrategy> {
 
 /**
  * Text content style.
- *
  */
 @!APILevel[
     since: "22",
@@ -9439,7 +9021,6 @@ extend LineBreakStrategy <: Equatable<LineBreakStrategy> {
 public enum TextContentStyle {
 /**
  * Text content default style.
- *
  */
 @!APILevel[
     since: "22",
@@ -9448,8 +9029,13 @@ public enum TextContentStyle {
     Default
     | 
 /**
- * Text content inline style.
- *
+ * Text input inline style.
+ * NOTE:
+ * The background height of the selected text is the same as the height of the text box.
+ * This style is used in scenarios where editing and non-editing states are obvious,
+ * for example, renaming in the file list view.
+ * The showError attribute is not supported for this style.
+ * This style does not allow for text dragging and dropping.
  */
 @!APILevel[
     since: "22",
@@ -9486,7 +9072,6 @@ extend TextContentStyle <: Equatable<TextContentStyle> {
 
 /**
  * common enum of the checkbox shape
- *
  */
 @!APILevel[
     since: "22",
@@ -9495,7 +9080,6 @@ extend TextContentStyle <: Equatable<TextContentStyle> {
 public enum CheckBoxShape {
 /**
  * Circle.
- *
  */
 @!APILevel[
     since: "22",
@@ -9505,7 +9089,6 @@ public enum CheckBoxShape {
     | 
 /**
  * Rounded Square.
- *
  */
 @!APILevel[
     since: "22",
@@ -9542,7 +9125,6 @@ extend CheckBoxShape <: Equatable<CheckBoxShape> {
 
 /**
  * Enum of text height adaptation
- *
  */
 @!APILevel[
     since: "22",
@@ -9553,7 +9135,6 @@ public enum TextHeightAdaptivePolicy {
  * Priority is given to using the maxLines attribute to adapt the text height.
  * If the layout size using the maxLines attribute exceeds the layout constraint, try reducing the font size to
  * display more text.
- *
  */
 @!APILevel[
     since: "22",
@@ -9565,7 +9146,6 @@ public enum TextHeightAdaptivePolicy {
  * Priority is given to using the minFontSize attribute to adapt the text height.
  * If the text can be layout in a single line using the minFontSize property, try increasing the font size and using
  * the maximum possible font size.
- *
  */
 @!APILevel[
     since: "22",
@@ -9578,7 +9158,6 @@ public enum TextHeightAdaptivePolicy {
  * If the layout size exceeds the layout constraint, try reducing the font size. If the layout size still exceeds
  * the layout constraint after reducing the font size to minFontSize, remove the lines that exceed the layout
  * constraint.
- *
  */
 @!APILevel[
     since: "22",
@@ -9614,8 +9193,7 @@ extend TextHeightAdaptivePolicy <: Equatable<TextHeightAdaptivePolicy> {
 }
 
 /**
- * ArrowPointPosition enum description
- *
+ * ArrowPointPosition enumeration description
  */
 @!APILevel[
     since: "22",
@@ -9624,7 +9202,6 @@ extend TextHeightAdaptivePolicy <: Equatable<TextHeightAdaptivePolicy> {
 public enum ArrowPointPosition {
 /**
  * Target start position
- *
  */
 @!APILevel[
     since: "22",
@@ -9634,7 +9211,6 @@ public enum ArrowPointPosition {
     | 
 /**
  * Target center position
- *
  */
 @!APILevel[
     since: "22",
@@ -9644,7 +9220,6 @@ public enum ArrowPointPosition {
     | 
 /**
  * Target end position
- *
  */
 @!APILevel[
     since: "22",
@@ -9681,7 +9256,6 @@ extend ArrowPointPosition <: Equatable<ArrowPointPosition> {
 
 /**
  * Title height.
- *
  */
 @!APILevel[
     since: "22",
@@ -9690,7 +9264,6 @@ extend ArrowPointPosition <: Equatable<ArrowPointPosition> {
 public enum TitleHeight {
 /**
  * Title height when only main title is available.
- *
  */
 @!APILevel[
     since: "22",
@@ -9700,7 +9273,6 @@ public enum TitleHeight {
     | 
 /**
  * Title height when main title and subtitle are both available.
- *
  */
 @!APILevel[
     since: "22",
@@ -9737,7 +9309,6 @@ extend TitleHeight <: Equatable<TitleHeight> {
 
 /**
  * The Button Style of dialog,
- *
  */
 @!APILevel[
     since: "22",
@@ -9746,7 +9317,6 @@ extend TitleHeight <: Equatable<TitleHeight> {
 public enum DialogButtonStyle {
 /**
  * Default Style.
- *
  */
 @!APILevel[
     since: "22",
@@ -9756,7 +9326,6 @@ public enum DialogButtonStyle {
     | 
 /**
  * Highlight Style.
- *
  */
 @!APILevel[
     since: "22",
@@ -9792,8 +9361,7 @@ extend DialogButtonStyle <: Equatable<DialogButtonStyle> {
 }
 
 /**
- * Enumerates the length metrics unit.
- *
+ * Default alignment.
  */
 @!APILevel[
     since: "22",
@@ -9802,7 +9370,6 @@ extend DialogButtonStyle <: Equatable<DialogButtonStyle> {
 public enum LengthMetricsUnit {
 /**
  * The default length metrics unit, in vp.
- *
  */
 @!APILevel[
     since: "22",
@@ -9812,7 +9379,6 @@ public enum LengthMetricsUnit {
     | 
 /**
  * The pixel length metrics unit.
- *
  */
 @!APILevel[
     since: "22",
@@ -9848,8 +9414,7 @@ extend LengthMetricsUnit <: Equatable<LengthMetricsUnit> {
 }
 
 /**
- * Indicates the attribute of the current text direction.
- *
+ * Elements are laid out from right to left.
  */
 @!APILevel[
     since: "22",
@@ -9858,7 +9423,6 @@ extend LengthMetricsUnit <: Equatable<LengthMetricsUnit> {
 public enum CanvasDirection {
 /**
  * (Default) Inherit current Canvas component settings
- *
  */
 @!APILevel[
     since: "22",
@@ -9868,7 +9432,6 @@ public enum CanvasDirection {
     | 
 /**
  * The text direction is left to right.
- *
  */
 @!APILevel[
     since: "22",
@@ -9878,7 +9441,6 @@ public enum CanvasDirection {
     | 
 /**
  * The text direction is from right to left.
- *
  */
 @!APILevel[
     since: "22",
@@ -9916,7 +9478,6 @@ extend CanvasDirection <: Equatable<CanvasDirection> {
 /**
  * Filling style algorithm, which determines whether a point is within or outside the path. The following
  * two configurations are supported:
- *
  */
 @!APILevel[
     since: "22",
@@ -9925,7 +9486,6 @@ extend CanvasDirection <: Equatable<CanvasDirection> {
 public enum CanvasFillRule {
 /**
  * odd and even round rule
- *
  */
 @!APILevel[
     since: "22",
@@ -9934,8 +9494,7 @@ public enum CanvasFillRule {
     EvenOdd
     | 
 /**
- * (Default) Non-zero Wrap Rules
- *
+ * There is no thumb.
  */
 @!APILevel[
     since: "22",
@@ -9972,7 +9531,6 @@ extend CanvasFillRule <: Equatable<CanvasFillRule> {
 
 /**
  * Enum for FinishCallbackType.
- *
  */
 @!APILevel[
     since: "22",
@@ -9981,7 +9539,6 @@ extend CanvasFillRule <: Equatable<CanvasFillRule> {
 public enum FinishCallbackType {
 /**
  * The callback is invoked when the entire animation is removed once it has finished.
- *
  */
 @!APILevel[
     since: "22",
@@ -9992,7 +9549,6 @@ public enum FinishCallbackType {
 /**
  * The callback is invoked when the animation logically enters the falling state,
  * though it may still be in its long tail state.
- *
  */
 @!APILevel[
     since: "22",
@@ -10028,8 +9584,7 @@ extend FinishCallbackType <: Equatable<FinishCallbackType> {
 }
 
 /**
- * Enum of Blur style.
- *
+ * enum Blur style
  */
 @!APILevel[
     since: "22",
@@ -10038,7 +9593,6 @@ extend FinishCallbackType <: Equatable<FinishCallbackType> {
 public enum BlurStyle {
 /**
  * Thin material.
- *
  */
 @!APILevel[
     since: "22",
@@ -10048,7 +9602,6 @@ public enum BlurStyle {
     | 
 /**
  * Regular material.
- *
  */
 @!APILevel[
     since: "22",
@@ -10058,7 +9611,6 @@ public enum BlurStyle {
     | 
 /**
  * Thick material.
- *
  */
 @!APILevel[
     since: "22",
@@ -10067,8 +9619,7 @@ public enum BlurStyle {
     Thick
     | 
 /**
- * BackgroundThin material.
- *
+ * Material that creates the minimum depth of field effect.
  */
 @!APILevel[
     since: "22",
@@ -10077,8 +9628,7 @@ public enum BlurStyle {
     BackgroundThin
     | 
 /**
- * BackgroundRegular material.
- *
+ * Material that creates a medium shallow depth of field effect.
  */
 @!APILevel[
     since: "22",
@@ -10087,8 +9637,7 @@ public enum BlurStyle {
     BackgroundRegular
     | 
 /**
- * BackgroundThick material.
- *
+ * Material that creates a high shallow depth of field effect.
  */
 @!APILevel[
     since: "22",
@@ -10097,8 +9646,7 @@ public enum BlurStyle {
     BackgroundThick
     | 
 /**
- * BackgroundUltraThick material.
- *
+ * Material that creates the maximum depth of field effect.
  */
 @!APILevel[
     since: "22",
@@ -10108,7 +9656,6 @@ public enum BlurStyle {
     | 
 /**
  * None material.
- *
  */
 @!APILevel[
     since: "22",
@@ -10117,8 +9664,7 @@ public enum BlurStyle {
     None
     | 
 /**
- * ComponentUltraThin material.
- *
+ * Component ultra-thin material.
  */
 @!APILevel[
     since: "22",
@@ -10127,8 +9673,7 @@ public enum BlurStyle {
     ComponentUltraThin
     | 
 /**
- * ComponentThin material.
- *
+ * Component thin material.
  */
 @!APILevel[
     since: "22",
@@ -10137,8 +9682,7 @@ public enum BlurStyle {
     ComponentThin
     | 
 /**
- * ComponentRegular material.
- *
+ * Component regular material.
  */
 @!APILevel[
     since: "22",
@@ -10147,8 +9691,7 @@ public enum BlurStyle {
     ComponentRegular
     | 
 /**
- * ComponentThick material.
- *
+ * Defines the thick component material.
  */
 @!APILevel[
     since: "22",
@@ -10157,8 +9700,7 @@ public enum BlurStyle {
     ComponentThick
     | 
 /**
- * ComponentUltraThick material.
- *
+ * Defines the ultra thick component material.
  */
 @!APILevel[
     since: "22",
@@ -10195,7 +9737,6 @@ extend BlurStyle <: Equatable<BlurStyle> {
 
 /**
  * Dismiss reason type.
- *
  */
 @!APILevel[
     since: "22",
@@ -10204,7 +9745,6 @@ extend BlurStyle <: Equatable<BlurStyle> {
 public enum DismissReason {
 /**
  * Touching the Back button, swiping left or right on the screen, or pressing the Esc key.
- *
  */
 @!APILevel[
     since: "22",
@@ -10214,7 +9754,6 @@ public enum DismissReason {
     | 
 /**
  * Touching the mask.
- *
  */
 @!APILevel[
     since: "22",
@@ -10224,7 +9763,6 @@ public enum DismissReason {
     | 
 /**
  * Touching the Close button.
- *
  */
 @!APILevel[
     since: "22",
@@ -10234,10 +9772,8 @@ public enum DismissReason {
     | 
 /**
  * Slide down
- * <p><strong>NOTE</strong>:
- * <br>This API is effective only in sheet transition.
- * </p>
- *
+ * NOTE:
+ * This API is effective only in sheet transition.
  */
 @!APILevel[
     since: "22",
@@ -10274,7 +9810,6 @@ extend DismissReason <: Equatable<DismissReason> {
 
 /**
  * Text input style.
- *
  */
 @!APILevel[
     since: "22",
@@ -10283,11 +9818,9 @@ extend DismissReason <: Equatable<DismissReason> {
 public enum TextInputStyle {
 /**
  * Text input default style.
- * <p><strong>NOTE</strong>:
- * <br>The caret width is fixed at 1.5.vp,
+ * NOTE:
+ * The caret width is fixed at 1.5.vp,
  * and the caret height is subject to the background height and font size of the selected text.
- * </p>
- *
  */
 @!APILevel[
     since: "22",
@@ -10297,13 +9830,11 @@ public enum TextInputStyle {
     | 
 /**
  * Text input inline style.
- * <br>The background height of the selected text is the same as the height of the text box.
- * <br>This style is used in scenarios where editing and non-editing states are obvious,
+ * The background height of the selected text is the same as the height of the text box.
+ * This style is used in scenarios where editing and non-editing states are obvious,
  * for example, renaming in the file list view.
- * <br>The showError attribute is not supported for this style.
- * <br>This style does not allow for text dragging and dropping.
- * </p>
- *
+ * The showError attribute is not supported for this style.
+ * This style does not allow for text dragging and dropping.
  */
 @!APILevel[
     since: "22",
@@ -10340,7 +9871,6 @@ extend TextInputStyle <: Equatable<TextInputStyle> {
 
 /**
  * Declare the type of input box
- *
  */
 @!APILevel[
     since: "22",
@@ -10350,7 +9880,6 @@ public enum TextAreaType {
 /**
  * Basic input mode.
  * The value can contain digits, letters, underscores (_), spaces, and special characters.
- *
  */
 @!APILevel[
     since: "22",
@@ -10360,7 +9889,6 @@ public enum TextAreaType {
     | 
 /**
  * Pure digital input mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -10372,7 +9900,6 @@ public enum TextAreaType {
  * Phone number entry mode.
  * In this mode, the following are allowed: digits, spaces, plus signs (+), hyphens (-), asterisks (*), and number signs (#).
  * the length is not limited.
- *
  */
 @!APILevel[
     since: "22",
@@ -10384,7 +9911,6 @@ public enum TextAreaType {
  * E-mail address input mode.
  * This mode accepts only digits, letters, underscores (_), dots (.),
  * and the following special characters: ! # $ % & ' * + - / = ? ^ ` { | } ~ @ (which can only appear once).
- *
  */
 @!APILevel[
     since: "22",
@@ -10395,7 +9921,6 @@ public enum TextAreaType {
 /**
  * Number decimal entry mode.
  * The value can contain digits and one decimal point.
- *
  */
 @!APILevel[
     since: "22",
@@ -10405,7 +9930,6 @@ public enum TextAreaType {
     | 
 /**
  * URL entry mode.
- *
  */
 @!APILevel[
     since: "22",
@@ -10499,8 +10023,7 @@ abstract sealed class BaseEvent {
 ]
 public class TouchObject {
 /**
- * Type of the touch event.
- * Indicates what type of touch action occurred (e.g., Down, Up, Move, Cancel).
+ * Touch action information.
  */
 @!APILevel[
     since: "22",
@@ -10509,8 +10032,7 @@ public class TouchObject {
     public var touchType: TouchType
 
 /**
- * Finger unique identifier.
- * Used to track individual fingers in multi-touch scenarios.
+ * Unique identifier of a finger.
  */
 @!APILevel[
     since: "22",
@@ -10519,8 +10041,7 @@ public class TouchObject {
     public var id: Int32
 
 /**
- * X coordinate of the point relative to the global display.
- * Position of the touch point in screen coordinates.
+ * X coordinate of the touch point relative to the upper left corner of the application window.
  */
 @!APILevel[
     since: "22",
@@ -10529,8 +10050,7 @@ public class TouchObject {
     public var screenX: Float64
 
 /**
- * Y coordinate of the point relative to the global display.
- * Position of the touch point in screen coordinates.
+ * Y coordinate of the touch point relative to the upper left corner of the application window.
  */
 @!APILevel[
     since: "22",
@@ -10548,7 +10068,7 @@ public class TouchObject {
     public var x: Float64
 
 /**
- * Y coordinate of the touch point relative to the upper edge of the touched element.
+ * Y coordinate of the click point relative to the left edge of the clicked element.
  */
 @!APILevel[
     since: "22",
@@ -10622,7 +10142,6 @@ public class ClickEvent <: BaseEvent {
     public var windowY: Float64
 /**
  * X coordinate of the click point relative to the left edge of the clicked element.
- * Position within the clicked component's coordinate system.
  */
 @!APILevel[
     since: "22",
@@ -10632,7 +10151,6 @@ public class ClickEvent <: BaseEvent {
 
 /**
  * Y coordinate of the click point relative to the upper edge of the clicked element.
- * Position within the clicked component's coordinate system.
  */
 @!APILevel[
     since: "22",
@@ -10642,34 +10160,7 @@ public class ClickEvent <: BaseEvent {
 }
 
 /**
- * Contains information about a drag operation.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-public class DragInfo {
-/**
- * Can contain custom data associated with the drag operation.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    public var extraParams: String
-
-/**
- * Current position of the drag operation.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    public var touchPoint: Position
-}
-
-/**
- * Contains information about the visual representation of a dragged item.
+ * DragItemInfo object description
  */
 @!APILevel[
     since: "22",
@@ -10776,7 +10267,7 @@ public class MouseEvent <: BaseEvent {
     public var y: Float64
 
 /**
- * Mouse action of the click event.
+ * Mouse action of the click event
  */
 @!APILevel[
     since: "22",
@@ -10804,7 +10295,7 @@ public class MouseEvent <: BaseEvent {
 }
 
 /**
- * Represents a touch event containing information about all touch points.
+ * Touch Action Function Parameters
  */
 @!APILevel[
     since: "22",
@@ -10812,7 +10303,7 @@ public class MouseEvent <: BaseEvent {
 ]
 public class TouchEvent <: BaseEvent {
 /**
- * Indicates the primary type of touch action for this event.
+ * Defining Event PropertyDecorator.
  */
 @!APILevel[
     since: "22",
@@ -10821,7 +10312,7 @@ public class TouchEvent <: BaseEvent {
     public var eventType: TouchType
 
 /**
- * Array containing information about all finger information.
+ * All finger information.
  */
 @!APILevel[
     since: "22",
@@ -10830,7 +10321,7 @@ public class TouchEvent <: BaseEvent {
     public var touches: Array<TouchObject>
 
 /**
- * Array containing information about finger information changed.
+ * Finger information changed.
  */
 @!APILevel[
     since: "22",
@@ -10850,7 +10341,7 @@ public class TouchEvent <: BaseEvent {
 }
 
 /**
- * Represents a keyboard event with detailed information about the key press.
+ * KeyEvent object description:
  */
 @!APILevel[
     since: "22",
@@ -10858,7 +10349,7 @@ public class TouchEvent <: BaseEvent {
 ]
 public class KeyEvent {
 /**
- * Indicates whether the key was pressed down or released.
+ * Key value of a key.
  */
 @!APILevel[
     since: "22",
@@ -10866,7 +10357,7 @@ public class KeyEvent {
 ]
     public var keyType: KeyType
 /**
- * The numeric code representing the physical key that was pressed.
+ * Key code of a key
  */
 @!APILevel[
     since: "22",
@@ -10874,9 +10365,7 @@ public class KeyEvent {
 ]
     public var keyCode: Int32
 /**
- * The string representation of the key that was pressed.
- ['type', 'keyCode', 'keyText', 'keySource', 'deviceId', 
- 'metaKey', 'timestamp', 'intentionCode', 'getModifierKeyState', 'unicode']
+ * Key value of a key.
  */
 @!APILevel[
     since: "22",
@@ -11007,7 +10496,7 @@ public class TranslateOptions {
 }
 
 /**
- * Configuration options for scaling transformations.
+ * Defines the options of scale.
  */
 @!APILevel[
     since: "22",
@@ -11040,8 +10529,8 @@ public class ScaleOptions {
 
 /**
  * Scale ratio along the z-axis. z > 1: The component is scaled up along the z-axis.
- * <br>0 < z < 1: The component is scaled down along the z-axis.
- * <br>z < 0: The component is scaled in the reverse direction of the z-axis.
+ * 0 < z < 1: The component is scaled down along the z-axis.
+ * z < 0: The component is scaled in the reverse direction of the z-axis.
  */
 @!APILevel[
     since: "22",
@@ -11085,7 +10574,7 @@ public class ScaleOptions {
 }
 
 /**
- * Configuration options for rotation transformations.
+ * The param of rotate.
  */
 @!APILevel[
     since: "22",
@@ -11093,22 +10582,22 @@ public class ScaleOptions {
 ]
 public class RotateOptions {
 /**
- * X coordinate of the rotation axis vector.
+ * Coordinate x of the Position.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var x: ?Float64
+    public var x: ?Float32
 
 /**
- * Y coordinate of the rotation axis vector.
+ * Coordinate y of the Position.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var y: ?Float64
+    public var y: ?Float32
 
 /**
  * Z coordinate of the rotation axis vector.
@@ -11117,7 +10606,7 @@ public class RotateOptions {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var z: ?Float64
+    public var z: ?Float32
 
 /**
  * X coordinate of the transformation center point (anchor). Unit is vp.
@@ -11157,39 +10646,40 @@ public class RotateOptions {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var perspective: ?Float64
+    public var perspective: ?Float32
 
 /**
- * Rotation angle in degrees.
+ * Indicates minimum rotate angle.
+ * The default value is 1deg.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var angle: ?Float64
+    public var angle: ?Float32
 
 /**
  * Creates a new RotateOptions instance with the specified properties.
  *
- * @param { ?Float64 } angle - Rotation angle in degrees
- * @param { ?Float64 } [x] - X coordinate of the rotation axis vector
- * @param { ?Float64 } [y] - Y coordinate of the rotation axis vector
- * @param { ?Float64 } [z] - Z coordinate of the rotation axis vector
+ * @param { ?Float32 } angle - Rotation angle in degrees
+ * @param { ?Float32 } [x] - X coordinate of the rotation axis vector
+ * @param { ?Float32 } [y] - Y coordinate of the rotation axis vector
+ * @param { ?Float32 } [z] - Z coordinate of the rotation axis vector
  * @param { ?Length } [centerX] - X coordinate of the transformation center
  * @param { ?Length } [centerY] - Y coordinate of the transformation center
  * @param { ?Length } [centerZ] - Z coordinate of the transformation center
- * @param { ?Float64 } [perspective] - Perspective distance
+ * @param { ?Float32 } [perspective] - Perspective distance
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public init(x!: ?Float64 = None, y!: ?Float64 = None, z!: ?Float64 = None, centerX!: ?Length = None,
-        centerY!: ?Length = None, centerZ!: ?Length = None, perspective!: ?Float64 = None, angle: ?Float64)
+    public init(angle: ?Float32, x!: ?Float32 = None, y!: ?Float32 = None, z!: ?Float32 = None, centerX!: ?Length = None,
+        centerY!: ?Length = None, centerZ!: ?Length = None, perspective!: ?Float32 = None)
 }
 
 /**
- * This enum specifies the edges of a component for transition effects.
+ * Defines the Edge object.
  */
 @!APILevel[
     since: "22",
@@ -11287,11 +10777,13 @@ public class TransitionEffect <: RemoteDataLite {
     public static func opacity(alpha: Float64): TransitionEffect
 
 /**
- * Sets the translation effect for page transitions.
- * The component moves from one position to another during the transition.
+ * Translation of the component during transition, which is the value of the start point
+ * of insertion and the end point of deletion.
  *
- * @param { TranslateOptions } options - Translation effect for page transitions
- * <br> specifying the start value for entrance and the end value for exit. 
+ * @param { TranslateOptions } options - translate options.
+ *      x: distance to translate along the x-axis. Unit is vp.
+ *      y: distance to translate along the y-axis. Unit is vp.
+ *      z: distance to translate along the z-axis. Unit is vp.
  * @returns { TransitionEffect } A new TransitionEffect instance with translation effect.
  */
 @!APILevel[
@@ -11301,12 +10793,12 @@ public class TransitionEffect <: RemoteDataLite {
     public static func translate(options: TranslateOptions): TransitionEffect
 
 /**
- * Creates a scale transition effect.
- * The component scales up or down during the transition.
+ * Scaling of the component during transition, which is the value of the start point of insertion and
+ * the end point of deletion.
  *
  * @param { ?ScaleOptions } options - scale options. Scale ratio along the x-, y-, and z-axis.
- * <br>**centerX** and **centerY** are used to set the scale center point.
- * <br>default value is x: 1, y: 1, z: 1, centerX: 50.percent, centerY: 50.percent.
+ * **centerX** and **centerY** are used to set the scale center point.
+ * default value is x: 1, y: 1, z: 1, centerX: 50.percent, centerY: 50.percent.
  * @returns { TransitionEffect } A new TransitionEffect instance with scale effect.
  */
 @!APILevel[
@@ -11316,21 +10808,19 @@ public class TransitionEffect <: RemoteDataLite {
     public static func scale(options: ?ScaleOptions): TransitionEffect
 
 /**
- * Creates a rotation transition effect.
- * The component rotates during the transition.
+ * Rotation of the component during transition, which is the value of the start
+ * point of insertion and the end point of deletion.
+ * - **x**: X-component of the rotation vector.
+ * - **y**: Y-component of the rotation vector.
+ * - **z**: Z-component of the rotation vector.
+ * - **centerX** and **centerY**: rotation center point. The default values
+ * are both **"50%"**, indicating the center point of the page.
+ * - If the center point is (0, 0), it refers to the upper left corner of the component.
+ * - **centerZ**: z-axis anchor point, that is, the z-component of the 3D rotation
+ * center point. The default value is **0**.
+ * - **perspective**: viewing distance. It is not supported for use in transition animations.
  *
- * @param { ?RotateOptions } options - rotate options.
- * Set the rotation effect for component transitions when inserting and deleting.
- * The value represents the starting rotation point for the inserting animation and the ending rotation point for the deleting animation.
- * -x: Horizontal component of the rotational vector.
- * -y: Vertical component of the rotational vector. 
- * -z: Vertical component of the rotational vector.
- * -centerX, centerY specify the rotation center point, with default values of 50.percent,
- * meaning that the default rotation center point is the center point of the component.
- * -The center point of (0, 0) represents the upper-left corner of the component.
- * -centerZ refers to the Z-axis anchor point. The default value of centerZ is 0.
- * -perspective indicates the visual distance. The perspective property does not support transition animation.
- * <br>default value is x: 0.0, y: 0.0, z: 0.0, centerX: 50.percent, centerY: 50.percent, centerY: 0.0, perspective:0.0.
+ * @param { ?RotateOptions } options - Rotate options.
  * @returns { TransitionEffect } A new TransitionEffect instance with rotation effect.
  */
 @!APILevel[
@@ -11340,10 +10830,11 @@ public class TransitionEffect <: RemoteDataLite {
     public static func rotate(options: ?RotateOptions): TransitionEffect
 
 /**
- * Creates a move transition effect.
- * The component moves in from or out to the specified edge.
+ * Slide-in and slide-out of the component from the screen edge during transition.
+ * It is essentially a translation effect, which is the value of the start point of insertion
+ * and the end point of deletion.
  *
- * @param { TransitionEdge } edge - The edge that component will move to
+ * @param { TransitionEdge } edge - the edge that component will move to
  * @returns { TransitionEffect } A new TransitionEffect instance with move effect.
  */
 @!APILevel[
@@ -11405,8 +10896,8 @@ public class TransitionEffect <: RemoteDataLite {
     }
 
 /**
- * Specifies a transition effect with transparency of 0, which is equivalent to TransitionEffect.opacity(0).
- * The component becomes completely transparent during the transition.
+ * Applies a transition effect with the opacity changing from 0 to 1 when the component appears
+ * And from 1 to 0 when the component disappears. This is equivalent to **TransitionEffect.opacity(0)**
  */
 @!APILevel[
     since: "22",
@@ -11415,8 +10906,9 @@ public class TransitionEffect <: RemoteDataLite {
     public static let OPACITY: TransitionEffect = TransitionEffect.opacity(0.0)
 
 /**
- * Defines a slide transition effect.
- * The component slides in from the start edge and slides out to the end edge.
+ * Applies a transition effect of sliding in from the start edge when the component appears and sliding out from the end edge when the component disappears. 
+ * This means sliding in from the left edge and sliding out from the right edge for left-to-right scripts, and sliding in from the right edge and sliding out from the left edge for right-to-left scripts.
+ * This is equivalent to TransitionEffect.asymmetric(TransitionEffect.move(TransitionEdge.START), TransitionEffect.move(TransitionEdge.END))
  */
 @!APILevel[
     since: "22",
@@ -11426,10 +10918,12 @@ public class TransitionEffect <: RemoteDataLite {
         TransitionEffect.move(TransitionEdge.End))
 
 /**
- * Specify a transition effect where the element enters by shrinking first and then expanding as it slides in from the right,
- * and exits by shrinking first and then expanding as it slides out to the left, with a minimum scale ratio of 0.8.
- * It comes with default animation parameters, which can also be overridden.
- * The default animation duration is set to 600ms, and the specified animation curve is cubicBezierCurve(0.24, 0.0, 0.50, 1.0).
+ * Applies a transition effect of sliding in from the right with first scaling down and then scaling up
+ * when the component appears and sliding out from the right
+ * with first scaling down and then scaling up when the component disappears.
+ * This transition effect comes with its own animation parameters, which can also be overridden.
+ * The default animation duration is 600 milliseconds,
+ * with a specified animation curve of cubicBezierCurve(0.24, 0.0, 0.50, 1.0) and a minimum scale factor of 0.8.
  */
 @!APILevel[
     since: "22",
@@ -11463,7 +10957,7 @@ public type TransitionFinishCallback = (Bool) -> Unit
 public enum ModalTransition {
 /**
  * Use default animation.
- * The system chooses the most appropriate animation for the modal transition.
+ * Upward animation when entering and downward animation when exiting.
  */
 @!APILevel[
     since: "22",
@@ -11482,8 +10976,7 @@ public enum ModalTransition {
     None
     | 
 /**
- * Use alpha animation.
- * The modal fades in or out during the transition.
+ * Opacity gradient animation for the modal.
  */
 @!APILevel[
     since: "22",
@@ -11538,8 +11031,7 @@ public enum SheetSize {
     Medium
     | 
 /**
- * The sheet height is large.
- * Typically represents a sheet that covers a large portion of the screen.
+ * The sheet height is almost the screen height
  */
 @!APILevel[
     since: "22",
@@ -11548,8 +11040,7 @@ public enum SheetSize {
     Large
     | 
 /**
- * The sheet height fits its content.
- * The sheet size adjusts to accommodate all its content.
+ * The sheet height automatically adapts to the content.
  */
 @!APILevel[
     since: "22",
@@ -11614,8 +11105,7 @@ public enum SheetType {
     Center
     | 
 /**
- * Popup sheet. The popup sheet cannot be dismissed with a pull-down gesture.
- * The sheet appears as a popup and requires explicit dismissal.
+ * Defines popup sheet type.
  */
 @!APILevel[
     since: "22",
@@ -11660,8 +11150,7 @@ extend SheetType <: Equatable<SheetType> {
 ]
 public class BlurOptions {
 /**
- * Fuzzy gray scale parameter
- * Controls the intensity of the blur effect.
+ * Fuzzy gray scale parameter.The range of values for the two parameters is [0, 127].
  */
 @!APILevel[
     since: "22",
@@ -11691,7 +11180,8 @@ public class BlurOptions {
 public class ForegroundBlurStyleOptions {
 /**
  * Color mode used for the foreground blur.
- * <br>Default value: **ThemeColorMode.System**.
+ *
+ * @default ThemeColorMode.System
  */
 @!APILevel[
     since: "22",
@@ -11711,6 +11201,8 @@ public class ForegroundBlurStyleOptions {
 
 /**
  * Defines the options of blur.
+ *
+ * @default BlurOptions([0.0, 0.0])
  */
 @!APILevel[
     since: "22",
@@ -11720,8 +11212,10 @@ public class ForegroundBlurStyleOptions {
 
 /**
  * Foreground blur scale.
- * <br>Default value: **1.0**.
- * <br>Value range: [0.0, 1.0].
+ * Default value: **1.0**.
+ * Value range: [0.0, 1.0].
+ *
+ * @default 1.0
  */
 @!APILevel[
     since: "22",
@@ -11758,7 +11252,7 @@ public class ForegroundBlurStyleOptions {
 ]
 public class PopupButton {
 /**
- * The text displayed on the popup button.
+ * Value of the previewText.
  */
 @!APILevel[
     since: "22",
@@ -11767,7 +11261,7 @@ public class PopupButton {
     public var value: ?String
 
 /**
- * Function to be executed when the button is clicked.
+ * Mouse action of the click event.
  */
 @!APILevel[
     since: "22",
@@ -11789,7 +11283,7 @@ public class PopupButton {
 }
 
 /**
- * Contains information about popup state changes.
+ * Popup state change param
  */
 @!APILevel[
     since: "22",
@@ -11797,7 +11291,7 @@ public class PopupButton {
 ]
 public class PopupStateChangeParam {
 /**
- * Indicates whether the popup is currently visible.
+ * is Visible.
  */
 @!APILevel[
     since: "22",
@@ -11818,7 +11312,7 @@ public class PopupStateChangeParam {
 }
 
 /**
- * Configuration options for popup components.
+ * Defines the popup options.
  */
 @!APILevel[
     since: "22",
@@ -11845,7 +11339,7 @@ public class PopupOptions {
     public var placement: ?Placement
 
 /**
- * Primary action button in the popup.
+ * The first button.
  */
 @!APILevel[
     since: "22",
@@ -11854,7 +11348,7 @@ public class PopupOptions {
     public var primaryButton: ?PopupButton
 
 /**
- * Secondary action button in the popup.
+ * The second button.
  */
 @!APILevel[
     since: "22",
@@ -11863,7 +11357,7 @@ public class PopupOptions {
     public var secondaryButton: ?PopupButton
 
 /**
- * Callback function triggered when the popup state changes.
+ * Callback for the popup status change event
  */
 @!APILevel[
     since: "22",
@@ -11872,7 +11366,26 @@ public class PopupOptions {
     public var onStateChange: ?(PopupStateChangeParam) -> Unit
 
 /**
- * The offset of the sharp corner of popup.
+ * Offset of the arrow relative to the context menu. The offset settings take effect only when the value is valid,
+ * can be converted to a number greater than 0, and does not cause the arrow to extend beyond the safe area of
+ * the context menu.
+ * NOTE:
+ * The safe distance of the arrow from the four sides of the menu is the sum of the menu's corner radius and
+ * half the width of the arrow. The value of placement determines whether the offset is horizontal or vertical.
+ * When the arrow is in the horizontal direction of the menu, the offset is the distance from the arrow to the
+ * leftmost arrow's safe distance. When the arrow is in the vertical direction of the menu, the offset is the
+ * distance from the arrow to the topmost arrow's safe distance. The default position where the arrow is
+ * displayed varies with the value of placement: Without any avoidance by the menu, when placement is set to
+ * Placement.Top or Placement.Bottom, the arrow is displayed horizontally and is centered by default; when
+ * placement is set to Placement.Left or Placement.Right, the arrow is displayed vertically and is centered by
+ * default; when placement is set to Placement.TopLeft or Placement.BottomLeft, the arrow is displayed
+ * horizontally by default, and the distance from the arrow to the left edge of the menu is the arrow's safe
+ * distance; when placement is set to Placement.TopRight or Placement.BottomRight, the arrow is displayed
+ * horizontally by default, and the distance from the arrow to the right edge of the menu is the arrow's safe
+ * distance; when placement is set to Placement.LeftTop or Placement.RightTop, the arrow is displayed vertically
+ * by default, and the distance from the arrow to the top edge of the menu is the arrow's safe distance; when
+ * placement is set to Placement.LeftBottom or Placement.RightBottom, the arrow is displayed vertically by
+ * default, and the distance from the arrow to the bottom edge of the menu is the arrow's safe distance.
  */
 @!APILevel[
     since: "22",
@@ -11882,6 +11395,8 @@ public class PopupOptions {
 
 /**
  * Whether to display in the sub window.
+ *
+ * @default false
  */
 @!APILevel[
     since: "22",
@@ -11891,6 +11406,7 @@ public class PopupOptions {
 
 /**
  * Whether to apply a mask to the popup.
+ * The value true means to apply a transparent mask to the popup, false means not to apply a mask to the popup,
  * and a color value means to apply a mask in the corresponding color to the popup.
  */
 @!APILevel[
@@ -11918,7 +11434,13 @@ public class PopupOptions {
     public var targetSpace: ?Length
 
 /**
- * Controls whether to display the popup's arrow/indicator.
+ * whether show arrow belong to the menu.
+ * NOTE:
+ * When enableArrow is true, an arrow is displayed in the position specified by placement.
+ * If placement is not set or its value is invalid, the arrow is displayed above the target.
+ * If the position is insufficient for holding the arrow, it is automatically adjusted.
+ * When enableArrow is None, no arrow is displayed.
+ *
  * @default true
  */
 @!APILevel[
@@ -11928,7 +11450,24 @@ public class PopupOptions {
     public var enableArrow: ?Bool
 
 /**
- * Sets the position offset of the popup.
+ * Offset for showing the context menu, which should not cause the menu to extend beyond the screen.
+ * NOTE:
+ * When the menu is displayed relative to the parent component area, the width or height of the area is
+ * automatically counted into the offset based on the placement attribute of the menu. When the menu is
+ * displayed above the parent component (that is, placement is set to Placement.TopLeft, Placement.Top, or
+ * Placement.TopRight), a positive value of x indicates rightward movement relative to the parent component,
+ * and a positive value of y indicates upward movement. When the menu is displayed below the parent component
+ * (that is, placement is set to Placement.BottomLeft, Placement.Bottom, or Placement.BottomRight), a positive
+ * value of x indicates rightward movement relative to the parent component, and a positive value of y indicates
+ * downward movement. When the menu is displayed on the left of the parent component (that is, placement is set
+ * to Placement.LeftTop, Placement.Left, or Placement.LeftBottom), a positive value of x indicates leftward
+ * movement relative to the parent component, and a positive value of y indicates downward movement. When the
+ * menu is displayed on the right of the parent component (that is, placement is set to Placement.RightTop,
+ * Placement.Right, or Placement.RightBottom), a positive value of x indicates rightward movement relative to
+ * the parent component, and a positive value of y indicates downward movement. If the display position of the
+ * menu is adjusted (different from the main direction of the initial placement value), the offset value is invalid.
+ *
+ * @default Position(x: 0, y: 0)
  */
 @!APILevel[
     since: "22",
@@ -11946,7 +11485,12 @@ public class PopupOptions {
     public var popupColor: ?ResourceColor
 
 /**
- * Whether hide popup when click mask.
+ * Whether to automatically dismiss the popup when an operation is performed on the page.
+ * NOTE:
+ * To enable the popup to disappear upon a click on it, place a layout component in the builder place the
+ * component in the layout component, and modify the value of the bindPopup variable (show: boolean)
+ * in the onClick event of the layout component.
+ *
  * @default true
  */
 @!APILevel[
@@ -12145,14 +11689,13 @@ public class MenuElement {
 public class CustomPopupOptions {
 /**
  * Popup builder.
- * <p><strong>NOTE</strong>:
- * <br>The popup attribute is a universal attribute. A custom popup does not support display of another popup.
- * <br>The position attribute cannot be used for the first-layer container in the builder.
- * <br>If the position attribute is used, the popup will not be displayed.
- * <br>If a custom component is used in the builder, the aboutToAppear and aboutToDisappear lifecycle callbacks
+ * NOTE:
+ * The popup attribute is a universal attribute. A custom popup does not support display of another popup.
+ * The position attribute cannot be used for the first-layer container in the builder.
+ * If the position attribute is used, the popup will not be displayed.
+ * If a custom component is used in the builder, the aboutToAppear and aboutToDisappear lifecycle callbacks
  * of the custom component are irrelevant to the visibility of the popup. As such, the lifecycle of the
  * custom component cannot be used to determine whether the popup is displayed or not.
- * </p>
  */
 @!APILevel[
     since: "22",
@@ -12172,8 +11715,7 @@ public class CustomPopupOptions {
     public var placement: ?Placement
 
 /**
- * backgroundColor of popup.
- * Controls the background color of the popup.
+ * Background color of dialog.
  */
 @!APILevel[
     since: "22",
@@ -12182,8 +11724,13 @@ public class CustomPopupOptions {
     public var backgroundColor: ?Color
 
 /**
- * Controls whether to display the popup's arrow/indicator.
- * @default true
+ * whether show arrow belong to the menu.
+ * NOTE:
+ * When enableArrow is true, an arrow is displayed in the position specified by placement.
+ * If placement is not set or its value is invalid, the arrow is displayed above the target.
+ * If the position is insufficient for holding the arrow, it is automatically adjusted.
+ * When enableArrow is undefined, no arrow is displayed.
+ * @default false
  */
 @!APILevel[
     since: "22",
@@ -12193,10 +11740,10 @@ public class CustomPopupOptions {
 
 /**
  * Whether to automatically dismiss the popup when an operation is performed on the page.
- * <br>To enable the popup to disappear upon a click on it, place a layout component in the builder place the
+ * To enable the popup to disappear upon a click on it, place a layout component in the builder place the
  * <Popup> component in the layout component, and modify the value of the bindPopup variable (show: boolean)
  * in the onClick event of the layout component.
- * Controls whether the popup is automatically dismissed.
+ *
  * @default true
  */
 @!APILevel[
@@ -12206,8 +11753,7 @@ public class CustomPopupOptions {
     public var autoCancel: ?Bool
 
 /**
- * on State Change.
- * Callback function triggered when the popup state changes.
+ * Callback for the popup status change event.
  */
 @!APILevel[
     since: "22",
@@ -12216,7 +11762,8 @@ public class CustomPopupOptions {
     public var onStateChange: Option<(PopupStateChangeParam) -> Unit>
 
 /**
- * Color of the popup. To remove the background blur, set backgroundBlurStyle to BlurStyle.None.
+ * Color of the popup. To remove the background blur, set backgroundBlurStyle to BlurStyle.NONE.
+ *
  * @default: 0x4d4d4d
  */
 @!APILevel[
@@ -12229,7 +11776,7 @@ public class CustomPopupOptions {
  * The offset of the sharp corner of popup.
  *
  * Offset of the popup arrow relative to the popup. When the arrow is at the top or bottom of the popup:
- * <br>The value 0 indicates that the arrow is located on the leftmost, and any other value indicates the distance
+ * The value 0 indicates that the arrow is located on the leftmost, and any other value indicates the distance
  * from the arrow to the leftmost; the arrow is centered by default. When the arrow is on the left or right
  * side of the popup: The value indicates the distance from the arrow to the top; the arrow is centered by
  * default. When the popup is displayed on either edge of the screen, it will automatically deviate leftward
@@ -12306,9 +11853,8 @@ public class CustomPopupOptions {
 /**
  * Arrow thickness. If the arrow thickness exceeds the length of the edge minus twice the size of the popup
  * rounded corner, the arrow is not drawn.
- * <p><strong>NOTE</strong>:
- * <br>This parameter cannot be set in percentage.
- * </p>
+ * NOTE:
+ * This parameter cannot be set in percentage.
  *
  * @default 16.vp.
  */
@@ -12360,7 +11906,8 @@ public class CustomPopupOptions {
     public var backgroundBlurStyle: ?BlurStyle
 
 /**
- * Controls whether the popup can receive focus.
+ * Set popup focusable
+ *
  * @default true
  */
 @!APILevel[
@@ -12386,9 +11933,8 @@ public class CustomPopupOptions {
  * to the dismissal event as expected.
  * 2. If this parameter is set to a function, the dismissal event is intercepted and the callback function
  * is executed.
- * <p><strong>NOTE</strong>:
- * <br>No more onWillDismiss callback is allowed in an onWillDismiss callback.
- * </p>
+ * NOTE:
+ * No more onWillDismiss callback is allowed in an onWillDismiss callback.
  */
 @!APILevel[
     since: "22",
@@ -12515,8 +12061,7 @@ public class PopupMessageOptions {
 ]
 public class OverlayOffset {
 /**
- * Defines x coordinate offset.
- * Horizontal offset value for overlay positioning.
+ * Coordinate x of the Position.
  */
 @!APILevel[
     since: "22",
@@ -12525,8 +12070,7 @@ public class OverlayOffset {
     public var x: ?Float64
 
 /**
- * Defines y coordinate offset.
- * Vertical offset value for overlay positioning.
+ * Coordinate y of the Position.
  */
 @!APILevel[
     since: "22",
@@ -12558,8 +12102,10 @@ public class OverlayOffset {
 ]
 public class EdgeWidths {
 /**
- * Top property. value range (-∞, ∞)
+ * top property. value range (-∞, ∞)
  * If value > 0, expand outward elements. Else first shrink by value and then expand outward pixels.
+ *
+ * @default 0
  */
 @!APILevel[
     since: "22",
@@ -12568,8 +12114,10 @@ public class EdgeWidths {
     public var top: ?Length
 
 /**
- * Right property. value range (-∞, ∞)
+ * right property. value range (-∞, ∞)
  * If value > 0, expand outward elements. Else first shrink by value and then expand outward pixels.
+ *
+ * @default 0
  */
 @!APILevel[
     since: "22",
@@ -12578,8 +12126,10 @@ public class EdgeWidths {
     public var right: ?Length
 
 /**
- * Bottom property. value range (-∞, ∞)
+ * bottom property. value range (-∞, ∞)
  * If value > 0, expand outward elements. Else first shrink by value and then expand outward pixels.
+ *
+ * @default 0
  */
 @!APILevel[
     since: "22",
@@ -12590,6 +12140,8 @@ public class EdgeWidths {
 /**
  * left property. value range (-∞, ∞)
  * If value > 0, expand outward elements. Else first shrink by value and then expand outward pixels.
+ *
+ * @default 0
  */
 @!APILevel[
     since: "22",
@@ -12740,7 +12292,15 @@ public enum SheetMode {
     | 
 /**
  * The sheet is displayed at the top of the current page.
- * Embedded mode displays the sheet within the current page context.
+ * NOTECurrently, the sheet can only be mounted on a **Page**
+ * or **NavDestination** node, with priority given to the **NavDestination**
+ * node if it is present. This means that, the sheet can only be displayed at
+ * the top of these two types of pages. In this mode, new pages can overlay
+ * the sheet, and when the user returns to the previous page, the sheet remains
+ * present without losing its content. In this mode, you must ensure that
+ * the target page node, such as the **Page** node, has been attached to the tree
+ * before bringing up the sheet; otherwise, the sheet will not be able to be
+ * attached to the corresponding page node.
  */
 @!APILevel[
     since: "22",
@@ -12990,7 +12550,7 @@ public class DismissPopupAction {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var reason: DismissReason
+    public let reason: DismissReason
 
 /**
  * Defines popup dismiss function.
@@ -13011,9 +12571,24 @@ public class DismissPopupAction {
 ]
 public class ContextMenuOptions {
 /**
- * Sets the position offset of the context menu window.
- * The default value of Position is x:0, y:0.
- * Additional offset for the context menu position.
+ * Offset for showing the context menu, which should not cause the menu to extend beyond the screen.
+ * NOTE:
+ * When the menu is displayed relative to the parent component area, the width or height of the area is
+ * automatically counted into the offset based on the placement attribute of the menu. When the menu is
+ * displayed above the parent component (that is, placement is set to Placement.TopLeft, Placement.Top, or
+ * Placement.TopRight), a positive value of x indicates rightward movement relative to the parent component,
+ * and a positive value of y indicates upward movement. When the menu is displayed below the parent component
+ * (that is, placement is set to Placement.BottomLeft, Placement.Bottom, or Placement.BottomRight), a positive
+ * value of x indicates rightward movement relative to the parent component, and a positive value of y indicates
+ * downward movement. When the menu is displayed on the left of the parent component (that is, placement is set
+ * to Placement.LeftTop, Placement.Left, or Placement.LeftBottom), a positive value of x indicates leftward
+ * movement relative to the parent component, and a positive value of y indicates downward movement. When the
+ * menu is displayed on the right of the parent component (that is, placement is set to Placement.RightTop,
+ * Placement.Right, or Placement.RightBottom), a positive value of x indicates rightward movement relative to
+ * the parent component, and a positive value of y indicates downward movement. If the display position of the
+ * menu is adjusted (different from the main direction of the initial placement value), the offset value is invalid.
+ *
+ * @default Position(x:0, y:0) - Percentage values are not supported.
  */
 @!APILevel[
     since: "22",
@@ -13023,9 +12598,8 @@ public class ContextMenuOptions {
 
 /**
  * Preferred position of the context menu. If the set position is insufficient for holding the component, it will be
- * <br> automatically adjusted.
-* @default Placement.BottomLeft.
- * Preferred placement of the context menu.
+ *  automatically adjusted.
+ * @default Placement.BottomLeft.
  */
 @!APILevel[
     since: "22",
@@ -13055,8 +12629,7 @@ public class ContextMenuOptions {
     public var arrowOffset: ?Length
 
 /**
- * The preview content of context menu.
- * Custom preview content for the context menu.
+ * The preview content of selection menu.
  */
 @!APILevel[
     since: "22",
@@ -13065,7 +12638,9 @@ public class ContextMenuOptions {
     public var preview: ?CustomBuilder
 
 /**
- * Animation options for the context menu preview.
+ * The preview animator options.
+ *
+ * @default ContextMenuAnimationOptions(scale: [0.95, 1.1])
  */
 @!APILevel[
     since: "22",
@@ -13198,7 +12773,7 @@ public class DismissContentCoverAction {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var reason: DismissReason
+    public let reason: DismissReason
 
 /**
  * Defines content cover dismiss function.
@@ -13263,7 +12838,7 @@ public class ContextMenuAnimationOptions {
 }
 
 /**
- * Provides functionality to dismiss a sheet with a reason.
+ * Component sheet dismiss
  */
 @!APILevel[
     since: "22",
@@ -13306,7 +12881,11 @@ extend String <: CombinationKeyType {}
 ]
 public interface CommonMethod<T> {
 /**
- * Registers a callback function that is triggered when the component is clicked.
+ * Called when a click event occurs.
+ *
+ * NOTE:
+ * Click events cannot be triggered if the finger is pressed for more than 800 ms.
+ * Click events cannot be triggered if the finger moves more than 20.px after pressing down.
  *
  * @param { ?(ClickEvent) -> Unit } event - The callback function to be executed on click
  * @returns { T } Returns the component itself.
@@ -13318,7 +12897,7 @@ public interface CommonMethod<T> {
     func onClick(event: ?(ClickEvent) -> Unit): T
 
 /**
- * Registers a callback function that is triggered when the component appears on the screen.
+ * This callback is triggered when a component mounts a display.
  *
  * @param { ?() -> Unit } event - The callback function to be executed when the component appears
  * @returns { T } Returns the component itself.
@@ -13356,7 +12935,7 @@ public interface CommonMethod<T> {
     func onTouch(event: ?(TouchEvent) -> Unit): T
 
 /**
- * Registers a callback function that is triggered when the mouse pointer enters or leaves the component.
+ * Trigger a hover event.
  *
  * @param { ?(Bool) -> Unit } event - The callback function to be executed on hover events.
  *                                   The boolean parameter indicates whether the pointer is hovering over the component.
@@ -13372,8 +12951,7 @@ public interface CommonMethod<T> {
  * This callback is triggered when the size or position of this component change finished.
  * Registers a callback function that is triggered when the component's size or position changes.
  *
- * @param { ?(Area, Area) -> Unit } event - The callback function to be executed when the area changes.
- *                                        The first parameter is the old area, the second is the new area.
+ * @param { ?(Area, Area) -> Unit } event - event callback.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -13383,11 +12961,11 @@ public interface CommonMethod<T> {
     func onAreaChange(event: ?(Area, Area) -> Unit): T
 
 /**
- * Registers a callback function that is triggered when the visible area of the component changes.
+ * Trigger a visible area change event.
  *
- * @param { ?Array<Float64> } ratios - Array of visibility ratios that trigger the callback
- * @param { ?(Bool, Float64) -> Unit } event - The callback function to be executed when visibility changes.
- *                                           The boolean indicates if the component is visible, and the float is the visibility ratio.
+ * @param { ?Array<Float64> } ratios - Threshold array. Each threshold represents a ratio of the component's visible area to the component's total area.
+ *     The value range of the threshold is [0.0, 1.0].
+ * @param { ?(Bool, Float64) -> Unit } event - Callback for visible area changes of the component.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -13410,7 +12988,7 @@ public interface CommonMethod<T> {
     func onMouse(event: ?(MouseEvent) -> Unit): T
 
 /**
- * Set or reset the callback is triggered when component has keyboard input.
+ * Keyboard input
  *
  * @param { ?(KeyEvent) -> Unit } event - The callback function to be executed on key events
  * @returns { T } Returns the component itself.
@@ -13422,7 +13000,7 @@ public interface CommonMethod<T> {
     func onKeyEvent(event: ?(KeyEvent) -> Unit): T
 
 /**
- * Registers a callback function that is triggered when the component receives focus.
+ * Trigger a event when got focus.
  *
  * @param { ?() -> Unit } event - The callback function to be executed when the component gets focus
  * @returns { T } Returns the component itself.
@@ -13434,7 +13012,7 @@ public interface CommonMethod<T> {
     func onFocus(event: ?() -> Unit): T
 
 /**
- * Registers a callback function that is triggered when the component loses focus.
+ * Triggered when the current component loses focus.
  *
  * @param { ?() -> Unit } event - The callback function to be executed when the component loses focus
  * @returns { T } Returns the component itself.
@@ -13446,105 +13024,19 @@ public interface CommonMethod<T> {
     func onBlur(event: ?() -> Unit): T
 
 /**
- * After a listener is bound, the component can be dragged. After the drag occurs, a callback is triggered.
- * Registers a callback function that is triggered when a drag operation starts, providing a DragItemInfo.
- *
- * @param { ?(DragInfo) -> DragItemInfo } event - The callback function to be executed when drag starts
- * @returns { T } Returns the component itself.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func onDragStart(event: ?(DragInfo) -> DragItemInfo): T
-
-/**
- * After binding, a callback is triggered when the component is dragged to the range of the component.
- *
- * @param { ?(DragInfo) -> CustomBuilder } event - The callback function to be executed when drag starts
- * @returns { T } Returns the component itself.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func onDragStart(event: ?(DragInfo) -> CustomBuilder): T
-
-/**
- * After binding, a callback is triggered when the component is dragged to the range of the component.
- *
- * @param { ?(DragInfo) -> Unit } event - The callback function to be executed when drag starts
- * @returns { T } Returns the component itself.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func onDragStart(event: ?(DragInfo) -> Unit): T
-
-/**
- * After binding, a callback is triggered when the component is dragged to the range of the component.
- *
- * @param { ?(DragInfo) -> Unit } event - The callback function to be executed when drag enters
- * @returns { T } Returns the component itself.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func onDragEnter(event: ?(DragInfo) -> Unit): T
-
-/**
- * After binding, a callback is triggered when the drag moves within the range of a placeable component.
- *
- * @param { ?(DragInfo) -> Unit } event - The callback function to be executed when drag moves
- * @returns { T } Returns the component itself.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func onDragMove(event: ?(DragInfo) -> Unit): T
-
-/**
- * After binding, a callback is triggered when the component is dragged out of the component range.
- *
- * @param { ?(DragInfo) -> Unit } event - The callback on drag leave
- * @returns { T } Returns the component itself.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func onDragLeave(event: ?(DragInfo) -> Unit): T
-
-/**
- * The component bound to this event can be used as the drag release target.
- * This callback is triggered when the drag behavior is stopped within the scope of the component.
- *
- * @param { ?(DragInfo) -> Unit } event - The callback function to be executed when drag drops
- * @returns { T } Returns the component itself.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func onDrop(event: ?(DragInfo) -> Unit): T
-
-/**
  * Sets the width of the component or its horizontal layout policy.
  * By default, the component uses the width required for its content.
  * If the width of the component is greater than that of the parent container,
  * the component will be drawn beyond the parent container scope.
  *
- * @param { Option<Length> } widthValue - The width of the component
+ * @param { Option<Length> } value - The width of the component
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func width(widthValue: Option<Length>): T
+    func width(value: Option<Length>): T
 
 /**
  * Sets the height of the component or its vertical layout policy.
@@ -13552,17 +13044,17 @@ public interface CommonMethod<T> {
  * If the height of the component is greater than that of the parent container,
  * the component will be drawn beyond the parent container scope.
  *
- * @param { Option<Length> } heightValue - The height of the component
+ * @param { Option<Length> } value - The height of the component
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func height(heightValue: Option<Length>): T
+    func height(value: Option<Length>): T
 
 /**
- * Sets both the width and height of the component.
+ * Sets the size of the component.
  *
  * @param { Option<Length> } width - The width of the component
  * @param { Option<Length> } height - The height of the component
@@ -13576,8 +13068,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the padding of the component.
- * Sets uniform padding for all sides of the component.
- * Default value: 0.
+ * Default value: **0**.
  *
  * @param { ?Length } value - The padding value for all sides
  * @returns { T } Returns the component itself.
@@ -13605,8 +13096,7 @@ public interface CommonMethod<T> {
     func padding(top!: ?Length, right!: ?Length, bottom!: ?Length, left!: ?Length): T
 
 /**
- * Sets uniform margin for all sides of the component.
- * Default value: 0.
+ * Sets the margin of the component. Default value: 0
  *
  * @param { ?Length } value - The margin value for all sides
  * @returns { T } Returns the component itself.
@@ -13618,7 +13108,8 @@ public interface CommonMethod<T> {
     func margin(value: ?Length): T
 
 /**
- * Sets individual margin values for each side of the component.
+ * Sets the margin of the component.
+ * Default value: **0**.
  *
  * @param { ?Length } top - Margin for the top side
  * @param { ?Length } right - Margin for the right side
@@ -13635,8 +13126,7 @@ public interface CommonMethod<T> {
 /**
  * Sets the weight of the component during layout. A component with this attribute is allocated space
  * along the main axis of its parent container (Row, Column, or Flex) based on its specified weight.
- * Sets the layout weight of the component.
- * Default value: 0.
+ * Default value: **0**.
  *
  * @param { ?Int32 } value - The layout weight of the component.
  * @returns { T } Returns the component itself.
@@ -13689,7 +13179,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the absolute position of the component relative to the position of the parent component.
- * <br>The attribute is not available for a layout container whose width and height are zero.
+ * The attribute is not available for a layout container whose width and height are zero.
  *
  * @param { ?Length } x - X coordinate relative to the parent component
  * @param { ?Length } y - Y coordinate relative to the parent component
@@ -13717,7 +13207,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the offset of the component relative to its original position.
- * <br>The offset attribute does not affect the layout of the parent container.
+ * The offset attribute does not affect the layout of the parent container.
  * It adjusts the component position only during drawing.
  *
  * @param { ?Length } x - X offset from the original position
@@ -13731,8 +13221,8 @@ public interface CommonMethod<T> {
     func offset(x!: ?Length, y!: ?Length): T
 
 /**
- * Sets the alignment mode of the component content in the drawing area.
- * Default value: **Alignment.Center**.
+ * Sets the alignment rules in the relative container.
+ * This API is valid only when the container is RelativeContainer.
  *
  * @param { ?AlignRuleOption } value - The alignment rules
  * @returns { T } Returns the component itself.
@@ -13745,11 +13235,11 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the aspect ratio of the component, which can be obtained using the following formula: width/height.
- * <br>If only width and aspectRatio are set, the height is calculated using the following formula: width/aspectRatio.
- * <br>If only height and aspectRatio are set, the width is calculated using the following formula: height x aspectRatio.
- * <br>If width, height, and aspectRatio are all set, the explicitly set height is ignored, and the effective height is
+ * If only width and aspectRatio are set, the height is calculated using the following formula: width/aspectRatio.
+ * If only height and aspectRatio are set, the width is calculated using the following formula: height x aspectRatio.
+ * If width, height, and aspectRatio are all set, the explicitly set height is ignored, and the effective height is
  * calculated using the following formula: width/aspectRatio.
- * <br>This parameter takes effect only when a valid value greater than 0 is specified.
+ * This parameter takes effect only when a valid value greater than 0 is specified.
  *
  * @param { Float64 } value - The aspect ratio (width/height)
  * @returns { T } Returns the component itself.
@@ -13762,7 +13252,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the display priority for the component in the layout container.
- * <br>This parameter is only effective in Row, Column, and Flex (single-line) container components.
+ * This parameter is only effective in Row, Column, and Flex (single-line) container components.
  *
  * @param { ?Int32 } value - The display priority
  * @returns { T } Returns the component itself.
@@ -13775,7 +13265,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the base size of the component in the main axis of the parent container.
- * 
+ *
  * @param { ?Length } value - The base size in the main axis
  * @returns { T } Returns the component itself.
  */
@@ -13786,9 +13276,7 @@ public interface CommonMethod<T> {
     func flexBasis(value: ?Length): T
 
 /**
- * Sets the percentage of the parent container's remaining space that is allocated to the component.
- * Sets the flex grow factor of the component.
- * Default value: 0.0
+ * Sets the percentage of the parent container's remaining space that is allocated to the component. Default value: 0
  *
  * @param { ?Float64 } value - The flex grow factor
  * @returns { T } Returns the component itself.
@@ -13801,8 +13289,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the percentage of the parent container's remaining space that is allocated to the component.
- * Sets the flex grow factor of the component.
- * Default value: 0.
+ * Default value: **0**.
  *
  * @param { ?Int64 } value - The flex grow factor
  * @returns { T } Returns the component itself.
@@ -13841,8 +13328,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the alignment mode of the child components along the cross axis of the parent container.
- * Sets the alignment of the component along the cross axis.
- * Default value: ItemAlign.Auto.
+ * Default value: **ItemAlign.Auto**.
  *
  * @param { ?ItemAlign } value - The alignment mode along the cross axis
  * @returns { T } Returns the component itself.
@@ -13878,7 +13364,7 @@ public interface CommonMethod<T> {
     func responseRegion(value: ?Array<Rectangle>): T
 
 /**
- * Sets all border properties at once.
+ * Sets the border.
  *
  * @param { ?Length } width - Border width
  * @param { ?ResourceColor } color - Border color
@@ -13933,7 +13419,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the radius of the border rounded corners.
- * <br>The radius is restricted by the component size. The maximum value is half of the component width or height.
+ * The radius is restricted by the component size. The maximum value is half of the component width or height.
  *
  * @param { ?Length } topLeft - Radius of the top-left corner
  * @param { ?Length } topRight - Radius of the top-right corner
@@ -13949,7 +13435,7 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the radius of the border rounded corners.
- * <br>The radius is restricted by the component size. The maximum value is half of the component width or height.
+ * The radius is restricted by the component size. The maximum value is half of the component width or height.
  *
  * @param { ?Length } value - Border radius for all corners
  * @returns { T } Returns the component itself.
@@ -13976,7 +13462,7 @@ public interface CommonMethod<T> {
 /**
  * Applies a foreground blur style to the component.
  *
- * @param { ?BlurStyle } value - The blur style
+ * @param { ?BlurStyle } value - Settings of the foreground blur style.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -13988,8 +13474,8 @@ public interface CommonMethod<T> {
 /**
  * Applies a foreground blur style to the component.
  *
- * @param { ?BlurStyle } value - The blur style
- * @param { ?ForegroundBlurStyleOptions } options - Additional blur options
+ * @param { ?BlurStyle } value - Settings of the foreground blur style.
+ * @param { ?ForegroundBlurStyleOptions } options - Foreground blur options.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14002,7 +13488,8 @@ public interface CommonMethod<T> {
  * Sets the foreground color of the component.
  * If the component does not have a foreground color set, it inherits the color from its parent component by default.
  *
- * @param { ?ColoringStrategy } value - Foreground color strategy
+ * @param { ?ColoringStrategy } value - Foreground color.
+ *     The value can be a specific color or a coloring strategy. Property animations are supported.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14038,9 +13525,9 @@ public interface CommonMethod<T> {
     func backgroundColor(value: ?ResourceColor): T
 
 /**
- * Sets the background image of the component.
+ * Background image
  *
- * @param { ?ResourceStr } src - The background image source
+ * @param { ?ResourceStr } src - the background image source
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14053,7 +13540,7 @@ public interface CommonMethod<T> {
  * Background image.
  * Sets the background image of the component with repeat options.
  *
- * @param { ?ResourceStr } src - The background image source
+ * @param { ?ResourceStr } src - the background image source
  * @param { ?ImageRepeat } repeat - How to repeat the background image
  * @returns { T } Returns the component itself.
  */
@@ -14064,7 +13551,7 @@ public interface CommonMethod<T> {
     func backgroundImage(src: ?ResourceStr, repeat: ?ImageRepeat): T
 
 /**
- * Sets the size of the background image using ImageSize.
+ * Background image size
  *
  * @param { ?ImageSize } value - The width and height of the background image
  * @returns { T } Returns the component itself.
@@ -14076,7 +13563,7 @@ public interface CommonMethod<T> {
     func backgroundImageSize(value: ?ImageSize): T
 
 /**
- * Sets the size of the background image using width and height.
+ * Background image size
  *
  * @param { ?Length } width - Width of the background image
  * @param { ?Length } height - Height of the background image
@@ -14089,10 +13576,7 @@ public interface CommonMethod<T> {
     func backgroundImageSize(width!: ?Length, height!: ?Length): T
 
 /**
- * Background image position.
- * Sets the position of the background image using Alignment.
- * x: Horizontal coordinate;
- * y: Vertical axis coordinate;
+ * Background image position x:Horizontal coordinate;y:Vertical axis coordinate
  *
  * @param { ?Alignment } value - Alignment of the background image
  * @returns { T } Returns the component itself.
@@ -14104,10 +13588,8 @@ public interface CommonMethod<T> {
     func backgroundImagePosition(value: ?Alignment): T
 
 /**
- * Background image position.
- * Sets the position of the background image using coordinates.
- * x: Horizontal coordinate;
- * y: Vertical axis coordinate;
+ * Background image position
+ * x:Horizontal coordinate;y:Vertical axis coordinate.
  *
  * @param { ?Length } x - Horizontal coordinate
  * @param { ?Length } y - Vertical coordinate
@@ -14120,10 +13602,7 @@ public interface CommonMethod<T> {
     func backgroundImagePosition(x!: ?Length, y!: ?Length): T
 
 /**
- * Scale ratio along the x-, y-, and z-axis. The default value is **1**.
- * centerX and centerY are used to set the scale center point.
- * default:{x:1,y:1,z:1,centerX:'50%',centerY:'50%'}
- * Sets the scale transformation of the component.
+ * Scales the component.
  *
  * @param { ?Float32 } x - Scale ratio along the x-axis
  * @param { ?Float32 } y - Scale ratio along the y-axis
@@ -14154,10 +13633,10 @@ public interface CommonMethod<T> {
  * Set component rotation.
  * Sets the rotation transformation of the component.
  *
- * @param { ?Float64 } x - X component of the rotation vector
+ * @param { ?Float32 } x - X component of the rotation vector
  * @param { ?Float64 } y - Y component of the rotation vector
- * @param { ?Float64 } z - Z component of the rotation vector
- * @param { ?Float64 } angle - Rotation angle in degrees
+ * @param { ?Float32 } z - Z component of the rotation vector
+ * @param { ?Float32 } angle - Rotation angle in degrees
  * @param { ?Length } centerX - X coordinate of the rotation center point
  * @param { ?Length } centerY - Y coordinate of the rotation center point
  * @returns { T } Returns the component itself.
@@ -14166,10 +13645,11 @@ public interface CommonMethod<T> {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func rotate(x!: ?Float64, y!: ?Float64, z!: ?Float64, angle!: ?Float64, centerX!: ?Length, centerY!: ?Length): T
+    func rotate(x!: ?Float32, y!: ?Float32, z!: ?Float32, angle!: ?Float32, centerX!: ?Length, centerY!: ?Length): T
 
 /**
- * Sets the translation transformation of the component.
+ * Translates the component.
+ * Compared to translate, this API supports the **None** type for the **translate** parameter.
  *
  * @param { ?Length } x - Translation distance along the x-axis
  * @param { ?Length } y - Translation distance along the y-axis
@@ -14202,9 +13682,9 @@ public interface CommonMethod<T> {
  * For details about the options parameter, see the options parameter description.
  *
  * @param { String } id - Transition of the shared element.
- *     <br>If the same **id** value is configured for a component on the two pages,
- *     <br>this component is considered as a shared element of the pages.
- *     <br>If the **id** value is an empty string, no transition will be applied to the component.
+ *     If the same **id** value is configured for a component on the two pages,
+ *     this component is considered as a shared element of the pages.
+ *     If the **id** value is an empty string, no transition will be applied to the component.
  * @param { ?sharedTransitionOptions } options - Parameters of the shared element transition animation.
  * @returns { T } Returns the component itself.
  */
@@ -14215,24 +13695,24 @@ public interface CommonMethod<T> {
     func sharedTransition(id: String, options!: ?SharedTransitionOptions): T
 
 /**
- * Sets a geometry transition for the component.
+ * Shared geometry transition
  *
- * @param { ?String } id - Geometry transition ID
- * @param { ?Bool } followWithoutTransition - Whether to follow without transition
+ * @param { ?String } id - geometry transition id
+ * @param { ?Bool } follow - Whether to follow without transition
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func geometryTransition(id: ?String, followWithoutTransition!: ?Bool): T
+    func geometryTransition(id: ?String, follow!: ?Bool): T
 
 /**
  * Adds the content blurring effect for the current component. The input parameter is the blurring radius.
  * The larger the blurring radius, the more blurring the content.
  * If the value is 0, the content blurring effect is not blurring.
  *
- * @param { ?Float64 } value - The blurring radius
+ * @param { ?Float64 } value - value indicates radius of backdrop blur.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14244,7 +13724,7 @@ public interface CommonMethod<T> {
 /**
  * Applies a color blend effect to the component.
  *
- * @param { ?ResourceColor } value - The blend color
+ * @param { ?ResourceColor } value - Color to blend with the component.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14256,7 +13736,9 @@ public interface CommonMethod<T> {
 /**
  * Applies a background blur effect to the component. You can customize the blur radius and grayscale parameters.
  *
- * @param { ?Float64 } value - The blurring radius
+ * @param { ?Float64 } value - Background blur effect to apply to the component.
+ *     The input parameter is the blur radius. The larger the radius is, the more blurred the background is.
+ *     If the value is **0**, the background is not blurred.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14283,7 +13765,15 @@ public interface CommonMethod<T> {
 /**
  * Applies a grayscale effect to the component.
  *
- * @param { ?Float64 } value - Grayscale value (0.0 to 1.0)
+ * @param { ?Float64 } value - Grayscale conversion ratio of the component.
+ *     If the value is **1.0**, the component is completely converted to grayscale.
+ *     If the value is **0.0**, the component remains unchanged. Between **0** and **1**,
+ *     the value applies a linear multiplier on the grayscale effect. The unit is percentage.
+ *     Default value: **0.0**.
+ *     Value range: [0.0, 1.0].
+ *   **NOTE**:
+ *     A value less than **0.0** evaluates to the value **0.0**.
+ *     A value greater than **1.0** evaluates to the value **1.0**.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14295,11 +13785,13 @@ public interface CommonMethod<T> {
 /**
  * Applies a brightness effect to the component.
  *
- * @param { ?Float64 } value - Brightness of the component. Default value: **1.0**. 
- * <br> The value **1** indicates no effects.
- * <br> The value **0** indicates the complete darkness. If the value is less than **1**, the brightness decreases.
- * <br> If the value is greater than **1**, the brightness increases. 
- * <br> A larger value indicates a higher brightness. A brightness of 2 turns the component completely white.
+ * @param { ?Float64 } value - Brightness of the component. The value **1** indicates no effects.
+ *     The value **0** indicates the complete darkness. If the value is less than **1**, the brightness
+ *     decreases. If the value is greater than **1**, the brightness increases. A larger value indicates
+ *     a higher brightness. A brightness of 2 turns the component completely white.
+ *     Default value: **1.0**Recommended value range: [0, 2].
+ *   **NOTE**
+ *     A value less than 0 evaluates to the value **0**.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14311,7 +13803,15 @@ public interface CommonMethod<T> {
 /**
  * Applies a saturation effect to the component.
  *
- * @param { ?Float64 } value - Saturation value
+ * @param { ?Float64 } value - Saturation of the component. The saturation is the ratio of the
+ *     chromatic component to the achromatic component (gray) in a color. If the value is **1**,
+ *     the original image is displayed. If the value is greater than **1**, a higher percentage of
+ *     the chromatic component indicates a higher saturation. If the value is less than **1**, a higher
+ *     percentage of the achromatic component indicates a lower saturation. The unit is percentage.
+ *     Default value: **1.0**.
+ *     Recommended value range: [0, 50).
+ *   **NOTE**
+ *     A value less than 0 evaluates to the value **0**.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14323,12 +13823,15 @@ public interface CommonMethod<T> {
 /**
  * Applies a contrast effect to the component. 
  *
- * @param { ?Float64 } value - Contrast of the component. Default value: **1.0**.
- * <br> The input parameter is a contrast value. 
- * <br> If the value is **1**, the source image is displayed.
- * <br> If the value is greater than 1, a larger value indicates a higher contrast and a clearer image.
- * <br> If the value is less than 1, a smaller value indicates a lower contrast is.
- * <br> If the value is **0**, the image becomes all gray. The unit is percentage.
+ * @param { ?Float64 } value - Contrast of the component. The input parameter is a
+ *     contrast value. If the value is **1**, the source image is displayed. If the
+ *     value is greater than 1, a larger value indicates a higher contrast and a clearer
+ *     image. If the value is less than 1, a smaller value indicates a lower contrast is.
+ *     If the value is **0**, the image becomes all gray. The unit is percentage.
+ *     Default value: **1.0**.
+ *     Recommended value range: [0, 10).
+ *   **NOTE**
+ *     A value less than 0 evaluates to the value **0**.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14341,7 +13844,7 @@ public interface CommonMethod<T> {
  * Invert the input image. Value defines the scale of the conversion. 100% of the value is a complete reversal.
  * A value of 0% does not change the image. (Percentage)
  *
- * @param { ?Float64 } value - Value indicates the scale of the conversion or the options of invert
+ * @param { ?Float64 } value - value indicates the scale of the conversion or the options of invert.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14370,7 +13873,7 @@ public interface CommonMethod<T> {
  * Sepia conversion ratio of the component.
  *
  * @param { ?Float64 } value - Sepia conversion ratio of the component. If the value is **1**, the image
- * <br> is completely sepia. If the value is **0**, the component remains unchanged.
+ *  is completely sepia. If the value is **0**, the component remains unchanged.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14383,8 +13886,8 @@ public interface CommonMethod<T> {
  * Rotates the hue of the component.
  *
  * @param { ?Float32 } value - Hue rotation angle of the component.
- *     <br>A rotation of 360 degrees leaves the color unchanged.
- *     <br>A rotation of 180 degrees and then -180 degrees also leaves the color unchanged.
+ *     A rotation of 360 degrees leaves the color unchanged.
+ *     A rotation of 180 degrees and then -180 degrees also leaves the color unchanged.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14408,7 +13911,7 @@ public interface CommonMethod<T> {
 /**
  * Controls the display or hide of the current component.
  *
- * @param { ?Visibility } value - The visibility state
+ * @param { ?Visibility } value - Whether the component is visible.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14422,10 +13925,10 @@ public interface CommonMethod<T> {
  * That is, whether to perform clipping based on the edge contour of the parent container.
  *
  * @param { ?Bool } value - Whether to perform clipping based on the edge contour of the parent container. 
- * <br>Default value: **false**.
- * <br>**true**: Perform clipping. **false**: Do not perform clipping.
- * <br>If this parameter is set to **true**.
- * <br>child components exceeding the current component's bounds will not respond to bound gesture events.
+ *      Default value: false.
+ *      true: Perform clipping. false: Do not perform clipping.
+ *      If this parameter is set to true.
+ * child components exceeding the current component's bounds will not respond to bound gesture events.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14478,7 +13981,7 @@ public interface CommonMethod<T> {
  * The popup can be displayed only after the entire page is fully constructed. Therefore, to avoid incorrect
  * display positions and shapes, do not set this parameter to true while the page is still being constructed.
  *
- * @param { ?Bool } show - Whether to show the popup, default value is false
+ * @param { ?Bool } show - Whether to show the popup, default is false.
  * @param { ?PopupOptions } popup - Popup options
  * @returns { T } Returns the component itself.
  */
@@ -14494,7 +13997,7 @@ public interface CommonMethod<T> {
  * The popup can be displayed only after the entire page is fully constructed. Therefore, to avoid incorrect
  * display positions and shapes, do not set this parameter to true while the page is still being constructed.
  *
- * @param { ?Bool } show - Whether to show the popup, default value is false
+ * @param { ?Bool } show - Whether to show the popup, default is false.
  * @param { ?CustomPopupOptions } popup - Custom popup options
  * @returns { T } Returns the component itself.
  */
@@ -14505,9 +14008,9 @@ public interface CommonMethod<T> {
     func bindPopup(show: ?Bool, popup: ?CustomPopupOptions): T
 
 /**
- * Binds a menu to the component.
+ * Menu control
  *
- * @param { ?Array<MenuElement> } content - Indicates the content of menu
+ * @param { ?Array<MenuElement> } content - Indicates the content of menu.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14517,21 +14020,21 @@ public interface CommonMethod<T> {
     func bindMenu(content: ?Array<MenuElement>): T
 
 /**
- * Binds a custom menu to the component.
+ * Menu control
  *
- * @param { ?CustomBuilder } content - Custom menu builder
+ * @param { ?CustomBuilder } builder - Indicates the content of menu.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func bindMenu(content!: ?CustomBuilder): T
+    func bindMenu(builder!: ?CustomBuilder): T
 
 /**
  * Binds a context menu to the component, whose visibility is subject to the isShown settings.
  *
- * @param { ?CustomBuilder } content - Indicates the content of context menu
+ * @param { ?CustomBuilder } builder - Indicates the content of context menu
  * @param { ?ResponseType } responseType - Indicates response type of context menu, Long pressing with a mouse device is not supported
  * @param { ?ContextMenuOptions } options - Indicates the options of context menu
  * @returns { T } Returns the component itself.
@@ -14540,7 +14043,7 @@ public interface CommonMethod<T> {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func bindContextMenu(content!: ?CustomBuilder, responseType!: ?ResponseType, options!: ?ContextMenuOptions): T
+    func bindContextMenu(builder!: ?CustomBuilder, responseType!: ?ResponseType, options!: ?ContextMenuOptions): T
 
 /**
  * Linear Gradient
@@ -14563,7 +14066,7 @@ public interface CommonMethod<T> {
         repeating!: ?Bool): T
 
 /**
- * Applies a sweep gradient to the component.
+ * Creates a sweep gradient.
  *
  * @param { ?(Length, Length) } center - Defines center point for angle gradient
  * @param { ?Float64 } start - Defines the starting point of angle gradient. The default value is 0
@@ -14581,7 +14084,7 @@ public interface CommonMethod<T> {
         colors!: ?Array<(ResourceColor, Float64)>, repeating!: ?Bool): T
 
 /**
- * Applies a radial gradient to the component.
+ * Creates a radial gradient.
  *
  * @param { ?(Length, Length) } center - Defines center point for radial gradient
  * @param { ?Length } radius - Defines radius of the radial gradient
@@ -14597,10 +14100,10 @@ public interface CommonMethod<T> {
         repeating!: ?Bool): T
 
 /**
- * Sets a keyboard shortcut using a FunctionKey.
+ * Sets hot keys
  *
- * @param { ?FunctionKey } value - The function key
- * @param { ?Array<ModifierKey> } keys - Modifier keys
+ * @param { ?FunctionKey } value - Character of the combination key.
+ * @param { ?Array<ModifierKey> } keys - The modifier keys modify the action of key when the key are pressed at the same time.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14610,10 +14113,10 @@ public interface CommonMethod<T> {
     func keyboardShortcut(value: ?FunctionKey, keys: ?Array<ModifierKey>): T
 
 /**
- * Sets a keyboard shortcut using a string.
+ * Sets hot keys
  *
- * @param { ?String } value - The key string
- * @param { ?Array<ModifierKey> } keys - Modifier keys
+ * @param { ?String } value - Character of the combination key.
+ * @param { ?Array<ModifierKey> } keys - The modifier keys modify the action of key when the key are pressed at the same time.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14623,11 +14126,11 @@ public interface CommonMethod<T> {
     func keyboardShortcut(value: ?String, keys: ?Array<ModifierKey>): T
 
 /**
- * Sets a keyboard shortcut using a FunctionKey with a custom action.
+ * Sets hot keys.
  *
- * @param { ?FunctionKey } value - The function key
- * @param { ?Array<ModifierKey> } keys - Modifier keys
- * @param { ?() -> Unit } action - Custom action to execute
+ * @param { ?FunctionKey } value - Character of the combination key.
+ * @param { ?Array<ModifierKey> } keys - The modifier keys modify the action of key when the key are pressed at the same time.
+ * @param { ?() -> Unit } action - Callback function, triggered when the shortcut keyboard is pressed.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14637,11 +14140,11 @@ public interface CommonMethod<T> {
     func keyboardShortcut(value: ?FunctionKey, keys: ?Array<ModifierKey>, action: ?() -> Unit): T
 
 /**
- * Sets a keyboard shortcut using a string with a custom action.
+ * Sets hot keys
  *
- * @param { ?String } value - The key string
- * @param { ?Array<ModifierKey> } keys - Modifier keys
- * @param { ?() -> Unit } action - Custom action to execute
+ * @param { ?String } value - Character of the combination key.
+ * @param { ?Array<ModifierKey> } keys - The modifier keys modify the action of key when the key are pressed at the same time.
+ * @param { ?() -> Unit } action - Callback function, triggered when the shortcut keyboard is pressed.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14665,7 +14168,9 @@ public interface CommonMethod<T> {
 /**
  * How the final state of the component's content is rendered during its width and height animation process.
  *
- * @param { ?RenderFit } fitMode - How the final state of the component's content is rendered during. Default value: RenderFit.TopLeft.
+ * @param { ?RenderFit } fitMode - How the final state of the component's content is rendered during.
+ *     its width and height animation process.
+ *     If **renderFit** is not set, the default value **RenderFit.TOP_LEFT** is used.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14688,10 +14193,8 @@ public interface CommonMethod<T> {
 
 /**
  * Sets the safe area to be expanded to.
- * <br>default value: 
- * <br>types: [SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD],
- * <br>edges: [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM, SafeAreaEdge.START, SafeAreaEdge.END]
- * Expands the safe area of the component.
+ * default:{types: [SafeAreaType.SYSTEM, SafeAreaType.CUTOUT, SafeAreaType.KEYBOARD],
+ * edges: [SafeAreaEdge.TOP, SafeAreaEdge.BOTTOM, SafeAreaEdge.START, SafeAreaEdge.END]}
  *
  * @param { ?Array<SafeAreaType> } types - Indicates the types of the safe area
  * @param { ?Array<SafeAreaEdge> } edges - Indicates the edges of the safe area
@@ -14720,27 +14223,27 @@ public interface CommonMethod<T> {
 /**
  * Set the transition effect of component when it appears and disappears.
  *
- * @param { ?TransitionEffect } effect - The transition effect
+ * @param { ?TransitionEffect } value - The transition effect
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func transition(effect: ?TransitionEffect): T
+    func transition(value: ?TransitionEffect): T
 
 /**
  * Set the transition effect of component when it appears and disappears.
  *
- * @param { ?TransitionEffect } effect - The transition effect
- * @param { ?TransitionFinishCallback } onFinish - Callback when transition finishes
+ * @param { ?TransitionEffect } value - The transition effect
+ * @param { ?TransitionFinishCallback } onFinish - transition finish callback.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func transition(effect: ?TransitionEffect, onFinish: ?TransitionFinishCallback): T
+    func transition(value: ?TransitionEffect, onFinish: ?TransitionFinishCallback): T
 
 /**
  * Set focusable.
@@ -14772,7 +14275,7 @@ public interface CommonMethod<T> {
 /**
  * Set default focused component when a page create.
  *
- * @param { ?Bool } value - Whether the component is the default focus
+ * @param { ?Bool } value - True means to set the component as the default focus, and the value false has no effect.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14784,7 +14287,8 @@ public interface CommonMethod<T> {
 /**
  * Set default focused component when focus on a focus group.
  *
- * @param { ?Bool } value - Whether the component is the group default focus
+ * @param { ?Bool } value - True means the component is the default focus of the parent container, and
+ *     false means the component is not the default focus of the parent container.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14796,7 +14300,7 @@ public interface CommonMethod<T> {
 /**
  * Set a component focused when the component be touched.
  *
- * @param { ?Bool } value - Whether to focus on touch
+ * @param { ?Bool } value - True means the component is focusable on touch, false means the component is not focusable on touch.
  * @returns { T } Returns the component itself.
  */
 @!APILevel[
@@ -14806,12 +14310,12 @@ public interface CommonMethod<T> {
     func focusOnTouch(value: ?Bool): T
 
 /**
- * Binds a context menu to the component, whose visibility is subject to the isShown settings..
+ * Binds a sheet page to the component, whose visibility is subject to the isShow settings.
  *
- * @param { ?Bool } isShow -  true means display content, false means hide content, default is false.
- * @param { CustomBuilder } builder - Indicates the content of context menu.
- * @param { ?SheetOptions } options - Indicates the options of context menu.
- * @returns { T } Returns the component itself.
+ * @param { ?Bool } isShow -  true means display sheet, false means hide sheet.
+ * @param { CustomBuilder } builder - the sheet to be displayed.
+ * @param { ?SheetOptions } options - options of sheet.
+ * @returns { T } template type.
  */
 @!APILevel[
     since: "22",
@@ -14823,7 +14327,7 @@ public interface CommonMethod<T> {
  * Set preview of the component for dragging process.
  *
  * @param { String } value - preview of the component for dragging process
- * @returns { T } The component instance.
+ * @returns { T } property value of type T.
  */
 @!APILevel[
     since: "22",

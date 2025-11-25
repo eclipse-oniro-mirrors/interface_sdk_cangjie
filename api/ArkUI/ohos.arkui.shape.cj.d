@@ -6,7 +6,7 @@ import ohos.ffi.*
 import ohos.labels.APILevel
 
 /**
- * A shape component that renders a circular graphic element.
+ * Defines a circle drawing class.
  */
 @!APILevel[
     since: "22",
@@ -28,7 +28,7 @@ public class CircleShape <: BaseShape {
 }
 
 /**
- * A shape component that renders an elliptical graphic element.
+ * Defines an ellipse drawing class.
  */
 @!APILevel[
     since: "22",
@@ -50,7 +50,7 @@ public class EllipseShape <: BaseShape {
 }
 
 /**
- * A shape component that renders custom paths defined by SVG path commands.
+ * Defines a path drawing class.
  */
 @!APILevel[
     since: "22",
@@ -84,7 +84,7 @@ public class PathShape <: BaseShape {
 }
 
 /**
- * A shape component that renders rectangular graphic elements with optional rounded corners.
+ * Defines a rect drawing class.
  */
 @!APILevel[
     since: "22",
@@ -107,40 +107,40 @@ public class RectShape <: BaseShape {
  * Sets the width of the corner radius for RectShape.
  * Configures the horizontal radius of the rectangle's rounded corners.
  *
- * @param { ?Length } rWidth - Width of the corner radius.
+ * @param { ?Length } value - Width of the corner radius.
  * @returns { This } Returns the RectShape instance.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func radiusWidth(rWidth: ?Length): This
+    public func radiusWidth(value: ?Length): This
 
 /**
  * Sets the height of the corner radius for RectShape.
  * Configures the vertical radius of the rectangle's rounded corners.
  *
- * @param { ?Length } rHeight - Height of the corner radius.
+ * @param { ?Length } value - Height of the corner radius.
  * @returns { This } Returns the RectShape instance.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func radiusHeight(rHeight: ?Length): This
+    public func radiusHeight(value: ?Length): This
 
 /**
  * Sets the corner radius for RectShape.
  * Configures both the horizontal and vertical radius of the rectangle's rounded corners.
  *
- * @param { ?Length } radius - Corner radius value applied to both width and height.
+ * @param { ?Length } value - Corner radius value applied to both width and height.
  * @returns { This } Returns the RectShape instance.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func radius(radius: ?Length): This
+    public func radius(value: ?Length): This
 }
 
 /**
@@ -153,8 +153,7 @@ public class RectShape <: BaseShape {
 ]
 public abstract class BaseShape <: RemoteDataLite {
 /**
- * Sets the color of the filled area. The abnormal value is processed based on the default value.
- * Configures the fill color used to paint the interior of the shape.
+ * Sets the fill color of the shape.
  *
  * @param { ?ResourceColor } color - Color of the filled area.
  * @returns { This } Returns the BaseShape instance.
@@ -166,8 +165,7 @@ public abstract class BaseShape <: RemoteDataLite {
     public func fill(color: ?ResourceColor): This
 
 /**
- * Sets the shape width.
- * Configures the width dimension of the shape.
+ * Sets the width of the shape.
  *
  * @param { ?Length } width - Shape width.
  * @returns { This } Returns the BaseShape instance.
@@ -179,8 +177,7 @@ public abstract class BaseShape <: RemoteDataLite {
     public func width(width: ?Length): This
 
 /**
- * Sets the shape height.
- * Configures the height dimension of the shape.
+ * Sets the height of the shape.
  *
  * @param { ?Length } height - Shape height.
  * @returns { This } Returns the BaseShape instance.
@@ -192,8 +189,7 @@ public abstract class BaseShape <: RemoteDataLite {
     public func height(height: ?Length): This
 
 /**
- * Sets the shape size.
- * Configures both the width and height dimensions of the shape.
+ * Sets the size of the shape.
  *
  * @param { ?Length } width - Shape width.
  * @param { ?Length } height - Shape height.
@@ -206,8 +202,7 @@ public abstract class BaseShape <: RemoteDataLite {
     public func size(width!: ?Length, height!: ?Length): This
 
 /**
- * Sets the shape offset.
- * Configures the position offset of the shape relative to its container.
+ * Sets coordinate offset relative to the layout completion position.
  *
  * @param { ?Length } x - x Offset from the left.
  * @param { ?Length } y - y Offset from the top.

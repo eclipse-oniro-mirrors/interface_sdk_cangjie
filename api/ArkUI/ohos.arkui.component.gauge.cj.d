@@ -9,7 +9,7 @@ import ohos.labels.APILevel
 import ohos.resource.*
 
 /**
- * Defines the Gauge component.
+ * Defines Gauge Component.
  */
 @!APILevel[
     since: "22",
@@ -34,7 +34,7 @@ public class Gauge <: CommonMethodComponent<Gauge> & GaugeAttribute {
  * Sets the value for the current profile.
  *
  * @param { ?Float64 } value - Set current data value.
- * @returns { This } The instance of the component.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -46,7 +46,7 @@ public class Gauge <: CommonMethodComponent<Gauge> & GaugeAttribute {
  * Set the start angle. Clock 0 is 0 degrees and clockwise is positive.
  *
  * @param { ?Float64 } angle - The start angle value, measured in degrees.
- * @returns { This } The instance of the component.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -58,7 +58,7 @@ public class Gauge <: CommonMethodComponent<Gauge> & GaugeAttribute {
  * Sets the end angle position. Clock 0 is 0 degrees and clockwise is positive.
  *
  * @param { ?Float64 } angle - The end angle value, measured in degrees.
- * @returns { This } The instance of the component.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -69,56 +69,56 @@ public class Gauge <: CommonMethodComponent<Gauge> & GaugeAttribute {
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?Array<(ResourceColor, Int32)> } colors - The color array with stop positions, where Int32 is the stop position percentage (0-100).
- * @returns { This } The instance of the component.
+ * @param { ?Array<(ResourceColor, Int32)> } value - section colors of gauge drawing.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func colors(colors: ?Array<(ResourceColor, Int32)>): This
+    public func colors(value: ?Array<(ResourceColor, Int32)>): This
 
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?Array<(LinearGradient, Int32)> } colors - The linear gradient array with stop positions.
- * @returns { This } The instance of the component.
+ * @param { ?Array<(LinearGradient, Int32)> } value - section colors of gauge drawing.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func colors(colors: ?Array<(LinearGradient, Int32)>): This
+    public func colors(value: ?Array<(LinearGradient, Int32)>): This
 
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?ResourceColor } colors - The solid color value.
- * @returns { This } The instance of the component.
+ * @param { ?ResourceColor } value - section colors of gauge drawing.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func colors(colors: ?ResourceColor): This
+    public func colors(value: ?ResourceColor): This
 
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?LinearGradient } colors - The linear gradient value.
- * @returns { This } The instance of the component.
+ * @param { ?LinearGradient } value - section colors of gauge drawing.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func colors(colors: ?LinearGradient): This
+    public func colors(value: ?LinearGradient): This
 
 /**
  * Sets the thickness of the ring chart.
  *
  * @param { ?Length } length - The stroke width value.
- * @returns { This } The instance of the component.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -132,7 +132,7 @@ public class Gauge <: CommonMethodComponent<Gauge> & GaugeAttribute {
  * @param { ?Float64 } [radius] - The shadow radius.
  * @param { ?Float64 } [offsetX] - The shadow horizontal offset.
  * @param { ?Float64 } [offsetY] - The shadow vertical offset.
- * @returns { This } The instance of the component.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -145,7 +145,7 @@ public class Gauge <: CommonMethodComponent<Gauge> & GaugeAttribute {
  *
  * @param { ?ResourceStr } [icon] - The indicator icon.
  * @param { ?Length } [space] - The space between indicator and chart.
- * @returns { This } The instance of the component.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -154,16 +154,16 @@ public class Gauge <: CommonMethodComponent<Gauge> & GaugeAttribute {
     public func indicator(icon!: ?ResourceStr = None, space!: ?Length = None): This
 
 /**
- * Set the description content of the ring chart.
+ * Sets description content of the ring chart.
  *
- * @param { ?CustomBuilder } value - The custom description builder.
- * @returns { This } The instance of the component.
+ * @param { ?CustomBuilder } builder - description content builder of the gauge drawing.
+ * @returns { This } returns the instance of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func description(value: ?CustomBuilder): This
+    public func description(builder: ?CustomBuilder): This
 }
 
 /**
@@ -178,7 +178,7 @@ sealed interface GaugeAttribute <: CommonMethod<GaugeAttribute> {
  * Sets the value for the current profile.
  *
  * @param { ?Float32 } value - Set current data value.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -190,7 +190,7 @@ sealed interface GaugeAttribute <: CommonMethod<GaugeAttribute> {
  * Set the start angle. Clock 0 is 0 degrees and clockwise is positive.
  *
  * @param { ?Float64 } angle - The start angle value.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -202,7 +202,7 @@ sealed interface GaugeAttribute <: CommonMethod<GaugeAttribute> {
  * Sets the end angle position. Clock 0 is 0 degrees and clockwise is positive.
  *
  * @param { ?Float64 } angle - The end angle value.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -213,56 +213,56 @@ sealed interface GaugeAttribute <: CommonMethod<GaugeAttribute> {
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?Array<(ResourceColor, Int32)> } colors - The color array with stop positions.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @param { ?Array<(ResourceColor, Int32)> } colors - section colors of gauge drawing.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func colors(colors: ?Array<(ResourceColor, Int32)>): GaugeAttribute
+    func colors(value: ?Array<(ResourceColor, Int32)>): GaugeAttribute
 
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?Array<(LinearGradient, Int32)> } colors - The linear gradient array with stop positions.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @param { ?Array<(LinearGradient, Int32)> } colors - section colors of gauge drawing.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func colors(colors: ?Array<(LinearGradient, Int32)>): GaugeAttribute
+    func colors(value: ?Array<(LinearGradient, Int32)>): GaugeAttribute
 
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?ResourceColor } colors - The solid color value.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @param { ?ResourceColor } value - section colors of gauge drawing.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func colors(colors: ?ResourceColor): GaugeAttribute
+    func colors(value: ?ResourceColor): GaugeAttribute
 
 /**
  * Set the color of the chart. You can set the solid color and segmented gradient color.
  *
- * @param { ?LinearGradient } colors - The linear gradient value.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @param { ?LinearGradient } value - section colors of gauge drawing.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func colors(colors: ?LinearGradient): GaugeAttribute
+    func colors(value: ?LinearGradient): GaugeAttribute
 
 /**
  * Sets the thickness of the ring chart.
  *
  * @param { ?Length } length - The stroke width value.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -276,7 +276,7 @@ sealed interface GaugeAttribute <: CommonMethod<GaugeAttribute> {
  * @param { ?Float64 } radius - The shadow radius.
  * @param { ?Float64 } offsetX - The shadow horizontal offset.
  * @param { ?Float64 } offsetY - The shadow vertical offset.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -289,7 +289,7 @@ sealed interface GaugeAttribute <: CommonMethod<GaugeAttribute> {
  *
  * @param { ?ResourceStr } icon - The indicator icon.
  * @param { ?Length } space - The space between indicator and chart.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
@@ -300,12 +300,12 @@ sealed interface GaugeAttribute <: CommonMethod<GaugeAttribute> {
 /**
  * Sets description content of the ring chart.
  *
- * @param { ?() -> Unit } builder - The custom description builder function.
- * @returns { GaugeAttribute } The attribute of the component.
+ * @param { ?CustomBuilder } builder - The custom description builder function.
+ * @returns { GaugeAttribute } The attribute of the Gauge.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func description(builder: ?() -> Unit): GaugeAttribute
+    func description(builder: ?CustomBuilder): GaugeAttribute
 }

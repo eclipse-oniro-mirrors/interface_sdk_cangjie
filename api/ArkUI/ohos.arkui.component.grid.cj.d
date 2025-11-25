@@ -59,7 +59,7 @@ public class Grid <: ScrollableCommonMethodComponent<Grid> & GridAttribute {
 /**
  * Allows you to set the spacing between columns.
  *
- * @param { ?Length } value - Spacing between adjacent columns.
+ * @param { ?Length } value - Spacing between columns.Default value: 0 Unit: vp
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -71,7 +71,7 @@ public class Grid <: ScrollableCommonMethodComponent<Grid> & GridAttribute {
 /**
  * Lets you set the spacing between rows.
  *
- * @param { ?Length } value - Spacing between adjacent rows.
+ * @param { ?Length } value - Spacing between rows. Default value: 0 Unit: vp
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -81,22 +81,28 @@ public class Grid <: ScrollableCommonMethodComponent<Grid> & GridAttribute {
     public func rowsGap(value: ?Length): This
 
 /**
- * Called to set number of GridItems to be preloaded (cached) in LazyForEach / Repeat.
+ * Set number of rows of GridItems to be preloaded (cached) in LazyForEach / Repeat
  *
- * @param { ?Int32 } count - Number of grid items to preload beyond the visible area.
+ * @param { ?Int32 } value - number of rows of GridItems to be preloaded (cached).
+ *     Default value: number of nodes visible on the screen, with the maximum value of 16
+ *     Value range: [0, +∞).
+ *     Values less than 0 are treated as 1.
  * @returns { This } The instance of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func cachedCount(count: ?Int32): This
+    public func cachedCount(value: ?Int32): This
 
 /**
- * Called to set number of GridItems to be preloaded (cached) in LazyForEach / Repeat.
+ * Set number of rows of GridItems to be preloaded (cached) in LazyForEach / Repeat.
  *
- * @param { ?Int32 } count - Number of grid items to preload beyond the visible area.
- * @param { ?Bool } show - Whether to display cached items when clip is disabled.
+ * @param { ?Int32 } count - number of rows of GridItems to be preloaded (cached).
+ *     Default value: number of nodes visible on the screen, with the maximum value of 16
+ *     Value range: [0, +∞).
+ *     Values less than 0 are treated as 1.
+ * @param { ?Bool } show -  if true, cached items are displayed when clip is disabled.Default value: false
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -107,7 +113,7 @@ public class Grid <: ScrollableCommonMethodComponent<Grid> & GridAttribute {
 }
 
 /**
- * Defines Grid attributes.
+ * Defines the grid attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -141,7 +147,7 @@ sealed interface GridAttribute <: ScrollableCommonMethod<GridAttribute> {
 /**
  * Allows you to set the spacing between columns.
  *
- * @param { ?Length } value - Spacing between adjacent columns.
+ * @param { ?Length } value - Spacing between columns.Default value: 0 Unit: vp
  * @returns { GridAttribute } The attribute of the component.
  */
 @!APILevel[
@@ -153,7 +159,7 @@ sealed interface GridAttribute <: ScrollableCommonMethod<GridAttribute> {
 /**
  * Lets you set the spacing between rows.
  *
- * @param { ?Length } value - Spacing between adjacent rows.
+ * @param { ?Length } value - Spacing between rows. Default value: 0 Unit: vp
  * @returns { GridAttribute } The attribute of the component.
  */
 @!APILevel[
@@ -163,9 +169,12 @@ sealed interface GridAttribute <: ScrollableCommonMethod<GridAttribute> {
     func rowsGap(value: ?Length): GridAttribute
 
 /**
- * Called to set number of GridItems to be preloaded (cached) in LazyForEach / Repeat.
+ * Set number of rows of GridItems to be preloaded (cached) in LazyForEach / Repeat.
  *
- * @param { ?Int32 } count - Number of grid items to preload beyond the visible area.
+ * @param { ?Int32 } count - number of rows of GridItems to be preloaded (cached).
+ *     Default value: number of nodes visible on the screen, with the maximum value of 16
+ *     Value range: [0, +∞).
+ *     Values less than 0 are treated as 1.
  * @returns { GridAttribute } The attribute of the component.
  */
 @!APILevel[
@@ -175,10 +184,13 @@ sealed interface GridAttribute <: ScrollableCommonMethod<GridAttribute> {
     func cachedCount(count: ?Int32): GridAttribute
 
 /**
- * Called to set number of GridItems to be preloaded (cached) in LazyForEach / Repeat.
+ * Set number of rows of GridItems to be preloaded (cached) in LazyForEach / Repeat.
  *
- * @param { ?Int32 } count - Number of grid items to preload beyond the visible area.
- * @param { ?Bool } show - Whether to display cached items when clip is disabled.
+ * @param { ?Int32 } count - number of rows of GridItems to be preloaded (cached).
+ *     Default value: number of nodes visible on the screen, with the maximum value of 16
+ *     Value range: [0, +∞).
+ *     Values less than 0 are treated as 1.
+ * @param { ?Bool } show -  if true, cached items are displayed when clip is disabled.Default value: false
  * @returns { GridAttribute } The attribute of the component.
  */
 @!APILevel[

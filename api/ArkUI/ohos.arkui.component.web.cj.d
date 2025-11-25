@@ -12,7 +12,6 @@ import std.collection.ArrayList
 
 /**
  * Defines the triggered function at the begin of web page loading.
- *
  */
 @!APILevel[
     since: "22",
@@ -20,8 +19,7 @@ import std.collection.ArrayList
 ]
 public class OnPageBeginEvent {
 /**
- * The URL of the page.
- *
+ * The url of page.
  */
 @!APILevel[
     since: "22",
@@ -43,7 +41,6 @@ public class OnPageBeginEvent {
 
 /**
  * Defines the triggered function at the end of web page loading.
- *
  */
 @!APILevel[
     since: "22",
@@ -52,7 +49,6 @@ public class OnPageBeginEvent {
 public class OnPageEndEvent {
 /**
  * The URL of the page.
- *
  */
 @!APILevel[
     since: "22",
@@ -74,20 +70,18 @@ public class OnPageEndEvent {
 
 /**
  * Defines the triggered callback when the resources loading is intercepted.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
 public class OnLoadInterceptEvent {
 /**
  * The information of request.
- *
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     public var data: WebResourceRequest
 
@@ -98,14 +92,13 @@ public class OnLoadInterceptEvent {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     public init(data: WebResourceRequest)
 }
 
 /**
  * Defines the Web's request/response header.
- *
  */
 @!APILevel[
     since: "22",
@@ -114,7 +107,6 @@ public class OnLoadInterceptEvent {
 public class Header {
 /**
  * Gets the key of the request/response header.
- *
  */
 @!APILevel[
     since: "22",
@@ -124,7 +116,6 @@ public class Header {
 
 /**
  * Gets the value of the request/response header.
- *
  */
 @!APILevel[
     since: "22",
@@ -135,7 +126,6 @@ public class Header {
 
 /**
  * Defines the Web resource request.
- *
  */
 @!APILevel[
     since: "22",
@@ -212,7 +202,6 @@ public class WebResourceRequest {
 /**
  * Defines the triggered callback when the host application that web content from the specified origin is
  * attempting to access the resources.
- *
  */
 @!APILevel[
     since: "22",
@@ -221,7 +210,6 @@ public class WebResourceRequest {
 public class OnPermissionRequestEvent {
 /**
  * Defines the onPermissionRequest callback.
- *
  */
 @!APILevel[
     since: "22",
@@ -242,8 +230,7 @@ public class OnPermissionRequestEvent {
 }
 
 /**
- * Defines the onPermissionRequest callback, related to {@link onPermissionRequest} method.
- *
+ * Implements the PermissionRequest object, related to onPermissionRequest method.
  */
 @!APILevel[
     since: "22",
@@ -252,7 +239,6 @@ public class OnPermissionRequestEvent {
 public class PermissionRequest {
 /**
  * Reject the request.
- *
  */
 @!APILevel[
     since: "22",
@@ -321,7 +307,8 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Sets whether to enable access to the file system in the application.
  *
- * @param { ?Bool } fileAccess - Whether to enable file system access. True to enable, false to disable.
+ * @param { ?Bool } fileAccess - true means enable local file system access in Web; false otherwise.
+ *     The default value is false.
  * @returns { This }
  */
 @!APILevel[
@@ -333,7 +320,9 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Sets whether to enable the DOM Storage API. By default, this feature is disabled.
  *
- * @param { ?Bool } domStorageAccess - Whether to enable DOM Storage API. True to enable, false to disable.
+ * @param { ?Bool } domStorageAccess - Whether to enable the DOM Storage API. true means to enable
+ *     the DOM Storage API; false means to disable the DOM Storage API.
+ *     The default value is false.
  * @returns { This }
  */
 @!APILevel[
@@ -345,7 +334,9 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Sets whether to enable automatic image loading.
  *
- * @param { ?Bool } imageAccess - Whether to enable automatic image loading. True to enable, false to disable.
+ * @param { ?Bool } imageAccess - Sets whether to enable automatic image loading.
+ *     true means the Web can automatically load image resources, false otherwise.
+ *     Default value: true.
  * @returns { This }
  */
 @!APILevel[
@@ -357,7 +348,9 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Sets whether to enable access to online images through HTTP and HTTPS.
  *
- * @param { ?Bool } onlineImageAccess - Whether to allow image resources to be loaded from the network. True to enable, false to disable.
+ * @param { ?Bool } onlineImageAccess - Sets whether to enable access to online images.
+ *     true means means setting to allow loading image resources from the network, false otherwise.
+ *     Default value: true.
  * @returns { This }
  */
 @!APILevel[
@@ -370,7 +363,8 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
  * Sets the behavior when a secure origin attempts to load a resource from an insecure origin.
  * The default is MixedMode.None, meaning not allow a secure origin to load content from an insecure origin.
  *
- * @param { ?MixedMode } mixedMode - The mixed content mode to apply.
+ * @param { ?MixedMode } mixedMode - The mixed mode, which can be MixedMode.
+ *     Default value: MixedMode.None, which means that secure origin is not allowed to load content from insecure origin.
  * @returns { This }
  */
 @!APILevel[
@@ -382,7 +376,7 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Sets whether the Web supports zooming using gestures.
  *
- * @param { ?Bool } zoomAccess - Whether to enable zoom gestures. True to enable, false to disable.
+ * @param { ?Bool } zoomAccess - true means the Web supports zooming using gestures; false otherwise. The default value is true
  * @returns { This }
  */
 @!APILevel[
@@ -395,7 +389,9 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
  * Set whether to enable geolocation access. By default, this feature is enabled.
  * For details, see Managing Location Permissions.
  *
- * @param { ?Bool } geolocationAccess - Whether to enable geolocation access. True to enable, false to disable.
+ * @param { ?Bool } geolocationAccess - Whether to enable geolocation access. true means the Web
+ *     allows access to geographical locations; false means the
+ *     Web disallows access to geographical locations. The default value is true.
  * @returns { This }
  */
 @!APILevel[
@@ -407,7 +403,7 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Set whether paint vertical scroll bar, including the system default scrollbar and user-defined scrollbar.
  *
- * @param { ?Bool } verticalScrollBar - Whether to display the vertical scroll bar. True to display, false to hide.
+ * @param { ?Bool } verticalScrollBar - True if it needs to paint vertical scroll bar. The default value is true
  * @returns { This }
  */
 @!APILevel[
@@ -435,7 +431,7 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Triggered when the resources loading is intercepted.
  *
- * @param { ?Callback<OnLoadInterceptEvent, Bool> } callback - The callback function triggered when resource loading is intercepted.
+ * @param { ?Callback<OnLoadInterceptEvent, Bool> } callback - The triggered callback when the resources loading is intercepted
  * @returns { This }
  */
 @!APILevel[
@@ -447,7 +443,7 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Called when the web page starts to be loaded.
  *
- * @param { ?Callback<OnPageBeginEvent, Unit> } callback - The callback function triggered when page loading begins.
+ * @param { ?Callback<OnPageBeginEvent, Unit> } callback - The triggered function at the begin of web page loading
  * @returns { This }
  */
 @!APILevel[
@@ -459,7 +455,7 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
 /**
  * Triggered at the end of web page loading.
  *
- * @param { ?Callback<OnPageEndEvent, Unit> } callback - The callback function triggered when page loading completes.
+ * @param { ?Callback<OnPageEndEvent, Unit> } callback - The triggered function at the end of web page loading
  * @returns { This }
  */
 @!APILevel[
@@ -490,7 +486,8 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
  * if the theme has been defined in prefers-color-scheme of a media query,
  * and remains unchanged otherwise. To enable the forcible dark mode, use this API with forceDarkAccess.
  *
- * @param { ?WebDarkMode } mode - The dark mode setting to apply.
+ * @param { ?WebDarkMode } mode - Web dark mode to set.
+ *     Default value: WebDarkMode.Off.
  * @returns { This }
  */
 @!APILevel[
@@ -500,10 +497,12 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
     public func darkMode(mode: ?WebDarkMode): This
 
 /**
- * Sets whether to enable forcible dark mode for the web page.
- * This API is applicable only when dark mode is enabled in {@link darkMode}.
+ * Sets whether to enable forcible dark mode for the web page. This API is applicable only when dark mode is enabled in {
  *
- * @param { ?Bool } access - Whether to enable forcible dark mode. True to enable, false to disable.
+ * @param { ?Bool } access - Sets whether to enable forcible dark mode for the web page.
+ *      true means enable forcible dark mode for the web page.
+ *      false means not enable forcible dark mode for the web page.
+ *      The default value is false.
  * @returns { This }
  */
 @!APILevel[
@@ -518,54 +517,61 @@ public class Web <: CommonMethodComponent<Web> & WebAttribute {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
 sealed interface WebAttribute <: CommonMethod<WebAttribute> {
 /**
  * Sets whether to enable access to the file system in the application.
  *
- * @param { ?Bool } fileAccess - Whether to enable file system access. True to enable, false to disable.
+ * @param { ?Bool } fileAccess - true means enable local file system access in Web; false otherwise.
+ *     The default value is false.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func fileAccess(fileAccess: ?Bool): WebAttribute
 
 /**
  * Sets whether to enable the DOM Storage API. By default, this feature is disabled.
  *
- * @param { ?Bool } domStorageAccess - Whether to enable DOM Storage API. True to enable, false to disable.
+ * @param { ?Bool } domStorageAccess - Whether to enable the DOM Storage API. {@code true} means to enable
+ *     the DOM Storage API; {@code false} means to disable the DOM Storage API.
+ *     The default value is false.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func domStorageAccess(domStorageAccess: ?Bool): WebAttribute
 
 /**
  * Sets whether to enable automatic image loading.
  *
- * @param { ?Bool } imageAccess - Whether to enable automatic image loading. True to enable, false to disable.
+ * @param { ?Bool } imageAccess - Sets whether to enable automatic image loading.
+ *      true means the Web can automatically load image resources, false otherwise.
+ *      Default value: true.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func imageAccess(imageAccess: ?Bool): WebAttribute
 
 /**
  * Sets whether to enable access to online images through HTTP and HTTPS.
  *
- * @param { ?Bool } onlineImageAccess - Whether to allow image resources to be loaded from the network. True to enable, false to disable.
+ * @param { ?Bool } onlineImageAccess -  Sets whether to enable access to online images.
+ *      true means means setting to allow loading image resources from the network, false otherwise.
+ *      Default value: true.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func onlineImageAccess(onlineImageAccess: ?Bool): WebAttribute
 
@@ -573,24 +579,26 @@ sealed interface WebAttribute <: CommonMethod<WebAttribute> {
  * Sets the behavior when a secure origin attempts to load a resource from an insecure origin.
  * The default is MixedMode.None, meaning not allow a secure origin to load content from an insecure origin.
  *
- * @param { ?MixedMode } mixedMode - The mixed content mode to apply.
+ * @param { ?MixedMode } mixedMode - The mixed mode, which can be MixedMode.
+ *      Default value: MixedMode.None, which means that secure origin is not allowed to load content from insecure origin.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func mixedMode(mixedMode: ?MixedMode): WebAttribute
 
 /**
  * Sets whether the Web supports zooming using gestures.
  *
- * @param { ?Bool } zoomAccess - Whether to enable zoom gestures. True to enable, false to disable.
+ * @param { ?Bool } zoomAccess - true means the Web supports zooming using gestures; false otherwise.
+ *      The default value is true.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func zoomAccess(zoomAccess: ?Bool): WebAttribute
 
@@ -598,24 +606,26 @@ sealed interface WebAttribute <: CommonMethod<WebAttribute> {
  * Set whether to enable geolocation access. By default, this feature is enabled.
  * For details, see Managing Location Permissions.
  *
- * @param { ?Bool } geolocationAccess - Whether to enable geolocation access. True to enable, false to disable.
+ * @param { ?Bool } geolocationAccess - Whether to enable geolocation access. true means the Web
+ *      allows access to geographical locations; false means the
+ *      Web disallows access to geographical locations. The default value is true.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func geolocationAccess(geolocationAccess: ?Bool): WebAttribute
 
 /**
  * Set whether paint vertical scroll bar, including the system default scrollbar and user-defined scrollbar.
  *
- * @param { ?Bool } verticalScrollBar - Whether to display the vertical scroll bar. True to display, false to hide.
+ * @param { ?Bool } verticalScrollBar - True if it needs to paint vertical scroll bar. The default value is true.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func verticalScrollBarAccess(verticalScrollBar: ?Bool): WebAttribute
 
@@ -628,7 +638,7 @@ sealed interface WebAttribute <: CommonMethod<WebAttribute> {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func nestedScroll(
         scrollForward!: ?NestedScrollMode,
@@ -638,24 +648,24 @@ sealed interface WebAttribute <: CommonMethod<WebAttribute> {
 /**
  * Triggered when the resources loading is intercepted.
  *
- * @param { ?Callback<OnLoadInterceptEvent, Bool> } callback - The triggered callback when the URL loading is intercepted.
+ * @param { ?Callback<OnLoadInterceptEvent, Bool> } callback - The triggered callback when the resources loading is intercepted.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func onLoadIntercept(callback: ?Callback<OnLoadInterceptEvent, Bool>): WebAttribute
 
 /**
  * Called when the web page starts to be loaded.
  *
- * @param { ?Callback<OnPageBeginEvent, Unit> } callback - The triggered function at the begin of web page loading.
+ * @param { ?Callback<OnPageBeginEvent, Unit> } callback - The triggered function at the end of web page loading.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func onPageBegin(callback: ?Callback<OnPageBeginEvent, Unit>): WebAttribute
 
@@ -667,7 +677,7 @@ sealed interface WebAttribute <: CommonMethod<WebAttribute> {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func onPageEnd(callback: ?Callback<OnPageEndEvent, Unit>): WebAttribute
 
@@ -682,7 +692,7 @@ sealed interface WebAttribute <: CommonMethod<WebAttribute> {
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func javaScriptProxy(funcList!: ?Array<(String) -> String>, name!: ?String, methodList!: ?Array<String>,
         controller!: ?WebviewController): WebAttribute
@@ -693,25 +703,28 @@ sealed interface WebAttribute <: CommonMethod<WebAttribute> {
  * if the theme has been defined in prefers-color-scheme of a media query,
  * and remains unchanged otherwise. To enable the forcible dark mode, use this API with forceDarkAccess.
  *
- * @param { ?WebDarkMode } value - The dark mode setting to apply.
+ * @param { ?WebDarkMode } mode - The dark mode setting to apply.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
-    func darkMode(value: ?WebDarkMode): WebAttribute
+    func darkMode(mode: ?WebDarkMode): WebAttribute
 
 /**
  * Sets whether to enable forcible dark mode for the web page.
- * This API is applicable only when dark mode is enabled in {@link darkMode}.
+ * This API is applicable only when dark mode is enabled in darkMode.
  *
- * @param { ?Bool } access - Whether to enable forcible dark mode. True to enable, false to disable.
+ * @param { ?Bool } access - Sets whether to enable forcible dark mode for the web page.
+ *      true means enable forcible dark mode for the web page.
+ *      false means not enable forcible dark mode for the web page.
+ *      The default value is false.
  * @returns { WebAttribute }
  */
 @!APILevel[
     since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    syscap: "SystemCapability.Web.Webview.Core"
 ]
     func forceDarkAccess(access: ?Bool): WebAttribute
 }

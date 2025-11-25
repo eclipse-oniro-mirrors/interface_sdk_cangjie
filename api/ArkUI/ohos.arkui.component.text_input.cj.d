@@ -44,7 +44,7 @@ public class TextInputController <: RemoteDataLite {
  * Text selection is achieved by specifying the start and end positions of the text.
  *
  * NOTE:
- * If selectionStart or selectionEnd is set to undefined, the value 0 will be used.
+ * If selectionStart or selectionEnd is set to None, the value 0 will be used.
  * If selectionMenuHidden is set to true or a 2-in-1 device is used,
  * calling setTextSelection does not display the context menu even when options is set to MenuPolicy.SHOW.
  * If the selected text contains an emoji,
@@ -62,7 +62,6 @@ public class TextInputController <: RemoteDataLite {
 
 /**
  * Exit edit state.
- *
  */
 @!APILevel[
     since: "22",
@@ -73,7 +72,6 @@ public class TextInputController <: RemoteDataLite {
 
 /**
  * Defines TextInput Component.
- *
  */
 @!APILevel[
     since: "22",
@@ -94,10 +92,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public init(placeholder!: ?ResourceStr = None, text!: ?ResourceStr = None, controller!: ?TextInputController = None)
 
 /**
- * Called when the type of soft keyboard input button is set.
+ * Called when the type of soft keyboard input button is set
  *
  * @param { ?EnterKeyType } value - Default value is EnterKeyType.Done.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -106,16 +104,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func enterKeyType(value: ?EnterKeyType): This
 
 /**
- * Called when the text align is set.
- * <br>Available options are TextAlign.Start, TextAlign.Center, and TextAlign.End.
- * <br>To set vertical alignment for the text, use the align attribute.
- * <br>The align attribute alone does not control the horizontal position of the text.
- * <br>In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect, top-aligning the text;
- * Alignment.Start, Alignment.Center, and Alignment.End produce the same effect, centered-aligning the text vertically;
- * Alignment.BottomStart, Alignment.Bottom, and Alignment.BottomEnd produce the same effect, bottom-aligning the text.
+ * Called when the text align is set. NOTE: Available options are TextAlign.Start, TextAlign.Center, and TextAlign.End. To set vertical alignment for the text, use the align attribute. The align attribute alone does not control the horizontal position of the text. In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect, top-aligning the text; Alignment.Start, Alignment.Center, and Alignment.End produce the same effect, centered-aligning the text vertically; Alignment.BottomStart, Alignment.Bottom, and Alignment.BottomEnd produce the same effect, bottom-aligning the text
  *
  * @param { ?TextAlign } value - Default value is TextAlign.Start.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -124,10 +116,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func textAlign(value: ?TextAlign): This
 
 /**
- * Called when the color of the placeholder is set.
+ * Called when the color of the placeholder is set
  *
  * @param { ?ResourceColor } value - Default value follows the theme. The default value on wearable devices is 0x99ffffff.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -139,7 +131,7 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
  * Called when the color of the insertion cursor is set.
  *
  * @param { ?ResourceColor } value - Default value is 0x007DFF.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -148,13 +140,13 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func caretColor(value: ?ResourceColor): This
 
 /**
- * Called when the color of the placeholder is set.
+ * Called when the font property of the placeholder is set. The 'HarmonyOS Sans' font and registered custom fonts are supported
  *
  * @param { ?Length } size - The font size of the placeholder.
  * @param { ?FontWeight } [weight] - The font weight of the placeholder.
  * @param { ?String } [family] - The font family of the placeholder.
  * @param { ?FontStyle } [style] - The font style of the placeholder.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -164,10 +156,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
         style!: ?FontStyle = None): This
 
 /**
- * Called when the input of maximum text length is set.
+ * Called when the input of maximum text length is set. NOTE: If this attribute is not set or is set to an invalid value, the default value is used. If a decimal number is specified, the integer part is used
  *
  * @param { ?UInt32 } value - Default value is Infinity, indicating that there is no upper limit on the number of characters that can be entered.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -176,17 +168,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func maxLength(value: ?UInt32): This
 
 /**
- * Called when the font size is set.
- *
- * <p><strong>NOTE</strong>:
- * <br>If fontSize is of the number type, the unit fp is used.
- * <br>The default font size is 16 fp.
- * <br>The value cannot be a percentage.
- * <br>The default value on wearable devices is 18fp.
- * </p>
+ * Called when the font size is set. NOTE: If fontSize is of the number type, the unit fp is used. The default font size is 16 fp. The value cannot be a percentage. The default value on wearable devices is 18fp
  *
  * @param { ?Length } value - The font size.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -195,10 +180,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func fontSize(value: ?Length): This
 
 /**
- * Called when the font color is set.
+ * Sets the font color
  *
- * @param { ?ResourceColor } value - The default value on wearable devices is 0xdbffffff.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @param { ?ResourceColor } value - Default value is 0xe6182431.The default value on wearable devices is 0xc5ffffff.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -207,10 +192,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func fontColor(value: ?ResourceColor): This
 
 /**
- * Called when the font weight is set.
+ * Called when the font weight is set
  *
  * @param { ?FontWeight } value - The font weight.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -219,10 +204,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func fontWeight(value: ?FontWeight): This
 
 /**
- * Called when the font style of a font is set.
+ * Sets the font style
  *
- * @param { ?FontStyle } value - Default value is FontStyle.Normal.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @param { ?FontStyle } value - Font style.Default value: FontStyle.Normal
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -231,17 +216,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func fontStyle(value: ?FontStyle): This
 
 /**
- * Called when the font list of text is set.
- *
- * <p><strong>NOTE</strong>:
- * <br>Default font: 'HarmonyOS Sans'
- * <br>The 'HarmonyOS Sans' font and registered custom fonts are supported for applications.
- * <br>Only the 'HarmonyOS Sans' font is supported for widgets.
- * </p>
- * Only the 'HarmonyOS Sans' font is supported for widgets.
+ * Called when the font list of text is set. NOTE: Default font: 'HarmonyOS Sans' The 'HarmonyOS Sans' font and registered custom fonts are supported for applications. Only the 'HarmonyOS Sans' font is supported for widgets
  *
  * @param { ?ResourceStr } value - The font family resource.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -251,11 +229,14 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
 
 /**
  * Called when the inputFilter of text is set.
- * NOTE: Only inputs that comply with the regular expression can be displayed. Other inputs are filtered out. The specified regular expression can match single characters, but not strings. Since API version 11, if inputFilter is set and the entered characters are not null, the filtering effect attached to the text box type (specified through the type attribute) does not take effect.
+ * NOTE: Only inputs that comply with the regular expression can be displayed.
+ * Other inputs are filtered out.
+ * The specified regular expression can match single characters, but not strings.
+ * if inputFilter is set and the entered characters are not null, the filtering effect attached to the text box type (specified through the type attribute) does not take effect.
  *
  * @param { ?ResourceStr } value - The input filter pattern.
  * @param { ?(String) -> Unit } [error] - Callback function when input error occurs.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -266,8 +247,8 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
 /**
  * Called when submitted.
  *
- * @param { ?(EnterKeyType) -> Unit } callback - Callback of the listened event.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @param { ?(EnterKeyType) -> Unit } callback - If it is EnterKeyType.NewLine and the text box is in inline input style, onSubmit is not triggered.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -279,7 +260,7 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
  * Called when using the Clipboard menu.
  *
  * @param { ?(String) -> Unit } callback - Callback used to return the copied text content.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -291,7 +272,7 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
  * Called when using the Clipboard menu.
  *
  * @param { ?(String) -> Unit } callback - Callback function when text is cut from the input.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -302,13 +283,12 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
 /**
  * Called when the input of the input box changes.
  *
- * <p><strong>NOTE</strong>:
- * <br>In this callback, if cursor operations are performed, you need to adjust the cursor logic
+ * NOTE:
+ * In this callback, if cursor operations are performed, you need to adjust the cursor logic
  * based on the previewText parameter to ensure it works seamlessly within the preview display scenario.
- * </p>
  *
  * @param { ?(String) -> Unit } callback - Callback function when the input text changes.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -320,7 +300,7 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
  * Called when using the Clipboard menu.
  *
  * @param { ?(String) -> Unit } callback - Executed when a paste operation is performed.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -329,16 +309,11 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func onPaste(callback: ?(String) -> Unit): This
 
 /**
- * Called when judging whether the text editing change finished.
+ * Called when judging whether the text editing change finished. NOTE: The text box is in the editing state when it has the caret placed in it, and is in the non-editing state otherwise. It returns true if the input operation is currently in progress
  *
- * <p><strong>NOTE</strong>:
- * <br>The text box is in the editing state when it has the caret placed in it,
- * and is in the non-editing state otherwise.
- * <br>It returns true if the input operation is currently in progress.
- * </p>
- *
- * @param { ?(Bool) -> Unit} callback - Callback function when text editing state changes.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @param { ?(Bool) -> Unit} callback - Triggered when the text area status changes.
+ *     If the value of isEditing is true, text area is in progress.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -347,11 +322,11 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func onEditChange(callback: ?(Bool) -> Unit): This
 
 /**
- * Define custom keyboard of the text input.
+ * Define custom keyboard of the text input. NOTE: When a custom keyboard is set, activating the text box opens the specified custom component, instead of the system input method. The custom keyboard's height can be set through the height attribute of the custom component's root node, and its width is fixed at the default value. The custom keyboard is presented by overlaying the original screen, which is not compressed or lifted if avoid mode is not enabled or avoidance is not needed for the text box. The custom keyboard cannot obtain the focus, but it blocks gesture events. By default, the custom keyboard is closed when the input component loses the focus. You can also use the TextInputController.stopEditing API to close the keyboard. When a custom keyboard is set, the text box does not support camera input, even when the device supports. When setting a custom keyboard, you can bind the onKeyPrelme event to prevent input from the physical keyboard
  *
  * @param { ?CustomBuilder } value - Set up a custom keyboard of TextInput.
  * @param { ?Bool } [supportAvoidance] - Indicates the custom keyboard options of TextInput.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -360,11 +335,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
     public func customKeyboard(value: ?CustomBuilder, supportAvoidance!: ?Bool = None): This
 
 /**
- * Text input style.
- * NOTE: The inline input style only supports InputType.Normal.
+ * Text input style NOTE: The inline input style only supports InputType.Normal
  *
  * @param { ?TextInputStyle } value - Text input style.Default value is TextInputStyle.Default.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -375,10 +349,10 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
 /**
  * Sets whether request keyboard or not when on focus.
  * Sets whether to enable the input method when the TextInput component obtains focus in a way other than clicking.
- * NOTE: Since API version 10, the TextInput component brings up the keyboard by default when it obtains focus.
+ * NOTE: the TextInput component brings up the keyboard by default when it obtains focus.
  *
  * @param { ?Bool } value - Default value is true.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } Returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -389,19 +363,18 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
 /**
  * Controls whether the selection menu pops up.
  *
- * <p><strong>NOTE</strong>:
- * <br><em>true</em>:
- * <br>The system text selection menu does not appear under the following circumstances:
+ * NOTE:
+ * true:
+ * The system text selection menu does not appear under the following circumstances:
  * clicking the text box cursor, long-pressing the text box, double-tapping the text box,
  * triple-tapping the text box, or right-clicking the text box.
- * <br><em>false</em>:
- * <br>The system text selection menu appears under the following circumstances:
+ * false:
+ * The system text selection menu appears under the following circumstances:
  * clicking the text box cursor, long-pressing the text box, double-tapping the text box,
  * triple-tapping the text box, or right-clicking the text box.
- * </p>
  *
  * @param { ?Bool } value - Default value is false.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -411,13 +384,11 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
 
 /**
  * Define the show underline of the text input.
+ * NOTE: By default, the underline comes in the color of 0x33182431, thickness of 1.px, and text box size of 48.vp.
+ * The underline is only available for the InputType.Normal type
  *
- * <p><strong>NOTE</strong>:
- * <br>By default, the underline comes in the color of 0x33182431, thickness of 1.px, and text box size of 48.vp.
- * <br>The underline is only available for the InputType.Normal type.
- * </p>
  * @param { ?Bool } value - Default value is false.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -430,7 +401,7 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
  * Value range: (0, +∞)
  *
  * @param { ?Int32 } value - Default value is 3.
- * @returns { This } Returns TextInput instance to allow method chaining.
+ * @returns { This } returns the instance of the TextInput.
  */
 @!APILevel[
     since: "22",
@@ -448,7 +419,7 @@ public class TextInput <: CommonMethodComponent<TextInput> & TextInputAttribute 
 ]
 sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
 /**
- * Set the type of soft keyboard input button.
+ * Called when the type of soft keyboard input button is set.
  *
  * @param { ?EnterKeyType } value - Default value is EnterKeyType.Done.
  * @returns { TextInputAttribute }
@@ -460,11 +431,12 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func enterKeyType(value: ?EnterKeyType): TextInputAttribute
 
 /**
- * Set the text align.
- * <br>Available options are TextAlign.Start, TextAlign.Center, and TextAlign.End.
- * <br>To set vertical alignment for the text, use the align attribute.
- * <br>The align attribute alone does not control the horizontal position of the text.
- * <br>In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect, top-aligning the text;
+ * Called when the text align is set.
+ * NOTE:
+ * Available options are TextAlign.Start, TextAlign.Center, and TextAlign.End.
+ * To set vertical alignment for the text, use the align attribute.
+ * The align attribute alone does not control the horizontal position of the text.
+ * In other words, Alignment.TopStart, Alignment.Top, and Alignment.TopEnd produce the same effect, top-aligning the text;
  * Alignment.Start, Alignment.Center, and Alignment.End produce the same effect, centered-aligning the text vertically;
  * Alignment.BottomStart, Alignment.Bottom, and Alignment.BottomEnd produce the same effect, bottom-aligning the text.
  *
@@ -478,9 +450,9 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func textAlign(value: ?TextAlign): TextInputAttribute
 
 /**
- * Set the color of the placeholder.
+ * Called when the color of the placeholder is set.
  *
- * @param { ?ResourceColor } value - The default value on wearable devices is 0x99ffffff.
+ * @param { ?ResourceColor } value - Default value follows the theme.The default value on wearable devices is 0x99ffffff.
  * @returns { TextInputAttribute }
  */
 @!APILevel[
@@ -502,7 +474,8 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func caretColor(value: ?ResourceColor): TextInputAttribute
 
 /**
- * Set the color of the placeholder.
+ * Called when the font property of the placeholder is set.
+ * The 'HarmonyOS Sans' font and registered custom fonts are supported.
  *
  * @param { ?Length } size - The font size of the placeholder.
  * @param { ?FontWeight } weight - The font weight of the placeholder.
@@ -517,12 +490,10 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func placeholderFont(size!: ?Length, weight!: ?FontWeight, family!: ?String, style!: ?FontStyle): TextInputAttribute
 
 /**
- * Set the input of maximum text length.
- *
- * <p><strong>NOTE</strong>:
- * <br>If this attribute is not set or is set to an invalid value, the default value is used.
- * <br>If a decimal number is specified, the integer part is used.
- * </p>
+ * Called when the input of maximum text length is set.
+ * NOTE:
+ * If this attribute is not set or is set to an invalid value, the default value is used.
+ * If a decimal number is specified, the integer part is used.
  *
  * @param { ?UInt32 } value - Default value is Infinity, indicating that there is no upper limit on the number of characters that can be entered.
  * @returns { TextInputAttribute }
@@ -534,11 +505,12 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func maxLength(value: ?UInt32): TextInputAttribute
 
 /**
- * Set the font size.
- * <br>If fontSize is of the number type, the unit fp is used.
- * <br>The default font size is 16.fp.
- * <br>The value cannot be a percentage.
- * <br>The default value on wearable devices is 18.fp.
+ * Called when the font size is set.
+ * NOTE:
+ * If fontSize is of the number type, the unit fp is used.
+ * The default font size is 16 fp.
+ * The value cannot be a percentage.
+ * The default value on wearable devices is 18fp.
  *
  * @param { ?Length } value - The value of font size.
  * @returns { TextInputAttribute }
@@ -550,7 +522,7 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func fontSize(value: ?Length): TextInputAttribute
 
 /**
- * Set when the font color.
+ * Sets the font color.
  *
  * @param { ?ResourceColor } value - The default value on wearable devices is 0xdbffffff.
  * @returns { TextInputAttribute }
@@ -562,7 +534,7 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func fontColor(value: ?ResourceColor): TextInputAttribute
 
 /**
- * Set when the font weight.
+ * Called when the font weight is set.
  *
  * @param { ?FontWeight } value - The font weight of the text.
  * @returns { TextInputAttribute }
@@ -574,9 +546,9 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func fontWeight(value: ?FontWeight): TextInputAttribute
 
 /**
- * Set the font style.
+ * Sets the font style.
  *
- * @param { ?FontStyle } value - Default value is FontStyle.Normal.
+ * @param { ?FontStyle } value - Font style.Default value: FontStyle.Normal
  * @returns { TextInputAttribute }
  */
 @!APILevel[
@@ -586,10 +558,11 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func fontStyle(value: ?FontStyle): TextInputAttribute
 
 /**
- * Set the font family.
- * <br>Default font: 'HarmonyOS Sans'
- * <br>The 'HarmonyOS Sans' font and registered custom fonts are supported for applications.
- * <br>Only the 'HarmonyOS Sans' font is supported for widgets.
+ * Called when the font list of text is set.
+ * NOTE:
+ * Default font: 'HarmonyOS Sans'
+ * The 'HarmonyOS Sans' font and registered custom fonts are supported for applications.
+ * Only the 'HarmonyOS Sans' font is supported for widgets.
  *
  * @param { ?ResourceStr } value - The font family resource.
  * @returns { TextInputAttribute }
@@ -601,8 +574,14 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func fontFamily(value: ?ResourceStr): TextInputAttribute
 
 /**
- * Set when the inputFilter of text.
- * NOTE: Only inputs that comply with the regular expression can be displayed. Other inputs are filtered out. The specified regular expression can match single characters, but not strings. Since API version 11, if inputFilter is set and the entered characters are not null, the filtering effect attached to the text box type (specified through the type attribute) does not take effect.
+ * Called when the inputFilter of text is set.
+ *
+ * NOTE:
+ * Only inputs that comply with the regular expression can be displayed.
+ * Other inputs are filtered out.
+ * The specified regular expression can match single characters, but not strings.
+ * if inputFilter is set and the entered characters are not null,
+ * the filtering effect attached to the text box type (specified through the type attribute) does not take effect.
  *
  * @param { ?ResourceStr } value - The input filter pattern.
  * @param { ?(String) -> Unit } error - Callback function when input does not match the filter.
@@ -617,7 +596,7 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
 /**
  * Called when submitted.
  *
- * @param { ?(EnterKeyType) -> Unit } callback - Callback of the listened event.
+ * @param { ?(EnterKeyType) -> Unit } callback - If it is EnterKeyType.NewLine and the text box is in inline input style, onSubmit is not triggered.
  * @returns { TextInputAttribute }
  */
 @!APILevel[
@@ -653,10 +632,10 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
 /**
  * Called when the input of the input box changes.
  *
- * <p><strong>NOTE</strong>:
- * <br>In this callback, if cursor operations are performed, you need to adjust the cursor logic
+ * NOTE:
+ * In this callback, if cursor operations are performed, you need to adjust the cursor logic
  * based on the previewText parameter to ensure it works seamlessly within the preview display scenario.
- * </p>
+ *
  * @param { ?(String) -> Unit } callback - Callback function when the input text changes.
  * @returns { TextInputAttribute }
  */
@@ -681,11 +660,10 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
 /**
  * Called when judging whether the text editing change finished.
  *
- * <p><strong>NOTE</strong>:
- * <br>The text box is in the editing state when it has the caret placed in it,
+ * NOTE:
+ * The text box is in the editing state when it has the caret placed in it,
  * and is in the non-editing state otherwise.
- * <br>It returns true if the input operation is currently in progress.
- * </p>
+ * It returns true if the input operation is currently in progress.
  *
  * @param { ?(Bool) -> Unit} callback - Callback function when text editing state changes.
  * @returns { TextInputAttribute }
@@ -697,7 +675,19 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func onEditChange(callback: ?(Bool) -> Unit): TextInputAttribute
 
 /**
- * Set custom keyboard.
+ * Define custom keyboard of the text input.
+ * * NOTE:
+ * When a custom keyboard is set, activating the text box opens the specified custom component,
+ * instead of the system input method.
+ * The custom keyboard's height can be set through the height attribute of the custom component's root node,
+ * and its width is fixed at the default value.
+ * The custom keyboard is presented by overlaying the original screen,
+ * which is not compressed or lifted if avoid mode is not enabled or avoidance is not needed for the text box.
+ * The custom keyboard cannot obtain the focus, but it blocks gesture events.
+ * By default, the custom keyboard is closed when the input component loses the focus.
+ * You can also use the TextInputController.stopEditing API to close the keyboard.
+ * When a custom keyboard is set, the text box does not support camera input, even when the device supports.
+ * When setting a custom keyboard, you can bind the onKeyPrelme event to prevent input from the physical keyboard.
  *
  * @param { ?CustomBuilder } value - Set up a custom keyboard of TextInput.
  * @param { ?Bool } supportAvoidance - Indicates the custom keyboard options of TextInput.
@@ -710,8 +700,9 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
     func customKeyboard(value: ?CustomBuilder, supportAvoidance!: ?Bool): TextInputAttribute
 
 /**
- * Text input style.
- * NOTE: The inline input style only supports InputType.Normal.
+ * Text input style
+ * NOTE:
+ * The inline input style only supports InputType.Normal.
  *
  * @param { ?TextInputStyle } value - Text input style.Default value is TextInputStyle.Default.
  * @returns { TextInputAttribute }
@@ -738,16 +729,15 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
 /**
  * Controls whether the selection menu pops up.
  *
- * <p><strong>NOTE</strong>:
- * <br><em>true</em>:
- * <br>The system text selection menu does not appear under the following circumstances:
+ * NOTE:
+ * true:
+ * The system text selection menu does not appear under the following circumstances:
  * clicking the text box cursor, long-pressing the text box, double-tapping the text box,
  * triple-tapping the text box, or right-clicking the text box.
- * <br><em>false</em>:
- * <br>The system text selection menu appears under the following circumstances:
+ * false:
+ * The system text selection menu appears under the following circumstances:
  * clicking the text box cursor, long-pressing the text box, double-tapping the text box,
  * triple-tapping the text box, or right-clicking the text box.
- * </p>
  *
  * @param { ?Bool } value - Default value is false.
  * @returns { TextInputAttribute }
@@ -760,11 +750,9 @@ sealed interface TextInputAttribute <: CommonMethod<TextInputAttribute> {
 
 /**
  * Define the show underline of the text input.
- *
- * <p><strong>NOTE</strong>:
- * <br>By default, the underline comes in the color of 0x33182431, thickness of 1.px, and text box size of 48.vp.
- * <br>The underline is only available for the InputType.Normal type.
- * </p>
+ * NOTE:
+ * By default, the underline comes in the color of 0x33182431, thickness of 1.px, and text box size of 48.vp.
+ * The underline is only available for the InputType.Normal type.
  *
  * @param { ?Bool } value - Default value is false.
  * @returns { TextInputAttribute }

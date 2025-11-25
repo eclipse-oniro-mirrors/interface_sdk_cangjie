@@ -16,7 +16,7 @@ import ohos.labels.APILevel
 public class Circle <: CommonShapeMethodComponent<Circle> & CircleAttribute {
 /**
  * Create a circle.
- * 
+ *
  * @param { ?Length } [width] - The width of the circle component.
  * @param { ?Length } [height] - The height of the circle component.
  */

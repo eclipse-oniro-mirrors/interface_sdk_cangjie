@@ -24,8 +24,7 @@ public class RowSplit <: CommonMethodComponent<RowSplit> & RowSplitAttribute {
     public init(child: () -> Unit)
 
 /**
- * Enable or disable resizeable.
- * Controls whether the dividers between child components can be dragged to resize the components.
+ * Indicates whether the split line can be dragged. The default value is false
  *
  * @param { ?Bool } value - Whether enable resizeable.
  * @returns { This } Returns the RowSplit instance.
@@ -46,7 +45,7 @@ public class RowSplit <: CommonMethodComponent<RowSplit> & RowSplitAttribute {
 ]
 sealed interface RowSplitAttribute <: CommonMethod<RowSplitAttribute> {
 /**
- * Controls whether the dividers between child components can be dragged to resize the components.
+ * Indicates whether the split line can be dragged. The default value is false.
  *
  * @param { ?Bool } value - Whether enable resizeable.
  * @returns { RowSplitAttribute } Returns the row split attribute.

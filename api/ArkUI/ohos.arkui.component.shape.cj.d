@@ -31,9 +31,12 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
     public func fill(value: ?ResourceColor): T
 
 /**
- * Set the transparency of the border.
+ * Sets the opacity of the fill area.
+ * The value range is [0.0, 1.0].
+ * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
+ * Any other value evaluates to the value 1.0.
  *
- * @param { ?Float64 } value - The shape fill opacity. Value range is [0.0, 1.0].
+ * @param { ?Float64 } value - Opacity of the fill area. Default value: 1.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -43,9 +46,12 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
     public func fillOpacity(value: ?Float64): T
 
 /**
- * Set the transparency of the border.
+ * Sets the opacity of the fill area.
+ * The value range is [0.0, 1.0].
+ * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
+ * Any other value evaluates to the value 1.0.
  *
- * @param { ?AppResource } value - The shape fill opacity id source.
+ * @param { ?AppResource } value - Opacity of the fill area. Default value: 1
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -59,7 +65,7 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
  * If this attribute is not set, the component does not have any stroke.
  * If the value is invalid, no stroke will be drawn.
  *
- * @param { ?ResourceColor } value - The stroke color.
+ * @param { ?ResourceColor } value - Stroke color.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -69,10 +75,12 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
     public func stroke(value: ?ResourceColor): T
 
 /**
- * Sets the offset of the start point for drawing the stroke.
- * An invalid value is handled as the default value.
+ * Sets stroke dashes.
+ * The value must be greater than or equal to 0. Invalid values are treated as the default value.
  *
- * @param { ?Array<Length> } value - Offset of the start point for drawing the stroke.
+ * @param { ?Array<Length> } value - Stroke dashes.
+ *     Default value: []
+ *     Default unit: vp
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -85,7 +93,9 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
  * Sets the offset of the start point for drawing the stroke.
  * An invalid value is handled as the default value.
  *
- * @param { ?Length } value - The stroke dash offset.
+ * @param { ?Length } value - Offset of the start point for drawing the stroke.
+ *     Default value: 0
+ *     Default unit: vp
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -108,8 +118,9 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
 
 /**
  * Sets the join style of the stroke.
+ * This attribute does not work for the Circle component, which does not have corners.
  *
- * @param { ?LineJoinStyle } value - Join style of the stroke. The default value is LineJoinStyle.Miter.
+ * @param { ?LineJoinStyle } value - Join style of the stroke. Default value: LineJoinStyle.Miter
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -119,24 +130,24 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
     public func strokeLineJoin(value: ?LineJoinStyle): T
 
 /**
- * Set the limit value for drawing acute angles as oblique angles.
+ * Limits for drawing acute angles as bevels
  *
- * @param { ?Float64 } value - The stroke miter limit.
+ * @param { ?Float64 } miterLimit - The stroke miter limit.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func strokeMiterLimit(value: ?Float64): T
+    public func strokeMiterLimit(miterLimit: ?Float64): T
 
 /**
- * Set the opacity of the border.
+ * Sets the stroke opacity.
  * The value range is [0.0, 1.0].
  * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
  * Any other value evaluates to the value 1.0.
  *
- * @param { ?Float64 } value - The stroke opacity id source.
+ * @param { ?Float64 } value - Stroke opacity. Default value: 1.0.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -146,12 +157,12 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
     public func strokeOpacity(value: ?Float64): T
 
 /**
- * Set the opacity of the border.
+ * Sets the stroke opacity.
  * The value range is [0.0, 1.0].
  * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
  * Any other value evaluates to the value 1.0.
  *
- * @param { ?AppResource } value - The stroke opacity id source.
+ * @param { ?AppResource } value - Stroke opacity. Default value: 1.0
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -161,10 +172,14 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
     public func strokeOpacity(value: ?AppResource): T
 
 /**
- * Set the width of the border.
+ * Sets the stroke width.
  * If this attribute is of the string type, percentage values are not supported and will be treated as 1.px.
  *
- * @param { ?Length } value - The stroke width. The value must be greater than or equal to 0.
+ * @param { ?Length } value - Stroke width.
+ *     The value must be greater than or equal to 0.
+ *     Default value: 1.
+ *     Default unit: vp.
+ *     An invalid value is handled as the default value.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -174,9 +189,12 @@ public abstract class CommonShapeMethodComponent<T> <: CommonMethodComponent<T> 
     public func strokeWidth(value: ?Length): T
 
 /**
- * Called when setting whether anti aliasing is on.
+ * Specifies whether anti-aliasing is enabled.
  *
- * @param { ?Bool } value - Whether enable anti-alias.
+ * @param { ?Bool } value - Whether anti-aliasing is enabled.
+ *     true: Anti-aliasing is enabled.
+ *     false: Anti-aliasing is disabled.
+ *     Default value: true
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -208,9 +226,12 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
     func fill(value: ?ResourceColor): T
 
 /**
- * Set the transparency of the border.
+ * Sets the opacity of the fill area.
+ * The value range is [0.0, 1.0].
+ * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
+ * Any other value evaluates to the value 1.0.
  *
- * @param { ?Float64 } value - The shape fill opacity. Value range is [0.0, 1.0].
+ * @param { ?Float64 } value - Opacity of the fill area. Default value: 1.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -220,9 +241,12 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
     func fillOpacity(value: ?Float64): T
 
 /**
- * Set the transparency of the border.
+ * Sets the opacity of the fill area.
+ * The value range is [0.0, 1.0].
+ * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
+ * Any other value evaluates to the value 1.0.
  *
- * @param { ?AppResource } value - The shape fill opacity id source.
+ * @param { ?Float64 } value - Opacity of the fill area. Default value: 1.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -236,7 +260,7 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
  * If this attribute is not set, the component does not have any stroke.
  * If the value is invalid, no stroke will be drawn.
  *
- * @param { ?ResourceColor } value - The stroke color.
+ * @param { ?ResourceColor } value - Stroke color.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -246,10 +270,12 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
     func stroke(value: ?ResourceColor): T
 
 /**
- * Sets the offset of the start point for drawing the stroke.
- * An invalid value is handled as the default value.
+ * Sets stroke dashes.
+ * The value must be greater than or equal to 0. Invalid values are treated as the default value.
  *
- * @param { ?Array<Length> } value - Offset of the start point for drawing the stroke.
+ * @param { ?Array<Length> } value - Stroke dashes.
+ *     Default value: []
+ *     Default unit: vp
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -283,9 +309,10 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
     func strokeLineCap(value: ?LineCapStyle): T
 
 /**
- * Set the border corner drawing style.
+ * Sets the join style of the stroke.
+ * This attribute does not work for the Circle component, which does not have corners.
  *
- * @param { ?LineJoinStyle } value - Join style of the stroke. The default value is LineJoinStyle.Miter.
+ * @param { ?LineJoinStyle } value - Join style of the stroke. Default value: LineJoinStyle.Miter
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -295,7 +322,7 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
     func strokeLineJoin(value: ?LineJoinStyle): T
 
 /**
- * Set the limit value for drawing acute angles as oblique angles.
+ * Limits for drawing acute angles as bevels
  *
  * @param { ?Float64 } miterLimit - The stroke miter limit.
  * @returns { T } Returns the component instance itself for method chaining.
@@ -312,7 +339,7 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
  * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
  * Any other value evaluates to the value 1.0.
  *
- * @param { ?Float64 } value - The stroke opacity.
+ * @param { ?Float64 } value - Stroke opacity. Default value: 1.0.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -327,7 +354,7 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
  * A value less than 0.0 evaluates to the value 0.0. A value greater than 1.0 evaluates to the value 1.0.
  * Any other value evaluates to the value 1.0.
  *
- * @param { ?AppResource } value - The stroke opacity id source.
+ * @param { ?AppResource } value - Stroke opacity. Default value: 1.0
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -341,6 +368,9 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
  * If this attribute is of the string type, percentage values are not supported and will be treated as 1.px.
  *
  * @param { ?Length } value - The stroke width. The value must be greater than or equal to 0.
+ *      Default value: 1.
+ *      Default unit: vp.
+ *      invalid value is handled as the default value.
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -352,7 +382,10 @@ public interface CommonShapeMethod<T> <: CommonMethod<T> {
 /**
  * Called when setting whether anti aliasing is on.
  *
- * @param { ?Bool } value - Whether enable anti-alias.
+ * @param { ?Bool } value - Whether anti-aliasing is enabled.
+ *      true: Anti-aliasing is enabled.
+ *      false: Anti-aliasing is disabled.
+ *      Default value: true
  * @returns { T } Returns the component instance itself for method chaining.
  */
 @!APILevel[
@@ -461,7 +494,7 @@ sealed interface ShapeAttribute <: CommonShapeMethod<ShapeAttribute> {
 /**
  * Called when shape mesh.
  *
- * @param { ?Array<Float64> } value - The mesh vertex point array.
+ * @param { ?Array<Float64> } array - The mesh vertex point array.
  * @param { ?UInt32 } column - The column count of mesh.
  * @param { ?UInt32 } row - The row count of mesh.
  * @returns { ShapeAttribute } Returns the attribute of Shape.
@@ -470,5 +503,5 @@ sealed interface ShapeAttribute <: CommonShapeMethod<ShapeAttribute> {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func mesh(value: ?Array<Float64>, column: ?UInt32, row: ?UInt32): ShapeAttribute
+    func mesh(array: ?Array<Float64>, column: ?UInt32, row: ?UInt32): ShapeAttribute
 }

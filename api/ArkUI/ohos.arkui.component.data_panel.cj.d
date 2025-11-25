@@ -7,7 +7,6 @@ import ohos.labels.APILevel
 
 /**
  * ColorStop type
- *
  */
 @!APILevel[
     since: "22",
@@ -47,7 +46,6 @@ public class ColorStop {
 
 /**
  * LinearGradient class
- *
  */
 @!APILevel[
     since: "22",
@@ -79,7 +77,6 @@ public class LinearGradient {
 
 /**
  * Defines the options of Shadow.
- *
  */
 @!APILevel[
     since: "22",
@@ -87,7 +84,8 @@ public class LinearGradient {
 ]
 public class DataPanelShadowOptions <: MultiShadowOptions {
 /**
- * The colors to use for the shadow.
+ * Current shadow colors.
+ *
  * @default Consistent with valueColors
  */
 @!APILevel[
@@ -113,7 +111,7 @@ public class DataPanelShadowOptions <: MultiShadowOptions {
 }
 
 /**
- * Defines the DataPanel Component.
+ * Defines DataPanel Component.
  */
 @!APILevel[
     since: "22",

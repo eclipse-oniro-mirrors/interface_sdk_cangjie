@@ -7,7 +7,7 @@ import ohos.base.*
 import ohos.labels.APILevel
 
 /**
- * A component that displays an indeterminate loading progress indicator, typically used to show that an operation is in progress.
+ * Defines LoadingProgress Component.
  */
 @!APILevel[
     since: "22",
@@ -37,7 +37,7 @@ public class LoadingProgress <: CommonMethodComponent<LoadingProgress> & Loading
 }
 
 /**
- * Defines the LoadingProgress attribute functions.
+ * Declare the progress bar being loaded
  */
 @!APILevel[
     since: "22",

@@ -24,7 +24,7 @@ public type PageTransitionCallback = (RouteType, Float64) -> Unit
 ]
 public enum RouteType {
 /**
- * The page is not redirected.
+ * There is no thumb.
  */
 @!APILevel[
     since: "22",
@@ -154,7 +154,7 @@ extend SlideEffect <: Equatable<SlideEffect> {
 abstract sealed class CommonTransition {
 /**
  * Called when the slide in effect of the transition is set.
- * 
+ *
  * @param { SlideEffect } value - Page transition slide effect.
  * @returns { This }
  */
@@ -166,7 +166,7 @@ abstract sealed class CommonTransition {
 
 /**
  * Called when the translation effect of page transition is set.
- * 
+ *
  * @param { ?Length } [x] - X coordinate to translate to.
  * @param { ?Length } [y] - Y coordinate to translate to.
  * @param { ?Length } [z] - Z coordinate to translate to.
@@ -180,7 +180,7 @@ abstract sealed class CommonTransition {
 
 /**
  * Called when setting the zoom effect of page transition.
- * 
+ *
  * @param { ?Float32 } x - The degree of scaling along the X-axis, 1 is original scale.
  * @param { ?Float32 } y - The degree of scaling along the Y-axis, 1 is original scale.
  * @param { ?Float32 } z - The degree of scaling along the Z-axis, 1 is original scale.
@@ -202,7 +202,7 @@ abstract sealed class CommonTransition {
 
 /**
  * Called when the transparency value of the starting point of entry or the ending point of exit is set.
- * 
+ *
  * @param { Float64 } value - The opacity to transition to. The value ranges from 0 to 1.
  * @returns { This } 
  */
@@ -214,7 +214,7 @@ abstract sealed class CommonTransition {
 }
 
 /**
- * Provides an interface to set transition style when a page enters
+ * Provides a class to set transition style when a page enters.
  */
 @!APILevel[
     since: "22",
@@ -223,7 +223,7 @@ abstract sealed class CommonTransition {
 public class PageTransitionEnter <: CommonTransition {
 /**
  * Called when page Jump animation is used.
- * 
+ *
  * @param { ?RouteType } routeType - The transition route type. The default value is RouteType.None.
  * @param { ?Int32 } duration - The transition duration, in milliseconds. The default value is 1000.
  * @param { ?Curve } curve - The transition curve. The default value is Curve.Linear.
@@ -244,8 +244,8 @@ public class PageTransitionEnter <: CommonTransition {
 /**
  * Called frame by frame to customize pageTransition animation when the page enters.
  * The incoming parameter is the normalized progress of the current incoming animation.
- * 
- * @param { ?PageTransitionCallback } event - The callback on transition enter.
+ *
+ * @param { ?PageTransitionCallback } event - animation callback frame by frame
  * @returns { This } 
  * @throws { BusinessException } 190002 - The callback function is invalid.
  */
@@ -258,7 +258,7 @@ public class PageTransitionEnter <: CommonTransition {
 }
 
 /**
- * Provide an interface to set transition style when a page exits.
+ * Defines PageTransitionExit Component.
  */
 @!APILevel[
     since: "22",
@@ -267,7 +267,7 @@ public class PageTransitionEnter <: CommonTransition {
 public class PageTransitionExit <: CommonTransition {
 /**
  * Called when page Jump animation is used.
- * 
+ *
  * @param { ?RouteType } [routeType] - The transition route type. The default value is RouteType.None.
  * @param { ?Int32 } [duration] - The transition duration, in milliseconds. The default value is 1000.
  * @param { ?Curve } [curve] - The transition curve. The default value is Curve.Linear.
@@ -288,7 +288,7 @@ public class PageTransitionExit <: CommonTransition {
 /**
  * Called frame by frame to customize pageTransition animation when the page exits.
  * The input parameter is the normalized progress of the current exit animation.
- * 
+ *
  * @param { ?PageTransitionCallback } event - The callback on transition exit.
  * @returns { This } 
  */

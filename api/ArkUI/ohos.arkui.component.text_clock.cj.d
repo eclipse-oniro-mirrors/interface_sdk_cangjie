@@ -10,9 +10,13 @@ import ohos.resource.*
 import std.convert.*
 
 /**
- * Defines the options for a DateTimeOptions object. Since API version 9, the DateTimeOptions attribute is changed
- * from mandatory to optional.
- * Provides configuration options for date and time formatting in TextClock component.
+ * Whether to display a leading zero for the hours and minutes.
+ *
+ * NOTE:
+ * Currently only the configuration of the hour and minute parameters is supported.
+ *
+ * In the 12-hour format, it defaults to numeric, which means no leading zero is used.
+ * minute: defaults to 2-digit, which means a leading zero is used.
  */
 @!APILevel[
     since: "22",
@@ -20,7 +24,7 @@ import std.convert.*
 ]
 public class DateTimeOptions {
 /**
- * Valid locale ID, for example, "zh-Hans-CN". The default value is the current system locale.
+ * Define Preview locale
  */
 @!APILevel[
     since: "22",
@@ -29,7 +33,7 @@ public class DateTimeOptions {
     public var locale: ?String
 
 /**
- * Date display format. The value can be: "long", "short", "medium", "full", or "auto".
+ * Indicates the TextMenuItemId to open calendar.
  */
 @!APILevel[
     since: "22",
@@ -38,7 +42,7 @@ public class DateTimeOptions {
     public var dateStyle: ?String
 
 /**
- * Time display format. The value can be: "long", "short", "medium", "full", or "auto".
+ * The time of the TextClock.
  */
 @!APILevel[
     since: "22",
@@ -47,7 +51,7 @@ public class DateTimeOptions {
     public var timeStyle: ?String
 
 /**
- * Hour cycle. The value can be: "h11", "h12", "h23", or "h24".
+ * Hour portion of the selected time
  */
 @!APILevel[
     since: "22",
@@ -56,8 +60,9 @@ public class DateTimeOptions {
     public var hourCycle: ?String
 
 /**
- * Time zone in use. The value is a valid IANA time zone ID.
- * Specifies the time zone for date and time display.
+ * Specifies the current time zone.
+ * The valid value is an integer ranging from - 14 to 12,
+ * Where a negative value indicates the eastern time zone, for example, -8.
  */
 @!APILevel[
     since: "22",
@@ -80,10 +85,8 @@ public class DateTimeOptions {
     public var numberingSystem: ?String
 
 /**
- * Whether to use the 12-hour clock. The value true means to use the 12-hour clock, and the value false means the
- * opposite. If both hour12 and hourCycle are set, hourCycle does not take effect. If hour12 and hourCycle are not
- * set and the 24-hour clock is turned on.
- * Controls whether to use 12-hour or 24-hour time format.
+ * Hour portion of the selected time.
+ *
  * @default false
  */
 @!APILevel[
@@ -93,7 +96,7 @@ public class DateTimeOptions {
     public var hour12: ?Bool
 
 /**
- * Week display format. The value can be: "long", "short", "narrow", or "auto".
+ * Style of week width.
  */
 @!APILevel[
     since: "22",
@@ -111,7 +114,11 @@ public class DateTimeOptions {
     public var era: ?String
 
 /**
- * Year display format. The value can be: "numeric" or "2-digit".
+ * Year of the selected date.
+ *
+ * NOTE:
+ * Value range: depends on start and end.
+ * If start and end are not set, the default range is [1970, 2100].
  */
 @!APILevel[
     since: "22",
@@ -120,7 +127,11 @@ public class DateTimeOptions {
     public var year: ?String
 
 /**
- * Month display format. The value can be: "numeric", "2-digit", "long", "short", "narrow", or "auto".
+ * Month index of the selected date.
+ * The index is zero-based. 0 indicates January, and 11 indicates December.
+ *
+ * NOTE:
+ * Value range: depends on start and end. If start and end are not set, the default range is [0, 11].
  */
 @!APILevel[
     since: "22",
@@ -129,7 +140,10 @@ public class DateTimeOptions {
     public var month: ?String
 
 /**
- * Day display format. The value can be: "numeric" or "2-digit".
+ * Day of the selected date.
+ *
+ * NOTE:
+ * Value range: depends on start and end. If start and end are not set, the default range is [1, 31].
  */
 @!APILevel[
     since: "22",
@@ -138,7 +152,7 @@ public class DateTimeOptions {
     public var day: ?String
 
 /**
- * Hour display format. The value can be: "numeric" or "2-digit".
+ * Hour portion of the selected time.
  */
 @!APILevel[
     since: "22",
@@ -147,7 +161,7 @@ public class DateTimeOptions {
     public var hour: ?String
 
 /**
- * Minute display format. The value can be: "numeric" or "2-digit".
+ * Minute portion of the selected time.
  */
 @!APILevel[
     since: "22",
@@ -156,7 +170,7 @@ public class DateTimeOptions {
     public var minute: ?String
 
 /**
- * Second display format. The value can be: "numeric" or "2-digit".
+ * Second portion of the selected time.
  */
 @!APILevel[
     since: "22",
@@ -165,7 +179,9 @@ public class DateTimeOptions {
     public var second: ?String
 
 /**
- * Localized representation of a time zone name. The value can be: "long", "short", or "auto".
+ * Specifies the current time zone.
+ * The valid value is an integer ranging from - 14 to 12,
+ * Where a negative value indicates the eastern time zone, for example, -8.
  */
 @!APILevel[
     since: "22",
@@ -174,7 +190,10 @@ public class DateTimeOptions {
     public var timeZoneName: ?String
 
 /**
- * Time period display format. The value can be: "long", "short", "narrow", or "auto".
+ * Day of the selected date.
+ *
+ * NOTE:
+ * Value range: depends on start and end. If start and end are not set, the default range is [1, 31].
  */
 @!APILevel[
     since: "22",
@@ -284,7 +303,7 @@ public class TextClockController <: RemoteDataLite {
 }
 
 /**
- * A component that displays the current date and time, automatically updating at regular intervals.
+ * Defines TextClock Component.
  */
 @!APILevel[
     since: "22",
@@ -316,23 +335,17 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
  * You can listen to this callback,
  * Use the format attribute method to customize data display in the callback.
  *
- * @param { ?(Int64) -> Unit } event - Listening date event callback.
+ * @param { ?(Int64) -> Unit } callback - Listening date event callback.
  * @returns { This } Returns the TextClock instance.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func onDateChange(event: ?(Int64) -> Unit): This
+    public func onDateChange(callback: ?(Int64) -> Unit): This
 
 /**
- * Set display time format, such as "yyyy/mm/dd","yyyy-mm-dd".
- * Supports time format: yyyy,mm,mmm(English month abbreviation),mmmm(Full name of the month in English),
- * dd,ddd(English Week abbreviation),dddd(Full name of the week in English),
- * HH/hh(24-hour clock/12-hour clock),MM/mm(minute),SS/ss(second).
- * The default value is "hh:mm:ss" when TextClock is not in a form.
- * The default value is "hh:mm" when TextClock is in a form.
- * If the value has second or millisecond, the value will be set to the default value.
+ * Set display time format,such as yyyy/MM/dd,yyyy-MM-dd. support time format：yyyy,MM,MMM(English month abbreviation),MMMM(Full name of the month in English), dd,ddd(English Week abbreviation),dddd(Full name of the week in English), HH/hh(24-hour clock/12-hour clock),mm(minute),ss(second). The default value is hh:mm:ss when TextClock is not in a form. The default value is hh:mm when TextClock is in a form. If the value has second or millisecond, the value will be set to the default value
  *
  * @param { ?ResourceStr } value - The time format string.
  * @returns { This } Returns the TextClock instance.
@@ -344,7 +357,7 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
     public func format(value: ?ResourceStr): This
 
 /**
- * Set the value of TextClock fontSize.
+ * Called when the value of TextClock fontSize is set
  *
  * @param { ?Length } value - The font size.
  * @returns { This } Returns the TextClock instance.
@@ -356,7 +369,7 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
     public func fontSize(value: ?Length): This
 
 /**
- * Set the value of TextClock fontColor.
+ * Called when the value of TextClock fontColor is set
  *
  * @param { ?ResourceColor } value - The font color resource.
  * @returns { This } Returns the TextClock instance.
@@ -368,7 +381,7 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
     public func fontColor(value: ?ResourceColor): This
 
 /**
- * Set the value of TextClock fontWeight.
+ * Called when the value of TextClock fontStyle is set
  *
  * @param { ?FontStyle } value - The font style.
  * @returns { This } Returns the TextClock instance.
@@ -380,7 +393,7 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
     public func fontStyle(value: ?FontStyle): This
 
 /**
- * Set the value of TextClock fontWeight.
+ * Called when the value of TextClock fontWeight is set
  *
  * @param { ?FontWeight } value - The font weight.
  * @returns { This } Returns the TextClock instance.
@@ -392,7 +405,7 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
     public func fontWeight(value: ?FontWeight): This
 
 /**
- * Set the value of TextClock fontFamily.
+ * Called when the value of TextClock fontFamily is set
  *
  * @param { ?ResourceStr } value - The font family.
  * @returns { This } Returns the TextClock instance.
@@ -404,19 +417,21 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
     public func fontFamily(value: ?ResourceStr): This
 
 /**
- * Set the value of TextClock fontColor.
+ * Called when the text shadow is set
  *
- * @param { ?Array<ShadowOptions> } value - The shadow options.
+ * @param { ?Array<ShadowOptions> } values - The shadow options.
  * @returns { This } Returns the TextClock instance.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func textShadow(value: ?Array<ShadowOptions>): This
+    public func textShadow(values: ?Array<ShadowOptions>): This
 
 /**
- * Set the value of TextClock fontColor.
+ * Called when the text shadow is set.
+ * NOTE:
+ * This API does not work with the fill attribute or coloring strategy.
  *
  * @param { ?ShadowOptions } value - The shadow options.
  * @returns { This } Returns the TextClock instance.
@@ -429,7 +444,7 @@ public class TextClock <: CommonMethodComponent<TextClock> & TextClockAttribute 
 }
 
 /**
- * Defines the TextClock component attributes.
+ * Provides attribute for TextClock.
  */
 @!APILevel[
     since: "22",
@@ -446,20 +461,20 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
  * You can listen to this callback,
  * Use the format attribute method to customize data display in the callback.
  *
- * @param { ?(Int64) -> Unit } event - Listening date event callback.
+ * @param { ?(Int64) -> Unit } callback - Listening date event callback.
  * @returns { TextClockAttribute } Returns the text clock attribute.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func onDateChange(event: ?(Int64) -> Unit): TextClockAttribute
+    func onDateChange(callback: ?(Int64) -> Unit): TextClockAttribute
 
 /**
- * set display time format,such as "yyyy/mm/dd", "yyyy-mm-dd".
- * support time format：yyyy,mm,mmm(English month abbreviation), mmmm(Full name of the month in English),
- * dd,ddd(English Week abbreviation), dddd(Full name of the week in English),
- * HH/hh(24-hour clock/12-hour clock), MM/mm(minute), SS/ss(second).
+ * Set display time format,such as "yyyy/MM/dd","yyyy-MM-dd".
+ * support time format：yyyy,MM,MMM(English month abbreviation),MMMM(Full name of the month in English),
+ * dd,ddd(English Week abbreviation),dddd(Full name of the week in English),
+ * HH/hh(24-hour clock/12-hour clock),mm(minute),ss(second).
  * The default value is "hh:mm:ss" when TextClock is not in a form.
  * The default value is "hh:mm" when TextClock is in a form.
  * If the value has second or millisecond, the value will be set to the default value.
@@ -474,7 +489,7 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
     func format(value: ?ResourceStr): TextClockAttribute
 
 /**
- * Set when the value of TextClock fontSize is set.
+ * Called when the value of TextClock fontSize is set
  *
  * @param { ?Length } value - The font size.
  * @returns { TextClockAttribute } Returns the text clock attribute.
@@ -486,7 +501,7 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
     func fontSize(value: ?Length): TextClockAttribute
 
 /**
- * Set the value of TextClock fontColor.
+ * Called when the value of TextClock fontColor is set
  *
  * @param { ?ResourceColor } value - The font color resource.
  * @returns { TextClockAttribute } Returns the text clock attribute.
@@ -498,7 +513,7 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
     func fontColor(value: ?ResourceColor): TextClockAttribute
 
 /**
- * Set the value of TextClock fontStyle.
+ * Called when the value of TextClock fontStyle is set
  *
  * @param { ?FontStyle } value - The font style.
  * @returns { TextClockAttribute } Returns the text clock attribute.
@@ -510,7 +525,7 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
     func fontStyle(value: ?FontStyle): TextClockAttribute
 
 /**
- * Set the value of TextClock fontWeight.
+ * Called when the value of TextClock fontWeight is set
  *
  * @param { ?FontWeight } value - The font weight.
  * @returns { TextClockAttribute } Returns the text clock attribute.
@@ -522,7 +537,7 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
     func fontWeight(value: ?FontWeight): TextClockAttribute
 
 /**
- * Set the value of TextClock fontFamily.
+ * Called when the value of TextClock fontFamily is set
  *
  * @param { ?ResourceStr } value - The font family.
  * @returns { TextClockAttribute } Returns the text clock attribute.
@@ -534,7 +549,7 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
     func fontFamily(value: ?ResourceStr): TextClockAttribute
 
 /**
- * Set the text shadow.
+ * Called when the text shadow is set.
  *
  * @param { ?Array<ShadowOptions> } values - The shadow options.
  * @returns { TextClockAttribute } Returns the text clock attribute.
@@ -546,7 +561,7 @@ sealed interface TextClockAttribute <: CommonMethod<TextClockAttribute> {
     func textShadow(values: ?Array<ShadowOptions>): TextClockAttribute
 
 /**
- * Set the text shadow.
+ * Called when the text shadow is set.
  *
  * @param { ?ShadowOptions } value - The shadow options.
  * @returns { TextClockAttribute } Returns the text clock attribute.

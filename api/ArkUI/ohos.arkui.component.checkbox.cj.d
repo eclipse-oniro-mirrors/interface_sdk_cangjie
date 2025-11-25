@@ -37,19 +37,19 @@ public class Checkbox <: CommonMethodComponent<Checkbox> & CheckboxAttribute {
     public init(name!: ?String = None, group!: ?String = None, indicatorBuilder!: ?CustomBuilder = None)
 
 /**
- * Setting whether checkbox is selected.
+ * setting whether checkbox is selected
  *
- * @param { ?Bool } isSelected - Whether the checkbox is selected.
+ * @param { ?Bool } value - Whether the checkbox is selected.
  * @returns { This } The instance of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func select(isSelected: ?Bool): This
+    public func select(value: ?Bool): This
 
 /**
- * Set the display color of checkbox.
+ * setting the display color of checkbox
  *
  * @param { ?ResourceColor } value - The color to display.
  * @returns { This } The instance of the component.
@@ -73,7 +73,7 @@ public class Checkbox <: CommonMethodComponent<Checkbox> & CheckboxAttribute {
     public func onChange(callback: ?OnCheckboxChangeCallback): This
 
 /**
- * Setting the shape of checkbox.
+ * setting the shape of checkbox
  *
  * @param { ?CheckBoxShape } value - The configuration of checkbox shape.
  * @returns { This } The instance of the component.
@@ -86,7 +86,7 @@ public class Checkbox <: CommonMethodComponent<Checkbox> & CheckboxAttribute {
 }
 
 /**
- * Defines the Checkbox component attributes.
+ * Defines the attribute functions of Checkbox.
  */
 @!APILevel[
     since: "22",
@@ -94,19 +94,19 @@ public class Checkbox <: CommonMethodComponent<Checkbox> & CheckboxAttribute {
 ]
 sealed interface CheckboxAttribute <: CommonMethod<CheckboxAttribute> {
 /**
- * Setting whether checkbox is selected.
+ * setting whether checkbox is selected.
  *
- * @param { ?Bool } isSelected - Whether the checkbox is selected.
+ * @param { ?Bool } value - Whether the checkbox is selected.
  * @returns { CheckboxAttribute } The attribute of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func select(isSelected: ?Bool): CheckboxAttribute
+    func select(value: ?Bool): CheckboxAttribute
 
 /**
- * Setting the display color of checkbox.
+ * setting the display color of checkbox.
  *
  * @param { ?ResourceColor } value - The display color of checkbox.
  * @returns { CheckboxAttribute } The attribute of the component.
@@ -130,7 +130,7 @@ sealed interface CheckboxAttribute <: CommonMethod<CheckboxAttribute> {
     func onChange(callback: ?OnCheckboxChangeCallback): CheckboxAttribute
 
 /**
- * Setting the shape of checkbox.
+ * setting the shape of checkbox.
  *
  * @param { ?CheckBoxShape } value - The configuration of checkbox shape.
  * @returns { CheckboxAttribute } The attribute of the component.

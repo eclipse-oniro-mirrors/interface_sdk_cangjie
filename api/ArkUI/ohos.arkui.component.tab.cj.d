@@ -37,7 +37,7 @@ public class Tabs <: CommonMethodComponent<Tabs> & TabsAttribute {
     )
 
 /**
- * Sets the width of the tab bar.
+ * Sets the width of the tab bar. Notice: barWidth only supports Number type on 7, supports Length type since 8
  *
  * @param { ?Length } value - Width of the tab bar. If the set value is less than 0
  * or greater than the width of the Tabs component, the default value is used.
@@ -50,8 +50,7 @@ public class Tabs <: CommonMethodComponent<Tabs> & TabsAttribute {
     public func barWidth(value: ?Length): This
 
 /**
- * Called when the height of the bar graph is set.
- * Configures the height of the tab bar.
+ * Sets the height of the tab bar. Notice: barHeight only supports Number type on 7, supports Length type since 8
  *
  * @param { ?Length } value - Height of the tab bar. If the set value is less than 0 or
  * greater than the height of the Tabs component, the default value is used.
@@ -67,7 +66,7 @@ public class Tabs <: CommonMethodComponent<Tabs> & TabsAttribute {
  * Sets whether to use vertical tabs.
  * Configures the orientation of the tabs.
  *
- * @param { ?Bool } value - Whether to use vertical tabs. The default value is false.
+ * @param { ?Bool } value - Whether to use vertical tabs. Default value is false.
  * @returns { This }  Returns the TabContent instance.
  */
 @!APILevel[
@@ -80,7 +79,7 @@ public class Tabs <: CommonMethodComponent<Tabs> & TabsAttribute {
  * Sets whether the tabs are scrollable.
  * Controls whether the tab bar can be scrolled when there are many tabs.
  *
- * @param { ?Bool } value - Whether the tabs are scrollable. The default value is true.
+ * @param { ?Bool } value - Whether the tabs are scrollable. Default value is true.
  * @returns { This }  Returns the TabContent instance.
  */
 @!APILevel[
@@ -108,7 +107,9 @@ public class Tabs <: CommonMethodComponent<Tabs> & TabsAttribute {
  * which is initiated by clicking a specific tab or by calling the changeIndex API of TabsController.
  * Configures the duration of the tab switching animation.
  *
- * @param { ?Float32 } value - Animation duration in seconds.
+ * @param { ?Float32 } value - default value:
+ *     When this property is not set or set to null, the default value is 0.
+ *     When set to a value less than 0 or None, the default value is 300.
  * @returns { This }  Returns the TabContent instance.
  */
 @!APILevel[
@@ -118,15 +119,7 @@ public class Tabs <: CommonMethodComponent<Tabs> & TabsAttribute {
     public func animationDuration(value: ?Float32): This
 
 /**
- * Triggered when a tab is switched.
- *
- * <p><strong>NOTE</strong>:
- * <br>This event is triggered when any of the following conditions is met:
- * 1. The swiping animation is completed, followed by tab switching.
- * 2. The Controller API is called.
- * 3. The attribute value is updated using a state variable.
- * 4. A tab is clicked.
- * </p>
+ * Triggered when a tab is switched. NOTE: This event is triggered when any of the following conditions is met: 1. The swiping animation is completed, followed by tab switching. 2. The Controller API is called. 3. The attribute value is updated using a state variable. 4. A tab is clicked
  *
  * @param { ?Callback<Int32, Unit> } event - Callback function triggered when tab changes.
  * The parameter is the index of the selected tab.
@@ -203,11 +196,7 @@ public class TabContent <: CommonMethodComponent<TabContent> & TabContentAttribu
     public init()
 
 /**
- * Sets the content displayed on the tab bar.
- *
- * <p><strong>NOTE</strong>:
- * <br>If the content set exceeds the space provided by the tab bar, it will be clipped.
- * </p>
+ * Sets the content displayed on the tab bar. NOTE: If the content set exceeds the space provided by the tab bar, it will be clipped
  *
  * @param { ?ResourceStr } content - Content displayed on the tab bar.
  * @returns { This } Returns the TabContent instance.
@@ -221,10 +210,9 @@ public class TabContent <: CommonMethodComponent<TabContent> & TabContentAttribu
 /**
  * Sets the content displayed on the tab bar.
  *
- * <p><strong>NOTE</strong>:
- * <br>The bottom tab style does not include an indicator.
- * <br>When an icon display error occurs, a gray blank block is displayed.
- * </p>
+ * NOTE:
+ * The bottom tab style does not include an indicator.
+ * When an icon display error occurs, a gray blank block is displayed.
  *
  * @param { ?ResourceStr } [icon] - TabBar icon.
  * @param { ?ResourceStr } [text] - TabBar text.
@@ -239,9 +227,8 @@ public class TabContent <: CommonMethodComponent<TabContent> & TabContentAttribu
 /**
  * Sets the content displayed on the tab bar.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the content set exceeds the space provided by the tab bar, it will be clipped.
- * </p>
+ * NOTE:
+ * If the content set exceeds the space provided by the tab bar, it will be clipped.
  *
  * @param { ?CustomBuilder } content - Content displayed on the tab bar.
  * @returns { This } Returns the TabContent instance.
@@ -254,8 +241,7 @@ public class TabContent <: CommonMethodComponent<TabContent> & TabContentAttribu
 }
 
 /**
- * Defines the Tabs attribute functions.
- * Provides methods for configuring the appearance and behavior of the Tabs component.
+ * Defines the tabs attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -263,8 +249,8 @@ public class TabContent <: CommonMethodComponent<TabContent> & TabContentAttribu
 ]
 sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
 /**
- * Called when the width of the bar graph is set.
- * Configures the width of the tab bar.
+ * Sets the width of the tab bar.
+ * Notice: barWidth only supports Number type on 7, supports Length type since 8.
  *
  * @param { ?Length } value - Width of the tab bar. If the set value is less than 0
  * or greater than the width of the Tabs component, the default value is used.
@@ -277,8 +263,8 @@ sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
     func barWidth(value: ?Length): TabsAttribute
 
 /**
- * Called when the height of the bar graph is set.
- * Configures the height of the tab bar.
+ * Sets the height of the tab bar.
+ * Notice: barHeight only supports Number type on 7, supports Length type since 8.
  *
  * @param { ?Length } value - Height of the tab bar. If the set value is less than 0 or
  * greater than the height of the Tabs component, the default value is used.
@@ -294,7 +280,7 @@ sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
  * Sets whether to use vertical tabs.
  * Configures the orientation of the tabs.
  *
- * @param { ?Bool } value - Whether to use vertical tabs. The default value is false.
+ * @param { ?Bool } value - Whether to use vertical tabs. Default value is false.
  * @returns { TabsAttribute } Returns the tabs attribute.
  */
 @!APILevel[
@@ -307,7 +293,7 @@ sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
  * Sets whether the tabs are scrollable.
  * Controls whether the tab bar can be scrolled when there are many tabs.
  *
- * @param { ?Bool } value - Whether the tabs are scrollable. The default value is true.
+ * @param { ?Bool } value - Whether the tabs are scrollable. Default value is true.
  * @returns { TabsAttribute } Returns the tabs attribute.
  */
 @!APILevel[
@@ -334,7 +320,9 @@ sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
  * Sets the length of time required to complete the tab switching animation,
  * which is initiated by clicking a specific tab or by calling the changeIndex API of TabsController.
  *
- * @param { ?Float32 } value - Animation duration in seconds.
+ * @param { ?Float32 } value - default value:
+ *     When this property is not set or set to null, the default value is 0.
+ *     When set to a value less than 0 or None, the default value is 300.
  * @returns { TabsAttribute } Returns the tabs attribute.
  */
 @!APILevel[
@@ -346,13 +334,12 @@ sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
 /**
  * Triggered when a tab is switched.
  *
- * <p><strong>NOTE</strong>:
- * <br>This event is triggered when any of the following conditions is met:
+ * NOTE:
+ * This event is triggered when any of the following conditions is met:
  * 1. The swiping animation is completed, followed by tab switching.
  * 2. The Controller API is called.
  * 3. The attribute value is updated using a state variable.
  * 4. A tab is clicked.
- * </p>
  *
  * @param { ?Callback<Int32, Unit> } event - Callback function triggered when tab changes.
  * The parameter is the index of the selected tab.
@@ -366,8 +353,7 @@ sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
 }
 
 /**
- * Defines the TabContent attribute functions.
- * Provides methods for configuring the appearance and behavior of the TabContent component.
+ * Defines the attribute functions of TabContent.
  */
 @!APILevel[
     since: "22",
@@ -377,9 +363,8 @@ sealed interface TabContentAttribute <: CommonMethod<TabContentAttribute> {
 /**
  * Sets the content displayed on the tab bar.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the content set exceeds the space provided by the tab bar, it will be clipped.
- * </p>
+ * NOTE:
+ * If the content set exceeds the space provided by the tab bar, it will be clipped.
  *
  * @param { ?ResourceStr } content - Content displayed on the tab bar.
  * @returns { TabContentAttribute } Returns the tab content attribute.
@@ -393,10 +378,9 @@ sealed interface TabContentAttribute <: CommonMethod<TabContentAttribute> {
 /**
  * Sets the content displayed on the tab bar.
  *
- * <p><strong>NOTE</strong>:
- * <br>The bottom tab style does not include an indicator.
- * <br>When an icon display error occurs, a gray blank block is displayed.
- * </p>
+ * NOTE:
+ * The bottom tab style does not include an indicator.
+ * When an icon display error occurs, a gray blank block is displayed.
  *
  * @param { ?ResourceStr } icon - TabBar icon.
  * @param { ?ResourceStr } text - TabBar text.
@@ -411,9 +395,8 @@ sealed interface TabContentAttribute <: CommonMethod<TabContentAttribute> {
 /**
  * Sets the content displayed on the tab bar.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the content set exceeds the space provided by the tab bar, it will be clipped.
- * </p>
+ * NOTE:
+ * If the content set exceeds the space provided by the tab bar, it will be clipped.
  *
  * @param { ?CustomBuilder } content - Content displayed on the tab bar.
  * @returns { TabContentAttribute } Returns the tab content attribute.
