@@ -49,10 +49,7 @@ public class CommonEventData {
 
     /**
      * Common event data received by the subscriber. The value of this field is the same as that of the code field in
-     * CommonEventPublishData when the publisher uses CommonEventManager.publish to publish a common event. The default
-     * value is 0.
-     *
-     * @default 0
+     * CommonEventPublishData when the publisher uses CommonEventManager.publish to publish a common event. The default value is 0.
      */
     @!APILevel[
         since: "22",

@@ -1594,8 +1594,6 @@ public class Support {
 
     /**
      * Indicates the action of a common event that the call state has been changed.
-     * To subscribe to this protected common event, your application must have the ohos.permission.GET_TELEPHONY_STATE
-     * permission.
      * This is a protected common event that can only be sent by system.
      */
     @!APILevel[

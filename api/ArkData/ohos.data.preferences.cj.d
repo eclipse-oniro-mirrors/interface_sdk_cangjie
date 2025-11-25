@@ -64,13 +64,13 @@ public enum PreferencesEvent {
 ]
 public class Preferences {
     /**
-     * Obtains a {@link Preferences} instance matching a specified preferences file name.
-     * <p>The {@link Preferences} instance loads all data of the preferences file and
+     * Obtains a Preferences instance matching a specified preferences file name.
+     * The Preferences instance loads all data of the preferences file and
      * resides in the memory. You can use removePreferencesFromCache to remove the instance from the memory.
      *
      * @param { UIAbilityContext } context - Indicates the context of application or capability.
      * @param { String } name - Indicates the preferences file name.
-     * @returns { Preferences } The {@link Preferences} instance matching the specified preferences file name.
+     * @returns { Preferences } The Preferences instance matching the specified preferences file name.
      * @throws { BusinessException } 15500000 - Inner error.
      */
     @!APILevel[
@@ -82,12 +82,12 @@ public class Preferences {
     public static func getPreferences(context: UIAbilityContext, name: String): Preferences
 
     /**
-     * Obtains a {@link Preferences} instance matching a specified preferences file name.
-     * <p>The {@link Preferences} instance loads all data of the preferences file and
+     * Obtains a Preferences instance matching a specified preferences file name.
+     * The Preferences instance loads all data of the preferences file and
      * resides in the memory. You can use removePreferencesFromCache to remove the instance from the memory.
      *
      * @param { UIAbilityContext } context - Indicates the context of application or capability.
-     * @param { PreferencesOptions } options - Indicates the {@link PreferencesOptions} option of preferences
+     * @param { PreferencesOptions } options - Indicates the PreferencesOptions option of preferences
      * file position.
      * @returns { Preferences } The Preferences instance matching the specified preferences file name.
      * @throws { BusinessException } 801 - Capability not supported.
@@ -104,10 +104,10 @@ public class Preferences {
     public static func getPreferences(context: UIAbilityContext, options: PreferencesOptions): Preferences
 
     /**
-     * Deletes a {@link Preferences} instance matching a specified preferences file name
+     * Deletes a Preferences instance matching a specified preferences file name
      * from the cache which is performed by removePreferencesFromCache and deletes the
      * preferences file.
-     * <p>When deleting the {@link Preferences} instance, you must release all references
+     * When deleting the Preferences instance, you must release all references
      * of the instance. In addition, do not use the instance to perform data operations. Otherwise, data inconsistency
      * will occur.
      *
@@ -125,15 +125,15 @@ public class Preferences {
     public static func deletePreferences(context: UIAbilityContext, name: String): Unit
 
     /**
-     * Deletes a {@link Preferences} instance matching a specified preferences file name
+     * Deletes a Preferences instance matching a specified preferences file name
      * from the cache which is performed by removePreferencesFromCache and deletes the
      * preferences file.
-     * <p>When deleting the {@link Preferences} instance, you must release all references
+     * When deleting the Preferences instance, you must release all references
      * of the instance. In addition, do not use the instance to perform data operations. Otherwise, data inconsistency
      * will occur.
      *
      * @param { UIAbilityContext } context - Indicates the context of application or capability.
-     * @param { PreferencesOptions } options - Indicates the {@link PreferencesOptions} option of preferences
+     * @param { PreferencesOptions } options - Indicates the PreferencesOptions option of preferences
      * file position.
      * @throws { BusinessException } 801 - Capability not supported.
      * @throws { BusinessException } 15500000 - Inner error.
@@ -150,9 +150,9 @@ public class Preferences {
     public static func deletePreferences(context: UIAbilityContext, options: PreferencesOptions): Unit
 
     /**
-     * Deletes a {@link Preferences} instance matching a specified preferences file name
+     * Deletes a Preferences instance matching a specified preferences file name
      * from the cache.
-     * <p>When deleting the {@link Preferences} instance, you must release all references
+     * When deleting the Preferences instance, you must release all references
      * of the instance. In addition, do not use the instance to perform data operations. Otherwise, data inconsistency
      * will occur.
      *
@@ -169,14 +169,14 @@ public class Preferences {
     public static func removePreferencesFromCache(context: UIAbilityContext, name: String): Unit
 
     /**
-     * Deletes a {@link Preferences} instance matching a specified preferences file name
+     * Deletes a Preferences instance matching a specified preferences file name
      * from the cache.
-     * <p>When deleting the {@link Preferences} instance, you must release all references
+     * When deleting the Preferences instance, you must release all references
      * of the instance. In addition, do not use the instance to perform data operations. Otherwise, data inconsistency
      * will occur.
      *
      * @param { UIAbilityContext } context - Indicates the context of application or capability.
-     * @param { PreferencesOptions } options - Indicates the {@link PreferencesOptions} option of preferences
+     * @param { PreferencesOptions } options - Indicates the PreferencesOptions option of preferences
      * file position.
      * @throws { BusinessException } 801 - Capability not supported.
      * @throws { BusinessException } 15500000 - Inner error.
@@ -193,10 +193,9 @@ public class Preferences {
 
     /**
      * Obtains the value of a preferences in the PreferencesValueType format.
-     * <p>If the value is null or not in the PreferencesValueType format, the default value is returned.
+     * If the value is null or not in the PreferencesValueType format, the default value is returned.
      *
      * @param { String } key - Indicates the key of the preferences. It cannot be null or empty.
-     * <tt>MAX_KEY_LENGTH</tt>.
      * @param { PreferencesValueType } defValue - Indicates the default value to return.
      * @returns { PreferencesValueType } The value matching the specified key if it is found;
      * @throws { BusinessException } 15500000 - Inner error.
@@ -224,10 +223,9 @@ public class Preferences {
     public func getAll(): HashMap<String, PreferencesValueType>
 
     /**
-     * Checks whether the {@link Preferences} object contains a preferences matching a specified key.
+     * Checks whether the Preferences object contains a preferences matching a specified key.
      *
      * @param { String } key - Indicates the key of the preferences to modify. It cannot be null or empty.
-     * <tt>MAX_KEY_LENGTH</tt>.
      * @returns { Bool } true if the Preferences object contains
      * a preferences with the specified key; returns false otherwise.
      * @throws { BusinessException } 15500000 - Inner error.
@@ -241,16 +239,15 @@ public class Preferences {
     public func has(key: String): Bool
 
     /**
-     * Sets an int value for the key in the {@link Preferences} object.
-     * <p>You can call the {@link #flush} method to save the {@link Preferences} object to the
+     * Sets an int value for the key in the Preferences object.
+     * You can call the flush method to save the Preferences object to the
      * file.
-     * <p>When the value contains strings in a non-UTF-8 format, use the Uint8Array type for storage.
+     * When the value contains strings in a non-UTF-8 format, use the Uint8Array type for storage.
      * Otherwise, the format of the persistent file is incorrect and the file is damaged.
-     * <p>If the corresponding key already exists, the {@link put} method will overwrite its value.
-     * You can use the {@link #hasSync} method to check whether the corresponding key-value pair exists.
+     * If the corresponding key already exists, the put method will overwrite its value.
+     * You can use the hasSync method to check whether the corresponding key-value pair exists.
      *
      * @param { String } key - Indicates the key of the preferences to modify. It cannot be null or empty.
-     * <tt>MAX_KEY_LENGTH</tt>.
      * @param { PreferencesValueType } value - Indicates the value of the preferences.
      * @throws { BusinessException } 15500000 - Inner error.
      */
@@ -263,11 +260,10 @@ public class Preferences {
     public func put(key: String, value: PreferencesValueType): Unit
 
     /**
-     * Deletes the preferences with a specified key from the {@link Preferences} object.
-     * <p>You can call the {@link #flush} method to save the {@link Preferences} object to the file.
+     * Deletes the preferences with a specified key from the Preferences object.
+     * You can call the flush method to save the Preferences object to the file.
      *
      * @param { String } key - Indicates the key of the preferences to delete. It cannot be null or empty.
-     * <tt>MAX_KEY_LENGTH</tt>.
      * @throws { BusinessException } 15500000 - Inner error.
      */
     @!APILevel[
@@ -279,8 +275,8 @@ public class Preferences {
     public func delete(key: String): Unit
 
     /**
-     * Clears all preferences from the {@link Preferences} object.
-     * <p>You can call the {@link #flush} method to save the {@link Preferences} object to the file.
+     * Clears all preferences from the Preferences object.
+     * You can call the flush method to save the Preferences object to the file.
      *
      * @throws { BusinessException } 15500000 - Inner error.
      */
@@ -293,7 +289,7 @@ public class Preferences {
     public func clear(): Unit
 
     /**
-     * saves the {@link Preferences} object to the file.
+     * saves the Preferences object to the file.
      *
      * @throws { BusinessException } 15500000 - Inner error.
      */
@@ -306,7 +302,7 @@ public class Preferences {
     public func flush(): Unit
 
     /**
-     * Registers an observer to listen for the change of a {@link Preferences} object.
+     * Registers an observer to listen for the change of a Preferences object.
      *
      * @param { PreferencesEvent } event - Indicates the callback when preferences changes.
      * @param { Callback1Argument<String> } callback - Indicates the callback function.
@@ -437,7 +433,7 @@ public enum PreferencesValueType {
 }
 
 /**
- * The Max length of key.
+ * Maximum length of a key, which is 1024 bytes.
  */
 @!APILevel[
     since: "22",
@@ -445,7 +441,7 @@ public enum PreferencesValueType {
 ]
 public const MAX_KEY_LENGTH: UInt32 = 1024
 /**
- * The Max length of value.
+ * Maximum length of value, which is 16 MB.
  */
 @!APILevel[
     since: "22",

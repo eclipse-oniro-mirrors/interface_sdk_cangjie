@@ -35,8 +35,6 @@ import std.collection.*
 public class BackForwardList {
     /**
      * Current index in BackForwardList.
-     *
-     * @returns { Int32 } Current index in BackForwardList.
      */
     @!APILevel[
         since: "22",
@@ -45,9 +43,8 @@ public class BackForwardList {
     public prop currentIndex: Int32
 
     /**
-     * Size of in BackForwardList.
-     *
-     * @returns { Int32 } Size of in BackForwardList.
+     * Number of indexes in the history stack. The maximum value is 50.
+     * If this value is exceeded, the earliset index will be overwritten.
      */
     @!APILevel[
         since: "22",
@@ -143,7 +140,7 @@ public class WebCookieManager {
         since: "22",
         syscap: "SystemCapability.Web.Webview.Core"
     ]
-    public static func putAcceptThirdPartyCookieEnabled(accept: Bool): Unit
+    public static func setAcceptThirdPartyCookieEnabled(accept: Bool): Unit
 
     /**
      * Get whether the instance can send and accept thirdparty cookies.
@@ -167,7 +164,7 @@ public class WebCookieManager {
         since: "22",
         syscap: "SystemCapability.Web.Webview.Core"
     ]
-    public static func existCookie(incognito!: Bool = false): Bool
+    public static func hasCookie(incognito!: Bool = false): Bool
 
     /**
      * Remove all cookies.
@@ -238,7 +235,7 @@ public enum SecurityLevel {
         since: "22",
         syscap: "SystemCapability.Web.Webview.Core"
     ]
-    Danger
+    Dangerous
     | ...
 }
 
@@ -501,11 +498,10 @@ public class WebviewController {
      * Sets whether to enable web debugging. By default, web debugging is disabled.
      * For details, see Debugging Frontend Pages by Using DevTools.
      * 
-     * <p><strong>API Note</strong>:<br>
+     * API Note:
      * Enabling web debugging allows users to check and modify the internal status of the web page,
      * which poses security risks. Therefore, you are advised not to enable this function
      * in the officially released version of the app.
-     * </p>
      *
      * @param { Bool } webDebuggingAccess - Sets whether to enable web debugging. true enable web debugging;
      *                                     false disable web debugging. The default value is false.
@@ -557,7 +553,7 @@ public class WebviewController {
         syscap: "SystemCapability.Web.Webview.Core",
         throwexception: true
     ]
-    public func accessBackward(): Bool
+    public func canGoBack(): Bool
 
     /**
      * Checks whether the web page can go back or forward the given number of steps.
@@ -585,7 +581,7 @@ public class WebviewController {
         syscap: "SystemCapability.Web.Webview.Core",
         throwexception: true
     ]
-    public func forward(): Unit
+    public func goForward(): Unit
 
     /**
      * Goes back in the history of the web page.
@@ -598,7 +594,7 @@ public class WebviewController {
         syscap: "SystemCapability.Web.Webview.Core",
         throwexception: true
     ]
-    public func backward(): Unit
+    public func goBack(): Unit
 
     /**
      * Clears the history in the Web.
@@ -624,7 +620,7 @@ public class WebviewController {
         syscap: "SystemCapability.Web.Webview.Core",
         throwexception: true
     ]
-    public func refresh(): Unit
+    public func reload(): Unit
 
     /**
      * Loads the data or URL.
@@ -683,9 +679,8 @@ public class WebviewController {
     /**
      * Let the Web zoom by.
      *
-     * <p><strong>API Note</strong>:<br>
+     * API Note:
      * zoomAccess must be true.
-     * </p>
      *
      * @param { Float32 } factor - The zoom factor.
      * @throws { BusinessException } 17100001 - Init error.
@@ -795,7 +790,7 @@ public class WebviewController {
         syscap: "SystemCapability.Web.Webview.Core",
         throwexception: true
     ]
-    public func backOrForward(step: Int32): Unit
+    public func goBackOrForward(step: Int32): Unit
 
     /**
      * Stops the current load.
@@ -840,7 +835,7 @@ public class WebviewController {
      * Asynchronously execute JavaScript in the context of the currently displayed page.
      * The result of the script execution will be returned through an asynchronous callback.
      * This method must be used on the UI thread, and the callback will also be invoked on the UI thread.
-     * <p><strong>API Note</strong>:<br>
+     * API Note:
      * The state of JavaScript is no longer persisted across navigations like loadUrl.
      * For example, global variables and functions defined before calling loadUrl will not exist in the loaded page.
      * It is recommended that applications use registerJavaScriptProxy to ensure that the JavaScript state can be persisted across page navigations.
@@ -880,7 +875,6 @@ public class WebviewController {
      *                          and when set to true, it will jump to the top of the page.
      * @throws { BusinessException } 17100001 - Init error.
      *                           The WebviewController must be associated with a Web component.
-     * relation pageUp(top: boolean): void
      */
     @!APILevel[
         since: "22",
@@ -897,7 +891,6 @@ public class WebviewController {
      *                             and when set to true, it will jump to the top of the page.
      * @throws { BusinessException } 17100001 - Init error.
      *                           The WebviewController must be associated with a Web component.
-     * relation pageDown(bottom: boolean): void
      */
     @!APILevel[
         since: "22",
@@ -970,9 +963,8 @@ public class WebviewController {
     /**
      * Scroll by the delta position.
      *
-     * <p><strong>API Note</strong>:<br>
+     * API Note:
      * In nested scroll scenarios, calling scrollBy does not trigger nested scrolling in the parent component.
-     * </p>
      *
      * @param { Float32 } deltaX - the delta x of the position.Unit: vp.
      * @param { Float32 } deltaY - the delta y of the position.Unit: vp.

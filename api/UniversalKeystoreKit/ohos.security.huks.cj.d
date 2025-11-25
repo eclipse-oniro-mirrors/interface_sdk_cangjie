@@ -590,7 +590,7 @@ public class HuksUnwrapSuite {
         since: "22",
         syscap: "SystemCapability.Security.Huks.Core"
     ]
-    public static const HUKS_UNWRAP_SUITE_X25519_AES_256_GCM_NOPADDING: UInt32 = 1
+    public static const HUKS_UNWRAP_SUITE_X25519_AES_256_GCM_NO_PADDING: UInt32 = 1
     /**
      * Use ECDH for key agreement and then use AES-256 GCM to encrypt the key.
      */
@@ -598,7 +598,7 @@ public class HuksUnwrapSuite {
         since: "22",
         syscap: "SystemCapability.Security.Huks.Core"
     ]
-    public static const HUKS_UNWRAP_SUITE_ECDH_AES_256_GCM_NOPADDING: UInt32 = 2
+    public static const HUKS_UNWRAP_SUITE_ECDH_AES_256_GCM_NO_PADDING: UInt32 = 2
 }
 
 /**
@@ -957,7 +957,7 @@ public class HuksSecureSignType {
         since: "22",
         syscap: "SystemCapability.Security.Huks.Extension"
     ]
-    public static const HUKS_SECURE_SIGN_WITH_AUTHINFO: UInt32 = 1
+    public static const HUKS_SECURE_SIGN_WITH_AUTH_INFO: UInt32 = 1
 }
 
 /**
@@ -1137,7 +1137,7 @@ public class HuksTag {
         since: "22",
         syscap: "SystemCapability.Security.Huks.Core"
     ]
-    public static const HUKS_TAG_KEY_GENERATE_TYPE: UInt32 = HuksTagType.HUKS_TAG_TYPE_UINT | 15
+    public static const HUKS_TAG_KEY_GENERATION_TYPE: UInt32 = HuksTagType.HUKS_TAG_TYPE_UINT | 15
     /**
      * Type of the algorithm used for key agreement.
      */
@@ -1145,7 +1145,7 @@ public class HuksTag {
         since: "22",
         syscap: "SystemCapability.Security.Huks.Core"
     ]
-    public static const HUKS_TAG_AGREE_ALG: UInt32 = HuksTagType.HUKS_TAG_TYPE_UINT | 19
+    public static const HUKS_TAG_ALG_FOR_AGREEMENT: UInt32 = HuksTagType.HUKS_TAG_TYPE_UINT | 19
     /**
      * Public key alias used in key agreement.
      */
@@ -1161,7 +1161,7 @@ public class HuksTag {
         since: "22",
         syscap: "SystemCapability.Security.Huks.Core"
     ]
-    public static const HUKS_TAG_AGREE_PRIVATE_KEY_ALIAS: UInt32 = HuksTagType.HUKS_TAG_TYPE_BYTES | 21
+    public static const HUKS_TAG_PRIVATE_KEY_ALIAS_FOR_AGREEMENT: UInt32 = HuksTagType.HUKS_TAG_TYPE_BYTES | 21
     /**
      * Public key used in key agreement.
      */
@@ -1169,7 +1169,7 @@ public class HuksTag {
         since: "22",
         syscap: "SystemCapability.Security.Huks.Core"
     ]
-    public static const HUKS_TAG_AGREE_PUBLIC_KEY: UInt32 = HuksTagType.HUKS_TAG_TYPE_BYTES | 22
+    public static const HUKS_TAG_PUBLIC_KEY_FOR_AGREEMENT: UInt32 = HuksTagType.HUKS_TAG_TYPE_BYTES | 22
     /**
      * Key alias.
      */
@@ -1407,7 +1407,7 @@ public class HuksTag {
     throwexception: true,
     workerthread: true
 ]
-public func isKeyItemExist(keyAlias: String, options: HuksOptions): Bool
+public func hasKeyItem(keyAlias: String, options: HuksOptions): Bool
 
 /**
  * Obtains key properties.

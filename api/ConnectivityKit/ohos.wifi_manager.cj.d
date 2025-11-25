@@ -106,7 +106,7 @@ public enum WifiSecurityType {
     WifiSecTypeInvalid
     | 
     /**
-     * Open
+     * Open security type.
      */
     @!APILevel[
         since: "22",

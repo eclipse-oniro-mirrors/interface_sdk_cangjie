@@ -670,7 +670,9 @@ public class ListFileOptions {
 }
 
 /**
- * FileIo
+ * The FileIo class provides convenient methods for file input and output operations.
+ * It encapsulates common file I/O functionalities, including reading, and writing text files,
+ * as well as utility methods such as checking file existence and creating directories.
  */
 @!APILevel[
     since: "22",
@@ -755,15 +757,15 @@ public class FileIo {
      * @param { String } src - Application sandbox path of the source directory.
      * @param { String } dest - Application sandbox path of the destination folder.
      * @param { Int32 } [mode] - Copy mode. The default value is 0.
-     * <br>0: Throw an exception if a file conflict occurs.
-     * <br>An exception will be thrown if the destination directory contains a directory with the same name as the source directory,
-     * <br>and a file with the same name exists in the conflict directory. All the non-conflicting files in the source directory will be moved
-     * <br>to the destination directory, and the non-conflicting files in the destination directory will be retained.
-     * <br>The data attribute in the error returned provides information about the conflicting files in the Array<ConflictFiles> format.
-     * <br>1: Forcibly overwrite the files with the same name in the destination directory.
-     * <br>When the destination directory contains a directory with the same name as the source directory,
-     * <br>the files with the same names in the destination directory are overwritten forcibly;
-     * <br>the files without conflicts in the destination directory are retained.
+     * 0: Throw an exception if a file conflict occurs.
+     * An exception will be thrown if the destination directory contains a directory with the same name as the source directory,
+     * and a file with the same name exists in the conflict directory. All the non-conflicting files in the source directory will be moved
+     * to the destination directory, and the non-conflicting files in the destination directory will be retained.
+     * The data attribute in the error returned provides information about the conflicting files in the Array<ConflictFiles> format.
+     * 1: Forcibly overwrite the files with the same name in the destination directory.
+     * When the destination directory contains a directory with the same name as the source directory,
+     * the files with the same names in the destination directory are overwritten forcibly;
+     * the files without conflicts in the destination directory are retained.
      * @throws { BusinessException } 13900002 - No such file or directory
      * @throws { BusinessException } 13900004 - Interrupted system call
      * @throws { BusinessException } 13900005 - I/O error
@@ -989,23 +991,23 @@ public class FileIo {
      *
      * @param { String } file - Application sandbox path of the file or an opened file object.
      * @param { Int64 } [mode] - Mode for creating the RandomAccessFile instance.
-     * <br>This parameter is valid only when the application sandbox path of the file is passed in.
-     * <br>One of the following options must be specified:
-     * <br>OpenMode.READ_ONLY(0o0): Create the file in read-only mode. This is the default value.
-     * <br>OpenMode.WRITE_ONLY(0o1): Create the file in write-only mode.
-     * <br>OpenMode.READ_WRITE(0o2): Create the file in read/write mode.
-     * <br>You can also specify the following options, separated by a bitwise OR operator (|). By default,
-     * <br>no additional options are given.
-     * <br>OpenMode.CREATE(0o100): If the file does not exist, create it.
-     * <br>OpenMode.TRUNC(0o1000): If the RandomAccessFile object already exists and is created in write mode,
-     * <br>truncate the file length to 0.
-     * <br>OpenMode.APPEND(0o2000): Create the file in append mode. New data will be added to the end
-     * <br>of the RandomAccessFile object.
-     * <br>OpenMode.NONBLOCK(0o4000): If path points to a named pipe (also known as a FIFO), block special file,
-     * <br>or character special file, perform non-blocking operations on the created file and in subsequent I/Os.
-     * <br>OpenMode.DIR(0o200000): If path does not point to a directory, throw an exception. The write permission is not allowed.
-     * <br>OpenMode.NOFOLLOW(0o400000): If path points to a symbolic link, throw an exception.
-     * <br>OpenMode.SYNC(0o4010000): Create a RandomAccessFile instance in synchronous I/O mode.
+     * This parameter is valid only when the application sandbox path of the file is passed in.
+     * One of the following options must be specified:
+     * OpenMode.READ_ONLY(0o0): Create the file in read-only mode. This is the default value.
+     * OpenMode.WRITE_ONLY(0o1): Create the file in write-only mode.
+     * OpenMode.READ_WRITE(0o2): Create the file in read/write mode.
+     * You can also specify the following options, separated by a bitwise OR operator (|). By default,
+     * no additional options are given.
+     * OpenMode.CREATE(0o100): If the file does not exist, create it.
+     * OpenMode.TRUNC(0o1000): If the RandomAccessFile object already exists and is created in write mode,
+     * truncate the file length to 0.
+     * OpenMode.APPEND(0o2000): Create the file in append mode. New data will be added to the end
+     * of the RandomAccessFile object.
+     * OpenMode.NONBLOCK(0o4000): If path points to a named pipe (also known as a FIFO), block special file,
+     * or character special file, perform non-blocking operations on the created file and in subsequent I/Os.
+     * OpenMode.DIR(0o200000): If path does not point to a directory, throw an exception. The write permission is not allowed.
+     * OpenMode.NOFOLLOW(0o400000): If path points to a symbolic link, throw an exception.
+     * OpenMode.SYNC(0o4010000): Create a RandomAccessFile instance in synchronous I/O mode.
      * @param { RandomAccessFileOptions } [options] - Defines the options used in createRandomAccessFile().
      * @returns { RandomAccessFile } RandomAccessFile instance created.
      * @throws { BusinessException } 13900001 - Operation not permitted
@@ -1050,23 +1052,23 @@ public class FileIo {
      *
      * @param { File } file - Application sandbox path of the file or an opened file object.
      * @param { Int64 } [mode] - Mode for creating the RandomAccessFile instance.
-     * <br>This parameter is valid only when the application sandbox path of the file is passed in.
-     * <br>One of the following options must be specified:
-     * <br>OpenMode.READ_ONLY(0o0): Create the file in read-only mode. This is the default value.
-     * <br>OpenMode.WRITE_ONLY(0o1): Create the file in write-only mode.
-     * <br>OpenMode.READ_WRITE(0o2): Create the file in read/write mode.
-     * <br>You can also specify the following options, separated by a bitwise OR operator (|). By default,
-     * <br>no additional options are given.
-     * <br>OpenMode.CREATE(0o100): If the file does not exist, create it.
-     * <br>OpenMode.TRUNC(0o1000): If the RandomAccessFile object already exists and is created in write mode,
-     * <br>truncate the file length to 0.
-     * <br>OpenMode.APPEND(0o2000): Create the file in append mode. New data will be added to the end
-     * <br>of the RandomAccessFile object.
-     * <br>OpenMode.NONBLOCK(0o4000): If path points to a named pipe (also known as a FIFO), block special file,
-     * <br>or character special file, perform non-blocking operations on the created file and in subsequent I/Os.
-     * <br>OpenMode.DIR(0o200000): If path does not point to a directory, throw an exception. The write permission is not allowed.
-     * <br>OpenMode.NOFOLLOW(0o400000): If path points to a symbolic link, throw an exception.
-     * <br>OpenMode.SYNC(0o4010000): Create a RandomAccessFile instance in synchronous I/O mode.
+     * This parameter is valid only when the application sandbox path of the file is passed in.
+     * One of the following options must be specified:
+     * OpenMode.READ_ONLY(0o0): Create the file in read-only mode. This is the default value.
+     * OpenMode.WRITE_ONLY(0o1): Create the file in write-only mode.
+     * OpenMode.READ_WRITE(0o2): Create the file in read/write mode.
+     * You can also specify the following options, separated by a bitwise OR operator (|). By default,
+     * no additional options are given.
+     * OpenMode.CREATE(0o100): If the file does not exist, create it.
+     * OpenMode.TRUNC(0o1000): If the RandomAccessFile object already exists and is created in write mode,
+     * truncate the file length to 0.
+     * OpenMode.APPEND(0o2000): Create the file in append mode. New data will be added to the end
+     * of the RandomAccessFile object.
+     * OpenMode.NONBLOCK(0o4000): If path points to a named pipe (also known as a FIFO), block special file,
+     * or character special file, perform non-blocking operations on the created file and in subsequent I/Os.
+     * OpenMode.DIR(0o200000): If path does not point to a directory, throw an exception. The write permission is not allowed.
+     * OpenMode.NOFOLLOW(0o400000): If path points to a symbolic link, throw an exception.
+     * OpenMode.SYNC(0o4010000): Create a RandomAccessFile instance in synchronous I/O mode.
      * @param { RandomAccessFileOptions } [options] - Defines the options used in createRandomAccessFile().
      * @returns { RandomAccessFile } RandomAccessFile instance created.
      * @throws { BusinessException } 13900001 - Operation not permitted
@@ -1378,21 +1380,21 @@ public class FileIo {
      * @param { String } src - Application sandbox path of the source directory.
      * @param { String } dest - Application sandbox path of the destination directory.
      * @param { Int32 } [mode] - Move mode. The default value is 0.
-     * <br>0: Throw an exception if a directory conflict occurs.
-     * <br>An exception will be thrown if the destination directory contains a non-empty directory with the same name as the source directory.
-     * <br>1: Throw an exception if a file conflict occurs.
-     * <br>An exception will be thrown if the destination directory contains a directory with the same name as the source directory,
-     * <br>and a file with the same name exists in the conflict directory. All the non-conflicting files in the source directory
-     * <br>will be moved to the destination directory, and the non-conflicting files in the destination directory will be retained.
-     * <br>The data attribute in the error returned provides information about the conflicting files in the Array<ConflictFiles> format.
-     * <br>2: Forcibly overwrite the conflicting files in the destination directory.
-     * <br>When the destination directory contains a directory with the same name as the source directory,
-     * <br>the files with the same names in the destination directory are overwritten forcibly;
-     * <br>the files without conflicts in the destination directory are retained.
-     * <br>3: Forcibly overwrite the conflicting directory.
-     * <br>The source directory is moved to the destination directory, and the content of the moved directory is the
-     * <br>same as that of the source directory. If the destination directory contains a directory with the same name
-     * <br>as the source directory, all original files in the directory will be deleted.
+     * 0: Throw an exception if a directory conflict occurs.
+     * An exception will be thrown if the destination directory contains a non-empty directory with the same name as the source directory.
+     * 1: Throw an exception if a file conflict occurs.
+     * An exception will be thrown if the destination directory contains a directory with the same name as the source directory,
+     * and a file with the same name exists in the conflict directory. All the non-conflicting files in the source directory
+     * will be moved to the destination directory, and the non-conflicting files in the destination directory will be retained.
+     * The data attribute in the error returned provides information about the conflicting files in the Array<ConflictFiles> format.
+     * 2: Forcibly overwrite the conflicting files in the destination directory.
+     * When the destination directory contains a directory with the same name as the source directory,
+     * the files with the same names in the destination directory are overwritten forcibly;
+     * the files without conflicts in the destination directory are retained.
+     * 3: Forcibly overwrite the conflicting directory.
+     * The source directory is moved to the destination directory, and the content of the moved directory is the
+     * same as that of the source directory. If the destination directory contains a directory with the same name
+     * as the source directory, all original files in the directory will be deleted.
      * @throws { BusinessException } 13900001 - Operation not permitted
      * @throws { BusinessException } 13900002 - No such file or directory
      * @throws { BusinessException } 13900008 - Bad file descriptor
@@ -1462,19 +1464,19 @@ public class FileIo {
      *
      * @param { String } path - Application sandbox path or URI of the file.
      * @param { Int64 } [mode] - Mode for opening the file.
-     * <br>You must specify one of the following options. By default, the file is opened in read-only mode.
-     * <br>OpenMode.READ_ONLY(0o0): Open the file in read-only mode.
-     * <br>OpenMode.WRITE_ONLY(0o1): Open the file in write-only mode.
-     * <br>OpenMode.READ_WRITE(0o2): Open the file in read/write mode.
-     * <br>You can add the following function options in bitwise OR mode. By default, no additional option is added.
-     * <br>OpenMode.CREATE(0o100): Create a file if the file does not exist.
-     * <br>OpenMode.TRUNC(0o1000): If the file exists and is opened in write mode, truncate the file length to 0.
-     * <br>OpenMode.APPEND(0o2000): Open the file in append mode. New data will be added to the end of the file.
-     * <br>OpenMode.NONBLOCK(0o4000): If path points to a named pipe (also known as a FIFO), block special file,
-     * <br>or character special file, perform non-blocking operations on the opened file and in subsequent I/Os.
-     * <br>OpenMode.DIR(0o200000): If path does not point to a directory, throw an exception. The write permission is not allowed.
-     * <br>OpenMode.NOFOLLOW(0o400000): If path points to a symbolic link, throw an exception.
-     * <br>OpenMode.SYNC(0o4010000): Open the file in synchronous I/O mode.
+     * You must specify one of the following options. By default, the file is opened in read-only mode.
+     * OpenMode.READ_ONLY(0o0): Open the file in read-only mode.
+     * OpenMode.WRITE_ONLY(0o1): Open the file in write-only mode.
+     * OpenMode.READ_WRITE(0o2): Open the file in read/write mode.
+     * You can add the following function options in bitwise OR mode. By default, no additional option is added.
+     * OpenMode.CREATE(0o100): Create a file if the file does not exist.
+     * OpenMode.TRUNC(0o1000): If the file exists and is opened in write mode, truncate the file length to 0.
+     * OpenMode.APPEND(0o2000): Open the file in append mode. New data will be added to the end of the file.
+     * OpenMode.NONBLOCK(0o4000): If path points to a named pipe (also known as a FIFO), block special file,
+     * or character special file, perform non-blocking operations on the opened file and in subsequent I/Os.
+     * OpenMode.DIR(0o200000): If path does not point to a directory, throw an exception. The write permission is not allowed.
+     * OpenMode.NOFOLLOW(0o400000): If path points to a symbolic link, throw an exception.
+     * OpenMode.SYNC(0o4010000): Open the file in synchronous I/O mode.
      * @returns { File } Used to return the File object.
      * @throws { BusinessException } 13900001 - Operation not permitted
      * @throws { BusinessException } 13900002 - No such file or directory
@@ -1518,9 +1520,9 @@ public class FileIo {
      * @param { Int32 } fd - FD of the file.
      * @param { Array<Byte> } buffer - Buffer used to store the file data read.
      * @param { ReadOptions } [options] - The options are as follows:
-     * <br>length (UIntNative): length of the data to read. This parameter is optional. The default value is the buffer length.
-     * <br>offset (Int64): start position to read the data (it is determined by filePointer plus offset).
-     * <br>This parameter is optional. By default, data is read from the filePointer.
+     * length (UIntNative): length of the data to read. This parameter is optional. The default value is the buffer length.
+     * offset (Int64): start position to read the data (it is determined by filePointer plus offset).
+     * This parameter is optional. By default, data is read from the filePointer.
      * @returns { Int64 } Used to return the data read.
      * @throws { BusinessException } 13900004 - Interrupted system call
      * @throws { BusinessException } 13900005 - I/O error

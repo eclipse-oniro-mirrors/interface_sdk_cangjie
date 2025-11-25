@@ -674,8 +674,6 @@ public class Config {
      * "/data/storage/el1/base/path/to/file.txt".
      * 4: file protocol path with self bundle name, only the base directory and its subdirectories are supported,
      * like "file://com.example.test/data/storage/el2/base/file.txt".
-     *
-     * @default ./
      */
     @!APILevel[
         since: "22",
@@ -686,8 +684,6 @@ public class Config {
     /**
      * Network used for the task.
      * The default value is AnyType (Wi-Fi or cellular).
-     *
-     * @default AnyType
      */
     @!APILevel[
         since: "22",
@@ -698,8 +694,6 @@ public class Config {
     /**
      * Allows work in metered network or not.
      * The default is false.
-     *
-     * @default false
      */
     @!APILevel[
         since: "22",

@@ -33,7 +33,7 @@ public class ResourceManager {
      * Obtains the content of the specified screen density media file corresponding to a specified resource object.
      *
      * @param { AppResource } resource - Indicates the resource object.
-     * @param { ?ScreenDensity } [density] - The optional parameter ScreenDensity{@link ScreenDensity}, A value of None means
+     * @param { ?ScreenDensity } [density] - The optional parameter ScreenDensity ScreenDensity, A value of None means
      *                to use the density of current system dpi.
      * @returns { Array<UInt8> } The content of the specified screen density media file corresponding to the specified resource object.
      * @throws { BusinessException } 9001001 - Invalid resource ID.

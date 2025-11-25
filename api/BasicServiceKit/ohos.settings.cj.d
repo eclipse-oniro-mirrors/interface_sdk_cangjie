@@ -41,7 +41,6 @@ public func getValue<T>(context: UIAbilityContext, name: T, defValue: String): S
 
 /**
  * Get value from settingsdata.
- * [USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
  *
  * @param { UIAbilityContext } context -Indicates the Context or dataAbilityHelper used to access
  * the database.
@@ -276,7 +275,7 @@ public enum Display <: ToString {
     AutoScreenBrightnessMode
     |
     /**
-     * Indicates the value of ManualScreenBrightnessMode when automatic screen brightness adjustment is used.
+     * Indicates the value of ManualScreenBrightnessMode when manual screen brightness adjustment is used.
      */
     @!APILevel[
         since: "22",

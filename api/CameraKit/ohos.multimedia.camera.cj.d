@@ -1465,7 +1465,7 @@ public class FrameRateRange {
 ]
 public class Size {
     /**
-     * Height.
+     * Width.
      */
     @!APILevel[
         since: "22",
@@ -1474,7 +1474,7 @@ public class Size {
     public var width: UInt32
 
     /**
-     * Width.
+     * Height.
      */
     @!APILevel[
         since: "22",
@@ -3156,7 +3156,6 @@ public class CameraManager {
      * devices supported by the device, the developer needs to be based on specific scenarios to choose the camera device
      * that meets the needs of the developer, and then use this interface to create a CameraInput instance.
      *
-     * @permission ohos.permission.CAMERA
      * @param { CameraDevice } camera - Camera device used to create the instance.
      * @returns { CameraInput } Returns a CameraInput instance. Failure of an interface call returns the corresponding
      * error code, which is of type CameraErrorCode.
@@ -3209,7 +3208,7 @@ public class CameraManager {
     /**
      * Creates a PhotoOutput instance without surfaceId.
      * Call PhotoOutput capture interface will give a callback,
-     * {@link on(type: 'photoAvailable', callback: AsyncCallback<Photo>)}
+     * on(type: 'photoAvailable', callback: AsyncCallback<Photo>)
      * You can use this method to create a photo output instance without a profile, This instance can
      * only be used in a preconfiged session.
      *
@@ -3248,7 +3247,6 @@ public class CameraManager {
     /**
      * Creates a CameraInput instance by camera position and type.
      *
-     * @permission ohos.permission.CAMERA
      * @param { CameraPosition } position - Camera position, first get the supported camera device
      * objects through the getSupportedCameras interface, and then get the device position information
      * based on the returned camera device objects.
@@ -3661,11 +3659,11 @@ public interface Session {
 public class PhotoSession <: Session & Flash & AutoExposure & Focus & Zoom & ColorManagement {
     /**
      * Gets whether the choosed preconfig type can be used to configure photo session.
-     * Must choose preconfig type from {@link PreconfigType}.
+     * Must choose preconfig type from PreconfigType.
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value {@link PreconfigRatio#PRECONFIG_RATIO_4_3}.
+     *                                            default value PreconfigRatio#PRECONFIG_RATIO_4_3.
      * @returns { Bool } Whether the choosed preconfig type can be used.
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
@@ -3678,11 +3676,11 @@ public class PhotoSession <: Session & Flash & AutoExposure & Focus & Zoom & Col
 
     /**
      * Configure photo session with the preconfig type.
-     * Must choose preconfig type from {@link PreconfigType}.
+     * Must choose preconfig type from PreconfigType.
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value {@link PreconfigRatio#PRECONFIG_RATIO_4_3}
+     *                                            default value PreconfigRatio#PRECONFIG_RATIO_4_3
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
     @!APILevel[
@@ -3802,11 +3800,11 @@ public class PhotoSession <: Session & Flash & AutoExposure & Focus & Zoom & Col
 public class VideoSession <: Session & Flash & AutoExposure & Focus & Zoom & Stabilization & ColorManagement {
     /**
      * Gets whether the choosed preconfig type can be used to configure video session.
-     * Must choose preconfig type from {@link PreconfigType}.
+     * Must choose preconfig type from PreconfigType.
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value {@link PreconfigRatio#PRECONFIG_RATIO_16_9}.
+     *                                            default value PreconfigRatio#PRECONFIG_RATIO_16_9.
      * @returns { Bool } Whether the choosed preconfig type can be used.
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
@@ -3819,11 +3817,11 @@ public class VideoSession <: Session & Flash & AutoExposure & Focus & Zoom & Sta
 
     /**
      * Configure video session with the preconfig type.
-     * Must choose preconfig type from {@link PreconfigType}.
+     * Must choose preconfig type from PreconfigType.
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value {@link PreconfigRatio#PRECONFIG_RATIO_16_9}.
+     *                                            default value PreconfigRatio#PRECONFIG_RATIO_16_9.
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
     @!APILevel[
@@ -4276,7 +4274,6 @@ public class PhotoOutput <: CameraOutput {
     /**
      * Enable moving photo.
      *
-     * @permission ohos.permission.MICROPHONE
      * @param { Bool } enabled - Target state for moving photo.
      * @throws { BusinessException } 201 - permission denied.
      * @throws { BusinessException } 7400101 - Parameter missing or parameter type incorrect.

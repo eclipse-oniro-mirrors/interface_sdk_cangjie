@@ -1078,6 +1078,42 @@ public enum ComponentType {
     | ...
 }
 
+extend ComponentType <: ToString {
+    /**
+     * Converts the ComponentType to its string representation.
+     * @returns { String } A string representation of the ComponentType.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Multimedia.Image.Core"
+    ]
+    public func toString(): String
+}
+
+extend ComponentType <: Equatable<ComponentType> {
+    /**
+     * Compares this ComponentType with another for equality.
+     * @param { ComponentType } other - The obj to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Multimedia.Image.Core"
+    ]
+    public operator func ==(other: ComponentType): Bool
+
+    /**
+     * Compares this ComponentType with another for inequality.
+     * @param { ComponentType } other - The obj to compare with.
+     * @returns { Bool } True if both modes are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Multimedia.Image.Core"
+    ]
+    public operator func !=(other: ComponentType): Bool
+}
+
 /**
  * Enumerates exchangeable image file format (Exif) information types of an image. This enumeration follows the EXIF
  * standard. Please refer to the EXIF specification for more details.
@@ -1240,7 +1276,7 @@ public enum PropertyKey <: ToString {
         since: "22",
         syscap: "SystemCapability.Multimedia.Image.Core"
     ]
-    GpsTimeStamp
+    GpsTimestamp
     |
     /**
      * GPS date stamp

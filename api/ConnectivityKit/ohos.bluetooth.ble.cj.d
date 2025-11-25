@@ -55,9 +55,9 @@ public func createGattClientDevice(deviceId: String): GattClientDevice
  * If you do not want to use filter, set this parameter to empty array.
  * @param { ?ScanOptions } [options] - Indicates the parameters for scanning and if the user does not assign a value,
  * the default value will be used.
- * {@link ScanOptions#interval} set to 0, {@link ScanOptions#dutyMode} set to {@link SCAN_MODE_LOW_POWER}
- * and {@link ScanOptions#matchMode} set to {@link MATCH_MODE_AGGRESSIVE}.
- * and {@link ScanOptions#phyType} set to {@link PHY_LE_ALL_SUPPORTED}.
+ * interval set to 0, dutyMode set to SCAN_MODE_LOW_POWER
+ * and matchMode set to MATCH_MODE_AGGRESSIVE.
+ * and phyType set to PHY_LE_ALL_SUPPORTED.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 801 - Capability not supported.
  * @throws { BusinessException } 2900001 - Service stopped.
@@ -70,7 +70,7 @@ public func createGattClientDevice(deviceId: String): GattClientDevice
     syscap: "SystemCapability.Communication.Bluetooth.Core",
     throwexception: true
 ]
-public func startBLEScan(filters: Array<ScanFilter>, options!: ?ScanOptions = None): Unit
+public func startBleScanning(filters: Array<ScanFilter>, options!: ?ScanOptions = None): Unit
 
 /**
  * Stops BLE scanning.
@@ -87,7 +87,7 @@ public func startBLEScan(filters: Array<ScanFilter>, options!: ?ScanOptions = No
     syscap: "SystemCapability.Communication.Bluetooth.Core",
     throwexception: true
 ]
-public func stopBLEScan(): Unit
+public func stopBleScanning(): Unit
 
 /**
  * Starts BLE advertising.
@@ -134,7 +134,7 @@ public func stopAdvertising(): Unit
 /**
  * Starts BLE advertising.
  * The API returns a advertising ID. The ID can be used to completely stop the advertising corresponding to the ID,
- * invoke the API {@link stopAdvertising} with ID.
+ * invoke the API stopAdvertising with ID.
  *
  * @param { AdvertisingParams } advertisingParams - Indicates the param for BLE advertising.
  * @returns { UInt32 }the callback of advertise ID.
@@ -216,7 +216,7 @@ public func on(eventType: BluetoothBleCallbackType, callback: Callback1Argument<
 public func off(eventType: BluetoothBleCallbackType, callback!: ?CallbackObject = None): Unit
 
 /**
- * Manages GATT client. Before calling an Gatt client method, you must use {@link createGattClientDevice} to create an
+ * Manages GATT client. Before calling an Gatt client method, you must use createGattClientDevice to create an
  * GattClientDevice instance.
  */
 @!APILevel[
@@ -226,7 +226,7 @@ public func off(eventType: BluetoothBleCallbackType, callback!: ?CallbackObject 
 public class GattClientDevice {
     /**
      * Connects to a BLE peripheral device.
-     * <p>The 'BLEConnectionStateChange' event is subscribed to return the connection state.
+     * The 'BLEConnectionStateChange' event is subscribed to return the connection state.
      *
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
@@ -261,7 +261,7 @@ public class GattClientDevice {
 
     /**
      * Disables a BLE peripheral device.
-     * <p> This method unregisters the device and clears the registered callbacks and handles.
+     *  This method unregisters the device and clears the registered callbacks and handles.
      *
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
@@ -315,8 +315,8 @@ public class GattClientDevice {
     /**
      * Reads the characteristic of a BLE peripheral device.
      *
-     * @param { BLECharacteristic } characteristic - Indicates the characteristic to read.
-     * @param { AsyncCallback<BLECharacteristic> } callback - Callback invoked to return the characteristic value read.
+     * @param { BleCharacteristic } characteristic - Indicates the characteristic to read.
+     * @param { AsyncCallback<BleCharacteristic> } callback - Callback invoked to return the characteristic value read.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
      * @throws { BusinessException } 2900001 - Service stopped.
@@ -336,15 +336,15 @@ public class GattClientDevice {
         throwexception: true
     ]
     public func readCharacteristicValue(
-        characteristic: BLECharacteristic,
-        callback: AsyncCallback<BLECharacteristic>
+        characteristic: BleCharacteristic,
+        callback: AsyncCallback<BleCharacteristic>
     ): Unit
 
     /**
      * Reads the descriptor of a BLE peripheral device.
      *
-     * @param { BLEDescriptor } descriptor - Indicates the descriptor to read.
-     * @param { AsyncCallback<BLEDescriptor> } callback - Callback invoked to return the descriptor read.
+     * @param { BleDescriptor } descriptor - Indicates the descriptor to read.
+     * @param { AsyncCallback<BleDescriptor> } callback - Callback invoked to return the descriptor read.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
      * @throws { BusinessException } 2900001 - Service stopped.
@@ -363,12 +363,12 @@ public class GattClientDevice {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func readDescriptorValue(descriptor: BLEDescriptor, callback: AsyncCallback<BLEDescriptor>): Unit
+    public func readDescriptorValue(descriptor: BleDescriptor, callback: AsyncCallback<BleDescriptor>): Unit
 
     /**
      * Writes the characteristic of a BLE peripheral device.
      *
-     * @param { BLECharacteristic } characteristic - Indicates the characteristic to write.
+     * @param { BleCharacteristic } characteristic - Indicates the characteristic to write.
      * @param { GattWriteType } writeType - Write type of the characteristic.
      * @param { AsyncCallback<Unit> } callback - Callback used to return the result.
      * @throws { BusinessException } 201 - Permission denied.
@@ -389,13 +389,13 @@ public class GattClientDevice {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func writeCharacteristicValue(characteristic: BLECharacteristic, writeType: GattWriteType,
+    public func writeCharacteristicValue(characteristic: BleCharacteristic, writeType: GattWriteType,
         callback: AsyncCallback<Unit>): Unit
 
     /**
      * Writes the descriptor of a BLE peripheral device.
      *
-     * @param { BLEDescriptor } descriptor - Indicates the descriptor to write.
+     * @param { BleDescriptor } descriptor - Indicates the descriptor to write.
      * @param { AsyncCallback<Unit> } callback - Callback used to return the result.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
@@ -415,7 +415,7 @@ public class GattClientDevice {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func writeDescriptorValue(descriptor: BLEDescriptor, callback: AsyncCallback<Unit>): Unit
+    public func writeDescriptorValue(descriptor: BleDescriptor, callback: AsyncCallback<Unit>): Unit
 
     /**
      * Get the RSSI value of this BLE peripheral device.
@@ -450,12 +450,12 @@ public class GattClientDevice {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func setBLEMtuSize(mtu: Int32): Unit
+    public func setBleMtuSize(mtu: Int32): Unit
 
     /**
      * Enables or disables notification of a characteristic when value changed.
      *
-     * @param { BLECharacteristic } characteristic - Indicates the characteristic to indicate.
+     * @param { BleCharacteristic } characteristic - Indicates the characteristic to indicate.
      * @param { Bool } enable - Specifies whether to enable indication of the characteristic. The value true indicates
      * that notification is enabled, and the value false indicates that indication is disabled.
      * @param { AsyncCallback<Unit> } callback - the callback of setCharacteristicChangeNotification.
@@ -472,13 +472,13 @@ public class GattClientDevice {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func setCharacteristicChangeNotification(characteristic: BLECharacteristic, enable: Bool,
+    public func setCharacteristicChangeNotification(characteristic: BleCharacteristic, enable: Bool,
         callback: AsyncCallback<Unit>): Unit
 
     /**
      * Enables or disables indication of a characteristic when value changed.
      *
-     * @param { BLECharacteristic } characteristic - Indicates the characteristic to indicate.
+     * @param { BleCharacteristic } characteristic - Indicates the characteristic to indicate.
      * @param { Bool } enable - Specifies whether to enable indication of the characteristic. The value true indicates
      * that indication is enabled, and the value false indicates that indication is disabled.
      * @param { AsyncCallback<Unit> } callback - the callback of setCharacteristicChangeIndication.
@@ -495,14 +495,14 @@ public class GattClientDevice {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func setCharacteristicChangeIndication(characteristic: BLECharacteristic, enable: Bool,
+    public func setCharacteristicChangeIndication(characteristic: BleCharacteristic, enable: Bool,
         callback: AsyncCallback<Unit>): Unit
 
     /**
      * Subscribe characteristic value changed event.
      *
      * @param { BluetoothBleGattClientDeviceCallbackType } eventType - Type of the characteristic value changed event to listen for.
-     * @param { Callback1Argument<BLECharacteristic> } callback - Callback used to listen for the characteristic value changed event.
+     * @param { Callback1Argument<BleCharacteristic> } callback - Callback used to listen for the characteristic value changed event.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
      */
@@ -512,13 +512,13 @@ public class GattClientDevice {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func on(eventType: BluetoothBleGattClientDeviceCallbackType, callback: Callback1Argument<BLECharacteristic>): Unit
+    public func on(eventType: BluetoothBleGattClientDeviceCallbackType, callback: Callback1Argument<BleCharacteristic>): Unit
 
     /**
      * Subscribe client connection state changed event.
      *
      * @param { BluetoothBleGattClientDeviceCallbackType } eventType - Type of the connection state changed event to listen for.
-     * @param { Callback1Argument<BLEConnectionChangeState> } callback - Callback used to listen for the connection state changed event.
+     * @param { Callback1Argument<BleConnectionChangeState> } callback - Callback used to listen for the connection state changed event.
      */
     @!APILevel[
         since: "22",
@@ -527,7 +527,7 @@ public class GattClientDevice {
     ]
     public func on(
         eventType: BluetoothBleGattClientDeviceCallbackType,
-        callback: Callback1Argument<BLEConnectionChangeState>
+        callback: Callback1Argument<BleConnectionChangeState>
     ): Unit
 
     /**
@@ -568,7 +568,7 @@ public class GattClientDevice {
 public class GattServer {
     /**
      * Adds a specified service to be hosted.
-     * <p>The added service and its characteristics are provided by the local device.
+     * The added service and its characteristics are provided by the local device.
      *
      * @param { GattService } service - Indicates the service to add.
      * @throws { BusinessException } 201 - Permission denied.
@@ -623,7 +623,7 @@ public class GattServer {
 
     /**
      * Sends a notification of a change in a specified local characteristic with a asynchronous callback.
-     * <p>This method should be called for every BLE peripheral device that has requested notifications.
+     * This method should be called for every BLE peripheral device that has requested notifications.
      *
      * @param { String } deviceId - Indicates device ID. For example, "11:22:33:AA:BB:FF".
      * @param { NotifyCharacteristic } notifyCharacteristic - Indicates the local characteristic that has changed.
@@ -645,7 +645,7 @@ public class GattServer {
     /**
      * Sends a response to a specified read or write request to a given BLE peripheral device.
      *
-     * @param { ServerResponse } serverResponse - Indicates the response parameters {@link ServerResponse}.
+     * @param { ServerResponse } serverResponse - Indicates the response parameters ServerResponse.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
      * @throws { BusinessException } 2900001 - Service stopped.
@@ -729,7 +729,7 @@ public class GattServer {
      * Subscribe server connection state changed event.
      *
      * @param { BluetoothBleGattServerCallbackType } eventType - Type of the connection state changed event to listen for.
-     * @param { Callback1Argument<BLEConnectionChangeState> } callback - Callback used to listen for the connection state changed event.
+     * @param { Callback1Argument<BleConnectionChangeState> } callback - Callback used to listen for the connection state changed event.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
      */
@@ -739,7 +739,7 @@ public class GattServer {
         syscap: "SystemCapability.Communication.Bluetooth.Core",
         throwexception: true
     ]
-    public func on(eventType: BluetoothBleGattServerCallbackType, callback: Callback1Argument<BLEConnectionChangeState>): Unit
+    public func on(eventType: BluetoothBleGattServerCallbackType, callback: Callback1Argument<BleConnectionChangeState>): Unit
 
     /**
      * Subscribe mtu changed event.
@@ -795,13 +795,13 @@ public class GattService {
     public var isPrimary: Bool
 
     /**
-     * The {@link BLECharacteristic} list belongs to this GattService instance.
+     * The BleCharacteristic list belongs to this GattService instance.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    public var characteristics: Array<BLECharacteristic>
+    public var characteristics: Array<BleCharacteristic>
 
     /**
      * The list of GATT services contained in the service.
@@ -817,7 +817,7 @@ public class GattService {
      *
      * @param { String } serviceUUID - The UUID of a GattService instance.
      * @param { Bool } isPrimary - Indicates whether the GattService instance is primary or secondary.
-     * @param { Array<BLECharacteristic> } characteristics - The {@link BLECharacteristic} list belongs to this GattService instance
+     * @param { Array<BleCharacteristic> } characteristics - The BleCharacteristic list belongs to this GattService instance
      * @param { Array<GattService> } includeServices - The list of GATT services contained in the service.
      */
     @!APILevel[
@@ -827,7 +827,7 @@ public class GattService {
     public init(
         serviceUUID: String,
         isPrimary: Bool,
-        characteristics: Array<BLECharacteristic>,
+        characteristics: Array<BleCharacteristic>,
         includeServices!: Array<GattService> = []
     )
 }
@@ -839,9 +839,9 @@ public class GattService {
     since: "22",
     syscap: "SystemCapability.Communication.Bluetooth.Core"
 ]
-public class BLECharacteristic {
+public class BleCharacteristic {
     /**
-     * The UUID of the {@link GattService} instance to which the characteristic belongs.
+     * The UUID of the GattService instance to which the characteristic belongs.
      */
     @!APILevel[
         since: "22",
@@ -850,7 +850,7 @@ public class BLECharacteristic {
     public var serviceUUID: String
 
     /**
-     * The UUID of a BLECharacteristic instance.
+     * The UUID of a BleCharacteristic instance.
      */
     @!APILevel[
         since: "22",
@@ -859,7 +859,7 @@ public class BLECharacteristic {
     public var characteristicUUID: String
 
     /**
-     * The value of a BLECharacteristic instance.
+     * The value of a BleCharacteristic instance.
      */
     @!APILevel[
         since: "22",
@@ -868,16 +868,16 @@ public class BLECharacteristic {
     public var characteristicValue: Array<Byte>
 
     /**
-     * The list of {@link BLEDescriptor} contained in the characteristic.
+     * The list of BleDescriptor contained in the characteristic.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    public var descriptors: Array<BLEDescriptor>
+    public var descriptors: Array<BleDescriptor>
 
     /**
-     * The properties of a BLECharacteristic instance.
+     * The properties of a BleCharacteristic instance.
      */
     @!APILevel[
         since: "22",
@@ -886,16 +886,16 @@ public class BLECharacteristic {
     public var properties: GattProperties
 
     /**
-     * BLECharacteristic constructor.
+     * BleCharacteristic constructor.
      *
      * @param { String } serviceUUID - The UUID of the GattService instance to which the characteristic belongs
-     * @param { String } characteristicUUID - The UUID of a BLECharacteristic instance
-     * @param { Array<Byte> } characteristicValue - The value of a BLECharacteristic instance
-     * @param { Array<BLEDescriptor> } descriptors - The list of BLEDescriptor contained in the characteristic
-     * @param { GattProperties } properties - The properties of a BLECharacteristic instance
-     * @param { GattPermissions } permissions - The permissions of a BLECharacteristic instance.
+     * @param { String } characteristicUUID - The UUID of a BleCharacteristic instance
+     * @param { Array<Byte> } characteristicValue - The value of a BleCharacteristic instance
+     * @param { Array<BleDescriptor> } descriptors - The list of BleDescriptor contained in the characteristic
+     * @param { GattProperties } properties - The properties of a BleCharacteristic instance
+     * @param { GattPermissions } permissions - The permissions of a BleCharacteristic instance.
      * The default value is Readable and Writable.
-     * @param { UInt32 } characteristicValueHandle - The characteristic value handle of a BLECharacteristic instance
+     * @param { UInt32 } characteristicValueHandle - The characteristic value handle of a BleCharacteristic instance
      */
     @!APILevel[
         since: "22",
@@ -905,7 +905,7 @@ public class BLECharacteristic {
         serviceUUID: String,
         characteristicUUID: String,
         characteristicValue: Array<Byte>,
-        descriptors: Array<BLEDescriptor>,
+        descriptors: Array<BleDescriptor>,
         properties!: GattProperties = GattProperties(),
         permissions!: GattPermissions = GattPermissions(),
         characteristicValueHandle!: UInt32 = 0
@@ -919,9 +919,9 @@ public class BLECharacteristic {
     since: "22",
     syscap: "SystemCapability.Communication.Bluetooth.Core"
 ]
-public class BLEDescriptor {
+public class BleDescriptor {
     /**
-     * The UUID of the {@link GattService} instance to which the descriptor belongs.
+     * The UUID of the GattService instance to which the descriptor belongs.
      */
     @!APILevel[
         since: "22",
@@ -930,7 +930,7 @@ public class BLEDescriptor {
     public var serviceUUID: String
 
     /**
-     * The UUID of the {@link BLECharacteristic} instance to which the descriptor belongs.
+     * The UUID of the BleCharacteristic instance to which the descriptor belongs.
      */
     @!APILevel[
         since: "22",
@@ -939,7 +939,7 @@ public class BLEDescriptor {
     public var characteristicUUID: String
 
     /**
-     * The UUID of the BLEDescriptor instance.
+     * The UUID of the BleDescriptor instance.
      */
     @!APILevel[
         since: "22",
@@ -948,7 +948,7 @@ public class BLEDescriptor {
     public var descriptorUUID: String
 
     /**
-     * The value of the BLEDescriptor instance.
+     * The value of the BleDescriptor instance.
      */
     @!APILevel[
         since: "22",
@@ -957,14 +957,14 @@ public class BLEDescriptor {
     public var descriptorValue: Array<Byte>
 
     /**
-     * BLEDescriptor constructor.
+     * BleDescriptor constructor.
      *
-     * @param { String } serviceUUID - The UUID of the {@link GattService} instance to which the descriptor belongs
-     * @param { String } characteristicUUID - The UUID of the {@link GattService} instance to which the descriptor belongs
-     * @param { String } descriptorUUID - The UUID of the BLEDescriptor instance
-     * @param { Array<Byte> } descriptorValue - The value of the BLEDescriptor instance
-     * @param { UInt32 } descriptorHandle - The descriptor handle of a BLEDescriptor instance
-     * @param { GattPermissions } permissions - The permissions of a BLEDescriptor instance. The default value is Readable and Writable.
+     * @param { String } serviceUUID - The UUID of the GattService instance to which the descriptor belongs
+     * @param { String } characteristicUUID - The UUID of the GattService instance to which the descriptor belongs
+     * @param { String } descriptorUUID - The UUID of the BleDescriptor instance
+     * @param { Array<Byte> } descriptorValue - The value of the BleDescriptor instance
+     * @param { UInt32 } descriptorHandle - The descriptor handle of a BleDescriptor instance
+     * @param { GattPermissions } permissions - The permissions of a BleDescriptor instance. The default value is Readable and Writable.
      * The default value is Readable and Writable.
      */
     @!APILevel[
@@ -1110,7 +1110,7 @@ public class NotifyCharacteristic {
     /**
      * NotifyCharacteristic constructor.
      *
-     * @param { String } serviceUUID - The UUID of the {@link GattService} instance to which the characteristic belongs
+     * @param { String } serviceUUID - The UUID of the GattService instance to which the characteristic belongs
      * @param { String } characteristicUUID - The UUID of a NotifyCharacteristic instance
      * @param { Array<Byte> } characteristicValue - The value of a NotifyCharacteristic instance
      * @param { Bool } confirm - Specifies whether to request confirmation from the BLE peripheral device (indication) or
@@ -1565,7 +1565,7 @@ public class DescriptorWriteRequest {
     since: "22",
     syscap: "SystemCapability.Communication.Bluetooth.Core"
 ]
-public class BLEConnectionChangeState {
+public class BleConnectionChangeState {
     /**
      * Indicates the peer device address.
      */
@@ -1896,7 +1896,7 @@ public class GattPermissions {
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    public init(
+    public init (
         read!: Bool = true,
         readEncrypted!: Bool = false,
         readEncryptedMitm!: Bool = false,
@@ -2596,7 +2596,8 @@ public enum MatchMode {
     MatchModeAggressive
     | 
     /**
-     * sticky mode
+     * Reports advertising packets only if their signal strength is high
+     * or they are transmitted intensively within a short period of time.
      */
     @!APILevel[
         since: "22",
@@ -2811,7 +2812,9 @@ extend PhyType <: Equatable<PhyType> {
 public enum BluetoothBleCallbackType {
     
     /**
-     * Advertising state changed.
+     * Event type. The value advertising indicate an advertising state change event.
+     * This event is triggered if the advertising state changes when startAdvertising,
+     * stopAdvertising, enableAdvertising or disableAdvertising is called.
      */
     @!APILevel[
         since: "22",
@@ -2904,8 +2907,8 @@ public enum ScanReportMode {
     | 
     
     /**
-     * Enables the batch mode in which advertisement packets are sent after the interval specified by {@link
-     * ScanOptions#interval}.
+     * Enables the batch mode in which advertisement packets are sent after the interval specified by
+     * interval.
      */
     @!APILevel[
         since: "22",

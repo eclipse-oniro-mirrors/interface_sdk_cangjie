@@ -497,9 +497,9 @@ public class MediaAssetChangeRequest <: MediaChangeRequest {
     /**
      * Create an asset change request based on the file type and filename extension.
      * @param { UIAbilityContext } context - Context of the ability instance.
-     * @param { PhotoType } photoType - Type of the file to create, which can be IMAGE or VIDEO.
+     * @param { PhotoType } photoType - Type of the file to create, which can be image or video.
      * @param { String } extension - File name extension, for example, 'jpg'.
-     * @param { CreateOptions } [options] - Options for creating the image or video asset, for example, {title: 'testPhoto'}.
+     * @param { CreateOptions } [options] - Options for creating the image or video asset.
      * @returns { MediaAssetChangeRequest } Returns a MediaAssetChangeRequest instance
      * @throws { BusinessException } 14000011 - System inner fail
      */
@@ -512,7 +512,7 @@ public class MediaAssetChangeRequest <: MediaChangeRequest {
         options!: CreateOptions = CreateOptions(title: "", subtype: Default)): MediaAssetChangeRequest
 
     /**
-     * Deletes media assets. This API uses a promise to return the result. The deleted assets are moved to the trash.
+     * Deletes media assets.
      * @param { UIAbilityContext } context - Context of the ability instance.
      * @param { Array<PhotoAsset> } assets - Array of assets to delete.
      * @throws { BusinessException } 201 - Permission denied
@@ -528,7 +528,7 @@ public class MediaAssetChangeRequest <: MediaChangeRequest {
     public static func deleteAssets(context: UIAbilityContext, assets: Array<PhotoAsset>): Unit
 
     /**
-     * Deletes media assets. This API uses a promise to return the result. The deleted assets are moved to the trash.
+     * Deletes media assets.
      * @param { UIAbilityContext } context - Context of the ability instance.
      * @param { Array<String> } assets - URIs of the media files to delete.
      * @throws { BusinessException } 201 - Permission denied
@@ -750,7 +750,7 @@ public class PhotoAccessHelper {
         syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core",
         throwexception: true
     ]
-    public func unRegisterChange(uri: String, callback!: ?Callback1Argument<ChangeData> = None): Unit
+    public func unregisterChange(uri: String, callback!: ?Callback1Argument<ChangeData> = None): Unit
 
     /**
      * Create a save dialog to save photos
@@ -1168,13 +1168,13 @@ extend DeliveryMode <: Equatable<DeliveryMode> {
 }
 
 /**
- * PhotoViewMIMETypes represents the type of media resource that photo picker selects.
+ * PhotoViewMimeTypes represents the type of media resource that photo picker selects.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core"
 ]
-public enum PhotoViewMIMETypes {
+public enum PhotoViewMimeTypes {
     
     /**
      * ImageType indicates that the selected media resources are images.
@@ -1218,11 +1218,11 @@ public enum PhotoViewMIMETypes {
 }
 
 
-extend PhotoViewMIMETypes <: ToString {
+extend PhotoViewMimeTypes <: ToString {
     
     /**
-     * Converts the PhotoViewMIMETypes to its string representation.
-     * @returns { String } A string representation of the PhotoViewMIMETypes.
+     * Converts the PhotoViewMimeTypes to its string representation.
+     * @returns { String } A string representation of the PhotoViewMimeTypes.
      */
     @!APILevel[
         since: "22",
@@ -1232,29 +1232,29 @@ extend PhotoViewMIMETypes <: ToString {
 }
 
 
-extend PhotoViewMIMETypes <: Equatable<PhotoViewMIMETypes> {
+extend PhotoViewMimeTypes <: Equatable<PhotoViewMimeTypes> {
     
     /**
-     * Compares this PhotoViewMIMETypes with another for equality.
-     * @param { PhotoViewMIMETypes } other - The PhotoViewMIMETypes to compare with.
+     * Compares this PhotoViewMimeTypes with another for equality.
+     * @param { PhotoViewMimeTypes } other - The PhotoViewMimeTypes to compare with.
      * @returns { Bool } True if both modes are equal, false otherwise.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core"
     ]
-    public operator func ==(other: PhotoViewMIMETypes): Bool
+    public operator func ==(other: PhotoViewMimeTypes): Bool
     
     /**
-     * Compares this PhotoViewMIMETypes with another for inequality.
-     * @param { PhotoViewMIMETypes } other - The PhotoViewMIMETypes to compare with.
+     * Compares this PhotoViewMimeTypes with another for inequality.
+     * @param { PhotoViewMimeTypes } other - The PhotoViewMimeTypes to compare with.
      * @returns { Bool } True if both modes are not equal, false otherwise.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core"
     ]
-    public operator func !=(other: PhotoViewMIMETypes): Bool
+    public operator func !=(other: PhotoViewMimeTypes): Bool
 }
 
 /**
@@ -1323,7 +1323,7 @@ public enum RecommendationType {
         since: "22",
         syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core"
     ]
-    PassPort
+    Passport
     | 
     
     /**
@@ -1417,7 +1417,7 @@ extend RecommendationType <: Equatable<RecommendationType> {
 public enum DynamicRangeType {
     
     /**
-     * Standard dynamic range (SDR).
+     * Standard dynamic range (Sdr).
      */
     @!APILevel[
         since: "22",
@@ -1427,7 +1427,7 @@ public enum DynamicRangeType {
     | 
 
     /**
-     * High dynamic range (HDR).
+     * High dynamic range (Hdr).
      */
     @!APILevel[
         since: "22",
@@ -1809,7 +1809,7 @@ public class RequestOptions {
 public enum PhotoKeys <: ToString {
     
     /**
-     * Asset uri, read only
+     * Asset uri
      */
     @!APILevel[
         since: "22",
@@ -1819,7 +1819,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Photo type of the asset, read only
+     * Photo type of the asset
      */
     @!APILevel[
         since: "22",
@@ -1829,7 +1829,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Asset name, read only
+     * Asset name
      */
     @!APILevel[
         since: "22",
@@ -1839,7 +1839,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Size of the asset, read only
+     * Size of the asset
      */
     @!APILevel[
         since: "22",
@@ -1849,7 +1849,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Creation date of the asset, read only
+     * Creation date of the asset
      */
     @!APILevel[
         since: "22",
@@ -1859,7 +1859,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Modified date of the asset, read only
+     * Modified date of the asset
      */
     @!APILevel[
         since: "22",
@@ -1869,7 +1869,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Duration of video files, read only
+     * Duration of video files
      */
     @!APILevel[
         since: "22",
@@ -1879,7 +1879,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Width of the image asset, read only
+     * Width of the image asset
      */
     @!APILevel[
         since: "22",
@@ -1889,7 +1889,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Height of the image asset, read only
+     * Height of the image asset
      */
     @!APILevel[
         since: "22",
@@ -1899,7 +1899,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Date taken of the asset, read only
+     * Date taken of the asset
      */
     @!APILevel[
         since: "22",
@@ -1909,7 +1909,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Orientation of the image asset, read only
+     * Orientation of the image asset
      */
     @!APILevel[
         since: "22",
@@ -1919,7 +1919,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Favorite state of the asset, read only
+     * Favorite state of the asset
      */
     @!APILevel[
         since: "22",
@@ -1939,7 +1939,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Creation time of the asset in milliseconds, read only
+     * Creation time of the asset in milliseconds
      */
     @!APILevel[
         since: "22",
@@ -1949,7 +1949,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Modified time of the asset in milliseconds, read only
+     * Modified time of the asset in milliseconds
      */
     @!APILevel[
         since: "22",
@@ -1959,7 +1959,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Photo subtype of the asset, read only
+     * Photo subtype of the asset
      */
     @!APILevel[
         since: "22",
@@ -1969,7 +1969,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Dynamic range type of the asset, read only
+     * Dynamic range type of the asset
      */
     @!APILevel[
         since: "22",
@@ -1979,7 +1979,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Cover position of the asset, read only
+     * Cover position of the asset
      */
     @!APILevel[
         since: "22",
@@ -1989,7 +1989,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Unique uuid of the burst photos, read only
+     * Unique uuid of the burst photos
      */
     @!APILevel[
         since: "22",
@@ -1999,7 +1999,7 @@ public enum PhotoKeys <: ToString {
     | 
     
     /**
-     * Width and height information of lcd picture, read only
+     * Width and height information of lcd picture
      */
     @!APILevel[
         since: "22",
@@ -2009,13 +2009,13 @@ public enum PhotoKeys <: ToString {
     | 
 
     /**
-     * Width and height information of thumbnail picture, read only
+     * Width and height information of thumbnail picture
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core"
     ]
-    ThmSize
+    ThumbnailSize
     | ...
 
     
@@ -2335,7 +2335,7 @@ public class PhotoAsset {
 
     /**
      * Obtains a PhotoAsset member parameter.
-     * @param { String } member - Photo asset member. for example : get(PhotoKeys.SIZE)
+     * @param { String } member - Photo asset member. for example : get(PhotoKeys.Size)
      * @returns { MemberType } Returns the value of the specified photo asset member
      * @throws { BusinessException } 13900020 - Invalid argument
      * @throws { BusinessException } 14000014 - The provided member must be a property name of PhotoKey.

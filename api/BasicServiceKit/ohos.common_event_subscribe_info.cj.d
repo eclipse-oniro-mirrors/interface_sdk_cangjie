@@ -37,8 +37,10 @@ public class CommonEventSubscribeInfo {
     public var events: Array<String>
 
     /**
-     * Subscriber priority. The value ranges from –100 to +1000. If the value exceeds the upper or lower limit, the
-     * upper or lower limit is used.
+     * Subscriber priority. The value ranges from –100 to +1000. If the value exceeds the upper or lower limit, the upper or lower limit is used.
+     * The default value is 0.
+     * The higher the numerical value, the higher the priority.
+     * The value should be set by subscribers of the same event.
      */
     @!APILevel[
         since: "22",

@@ -32,6 +32,7 @@ import std.collection.HashMap
 public class CommonEventPublishData {
     /**
      * Bundle name of the subscriber that can receive the common event.
+     * The default value is empty, which means any subscriber can receive public events, regardless of the subscribed bundlName.
      */
     @!APILevel[
         since: "22",
@@ -49,9 +50,7 @@ public class CommonEventPublishData {
     public var data: String
 
     /**
-     * Common event data transferred by the publisher. The default value is 0.
-     *
-     * @default 0
+     * Common event data transferred by the publisher. 
      */
     @!APILevel[
         since: "22",
@@ -70,8 +69,6 @@ public class CommonEventPublishData {
 
     /**
      * Whether the common event is an ordered one.
-     *
-     * @default false
      */
     @!APILevel[
         since: "22",
@@ -80,10 +77,7 @@ public class CommonEventPublishData {
     public var isOrdered: Bool
 
     /**
-     * Whether the common event is a sticky one. Only system applications and system services are allowed to
-     * send sticky events.
-     *
-     * @default false
+     * Whether the common event is a sticky one. Only system applications and system services are allowed to send sticky events.
      */
     @!APILevel[
         since: "22",
