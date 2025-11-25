@@ -172,7 +172,8 @@ public func createAbilityStageContextFromJSValue(context: JSContext, input: JSVa
  *
  * @param { JSContext } context - The JSRuntime context.
  * @param { JSValue } input - The JSValue to be converted.
- * @returns { ApplicationContext } Returns the ApplicationContext converted from the JSValue.
+ * @returns { ApplicationContext } The ApplicationContext module, inherited from Context, provides application-level context capabilities, including
+ * APIs for registering and unregistering the lifecycle of application components.
  */
 @!APILevel[
     since: "22",
@@ -185,7 +186,8 @@ public func createApplicationContextFromJSValue(context: JSContext, input: JSVal
  *
  * @param { JSContext } context - The JSRuntime context.
  * @param { JSValue } input - The JSValue to be converted.
- * @returns { Context } Returns the Context converted from the JSValue.
+ * @returns { Context } The Context module, inherited from BaseContext, provides context for abilities or applications, including
+ * access to application-specific resources.
  */
 @!APILevel[
     since: "22",
@@ -313,9 +315,8 @@ public open class UIAbility <: Ability {
      * It can be used to request system resources required, for example, requesting location services when the
      * application transitions to the foreground.
      * 
-     * <p>**NOTE**:
-     * <br>This API returns the result synchronously and does not support asynchronous callback.
-     * </p>
+     * NOTE:
+     * This API returns the result synchronously and does not support asynchronous callback.
      */
     @!APILevel[
         since: "22",
@@ -329,9 +330,8 @@ public open class UIAbility <: Ability {
      * It can be used to request system resources required, for example, requesting location services when the
      * application transitions to the foreground.
      * 
-     * <p>**NOTE**:
-     * <br>This API returns the result synchronously and does not support asynchronous callback.
-     * </p>
+     * NOTE:
+     * This API returns the result synchronously and does not support asynchronous callback.
      */
     @!APILevel[
         since: "22",

@@ -24,7 +24,7 @@ public import ohos.common_event_publish_data.CommonEventPublishData
 public import ohos.common_event_subscribe_info.CommonEventSubscribeInfo
 public import ohos.common_event_subscriber.CommonEventSubscriber
 import ohos.labels.APILevel
-public import ohos.value_type.ValueType
+public import ohos.value_type.CommonEventValueType
 
 /**
  * The CommonEventManager module provides common event capabilities, including the capabilities to publish, subscribe
@@ -69,7 +69,7 @@ public class CommonEventManager {
     public static func createSubscriber(subscribeInfo: CommonEventSubscribeInfo): CommonEventSubscriber
 
     /**
-     * Subscribes to a common event.
+     * create the CommonEventSubscriber for the SubscriberInfo.
      *
      * @param { CommonEventSubscriber } subscriber - Subscriber object.
      * @param { AsyncCallback<CommonEventData> } callback - Callback used to return the result.
@@ -1594,8 +1594,6 @@ public class Support {
 
     /**
      * Indicates the action of a common event that the call state has been changed.
-     * To subscribe to this protected common event, your application must have the ohos.permission.GET_TELEPHONY_STATE
-     * permission.
      * This is a protected common event that can only be sent by system.
      */
     @!APILevel[

@@ -22,7 +22,7 @@ import ohos.labels.APILevel
 /**
  * Create a color space manager by provided color space type.
  *
- * @param { ColorSpace } colorSpaceName - Indicates the type of color space.
+ * @param { ColorSpace } colorSpaceType - Indicates the type of color space.
  * @returns { ColorSpaceManager } Returns a color space manager object created by provided type.
  * @throws { BusinessException } 18600001 - The parameter value is abnormal.
  */
@@ -31,7 +31,7 @@ import ohos.labels.APILevel
     syscap: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
     throwexception: true
 ]
-public func create(colorSpaceName: ColorSpace): ColorSpaceManager
+public func create(colorSpaceType: ColorSpace): ColorSpaceManager
 
 /**
  * Create a customized color space manager by its color primaries and gamma value.
@@ -67,7 +67,7 @@ public class ColorSpaceManager {
         syscap: "SystemCapability.Graphic.Graphic2D.ColorManager.Core",
         throwexception: true
     ]
-    public func getColorSpaceName(): ColorSpace
+    public func getColorSpaceType(): ColorSpace
 
     /**
      * Get white point(x, y) of color space.
@@ -551,7 +551,7 @@ public class ColorSpacePrimaries {
      * @param {Float32} greenY - Coordinate value y of green color
      * @param {Float32} blueX - Coordinate value x of blue color
      * @param {Float32} blueY - Coordinate value y of blue color
-     * @param {Float32} whitePointX - Coordinate value x of white color
+     * @param {Float32} whitePointX - Coordinate value x of white point
      * @param {Float32} whitePointY - Coordinate value y of white point.
      */
     @!APILevel[

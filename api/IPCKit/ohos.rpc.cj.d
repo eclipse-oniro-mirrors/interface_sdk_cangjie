@@ -31,9 +31,7 @@ import ohos.labels.*
 ]
 public class Ashmem {
     /**
-     * The mapped memory is executable.
-     *
-     * @default 4
+     * The mapped memory is executable. Default value is 4.
      */
     @!APILevel[
         since: "22",
@@ -42,9 +40,7 @@ public class Ashmem {
     public static const PROT_EXEC: UInt32 = 4
 
     /**
-     * The mapped memory is inaccessible.
-     *
-     * @default 0
+     * The mapped memory is inaccessible. Default value is 0.
      */
     @!APILevel[
         since: "22",
@@ -53,9 +49,7 @@ public class Ashmem {
     public static const PROT_NONE: UInt32 = 0
 
     /**
-     * The mapped memory is readable.
-     *
-     * @default 1
+     * The mapped memory is readable. Default value is 1.
      */
     @!APILevel[
         since: "22",
@@ -64,9 +58,7 @@ public class Ashmem {
     public static const PROT_READ: UInt32 = 1
 
     /**
-     * The mapped memory is writable.
-     *
-     * @default 2
+     * The mapped memory is writable. Default value is 2.
      */
     @!APILevel[
         since: "22",
@@ -206,20 +198,18 @@ public class Ashmem {
 
 /**
  * A data object used for remote procedure call (RPC).
- * <p>
- * During RPC, the sender can use the write methods provided by {@link MessageSequence} to
- * write the to-be-sent data into a {@link MessageSequence} object in a specific format, and the receiver can use the
- * read methods provided by {@link MessageSequence} to read data of the specific format from
- * the {@link MessageSequence} object.
- * <p>
- * <p>
- * The default capacity of a {@link MessageSequence} instance is 200KB. If you want more or less,
- * use {@link #setCapacity(int)} to change it.
- * </p>
- * <b>Note</b>: Only data of the following data types can be written into or read from a {@link MessageSequence}:
+ * During RPC, the sender can use the write methods provided by MessageSequence to
+ * write the to-be-sent data into a MessageSequence object in a specific format, and the receiver can use the
+ * read methods provided by MessageSequence to read data of the specific format from
+ * the MessageSequence object.
+ *
+ * The default capacity of a MessageSequence instance is 200KB. If you want more or less,
+ * use setCapacity(int) to change it.
+ * 
+ * Note: Only data of the following data types can be written into or read from a MessageSequence:
  * Int8, Int8Array, Int16, Int16Array, Int32, Int32Array, Int64, Int64Array, Float32, Float32Array, Float64,
  * Float64Array, Bool, BoolArray, UInt8, UInt8Array, String, StringArray,
- * {@link Parcelable}, and ParcelableArray.
+ * Parcelable, and ParcelableArray.
  */
 @!APILevel[
     since: "22",
@@ -227,7 +217,7 @@ public class Ashmem {
 ]
 public class MessageSequence {
     /**
-     * Creates an empty {@link MessageSequence} object.
+     * Creates an empty MessageSequence object.
      * @returns { MessageSequence } Return the object created.
      */
     @!APILevel[
@@ -238,7 +228,7 @@ public class MessageSequence {
     public static func create(): MessageSequence
 
     /**
-     * Reclaim the {@link MessageSequence} object.
+     * Reclaim the MessageSequence object.
      */
     @!APILevel[
         since: "22",
@@ -247,7 +237,7 @@ public class MessageSequence {
     public func reclaim(): Unit
 
     /**
-     * Writes an interface token into the {@link MessageSequence} object.
+     * Writes an interface token into the MessageSequence object.
      * @param { String } token - Interface descriptor to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -259,7 +249,7 @@ public class MessageSequence {
     public func writeInterfaceToken(token: String): Unit
 
     /**
-     * Reads an interface token from the {@link MessageSequence} object.
+     * Reads an interface token from the MessageSequence object.
      * @returns { String } Return a String value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -271,8 +261,8 @@ public class MessageSequence {
     public func readInterfaceToken(): String
 
     /**
-     * Obtains the size of data (in bytes) contained in the {@link MessageSequence} object.
-     * @returns { UInt32 } Return the size of data contained in the {@link MessageSequence} object.
+     * Obtains the size of data (in bytes) contained in the MessageSequence object.
+     * @returns { UInt32 } Return the size of data contained in the MessageSequence object.
      */
     @!APILevel[
         since: "22",
@@ -281,8 +271,8 @@ public class MessageSequence {
     public func getSize(): UInt32
 
     /**
-     * Obtains the storage capacity (in bytes) of the {@link MessageSequence} object.
-     * @returns { UInt32 } Return the storage capacity of the {@link MessageSequence} object.
+     * Obtains the storage capacity (in bytes) of the MessageSequence object.
+     * @returns { UInt32 } Return the storage capacity of the MessageSequence object.
      */
     @!APILevel[
         since: "22",
@@ -291,10 +281,10 @@ public class MessageSequence {
     public func getCapacity(): UInt32
 
     /**
-     * Sets the size of data (in bytes) contained in the {@link MessageSequence} object.
-     * <p> False is returned if the data size set in this method is greater
-     * than the storage capacity of the {@link MessageSequence}.
-     * @param { UInt32 } size - Indicates the data size of the {@link MessageSequence} object.
+     * Sets the size of data (in bytes) contained in the MessageSequence object.
+     * False is returned if the data size set in this method is greater
+     * than the storage capacity of the MessageSequence.
+     * @param { UInt32 } size - Indicates the data size of the MessageSequence object.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
     @!APILevel[
@@ -305,10 +295,10 @@ public class MessageSequence {
     public func setSize(size: UInt32): Unit
 
     /**
-     * Sets the storage capacity (in bytes) of the {@link MessageSequence} object.
-     * <p> False is returned if the capacity set in this method is less than
-     * the size of data contained in the {@link MessageSequence}.
-     * @param { UInt32 } size - Indicates the storage capacity of the {@link MessageSequence} object.
+     * Sets the storage capacity (in bytes) of the MessageSequence object.
+     * False is returned if the capacity set in this method is less than
+     * the size of data contained in the MessageSequence.
+     * @param { UInt32 } size - Indicates the storage capacity of the MessageSequence object.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      * @throws { BusinessException } 1900011 - Memory allocation failed.
      */
@@ -320,10 +310,10 @@ public class MessageSequence {
     public func setCapacity(size: UInt32): Unit
 
     /**
-     * Obtains the writable data space (in bytes) in the {@link MessageSequence} object.
-     * <p>Writable data space = Storage capacity of the {@link MessageSequence} – Size of data contained in
-     * the {@link MessageSequence}.
-     * @returns { UInt32 } Return the writable data space of the {@link MessageSequence} object.
+     * Obtains the writable data space (in bytes) in the MessageSequence object.
+     * Writable data space = Storage capacity of the MessageSequence – Size of data contained in
+     * the MessageSequence.
+     * @returns { UInt32 } Return the writable data space of the MessageSequence object.
      */
     @!APILevel[
         since: "22",
@@ -332,9 +322,9 @@ public class MessageSequence {
     public func getWritableBytes(): UInt32
 
     /**
-     * Obtains the readable data space (in bytes) in the {@link MessageSequence} object.
-     * <p>Readable data space = Size of data contained in the {@link MessageSequence} – Size of data that has been read.
-     * @returns { UInt32 } Return the readable data space of the {@link MessageSequence} object.
+     * Obtains the readable data space (in bytes) in the MessageSequence object.
+     * Readable data space = Size of data contained in the MessageSequence – Size of data that has been read.
+     * @returns { UInt32 } Return the readable data space of the MessageSequence object.
      */
     @!APILevel[
         since: "22",
@@ -343,8 +333,8 @@ public class MessageSequence {
     public func getReadableBytes(): UInt32
 
     /**
-     * Obtains the current read position in the {@link MessageSequence} object.
-     * @returns { UInt32 } Return the current read position in the {@link MessageSequence} object.
+     * Obtains the current read position in the MessageSequence object.
+     * @returns { UInt32 } Return the current read position in the MessageSequence object.
      */
     @!APILevel[
         since: "22",
@@ -353,8 +343,8 @@ public class MessageSequence {
     public func getReadPosition(): UInt32
 
     /**
-     * Obtains the current write position in the {@link MessageSequence} object.
-     * @returns { UInt32 } Return the current write position in the {@link MessageSequence} object.
+     * Obtains the current write position in the MessageSequence object.
+     * @returns { UInt32 } Return the current write position in the MessageSequence object.
      */
     @!APILevel[
         since: "22",
@@ -363,8 +353,8 @@ public class MessageSequence {
     public func getWritePosition(): UInt32
 
     /**
-     * Changes the current write position in the {@link MessageSequence} object.
-     * <p>Generally, you are advised not to change the current write position. If you must
+     * Changes the current write position in the MessageSequence object.
+     * Generally, you are advised not to change the current write position. If you must
      * change it, change it to an accurate position. Otherwise, the data to be read may be incorrect.
      * @param { UInt32 } pos - Indicates the target position to start data writing.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
@@ -377,8 +367,8 @@ public class MessageSequence {
     public func rewindWrite(pos: UInt32): Unit
 
     /**
-     * Changes the current read position in the {@link MessageSequence} object.
-     * <p>Generally, you are advised not to change the current read position. If you must
+     * Changes the current read position in the MessageSequence object.
+     * Generally, you are advised not to change the current read position. If you must
      * change it, change it to an accurate position. Otherwise, the read data may be incorrect.
      * @param { UInt32 } pos - Indicates the target position to start data reading.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
@@ -392,8 +382,8 @@ public class MessageSequence {
 
     /**
      * Writes information to this MessageSequence object indicating that no exception occurred.
-     * <p>After handling requests, you should call this method before writing any data to reply
-     * {@link MessageSequence}.
+     * After handling requests, you should call this method before writing any data to reply
+     * MessageSequence.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
     @!APILevel[
@@ -405,9 +395,9 @@ public class MessageSequence {
 
     /**
      * Reads the exception information from this MessageSequence object.
-     * <p>If exception was thrown in server side, it will be thrown here.
-     * This method should be called before reading any data from reply {@link MessageSequence}
-     * if {@link writeNoException} was invoked in server side.
+     * If exception was thrown in server side, it will be thrown here.
+     * This method should be called before reading any data from reply MessageSequence
+     * if writeNoException was invoked in server side.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
     @!APILevel[
@@ -418,7 +408,7 @@ public class MessageSequence {
     public func readException(): Unit
 
     /**
-     * Writes a Int8 value into the {@link MessageSequence} object.
+     * Writes a Int8 value into the MessageSequence object.
      * @param { Int8 } val - Indicates the Int8 value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -430,7 +420,7 @@ public class MessageSequence {
     public func writeByte(val: Int8): Unit
 
     /**
-     * Writes a Int16 value into the {@link MessageSequence} object.
+     * Writes a Int16 value into the MessageSequence object.
      * @param { Int16 } val - Indicates the Int16 value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -442,7 +432,7 @@ public class MessageSequence {
     public func writeShort(val: Int16): Unit
 
     /**
-     * Writes an Int32 value into the {@link MessageSequence} object.
+     * Writes an Int32 value into the MessageSequence object.
      * @param { Int32 } val - Indicates the Int32 value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -454,7 +444,7 @@ public class MessageSequence {
     public func writeInt(val: Int32): Unit
 
     /**
-     * Writes a Int64 value into the {@link MessageSequence} object.
+     * Writes a Int64 value into the MessageSequence object.
      * @param { Int64 } val - Indicates the Int64 value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -466,7 +456,7 @@ public class MessageSequence {
     public func writeLong(val: Int64): Unit
 
     /**
-     * Writes a Float32 value into the {@link MessageSequence} object.
+     * Writes a Float32 value into the MessageSequence object.
      * @param { Float32 } val - Indicates the Float32 value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -478,7 +468,7 @@ public class MessageSequence {
     public func writeFloat(val: Float32): Unit
 
     /**
-     * Writes a Float64 value into the {@link MessageSequence} object.
+     * Writes a Float64 value into the MessageSequence object.
      * @param { Float64 } val - Indicates the Float64 value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -490,7 +480,7 @@ public class MessageSequence {
     public func writeDouble(val: Float64): Unit
 
     /**
-     * Writes a Bool value into the {@link MessageSequence} object.
+     * Writes a Bool value into the MessageSequence object.
      * @param { Bool } val - Indicates the Bool value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -502,7 +492,7 @@ public class MessageSequence {
     public func writeBoolean(val: Bool): Unit
 
     /**
-     * Writes a UInt8 value into the {@link MessageSequence} object.
+     * Writes a UInt8 value into the MessageSequence object.
      * @param { UInt8 } val - Indicates the UInt8 value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -514,7 +504,7 @@ public class MessageSequence {
     public func writeChar(val: UInt8): Unit
 
     /**
-     * Writes a String value into the {@link MessageSequence} object.
+     * Writes a String value into the MessageSequence object.
      * @param { String } val - Indicates the String value to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -526,8 +516,8 @@ public class MessageSequence {
     public func writeString(val: String): Unit
 
     /**
-     * Writes a {@link Parcelable} object into the {@link MessageSequence} object.
-     * @param { T } val - Indicates the {@link Parcelable} object to write.
+     * Writes a Parcelable object into the MessageSequence object.
+     * @param { T } val - Indicates the Parcelable object to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
     @!APILevel[
@@ -538,7 +528,7 @@ public class MessageSequence {
     public func writeParcelable<T>(val: T): Unit where T <: Parcelable
 
     /**
-     * Writes a Int8 array into the {@link MessageSequence} object.
+     * Writes a Int8 array into the MessageSequence object.
      * @param { Array<Int8> } byteArray - Indicates the Int8 array to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -550,7 +540,7 @@ public class MessageSequence {
     public func writeByteArray(byteArray: Array<Int8>): Unit
 
     /**
-     * Writes a Int16 array into the {@link MessageSequence} object.
+     * Writes a Int16 array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<Int16> } shortArray - Indicates the Int16 array to write.
@@ -564,7 +554,7 @@ public class MessageSequence {
     public func writeShortArray(shortArray: Array<Int16>): Unit
 
     /**
-     * Writes a Int32 array into the {@link MessageSequence} object.
+     * Writes a Int32 array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<Int32> } intArray - Indicates the Int32 array to write.
@@ -578,7 +568,7 @@ public class MessageSequence {
     public func writeIntArray(intArray: Array<Int32>): Unit
 
     /**
-     * Writes a Int64 array into the {@link MessageSequence} object.
+     * Writes a Int64 array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<Int64> } longArray - Indicates the Int64 array to write.
@@ -592,7 +582,7 @@ public class MessageSequence {
     public func writeLongArray(longArray: Array<Int64>): Unit
 
     /**
-     * Writes a Float32 array into the {@link MessageSequence} object.
+     * Writes a Float32 array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<Float32> } floatArray - Indicates the Float32 array to write.
@@ -606,7 +596,7 @@ public class MessageSequence {
     public func writeFloatArray(floatArray: Array<Float32>): Unit
 
     /**
-     * Writes a Float64 array into the {@link MessageSequence} object.
+     * Writes a Float64 array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<Float64> } doubleArray - Indicates the Float64 array to write.
@@ -620,7 +610,7 @@ public class MessageSequence {
     public func writeDoubleArray(doubleArray: Array<Float64>): Unit
 
     /**
-     * Writes a Bool array into the {@link MessageSequence} object.
+     * Writes a Bool array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<Bool> } booleanArray - Indicates the Bool array to write.
@@ -634,7 +624,7 @@ public class MessageSequence {
     public func writeBooleanArray(booleanArray: Array<Bool>): Unit
 
     /**
-     * Writes a UInt8 array into the {@link MessageSequence} object.
+     * Writes a UInt8 array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<UInt8> } charArray - Indicates the UInt8 array to write.
@@ -648,7 +638,7 @@ public class MessageSequence {
     public func writeCharArray(charArray: Array<UInt8>): Unit
 
     /**
-     * Writes a String array into the {@link MessageSequence} object.
+     * Writes a String array into the MessageSequence object.
      * Ensure that the data type and size comply with the interface definition.
      * Otherwise,data may be truncated.
      * @param { Array<String> } stringArray - Indicates the String array to write.
@@ -662,8 +652,8 @@ public class MessageSequence {
     public func writeStringArray(stringArray: Array<String>): Unit
 
     /**
-     * Writes a {@link Parcelable} object array into the {@link MessageSequence} object.
-     * @param { Array<T> } parcelableArray - Indicates the {@link Parcelable} object array to write.
+     * Writes a Parcelable object array into the MessageSequence object.
+     * @param { Array<T> } parcelableArray - Indicates the Parcelable object array to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
     @!APILevel[
@@ -674,7 +664,7 @@ public class MessageSequence {
     public func writeParcelableArray<T>(parcelableArray: Array<T>): Unit where T <: Parcelable
 
     /**
-     * Reads a Int8 value from the {@link MessageSequence} object.
+     * Reads a Int8 value from the MessageSequence object.
      * @returns { Int8 } Return a Int8 value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -686,7 +676,7 @@ public class MessageSequence {
     public func readByte(): Int8
 
     /**
-     * Reads a Int16 value from the {@link MessageSequence} object.
+     * Reads a Int16 value from the MessageSequence object.
      * @returns { Int16 } Return a Int16 value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -698,7 +688,7 @@ public class MessageSequence {
     public func readShort(): Int16
 
     /**
-     * Reads an Int32 value from the {@link MessageSequence} object.
+     * Reads an Int32 value from the MessageSequence object.
      * @returns { Int32 } Return an Int32 value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -710,7 +700,7 @@ public class MessageSequence {
     public func readInt(): Int32
 
     /**
-     * Reads a Int64 value from the {@link MessageSequence} object.
+     * Reads a Int64 value from the MessageSequence object.
      * @returns { Int64 } Return a Int64 value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -722,7 +712,7 @@ public class MessageSequence {
     public func readLong(): Int64
 
     /**
-     * Reads a Float32 value from the {@link MessageSequence} object.
+     * Reads a Float32 value from the MessageSequence object.
      * @returns { Float32 } Return a Float32 value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -734,7 +724,7 @@ public class MessageSequence {
     public func readFloat(): Float32
 
     /**
-     * Reads a Float64 value from the {@link MessageSequence} object.
+     * Reads a Float64 value from the MessageSequence object.
      * @returns { Float64 } Return a Float64 value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -746,7 +736,7 @@ public class MessageSequence {
     public func readDouble(): Float64
 
     /**
-     * Reads a Bool value from the {@link MessageSequence} object.
+     * Reads a Bool value from the MessageSequence object.
      * @returns { Bool } Return a Bool value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -758,7 +748,7 @@ public class MessageSequence {
     public func readBoolean(): Bool
 
     /**
-     * Reads a UInt8 value from the {@link MessageSequence} object.
+     * Reads a UInt8 value from the MessageSequence object.
      * @returns { UInt8 } Return a UInt8 value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -770,7 +760,7 @@ public class MessageSequence {
     public func readChar(): UInt8
 
     /**
-     * Reads a String value from the {@link MessageSequence} object.
+     * Reads a String value from the MessageSequence object.
      * @returns { String } Return a String value.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -782,9 +772,9 @@ public class MessageSequence {
     public func readString(): String
 
     /**
-     * Reads a {@link Parcelable} object from the {@link MessageSequence} instance.
-     * @param { T } dataIn - Indicates the {@link Parcelable} object that needs to perform
-     *                       the unmarshalling operation using the {@link MessageSequence}.
+     * Reads a Parcelable object from the MessageSequence instance.
+     * @param { T } dataIn - Indicates the Parcelable object that needs to perform
+     *                       the unmarshalling operation using the MessageSequence.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      * @throws { BusinessException } 1900012 - Failed to call the JS callback function.
      */
@@ -796,7 +786,7 @@ public class MessageSequence {
     public func readParcelable<T>(dataIn: T): Unit where T <: Parcelable
 
     /**
-     * Reads a Int8 array from the {@link MessageSequence} object.
+     * Reads a Int8 array from the MessageSequence object.
      * @returns { Array<Int8> } Return a Int8 array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -808,7 +798,7 @@ public class MessageSequence {
     public func readByteArray(): Array<Int8>
 
     /**
-     * Reads a Int16 array from the {@link MessageSequence} object.
+     * Reads a Int16 array from the MessageSequence object.
      * @returns { Array<Int16> } Return a Int16 array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -820,7 +810,7 @@ public class MessageSequence {
     public func readShortArray(): Array<Int16>
 
     /**
-     * Reads an Int32 array from the {@link MessageSequence} object.
+     * Reads an Int32 array from the MessageSequence object.
      * @returns { Array<Int32> } Return an Int32 array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -832,7 +822,7 @@ public class MessageSequence {
     public func readIntArray(): Array<Int32>
 
     /**
-     * Reads a Int64 array from the {@link MessageSequence} object.
+     * Reads a Int64 array from the MessageSequence object.
      * @returns { Array<Int64> } Return a Int64 array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -844,7 +834,7 @@ public class MessageSequence {
     public func readLongArray(): Array<Int64>
 
     /**
-     * Reads a Float32 array from the {@link MessageSequence} object.
+     * Reads a Float32 array from the MessageSequence object.
      * @returns { Array<Float32> } Return a Float32 array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -856,7 +846,7 @@ public class MessageSequence {
     public func readFloatArray(): Array<Float32>
 
     /**
-     * Reads a Float64 array from the {@link MessageSequence} object.
+     * Reads a Float64 array from the MessageSequence object.
      * @returns { Array<Float64> } Return a Float64 array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -868,7 +858,7 @@ public class MessageSequence {
     public func readDoubleArray(): Array<Float64>
 
     /**
-     * Reads a Bool array from the {@link MessageSequence} object.
+     * Reads a Bool array from the MessageSequence object.
      * @returns { Array<Bool> } Return a Bool array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -880,7 +870,7 @@ public class MessageSequence {
     public func readBooleanArray(): Array<Bool>
 
     /**
-     * Reads a UInt8 array from the {@link MessageSequence} object.
+     * Reads a UInt8 array from the MessageSequence object.
      * @returns { Array<UInt8> } Return a UInt8 array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -892,7 +882,7 @@ public class MessageSequence {
     public func readCharArray(): Array<UInt8>
 
     /**
-     * Reads a String array from the {@link MessageSequence} object.
+     * Reads a String array from the MessageSequence object.
      * @returns { Array<String> } Return a String array.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -904,7 +894,7 @@ public class MessageSequence {
     public func readStringArray(): Array<String>
 
     /**
-     * Reads the specified {@link Parcelable} array from this {@link MessageSequence} object.
+     * Reads the specified Parcelable array from this MessageSequence object.
      * @param { Array<T> } parcelableArray - Parcelable array to read.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      * @throws { BusinessException } 1900012 - Failed to call the JS callback function.
@@ -940,8 +930,8 @@ public class MessageSequence {
     public static func dupFileDescriptor(fd: Int32): Int32
 
     /**
-     * Checks whether this {@link MessageSequence} object contains a file descriptor.
-     * @returns { Bool } Return True if the {@link MessageSequence} object contains a file descriptor;
+     * Checks whether this MessageSequence object contains a file descriptor.
+     * @returns { Bool } Return True if the MessageSequence object contains a file descriptor;
      *                      return False otherwise.
      */
     @!APILevel[
@@ -951,7 +941,7 @@ public class MessageSequence {
     public func containFileDescriptors(): Bool
 
     /**
-     * Writes a file descriptor to this {@link MessageSequence} object.
+     * Writes a file descriptor to this MessageSequence object.
      * @param { Int32 } fd - File descriptor to wrote.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -963,7 +953,7 @@ public class MessageSequence {
     public func writeFileDescriptor(fd: Int32): Unit
 
     /**
-     * Reads a file descriptor from this {@link MessageSequence} object.
+     * Reads a file descriptor from this MessageSequence object.
      * @returns { Int32 } Return a file descriptor obtained.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -975,7 +965,7 @@ public class MessageSequence {
     public func readFileDescriptor(): Int32
 
     /**
-     * Writes an anonymous shared memory object to this {@link MessageSequence} object.
+     * Writes an anonymous shared memory object to this MessageSequence object.
      * @param { Ashmem } ashmem - Anonymous shared memory object to wrote.
      * @throws { BusinessException } 1900003 - Failed to write data to the shared memory.
      */
@@ -987,7 +977,7 @@ public class MessageSequence {
     public func writeAshmem(ashmem: Ashmem): Unit
 
     /**
-     * Reads the anonymous shared memory object from this {@link MessageSequence} object.
+     * Reads the anonymous shared memory object from this MessageSequence object.
      * @returns { Ashmem } Return the anonymous share object obtained.
      * @throws { BusinessException } 1900004 - Failed to read data from the shared memory.
      */
@@ -1009,7 +999,7 @@ public class MessageSequence {
     public func getRawDataCapacity(): UInt32
 
     /**
-     * Writes raw data to this {@link MessageSequence} object.
+     * Writes raw data to this MessageSequence object.
      * @param { Array<Byte> } rawData - Raw data to wrote.
      * @param { Int64 } size - Size of the raw data, in bytes.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
@@ -1022,7 +1012,7 @@ public class MessageSequence {
     public func writeRawDataBuffer(rawData: Array<Byte>, size: Int64): Unit
 
     /**
-     * Reads raw data from this {@link MessageSequence} object.
+     * Reads raw data from this MessageSequence object.
      * @param { Int64 } size - Size of the raw data to read.
      * @returns { Array<Byte> } Return the raw data obtained, in bytes.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
@@ -1035,7 +1025,7 @@ public class MessageSequence {
     public func readRawDataBuffer(size: Int64): Array<Byte>
 
     /**
-     * Writes the data in an Array<UInt8> object into this {@Link MessageSequence} object.
+     * Writes the data in an Array<UInt8> object into this MessageSequence object.
      * @param { Array<UInt8> } buf - Data to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -1047,7 +1037,7 @@ public class MessageSequence {
     public func writeUInt8Array(buf: Array<UInt8>): Unit
 
     /**
-     * Writes the data in an Array<UInt16> object into this {@Link MessageSequence} object.
+     * Writes the data in an Array<UInt16> object into this MessageSequence object.
      * @param { Array<UInt16> } buf - Data to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -1059,7 +1049,7 @@ public class MessageSequence {
     public func writeUInt16Array(buf: Array<UInt16>): Unit
 
     /**
-     * Writes the data in an Array<UInt32> object into this {@Link MessageSequence} object.
+     * Writes the data in an Array<UInt32> object into this MessageSequence object.
      * @param { Array<UInt32> } buf - Data to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -1071,7 +1061,7 @@ public class MessageSequence {
     public func writeUInt32Array(buf: Array<UInt32>): Unit
 
     /**
-     * Writes the data in an Array<UInt64> object into this {@Link MessageSequence} object.
+     * Writes the data in an Array<UInt64> object into this MessageSequence object.
      * @param { Array<UInt64> } buf - Data to write.
      * @throws { BusinessException } 1900009 - Failed to write data to the message sequence.
      */
@@ -1083,7 +1073,7 @@ public class MessageSequence {
     public func writeUInt64Array(buf: Array<UInt64>): Unit
 
     /**
-     * Reads raw data from this {@link MessageSequence} object.
+     * Reads raw data from this MessageSequence object.
      * @returns { Array<UInt8> } Returns the Array<UInt8> obtained.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -1095,7 +1085,7 @@ public class MessageSequence {
     public func readUInt8Array(): Array<UInt8>
 
     /**
-     * Reads raw data from this {@link MessageSequence} object.
+     * Reads raw data from this MessageSequence object.
      * @returns { Array<UInt16> } Returns the Array<UInt16> obtained.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -1107,7 +1097,7 @@ public class MessageSequence {
     public func readUInt16Array(): Array<UInt16>
 
     /**
-     * Reads raw data from this {@link MessageSequence} object.
+     * Reads raw data from this MessageSequence object.
      * @returns { Array<UInt32> } Returns the Array<UInt32> obtained.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -1119,7 +1109,7 @@ public class MessageSequence {
     public func readUInt32Array(): Array<UInt32>
 
     /**
-     * Reads raw data from this {@link MessageSequence} object.
+     * Reads raw data from this MessageSequence object.
      * @returns { Array<UInt64> } Returns the Array<UInt64> obtained.
      * @throws { BusinessException } 1900010 - Failed to read data from the message sequence.
      */
@@ -1132,8 +1122,8 @@ public class MessageSequence {
 }
 
 /**
- * During inter-process communication, objects of the class are written to the {@link MessageSequence} and
- * they are recovered from the {@link MessageSequence}.
+ * During inter-process communication, objects of the class are written to the MessageSequence and
+ * they are recovered from the MessageSequence.
  */
 @!APILevel[
     since: "22",
@@ -1141,8 +1131,8 @@ public class MessageSequence {
 ]
 public interface Parcelable {
     /**
-     * Marshal this Parcelable object into a {@link MessageSequence}.
-     * @param { MessageSequence } dataOut - Indicates the {@link MessageSequence} object to which the Parcelable
+     * Marshal this Parcelable object into a MessageSequence.
+     * @param { MessageSequence } dataOut - Indicates the MessageSequence object to which the Parcelable
      *                            object will be marshalled.
      * @returns { Bool } Return True if the marshalling is successful; return False otherwise.
      */
@@ -1153,8 +1143,8 @@ public interface Parcelable {
     func marshalling(dataOut: MessageSequence): Bool
 
     /**
-     * Unmarshal this Parcelable object from a {@link MessageSequence}.
-     * @param { MessageSequence } dataIn - Indicates the {@link MessageSequence} object into
+     * Unmarshal this Parcelable object from a MessageSequence.
+     * @param { MessageSequence } dataIn - Indicates the MessageSequence object into
      *                            which the Parcelable object has been marshalled.
      * @returns { Bool } Return True if the unmarshalling is successful; return False otherwise.
      */

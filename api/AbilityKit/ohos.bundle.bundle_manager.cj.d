@@ -203,7 +203,7 @@ public class AbilityInfo {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    public let supportWindowModes: Array<SupportWindowMode>
+    public let public let supportedWindowModes: Array<SupportedWindowMode>
 
     /**
      * Indicates window size.
@@ -1567,7 +1567,7 @@ public enum ExtensionAbilityType {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    EmbeddedUi
+    EmbeddedUI
     | 
     /**
      * Indicates extension info with type of insight intent UI.
@@ -1576,7 +1576,7 @@ public enum ExtensionAbilityType {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    InsightIntentUi
+    InsightIntentUI
     | 
     /**
      * Indicates extension info with type of unspecified.
@@ -1717,7 +1717,7 @@ public enum ApplicationType {
     Pdf
     | 
     /**
-     * Default Default word identifier.
+     * Default word identifier.
      */
     @!APILevel[
         since: "22",

@@ -41,7 +41,6 @@ public func getValue<T>(context: UIAbilityContext, name: T, defValue: String): S
 
 /**
  * Get value from settingsdata.
- * [USER_SECURE] domain need ohos.permission.MANAGE_SECURE_SETTINGS permission.
  *
  * @param { UIAbilityContext } context -Indicates the Context or dataAbilityHelper used to access
  * the database.
@@ -57,8 +56,7 @@ public func getValue<T>(context: UIAbilityContext, name: T, defValue: String): S
     throwexception: true,
     workerthread: true
 ]
-public func getValue<T, P>(context: UIAbilityContext, name: T, defValue: String, domainName: P): String
-    where T <: ToString, P <: ToString
+public func getValue<T, P>(context: UIAbilityContext, name: T, defValue: String, domainName: P): String where T <: ToString
 
 /**
  * Provide domain name for query.
@@ -266,6 +264,24 @@ public enum Display <: ToString {
         syscap: "SystemCapability.Applications.Settings.Core"
     ]
     DisplayInversionStatus
+    |
+    /**
+     * Indicates the value of AutoScreenBrightnessMode when automatic screen brightness adjustment is used.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Applications.Settings.Core"
+    ]
+    AutoScreenBrightnessMode
+    |
+    /**
+     * Indicates the value of ManualScreenBrightnessMode when manual screen brightness adjustment is used.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.Applications.Settings.Core"
+    ]
+    ManualScreenBrightnessMode
     | ...
 
     /**

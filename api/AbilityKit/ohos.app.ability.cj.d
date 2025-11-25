@@ -34,5 +34,5 @@ public abstract class BaseContext {
         since: "22",
         syscap: "SystemCapability.Ability.AbilityRuntime.Core"
     ]
-    public let stageMode: Bool
+    public let stageModel: Bool
 }

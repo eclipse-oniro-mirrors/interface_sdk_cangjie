@@ -601,9 +601,9 @@ extend NetConnectionEvent <: Equatable<NetConnectionEvent> {
 
 /**
  * Create a network connection with optional netSpecifier and timeout.
- * @param { ?NetSpecifier } [netSpecifier] - Indicates the network specifier. See {@link NetSpecifier}.
+ * @param { ?NetSpecifier } [netSpecifier] - Indicates the network specifier. See NetSpecifier.
  * @param { UInt32 } [timeout] - The time in milliseconds to attempt looking for a suitable network before
- * {@link NetConnection#netUnavailable} is called.
+ * netUnavailable is called.
  * @returns { NetConnection } the NetConnection of the NetSpecifier.
  */
 @!APILevel[
@@ -614,8 +614,6 @@ public func createNetConnection(netSpecifier!: ?NetSpecifier = None, timeout!: U
 
 /**
  * Obtains the data network that is activated by default.
- * To call this method, you must have the ohos.permission.GET_NETWORK_INFO permission.
- * @permission ohos.permission.GET_NETWORK_INFO
  * @returns { NetHandle } Handle of the default active data network.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100002 - Failed to connect to the service.
@@ -631,10 +629,10 @@ public func createNetConnection(netSpecifier!: ?NetSpecifier = None, timeout!: U
 public func getDefaultNet(): NetHandle
 
 /**
- * Obtains the default {@link HttpProxy} proxy settings.
+ * Obtains the default HttpProxy proxy settings.
  * If a global proxy is set, the global proxy parameters are returned.
- * If the process is bound to a {@link NetHandle} using {@link setAppNet},
- * the {@link NetHandle} proxy settings are returned.
+ * If the process is bound to a NetHandle using setAppNet,
+ * the NetHandle proxy settings are returned.
  * In other cases, the proxy settings of default network are returned.
  * @returns { HttpProxy } Proxy settings of http.
  * @throws { BusinessException } 2100002 - Failed to connect to the service.
@@ -649,8 +647,8 @@ public func getDefaultNet(): NetHandle
 public func getDefaultHttpProxy(): HttpProxy
 
 /**
- * Obtains the {@link NetHandle} bound to a process using {@link setAppNet}.
- * @returns { NetHandle } Returns the {@link NetHandle} bound to a process using {@link setAppNet}.
+ * Obtains the NetHandle bound to a process using setAppNet.
+ * @returns { NetHandle } Returns the NetHandle bound to a process using setAppNet.
  * @throws { BusinessException } 2100002 - Failed to connect to the service.
  * @throws { BusinessException } 2100003 - System internal error.
  */
@@ -664,10 +662,9 @@ public func getAppNet(): NetHandle
 
 /**
  * Binds a process to NetHandle.
- * <p>All the sockets created from the process will be bound to the NetHandle,
- * and the resolution of all host names will be managed by the NetHandle.</p>
- * @permission ohos.permission.INTERNET
- * @param { NetHandle } netHandle - Indicates the handle. For details, see {@link NetHandle}.
+ * All the sockets created from the process will be bound to the NetHandle,
+ * and the resolution of all host names will be managed by the NetHandle.
+ * @param { NetHandle } netHandle - Indicates the handle. For details, see NetHandle.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100001 - Invalid parameter value.
  * @throws { BusinessException } 2100002 - Failed to connect to the service.
@@ -684,8 +681,6 @@ public func setAppNet(netHandle: NetHandle): Unit
 
 /**
  * Obtains the list of data networks that are activated.
- * To invoke this method, you must have the ohos.permission.GET_NETWORK_INFO permission.
- * @permission ohos.permission.GET_NETWORK_INFO
  * @returns { Array<NetHandle> } Returns data networks that are activated.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100002 - Failed to connect to the service.
@@ -702,8 +697,6 @@ public func getAllNets(): Array<NetHandle>
 
 /**
  * Queries the connection properties of a network.
- * This method requires the ohos.permission.GET_NETWORK_INFO permission.
- * @permission ohos.permission.GET_NETWORK_INFO
  * @param { NetHandle } netHandle - Indicates the network to be queried.
  * @returns { ConnectionProperties } Returns the connection properties of a network.
  * @throws { BusinessException } 201 - Permission denied.
@@ -721,10 +714,8 @@ public func getAllNets(): Array<NetHandle>
 public func getConnectionProperties(netHandle: NetHandle): ConnectionProperties
 
 /**
- * Obtains {@link NetCapabilities} of a {@link NetHandle} object.
- * To invoke this method, you must have the ohos.permission.GET_NETWORK_INFO permission.
- * @permission ohos.permission.GET_NETWORK_INFO
- * @param { NetHandle } netHandle - Indicates the handle. See {@link NetHandle}.
+ * Obtains NetCapabilities of a NetHandle object.
+ * @param { NetHandle } netHandle - Indicates the handle. See NetHandle.
  * @returns { NetCapabilities } Returns the connection capabilities of a network.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100001 - Invalid parameter value.
@@ -742,7 +733,6 @@ public func getNetCapabilities(netHandle: NetHandle): NetCapabilities
 
 /**
  * Checks whether data traffic usage on the current network is metered.
- * @permission ohos.permission.GET_NETWORK_INFO
  * @returns { Bool } Returns true if the current network is metered, else returns false.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100002 - Failed to connect to the service.
@@ -759,7 +749,6 @@ public func isDefaultNetMetered(): Bool
 
 /**
  * Checks whether the default data network is activated.
- * @permission ohos.permission.GET_NETWORK_INFO
  * @returns { Bool } Returns true if the default data network is activated, else returns false.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100002 - Failed to connect to the service.
@@ -776,7 +765,6 @@ public func hasDefaultNet(): Bool
 
 /**
  * Reports the network state is connected.
- * @permission ohos.permission.GET_NETWORK_INFO and ohos.permission.INTERNET
  * @param { NetHandle } netHandle - Indicates the network whose state is to be reported.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100001 - Invalid parameter value.
@@ -794,7 +782,6 @@ public func reportNetConnected(netHandle: NetHandle): Unit
 
 /**
  * Reports the network state is disconnected.
- * @permission ohos.permission.GET_NETWORK_INFO and ohos.permission.INTERNET
  * @param { NetHandle } netHandle - Indicates the network whose state is to be reported.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 2100001 - Invalid parameter value.
@@ -812,7 +799,6 @@ public func reportNetDisconnected(netHandle: NetHandle): Unit
 
 /**
  * Resolves the host name to obtain all IP addresses based on the default data network.
- * @permission ohos.permission.INTERNET
  * @param { String } host - Indicates the host name or the domain.
  * @returns { Array<NetAddress> } IP addresses of network.
  * @throws { BusinessException } 201 - Permission denied.
@@ -839,7 +825,6 @@ public func getAddressesByName(host: String): Array<NetAddress>
 public class NetConnection {
     /**
      * Receives status change notifications of a specified network.
-     * @permission ohos.permission.GET_NETWORK_INFO
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 2100002 - Failed to connect to the service.
      * @throws { BusinessException } 2100003 - System internal error.
@@ -956,7 +941,6 @@ public class NetHandle {
 
     /**
      * Resolves a host name to obtain all IP addresses based on the specified NetHandle.
-     * @permission ohos.permission.INTERNET
      * @param { String } host - Indicates the host name or the domain.
      * @returns { Array<NetAddress> } IP addresses of network.
      * @throws { BusinessException } 201 - Permission denied.
@@ -975,7 +959,6 @@ public class NetHandle {
 
     /**
      * Resolves a host name to obtain the first IP address based on the specified NetHandle.
-     * @permission ohos.permission.INTERNET
      * @param { String } host - Indicates the host name or the domain.
      * @returns { NetAddress } IP addresses of network.
      * @throws { BusinessException } 201 - Permission denied.

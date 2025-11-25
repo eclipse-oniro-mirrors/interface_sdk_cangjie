@@ -52,7 +52,7 @@ public class AVImageGenerator {
         syscap: "SystemCapability.Multimedia.Media.AVMetadataExtractor",
         throwexception: true
     ]
-    public mut prop fdSrc: ?AVFileDescriptor
+    public mut prop fdSrc: AVFileDescriptor
 
     /**
      * It will decode the given video resource. Then fetch a picture

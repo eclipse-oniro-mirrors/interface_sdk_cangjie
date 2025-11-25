@@ -219,7 +219,7 @@ public class Location {
         since: "22",
         syscap: "SystemCapability.Location.Location.Core"
     ]
-    public var timeStamp: Int64
+    public var timestamp: Int64
 
     /**
      * Indicates direction information.

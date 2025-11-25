@@ -151,7 +151,7 @@ public class SkillUri {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    public let maxFileSupported: Int32
+    public let maxFilesSupported: Int32
 
     /**
      * Indicates the linkFeature of the skillUri.

@@ -27,7 +27,7 @@ import ohos.labels.APILevel
     since: "22",
     syscap: "SystemCapability.Notification.CommonEvent"
 ]
-public enum ValueType {
+public enum CommonEventValueType {
     /**
      * Int32 type value
      */

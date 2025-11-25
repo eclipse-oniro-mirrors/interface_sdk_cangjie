@@ -106,7 +106,7 @@ public enum WifiSecurityType {
     WifiSecTypeInvalid
     | 
     /**
-     * Open
+     * Open security type.
      */
     @!APILevel[
         since: "22",
@@ -397,8 +397,7 @@ extend GroupOwnerBand <: Equatable<GroupOwnerBand> {
 public func isWifiActive(): Bool
 
 /**
- * Obtain the scanned station list. If does't have the permission of ohos.permission.GET_WIFI_PEERS_MAC,
- * return random bssid.
+ * Obtain the scanned station list. If does't have the permission of ohos.permission.GET_WIFI_PEERS_MAC, return random bssid.
  *
  * @returns { Array<WifiScanInfo> } Returns information about scanned Wi-Fi hotspot if any.
  * @throws {BusinessException} 201 - Permission denied.

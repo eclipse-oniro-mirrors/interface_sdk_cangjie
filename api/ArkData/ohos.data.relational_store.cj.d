@@ -45,7 +45,7 @@ public class RdbPredicates {
      * Specifies all remote devices which connect to local device when syncing distributed database.
      * When query database, this function should not be called.
      *
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -59,8 +59,8 @@ public class RdbPredicates {
      * This method is similar to = of the SQL statement.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { RelationalStoreValueType } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @param { RelationalStoreValueType } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -74,8 +74,8 @@ public class RdbPredicates {
      * This method is similar to != of the SQL statement.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { RelationalStoreValueType } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @param { RelationalStoreValueType } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -87,7 +87,7 @@ public class RdbPredicates {
      * Adds a left parenthesis to the RdbPredicates.
      * This method is similar to ( of the SQL statement and needs to be used together with endWrap().
      *
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @returns { RdbPredicates } The RdbPredicates with the left parenthesis.
      */
     @!APILevel[
         since: "22",
@@ -99,7 +99,7 @@ public class RdbPredicates {
      * Adds a right parenthesis to the RdbPredicates.
      * This method is similar to ) of the SQL statement and needs to be used together with beginWrap().
      *
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @returns { RdbPredicates } The RdbPredicates with the right parenthesis.
      */
     @!APILevel[
         since: "22",
@@ -111,7 +111,7 @@ public class RdbPredicates {
      * Adds an or condition to the RdbPredicates.
      * This method is similar to or of the SQL statement.
      *
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @returns { RdbPredicates } The RdbPredicates with the or condition.
      */
     @!APILevel[
         since: "22",
@@ -123,7 +123,7 @@ public class RdbPredicates {
      * Adds an and condition to the RdbPredicates.
      * This method is similar to and of the SQL statement.
      *
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @returns { RdbPredicates } The RdbPredicates with the and condition.
      */
     @!APILevel[
         since: "22",
@@ -137,8 +137,8 @@ public class RdbPredicates {
      * This method is similar to contains of the SQL statement.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { String } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @param { String } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -152,8 +152,8 @@ public class RdbPredicates {
      * This method is similar to value% of the SQL statement.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { String } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @param { String } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -167,8 +167,8 @@ public class RdbPredicates {
      * This method is similar to %value of the SQL statement.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { String } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @param { String } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -181,7 +181,7 @@ public class RdbPredicates {
      * This method is similar to is null of the SQL statement.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -194,7 +194,7 @@ public class RdbPredicates {
      * This method is similar to is not null of the SQL statement.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @returns { RdbPredicates } The {@link RdbPredicates} self.
+     * @returns { RdbPredicates } The RdbPredicates self.
      */
     @!APILevel[
         since: "22",
@@ -209,8 +209,8 @@ public class RdbPredicates {
      *
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { String } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The {@link RdbPredicates} that match the specified field.
+     * @param { String } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The RdbPredicates that match the specified field.
      */
     @!APILevel[
         since: "22",
@@ -224,8 +224,8 @@ public class RdbPredicates {
      * Different from like, the input parameters of this method are case-sensitive.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { String } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The SQL statement with the specified {@link RdbPredicates}.
+     * @param { String } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The SQL statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -239,7 +239,7 @@ public class RdbPredicates {
      * @param { String } field - Indicates the column name.
      * @param { RelationalStoreValueType } low - Indicates the minimum value.
      * @param { RelationalStoreValueType } high - Indicates the maximum value.
-     * @returns { RdbPredicates } The SQL statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -253,7 +253,7 @@ public class RdbPredicates {
      * @param { String } field - Indicates the column name in the database table.
      * @param { RelationalStoreValueType } low - Indicates the minimum value.
      * @param { RelationalStoreValueType } high - Indicates the maximum value.
-     * @returns { RdbPredicates } The SQL statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -265,8 +265,8 @@ public class RdbPredicates {
      * Restricts the value of the field to be greater than the specified value.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { RelationalStoreValueType } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @param { RelationalStoreValueType } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -278,8 +278,8 @@ public class RdbPredicates {
      * Restricts the value of the field to be smaller than the specified value.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { RelationalStoreValueType } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @param { RelationalStoreValueType } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -291,8 +291,8 @@ public class RdbPredicates {
      * Restricts the value of the field to be greater than or equal to the specified value.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { RelationalStoreValueType } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @param { RelationalStoreValueType } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -304,8 +304,8 @@ public class RdbPredicates {
      * Restricts the value of the field to be smaller than or equal to the specified value.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { RelationalStoreValueType } value - Indicates the value to match with the {@link RdbPredicates}.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @param { RelationalStoreValueType } value - Indicates the value to match with the RdbPredicates.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -318,7 +318,7 @@ public class RdbPredicates {
      * the one close to the head has the highest priority.
      *
      * @param { String } field - Indicates the column name for sorting the return list.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -331,7 +331,7 @@ public class RdbPredicates {
      * the one close to the head has the highest priority.
      *
      * @param { String } field - Indicates the column name for sorting the return list.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -342,7 +342,7 @@ public class RdbPredicates {
     /**
      * Restricts each row of the query result to be unique.
      *
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -354,7 +354,7 @@ public class RdbPredicates {
      * Restricts the max number of return records.
      *
      * @param { Int32 } value - Indicates the max length of the return list.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -364,11 +364,11 @@ public class RdbPredicates {
 
     /**
      * Configure RdbPredicates to specify the start position of the returned result.
-     * Use this method together with limit(number).
+     * Use this method together with limit(Int32).
      *
      * @param { Int32 } rowOffset - Indicates the start position of the returned result.
      * The value is a positive integer.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -380,7 +380,7 @@ public class RdbPredicates {
      * Configure RdbPredicates to group query results by specified columns.
      *
      * @param { Array<String> } fields - Indicates the specified columns by which query results are grouped.
-     * @returns { RdbPredicates } The SQL query statement with the specified {@link RdbPredicates}.
+     * @returns { RdbPredicates } The SQL query statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -393,8 +393,8 @@ public class RdbPredicates {
      * are within a given range.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { Array<RelationalStoreValueType> } value - Indicates the values to match with {@link RdbPredicates}.
-     * @returns { RdbPredicates } The SQL statement with the specified {@link RdbPredicates}.
+     * @param { Array<RelationalStoreValueType> } value - Indicates the values to match with RdbPredicates.
+     * @returns { RdbPredicates } The SQL statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -407,8 +407,8 @@ public class RdbPredicates {
      * are out of a given range.
      *
      * @param { String } field - Indicates the column name in the database table.
-     * @param { Array<RelationalStoreValueType> } value - Indicates the values to match with {@link RdbPredicates}.
-     * @returns { RdbPredicates } The SQL statement with the specified {@link RdbPredicates}.
+     * @param { Array<RelationalStoreValueType> } value - Indicates the values to match with RdbPredicates.
+     * @returns { RdbPredicates } The SQL statement with the specified RdbPredicates.
      */
     @!APILevel[
         since: "22",
@@ -962,7 +962,7 @@ public class CryptoParam {
 
     /**
      * Specifies the encryption algorithm when opening an encrypted database.
-     * Default encryption algorithm is AES_256_GCM.
+     * Default encryption algorithm is Aes256Gcm.
      */
     @!APILevel[
         since: "22",
@@ -1003,12 +1003,18 @@ public class CryptoParam {
     /**
      * CryptoParam constructor.
      *
-     * @param { Array<UInt8> } encryptionKey - Specifies the encryption algorithm when opening an encrypted database.
+     * @param { Array<UInt8> } encryptionKey - Specifies the key used algorithm when opening an encrypted database.
+     * When finished passing the key to the database, its content should be set to all-zero.
      * @param { Int32 } [iterationCount] - Specifies the number of KDF iterations used when opening an encrypted database.
+     * Default number is 1000. When the number is set to 0, use default iteration number and encryption algorithm.
      * @param { EncryptionAlgo } encryptionAlgo - Specifies the encryption algorithm when opening an encrypted database.
+     * Default encryption algorithm is EncryptionAlgo.Aes256Gcm.
      * @param { HmacAlgo } hmacAlgo - Specifies the HMAC algorithm when opening an encrypted database.
+     * Default HMAC algorithm is HmacAlgo.HmacSha256.
      * @param { ?KdfAlgo } kdfAlgo - Specifies the KDF algorithm when opening an encrypted database.
+     * Default KDF SHA algorithm is the same as the HMAC algorithm.
      * @param { UInt32 } cryptoPageSize - Specifies the page size used when opening an encrypted database.
+     * Default crypto page size is 1024.
      */
     @!APILevel[
         since: "22",
@@ -1028,7 +1034,7 @@ public class CryptoParam {
 ]
 public enum KdfAlgo {
     /**
-     * KDF_SHA1: PBKDF2_HMAC_SHA1 algorithm.
+     * KdfSha1: PBKDF2_HMAC_SHA1 algorithm.
      */
     @!APILevel[
         since: "22",
@@ -1037,7 +1043,7 @@ public enum KdfAlgo {
     KdfSha1
     | 
     /**
-     * KDF_SHA256: PBKDF2_HMAC_SHA256 algorithm.
+     * KdfSha256: PBKDF2_HMAC_SHA256 algorithm.
      */
     @!APILevel[
         since: "22",
@@ -1046,7 +1052,7 @@ public enum KdfAlgo {
     KdfSha256
     | 
     /**
-     * KDF_SHA512: PBKDF2_HMAC_SHA512 algorithm.
+     * KdfSha512: PBKDF2_HMAC_SHA512 algorithm.
      */
     @!APILevel[
         since: "22",
@@ -1065,7 +1071,7 @@ public enum KdfAlgo {
 ]
 public enum HmacAlgo {
     /**
-     * SHA1: HMAC_SHA1 algorithm.
+     * Sha1: HMAC_SHA1 algorithm.
      */
     @!APILevel[
         since: "22",
@@ -1074,7 +1080,7 @@ public enum HmacAlgo {
     Sha1
     | 
     /**
-     * SHA256: HMAC_SHA256 algorithm.
+     * Sha256: HMAC_SHA256 algorithm.
      */
     @!APILevel[
         since: "22",
@@ -1083,7 +1089,7 @@ public enum HmacAlgo {
     Sha256
     | 
     /**
-     * SHA512: HMAC_SHA512 algorithm.
+     * Sha512: HMAC_SHA512 algorithm.
      */
     @!APILevel[
         since: "22",
@@ -1102,7 +1108,7 @@ public enum HmacAlgo {
 ]
 public enum EncryptionAlgo {
     /**
-     * AES_256_GCM: Database is encrypted using AES_256_GCM.
+     * Database is encrypted using Aes256Gcm.
      */
     @!APILevel[
         since: "22",
@@ -1111,7 +1117,7 @@ public enum EncryptionAlgo {
     Aes256Gcm
     | 
     /**
-     * AES_256_CBC: Database is encrypted using AES_256_CBC.
+     * Database is encrypted using Aes256Cbc.
      */
     @!APILevel[
         since: "22",
@@ -1130,7 +1136,7 @@ public enum EncryptionAlgo {
 ]
 public enum Tokenizer {
     /**
-     *  NONE_TOKENIZER: not use tokenizer
+     *  not use tokenizer
      */
     @!APILevel[
         since: "22",
@@ -1139,7 +1145,7 @@ public enum Tokenizer {
     NoneTokenizer
     | 
     /**
-     * ICU_TOKENIZER: native icu tokenizer.
+     * native icu tokenizer.
      */
     @!APILevel[
         since: "22",
@@ -1148,7 +1154,7 @@ public enum Tokenizer {
     IcuTokenizer
     | 
     /**
-     * CUSTOM_TOKENIZER: self-developed enhance tokenizer.
+     * self-developed enhance tokenizer.
      */
     @!APILevel[
         since: "22",
@@ -1159,7 +1165,7 @@ public enum Tokenizer {
 }
 
 /**
- * Describes the RdbStore type.
+ * Describes the RdbStore security level.
  */
 @!APILevel[
     since: "22",
@@ -1217,7 +1223,7 @@ public enum RelationalStoreSecurityLevel {
 ]
 public enum ChangeType {
     /**
-     * Means the change type is data change.
+     * DataChange: Means the change type is data change.
      */
     @!APILevel[
         since: "22",
@@ -1226,7 +1232,7 @@ public enum ChangeType {
     DataChange
     | 
     /**
-     * Means the change type is asset change.
+     * AssetChange: Means the change type is asset change.
      */
     @!APILevel[
         since: "22",
@@ -1421,7 +1427,7 @@ public class StoreConfig {
 ]
 public enum AssetStatus {
     /**
-     * ASSET_NORMAL: means the status of asset is normal.
+     * AssetNormal: means the status of asset is normal.
      */
     @!APILevel[
         since: "22",
@@ -1430,7 +1436,7 @@ public enum AssetStatus {
     AssetNormal
     | 
     /**
-     * ASSET_INSERT: means the asset needs to be inserted.
+     * AssetInsert: means the asset needs to be inserted.
      */
     @!APILevel[
         since: "22",
@@ -1439,7 +1445,7 @@ public enum AssetStatus {
     AssetInsert
     | 
     /**
-     * ASSET_UPDATE: means the asset needs to be updated.
+     * AssetUpdate: means the asset needs to be updated.
      */
     @!APILevel[
         since: "22",
@@ -1448,7 +1454,7 @@ public enum AssetStatus {
     AssetUpdate
     | 
     /**
-     * ASSET_DELETE: means the asset needs to be deleted.
+     * AssetDelete: means the asset needs to be deleted.
      */
     @!APILevel[
         since: "22",
@@ -1457,7 +1463,7 @@ public enum AssetStatus {
     AssetDelete
     | 
     /**
-     * ASSET_ABNORMAL: means the status of asset is abnormal.
+     * AssetAbnormal: means the status of asset is abnormal.
      */
     @!APILevel[
         since: "22",
@@ -1466,7 +1472,7 @@ public enum AssetStatus {
     AssetAbnormal
     | 
     /**
-     * ASSET_DOWNLOADING: means the status of asset is downloading.
+     * AssetDownloading: means the status of asset is downloading.
      */
     @!APILevel[
         since: "22",
@@ -1494,7 +1500,7 @@ public enum Field {
     CursorField
     | 
     /**
-     * Origin field. For details, see {@link Origin}.
+     * Origin field. For details, see Origin.
      */
     @!APILevel[
         since: "22",
@@ -1877,7 +1883,7 @@ public enum SyncMode {
 ]
 public enum Progress {
     /**
-     * SYNC_BEGIN: means the sync process begin.
+     * SyncBegin: means the sync process begin.
      */
     @!APILevel[
         since: "22",
@@ -1886,7 +1892,7 @@ public enum Progress {
     SyncBegin
     | 
     /**
-     * SYNC_BEGIN: means the sync process is in progress.
+     * SyncInProgress: means the sync process is in progress.
      */
     @!APILevel[
         since: "22",
@@ -1895,7 +1901,7 @@ public enum Progress {
     SyncInProgress
     | 
     /**
-     * SYNC_BEGIN: means the sync process is finished.
+     * SyncFinish: means the sync process is finished.
      */
     @!APILevel[
         since: "22",

@@ -390,18 +390,16 @@ public class AppEventInfo {
      * contained in params are defined by system. For details about the fields, you can see the overviews of system 
      * events, for example, Crash Event Overview. For application events, you need to define the parameters of the 
      * Write API. The specifications are as follows:
-     * <br>- A parameter name is a string that contains a maximum of 32 characters, including digits (0 to 9), letters 
+     * A parameter name is a string that contains a maximum of 32 characters, including digits (0 to 9), letters 
      * (a to z), underscore (_), and dollar sign ($). It must start with a letter or dollar sign ($) and end with a 
      * digit or letter. For example, testName and $123_name.
-     * <br>- The parameter value can be a string, number, boolean, or array. The string type parameter can contain a 
+     * The parameter value can be a string, number, boolean, or array. The string type parameter can contain a 
      * maximum of 8 x 1024 characters. If the length exceeds the limit, the parameter and its name will be discarded. 
-     * The value of the number type parameter must be within the range of Number.MIN_SAFE_INTEGER to 
-     * Number.MAX_SAFE_INTEGER. If the value exceeds the range, an uncertain value may be generated. The element type 
+     * The value of the number type parameter must be within the range of -9007199254740991 to 
+     * 9007199254740991. If the value exceeds the range, an uncertain value may be generated. The element type 
      * in the array type parameter can only be string, number, or boolean. The number of elements must be less than 
      * 100. If this limit is exceeded, excess elements will be discarded.
-     * <br>- The maximum number of parameters is 32. If this limit is exceeded, excess parameters will be discarded.
-     *
-     *
+     * The maximum number of parameters is 32. If this limit is exceeded, excess parameters will be discarded.
      */
     @!APILevel[
         since: "22",
@@ -446,14 +444,14 @@ public class ConfigOption {
 
     /**
      * Quota for the directory that stores event logging files. The default value is 10M. 
-     * <br>It is recommended that the quota be less than or equal to 10 MB. Otherwise, the API efficiency may be 
+     * It is recommended that the quota be less than or equal to 10 MB. Otherwise, the API efficiency may be 
      * affected. If the directory size exceeds the specified quota when application event logging is performed, event 
      * logging files in the directory will be cleared one by one based on the generation time to ensure that directory 
      * size does not exceed the quota.
-     * <br>The quota value must meet the following requirements:
-     * <br>- The quota value consists of only digits and a unit (which can be one of [b|k|kb|m|mb|g|gb|t|tb], which are 
+     * The quota value must meet the following requirements:
+     * The quota value consists of only digits and a unit (which can be one of [b|k|kb|m|mb|g|gb|t|tb], which are 
      * case insensitive.)
-     * <br>- The quota value must start with a digit. You can determine whether to pass the unit. If the unit is left 
+     * The quota value must start with a digit. You can determine whether to pass the unit. If the unit is left 
      * empty, b (that is, byte) is used by default.
      *
      */
@@ -909,9 +907,9 @@ public class Watcher {
     /**
      * Subscription callback. This parameter takes effect only when it is passed together with triggerCondition. 
      * The input arguments are described as follows: 
-     * <br>curRow: total number of subscription events when the callback is triggered.
-     * <br>curSize: total size of subscribed events when the callback is triggered, in bytes.
-     * <br>holder: subscription data holder, which can be used to process subscribed events.
+     * curRow: total number of subscription events when the callback is triggered.
+     * curSize: total size of subscribed events when the callback is triggered, in bytes.
+     * holder: subscription data holder, which can be used to process subscribed events.
      */
     @!APILevel[
         since: "22",
@@ -922,8 +920,8 @@ public class Watcher {
     /**
      * Real-time subscription callback. Only this callback function is triggered if it is passed together with 
      * onTrigger. The input arguments are described as follows: 
-     * <br>domain: domain name.
-     * <br>appEventGroups: event group.
+     * domain: domain name.
+     * appEventGroups: event group.
      */
     @!APILevel[
         since: "22",
@@ -1008,7 +1006,7 @@ public class HiAppEvent {
     /**
      * Adds a data processor to migrate event data to the cloud. You can preset the implementation of the processor on 
      * the device and set its properties based on its constraints.
-     * <br>The configuration information of Processor must be provided by the data processor. Yet, as no data processor 
+     * The configuration information of Processor must be provided by the data processor. Yet, as no data processor 
      * is preset in the device for interaction for the moment, migrating events to the cloud is unavailable.
      *
      * @param { Processor } processor - Data processor.

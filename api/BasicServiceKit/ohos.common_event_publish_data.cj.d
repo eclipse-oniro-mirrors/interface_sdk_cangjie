@@ -19,7 +19,7 @@ package ohos.common_event_publish_data
 
 
 import ohos.labels.APILevel
-import ohos.value_type.ValueType
+import ohos.value_type.CommonEventValueType
 import std.collection.HashMap
 
 /**
@@ -32,6 +32,7 @@ import std.collection.HashMap
 public class CommonEventPublishData {
     /**
      * Bundle name of the subscriber that can receive the common event.
+     * The default value is empty, which means any subscriber can receive public events, regardless of the subscribed bundlName.
      */
     @!APILevel[
         since: "22",
@@ -49,9 +50,7 @@ public class CommonEventPublishData {
     public var data: String
 
     /**
-     * Common event data transferred by the publisher. The default value is 0.
-     *
-     * @default 0
+     * Common event data transferred by the publisher. 
      */
     @!APILevel[
         since: "22",
@@ -70,8 +69,6 @@ public class CommonEventPublishData {
 
     /**
      * Whether the common event is an ordered one.
-     *
-     * @default false
      */
     @!APILevel[
         since: "22",
@@ -80,10 +77,7 @@ public class CommonEventPublishData {
     public var isOrdered: Bool
 
     /**
-     * Whether the common event is a sticky one. Only system applications and system services are allowed to
-     * send sticky events.
-     *
-     * @default false
+     * Whether the common event is a sticky one. Only system applications and system services are allowed to send sticky events.
      */
     @!APILevel[
         since: "22",
@@ -99,7 +93,7 @@ public class CommonEventPublishData {
         since: "22",
         syscap: "SystemCapability.Notification.CommonEvent"
     ]
-    public var parameters: HashMap<String, ValueType>
+    public var parameters: HashMap<String, CommonEventValueType>
 
     /**
      * CommonEventPublishData constructor.
@@ -112,7 +106,7 @@ public class CommonEventPublishData {
      * @param { Bool } [isOrdered] - Whether the common event is an ordered one.
      * @param { Bool } [isSticky] - Whether the common event is a sticky one. Only system applications
      * and system services are allowed to send sticky events.
-     * @param { HashMap<String, ValueType> } [parameters] - The description of the parameters in a common event.
+     * @param { HashMap<String, CommonEventValueType> } [parameters] - The description of the parameters in a common event.
      */
     @!APILevel[
         since: "22",
@@ -125,6 +119,6 @@ public class CommonEventPublishData {
         subscriberPermissions!: Array<String> = Array<String>(),
         isOrdered!: Bool = false,
         isSticky!: Bool = false,
-        parameters!: HashMap<String, ValueType> = HashMap<String, ValueType>()
+        parameters!: HashMap<String, CommonEventValueType> = HashMap<String, CommonEventValueType>()
     )
 }

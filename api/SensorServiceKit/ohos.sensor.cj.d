@@ -886,7 +886,7 @@ public class HallResponse <: Response {
         since: "22",
         syscap: "SystemCapability.Sensors.Sensor"
     ]
-    public var status: UInt32
+    public var status: Float32
 }
 
 /**
@@ -904,7 +904,7 @@ public class HeartRateResponse <: Response {
         since: "22",
         syscap: "SystemCapability.Sensors.Sensor"
     ]
-    public var heartRate: UInt32
+    public var heartRate: Float32
 }
 
 /**
@@ -1111,7 +1111,7 @@ public class PedometerResponse <: Response {
         since: "22",
         syscap: "SystemCapability.Sensors.Sensor"
     ]
-    public var steps: Int64
+    public var steps: Float32
 }
 
 /**
@@ -1130,7 +1130,7 @@ public class PedometerDetectionResponse <: Response {
         since: "22",
         syscap: "SystemCapability.Sensors.Sensor"
     ]
-    public var scalar: UInt32
+    public var scalar: Float32
 }
 
 /**
@@ -1213,7 +1213,7 @@ public class SignificantMotionResponse <: Response {
         since: "22",
         syscap: "SystemCapability.Sensors.Sensor"
     ]
-    public var scalar: Int32
+    public var scalar: Float32
 }
 
 /**
@@ -1231,7 +1231,7 @@ public class WearDetectionResponse <: Response {
         since: "22",
         syscap: "SystemCapability.Sensors.Sensor"
     ]
-    public var value: UInt32
+    public var value: Float32
 }
 
 /**

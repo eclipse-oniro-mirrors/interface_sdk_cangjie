@@ -166,8 +166,6 @@ public class AbilityDelegatorRegistry {
 public class ShellCmdResult {
     /**
      * shell cmd exec result.
-     *
-     * @returns { Int32 } Returns the exit code of shell command execution.
      */
     @!APILevel[
         since: "22",
@@ -177,8 +175,6 @@ public class ShellCmdResult {
 
     /**
      * the cmd standard result.
-     *
-     * @returns { String } Returns the standard output result of shell command execution.
      */
     @!APILevel[
         since: "22",
@@ -433,8 +429,6 @@ public class AbilityDelegator {
 public class AbilityDelegatorArgs {
     /**
      * the bundle name of the application being tested.
-     *
-     * @returns { String } Returns the bundle name of the application being tested.
      */
     @!APILevel[
         since: "22",
@@ -444,8 +438,6 @@ public class AbilityDelegatorArgs {
 
     /**
      * the parameters used for unit testing.
-     *
-     * @returns { HashMap<String, String> } Returns the parameters used for unit testing.
      */
     @!APILevel[
         since: "22",
@@ -455,8 +447,6 @@ public class AbilityDelegatorArgs {
 
     /**
      * the class names of all test cases.
-     *
-     * @returns { String } Returns the class names of all test cases.
      */
     @!APILevel[
         since: "22",
@@ -466,8 +456,6 @@ public class AbilityDelegatorArgs {
 
     /**
      * the class name of the test runner used to execute test cases.
-     *
-     * @returns { String } Returns the class name of the test runner.
      */
     @!APILevel[
         since: "22",

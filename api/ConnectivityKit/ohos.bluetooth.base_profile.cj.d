@@ -171,13 +171,17 @@ public interface BaseProfile {
     /**
      * Obtains the connected devices list of profile.
      *
-     * @returns { Array<String> } Returns the address of connected devices list.
+     * @returns { Array<String> } Returns the addresses of the connected devices list.
+     * For security purposes, the device address obtained are random MAC addresses.
+     * The random MAC address remains unchanged after a device is paired successfully.
+     * The random address change if paired device is unpaired and scanned again or the Bluetooth service is turned off.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 801 - Capability not supported.
      * @throws { BusinessException } 2900001 - Service stopped.
+     * The Bluetooth service is stopped, and the APIs related to the Bluetooth service cannot be called.
      * @throws { BusinessException } 2900003 - Bluetooth disabled.
-     * @throws { BusinessException } 2900004 - Profile not supported.
-     * @throws { BusinessException } 2900099 - Operation failed.
+     * @throws { BusinessException } 2900004 - Profile not supported. The profile is not supported by the device.
+     * @throws { BusinessException } 2900099 - Operation failed. The profile is not supported by the device.
      */
     @!APILevel[
         since: "22",

@@ -31,8 +31,6 @@ import ohos.labels.*
 public class ElementName {
     /**
      * Indicates device id.
-     *
-     * @default -
      */
     @!APILevel[
         since: "22",
@@ -42,7 +40,6 @@ public class ElementName {
 
     /**
      * Indicates bundle name.
-     *
      */
     @!APILevel[
         since: "22",
@@ -52,7 +49,6 @@ public class ElementName {
 
     /**
      * Indicates ability name.
-     *
      */
     @!APILevel[
         since: "22",
@@ -62,8 +58,6 @@ public class ElementName {
 
     /**
      * Indicates module name.
-     *
-     * @default -
      */
     @!APILevel[
         since: "22",

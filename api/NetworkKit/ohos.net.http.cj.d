@@ -55,7 +55,6 @@ public func createHttpResponseCache(cacheSize!: UInt32 = MAX_CACHE_SIZE): HttpRe
 public class HttpRequest {
     /**
      * Initiates an HTTP request to a given URL.
-     * @permission ohos.permission.INTERNET
      * @param { String } url - URL for initiating an HTTP request.
      * @param { HttpRequestOptions } options - Optional parameters HttpRequestOptions.
      * @param { AsyncCallback<HttpResponse> } callback - the callback of request.
@@ -102,7 +101,6 @@ public class HttpRequest {
 
     /**
      * Initiates an HTTP request to a given URL.
-     * @permission ohos.permission.INTERNET
      * @param { String } url - URL for initiating an HTTP request.
      * @param { AsyncCallback<HttpResponse> } callback - the callback of request.
      * @throws { BusinessException } 201 - Permission denied.
@@ -157,9 +155,8 @@ public class HttpRequest {
 
     /**
      * Initiates an HTTP request to a given URL, applicable to scenarios where http response supports streaming.
-     * @permission ohos.permission.INTERNET
      * @param { String } url - URL for initiating an HTTP request.
-     * @param { HttpRequestOptions } options - Optional parameters {@link HttpRequestOptions}.
+     * @param { HttpRequestOptions } options - Optional parameters HttpRequestOptions.
      * @param { AsyncCallback<UInt32> } callback - the callback of requestInStream.
      * @throws { BusinessException } 201 - Permission denied.
      * @throws { BusinessException } 2300001 - Unsupported protocol.
@@ -204,7 +201,6 @@ public class HttpRequest {
 
     /**
      * Initiates an HTTP request to a given URL, applicable to scenarios where http response supports streaming.
-     * @permission ohos.permission.INTERNET
      * @param { String } url - URL for initiating an HTTP request.
      * @param { AsyncCallback<UInt32> } callback - Returns the callback of requestInStream ResponseCode,
      *     should use on_headersReceive and on_dataReceive to get http response.
@@ -955,7 +951,7 @@ public class HttpRequestOptions {
 public class HttpResponse {
     /**
      * result can be a string or byte array.
-     * If {@link HttpRequestOptions#expectDataType} is set, the system preferentially returns this parameter.
+     * If expectDataType is set, the system preferentially returns this parameter.
      */
     @!APILevel[
         since: "22",

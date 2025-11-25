@@ -475,15 +475,15 @@ public class Driver {
     public func screenCapture(savePath: String, rect!: Rect = Rect(0, 0, 0, 0)): Bool
 
     /**
-     * Create an UIEventObserver object.
+     * Create an UiEventObserver object.
      *
-     * @returns { UIEventObserver } the UIEventObserver object.
+     * @returns { UiEventObserver } the UiEventObserver object.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.Test.UiTest"
     ]
-    public func createUIEventObserver(): UIEventObserver
+    public func createUiEventObserver(): UiEventObserver
 
     /**
      * Double click on the specified location on the screen with the specified mouse button, and press the specified
@@ -1117,19 +1117,19 @@ extend OnceType <: Equatable<OnceType> {
     since: "22",
     syscap: "SystemCapability.Test.UiTest"
 ]
-public class UIEventObserver {
+public class UiEventObserver {
     /**
      * Listen for toast show once
      *
      * @param { OnceType } onceType - the type of func once.
-     * @param { Callback<UIElementInfo> } callback - function, returns the monitored UIElementInfo.
+     * @param { Callback<UiElementInfo> } callback - function, returns the monitored UiElementInfo.
      */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.Test.UiTest",
         throwexception: true
     ]
-    public func once(onceType: OnceType, callback: Callback<UIElementInfo>): Unit
+    public func once(onceType: OnceType, callback: Callback<UiElementInfo>): Unit
 }
 
 /**
@@ -1236,9 +1236,9 @@ public class Component {
     public func isClickable(): Bool
 
     /**
-     * Get the clickable status of this Component.
+     * Get the longClickable status of this Component.
      *
-     * @returns { Bool } the clickable status.
+     * @returns { Bool } the longClickable status.
      * @throws { BusinessException } 17000004 - The window or component is invisible or destroyed.
      */
     @!APILevel[
@@ -1709,7 +1709,7 @@ public enum ResizeDirection {
 }
 
 /**
- * Enumerates the direction for the UI operation .
+ * Enumerates the direction for the Ui operation.
  */
 @!APILevel[
     since: "22",
@@ -1841,13 +1841,13 @@ public class Point {
 }
 
 /**
- * Represents the information of an UI element, can be a component or window.
+ * Represents the information of an Ui element, can be a component or window.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.Test.UiTest"
 ]
-public class UIElementInfo {
+public class UiElementInfo {
     /**
     * The bundle name of the host application.
     */
@@ -1942,8 +1942,7 @@ public class WindowFilter {
         since: "22",
         syscap: "SystemCapability.Test.UiTest"
     ]
-    public init(bundleName!: ?String = None, title!: ?String = None, focused!: ?Bool = None, active!: ?Bool = None,
-        displayId!: ?Int32 = None)
+    public init(bundleName!: ?String = None, title!: ?String = None, focused!: ?Bool = None, active!: ?Bool = None, displayId!: ?Int32 = None)
 }
 
 /**

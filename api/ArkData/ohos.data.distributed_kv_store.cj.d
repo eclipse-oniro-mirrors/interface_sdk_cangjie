@@ -22,8 +22,8 @@ import ohos.labels.*
 
 /**
  * Provides methods related to device-collaboration distributed databases.
- * <p>To create a DeviceKVStore database, you can use the
- * {@link data.distributed.common.KVManager.getKVStore(KVOptions, String)}
+ * To create a DeviceKVStore database, you can use the
+ * data.distributed.common.KVManager.getKVStore(KVOptions, String)
  * method with KVStoreType set to DeviceCollaboration for the input parameter KVOptions.
  * This database manages distributed
  * data by device, and cannot modify data synchronized from remote devices. When an application writes a
@@ -145,7 +145,7 @@ public class DeviceKVStore <: SingleKVStore {
 }
 
 /**
- * Provider interfaces to create a {@link KVManager} instance.
+ * Provider interfaces to create a KVManager instance.
  */
 @!APILevel[
     since: "22",
@@ -153,9 +153,9 @@ public class DeviceKVStore <: SingleKVStore {
 ]
 public class DistributedKVStore {
     /**
-     * Creates a {@link KVManager} instance based on the configuration information.
-     * <p>You must pass {@link KVManagerConfig} to provide configuration information
-     * to create a {@link KVManager} instance.
+     * Creates a KVManager instance based on the configuration information.
+     * You must pass KVManagerConfig to provide configuration information
+     * to create a KVManager instance.
      *
      * @param { KVManagerConfig } config - Indicates the KVStore configuration information,
      * including the user information and package name.
@@ -200,9 +200,9 @@ public class KVManager {
 
     /**
      * Closes the KVStore database.
-     * <p>Warning: This method is not thread-safe. If you call this method to stop a KVStore database that is running,
+     * Warning: This method is not thread-safe. If you call this method to stop a KVStore database that is running,
      * your thread may crash.
-     * <p>The KVStore database to close must be an object created by using the getKVStore method. Before using
+     * The KVStore database to close must be an object created by using the getKVStore method. Before using
      * this method, release the resources created for the database, for example, KVStoreResultSet for KVStore,
      * otherwise closing the database will fail.
      *
@@ -221,9 +221,9 @@ public class KVManager {
 
     /**
      * Closes the KVStore database.
-     * <p>Warning: This method is not thread-safe. If you call this method to stop a KVStore database that is running,
+     * Warning: This method is not thread-safe. If you call this method to stop a KVStore database that is running,
      * your thread may crash.
-     * <p>The KVStore database to close must be an object created by using the getKVStore method. Before using
+     * The KVStore database to close must be an object created by using the getKVStore method. Before using
      * this method, release the resources created for the database, for example, KVStoreResultSet for KVStore,
      * otherwise closing the database will fail.
      *
@@ -386,7 +386,7 @@ public enum KVValueType {
 }
 
 /**
- * Provides configuration information to create a {@link KVManager} instance,
+ * Provides configuration information to create a KVManager instance,
  * which includes the caller's package name and ability or hap context.
  */
 @!APILevel[
@@ -476,10 +476,10 @@ public enum KVSecurityLevel {
 }
 
 /**
- * Represents a node of a {@link Schema} instance.
- * <p>With a {@link Schema} instance, you can define the value fields which stored in the database.
- * <p>A FieldNode of the {@link Schema} instance is either a leaf or a non-leaf node.
- * <p>The leaf node must have a value; the non-leaf node must have a child FieldNode.
+ * Represents a node of a Schema instance.
+ * With a Schema instance, you can define the value fields which stored in the database.
+ * A FieldNode of the Schema instance is either a leaf or a non-leaf node.
+ * The leaf node must have a value; the non-leaf node must have a child FieldNode.
  */
 @!APILevel[
     since: "22",
@@ -710,7 +710,7 @@ public class Entry {
 
 /**
  * Provides methods to operate the result set of the SingleKVStore or DeviceKVStore database.
- * <p>The result set is created by using the getResultSet method in the SingleKVStore or
+ * The result set is created by using the getResultSet method in the SingleKVStore or
  * DeviceKVStore class. This interface also provides methods to move the data read
  * position in the result set.
  */
@@ -733,9 +733,9 @@ public class KVStoreResultSet {
 
 /**
  * Represents a database query using predicates.
- * <p>This class provides a constructor used to create a Query instance, which is used to query data
+ * This class provides a constructor used to create a Query instance, which is used to query data
  * matching specified conditions in the database.
- * <p>This class also provides methods to add predicates to the Query instance.
+ * This class also provides methods to add predicates to the Query instance.
  */
 @!APILevel[
     since: "22",
@@ -754,8 +754,8 @@ public class Query {
 
 /**
  * Provides methods related to single-version distributed databases.
- * <p>To create a SingleKVStore database,
- * you can use the {@link data.distributed.common.KVManager#getKVStore​(KVOptions, String)} method
+ * To create a SingleKVStore database,
+ * you can use the getKVStore​(KVOptions, String) method
  * with KVStoreType set to SingleVersion for the input parameter KVOptions.
  * This database synchronizes data to other databases in time sequence.
  * The SingleKVStore database does not support
@@ -768,7 +768,7 @@ public class Query {
 public open class SingleKVStore {
     /**
      * Writes a key-value pair of the string type into the SingleKVStore database.
-     * <p>If you do not want to synchronize this key-value pair to other devices, set the write option in the local
+     * If you do not want to synchronize this key-value pair to other devices, set the write option in the local
      * database.
      *
      * @param { String } key - Indicates the key. Length must be less than MAX_KEY_LENGTH.
@@ -885,7 +885,7 @@ public open class SingleKVStore {
 
     /**
      * Starts a transaction operation in the SingleKVStore database.
-     * <p>After the database transaction is started, you can submit or roll back the operation.
+     * After the database transaction is started, you can submit or roll back the operation.
      *
      * @throws { BusinessException } 15100005 - Database or result set already closed.
      * @throws { BusinessException } 14800047 - The WAL file size exceeds the default limit.

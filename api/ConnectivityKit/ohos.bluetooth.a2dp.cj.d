@@ -519,7 +519,7 @@ public enum CodecSampleRate {
     CodecSampleRateNone
     | 
     /**
-     * Codec sample rate 44.1k.
+     * Codec sample rate 44.1kHz.
      */
     @!APILevel[
         since: "22",
@@ -528,7 +528,7 @@ public enum CodecSampleRate {
     CodecSampleRate44100
     | 
     /**
-     * Codec sample rate 48k.
+     * Codec sample rate 48kHz.
      */
     @!APILevel[
         since: "22",
@@ -537,7 +537,7 @@ public enum CodecSampleRate {
     CodecSampleRate48000
     | 
     /**
-     * Codec sample rate 88.2k.
+     * Codec sample rate 88.2kHz.
      */
     @!APILevel[
         since: "22",
@@ -546,7 +546,7 @@ public enum CodecSampleRate {
     CodecSampleRate88200
     | 
     /**
-     * Codec sample rate 96k.
+     * Codec sample rate 96kHz.
      */
     @!APILevel[
         since: "22",
@@ -555,7 +555,7 @@ public enum CodecSampleRate {
     CodecSampleRate96000
     | 
     /**
-     * Codec sample rate 176.4k.
+     * Codec sample rate 176.4kHz.
      */
     @!APILevel[
         since: "22",
@@ -564,7 +564,7 @@ public enum CodecSampleRate {
     CodecSampleRate176400
     | 
     /**
-     * Codec sample rate 192k.
+     * Codec sample rate 192kHz.
      */
     @!APILevel[
         since: "22",

@@ -37,8 +37,10 @@ public class CommonEventSubscribeInfo {
     public var events: Array<String>
 
     /**
-     * Subscriber priority. The value ranges from –100 to +1000. If the value exceeds the upper or lower limit, the
-     * upper or lower limit is used.
+     * Subscriber priority. The value ranges from –100 to +1000. If the value exceeds the upper or lower limit, the upper or lower limit is used.
+     * The default value is 0.
+     * The higher the numerical value, the higher the priority.
+     * The value should be set by subscribers of the same event.
      */
     @!APILevel[
         since: "22",
@@ -85,14 +87,13 @@ public class CommonEventSubscribeInfo {
     public var publisherBundleName: String
 
     /**
-     * CommonEventSubscribeInfo constructor.
+     * Constructor of CommonEventSubscribeInfo.
      *
      * @param { Array<String> } events - Common events to subscribe to.
-     * @param { String } [publisherPermission] - Permission of the publisher.
+     * @param { String } [publisherPermission] - Permission of the publisher. The subscriber can receive only events from the publisher with the this permission.
      * @param { String } [publisherDeviceId] - Device ID.
-     * @param { Int32 } [userId] - User ID.
-     * @param { Int32 } [priority] - The value ranges from –100 to +1000. If the value exceeds the upper or lower limit,
-     * the upper or lower limit is used.
+     * @param { Int32 } [userId] - User ID. If this parameter is not specified, the default value, which is the ID of the current user, well be used.
+     * @param { Int32 } [priority] - Subscriber priority. The value ranges from –100 to +1000. If the value exceeds the upper or lower limit, the upper or lower limit is used.
      * @param { String } [publisherBundleName] - Bundle name of the publisher to subscribe to.
      */
     @!APILevel[
