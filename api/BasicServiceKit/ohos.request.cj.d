@@ -563,7 +563,9 @@ public enum ConfigData {
 ]
 public class Config {
     /**
-     * The task action, upload or download.
+     * The Universal Resource Locator for a task.
+     * The maximum length is 2048 characters.
+     * Using raw `url` option, even url parameters in it.
      */
     @!APILevel[
         since: "22",

@@ -1982,7 +1982,7 @@ public class CameraDevice {
 }
 
 /**
- * An instance of the interface returned by the camera manager's callback that represents camera state information.
+ * Camera status info.
  */
 @!APILevel[
     since: "22",
@@ -3207,8 +3207,6 @@ public class CameraManager {
 
     /**
      * Creates a PhotoOutput instance without surfaceId.
-     * Call PhotoOutput capture interface will give a callback,
-     * on(type: 'photoAvailable', callback: AsyncCallback<Photo>)
      * You can use this method to create a photo output instance without a profile, This instance can
      * only be used in a preconfiged session.
      *

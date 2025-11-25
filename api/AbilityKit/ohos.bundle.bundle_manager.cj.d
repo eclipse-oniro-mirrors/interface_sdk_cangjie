@@ -1717,7 +1717,7 @@ public enum ApplicationType {
     Pdf
     | 
     /**
-     * Default Default word identifier.
+     * Default word identifier.
      */
     @!APILevel[
         since: "22",

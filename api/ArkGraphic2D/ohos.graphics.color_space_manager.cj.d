@@ -551,7 +551,7 @@ public class ColorSpacePrimaries {
      * @param {Float32} greenY - Coordinate value y of green color
      * @param {Float32} blueX - Coordinate value x of blue color
      * @param {Float32} blueY - Coordinate value y of blue color
-     * @param {Float32} whitePointX - Coordinate value x of white color
+     * @param {Float32} whitePointX - Coordinate value x of white point
      * @param {Float32} whitePointY - Coordinate value y of white point.
      */
     @!APILevel[

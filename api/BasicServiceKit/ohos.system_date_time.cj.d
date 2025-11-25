@@ -81,7 +81,7 @@ public class SystemDateTime {
     public static func getUptime(timeType: TimeType, isNanoseconds!: Bool = false): Int64
 
     /**
-     * Obtains the system time zone.
+     * Obtains the number of milliseconds since the system has been running.
      *
      * @returns { String } The timezone returned of getTimezone.
      */

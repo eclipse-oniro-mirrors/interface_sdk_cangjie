@@ -290,7 +290,7 @@ public class WriteOptions <: Options {
      * @param { ?UIntNative } [length] - Length of the data to write, in bytes.
      * This parameter is optional. The default value is the buffer length.
      * @param { ?Int64 } [offset] - Start position of the file to write (current filePointer plus offset), in bytes.
-     * @param { String } [encoding] - File encoding format.
+     * @param { String } [encoding] - File encoding format. It is optional.
      */
     @!APILevel[
         since: "22",
@@ -611,7 +611,7 @@ public class Filter {
 }
 
 /**
- * ListFileOptions type
+ * Optional type. The listFile interface can be used.
  */
 @!APILevel[
     since: "22",
@@ -2190,8 +2190,7 @@ public class Stat {
     public prop size: Int64
 
     /**
-     * Time when the file was last accessed. The value is the number of seconds elapsed since
-     * 00:00:00 on January 1, 1970.
+     * Time when the file was last accessed. The value is the number of seconds elapsed since 00:00:00 on January 1, 1970.
      * NOTE: Currently, user data partitions are mounted in noatime mode by default, and atime update is disabled.
      */
     @!APILevel[

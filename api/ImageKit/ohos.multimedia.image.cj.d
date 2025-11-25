@@ -568,7 +568,7 @@ public class PackingOption {
 
     /**
      * BufferSize of the target image.
-     * If this bufferSize is less than or equal to 0, it will be converted to 10MB.
+     * If bufferSize is equal to 0, then a suitable value is used instead of 0.
      */
     @!APILevel[
         since: "22",
@@ -1085,7 +1085,7 @@ extend ComponentType <: ToString {
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.Multimedia.Image.Core"
+        syscap: "SystemCapability.Multimedia.Image.ImageReceiver"
     ]
     public func toString(): String
 }
@@ -1098,7 +1098,7 @@ extend ComponentType <: Equatable<ComponentType> {
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.Multimedia.Image.Core"
+        syscap: "SystemCapability.Multimedia.Image.ImageReceiver"
     ]
     public operator func ==(other: ComponentType): Bool
 
@@ -1109,7 +1109,7 @@ extend ComponentType <: Equatable<ComponentType> {
      */
     @!APILevel[
         since: "22",
-        syscap: "SystemCapability.Multimedia.Image.Core"
+        syscap: "SystemCapability.Multimedia.Image.ImageReceiver"
     ]
     public operator func !=(other: ComponentType): Bool
 }

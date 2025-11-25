@@ -1114,7 +1114,7 @@ public class NotifyCharacteristic {
      * @param { String } characteristicUUID - The UUID of a NotifyCharacteristic instance
      * @param { Array<Byte> } characteristicValue - The value of a NotifyCharacteristic instance
      * @param { Bool } confirm - Specifies whether to request confirmation from the BLE peripheral device (indication) or
-     * send a notification. Value true indicates the former and false
+     * send a notification. Value true indicates the former and false indicates the latter.
      */
     @!APILevel[
         since: "22",

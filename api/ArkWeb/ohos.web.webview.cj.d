@@ -677,12 +677,12 @@ public class WebviewController {
     public func storeWebArchive(baseName: String, autoName: Bool, callback: AsyncCallback<String>): Unit
 
     /**
-     * Let the Web zoom by.
+     * Zooms in or out of this web page. This API is effective only when zoomAccess is true.
      *
-     * API Note:
-     * zoomAccess must be true.
-     *
-     * @param { Float32 } factor - The zoom factor.
+     * @param { Float32 } factor - Relative zoom ratio. The value must be greater than 0.
+     *                            The value 1 indicates that the page is not zoomed.
+     *                            A value smaller than 1 indicates zooming out, and a value greater than 1 indicates zoom-in.
+     *                            Value range: (0, 100].
      * @throws { BusinessException } 17100001 - Init error.
      *                           The WebviewController must be associated with a Web component.
      * @throws { BusinessException } 17100004 - Function not enable.
@@ -1025,7 +1025,9 @@ public class WebviewController {
     /**
      * Whether the incognito mode is set.
      *
-     * @returns { Bool } true has been set the incognito mode; false otherwise.
+     * @returns { Bool } The value true indicates that the incognito mode is enabled for Webview.
+     * and false indicates the opposite.
+     * The default value is false.
      * @throws { BusinessException } 17100001 - Init error.
      *                           The WebviewController must be associated with a Web component.
      */

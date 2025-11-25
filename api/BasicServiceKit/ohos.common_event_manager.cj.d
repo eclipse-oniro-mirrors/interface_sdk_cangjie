@@ -69,7 +69,7 @@ public class CommonEventManager {
     public static func createSubscriber(subscribeInfo: CommonEventSubscribeInfo): CommonEventSubscriber
 
     /**
-     * Subscribes to a common event.
+     * create the CommonEventSubscriber for the SubscriberInfo.
      *
      * @param { CommonEventSubscriber } subscriber - Subscriber object.
      * @param { AsyncCallback<CommonEventData> } callback - Callback used to return the result.
