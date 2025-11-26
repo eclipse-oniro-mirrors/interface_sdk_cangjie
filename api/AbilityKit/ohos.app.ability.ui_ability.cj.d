@@ -315,7 +315,7 @@ public open class UIAbility <: Ability {
      * It can be used to request system resources required, for example, requesting location services when the
      * application transitions to the foreground.
      * 
-     * NOTE:
+     * **NOTE**:
      * This API returns the result synchronously and does not support asynchronous callback.
      */
     @!APILevel[
@@ -330,7 +330,7 @@ public open class UIAbility <: Ability {
      * It can be used to request system resources required, for example, requesting location services when the
      * application transitions to the foreground.
      * 
-     * NOTE:
+     * **NOTE**:
      * This API returns the result synchronously and does not support asynchronous callback.
      */
     @!APILevel[

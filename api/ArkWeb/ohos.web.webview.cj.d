@@ -839,7 +839,6 @@ public class WebviewController {
      * The state of JavaScript is no longer persisted across navigations like loadUrl.
      * For example, global variables and functions defined before calling loadUrl will not exist in the loaded page.
      * It is recommended that applications use registerJavaScriptProxy to ensure that the JavaScript state can be persisted across page navigations.
-     * <p>
      *
      * @param { String } script - JavaScript Script.
      * @param { AsyncCallback<String> } callback - Callbacks execute JavaScript script results.

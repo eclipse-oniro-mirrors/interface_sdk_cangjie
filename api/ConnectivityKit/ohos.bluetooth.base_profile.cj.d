@@ -44,7 +44,7 @@ public enum DisconnectCause {
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    ConnectFromKeyboard
+    ConnectShouldFromKeyboard
     | 
     /**
      * The connection needs to be initiated from the mouse side.
@@ -53,7 +53,7 @@ public enum DisconnectCause {
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    ConnectFromMouse
+    ConnectShouldFromMouse
     | 
     /**
      * The connection needs to be initiated from the car side.
@@ -62,7 +62,7 @@ public enum DisconnectCause {
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    ConnectFromCar
+    ConnectShouldFromCar
     | 
     /**
      * Too many devices are currently connected.
@@ -80,7 +80,7 @@ public enum DisconnectCause {
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    ConnectFailInternal
+    ConnectInternalFail
     | ...
 }
 

@@ -59,7 +59,7 @@ public class Want {
     * If both bundleName and abilityName are specified in a Want object, the Want object can match a specific ability.
     * 
     * The value of abilityName must be unique in an application.
-     */
+    */
     @!APILevel[
         since: "22",
         syscap: "SystemCapability.Ability.AbilityBase"
@@ -183,6 +183,7 @@ public class Want {
      * 
      * 3. In addition to the foregoing cases, applications may further agree on the key-value pairs to transfer.
      * 
+     * 
      * For details about the constants of Params in want, see wantConstant.
      * Note that a maximum of 200 KB data that can be transferred by using WantParams. If the data volume exceeds
      * 200 KB, transfer data in WriteRawDataBuffer or uri mode.
@@ -209,7 +210,7 @@ public class Want {
      * "".
      * @param { Array<String> } [entities] - Additional category information (such as browser and video player) of the
      * ability. The default value is an empty array.
-     * @param { String } [dataType] - MIME type, that is, the type of the file to open. The default value is "".
+     * @param { String } [wantType] - MIME type, that is, the type of the file to open. The default value is "".
      * @param { HashMap<String, WantValueType> } [parameters] - Map of parameters in the Want object. The default value
      * is an empty map.
      * @param { HashMap<String, Int32> } [fds] - Want file descriptor (FD), which is used to identify the Want file
@@ -230,7 +231,7 @@ public class Want {
         uri!: String = "",
         action!: String = "",
         entities!: Array<String> = [],
-        dataType!: String = "",
+        wantType!: String = "",
         parameters!: HashMap<String, WantValueType> = HashMap<String, WantValueType>(),
         fds!: HashMap<String, Int32> = HashMap<String, Int32>()
     )

@@ -203,7 +203,7 @@ public class AbilityInfo {
         since: "22",
         syscap: "SystemCapability.BundleManager.BundleFramework.Core"
     ]
-    public let public let supportedWindowModes: Array<SupportedWindowMode>
+    public let supportedWindowModes: Array<SupportedWindowMode>
 
     /**
      * Indicates window size.
@@ -1305,7 +1305,7 @@ public enum DisplayOrientation {
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
-public enum SupportWindowMode {
+public enum SupportedWindowMode {
     /**
      * Indicates supported window mode of full screen mode.
      */
@@ -1717,7 +1717,7 @@ public enum ApplicationType {
     Pdf
     | 
     /**
-     * Default word identifier.
+     * Default Default word identifier.
      */
     @!APILevel[
         since: "22",
