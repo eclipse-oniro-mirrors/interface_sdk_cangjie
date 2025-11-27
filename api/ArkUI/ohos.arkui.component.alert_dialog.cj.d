@@ -81,7 +81,6 @@ public open class AlertDialogButtonBaseOptions {
 /**
  * Enable switch of button
  * @default true
- *
  */
 @!APILevel[
     since: "22",
@@ -119,7 +118,7 @@ public open class AlertDialogButtonBaseOptions {
     public var value: ?ResourceStr
 
 /**
- * Text color of button.
+ * Describes the button text color.
  */
 @!APILevel[
     since: "22",
@@ -155,7 +154,6 @@ public open class AlertDialogButtonBaseOptions {
  * @param { ?ResourceColor } fontColor - Text color of button.
  * @param { ?ResourceColor } backgroundColor - Background color of button.
  * @param { ?VoidCallback } action - Method executed by the callback.
- * @returns { AlertDialogButtonBaseOptions } Returns the created AlertDialogButtonBaseOptions instance.
  */
 @!APILevel[
     since: "22",
@@ -181,7 +179,7 @@ public open class AlertDialogButtonBaseOptions {
 ]
 public class AlertDialogButtonOptions <: AlertDialogButtonBaseOptions {
 /**
- * Define whether the button responds to Enter/Space key by default.
+ * Define whether the button default to responding to the Enter key
  */
 @!APILevel[
     since: "22",
@@ -200,7 +198,6 @@ public class AlertDialogButtonOptions <: AlertDialogButtonBaseOptions {
  * @param { ?ResourceColor } backgroundColor - Background color of button.
  * @param { VoidCallback } action - Action of button.
  * @param { Bool } primary - Define whether the button responds to Enter/Space key by default.
- * @returns { AlertDialogButtonOptions } Returns the created AlertDialogButtonOptions instance.
  */
 @!APILevel[
     since: "22",
@@ -247,7 +244,7 @@ public open class AlertDialogParam {
     public var subtitle: ?ResourceStr
 
 /**
- * The main content message displayed in the body of the alert dialog.
+ * The message of alert dialog.
  */
 @!APILevel[
     since: "22",
@@ -267,7 +264,7 @@ public open class AlertDialogParam {
     public var autoCancel: ?Bool
 
 /**
- * Callback function that is executed when the dialog is canceled, either by clicking the mask or pressing the back button.
+ * Execute Cancel Function.
  */
 @!APILevel[
     since: "22",
@@ -276,8 +273,8 @@ public open class AlertDialogParam {
     public var cancel: ?VoidCallback
 
 /**
- * Alignment in the vertical direction.
- * Controls the positioning of the dialog on the screen using predefined alignment options.
+ * Defines the dialog alignment of the screen.
+ *
  * @default DialogAlignment.Bottom
  */
 @!APILevel[
@@ -297,7 +294,7 @@ public open class AlertDialogParam {
     public var offset: ?Offset
 
 /**
- * Specifies the grid layout count for the dialog, affecting its sizing and positioning in grid-based layouts.
+ * Grid count of dialog.
  */
 @!APILevel[
     since: "22",
@@ -317,8 +314,11 @@ public open class AlertDialogParam {
     public var maskRect: ?Rectangle
 
 /**
- * Whether to display in the sub window.
- * Controls whether the dialog is displayed in a separate sub-window or as an overlay in the main window.
+ * Whether to show the dialog box in a subwindow when the dialog box needs to be displayed outside the main window.
+ * NOTE:
+ * A dialog box whose showInSubWindow attribute is true cannot trigger the display of another dialog box whose
+ * showInSubWindow attribute is also true.
+ *
  * @default false
  */
 @!APILevel[
@@ -380,7 +380,8 @@ public open class AlertDialogParam {
     public var transition: ?TransitionEffect
 
 /**
- * Controls the roundness of the dialog corners, creating rounded or sharp corner effects.
+ * Defines the alertDialog's corner radius.
+ *
  * @default BorderRadiuses(topLeft: 32.vp, topRight: 32.vp, bottomLeft: 32.vp, bottomRight: 32.vp)
  */
 @!APILevel[
@@ -399,7 +400,7 @@ public open class AlertDialogParam {
     public var width: ?Length
 
 /**
- * Sets the height of the dialog, supporting various length units and percentage-based sizing.
+ * Defines the alertDialog's height.
  */
 @!APILevel[
     since: "22",
@@ -444,7 +445,7 @@ public open class AlertDialogParam {
     public var shadow: ?ShadowOptions
 
 /**
- * Controls how text within the dialog is broken across lines, affecting readability and layout.
+ * Set the alertDialog's textStyle.
  */
 @!APILevel[
     since: "22",
@@ -478,7 +479,6 @@ public open class AlertDialogParam {
  * @param { ?EdgeStyles } borderStyle - Defines the alertDialog's border style.
  * @param { ?ShadowOptions } shadow - Defines the alertDialog's shadow.
  * @param { ?WordBreak } textStyle - Set the alertDialog's textStyle.
- * @returns { AlertDialogParam } Returns the created AlertDialogParam instance.
  */
 @!APILevel[
     since: "22",
@@ -555,7 +555,6 @@ public class AlertDialogParamWithConfirm <: AlertDialogParam {
  * @param { ?ShadowOptions } [shadow] - Defines the alertDialog's shadow.
  * @param { ?WordBreak } [textStyle] - Set the alertDialog's textStyle.
  * @param { ?AlertDialogButtonBaseOptions } [confirm] - Invoke the commit function.
- * @returns { AlertDialogParamWithConfirm } [Returns] the created AlertDialogParamWithConfirm instance.
  */
 @!APILevel[
     since: "22",
@@ -643,7 +642,6 @@ public class AlertDialogParamWithButtons <: AlertDialogParam {
  * @param { ?WordBreak } [textStyle] - Set the alertDialog's textStyle.
  * @param { AlertDialogButtonBaseOptions } primaryButton - First button.
  * @param { AlertDialogButtonBaseOptions } secondaryButton - Second button.
- * @returns { AlertDialogParamWithButtons } Returns the created AlertDialogParamWithButtons instance.
  */
 @!APILevel[
     since: "22",
@@ -733,7 +731,6 @@ public class AlertDialogParamWithOptions <: AlertDialogParam {
  * @param { ?WordBreak } [textStyle] - Set the alertDialog's textStyle.
  * @param { Array<AlertDialogButtonOptions> } buttons - The array of buttons.
  * @param { DialogButtonDirection } [buttonDirection] - The arrangement of buttons.
- * @returns { AlertDialogParamWithOptions } Returns the created AlertDialogParamWithOptions instance.
  */
 @!APILevel[
     since: "22",
@@ -769,17 +766,15 @@ public class AlertDialogParamWithOptions <: AlertDialogParam {
 }
 
 /**
- * Defines the border color for dialog components.
- * Provides a wrapper class for specifying border colors with a default value.
+ * Defines the custom dialog's border color.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public class BorderColor {
-    /**
- * The color resource used for the border.
- * Defines the visual color of the border around a component.
+/**
+ * Defines the color which can use resource.
  */
     @!APILevel[
         since: "22",
@@ -787,7 +782,7 @@ public class BorderColor {
     ]
     public var resourceColor: ResourceColor
     
-    /**
+/**
  * BorderColor constructor.
  * Creates a new BorderColor instance with the specified color or defaults to black.
  *

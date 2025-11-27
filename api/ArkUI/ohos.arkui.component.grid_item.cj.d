@@ -91,48 +91,48 @@ sealed interface GridItemAttribute <: CommonMethod<GridItemAttribute> {
 /**
  * This parameter specifies the start column number of the current element.
  *
- * @param { ?Int32 } value - The start column index, must be a non-negative integer.
+ * @param { ?Int32 } columnStart - The start column index, must be a non-negative integer.
  * @returns { GridItemAttribute } The attribute of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func columnStart(value: ?Int32): GridItemAttribute
+    func columnStart(columnStart: ?Int32): GridItemAttribute
 
 /**
  * This parameter specifies the end column number of the current element.
  *
- * @param { ?Int32 } value - The end column index, must be a non-negative integer greater than or equal to columnStart.
+ * @param { ?Int32 } columnEnd - The end column index, must be a non-negative integer greater than or equal to columnStart.
  * @returns { GridItemAttribute } The attribute of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func columnEnd(value: ?Int32): GridItemAttribute
+    func columnEnd(columnEnd: ?Int32): GridItemAttribute
 
 /**
  * This parameter specifies the start line number of the current element.
  *
- * @param { ?Int32 } value - Start line number of the element.
+ * @param { ?Int32 } rowStart - Start line number of the element.
  * @returns { GridItemAttribute } The attribute of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func rowStart(value: ?Int32): GridItemAttribute
+    func rowStart(rowStart: ?Int32): GridItemAttribute
 
 /**
  * Specifies the end line number of the current element.
  *
- * @param { ?Int32 } value - End line number of the element.
+ * @param { ?Int32 } rowEnd - End line number of the element.
  * @returns { GridItemAttribute } The attribute of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func rowEnd(value: ?Int32): GridItemAttribute
+    func rowEnd(rowEnd: ?Int32): GridItemAttribute
 }

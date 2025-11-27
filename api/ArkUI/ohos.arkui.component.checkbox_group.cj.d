@@ -77,19 +77,19 @@ public class CheckboxGroup <: CommonMethodComponent<CheckboxGroup> & CheckboxGro
     public init(group!: ?String = None)
 
 /**
- * Set whether all checkbox is selected.
+ * setting whether all checkbox is selected
  *
- * @param { ?Bool } isAllSelected - Whether to select all checkboxes.
+ * @param { ?Bool } value - Whether to select all checkboxes.
  * @returns { This } The instance of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func selectAll(isAllSelected: ?Bool): This
+    public func selectAll(value: ?Bool): This
 
 /**
- * Set the display color of checkbox.
+ * setting the display color of checkbox
  *
  * @param { ?ResourceColor } value - The color to display when checkboxes are selected.
  * @returns { This } The instance of the component.
@@ -114,7 +114,7 @@ public class CheckboxGroup <: CommonMethodComponent<CheckboxGroup> & CheckboxGro
 }
 
 /**
- * Defines the CheckboxGroup component attributes.
+ * Defines the attribute functions of CheckboxGroup.
  */
 @!APILevel[
     since: "22",
@@ -122,19 +122,19 @@ public class CheckboxGroup <: CommonMethodComponent<CheckboxGroup> & CheckboxGro
 ]
 sealed interface CheckboxGroupAttribute <: CommonMethod<CheckboxGroupAttribute> {
 /**
- * Set whether all checkbox is selected.
+ * setting whether all checkbox is selected.
  *
- * @param { ?Bool } isAllSelected - Whether to select all checkboxes.
+ * @param { ?Bool } value - Whether to select all checkboxes.
  * @returns { CheckboxGroupAttribute } The attribute of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func selectAll(isAllSelected: ?Bool): CheckboxGroupAttribute
+    func selectAll(value: ?Bool): CheckboxGroupAttribute
 
 /**
- * Set the display color of checkbox.
+ * setting the display color of checkbox.
  *
  * @param { ?ResourceColor } value - The color to display when checkboxes are selected.
  * @returns { CheckboxGroupAttribute } The attribute of the component.

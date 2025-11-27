@@ -48,7 +48,7 @@ public class Menu <: CommonMethodComponent<Menu> & MenuAttribute {
     ): This
 
 /**
- * Sets the Menu font color.
+ * Sets the Menu font color
  *
  * @param { ?ResourceColor } value - Indicates the font color of menu item.
  * @returns { This } Returns the Menu instance.
@@ -60,8 +60,7 @@ public class Menu <: CommonMethodComponent<Menu> & MenuAttribute {
     public func fontColor(value: ?ResourceColor): This
 
 /**
- * Sets the radius of the corner around the menu.
- * When the radius is less than the menu width, the default border radius is used.
+ * Sets the radius of the corner around the menu. When the radius is more than the menu width, the default border radius is used
  *
  * @param { ?Length } value - the border radius.
  * @returns { This } Returns the Menu instance.
@@ -74,7 +73,7 @@ public class Menu <: CommonMethodComponent<Menu> & MenuAttribute {
 
 /**
  * Sets the radius of the corner around the menu.
- * When the radius is less than the menu width, the default border radius is used.
+ * When the radius is more than the menu width, the default border radius is used.
  *
  * @param { ?BorderRadiuses } value - the border radius.
  * @returns { This } Returns the Menu instance.
@@ -87,8 +86,7 @@ public class Menu <: CommonMethodComponent<Menu> & MenuAttribute {
 }
 
 /**
- * Defines the Menu attribute functions.
- * Provides methods for configuring the appearance and behavior of the Menu component.
+ * Defines the Menu component attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -117,7 +115,7 @@ sealed interface MenuAttribute <: CommonMethod<MenuAttribute> {
     ): MenuAttribute
 
 /**
- * Configures the font color of menu items.
+ * Sets the Menu font color.
  *
  * @param { ?ResourceColor } value - Indicates the font color of menu item.
  * @returns { MenuAttribute } Returns the menu attribute.
@@ -130,7 +128,7 @@ sealed interface MenuAttribute <: CommonMethod<MenuAttribute> {
 
 /**
  * Sets the radius of the corner around the menu.
- * When the radius is less than the menu width, the default border radius is used.
+ * When the radius is more than the menu width, the default border radius is used.
  *
  * @param { ?Length } value -  the border radius.
  * @returns { MenuAttribute } Returns the menu attribute.
@@ -143,7 +141,7 @@ sealed interface MenuAttribute <: CommonMethod<MenuAttribute> {
 
 /**
  * Sets the radius of the corner around the menu.
- * When the radius is less than the menu width, the default border radius is used.
+ * When the radius is more than the menu width, the default border radius is used.
  *
  * @param { ?BorderRadiuses } value -  the border radius.
  * @returns { MenuAttribute } Returns the menu attribute.

@@ -38,7 +38,7 @@ public class Rect {
     public var top: Int32
 
 /**
- * The width of the Rect.
+ * Width of the rectangle, in pixels.
  */
 @!APILevel[
     since: "22",
@@ -47,7 +47,7 @@ public class Rect {
     public var width: UInt32
 
 /**
- * The height of the Rect.
+ * Height of the rectangle, in pixels.
  */
 @!APILevel[
     since: "22",

@@ -102,7 +102,7 @@ public class Refresh <: CommonMethodComponent<Refresh> & RefreshAttribute {
 }
 
 /**
- * Defines the Refresh attribute functions.
+ * Defines the refresh attribute functions.
  */
 @!APILevel[
     since: "22",

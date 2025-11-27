@@ -29,8 +29,8 @@ public class Rating <: CommonMethodComponent<Rating> & RatingAttribute {
     public init(rating!: ?Float64, indicator!: ?Bool = None)
 
 /**
- * Set when the total number of stars.
- * 
+ * Called when the total number of stars is set
+ *
  * @param { ?Int32 } value - Number of stars.
  * @returns { This } Returns the Rating instance.
  */
@@ -41,19 +41,19 @@ public class Rating <: CommonMethodComponent<Rating> & RatingAttribute {
     public func stars(value: ?Int32): This
 
 /**
- * Set the step size of the operation rating value..
+ * Called when the step size of the operation rating
  *
- * @param { ?Float64 } value - Step size for rating changes.
+ * @param { ?Float64 } size - Step size for rating changes.
  * @returns { This } Returns the Rating instance.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func stepSize(value: ?Float64): This
+    public func stepSize(size: ?Float64): This
 
 /**
- * Configures custom images for the rating stars.
+ * Called when a picture is set
  *
  * @param { ?ResourceStr } backgroundUri - Background URI option for unselected stars.
  * @param { ?ResourceStr } foregroundUri - Foreground URI option for selected stars.
@@ -81,7 +81,7 @@ public class Rating <: CommonMethodComponent<Rating> & RatingAttribute {
 }
 
 /**
- * Defines the Rating component attributes.
+ * Defines the rating attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -89,31 +89,31 @@ public class Rating <: CommonMethodComponent<Rating> & RatingAttribute {
 ]
 sealed interface RatingAttribute <: CommonMethod<RatingAttribute> {
 /**
- * Set when the total number of stars.
- * 
- * @param { ?Int32 } value - Number of stars.
- * @returns { RatingAttribute } Returns the rating attribute.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    func stars(value: ?Int32): RatingAttribute
-
-/**
- * Set the step size of the operation rating value.
+ * Called when the total number of stars is set.
  *
- * @param { ?Float64 } value - Step size for rating changes.
+ * @param { ?Int32 } starCount - Number of stars.
  * @returns { RatingAttribute } Returns the rating attribute.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func stepSize(value: ?Float64): RatingAttribute
+    func stars(starCount: ?Int32): RatingAttribute
 
 /**
- * Configures custom images for the rating stars.
+ * Called when the step size of the operation rating.
+ *
+ * @param { ?Float64 } size - Step size for rating changes.
+ * @returns { RatingAttribute } Returns the rating attribute.
+ */
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+    func stepSize(size: ?Float64): RatingAttribute
+
+/**
+ * Called when a picture is set.
  *
  * @param { ?ResourceStr } backgroundUri - Background URI option for unselected stars.
  * @param { ?ResourceStr } foregroundUri - Foreground URI option for selected stars.

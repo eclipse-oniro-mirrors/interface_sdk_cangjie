@@ -6,7 +6,7 @@ import ohos.base.*
 import ohos.labels.APILevel
 
 /**
- * A layout container that arranges its child components horizontally in a row.
+ * Defines Row Component.
  */
 @!APILevel[
     since: "22",
@@ -27,8 +27,7 @@ public class Row <: CommonMethodComponent<Row> & RowAttribute {
     public init(space!: ?Length = None, child!: () -> Unit = {=>})
 
 /**
- * Called when the vertical alignment is set.
- * Configures the vertical alignment of child components within the row.
+ * Called when the vertical alignment is set
  *
  * @param { ?VerticalAlign } value - Vertical alignment of child components.
  * @returns { This } Returns the Row instance.
@@ -40,8 +39,7 @@ public class Row <: CommonMethodComponent<Row> & RowAttribute {
     public func alignItems(value: ?VerticalAlign): This
 
 /**
- * Called when the horizontal alignment is set.
- * Configures the horizontal alignment of child components within the row.
+ * Called when the horizontal alignment is set
  *
  * @param { ?FlexAlign } value - Horizontal alignment of child components.
  * @returns { This } Returns the Row instance.
@@ -54,7 +52,7 @@ public class Row <: CommonMethodComponent<Row> & RowAttribute {
 }
 
 /**
- * Provides methods for configuring the appearance and behavior of the Row component.
+ * Defines the row attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -62,7 +60,7 @@ public class Row <: CommonMethodComponent<Row> & RowAttribute {
 ]
 sealed interface RowAttribute <: CommonMethod<RowAttribute> {
 /**
- * Configures the vertical alignment of child components within the row.
+ * Called when the vertical alignment is set.
  *
  * @param { ?VerticalAlign } value - Vertical alignment of child components.
  * @returns { RowAttribute } Returns the row attribute.
@@ -74,7 +72,7 @@ sealed interface RowAttribute <: CommonMethod<RowAttribute> {
     func alignItems(value: ?VerticalAlign): RowAttribute
 
 /**
- * Configures the horizontal alignment of child components within the row.
+ * Called when the horizontal alignment is set.
  *
  * @param { ?FlexAlign } value - Horizontal alignment of child components.
  * @returns { RowAttribute } Returns the row attribute.

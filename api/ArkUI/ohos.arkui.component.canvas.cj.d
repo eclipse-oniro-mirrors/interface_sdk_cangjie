@@ -31,7 +31,7 @@ public class RenderingContextSettings {
     public var antialias: ?Bool
 
 /**
- * Create an RenderingContextSettings object based on the antialias and alpha.
+ * Create a RenderingContextSettings object based on the antialias and alpha.
  *
  * @param { ?Bool } [antialias] - Indicates whether anti-aliasing is enabled for canvas.
  */
@@ -112,8 +112,8 @@ public class CanvasGradient <: RemoteDataLite {
 /**
  * Add a breakpoint defined by offset and color to the gradient.
  *
- * @param { Float64 } offset - Value between 0 and 1, out of range throws INDEX_SIZE_ERR error.
- * @param { ?ResourceColor } color - Set the gradient color, a SYNTAX_ERR error is thrown.
+ * @param { Float64 } offset - Value between 0 and 1.
+ * @param { ?ResourceColor } color - Set the gradient color.
  */
 @!APILevel[
     since: "22",
@@ -153,7 +153,7 @@ sealed interface CanvasAttribute <: CommonMethod<CanvasAttribute> {
 public class CanvasPattern <: RemoteDataLite {
 /**
  * The 2D transformation effect is added. The current transformation matrix is not overwritten and
- *    the transformations are superimposed for multiple times.
+ * the transformations are superimposed for multiple times.
  *
  * @param { ?Matrix2D } transform - 2D transformation matrix. For details, see Matrix2D.
  */
@@ -222,7 +222,13 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     public init(settings: ?RenderingContextSettings)
 
 /**
- * Set the attributes specified the gradient to use inside shapes.
+ * Attributes that describe the fill color and style. The options are as follows:
+ *
+ * string: Color String.
+ * number: Indicates the color with number.
+ * CanvasGradient: Color gradient object.
+ * CanvasPattern: Template object.
+ * @default 0x000000 (black)
  */
 @!APILevel[
     since: "22",
@@ -232,6 +238,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Line thickness attribute. The value cannot be 0 or a negative number.
+ * @default 1.px
  */
 @!APILevel[
     since: "22",
@@ -240,7 +247,13 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     public mut prop lineWidth: Option<Float64>
 
 /**
- * Set the attributes specified the color to use for the strokes (outlines) around shapes.
+ * Attributes of the stroke color and style. The options are as follows:
+ *
+ * string: Color String.
+ * number: Indicates the color with number.
+ * CanvasGradient: Color gradient object.
+ * CanvasPattern: Template object.
+ * @default 0x000000 (black)
  */
 @!APILevel[
     since: "22",
@@ -268,6 +281,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * The value of this parameter cannot be 0 or a negative number.
+ * @default 10.px
  */
 @!APILevel[
     since: "22",
@@ -276,7 +290,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     public mut prop miterLimit: Option<Float64>
 
 /**
- * Set the font style.
+ * Set the text style.
  */
 @!APILevel[
     since: "22",
@@ -305,6 +319,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 /**
  * Transparency. The value ranges from 0.0 (completely transparent) to 1.0 (completely opaque).
  * If the value is out of range, the assignment is invalid.
+ * @default 1.0
  */
 @!APILevel[
     since: "22",
@@ -326,6 +341,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Dotted line offset attribute.
+ * @default 0.0
  */
 @!APILevel[
     since: "22",
@@ -334,7 +350,22 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     public mut prop lineDashOffset: Option<Float64>
 
 /**
- * Type of composition operation applied when drawing a new shape。
+ * Type of composition operation applied when drawing a new shape. The following types are supported:
+ * source-over: (Default) Draws a new drawing on top of an existing canvas context.
+ * source-in: The new drawing is drawn only where the new drawing overlaps the target canvas.
+ * Everything else is transparent.
+ * source-out: Draws a new drawing where it does not overlap with the existing canvas content.
+ * source-atop: The new drawing is drawn only where it overlaps the content of the existing canvas.
+ * destination-over: Draws a new graphic behind the existing canvas content.
+ * destination-in: Existing canvas content remains where the new drawing overlaps the existing canvas content.
+ * Everything else is transparent.
+ * destination-out: Existing content remains where the new drawing does not overlap.
+ * destination-atop: The existing canvas retains only the part that overlaps with the new drawing,
+ * which is drawn behind the canvas content.
+ * lighter: The color of two overlapping shapes is determined by adding the color values.
+ * copy: Only new graphics are displayed.
+ * xor: In the image, those overlaps and other places outside of the normal drawing are transparent.
+ * @default source-over
  */
 @!APILevel[
     since: "22",
@@ -344,6 +375,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Shadow blur radius. The value cannot be a negative number.
+ * @default 0.0
  */
 @!APILevel[
     since: "22",
@@ -353,6 +385,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Shadow color.
+ * @default transparent black
  */
 @!APILevel[
     since: "22",
@@ -362,6 +395,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Horizontal offset distance of the shadow.
+ * @default 0.0
  */
 @!APILevel[
     since: "22",
@@ -371,6 +405,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Vertical offset distance of the shadow.
+ * @default 0.0
  */
 @!APILevel[
     since: "22",
@@ -381,6 +416,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 /**
  * Specifies whether to smooth the image. The value true indicates that the image is smooth.
  *    The value false indicates that the image is not smooth.
+ * @default true
  */
 @!APILevel[
     since: "22",
@@ -390,6 +426,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Smoothness level of the current image.
+ * @default low
  */
 @!APILevel[
     since: "22",
@@ -399,6 +436,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Text drawing direction.
+ * @default inherit
  */
 @!APILevel[
     since: "22",
@@ -408,22 +446,24 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 
 /**
  * Provides filter effects such as blur and grayscale. You can set the following filter effects:
- * blur(<length>): Adds a Gaussian blur effect to the drawing.
- * brightness(<percentage>): Provides a linear multiplication for the drawing and adjusts the brightness level.
- * contrast(<percentage>): Adjusts the contrast of the image. When the value is 0%, the image is completely black.
- *    When the value is 100%, there is no change in the image.
- * grayscale(<percentage>): Converts the image to a gray image. When the value is 100%, the image is completely gray.
- *    When the value is 0%, there is no change in the image.
- * hue-rotate(<degree>): Perform color rotation on an image. When the value is 0 degrees, there is no change in the image.
- * invert(<percentage>): Inverted image (representing the effect of a photographic negative). When the value is 100%,
- *    the image is completely inverted. When the value is 0%, there is no change in the image.
- * opacity(<percentage>): Transparency of the image. At 0%, the image is completely transparent.
- *    When the value is 100%, there is no change in the image.
- * saturate(<percentage>): Perform saturation processing on the image. At 0%, the image is completely un-saturated.
- *    When the value is 100%, there is no change in the image.
- * sepia(<percentage>): The image is sepia (nostalgic style). At 100%, the image turns completely sepia.
- *    When the value is 0%, there is no change in the image.
- * none: Turn off filter effects.
+ * blur(): Adds a Gaussian blur effect to the drawing
+ * brightness(): Provides a linear multiplication for the drawing and adjusts the brightness level.
+ * contrast(): Adjusts the contrast of the image. When the value is 0%, the image is completely black.
+ * When the value is 100%, there is no change in the image.
+ * grayscale(): Converts the image to a gray image. When the value is 100%, the image is completely gray.
+ * When the value is 0%, there is no change in the image.
+ * hue-rotate(): Perform color rotation on an image. When the value is 0 degrees, there is no change in the image.
+ * invert(): Inverted image (representing the effect of a photographic negative). When the value is 100%,
+ * the image is completely inverted. When the value is 0%, there is no change in the image.
+ * opacity(): Transparency of the image. At 0%, the image is completely transparent.
+ * When the value is 100%, there is no change in the image.
+ * saturate(): Perform saturation processing on the image. At 0%, the image is completely un-saturated.
+ * When the value is 100%, there is no change in the image.
+ * sepia(): The image is sepia (nostalgic style). At 100%, the image turns completely sepia.
+ * When the value is 0%, there is no change in the image.
+ * none: Turn off filter effects
+ *
+ * @default none
  */
 @!APILevel[
     since: "22",
@@ -479,13 +519,13 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
  * @param { String } text - Text string to be drawn.
  * @param { Float64 } x - The x-axis coordinate of the start point of the text.
  * @param { Float64 } y - The y-axis coordinate of the start point of the text.
- * @param { ?Float64 } [maxWidth] - Maximum width of the drawing.
+ * @param { Option<Float64> } [maxWidth] - Maximum width of the drawing.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func fillText(text: String, x: Float64, y: Float64, maxWidth!: ?Float64 = Option.None): Unit
+    public func fillText(text: String, x: Float64, y: Float64, maxWidth!: Option<Float64> = Option.None): Unit
 
 /**
  * Stroke specified text at specified position.
@@ -493,16 +533,16 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
  * @param { String } text - Text string to be stroked.
  * @param { Float64 } x - The x-axis coordinate of the start point of the text.
  * @param { Float64 } y - The y-axis-axis coordinate of the start point of the text.
- * @param { ?Float64 } [maxWidth] - Maximum width of the stroke.
+ * @param { Option<Float64> } [maxWidth] - Maximum width of the stroke.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func strokeText(text: String, x: Float64, y: Float64, maxWidth!: ?Float64 = None): Unit
+    public func strokeText(text: String, x: Float64, y: Float64, maxWidth!: Option<Float64> = None): Unit
 
 /**
- *  Measure the size of a specified text. For details about the return value, see TextMetrics.
+ * Measure the size of a specified text.
  *
  * @param { ?String } text - Text string to be measured.
  * @returns { TextMetrics } The metrics of the text.
@@ -578,16 +618,14 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
 /**
  * Creates a template object using the specified image.
  *
- * @param { ?ImageBitmap } image - Objects as duplicate image sources.
- * @param { ?Repetition } repetition - Specifies how to repeat images.
- *     The following four modes are supported:
- *     Repeat: Repeated images in both X and Y directions
- *     RepeatX: Repeated images in the X-axis direction but not in the Y-axis direction
- *     RepeatY: Repeated images in the Y axis direction, but not in the X axis direction.
- *     NoRepeat: Non-repeating images in both X and Y directions
- *     Clamp: Replicate the edge color if the shader draws outside of its original bounds.
- *     Mirror: Repeat the shader's image horizontally and vertically,
- *         alternating mirror images so that adjacent images always seam.
+ * @param { ?ImageBitmap } image - Objects as duplicate image sources
+ * @param { ?Repetition } repetition - Specifies how to repeat images. The following four modes are supported:
+ *     Repeat: Repeated images in both X and Y directions	
+ *     RepeatX: Repeated images in the X-axis direction but not in the Y-axis direction	
+ *     RepeatY: The image is repeated in the Y axis direction, and the image is not repeated in the X axis direction.	
+ *     NoRepeat: Non-repeating images in both X and Y directions	
+ *     Clamp: Replicate the edge color if the shader draws outside of its original bounds.	
+ *     Mirror: Repeat the shader's image horizontally and vertically, alternating mirror images so that adjacent images always seam.
  * @returns { Option<CanvasPattern> } The created canvas pattern.
  */
 @!APILevel[
@@ -803,8 +841,8 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     ): Unit
 
 /**
- * Adds the 2D transformation effect, including rotation, translation, and scaling,
- *    and overwrites the current transformation matrix.
+ * Adds 2D transformation effects, including rotation, translation, and scaling.
+ * The current transformation matrix will not be overwritten. Multiple transformations will be superimposed.
  *
  * @param { Float64 } a - Horizontal Zoom.
  * @param { Float64 } b - Vertical Tilt.
@@ -830,13 +868,13 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
  * The 2D transformation effect is added. The current transformation matrix is not overwritten and
  *    the transformations are superimposed for multiple times.
  *
- * @param { ?Matrix2D } transform - 2D transformation matrix.
+ * @param { Option<Matrix2D> } matrix - 2D transformation matrix.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func setTransform(transform: ?Matrix2D): Unit
+    public func setTransform(matrix: Option<Matrix2D>): Unit
 
 /**
  * Increases the translation effect of the X and Y axes.
@@ -944,7 +982,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     public func drawImage(image: ImageBitmap, dx: ?Float64, dy: ?Float64, dw: ?Float64, dh: ?Float64): Unit
 
 /**
- *Draw an image on a canvas.
+ * Draw an image on a canvas.
  *
  * @param { ImageBitmap } image - Picture objects drawn to the canvas.
  * @param { ?Float64 } sx - x coordinate of the upper left corner of the rectangle (cropping) selection box of the image.
@@ -1103,7 +1141,8 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     public func transferFromImageBitmap(bitmap: ?ImageBitmap): Unit
 
 /**
- * Which is bound to the height of the specified canvas. The value is read-only.
+ * The default value is 0, which is bound to the height of the specified canvas. The value is read-only.
+ *
  * @default 0
  */
 @!APILevel[
@@ -1113,7 +1152,8 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     public prop height: Float64
 
 /**
- * Which is bound to the width of the specified canvas. The value is read-only.
+ * The default value is 0, which is bound to the width of the specified canvas. The value is read-only.
+ *
  * @default 0
  */
 @!APILevel[
@@ -1156,7 +1196,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func toDataURL(imageType!: ?String = None, quality!: ?Float64 = None): String
+    public func toDataUrl(imageType!: ?String = None, quality!: ?Float64 = None): String
 
 /**
  * Creates a new, empty ImageData object of the specified size.
@@ -1289,7 +1329,7 @@ public class ImageBitmap <: RemoteData {
 ]
 public class ImageData <: RemoteDataLite {
 /**
- * Width of the image.
+ * The width of the image source.
  */
 @!APILevel[
     since: "22",
@@ -1298,7 +1338,7 @@ public class ImageData <: RemoteDataLite {
     public prop width: Int32
 
 /**
- * Height of the image.
+ * The height of the image source.
  */
 @!APILevel[
     since: "22",

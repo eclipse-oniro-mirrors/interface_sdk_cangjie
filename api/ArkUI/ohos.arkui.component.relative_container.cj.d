@@ -6,7 +6,7 @@ import ohos.ffi.*
 import ohos.labels.APILevel
 
 /**
- * Specifies the BarrierStyle of relative container
+ * Specifies the BarrierStyle of relativeContainer
  */
 @!APILevel[
     since: "22",
@@ -94,7 +94,7 @@ public class GuideLinePosition {
 }
 
 /**
- * Specifies the GuideLineStyle of relative container
+ * Specifies the GuideLineStyle of relativeContainer
  */
 @!APILevel[
     since: "22",

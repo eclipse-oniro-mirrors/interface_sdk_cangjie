@@ -9,7 +9,6 @@ import ohos.labels.APILevel
 
 /**
  * Defines Toggle Component.
- *
  */
 @!APILevel[
     since: "22",
@@ -42,7 +41,7 @@ public class Toggle <: CommonMethodComponent<Toggle> & ToggleAttribute {
     public init(toggleType: ?ToggleType, isOn: ?Bool, subcomponent: () -> Unit)
 
 /**
- * Set the color of the selected button.
+ * Called when the color of the selected button is set
  *
  * @param { ?ResourceColor } value - Color of the selected button.
  * @returns { This }
@@ -54,7 +53,7 @@ public class Toggle <: CommonMethodComponent<Toggle> & ToggleAttribute {
     public func selectedColor(value: ?ResourceColor): This
 
 /**
- * Set the color of the switch point.
+ * Called when the color of the selected button is set
  *
  * @param { ?ResourceColor } color - Color of the switch point.
  * @returns { This }
@@ -79,7 +78,7 @@ public class Toggle <: CommonMethodComponent<Toggle> & ToggleAttribute {
 }
 
 /**
- * Defines the Toggle component attributes.
+ * Defines the toggle attribute functions
  */
 @!APILevel[
     since: "22",
@@ -87,7 +86,7 @@ public class Toggle <: CommonMethodComponent<Toggle> & ToggleAttribute {
 ]
 sealed interface ToggleAttribute <: CommonMethod<ToggleAttribute> {
 /**
- * Set the color of the selected button.
+ * Called when the color of the selected button is set.
  *
  * @param { ?ResourceColor } value - Color of the selected button.
  * @returns { ToggleAttribute }
@@ -99,7 +98,7 @@ sealed interface ToggleAttribute <: CommonMethod<ToggleAttribute> {
     func selectedColor(value: ?ResourceColor): ToggleAttribute
 
 /**
- * Set the color of the switch point.
+ * Called when the color of the selected button is set.
  *
  * @param { ?ResourceColor } color - Color of the switch point.
  * @returns { ToggleAttribute }

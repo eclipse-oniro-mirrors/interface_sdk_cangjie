@@ -67,14 +67,14 @@ public class Slider <: CommonMethodComponent<Slider> & SliderAttribute {
 /**
  * Called when the slider of the slider bar is set to slide over the area color.
  *
- * @param { ?ResourceColor } selectedColor
+ * @param { ?ResourceColor } value
  * @returns { This }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func selectedColor(selectedColor: ?ResourceColor): This
+    public func selectedColor(value: ?ResourceColor): This
 
 /**
  * Called when setting whether to display step size.
@@ -132,7 +132,7 @@ public class Slider <: CommonMethodComponent<Slider> & SliderAttribute {
 /**
  * Called when the border color of block is set.
  *
- * @param { ?ResourceColor } value - The border color of block.
+ * @param { ?ResourceColor } value - the border color of block.
  * @returns { This }
  */
 @!APILevel[
@@ -177,17 +177,17 @@ sealed interface SliderAttribute <: CommonMethod<SliderAttribute> {
 /**
  * Called when the slider of the slider bar is set to slide over the area color.
  *
- * @param { ?ResourceColor } selectedColor
+ * @param { ?ResourceColor } value
  * @returns { SliderAttribute }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func selectedColor(selectedColor: ?ResourceColor): SliderAttribute
+    func selectedColor(value: ?ResourceColor): SliderAttribute
 
 /**
- * Called when setting whether to display step size.
+ * Setting whether to display step size.
  *
  * @param { ?Bool } value - Called when setting whether to display step size.
  * @returns { SliderAttribute }

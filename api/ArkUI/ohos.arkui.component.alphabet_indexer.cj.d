@@ -89,7 +89,7 @@ public class AlphabetIndexer <: CommonMethodComponent<AlphabetIndexer> & Alphabe
     public func popupColor(value: ?ResourceColor): This
 
 /**
- * Select the text background color.
+ * Select the text background color
  *
  * @param { ?ResourceColor } value - The selected background color.
  * @returns { This } Returns the current AlphabetIndexer instance.
@@ -272,7 +272,7 @@ public class AlphabetIndexer <: CommonMethodComponent<AlphabetIndexer> & Alphabe
 }
 
 /**
- * Defines the AlphabetIndexer attribute functions.
+ * Defines the alphabet index bar attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -316,7 +316,7 @@ sealed interface AlphabetIndexerAttribute <: CommonMethod<AlphabetIndexerAttribu
     func popupColor(value: ?ResourceColor): AlphabetIndexerAttribute
 
 /**
- * Font color of the pop-up prompt text.
+ * Select the text background color.
  *
  * @param { ?ResourceColor } value - The popup color to display.
  * @returns { AlphabetIndexerAttribute } Returns the current AlphabetIndexerAttribute instance.
@@ -413,7 +413,7 @@ sealed interface AlphabetIndexerAttribute <: CommonMethod<AlphabetIndexerAttribu
 
 /**
  * Size of the letter area on the letter index bar. The letter area is a square. Set the length of the square side.
- * 
+ *
  * @param { ?Length } size - The normal item size.
  * @returns { AlphabetIndexerAttribute } Returns the current AlphabetIndexerAttribute instance.
  */
@@ -427,7 +427,7 @@ sealed interface AlphabetIndexerAttribute <: CommonMethod<AlphabetIndexerAttribu
  * Alphabet index bar alignment style. The left and right alignment styles are supported,
  * which affects the pop-up position of the pop-up window.
  *
- * @param { ?IndexerAlign } value - Indicates the alignment style of Alphabet index.
+ * @param { ?IndexerAlign } value - indicates the alignment style of Alphabet index.
  * @returns { AlphabetIndexerAttribute } Returns the current AlphabetIndexerAttribute instance.
  */
 @!APILevel[

@@ -18,7 +18,7 @@ import ohos.labels.APILevel
 ]
 public class CustomDialogControllerOptions {
 /**
- * The callback function triggered when the dialog is canceled.
+ * Callback invoked when the dialog box is closed after the overlay is clicked.
  */
 @!APILevel[
     since: "22",
@@ -37,7 +37,7 @@ public class CustomDialogControllerOptions {
     public var autoCancel: ?Bool
 
 /**
- * Defines the dialog alignment of the screen..
+ * Defines the dialog alignment of the screen.
  */
 @!APILevel[
     since: "22",
@@ -55,7 +55,8 @@ public class CustomDialogControllerOptions {
     public var offset: ?Offset
 
 /**
- * Whether to use custom style for the dialog.
+ * Defines if use custom style.
+ *
  * @default false
  */
 @!APILevel[
@@ -65,7 +66,7 @@ public class CustomDialogControllerOptions {
     public var customStyle: ?Bool
 
 /**
- * The grid count for positioning the dialog.
+ * Grid count of dialog.
  */
 @!APILevel[
     since: "22",
@@ -74,7 +75,7 @@ public class CustomDialogControllerOptions {
     public var gridCount: ?UInt32
 
 /**
- * The color of the mask covering the background when the dialog is displayed.
+ * Mask color of dialog.
  */
 @!APILevel[
     since: "22",
@@ -92,7 +93,7 @@ public class CustomDialogControllerOptions {
     public var maskRect: ?Rectangle
 
 /**
- * The animation parameters for the dialog opening.
+ * Animation parameters of dialog opening.
  */
 @!APILevel[
     since: "22",
@@ -101,7 +102,7 @@ public class CustomDialogControllerOptions {
     public var openAnimation: ?AnimateParam
 
 /**
- * The animation parameters for the dialog closing.
+ * Animation parameters of dialog closing.
  */
 @!APILevel[
     since: "22",
@@ -129,7 +130,7 @@ public class CustomDialogControllerOptions {
     public var backgroundColor: ?ResourceColor
 
 /**
- * The corner radius of the dialog.
+ * Corner radius of dialog.
  */
 @!APILevel[
     since: "22",
@@ -148,7 +149,7 @@ public class CustomDialogControllerOptions {
     public var isModal: ?Bool
 
 /**
- * The callback function triggered when the dialog is about to be dismissed interactively.
+ * Callback function when the CustomDialog interactive dismiss.
  */
 @!APILevel[
     since: "22",

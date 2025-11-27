@@ -10,7 +10,6 @@ import ohos.resource.*
 
 /**
  * Defines the controller of Text.
- *
  */
 @!APILevel[
     since: "22",
@@ -40,7 +39,6 @@ public class TextController <: RemoteDataLite {
 
 /**
  * Provides a class for writing texts.
- *
  */
 @!APILevel[
     since: "22",
@@ -86,11 +84,10 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Set font line spacing.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the value specified is less than or equal to 0, the default value 0 is used.
- * </p>
+ * NOTE:
+ * If the value specified is less than or equal to 0, the default value 0 is used.
  *
- * @param { ?Length } value - The line spacing value.
+ * @param { ?Length } value - Default value is 0.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -100,9 +97,11 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
     public func lineSpacing(value: ?Length): This
 
 /**
- * Set the size of a font.
+ * Sets the font size
  *
- * @param { ?Length } value - The font size. The default value is 16.fp (wearable devices is 15.fp).
+ * @param { ?Length } value - Font size.The default font size is 16 fp.
+ *     If fontSize is of the number type, the unit fp is used.
+ *     The value cannot be a percentage.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -114,7 +113,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the maximum font size of the font is set.
  *
- * @param { ?Length } value - The maximum font size.
+ * @param { ?Length } value - The unit is fp.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -126,7 +125,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the minimum font size of the font is set.
  *
- * @param { ?Length } value - The minimum font size.
+ * @param { ?Length } value - The unit is fp.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -138,7 +137,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the font color is set.
  *
- * @param { ?ResourceColor } value - The font color.
+ * @param { ?ResourceColor } value - Default value is 0xe6182431.The default value on wearable devices is 0xc5ffffff.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -150,7 +149,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the font style of a font is set.
  *
- * @param { ?FontStyle } value - The font style. Default value is FontStyle.Normal.
+ * @param { ?FontStyle } value - Default value is FontStyle.Normal.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -162,14 +161,14 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the font weight is set.
  *
- * @param { ?FontWeight } weight - The font weight.
+ * @param { ?FontWeight } value - The font weight.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func fontWeight(weight: ?FontWeight): This
+    public func fontWeight(value: ?FontWeight): This
 
 /**
  * Called when the font list of text is set.
@@ -186,7 +185,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the horizontal center mode of the font is set.
  *
- * @param { ?TextAlign } value - The text alignment.
+ * @param { ?TextAlign } value - Default value is TextAlign.Start.The default value on wearable devices is TextAlign.Center.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -198,7 +197,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the overflow mode of the font is set.
  *
- * @param { ?TextOverflow } value - Text overflow options.
+ * @param { ?TextOverflow } value - Default value is TextOverflow.Clip.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -210,11 +209,10 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the maximum number of lines of text is set.
  *
- * <p><strong>NOTE</strong>:
- * <br>By default, text is automatically folded.
- * <br>If this attribute is specified, the text will not exceed the specified number of lines.
- * <br>If there is extra text, you can use textOverflow to specify how it is displayed.
- * </p>
+ * NOTE:
+ * By default, text is automatically folded.
+ * If this attribute is specified, the text will not exceed the specified number of lines.
+ * If there is extra text, you can use textOverflow to specify how it is displayed.
  *
  * @param { ?Int32 } value - The maximum number of lines.
  * @returns { This } Returns itself to allow method chaining.
@@ -226,13 +224,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
     public func maxLines(value: ?Int32): This
 
 /**
- * Called when the vertical center mode of the font is set.
- *
- * <p><strong>NOTE</strong>:
- * <br>If the value is less than or equal to 0, the line height is not limited and the font size is adaptive.
- * <br>If the value is of the number type, the unit fp is used.
- * <br>For the string type, numeric string values with optional units, for example, 10 or 10.fp, are supported.
- * </p>
+ * Called when the vertical center mode of the font is set. NOTE: If the value is less than or equal to 0, the line height is not limited and the font size is adaptive. If the value is of the number type, the unit fp is used. For the string type, numeric string values with optional units, for example, 10 or 10fp, are supported
  *
  * @param { ?Length } value - The line height.
  * @returns { This } Returns itself to allow method chaining.
@@ -246,9 +238,8 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the text decoration of the text is set.
  *
- * <p><strong>NOTE</strong>:
- * <br>The style parameter cannot be used in widgets.
- * </p>
+ * NOTE:
+ * The style parameter cannot be used in widgets.
  *
  * @param { ?TextDecorationType } decorationType - The type value of the decoration property object.
  * @param { ?ResourceColor } color - The color value of the decoration property object.
@@ -277,7 +268,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 /**
  * Called when the type of letter in the text font is set.
  *
- * @param { ?TextCase } value - The text case. Default value is TextCase.Normal.
+ * @param { ?TextCase } value - Default value is TextCase.Normal.
  * @returns { This } Returns itself to allow method chaining.
  */
 @!APILevel[
@@ -288,7 +279,7 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
 }
 
 /**
- * Defines the Text attribute functions.
+ * Provides attribute for TextClock.
  */
 @!APILevel[
     since: "22",
@@ -298,11 +289,10 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Set font line spacing.
  *
- * <p><strong>NOTE</strong>:
- * <br>If the value specified is less than or equal to 0, the default value 0 is used.
- * </p>
+ * NOTE:
+ * If the value specified is less than or equal to 0, the default value 0 is used.
  *
- * @param { ?Length } value - The line spacing value.
+ * @param { ?Length } value - Default value is 0.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -312,9 +302,11 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
     func lineSpacing(value: ?Length): TextAttribute
 
 /**
- * Set the size of a font.
+ * Sets the font size.
  *
- * @param { ?Length } value - The font size. The default value is 16.fp.
+ * @param { ?Length } value - Font size.The default font size is 16 fp.
+ *     If fontSize is of the number type, the unit fp is used.
+ *     The value cannot be a percentage.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -326,7 +318,7 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the maximum font size of the font is set.
  *
- * @param { ?Length } value - The maximum font size.
+ * @param { ?Length } value - The unit is fp.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -338,7 +330,7 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the minimum font size of the font is set.
  *
- * @param { ?Length } value - The minimum font size.
+ * @param { ?Length } value - The unit is fp.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -350,7 +342,7 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the font color is set.
  *
- * @param { ?ResourceColor } value - The font color. The default value is 0xe6182431. The default value on wearable devices is 0xc5ffffff.
+ * @param { ?ResourceColor } value - Default value is 0xe6182431.The default value on wearable devices is 0xc5ffffff.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -362,7 +354,7 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the font style of a font is set.
  *
- * @param { ?FontStyle } value - The font style. The default value is FontStyle.Normal.
+ * @param { ?FontStyle } value - Default value is FontStyle.Normal.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -374,14 +366,14 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the font weight is set.
  *
- * @param { ?FontWeight } weight - The font weight.
+ * @param { ?FontWeight } value - The font weight.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func fontWeight(weight: ?FontWeight): TextAttribute
+    func fontWeight(value: ?FontWeight): TextAttribute
 
 /**
  * Called when the font list of text is set.
@@ -398,7 +390,7 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the horizontal center mode of the font is set.
  *
- * @param { ?TextAlign } value - The text alignment. The default value is TextAlign.Start.
+ * @param { ?TextAlign } value - Default value is TextAlign.Start.The default value on wearable devices is TextAlign.Center.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -410,7 +402,7 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the overflow mode of the font is set.
  *
- * @param { ?TextOverflow } value - Text overflow options.
+ * @param { ?TextOverflow } value - Default value is TextOverflow.Clip.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[
@@ -422,11 +414,10 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the maximum number of lines of text is set.
  *
- * <p><strong>NOTE</strong>:
- * <br>By default, text is automatically folded.
- * <br>If this attribute is specified, the text will not exceed the specified number of lines.
- * <br>If there is extra text, you can use textOverflow to specify how it is displayed.
- * <p>
+ * NOTE:
+ * By default, text is automatically folded.
+ * If this attribute is specified, the text will not exceed the specified number of lines.
+ * If there is extra text, you can use textOverflow to specify how it is displayed.
  *
  * @param { ?Int32 } value - The maximum number of lines.
  * @returns { TextAttribute } Returns the text attribute.
@@ -439,12 +430,10 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 
 /**
  * Called when the vertical center mode of the font is set.
- *
- * <p><strong>NOTE</strong>:
- * <br>If the value is less than or equal to 0, the line height is not limited and the font size is adaptive.
- * <br>If the value is of the number type, the unit fp is used.
- * <br>For the string type, numeric string values with optional units, for example, 10 or 10.fp, are supported.
- * </p>
+ * NOTE:
+ * If the value is less than or equal to 0, the line height is not limited and the font size is adaptive.
+ * If the value is of the number type, the unit fp is used.
+ * For the string type, numeric string values with optional units, for example, "10" or "10fp", are supported.
  *
  * @param { ?Length } value - The line height.
  * @returns { TextAttribute } Returns the text attribute.
@@ -458,9 +447,8 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the text decoration of the text is set.
  *
- * <p><strong>NOTE</strong>:
- * <br>The style parameter cannot be used in widgets.
- * </p>
+ * NOTE:
+ * The style parameter cannot be used in widgets.
  *
  * @param { ?TextDecorationType } decorationType - The type value of the decoration property object.
  * @param { ?ResourceColor } color - The color value of the decoration property object.
@@ -488,7 +476,7 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
 /**
  * Called when the type of letter in the text font is set.
  *
- * @param { ?TextCase } value - The text case. The default value is TextCase.Normal.
+ * @param { ?TextCase } value - Default value is TextCase.Normal.
  * @returns { TextAttribute } Returns the text attribute.
  */
 @!APILevel[

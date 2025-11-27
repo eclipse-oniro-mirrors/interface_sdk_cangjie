@@ -63,7 +63,7 @@ public class FullscreenInfo {
 }
 
 /**
- * Provides methods to control video playback such as play, pause, stop, seek, and fullscreen operations.
+ * Defines the video controller.
  */
 @!APILevel[
     since: "22",
@@ -143,7 +143,7 @@ public class VideoController <: RemoteDataLite {
 }
 
 /**
- * A component for playing video content with various playback controls and options.
+ * Defines Video Component.
  */
 @!APILevel[
     since: "22",
@@ -206,7 +206,7 @@ public class Video <: CommonMethodComponent<Video> & VideoAttribute {
     public func controls(value: ?Bool): This
 
 /**
- * Controls how the video content is scaled to fit the display area.
+ * Called when determining the zoom type of the video source
  *
  * @param { ?ImageFit } value - The zoom type. The default value is ImageFit.Contain.
  * @returns { This } Returns the Video component instance for chaining.
@@ -339,7 +339,7 @@ public class Video <: CommonMethodComponent<Video> & VideoAttribute {
 }
 
 /**
- * Defines the Video attribute functions.
+ * Defines the video attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -383,7 +383,7 @@ sealed interface VideoAttribute <: CommonMethod<VideoAttribute> {
     func controls(value: ?Bool): VideoAttribute
 
 /**
- * Controls how the video content is scaled to fit the display area.
+ * Called when determining the zoom type of the video source.
  *
  * @param { ?ImageFit } value - The zoom type. The default value is ImageFit.Contain.
  * @returns { VideoAttribute } Returns the attribute of video.

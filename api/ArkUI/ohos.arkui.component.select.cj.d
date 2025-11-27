@@ -77,26 +77,26 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
 /**
  * Sets the serial number of the select item, starting from 0.
  *
- * @param { ?Int32 } numCount - the serial number of the select item.
- * @returns { This } The instance of the select component.
+ * @param { ?Int32 } value - the serial number of the select item.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func selected(numCount: ?Int32): This
+    public func selected(value: ?Int32): This
 
 /**
  * Sets the text display of the select button itself.
  *
- * @param { ?ResourceStr } resStr - the text display of the select button itself.
- * @returns { This } The instance of the select component.
+ * @param { ?ResourceStr } value - the text display of the select button itself.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func value(resStr: ?ResourceStr): This
+    public func value(value: ?ResourceStr): This
 
 /**
  * Sets the text properties of the select button itself.
@@ -105,7 +105,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * @param { ?FontWeight } [weight] - The font weight of current Select component.
  * @param { ?Length } [size] - The font size of current Select component.
  * @param { ?ResourceStr } [family] - The font family of current Select component.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -122,7 +122,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Sets the text color of the select button itself.
  *
  * @param { ?ResourceColor } value - The font color of current Select component.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -134,7 +134,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Sets the background color of the selected items in the select.
  *
  * @param { ?ResourceColor } value - The selected item background color.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -149,7 +149,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * @param { ?FontWeight } [weight] - The selected item font weight.
  * @param { ?Length } [size] - The selected item font size.
  * @param { ?String } [family] - The selected item font family.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -166,7 +166,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Sets the text color of the selected item in the select.
  *
  * @param { ?ResourceColor } value - The selected item font color.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -178,7 +178,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Sets the background color of the select item.
  *
  * @param { ?ResourceColor } value - The background color.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -193,7 +193,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * @param { ?FontWeight } [weight] - The selected item font weight.
  * @param { ?Length } [size] - The selected item font size.
  * @param { ?ResourceStr } [family] - The selected item font family.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -210,7 +210,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Sets the text color for select items.
  *
  * @param { ?ResourceColor } value - The font color.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -221,8 +221,8 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
 /**
  * Set the space for text and icon in select
  *
- * @param { ?Length } value - indicates the length of the space.
- * @returns { This } The instance of the select component.
+ * @param { ?Length } value - indicates the length of the space
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -233,8 +233,8 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
 /**
  * Set the layout direction for text and arrow in select
  *
- * @param { ?ArrowPosition } value - Indicates the arrow position in the select.
- * @returns { This } The instance of the select component.
+ * @param { ?ArrowPosition } value - indicates the arrow position in the select
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -247,7 +247,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  *
  * @param { ?MenuAlignType } alignType - The type of alignment between select and menu.
  * @param { ?Offset } offset - The offset between select and menu.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -259,7 +259,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Set the width of each option and set whether the option width fit the trigger.
  *
  * @param { ?OptionWidthMode } value - The length of option width and decide option width to fit trigger or content.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -271,7 +271,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Set the width of each option and set whether the option width fit the trigger.
  *
  * @param { ?Length } value - The length of option width and decide option width to fit trigger or content.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -283,7 +283,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Set the height of each option.
  *
  * @param { ?Length } value - The length of option height.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -292,10 +292,10 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
     public func optionHeight(value: ?Length): This
 
 /**
- * Set the menu's background color.
+ * Set the menu's background color
  *
  * @param { ?ResourceColor } value - The backgroundColor of menu.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -304,10 +304,10 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
     public func menuBackgroundColor(value: ?ResourceColor): This
 
 /**
- * Set menu background blur Style.
+ * Set menu background blur Style
  *
  * @param { ?BlurStyle } value - The BackgroundBlurStyle of menu.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -319,7 +319,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
  * Callback for selecting an item from the select.
  *
  * @param { ?OnSelectCallback } callback - The callback on select.
- * @returns { This } The instance of the select component.
+ * @returns { This } The instance of the select.
  */
 @!APILevel[
     since: "22",
@@ -329,7 +329,7 @@ public class Select <: CommonMethodComponent<Select> & SelectAttribute {
 }
 
 /**
- * Defines the Select component attributes.
+ * The commonMethod of select.
  */
 @!APILevel[
     since: "22",
@@ -339,26 +339,26 @@ sealed interface SelectAttribute <: CommonMethod<SelectAttribute> {
 /**
  * Sets the serial number of the select item, starting from 0.
  *
- * @param { ?Int32 } numCount - The serial number of the select item.
+ * @param { ?Int32 } value - the serial number of the select item.
  * @returns { SelectAttribute } the attribute of the select.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func selected(numCount: ?Int32): SelectAttribute
+    func selected(value: ?Int32): SelectAttribute
 
 /**
  * Sets the text display of the select button itself.
  *
- * @param { ?ResourceStr } resStr - The text display of the select button itself.
+ * @param { ?ResourceStr } value - the text display of the select button itself.
  * @returns { SelectAttribute } the attribute of the select.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func value(resStr: ?ResourceStr): SelectAttribute
+    func value(value: ?ResourceStr): SelectAttribute
 
 /**
  * Sets the text properties of the select button itself.
@@ -483,7 +483,7 @@ sealed interface SelectAttribute <: CommonMethod<SelectAttribute> {
 /**
  * Set the space for text and icon in select
  *
- * @param { ?Length } value - Indicates the length of the space.
+ * @param { ?Length } value - indicates the length of the space
  * @returns { SelectAttribute } the attribute of the select.
  */
 @!APILevel[
@@ -495,7 +495,7 @@ sealed interface SelectAttribute <: CommonMethod<SelectAttribute> {
 /**
  * Set the layout direction for text and arrow in select
  *
- * @param { ?ArrowPosition } value - Indicates the arrow position in the select.
+ * @param { ?ArrowPosition } value - indicates the arrow position in the select
  * @returns { SelectAttribute } the attribute of the select.
  */
 @!APILevel[
@@ -554,7 +554,7 @@ sealed interface SelectAttribute <: CommonMethod<SelectAttribute> {
     func optionHeight(value: ?Length): SelectAttribute
 
 /**
- * Set the menu's background color.
+ * Set the menu's background color
  *
  * @param { ?ResourceColor } value - The backgroundColor of menu.
  * @returns { SelectAttribute } the attribute of the select.
@@ -566,7 +566,7 @@ sealed interface SelectAttribute <: CommonMethod<SelectAttribute> {
     func menuBackgroundColor(value: ?ResourceColor): SelectAttribute
 
 /**
- * Set menu background blur Style.
+ * Set menu background blur Style
  *
  * @param { ?BlurStyle } value - The BackgroundBlurStyle of menu.
  * @returns { SelectAttribute } the attribute of the select.

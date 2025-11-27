@@ -50,7 +50,7 @@ public enum ButtonType {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    RoundRectangle
+    RoundedRectangle
     | ...
 }
 
@@ -375,14 +375,14 @@ public class Button <: CommonMethodComponent<Button> & ButtonAttribute {
 /**
  * Text color.
  *
- * @param { ?ResourceColor } value - The font color of button.
+ * @param { ?ResourceColor } color - The font color of button.
  * @returns { This } The instance of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func fontColor(value: ?ResourceColor): This
+    public func fontColor(color: ?ResourceColor): This
 
 /**
  * Font style.
@@ -409,9 +409,9 @@ public class Button <: CommonMethodComponent<Button> & ButtonAttribute {
     public func fontFamily(value: ?ResourceStr): This
 
 /**
- * Describes the button style.
+ * setting the shape of checkbox
  *
- * @param { ?ButtonType } value - The button shape style. The default value is ButtonType.Capsule.
+ * @param { ?ButtonType } value - The configuration of checkbox shape.
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -435,7 +435,7 @@ public class Button <: CommonMethodComponent<Button> & ButtonAttribute {
 /**
  * Describes the button style.
  *
- * @param { ?ButtonStyleMode } value - Button style mode.
+ * @param { ?ButtonStyleMode } value - button style mode
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -446,7 +446,7 @@ public class Button <: CommonMethodComponent<Button> & ButtonAttribute {
 }
 
 /**
- * Defines the Button component attributes.
+ * Defines the button attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -480,14 +480,14 @@ sealed interface ButtonAttribute <: CommonMethod<ButtonAttribute> {
 /**
  * Text color.
  *
- * @param { ?ResourceColor } value - The font color of button.
+ * @param { ?ResourceColor } color - The font color of button.
  * @returns { ButtonAttribute } The attribute of the component.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func fontColor(value: ?ResourceColor): ButtonAttribute
+    func fontColor(color: ?ResourceColor): ButtonAttribute
 
 /**
  * Font style.
@@ -514,9 +514,9 @@ sealed interface ButtonAttribute <: CommonMethod<ButtonAttribute> {
     func fontFamily(value: ?ResourceStr): ButtonAttribute
 
 /**
- * Describes the button style.
+ * setting the shape of checkbox.
  *
- * @param { ?ButtonType } value - The button shape style. The default value is ButtonType.Capsule.
+ * @param { ?ButtonType } value - The configuration of checkbox shape.
  * @returns { ButtonAttribute } The attribute of the component.
  */
 @!APILevel[
@@ -540,7 +540,7 @@ sealed interface ButtonAttribute <: CommonMethod<ButtonAttribute> {
 /**
  * Describes the button style.
  *
- * @param { ?ButtonStyleMode } value - Button style mode. The default value is ButtonStyleMode.Emphasized.
+ * @param { ?ButtonStyleMode } value - button style mode
  * @returns { ButtonAttribute } The attribute of the component. The default value is ButtonStyleMode.Emphasized.
  */
 @!APILevel[

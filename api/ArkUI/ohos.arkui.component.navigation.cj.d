@@ -79,7 +79,7 @@ public class NavDestination <: CommonMethodComponent<NavDestination> & NavDestin
     public func onBackPressed(callback: ?() -> Bool): This
 
 /**
- * Invoked before sub-components of NavDestination are created.
+ * Called when the NavDestination component is about to build a child component
  *
  * @param { ?Callback<NavDestinationContext, Unit> } callback
  * - Indicates callback that invoked before sub-components of NavDestination are created.
@@ -128,7 +128,7 @@ public class NavDestination <: CommonMethodComponent<NavDestination> & NavDestin
 /**
  * Specifies whether to hide the title bar.
  *
- * @param { ?Bool } value - Indicates whether to hide the title bar.
+ * @param { ?Bool } value - Default value: false . true : Hide the title bar. false : Show the title bar
  * @returns { This }
  */
 @!APILevel[
@@ -153,7 +153,7 @@ public class PopInfo {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var info: NavPathInfo
+    public let info: NavPathInfo
 
 /**
  * The result of the popped page.
@@ -162,7 +162,7 @@ public class PopInfo {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public var result: String
+    public let result: String
 }
 
 /**
@@ -252,7 +252,7 @@ public class NavigationTitleOptions {
 ]
 public enum LaunchMode {
 /**
- * Default navigation stack operation mode.<br>In this mode,
+ * Default navigation stack operation mode.In this mode,
  * push operations add the specified **NavDestination**page to
  * the stack; replace operations replace the current top **NavDestination** page.
  */
@@ -264,7 +264,7 @@ public enum LaunchMode {
     | 
 /**
  * When the NavDestination with a specified name exists, it will be moved to top of stack,
- * otherwise, the behavior will be consistent with the Standard mode.
+ * otherwise, the behavior will be consistent with the STANDARD mode.
  */
 @!APILevel[
     since: "22",
@@ -274,7 +274,7 @@ public enum LaunchMode {
     | 
 /**
  * When the NavDestination with a specified name exists, the stack will pop until that NavDestination,
- * otherwise, the behavior will be consistent with the Standard mode.
+ * otherwise, the behavior will be consistent with the STANDARD mode.
  */
 @!APILevel[
     since: "22",
@@ -284,7 +284,7 @@ public enum LaunchMode {
     | 
 /**
  * This mode creates an instance of **NavDestination**. Compared with
- * **Standard**, this mode does not reuse the instance with the same name in the stack.
+ * **STANDARD**, this mode does not reuse the instance with the same name in the stack.
  */
 @!APILevel[
     since: "22",
@@ -327,7 +327,7 @@ extend LaunchMode <: Equatable<LaunchMode> {
 public class NavigationOptions {
 /**
  * Navigation stack operation mode.
- * <br>Default value: **LaunchMode.Standard**.
+ * Default value: **LaunchMode.STANDARD**.
  */
 @!APILevel[
     since: "22",
@@ -337,9 +337,9 @@ public class NavigationOptions {
 
 /**
  * Whether to support transition animation.
- * <br>Default value: **true**.
- * <br>**true**: The transition animation is supported.
- * <br>**false**: The transition animation is not supported.
+ * Default value: **true**.
+ * true: The transition animation is supported.
+ * false: The transition animation is not supported.
  */
 @!APILevel[
     since: "22",
@@ -486,7 +486,7 @@ public class NavPathStack <: RemoteData {
  * Depending on the launchMode specified in the **options** parameter, different behaviors will be triggered.
  *
  * @param { ?NavPathInfo } info - Indicates the NavDestination to be pushed.
- * @param { ?NavigationOptions } [options] - Indicates the navigation options.
+ * @param { ?NavigationOptions } [options] - Indicates options of stack operation.
  * @returns { Unit }
  */
 @!APILevel[
@@ -501,8 +501,8 @@ public class NavPathStack <: RemoteData {
  * @param { ?String } name - Indicates the name of the NavDestination to be pushed.
  * @param { ?String } param - Indicates the detailed parameter of the NavDestination to be pushed.
  * @param { ?Bool } [animated] - Indicates whether the transition is animated.
- * <br>Default value: **true**.
- * <br>**true**: The transition animation is supported. **false**: The transition animation is not supported.
+ *      Default value: true.
+ *      true: The transition animation is supported. false: The transition animation is not supported.
  * @returns { Unit }
  */
 @!APILevel[
@@ -515,8 +515,8 @@ public class NavPathStack <: RemoteData {
  * Pops the top NavDestination out of the stack.
  *
  * @param { ?Bool } [animated] - Indicates whether the transition is animated.
- * <br>Default value: **true**.
- * <br>**true**: The transition animation is supported. **false**: The transition animation is not supported.
+ * Default value: true.
+ * true: The transition animation is supported. false: The transition animation is not supported.
  * @returns { ?NavPathInfo } Returns the top NavPathInfo if the stack is not empty, otherwise returns None.
  */
 @!APILevel[
@@ -599,10 +599,10 @@ public class Navigation <: CommonMethodComponent<Navigation> & NavigationAttribu
  * Sets whether to hide the title bar and whether to animate the visibility change.
  *
  * @param { ?Bool } hide - Whether to hide the title bar.
- * <br>Default value is **false**. **true**: Hide the title bar. **false**: Show the title bar.
+ *      Default value is false. true: Hide the title bar. false: Show the title bar.
  * @param { ?Bool } [animated] - Whether to animate the visibility change.
- * <br>Default value is **false**.
- * <br>**true**: Animate the visibility change. **false**: Do not animate the visibility change.
+ *      Default value is false.
+ *      true: Animate the visibility change. false: Do not animate the visibility change.
  * @returns { This }
  */
 @!APILevel[
@@ -662,10 +662,11 @@ sealed interface NavigationAttribute <: CommonMethod<NavigationAttribute> {
  * Sets whether to hide the title bar and whether to animate the visibility change.
  *
  * @param { ?Bool } hide - Whether to hide the title bar.
- * <br>Default value is **false**. **true**: Hide the title bar. **false**: Show the title bar.
+ *      Default value is false.
+ *      true: Hide the title bar. false: Show the title bar.
  * @param { ?Bool } animated - Whether to animate the visibility change.
- * <br>Default value is **false**.
- * <br>**true**: Animate the visibility change. **false**: Do not animate the visibility change.
+ *      Default value is false.
+ *      true: Animate the visibility change. false: Do not animate the visibility change.
  * @returns { NavigationAttribute }
  */
 @!APILevel[
@@ -676,7 +677,7 @@ sealed interface NavigationAttribute <: CommonMethod<NavigationAttribute> {
 }
 
 /**
- * Declare Navigation view properties.
+ * The attribute function of NavDestination
  */
 @!APILevel[
     since: "22",
@@ -697,7 +698,7 @@ sealed interface NavDestinationAttribute <: CommonMethod<NavDestinationAttribute
     func onBackPressed(callback: ?() -> Bool): NavDestinationAttribute
 
 /**
- * Invoked before sub-components of NavDestination are created.
+ * Called when the **NavDestination** component is about to build a child component.
  *
  * @param { ?Callback<NavDestinationContext, Unit> } callback
  * - Indicates callback that invoked before sub-components of NavDestination are created.
@@ -746,7 +747,9 @@ sealed interface NavDestinationAttribute <: CommonMethod<NavDestinationAttribute
 /**
  * Specifies whether to hide the title bar.
  *
- * @param { ?Bool } value - Indicates whether to hide the title bar.
+ * @param { ?Bool } value - Default value: false.
+ *     true: Hide the title bar.
+ *     false: Show the title bar.
  * @returns { NavDestinationAttribute }
  */
 @!APILevel[

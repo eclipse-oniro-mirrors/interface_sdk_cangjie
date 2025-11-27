@@ -265,6 +265,8 @@ public class ActionSheetOptions {
 /**
  * Alignment mode of the dialog box in the vertical direction.
  * NOTE: If showInSubWindow is set to true in UIExtension, the dialog box is aligned with the host window based on UIExtension.
+ *
+ * @default DialogAlignment.Bottom
  */
 @!APILevel[
     since: "22",
@@ -274,8 +276,8 @@ public class ActionSheetOptions {
 
 /**
  * Offset of the dialog box relative to the alignment position.
- * When alignment is set to Top, TopStart, or TopEnd: dx: 0, dy: 40.vp
- * When alignment is set to any other value: dx: 0,dy: -40.vp
+ * When alignment is set to Top, TopStart, or TopEnd: {dx: 0,dy: "40vp"}
+ * When alignment is set to any other value: {dx: 0,dy: "-40vp"}
  */
 @!APILevel[
     since: "22",
@@ -286,6 +288,8 @@ public class ActionSheetOptions {
 /**
  * Mask area of the dialog box. Events outside the mask area are transparently transmitted, and events within the mask area are not.
  * NOTE: maskRect does not take effect when showInSubWindow is set to true.
+ *
+ * @default - Rectangle(x:0, y:0, width:100.percent, height:100.percent)
  */
 @!APILevel[
     since: "22",
@@ -316,8 +320,10 @@ public class ActionSheetOptions {
 
 /**
  * Background color of the dialog box.
- * NOTE: When backgroundColor is set to a non-transparent color, backgroundBlurStyle must be set to BlurStyle.NONE;
+ * NOTE:
+ * When backgroundColor is set to a non-transparent color, backgroundBlurStyle must be set to BlurStyle.NONE;
  * otherwise, the color display may not meet the expected effect.
+ *
  * @default Color.Transparent
  */
 @!APILevel[
@@ -328,9 +334,11 @@ public class ActionSheetOptions {
 
 /**
  * Background blur style of the dialog box.
- * NOTE: Setting this parameter to BlurStyle.NONE disables the background blur. When backgroundBlurStyle is set to a
+ * NOTE:
+ * Setting this parameter to BlurStyle.NONE disables the background blur. When backgroundBlurStyle is set to a
  * value other than NONE, do not set backgroundColor. If you do, the color display may not produce the expected
  * visual effect.
+ *
  * @default BlurStyle.ComponentUltraThick
  */
 @!APILevel[
@@ -341,13 +349,12 @@ public class ActionSheetOptions {
 
 /**
  * Callback for interactive closure of the dialog box.
- * <p><strong>NOTE</strong>:
+ * NOTE:
  * 1. If this callback is registered, the dialog box will not be closed immediately after the user touches the
  * mask or the Back button, presses the Esc key, or swipes left or right on the screen. The reason parameter in
  * the callback is used to determine whether the dialog box can be closed. The reason returned by the component
  * does not support the value CLOSE_BUTTON.
  * 2. In the onWillDismiss callback, another onWillDismiss callback is not allowed.
- * </p>
  */
 @!APILevel[
     since: "22",
@@ -387,9 +394,9 @@ public class ActionSheetOptions {
 /**
  * Width of the dialog box.
  *
+ * @default - Default maximum width of the dialog box: 400.vp,
  * When this parameter is set to a percentage, the reference width of the dialog box is the width of the window
  * where the dialog box is located. You can decrease or increase the width as needed.
- * Default maximum width of the dialog box: 400.vp
  */
 @!APILevel[
     since: "22",
@@ -400,9 +407,9 @@ public class ActionSheetOptions {
 /**
  * Height of the dialog box.
  *
+ * @default - Default maximum height of the dialog box: 0.9 x (Window height – Safe area)
  * When this parameter is set to a percentage, the reference height of the dialog box is the height of the
  * window where the dialog box is located minus the safe area. You can decrease or increase the height as needed.
- * Default maximum height of the dialog box: 0.9 x (Window height – Safe area)
  */
 @!APILevel[
     since: "22",
@@ -423,7 +430,8 @@ public class ActionSheetOptions {
     public var borderWidth: ?Length
 
 /**
- * Border color of the dialog box.
+ * Defines the custom dialog's border color.
+ *
  * @default Color.Black, borderColor must be used with borderWidth in pairs.
  */
 @!APILevel[

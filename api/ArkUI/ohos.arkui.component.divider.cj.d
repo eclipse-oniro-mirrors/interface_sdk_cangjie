@@ -6,7 +6,7 @@ import ohos.base.*
 import ohos.labels.APILevel
 
 /**
- * Divider component used to separate different content blocks or elements.
+ * Defines Divider Component.
  */
 @!APILevel[
     since: "22",
@@ -36,7 +36,7 @@ public class Divider <: CommonMethodComponent<Divider> & DividerAttribute {
     public func vertical(value: ?Bool): This
 
 /**
- * Sets the color of the divider line.
+ * Sets the color of the dividing line
  *
  * @param { ?ResourceColor } value - The color of the divider line.
  * @returns { This } The instance of the component.
@@ -60,7 +60,7 @@ public class Divider <: CommonMethodComponent<Divider> & DividerAttribute {
     public func strokeWidth(value: ?Length): This
 
 /**
- * Sets the end style of the split line. The default value is Butt.
+ * Sets the end style of the dividing line. The default value is Butt
  *
  * @param { ?LineCapStyle } value - The end style of the split line.
  * @returns { This } The instance of the component.
@@ -94,7 +94,7 @@ sealed interface DividerAttribute <: CommonMethod<DividerAttribute> {
     func vertical(value: ?Bool): DividerAttribute
 
 /**
- * Sets the color of the divider line.
+ * Sets the color of the dividing line.
  *
  * @param { ?ResourceColor } value - The color of the divider line.
  * @returns { DividerAttribute } The attribute of the component.
@@ -118,7 +118,7 @@ sealed interface DividerAttribute <: CommonMethod<DividerAttribute> {
     func strokeWidth(value: ?Length): DividerAttribute
 
 /**
- * Sets the end style of the split line. The default value is Butt.
+ * Sets the end style of the dividing line. The default value is Butt.
  *
  * @param { ?LineCapStyle } value - The end style of the split line.
  * @returns { DividerAttribute } The attribute of the component.

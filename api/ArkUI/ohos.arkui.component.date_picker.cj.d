@@ -20,10 +20,9 @@ public class DatePickerResult {
 /**
  * Year of the selected date.
  *
- * <p><strong>NOTE</strong>:
- * <br>Value range: depends on start and end.
+ * NOTE:
+ * Value range: depends on start and end.
  * If start and end are not set, the default range is [1970, 2100].
- * </p>
  */
 @!APILevel[
     since: "22",
@@ -35,9 +34,8 @@ public class DatePickerResult {
  * Month index of the selected date.
  * The index is zero-based. 0 indicates January, and 11 indicates December.
  *
- * <p><strong>NOTE</strong>:
- * <br>Value range: depends on start and end. If start and end are not set, the default range is [0, 11].
- * </p>
+ * NOTE:
+ * Value range: depends on start and end. If start and end are not set, the default range is [0, 11].
  */
 @!APILevel[
     since: "22",
@@ -48,9 +46,8 @@ public class DatePickerResult {
 /**
  * Day of the selected date.
  *
- * <p><strong>NOTE</strong>:
- * <br>Value range: depends on start and end. If start and end are not set, the default range is [1, 31].
- * </p>
+ * NOTE:
+ * Value range: depends on start and end. If start and end are not set, the default range is [1, 31].
  */
 @!APILevel[
     since: "22",
@@ -77,7 +74,7 @@ public class DatePickerResult {
 }
 
 /**
- * Defines the DatePicker Component.
+ * Defines DatePicker Component.
  */
 @!APILevel[
     since: "22",
@@ -104,9 +101,9 @@ public class DatePicker <: CommonMethodComponent<DatePicker> & DatePickerAttribu
 /**
  * Specifies whether to display the lunar calendar.
  *
- * @param { ?Bool } value - Whether to display the lunar calendar.
- * <br>- <em>true</em>: Display the lunar calendar.
- * <br>- <em>false</em>: Do not display the lunar.
+ * @param { ?Bool } value - Whether to display the lunar calendar. The default value is false.
+ *     true: Display the lunar calendar.
+ *     false: Do not display the lunar.
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -131,6 +128,7 @@ public class DatePicker <: CommonMethodComponent<DatePicker> & DatePickerAttribu
  * Sets the text style for the top and bottom items.
  *
  * @param { ?PickerTextStyle } value - Font color, font size, and font weight of the top and bottom items.
+ *    The default value is PickerTextStyle(color: 0xff18243, font: Font(size: 14.fp, weight: FontWeight.Regular))
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -143,7 +141,8 @@ public class DatePicker <: CommonMethodComponent<DatePicker> & DatePickerAttribu
  * Sets the text style for all items except the top, bottom, and selected items.
  *
  * @param { ?PickerTextStyle } value - Font color, font size, and font weight of all items except the top,
- *   <br>bottom, and selected items.
+ *   bottom, and selected items.
+ *   The default value is PickerTextStyle(color: 0xff18243, font: Font(size: 16.fp, weight: FontWeight.Regular))
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -156,6 +155,7 @@ public class DatePicker <: CommonMethodComponent<DatePicker> & DatePickerAttribu
  * Sets the text style for the selected item.
  *
  * @param { ?PickerTextStyle } value - Font color, font size, and font weight of the selected item.
+ *   The default value is PickerTextStyle(color: 0xff007dff, font: Font(size: 20.fp, weight: FontWeight.Medium))
  * @returns { This } The instance of the component.
  */
 @!APILevel[
@@ -166,7 +166,7 @@ public class DatePicker <: CommonMethodComponent<DatePicker> & DatePickerAttribu
 }
 
 /**
- * Defines the DatePicker component attributes.
+ * Defines the DatePicker attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -176,9 +176,9 @@ sealed interface DatePickerAttribute <: CommonMethod<DatePickerAttribute> {
 /**
  * Specifies whether to display the lunar calendar.
  *
- * @param { ?Bool } value - Whether to display the lunar calendar. The default value is false.
- *     <br>- <em>true</em>: Display the lunar calendar.
- *     <br>- <em>false</em>: Do not display the lunar.
+ * @param { ?Bool } value - Whether to display the lunar calendar.
+ *     - true: Display the lunar calendar.
+ *     - false: Do not display the lunar.
  * @returns { DatePickerAttribute } The attribute of the component.
  */
 @!APILevel[
@@ -203,6 +203,7 @@ sealed interface DatePickerAttribute <: CommonMethod<DatePickerAttribute> {
  * Sets the text style for the top and bottom items.
  *
  * @param { ?PickerTextStyle } value - Font color, font size, and font weight of the top and bottom items.
+ *    The default value is PickerTextStyle(color: 0xff18243, font: Font(size: 14.fp, weight: FontWeight.Regular))
  * @returns { DatePickerAttribute } The attribute of the component.
  */
 @!APILevel[
@@ -215,7 +216,8 @@ sealed interface DatePickerAttribute <: CommonMethod<DatePickerAttribute> {
  * Sets the text style for all items except the top, bottom, and selected items.
  *
  * @param { ?PickerTextStyle } value - Font color, font size, and font weight of all items except the top,
- *   <br>bottom, and selected items.
+ *   bottom, and selected items.
+ *   The default value is PickerTextStyle(color: 0xff18243, font: Font(size: 16.fp, weight: FontWeight.Regular))
  * @returns { DatePickerAttribute } The attribute of the component.
  */
 @!APILevel[
@@ -228,6 +230,7 @@ sealed interface DatePickerAttribute <: CommonMethod<DatePickerAttribute> {
  * Sets the text style for the selected item.
  *
  * @param { ?PickerTextStyle } value - Font color, font size, and font weight of the selected item.
+ *      The default value is PickerTextStyle(color: 0xff007dff, font: Font(size: 20.fp, weight: FontWeight.Medium))
  * @returns { DatePickerAttribute } The attribute of the component.
  */
 @!APILevel[

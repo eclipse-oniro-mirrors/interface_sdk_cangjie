@@ -25,7 +25,7 @@ public type KeyGenFuncType<T> = (T, Int64) -> String
 public type ItemGenFuncType<T> = (T, Int64) -> Unit
 
 /**
- * The ForEach class is used to create a list of elements based on a data source.
+ * Defines ForEach Component.
  */
 @!APILevel[
     since: "22",

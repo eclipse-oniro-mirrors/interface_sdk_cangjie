@@ -27,7 +27,7 @@ public class Counter <: CommonMethodComponent<Counter> & CounterAttribute {
 /**
  * Indicates whether the increase button of counter component is available or not.
  *
- * @param { ?Bool } value - Whether to enable the increment button. The default value is true.
+ * @param { ?Bool } value - If true, the increase button is available and can respond to operations such as clicking. If false, click operations are not responded.
  * @returns { This } The instance of the Counter.
  */
 @!APILevel[
@@ -39,7 +39,7 @@ public class Counter <: CommonMethodComponent<Counter> & CounterAttribute {
 /**
  * Indicates whether the decrease button of counter component is available or not.
  *
- * @param { ?Bool } value - Whether to enable the decrement button. The default value is true.
+ * @param { ?Bool } value - If true, the decrease button is available and can respond to operations such as clicking. If false, click operations are not responded.
  * @returns { This } The instance of the Counter.
  */
 @!APILevel[
@@ -74,7 +74,7 @@ public class Counter <: CommonMethodComponent<Counter> & CounterAttribute {
 }
 
 /**
- * Defines the Counter component attributes.
+ * Defines the Counter attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -84,7 +84,7 @@ sealed interface CounterAttribute <: CommonMethod<CounterAttribute> {
 /**
  * Indicates whether the increase button of counter component is available or not.
  *
- * @param { ?Bool } value - Whether to enable the increment button.
+ * @param { ?Bool } value - If true, the increase button is available and can respond to operations such as clicking. If false, click operations are not responded.
  * @returns { CounterAttribute } The attribute of the Counter.
  */
 @!APILevel[
@@ -96,7 +96,7 @@ sealed interface CounterAttribute <: CommonMethod<CounterAttribute> {
 /**
  * Indicates whether the decrease button of counter component is available or not.
  *
- * @param { ?Bool } value - Whether to enable the decrement button.
+ * @param { ?Bool } value - If true, the decrease button is available and can respond to operations such as clicking. If false, click operations are not responded.
  * @returns { CounterAttribute } The attribute of the Counter.
  */
 @!APILevel[
@@ -106,7 +106,8 @@ sealed interface CounterAttribute <: CommonMethod<CounterAttribute> {
     func enableDec(value: ?Bool): CounterAttribute
 
 /**
- * Listens to the event when the counter value increases.
+ * Listen to the event that the value increases.
+ *
  *
  * @param { ?VoidCallback } event - The callback function triggered when the counter value increases.
  * @returns { CounterAttribute } The attribute of the Counter.
@@ -118,7 +119,8 @@ sealed interface CounterAttribute <: CommonMethod<CounterAttribute> {
     func onInc(event: ?VoidCallback): CounterAttribute
 
 /**
- * Listens to the event when the counter value decreases.
+ * Listens to the number decrease event.
+ *
  *
  * @param { ?VoidCallback } event - The callback function triggered when the counter value decreases.
  * @returns { CounterAttribute } The attribute of the Counter.

@@ -8,7 +8,7 @@ import ohos.labels.APILevel
 import ohos.resource.*
 
 /**
- * Defines the icon resources for different states of the sidebar control button.
+ * ButtonStyle icons.
  */
 @!APILevel[
     since: "22",
@@ -16,7 +16,7 @@ import ohos.resource.*
 ]
 public class ButtonIconOptions {
 /**
- * Resource string for the icon when the sidebar is shown.
+ * Defines whether an icon is shown.
  */
 @!APILevel[
     since: "22",
@@ -25,7 +25,7 @@ public class ButtonIconOptions {
     public var shown: ?ResourceStr
 
 /**
- * Resource string for the icon when the sidebar is hidden.
+ * Defines whether an icon is hidden.
  */
 @!APILevel[
     since: "22",
@@ -34,7 +34,7 @@ public class ButtonIconOptions {
     public var hidden: ?ResourceStr
 
 /**
- * Resource string for the icon when the sidebar is switching between shown and hidden states.
+ * Defines whether an icon is switching.
  */
 @!APILevel[
     since: "22",
@@ -138,8 +138,8 @@ public class ButtonStyle {
 }
 
 /**
- * Provides a class for the style of a divider including stroke width, color, start margin and end margin.
- * Defines the appearance properties of the divider between the sidebar and main content.
+ * Provides a class for the style of an divider including stroke width, color, start margin
+ * and end margin.
  */
 @!APILevel[
     since: "22",
@@ -157,7 +157,7 @@ public class DividerStyle {
     public var strokeWidth: ?Length
 
 /**
- * Define the color width of the divider.
+ * Define the color of the divider
  */
 @!APILevel[
     since: "22",
@@ -166,7 +166,8 @@ public class DividerStyle {
     public var color: ?ResourceColor
 
 /**
- * Distance from the start of the divider to the edge of the container.
+ * Define the start margin of the divider
+ *
  * @default 0.vp
  */
 @!APILevel[
@@ -176,7 +177,8 @@ public class DividerStyle {
     public var startMargin: ?Length
 
 /**
- * Distance from the end of the divider to the edge of the container.
+ * Define the end margin of the divider
+ *
  * @default 0.vp
  */
 @!APILevel[
@@ -203,7 +205,7 @@ public class DividerStyle {
 }
 
 /**
- * A container component that provides a collapsible sidebar for navigation or additional content.
+ * Defines SideBarContainer Component.
  */
 @!APILevel[
     since: "22",
@@ -273,9 +275,7 @@ public class SideBarContainer <: CommonMethodComponent<SideBarContainer> & SideB
     public func onChange(callback: ?(Bool) -> Unit): This
 
 /**
- * Sets the length of sidebar.
- * Configures the width of the sidebar when it is shown.
- * default value is 240.vp.
+ * Sets the length of sidebar. default value is 240vp
  *
  * @param { ?Length } value - The width of the sidebar. The default value is 240.vp.
  * @returns { This } Returns the SideBarContainer instance.
@@ -287,8 +287,7 @@ public class SideBarContainer <: CommonMethodComponent<SideBarContainer> & SideB
     public func sideBarWidth(value: ?Length): This
 
 /**
- * Sets the min length of sidebar.
- * The default value is 200.vp.
+ * Sets the min length of sidebar. default value is 200vp
  *
  * @param { ?Length } value - The minimum width of the sidebar.
  * @returns { This } Returns the SideBarContainer instance.
@@ -300,8 +299,7 @@ public class SideBarContainer <: CommonMethodComponent<SideBarContainer> & SideB
     public func minSideBarWidth(value: ?Length): This
 
 /**
- * Sets the max length of sidebar.
- * The default value is 280.vp.
+ * Sets the max length of sidebar. default value is 280vp
  *
  * @param { ?Length } value - The maximum width of the sidebar.
  * @returns { This } Returns the SideBarContainer instance.
@@ -313,8 +311,7 @@ public class SideBarContainer <: CommonMethodComponent<SideBarContainer> & SideB
     public func maxSideBarWidth(value: ?Length): This
 
 /**
- * Sets whether to automatically hide when drag sidebar width is less than the minimum width.
- * The default value is true.
+ * Sets whether to automatically hide when drag sidebar width is less than the minimum width. default value is true
  *
  * @param { ?Bool } value - Whether to automatically hide.
  * @returns { This } Returns the SideBarContainer instance.
@@ -326,8 +323,7 @@ public class SideBarContainer <: CommonMethodComponent<SideBarContainer> & SideB
     public func autoHide(value: ?Bool): This
 
 /**
- * Called when determining the location of the sidebar.
- * The default value is SideBarPosition.Start.
+ * Called when determining the location of the sidebar. default value is Start
  *
  * @param { ?SideBarPosition } value - The position of the sidebar.
  * @returns { This } Returns the SideBarContainer instance.
@@ -339,10 +335,9 @@ public class SideBarContainer <: CommonMethodComponent<SideBarContainer> & SideB
     public func sideBarPosition(value: ?SideBarPosition): This
 
 /**
- * Set divider style for sideBarContainer.
- * Configures the appearance of the divider between the sidebar and main content.
+ * Set divider style for sideBarContainer
  *
- * @param { ?DividerStyle } value - Indicates the style of the divider or whether to show the divider.
+ * @param { ?DividerStyle } value - indicates the style of the divider or whether to show the divider.
  * @returns { This } Returns the SideBarContainer instance.
  */
 @!APILevel[
@@ -352,10 +347,9 @@ public class SideBarContainer <: CommonMethodComponent<SideBarContainer> & SideB
     public func divider(value: ?DividerStyle): This
 
 /**
- * Sets the min length of content.
- * The default value is 360.vp.
+ * Sets the min length of content. default value is 360vp
  *
- * @param { ?Length } value - Min length of content.
+ * @param { ?Length } value - min length of content.
  * @returns { This } Returns the SideBarContainer instance.
  */
 @!APILevel[
@@ -424,8 +418,8 @@ sealed interface SideBarContainerAttribute <: CommonMethod<SideBarContainerAttri
     func onChange(callback: ?(Bool) -> Unit): SideBarContainerAttribute
 
 /**
- * Configures the width of the sidebar when it is shown.
- * default value is 240.vp.
+ * Sets the length of sidebar.
+ * default value is 240vp.
  *
  * @param { ?Length } value - The width of the sidebar. The default value is 240.vp.
  * @returns { SideBarContainerAttribute } Returns the sidebar container attribute.
@@ -437,8 +431,8 @@ sealed interface SideBarContainerAttribute <: CommonMethod<SideBarContainerAttri
     func sideBarWidth(value: ?Length): SideBarContainerAttribute
 
 /**
- * Configures the minimum width the sidebar can be resized to.
- * default value is 200.vp.
+ * Sets the min length of sidebar.
+ * default value is 200vp.
  *
  * @param { ?Length } value - The minimum width of the sidebar.
  * @returns { SideBarContainerAttribute } Returns the sidebar container attribute.
@@ -450,8 +444,8 @@ sealed interface SideBarContainerAttribute <: CommonMethod<SideBarContainerAttri
     func minSideBarWidth(value: ?Length): SideBarContainerAttribute
 
 /**
- * Configures the maximum width the sidebar can be resized to.
- * default value is 280.vp.
+ * Sets the max length of sidebar.
+ * default value is 280vp.
  *
  * @param { ?Length } value - The maximum width of the sidebar.
  * @returns { SideBarContainerAttribute } Returns the sidebar container attribute.
@@ -464,7 +458,7 @@ sealed interface SideBarContainerAttribute <: CommonMethod<SideBarContainerAttri
 
 /**
  * Sets whether to automatically hide when drag sidebar width is less than the minimum width.
- * The default value is true.
+ * default value is true.
  *
  * @param { ?Bool } value - Whether to automatically hide.
  * @returns { SideBarContainerAttribute } Returns the sidebar container attribute.
@@ -477,7 +471,7 @@ sealed interface SideBarContainerAttribute <: CommonMethod<SideBarContainerAttri
 
 /**
  * Called when determining the location of the sidebar.
- * The default value is SideBarPosition.Start.
+ * default value is Start.
  *
  * @param { ?SideBarPosition } value - The position of the sidebar.
  * @returns { SideBarContainerAttribute } Returns the sidebar container attribute.
@@ -489,9 +483,9 @@ sealed interface SideBarContainerAttribute <: CommonMethod<SideBarContainerAttri
     func sideBarPosition(value: ?SideBarPosition): SideBarContainerAttribute
 
 /**
- * Configures the appearance of the divider between the sidebar and main content.
+ * Set divider style for sideBarContainer
  *
- * @param { ?DividerStyle } value - Indicates the style of the divider or whether to show the divider.
+ * @param { ?DividerStyle } value - indicates the style of the divider or whether to show the divider.
  * @returns { SideBarContainerAttribute } Returns the sidebar container attribute.
  */
 @!APILevel[
@@ -502,9 +496,9 @@ sealed interface SideBarContainerAttribute <: CommonMethod<SideBarContainerAttri
 
 /**
  * Sets the min length of content.
- * The default value is 360.vp.
+ * default value is 360vp.
  *
- * @param { ?Length } value - Min length of content.
+ * @param { ?Length } value - min length of content.
  * @returns { SideBarContainerAttribute } Returns the sidebar container attribute.
  */
 @!APILevel[

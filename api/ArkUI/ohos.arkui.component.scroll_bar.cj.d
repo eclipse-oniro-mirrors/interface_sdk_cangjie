@@ -34,7 +34,7 @@ public class ScrollBar <: CommonMethodComponent<ScrollBar> & ScrollBarAttribute 
 }
 
 /**
- * Defines the ScrollBar attribute functions.
+ * Defines the scrollbar attribute functions.
  */
 @!APILevel[
     since: "22",

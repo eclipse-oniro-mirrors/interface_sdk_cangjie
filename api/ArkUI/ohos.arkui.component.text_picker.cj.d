@@ -16,7 +16,7 @@ import ohos.labels.APILevel
 public type OnTextPickerChangeCallback = (String, UInt32) -> Unit
 
 /**
- * A text picker dialog box is a dialog box that allows users to select text from the given range.
+ * Creates a text picker based on the selection range specified by range.
  */
 @!APILevel[
     since: "22",
@@ -43,8 +43,9 @@ public class TextPicker <: CommonMethodComponent<TextPicker> & TextPickerAttribu
 /**
  * Sets the height of each item in the picker.
  *
- * @param { ?Length } value - Height of each item in the picker. The default value are 56.vp (selected) and 36.vp (unselected).
- * <br>For the number type, the value range is [0, +∞).
+ * @param { ?Length } value - Height of each item in the picker. The default value 56.vp (selected) and 36.vp (unselected).
+ *     For the number type, the value range is [0, +∞).
+ *     For the string type, only numeric string values, for example, "56" are supported.
  * @returns { This } Returns TextPicker instance to allow method chaining.
  */
 @!APILevel[
@@ -66,10 +67,9 @@ public class TextPicker <: CommonMethodComponent<TextPicker> & TextPickerAttribu
     public func canLoop(value: ?Bool): This
 
 /**
- * Triggered when the text picker snaps to the selected item.
- * Compared to onChange, this API supports the None type for the callback parameter.
+ * Triggered when the text picker snaps to the selected item. Compared to onChange, this API supports the None type for the callback parameter
  *
- * @param { ?OnTextPickerChangeCallback } callback - The callback of onChange.
+ * @param { ?OnTextPickerChangeCallback } callback - the callback of onChange.
  * @returns { This } Returns TextPicker instance to allow method chaining.
  */
 @!APILevel[
@@ -80,7 +80,7 @@ public class TextPicker <: CommonMethodComponent<TextPicker> & TextPickerAttribu
 }
 
 /**
- * Defines the TextPicker component attributes.
+ * Style the text selector.
  */
 @!APILevel[
     since: "22",
@@ -90,8 +90,9 @@ sealed interface TextPickerAttribute <: CommonMethod<TextPickerAttribute> {
 /**
  * Sets the height of each item in the picker.
  *
- * @param { ?Length } value - Height of each item in the picker. The default value are 56.vp (selected) and 36.vp (unselected).
- * <br>For the number type, the value range is [0, +∞).
+ * @param { ?Length } value - Height of each item in the picker.
+ *     For the number type, the value range is [0, +∞).
+ *     For the string type, only numeric string values, for example, "56", are supported.
  * @returns { TextPickerAttribute } Returns the text picker attribute.
  */
 @!APILevel[
@@ -116,7 +117,7 @@ sealed interface TextPickerAttribute <: CommonMethod<TextPickerAttribute> {
  * Triggered when the text picker snaps to the selected item.
  * Compared to onChange, this API supports the None type for the callback parameter.
  *
- * @param { ?OnTextPickerChangeCallback } callback - The callback of onChange.
+ * @param { ?OnTextPickerChangeCallback } callback - the callback of onChange.
  * @returns { TextPickerAttribute } Returns the text picker attribute.
  */
 @!APILevel[

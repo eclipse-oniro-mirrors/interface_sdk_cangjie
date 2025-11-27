@@ -20,10 +20,11 @@ import std.deriving.Derive
 ]
 public class AppStorage {
 /**
- * Establishes a bidirectional synchronization between a component variable and an AppStorage property.
+ * Create and return a two-way sync ("link") to named property
+ * Same as @see LocalStorage.link()
  *
  * @param { String } propName - name of source property in AppStorage
- * @returns { ?ObservedProperty<T> } The instance of ObservedProperty<T>, return 'None' if named property does not already exist in AppStorage.
+ * @returns { ?ObservedProperty<T> } instance of ObservedProperty<T> return None if named property does not already exist in AppStorage.
  */
 @!APILevel[
     since: "22",
@@ -65,7 +66,7 @@ public class AppStorage {
  *
  * @param { String } propName - name of source property in AppStorage.
  * @param { T } defaultValue - value to be used for initializing new property in AppStorage.
- * @returns { ObservedProperty<T> } The instance of  ObservedProperty<T>.
+ * @returns { ObservedProperty<T> } instance of ObservedProperty<T>.
  */
 @!APILevel[
     since: "22",
@@ -74,10 +75,9 @@ public class AppStorage {
     public static func setAndProp<T>(propName: String, defaultValue: T): ObservedProperty<T>
 
 /**
- * Checks if AppStorage has a property with given name.
- * Returns true if property with given name exists.
- * Same as ES6 Map.prototype.has().
- * Same as see LocalStorage.has().
+ * Checks if AppStorage has a property with given name
+ * returns true if property with given name exists
+ * Same as see LocalStorage.has()
  *
  * @param { String } propName - searched property
  * @returns { Bool } true if property with such name exists in AppStorage.
@@ -89,8 +89,8 @@ public class AppStorage {
     public static func has(propName: String): Bool
 
 /**
- * Same as see LocalStorage.get().
- * Obtain the value of property with given name, returns undefined if the property does not exist in AppStorage.
+ * Same as see LocalStorage.get()
+ * Obtain the value of property with given name, returns None if the property does not exist in AppStorage.
  *
  * @param { String } propName - name of the property to retrieve
  * @returns { ?T } property value of type T if found or None.
@@ -119,8 +119,8 @@ public class AppStorage {
 /**
  * Set value of given property, if it exists, see set() .
  * Add property if no property with given name in AppStorage, and initialize with given value.
- * newValue can be undefined or null from API 12.
- * see LocalStorage.setOrCreate().
+ * newValue can be None or null from API 12
+ * see LocalStorage.setOrCreate()
  *
  * @param { String } propName - name of the property to set or create
  * @param { T } newValue - must be of type T.
@@ -133,19 +133,18 @@ public class AppStorage {
     public static func setOrCreate<T>(propName: String, newValue: T): Unit
 
 /**
- * Delete property with given name from AppStorage.
+ * Delete property from StorageBase
  * Use with caution:
- * Before deleting a prop from AppStorage all its subscribers need to
+ * Before deleting a prop from LocalStorage all its subscribers need to
  * unsubscribe from the property.
- * This method fails and returns false if given property still has subscribers.
- * Another reason for failing is unknown property name.
+ * This method fails and returns false if given property still has subscribers
+ * Another reason for failing is unknown property.
  * Developer advise:
- * Subscribers to a property in AppStorage are created with see link(), see prop()
- * and also via @StorageLink and @StorageProp state variable decorators.
+ * Subscribers are created with see link(), see prop()
+ * and also via @LocalStorageLink and @LocalStorageProp state variable decorators.
  * That means as long as their is a @Component instance that uses such decorated variable
- * or a sync relationship with a SubscribedAbstractProperty variable the property can not
- * (and also should not!) be deleted from AppStorage.
- * Same as see LocalStorage.delete()
+ * or a sync relationship with a SubscribedAbstractProperty variable the property can nit
+ * (and also should not!) be deleted from LocalStorage.
  *
  * @param { String } propName - name of the property to delete
  * @returns { Bool } false if method failed.
@@ -157,7 +156,7 @@ public class AppStorage {
     public static func delete(propName: String): Bool
 
 /**
- * Return the array of all keys.
+ * returns an Array of all environment property keys
  *
  * @returns { EquatableCollection<String> } the array of all keys.
  */
@@ -168,7 +167,8 @@ public class AppStorage {
     public static func keys(): EquatableCollection<String>
 
 /**
- * Method returns the number of properties currently in AppStorage.
+ * Returns number of properties in LocalStorage
+ * same as Map.prototype.size()
  *
  * @returns { Int64 } Returns the number of properties currently in AppStorage.
  */
@@ -179,8 +179,7 @@ public class AppStorage {
     public static func size(): Int64
 
 /**
- * Delete all properties from the AppStorage.
- * Precondition is that there are no subscribers, see Delete().
+ * Called when data is cleared.
  *
  * @returns { Bool } false and deletes no properties if there is any property that still has subscribers.
  */
@@ -192,7 +191,7 @@ public class AppStorage {
 }
 
 /**
- * Represents the color mode (theme) of the device.
+ * Defines the ColorMode of device.
  */
 @!APILevel[
     since: "22",
@@ -200,7 +199,7 @@ public class AppStorage {
 ]
 public enum ColorMode {
 /**
- * Represents the light color theme of the device.
+ * Light mode.
  */
 @!APILevel[
     since: "22",
@@ -209,7 +208,7 @@ public enum ColorMode {
     Light
     | 
 /**
- * Represents the dark color theme of the device.
+ * Dark mode.
  */
 @!APILevel[
     since: "22",
@@ -252,7 +251,7 @@ extend ColorMode <: Equatable<ColorMode> {
 ]
 public enum LayoutDirection {
 /**
- * Represents left-to-right layout direction.
+ * Elements are laid out from left to right.
  */
 @!APILevel[
     since: "22",
@@ -261,7 +260,7 @@ public enum LayoutDirection {
     Ltr
     | 
 /**
- * Represents right-to-left layout direction.
+ * Elements are laid out from right to left.
  */
 @!APILevel[
     since: "22",
@@ -270,7 +269,7 @@ public enum LayoutDirection {
     Rtl
     | 
 /**
- * Represents automatic layout direction based on locale.
+ * Elements are laid out from auto.
  */
 @!APILevel[
     since: "22",
@@ -357,7 +356,7 @@ public class LocalStorage {
 /**
  * Construct new instance of LocalStorage
  * initialize with all properties and their values that Object.keys(params) returns
- * Property values must not be undefined.
+ * Property values must not be None.
  */
 @!APILevel[
     since: "22",
@@ -368,7 +367,6 @@ public class LocalStorage {
 /**
  * Check if LocalStorage has a property with given name.
  * Return true if property with given name exists.
- * Same as ES6 Map.prototype.has().
  *
  * @param { String } propName - searched property name.
  * @returns { Bool } true if property with such name exists in LocalStorage.
@@ -382,7 +380,7 @@ public class LocalStorage {
 /**
  * Return the array of all keys.
  *
- * @returns { EquatableCollection<String> } the array of all keys.
+ * @returns { EquatableCollection<String> } return an EquatableCollection type.
  */
 @!APILevel[
     since: "22",
@@ -404,7 +402,7 @@ public class LocalStorage {
 
 /**
  * Returns value of given property.
- * Returns undefined if no property with this name.
+ * Returns None if no property with this name.
  *
  * @param { String } propName - name of the property to retrieve
  * @returns { ?T } property value if found.
@@ -418,7 +416,7 @@ public class LocalStorage {
 /**
  * Set value of given property in LocalStorage.
  * Method sets nothing and returns false if property with this name does not exist in LocalStorage.
- * newValue can be undefined or null from API 12.
+ * newValue can be None or null from API 12.
  *
  * @param { String } propName - name of the property to set
  * @param { T } newValue - must be of type T.
@@ -433,10 +431,10 @@ public class LocalStorage {
 /**
  * Set value of given property, if it exists, see set() .
  * Add property if no property with given name and initialize with given value.
- * newValue can be undefined or null from API 12.
+ * newValue can be None or null from API 12.
  *
  * @param { String } propName - name of the property to set or create
- * @param { T } newValue - must be of type T, can be undefined or null.
+ * @param { T } newValue - must be of type T, can be None or null.
  * @returns { Bool } true on success, i.e. when above conditions are satisfied, otherwise false.
  */
 @!APILevel[
@@ -449,7 +447,7 @@ public class LocalStorage {
  * Create and return a two-way sync "(link") to named property.
  *
  * @param { String } propName - name of source property in LocalStorage.
- * @returns { ?ObservedProperty<T> } The instance of ObservedProperty<T>.
+ * @returns { ?ObservedProperty<T> } instance of ObservedProperty<T> return None if named property does not already exist in LocalStorage Apps can use SDK functions of base class ObservedProperty<T>.
  */
 @!APILevel[
     since: "22",
@@ -489,7 +487,7 @@ public class LocalStorage {
  * @param { String } propName - name of source property in LocalStorage.
  * @param { T } defaultValue - value to be used for initializing new property in LocalStorage.
  *         Default value must be of type T.
- * @returns { ObservedProperty<T> } The instance of ObservedProperty<T>.
+ * @returns { ObservedProperty<T> } instance of ObservedProperty<T> Apps can use SDK functions of base class ObservedProperty<T>.
  */
 @!APILevel[
     since: "22",
@@ -567,7 +565,7 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public init(initValue: Array<T>)
 
 /**
- * Gets the current ArrayList value. And record the dependency elements that need to be updated.
+ * Reads value of the sync'ed AppStorage/LocalStorage property.
  *
  * @returns { ArrayList<T> } The current ArrayList value.
  */
@@ -578,7 +576,10 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func get(): ArrayList<T>
 
 /**
- * Sets the current ArrayList value. Enable observers to receive updated information whenever state variables change.
+ * Updates the value of value of the sync'ed AppStorage/LocalStorage property.
+ * Sets new value, must be of type T, can be None or null.
+ * `let link : SubscribedAbstractProperty =AppStorage.Link("foo")`
+ * then `link.set("Hello")` will set the value of "foo" property in AppStorage.
  *
  * @param { ArrayList<T> } newValue - The new ArrayList value to set.
  * @returns { Unit }
@@ -626,7 +627,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public operator func [](index: Int64): T
 
 /**
- * Sets the element at the specified index in the observed array list. Enable observers to receive updated information whenever state variables change.
+ * Sets the element at the specified index in the observed array list.
+ * Enable observers to receive updated information whenever state variables change.
  *
  * @param { Int64 } index - The zero-based index of the element to set.
  * @param { T } value - The new value to set at the specified index.
@@ -659,7 +661,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func isEmpty(): Bool
 
 /**
- * Creates a shallow copy of the observed array list. This function also record the dependency elements that need to be updated.
+ * Creates a shallow copy of the observed array list.
+ * This function also record the dependency elements that need to be updated.
  *
  * @returns { ObservedArrayList<T> } A new ObservedArrayList instance with the same elements.
  */
@@ -681,7 +684,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func clear(): Unit
 
 /**
- * Adds an element to the end of the observed array list. This function can enable observers to receive updated information whenever state variables change.
+ * Adds an element to the end of the observed array list.
+ * This function can enable observers to receive updated information whenever state variables change.
  *
  * @param { T } element - The element to append to the array list.
  * @returns { Unit }
@@ -693,7 +697,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func append(element: T): Unit
 
 /**
- * Adds all elements from a collection to the end of the observed array list. This function can enable observers to receive updated information whenever state variables change.
+ * Adds all elements from a collection to the end of the observed array list.
+ * This function can enable observers to receive updated information whenever state variables change.
  *
  * @param { Collection<T> } elements - The collection of elements to append.
  * @returns { Unit }
@@ -705,7 +710,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func appendAll(elements: Collection<T>): Unit
 
 /**
- * Inserts an element at the specified position in the observed array list. This function can enable observers to receive updated information whenever state variables change.
+ * Inserts an element at the specified position in the observed array list.
+ * This function can enable observers to receive updated information whenever state variables change.
  *
  * @param { Int64 } index - The zero-based index at which to insert the element.
  * @param { T } element - The element to insert.
@@ -718,7 +724,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func insert(index: Int64, element: T): Unit
 
 /**
- * Inserts all elements from a collection at the specified position in the observed array list. This function can enable observers to receive updated information whenever state variables change.
+ * Inserts all elements from a collection at the specified position in the observed array list.
+ * This function can enable observers to receive updated information whenever state variables change.
  *
  * @param { Int64 } index - The zero-based index at which to insert the elements.
  * @param { Collection<T> } elements - The collection of elements to insert.
@@ -731,7 +738,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func insertAll(index: Int64, elements: Collection<T>): Unit
 
 /**
- * Adds an element to the beginning of the observed array list. This function can enable observers to receive updated information whenever state variables change.
+ * Adds an element to the beginning of the observed array list.
+ * This function can enable observers to receive updated information whenever state variables change.
  *
  * @param { T } element - The element to prepend to the array list.
  * @returns { Unit }
@@ -743,7 +751,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func prepend(element: T): Unit
 
 /**
- * Adds all elements from a collection to the beginning of the observed array list. This function can enable observers to receive updated information whenever state variables change.
+ * Adds all elements from a collection to the beginning of the observed array list.
+ * This function can enable observers to receive updated information whenever state variables change.
  *
  * @param { Collection<T> } elements - The collection of elements to prepend.
  * @returns { Unit }
@@ -755,7 +764,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func prependAll(elements: Collection<T>): Unit
 
 /**
- * Removes and returns the element at the specified index. Enable observers to receive updated information whenever state variables change.
+ * Removes and returns the element at the specified index.
+ * Enable observers to receive updated information whenever state variables change.
  *
  * @param { Int64 } index - The zero-based index of the element to remove.
  * @returns { T } The removed element.
@@ -767,7 +777,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public func remove(index: Int64): T
 
 /**
- * Removes elements in the specified range from the observed array list. Enable observers to receive updated information whenever state variables change.
+ * Removes elements in the specified range from the observed array list.
+ * Enable observers to receive updated information whenever state variables change.
  *
  * @param { Range<Int64> } range - The range of indices to remove.
  * @returns { Unit }
@@ -781,7 +792,8 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
 /**
  * Removes all elements that satisfy the provided predicate.
  *
- * @param { (T) -> Bool } predicate - A function that returns true for elements to be removed. Enable observers to receive updated information whenever state variables change.
+ * @param { (T) -> Bool } predicate - A function that returns true for elements to be removed.
+ * Enable observers to receive updated information whenever state variables change.
  * @returns { Unit }
  */
 @!APILevel[
@@ -792,7 +804,7 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
 }
 
 /**
- * Provides mechanisms for persisting AppStorage properties across application sessions.
+ * Defines the PersistentStorage interface.
  */
 @!APILevel[
     since: "22",
@@ -800,7 +812,10 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
 ]
 public class PersistentStorage <: Observer {
 /**
- * Makes an AppStorage property persistent across application sessions.
+ * Add property 'key' to AppStorage properties whose current value will be
+ * persistent.
+ * If AppStorage does not include this property it will be added and initializes
+ * with given value
  *
  * @param { String } key - name of the property to persist
  * @param { T } defaultValue - default value for the property if not already present

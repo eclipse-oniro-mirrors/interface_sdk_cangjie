@@ -21,7 +21,7 @@ import std.convert.*
 ]
 public class DecorationStyleResult {
 /**
- * The font decoration type.
+ * Font decoration.
  */
 @!APILevel[
     since: "22",
@@ -30,7 +30,7 @@ public class DecorationStyleResult {
     public var decorationType: ?TextDecorationType
 
 /**
- * The font decoration color.
+ * Font decoration color.
  */
 @!APILevel[
     since: "22",
@@ -415,7 +415,7 @@ public class RichEditorImageSpanResult <: RichEditorSpanResult {
 }
 
 /**
- * Defines the span result.
+ * Defines the types of spans in rich editor.
  */
 @!APILevel[
     since: "22",
@@ -546,6 +546,8 @@ public class TextRange {
 
 /**
  * End offset, the default value is text length.
+ *
+ * @default text length
  */
 @!APILevel[
     since: "22",
@@ -594,7 +596,7 @@ public type PasteEventCallback = (PasteEvent) -> Unit
 
 /**
  * Callback after content changed.
- * 
+ *
  * @param { TextRange } rangeBefore - Range of content that had been replaced.
  * @param { TextRange } rangeAfter - Range of content that newly added.
  */
@@ -691,13 +693,13 @@ public class RichEditor <: CommonMethodComponent<RichEditor> & RichEditorAttribu
  * Get text value information when completed input.
  *
  * @param { ?Callback<RichEditorTextSpanResult, Unit> } callback - The triggered function when text content has been inserted.
- * @returns { RichEditor }
+ * @returns { This }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func onImeInputComplete(callback: ?Callback<RichEditorTextSpanResult, Unit>): RichEditor
+    public func onImeInputComplete(callback: ?Callback<RichEditorTextSpanResult, Unit>): This
 
 /**
  * Notify that the deletion has been completed.
@@ -910,7 +912,7 @@ sealed interface RichEditorAttribute <: CommonMethod<RichEditorAttribute> {
 }
 
 /**
- * Defines the type of leading margin.
+ * Leading margin.
  */
 @!APILevel[
     since: "22",
@@ -947,7 +949,7 @@ None
 }
 
 /**
- * Text decoration.
+ * Defines the options of decoration.
  */
 @!APILevel[
     since: "22",
@@ -1466,7 +1468,7 @@ public class RichEditorController <: RichEditorBaseController {
     public func addTextSpan(content!: ?ResourceStr, options!: ?RichEditorTextSpanOptions = None): Int32
 
 /**
- * Add an image span.
+ * Add a image span.
  *
  * @param { ?ResourceStr } value - image value.
  * @param { ?RichEditorImageSpanOptions } [options] - image span info.

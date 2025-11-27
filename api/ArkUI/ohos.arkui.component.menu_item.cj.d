@@ -8,7 +8,7 @@ import ohos.labels.APILevel
 import ohos.resource.*
 
 /**
- * A component that represents a single item within a Menu component, typically with text, icons, and optional submenus.
+ * Defines MenuItem Component.
  */
 @!APILevel[
     since: "22",
@@ -57,8 +57,12 @@ public class MenuItem <: CommonMethodComponent<MenuItem> & MenuItemAttribute {
 
 /**
  * Whether the relevant check icon is displayed when a menu item is selected.
+ * Use type ResourceStr or SymbolGlyphModifier to specify icon instead of the default check mark.
  *
- * @param { ?Bool } value - Indicates whether to display the check icon when selected.
+ * @param { ?Bool } value - Indicates whether to display icon when selected.
+ *     true: displays the default check mark when selected.
+ *     false: does not displays icon when selected.
+ *     ResourceStr or SymbolGlyphModifier: displays the specified icon when selected.
  * @returns { This } Returns the MenuItem instance.
  */
 @!APILevel[
@@ -81,7 +85,8 @@ public class MenuItem <: CommonMethodComponent<MenuItem> & MenuItemAttribute {
     public func selectIcon(value: ?ResourceStr): This
 
 /**
- * Configures the font properties of the menu item content text.
+ * Sets the content font style.
+ * Family and style are not supported currently and will be fixed in future.
  *
  * @param { ?Length } [size] - Indicates the font size of content text.
  * @param { ?FontWeight } [weight] - Indicates the font weight of content text.
@@ -101,8 +106,7 @@ public class MenuItem <: CommonMethodComponent<MenuItem> & MenuItemAttribute {
     ): This
 
 /**
- * Sets the font color of content text.
- * Configures the font color of the menu item content text.
+ * Sets the font color of content text
  *
  * @param { ?ResourceColor } value - Indicates the font color of content text.
  * @returns { This } Returns the MenuItem instance.
@@ -135,8 +139,7 @@ public class MenuItem <: CommonMethodComponent<MenuItem> & MenuItemAttribute {
     ): This
 
 /**
- * Sets the font color of label info text.
- * Configures the font color of the menu item label text.
+ * Sets the font color of label info text
  *
  * @param { ?ResourceColor } value - Indicates the font color of label info text.
  * @returns { This } Returns the MenuItem instance.
@@ -163,7 +166,7 @@ public class MenuItem <: CommonMethodComponent<MenuItem> & MenuItemAttribute {
 }
 
 /**
- *  Defines the MenuItem component attributes.
+ * Defines the MenuItem component attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -185,9 +188,11 @@ sealed interface MenuItemAttribute <: CommonMethod<MenuItemAttribute> {
 
 /**
  * Whether the relevant check icon is displayed when a menu item is selected.
- * Controls the visibility of the check icon when the menu item is selected.
  *
- * @param { ?Bool } value - Indicates whether to display the check icon when selected.
+ * @param { ?Bool } value - Indicates whether to display icon when selected.
+ *     true: displays the default check mark when selected.
+ *     false: does not displays icon when selected.
+ *     ResourceStr or SymbolGlyphModifier: displays the specified icon when selected.
  * @returns { MenuItemAttribute } Returns the menu item attribute.
  */
 @!APILevel[
@@ -229,7 +234,7 @@ sealed interface MenuItemAttribute <: CommonMethod<MenuItemAttribute> {
     ): MenuItemAttribute
 
 /**
- * Configures the font color of the menu item content text.
+ * Sets the font color of content text.
  *
  * @param { ?ResourceColor } value - Indicates the font color of content text.
  * @returns { MenuItemAttribute } Returns the menu item attribute.
@@ -262,7 +267,7 @@ sealed interface MenuItemAttribute <: CommonMethod<MenuItemAttribute> {
     ): MenuItemAttribute
 
 /**
- * Configures the font color of the menu item label text.
+ * Sets the font color of label info text.
  *
  * @param { ?ResourceColor } value - Indicates the font color of label info text.
  * @returns { MenuItemAttribute } Returns the menu item attribute.

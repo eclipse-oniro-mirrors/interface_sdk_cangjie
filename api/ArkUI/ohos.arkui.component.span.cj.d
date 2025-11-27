@@ -8,7 +8,7 @@ import ohos.labels.APILevel
 import ohos.resource.*
 
 /**
- * Define the BaseSpan interface, contains the common methods of span.
+ * Define the BaseSpan class, contains the common methods of span.
  */
 @!APILevel[
     since: "22",
@@ -41,7 +41,9 @@ public class Span <: BaseSpan {
  * Called when the font size is set.
  * Sets the font size for the text in the span.
  *
- * @param { ?Length } value - The font size.
+ * @param { ?Length } value - Default value is 16fp.The default value on wearable devices is 18fp.
+ *     If fontSize is of the number type, the unit fp is used.
+ *     This parameter cannot be set in percentage.
  * @returns { This } Returns Span component instance itself.
  */
 @!APILevel[
@@ -106,7 +108,7 @@ public class Span <: BaseSpan {
  * Called when the text decoration of the text is set.
  * Sets the text decoration (e.g., underline, strikethrough) for the text in the span.
  *
- * @param { ?TextDecorationType } value - The type of text decoration.
+ * @param { ?TextDecorationType } decorationType - The type of text decoration.
  * @param { ?ResourceColor } [color] - The color of the text decoration.
  * @returns { This } Returns Span component instance itself.
  */
@@ -114,7 +116,7 @@ public class Span <: BaseSpan {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func decoration(value!: ?TextDecorationType, color!: ?ResourceColor = None): This
+    public func decoration(decorationType!: ?TextDecorationType, color!: ?ResourceColor = None): This
 
 /**
  * Called when the distance between text fonts is set.
@@ -144,7 +146,10 @@ public class Span <: BaseSpan {
 
 /**
  * Called when a click event occurs.
- * Sets the click event handler for the span.
+ *
+ * NOTE:
+ * Click events cannot be triggered if the finger is pressed for more than 800 ms.
+ * Click events cannot be triggered if the finger moves more than 20.px after pressing down.
  *
  * @param { ?(ClickEvent) -> Unit } event - The click event handler.
  * @returns { This } Returns Span component instance itself.

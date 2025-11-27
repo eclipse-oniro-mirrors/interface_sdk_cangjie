@@ -79,7 +79,7 @@ extend<T> Array<T> <: CollectionEx<T> {}
 extend<T> ArrayList<T> <: CollectionEx<T> {}
 
 /**
- * Defines the color which can use resource.
+ * Instantiate the ColorMetrics class using ResourceColor
  */
 @!APILevel[
     since: "22",
@@ -241,7 +241,7 @@ public class Color <: ResourceColor {
 ]
 public interface Length {
 /**
- * The value of length property.
+ * The value of the Length type.
  */
 @!APILevel[
     since: "22",
@@ -250,7 +250,9 @@ public interface Length {
     prop value: Float64
 
 /**
- * The unit of length property.
+ * The unit of the Length type. The default value is Vp.
+ *
+ * @default Vp
  */
 @!APILevel[
     since: "22",
@@ -268,7 +270,7 @@ public interface Length {
 ]
 public interface LengthProp {
 /**
- * Defines the length property in units of px.
+ * Define the length property in units of px.
  */
 @!APILevel[
     since: "22",
@@ -277,7 +279,7 @@ public interface LengthProp {
     prop px: Length
 
 /**
- * Defines the length property in units of vp.
+ * Define the length property in units of vp.
  */
 @!APILevel[
     since: "22",
@@ -286,7 +288,7 @@ public interface LengthProp {
     prop vp: Length
 
 /**
- * Defines the length property in units of fp.
+ * Define the length property in units of fp.
  */
 @!APILevel[
     since: "22",
@@ -295,7 +297,8 @@ public interface LengthProp {
     prop fp: Length
 
 /**
- * Defines the length property in units of percent.
+ * Define the length property in units of percent.
+ * The value 1 indicates 100%.
  */
 @!APILevel[
     since: "22",
@@ -304,7 +307,7 @@ public interface LengthProp {
     prop percent: Length
 
 /**
- * Defines the length property in units of lpx.
+ * Define the length property in units of lpx.
  */
 @!APILevel[
     since: "22",
@@ -314,7 +317,8 @@ public interface LengthProp {
 }
 
 /**
- * Defines class LengthMetrics.
+ * Defines the Length Metrics.
+ * When the length unit is percent, the value 1 indicates 100%.
  */
 @!APILevel[
     since: "22",
@@ -322,7 +326,7 @@ public interface LengthProp {
 ]
 public class LengthMetrics <: Length {
 /**
- * LengthMetrics constructor.
+ * Density independent pixels, one vp is one pixel on a 160 dpi screen.
  *
  * @param { Float64 } value - The value of length
  * @param { LengthUnit } [unit] - The unit of length. the default unit is LengthUnit.Vp.
@@ -334,8 +338,8 @@ public class LengthMetrics <: Length {
     public init(value: Float64, unit!: LengthUnit = LengthUnit.Vp)
 
 /**
-* Defines the value.
-*/
+ * The value of the LengthMetrics.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
@@ -343,7 +347,9 @@ public class LengthMetrics <: Length {
     public prop value: Float64
 
 /**
- * Defines the unit.
+ * The unit of the LengthMetrics. The default value is Vp.
+ *
+ * @default Vp
  */
 @!APILevel[
     since: "22",
@@ -353,7 +359,7 @@ public class LengthMetrics <: Length {
 }
 
 /**
- * Defines the dimension property with number with units(vp|px|fp|lpx|%).
+ * Defines the Length Unit.
  */
 @!APILevel[
     since: "22",
@@ -361,7 +367,7 @@ public class LengthMetrics <: Length {
 ]
 public enum LengthUnit {
 /**
- * Defines the length property in units of px.
+ * The pixel length metrics unit.
  */
 @!APILevel[
     since: "22",
@@ -370,7 +376,7 @@ public enum LengthUnit {
     Px
     | 
 /**
- * Defines the length property in units of vp.
+ * Density independent pixels, one vp is one pixel on a 160 dpi screen
  */
 @!APILevel[
     since: "22",
@@ -379,7 +385,8 @@ public enum LengthUnit {
     Vp
     | 
 /**
- * Defines the length property in units of fp.
+ * Scale independent pixels. This is like Vp but will be scaled by
+ * user's font size preference.
  */
 @!APILevel[
     since: "22",
@@ -388,7 +395,8 @@ public enum LengthUnit {
     Fp
     | 
 /**
- * Defines the length property in units of percent.
+ * The percentage of either a value from the element's parent or from
+ * another property of the element itself.
  */
 @!APILevel[
     since: "22",
@@ -397,7 +405,7 @@ public enum LengthUnit {
     Percent
     | 
 /**
- * Defines the length property in units of lpx.
+ * Logic pixels used in ACE2.0 instead of PX, and PX is the physical pixels in ACE2.0.
  */
 @!APILevel[
     since: "22",
@@ -483,6 +491,7 @@ extend Float64 <: LengthProp & Length {
 
 /**
  * Defines the length property in units of percent.
+ * The value 1 indicates 100%.
  */
 @!APILevel[
     since: "22",
@@ -500,8 +509,8 @@ extend Float64 <: LengthProp & Length {
     public prop lpx: Length
 
 /**
-* Defines the value.
-*/
+ * The value of the current type.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
@@ -509,8 +518,10 @@ extend Float64 <: LengthProp & Length {
     public prop value: Float64
 
 /**
-* Defines the unit.
-*/
+ * The unit of the current type. The default value is Vp.
+ *
+ * @default Vp
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
@@ -547,7 +558,7 @@ extend Int64 <: LengthProp & Length {
     public prop fp: Length
 
 /**
- * Defines the length property in units of percent.
+ * Defines the length property in units of percent. The value 1 indicates 100%
  */
 @!APILevel[
     since: "22",
@@ -565,8 +576,8 @@ extend Int64 <: LengthProp & Length {
     public prop lpx: Length
 
 /**
-* Defines the value.
-*/
+ * The value of the current type.
+ */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
@@ -574,7 +585,9 @@ extend Int64 <: LengthProp & Length {
     public prop value: Float64
 
 /**
- * Defines the unit.
+ * The unit of the current type. The default value is Vp.
+ *
+ * @default Vp
  */
 @!APILevel[
     since: "22",
@@ -582,6 +595,15 @@ extend Int64 <: LengthProp & Length {
 ]
     public prop unitType: LengthUnit
 }
+
+/**
+ * Defines class MainThreadContext.
+ */
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class MainThreadContext <: ThreadContext
 
 /**
  * UIThread get MainThreadContext instance.

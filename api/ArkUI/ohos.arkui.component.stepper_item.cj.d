@@ -5,7 +5,7 @@ import ohos.base.*
 import ohos.labels.APILevel
 
 /**
- * A component that represents a single step in a Stepper component.
+ * Defines StepperItem Component.
  */
 @!APILevel[
     since: "22",
@@ -24,7 +24,7 @@ public class StepperItem <: CommonMethodComponent<StepperItem> & StepperItemAttr
     public init(child: () -> Unit)
 
 /**
- * The description text for the fallback text button at the bottom of the step navigator.
+ * Called when the value of stepperItem prevLabel is set
  *
  * @param { ?String } value - Text displayed on the previous step button.
  * @returns { This } Returns the StepperItem instance.
@@ -36,7 +36,7 @@ public class StepperItem <: CommonMethodComponent<StepperItem> & StepperItemAttr
     public func prevLabel(value: ?String): This
 
 /**
- * The description text for the next step text button at the bottom of the step navigator.
+ * Called when the value of stepperItem nextLabel is set
  *
  * @param { ?String } value - Text displayed on the next step button.
  * @returns { This } Returns the StepperItem instance.
@@ -48,21 +48,20 @@ public class StepperItem <: CommonMethodComponent<StepperItem> & StepperItemAttr
     public func nextLabel(value: ?String): This
 
 /**
- * Sets the display state of the Step Navigator nextLabel.
- * Configures the status of the step item, which affects its appearance and behavior.
+ * Called when the value of stepperItem status is set
  *
- * @param { ?ItemState } [value] - Display state of the step item.
+ * @param { ?ItemState } [status] - Display state of the step item.
  * @returns { This } Returns the StepperItem instance.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func status(value!: ?ItemState = None): This
+    public func status(status!: ?ItemState = None): This
 }
 
 /**
- * Provides methods for configuring the appearance and behavior of the StepperItem component.
+ * Defines the stepper item attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -70,8 +69,7 @@ public class StepperItem <: CommonMethodComponent<StepperItem> & StepperItemAttr
 ]
 sealed interface StepperItemAttribute <: CommonMethod<StepperItemAttribute> {
 /**
- * The description text for the fallback text button at the bottom of the step navigator.
- * Sets the label text for the previous step button.
+ * Called when the value of stepperItem prevLabel is set
  *
  * @param { ?String } value - Text displayed on the previous step button.
  * @returns { StepperItemAttribute } Returns the stepper item attribute.
@@ -83,7 +81,7 @@ sealed interface StepperItemAttribute <: CommonMethod<StepperItemAttribute> {
     func prevLabel(value: ?String): StepperItemAttribute
 
 /**
- * The description text for the next step text button at the bottom of the step navigator.
+ * Called when the value of stepperItem nextLabel is set
  *
  * @param { ?String } value - Text displayed on the next step button.
  * @returns { StepperItemAttribute } Returns the stepper item attribute.
@@ -95,14 +93,14 @@ sealed interface StepperItemAttribute <: CommonMethod<StepperItemAttribute> {
     func nextLabel(value: ?String): StepperItemAttribute
 
 /**
- * Configures the status of the step item, which affects its appearance and behavior.
+ * Called when the value of stepperItem status is set
  *
- * @param { ?ItemState } value - Display state of the step item.
+ * @param { ?ItemState } status - Display state of the step item.
  * @returns { StepperItemAttribute } Returns the stepper item attribute.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    func status(value!: ?ItemState): StepperItemAttribute
+    func status(status!: ?ItemState): StepperItemAttribute
 }

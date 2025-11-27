@@ -94,7 +94,7 @@ public class RingStyleOptions <: CommonProgressStyleOptions {
     public var shadow: ?Bool
 
 /**
- * The status of progress, default is Progressing. Set to Loading status will trigger the loading animation.
+ * The status of progress, default is PROGRESSING. Set to LOADING status will trigger the loading animation.
  */
 @!APILevel[
     since: "22",
@@ -104,6 +104,8 @@ public class RingStyleOptions <: CommonProgressStyleOptions {
 
 /**
  * Enable smooth effect.
+ *
+ * @default true
  */
 @!APILevel[
     since: "22",
@@ -138,7 +140,7 @@ public class RingStyleOptions <: CommonProgressStyleOptions {
 }
 
 /**
- * Defines the Progress Component.
+ * Defines Progress Component.
  */
 @!APILevel[
     since: "22",
@@ -173,7 +175,7 @@ public class Progress <: CommonMethodComponent<Progress> & ProgressAttribute {
 /**
  * Called when the progress bar foreground is set.
  *
- * @param { ?ResourceColor } value - Indicates the color of the progress.
+ * @param { ?ResourceColor } value - indicates the color of the progress.
  * @returns { This }
  */
 @!APILevel[
@@ -199,7 +201,7 @@ public class Progress <: CommonMethodComponent<Progress> & ProgressAttribute {
 /**
  * Called when the style of progress bar is set.
  *
- * @param { ?RingStyleOptions } value - Indicates the style of the progress.
+ * @param { ?RingStyleOptions } value - indicates the style of the progress.
  * @returns { This }
  */
 @!APILevel[
@@ -210,7 +212,7 @@ public class Progress <: CommonMethodComponent<Progress> & ProgressAttribute {
 }
 
 /**
- * Defines the Progress component attributes.
+ * Defines the progress attribute functions.
  */
 @!APILevel[
     since: "22",
@@ -232,7 +234,7 @@ sealed interface ProgressAttribute <: CommonMethod<ProgressAttribute> {
 /**
  * Called when the progress bar foreground is set.
  *
- * @param { ?ResourceColor } value - Indicates the color of the progress.
+ * @param { ?ResourceColor } value - indicates the color of the progress.
  * @returns { ProgressAttribute }
  */
 @!APILevel[
@@ -258,7 +260,7 @@ sealed interface ProgressAttribute <: CommonMethod<ProgressAttribute> {
 /**
  * Called when the style of progress bar is set.
  *
- * @param { ?RingStyleOptions } value - Indicates the style of the progress.
+ * @param { ?RingStyleOptions } value - indicates the style of the progress.
  * @returns { ProgressAttribute }
  */
 @!APILevel[

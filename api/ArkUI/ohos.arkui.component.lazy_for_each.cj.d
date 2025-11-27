@@ -17,7 +17,7 @@ import std.collection.HashMap
 ]
 public interface IDataSource<T> {
 /**
- * Returns the count of all data items available in the data source.
+ * Obtains the total number of data items.
  *
  * @returns { Int64 } The total number of data items in the data source.
  */
@@ -41,7 +41,7 @@ public interface IDataSource<T> {
     func getData(index: Int64): T
 
 /**
- * Adds a listener that will be notified when the data in the source changes.
+ * Registers a listener for data changes.
  *
  * @param { DataChangeListener } listener - The listener to be registered for data changes.
  */
@@ -52,7 +52,7 @@ public interface IDataSource<T> {
     func registerDataChangeListener(listener: DataChangeListener): Unit
 
 /**
- * Removes a previously registered listener so it will no longer be notified of data changes.
+ * Unregisters the listener for data changes.
  *
  * @param { DataChangeListener } listener - The listener to be unregistered from data changes.
  */
@@ -64,7 +64,7 @@ public interface IDataSource<T> {
 }
 
 /**
- * Data Change Listener.
+ * Listener for data changes.
  */
 @!APILevel[
     since: "22",
@@ -129,8 +129,7 @@ public class DataChangeListener <: RemoteData {
 }
 
 /**
- * Lazy loading.
- * A component that implements lazy loading, rendering only the items currently visible on the screen.
+ * Defines LazyForEach Component.
  */
 @!APILevel[
     since: "22",

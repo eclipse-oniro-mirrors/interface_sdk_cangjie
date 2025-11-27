@@ -51,7 +51,7 @@ public class Column <: CommonMethodComponent<Column> & ColumnAttribute {
 }
 
 /**
- * Defines the Column attribute functions.
+ * Defines the Column component attribute functions.
  */
 @!APILevel[
     since: "22",
