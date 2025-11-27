@@ -30,24 +30,6 @@ public import ohos.resource.AppResource
 ]
 public class ResourceManager {
     /**
-     * Obtains the content of the specified screen density media file corresponding to a specified resource object.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @param { ?ScreenDensity } [density] - The optional parameter ScreenDensity ScreenDensity, A value of None means
-     *                to use the density of current system dpi.
-     * @returns { Array<UInt8> } The content of the specified screen density media file corresponding to the specified resource object.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true,
-        workerthread: true
-    ]
-    public func getMediaContent(resource: AppResource, density!: ?ScreenDensity = None): Array<UInt8>
-
-    /**
      * Obtains the device configuration.
      *
      * @returns { Configuration } the device configuration.
@@ -57,26 +39,6 @@ public class ResourceManager {
         syscap: "SystemCapability.Global.ResourceManager"
     ]
     public func getConfiguration(): Configuration
-
-    /**
-     * Obtains the singular-plural character string represented by the resource object string corresponding to the
-     * specified number.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @param { Int64 } num - Indicates the number.
-     * @returns { String } The singular-plural character string represented by the ID string
-     *         corresponding to the specified number.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     * @throws { BusinessException } 9001006 - The resource is referenced cyclically.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true,
-        workerthread: true
-    ]
-    public func getPluralStringValue(resource: AppResource, num: Int64): String
 
     /**
      * Obtains the array of character strings corresponding to a specified resource name.
@@ -133,24 +95,6 @@ public class ResourceManager {
     public func getString(resId: UInt32, args: Array<ArgsValueType>): String
 
     /**
-     * Obtains string resources associated with a specified resource object.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @param { Array<ArgsValueType> } args - Indicates the formatting string resource parameters.
-     * @returns { String } The character string corresponding to the resource object.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     * @throws { BusinessException } 9001006 - The resource is referenced cyclically.
-     * @throws { BusinessException } 9001007 - Failed to format the resource obtained based on the resource ID.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true
-    ]
-    public func getString(resource: AppResource, args: Array<ArgsValueType>): String
-
-    /**
      * Obtains string resources associated with a specified resource name.
      *
      * @param { String } resName - Indicates the resource name.
@@ -185,22 +129,6 @@ public class ResourceManager {
     public func getBoolean(resId: UInt32): Bool
 
     /**
-     * Obtains the boolean result with a specified resource object.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @returns { Bool } The boolean resource corresponding to the resource object.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     * @throws { BusinessException } 9001006 - The resource is referenced cyclically.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true
-    ]
-    public func getBoolean(resource: AppResource): Bool
-
-    /**
      * Obtains the boolean result with a specified resource name.
      *
      * @param { String } resName - Indicates the resource name.
@@ -231,22 +159,6 @@ public class ResourceManager {
         throwexception: true
     ]
     public func getNumber(resId: UInt32): NumberValueType
-
-    /**
-     * Obtains the number result with a specified resource object.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @returns { NumberValueType } The number resource corresponding to the resource object.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     * @throws { BusinessException } 9001006 - The resource is referenced cyclically.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true
-    ]
-    public func getNumber(resource: AppResource): NumberValueType
 
     /**
      * Obtains the number result with a specified resource name.
@@ -378,23 +290,6 @@ public class ResourceManager {
     public func getColor(resId: UInt32): UInt32
 
     /**
-     * Obtains the color resource corresponding to the specified resource object.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @returns { UInt32 } Indicates the integer reference value representing the color data.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     * @throws { BusinessException } 9001006 - The resource is referenced cyclically.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true,
-        workerthread: true
-    ]
-    public func getColor(resource: AppResource): UInt32
-
-    /**
      * Obtains the color resource corresponding to the specified resource name.
      *
      * @param { String } resName - Indicates the resource name.
@@ -455,23 +350,6 @@ public class ResourceManager {
     public func getMediaContentBase64(resId: UInt32, density!: ?ScreenDensity = None): String
 
     /**
-     * Obtains the content of the specified screen density media file corresponding to the specified resource object.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @param { ?ScreenDensity } [density] - The optional parameter ScreenDensity, A value of None means
-     *                to use the density of current system dpi.
-     * @returns { String } Indicates the obtained Base64 code of the media file.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true
-    ]
-    public func getMediaContentBase64(resource: AppResource, density!: ?ScreenDensity = None): String
-
-    /**
      * Obtains the array of character strings corresponding to a specified resource ID.
      *
      * @param { UInt32 } resId - Indicates the resource ID.
@@ -486,22 +364,6 @@ public class ResourceManager {
         throwexception: true
     ]
     public func getStringArrayValue(resId: UInt32): Array<String>
-
-    /**
-     * Obtains the array of character strings corresponding to a specified resource object.
-     *
-     * @param { AppResource } resource - Indicates the resource object.
-     * @returns { Array<String> } The array of character strings corresponding to the specified resource object.
-     * @throws { BusinessException } 9001001 - Invalid resource ID.
-     * @throws { BusinessException } 9001002 - No matching resource is found based on the resource ID.
-     * @throws { BusinessException } 9001006 - The resource is referenced cyclically.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Global.ResourceManager",
-        throwexception: true
-    ]
-    public func getStringArrayValue(resource: AppResource): Array<String>
 
     /**
      * Obtains the content of the specified screen density media file corresponding to a specified resource name.
