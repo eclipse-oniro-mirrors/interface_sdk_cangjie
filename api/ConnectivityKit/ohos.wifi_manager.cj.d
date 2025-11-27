@@ -415,7 +415,7 @@ public func getScanInfoList(): Array<WifiScanInfo>
 /**
  * Initiate a P2P connection to a device with the specified configuration.
  *
- * @param { WifiP2PConfig } config - Indicates the configuration for connecting to a specific group.
+ * @param { WifiP2pConfig } config - Indicates the configuration for connecting to a specific group.
  * @throws {BusinessException} 201 - Permission denied.
  * @throws {BusinessException} 801 - Capability not supported.
  * @throws {BusinessException} 2801000 - Operation failed.
@@ -427,7 +427,7 @@ public func getScanInfoList(): Array<WifiScanInfo>
     syscap: "SystemCapability.Communication.WiFi.P2P",
     throwexception: true
 ]
-public func p2pConnect(config: WifiP2PConfig): Unit
+public func p2pConnect(config: WifiP2pConfig): Unit
 
 /**
  * Stop an ongoing p2p connection that is being established.
@@ -592,7 +592,7 @@ extend WifiCallbackType <: Hashable {
     since: "22",
     syscap: "SystemCapability.Communication.WiFi.STA"
 ]
-public class WifiInfoElem {
+public class WifiInfoElement {
     /**
      * Element id
      */
@@ -619,7 +619,7 @@ public class WifiInfoElem {
     since: "22",
     syscap: "SystemCapability.Communication.WiFi.P2P"
 ]
-public class WifiP2PConfig {
+public class WifiP2pConfig {
     /**
      * Device mac address
      */
@@ -676,7 +676,7 @@ public class WifiP2PConfig {
     public var deviceAddressType: DeviceAddressType
 
     /**
-     * WifiP2PConfig constructor
+     * WifiP2pConfig constructor
      *
      * @param { String } deviceAddress - Device mac address
      * @param { Int32 } netId - Group network ID. When creating a group, -1 indicates creates a temporary group,
@@ -814,7 +814,7 @@ public class WifiScanInfo {
         since: "22",
         syscap: "SystemCapability.Communication.WiFi.STA"
     ]
-    public var infoElems: Array<WifiInfoElem>
+    public var infoElems: Array<WifiInfoElement>
 
     /**
      * Time stamp

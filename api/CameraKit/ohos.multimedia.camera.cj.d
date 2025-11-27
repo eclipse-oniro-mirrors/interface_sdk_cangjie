@@ -3661,7 +3661,7 @@ public class PhotoSession <: Session & Flash & AutoExposure & Focus & Zoom & Col
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value PreconfigRatio#PRECONFIG_RATIO_4_3.
+     *                                            default value PRECONFIG_RATIO_4_3.
      * @returns { Bool } Whether the choosed preconfig type can be used.
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
@@ -3678,7 +3678,7 @@ public class PhotoSession <: Session & Flash & AutoExposure & Focus & Zoom & Col
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value PreconfigRatio#PRECONFIG_RATIO_4_3
+     *                                            default value PRECONFIG_RATIO_4_3
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
     @!APILevel[
@@ -3802,7 +3802,7 @@ public class VideoSession <: Session & Flash & AutoExposure & Focus & Zoom & Sta
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value PreconfigRatio#PRECONFIG_RATIO_16_9.
+     *                                            default value PRECONFIG_RATIO_16_9.
      * @returns { Bool } Whether the choosed preconfig type can be used.
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
@@ -3819,7 +3819,7 @@ public class VideoSession <: Session & Flash & AutoExposure & Focus & Zoom & Sta
      *
      * @param { PreconfigType } preconfigType - preconfig type.
      * @param { PreconfigRatio } [preconfigRatio] - the aspect ratio of surface for preconfig,
-     *                                            default value PreconfigRatio#PRECONFIG_RATIO_16_9.
+     *                                            default value PRECONFIG_RATIO_16_9.
      * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
     @!APILevel[

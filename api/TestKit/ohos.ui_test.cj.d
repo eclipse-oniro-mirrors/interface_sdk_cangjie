@@ -1709,7 +1709,7 @@ public enum ResizeDirection {
 }
 
 /**
- * Enumerates the direction for the Ui operation.
+ * Enumerates the direction for the Ui operation .
  */
 @!APILevel[
     since: "22",

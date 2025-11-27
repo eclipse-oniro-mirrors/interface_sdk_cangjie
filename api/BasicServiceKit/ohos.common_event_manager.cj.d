@@ -69,7 +69,7 @@ public class CommonEventManager {
     public static func createSubscriber(subscribeInfo: CommonEventSubscribeInfo): CommonEventSubscriber
 
     /**
-     * create the CommonEventSubscriber for the SubscriberInfo.
+     * Subscribes to a common event.
      *
      * @param { CommonEventSubscriber } subscriber - Subscriber object.
      * @param { AsyncCallback<CommonEventData> } callback - Callback used to return the result.
@@ -1223,7 +1223,7 @@ public class Support {
         since: "22",
         syscap: "SystemCapability.Notification.CommonEvent"
     ]
-    public static const COMMON_EVENT_IVI_LASTMODE_SAVE: String = "common.event.IVI_LASTMODE_SAVE"
+    public static const COMMON_EVENT_IVI_LAST_MODE_SAVE: String = "common.event.IVI_LASTMODE_SAVE"
 
     /**
      * The ivi is voltage abnormal.

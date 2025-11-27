@@ -71,7 +71,7 @@ public enum CommonEventValueType {
         since: "22",
         syscap: "SystemCapability.Notification.CommonEvent"
     ]
-    Fd(Int32)
+    FD(Int32)
     |
     /**
      * String array type value
@@ -125,6 +125,6 @@ public enum CommonEventValueType {
         since: "22",
         syscap: "SystemCapability.Notification.CommonEvent"
     ]
-    ArrayFd(Array<Int32>)
+    ArrayFD(Array<Int32>)
     | ...
 }

@@ -50,7 +50,7 @@ public class CommonEventPublishData {
     public var data: String
 
     /**
-     * Common event data transferred by the publisher. 
+     * Common event data transferred by the publisher.
      */
     @!APILevel[
         since: "22",

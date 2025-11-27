@@ -176,8 +176,7 @@ public class Preferences {
      * will occur.
      *
      * @param { UIAbilityContext } context - Indicates the context of application or capability.
-     * @param { PreferencesOptions } options - Indicates the PreferencesOptions option of preferences
-     * file position.
+     * @param { PreferencesOptions } options - Indicates the PreferencesOptions option of preferences file position.
      * @throws { BusinessException } 801 - Capability not supported.
      * @throws { BusinessException } 15500000 - Inner error.
      * @throws { BusinessException } 15501001 - The operations is supported in stage mode only.
