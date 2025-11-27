@@ -1221,8 +1221,8 @@ public enum PhotoViewMimeTypes {
 extend PhotoViewMimeTypes <: ToString {
     
     /**
-     * Converts the PhotoViewMIMETypes to its string representation.
-     * @returns { String } A string representation of the PhotoViewMIMETypes.
+     * Converts the PhotoViewMimeTypes to its string representation.
+     * @returns { String } A string representation of the PhotoViewMimeTypes.
      */
     @!APILevel[
         since: "22",
@@ -1232,7 +1232,7 @@ extend PhotoViewMimeTypes <: ToString {
 }
 
 
-extend PhotoViewMimeTypes <: Equatable<PhotoViewMIMETypes> {
+extend PhotoViewMimeTypes <: Equatable<PhotoViewMimeTypes> {
     
     /**
      * Compares this PhotoViewMimeTypes with another for equality.
