@@ -1661,7 +1661,6 @@ extend BluetoothBleGattServerCallbackType <: ToString {
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public func toString(): String
@@ -1675,7 +1674,6 @@ extend BluetoothBleGattServerCallbackType <: Hashable {
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public func hashCode(): Int64
@@ -1690,7 +1688,6 @@ extend BluetoothBleGattServerCallbackType <: Equatable<BluetoothBleGattServerCal
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public operator func ==(other: BluetoothBleGattServerCallbackType): Bool
@@ -1702,7 +1699,6 @@ extend BluetoothBleGattServerCallbackType <: Equatable<BluetoothBleGattServerCal
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public operator func !=(other: BluetoothBleGattServerCallbackType): Bool
@@ -1753,7 +1749,6 @@ extend BluetoothBleGattClientDeviceCallbackType <: ToString {
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public func toString(): String
@@ -1767,7 +1762,6 @@ extend BluetoothBleGattClientDeviceCallbackType <: Hashable {
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public func hashCode(): Int64
@@ -1782,7 +1776,6 @@ extend BluetoothBleGattClientDeviceCallbackType <: Equatable<BluetoothBleGattCli
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public operator func ==(other: BluetoothBleGattClientDeviceCallbackType): Bool
@@ -1794,7 +1787,6 @@ extend BluetoothBleGattClientDeviceCallbackType <: Equatable<BluetoothBleGattCli
      */
     @!APILevel[
         since: "22",
-        permission: "ohos.permission.ACCESS_BLUETOOTH",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
     public operator func !=(other: BluetoothBleGattClientDeviceCallbackType): Bool

@@ -641,20 +641,6 @@ public class WebviewController {
     public func loadUrl<T>(url: T, headers!: Array<WebHeader> = Array<WebHeader>()): Unit where T <: ResourceStr
 
     /**
-     * Gets the type of HitTest.
-     *
-     * @returns { WebHitTestType } The type of HitTest.
-     * @throws { BusinessException } 17100001 - Init error.
-     *                           The WebviewController must be associated with a Web component.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Web.Webview.Core",
-        throwexception: true
-    ]
-    public func getHitTest(): WebHitTestType
-
-    /**
      * Stores the current page as a web archive.
      *
      * @param { String } baseName - Where the generated offline webpage is stored, This value cannot be null.
@@ -721,20 +707,6 @@ public class WebviewController {
         throwexception: true
     ]
     public func zoomOut(): Unit
-
-    /**
-     * Get the element information of the currently clicked area.
-     *
-     * @returns { HitTestValue } Return the element information of the clicked area.
-     * @throws { BusinessException } 17100001 - Init error.
-     *                           The WebviewController must be associated with a Web component.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Web.Webview.Core",
-        throwexception: true
-    ]
-    public func getHitTestValue(): HitTestValue
 
     /**
      * Gets the default user agent.
