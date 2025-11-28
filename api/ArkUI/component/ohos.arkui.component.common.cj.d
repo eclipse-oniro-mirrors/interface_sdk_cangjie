@@ -13634,7 +13634,7 @@ public interface CommonMethod<T> {
  * Sets the rotation transformation of the component.
  *
  * @param { ?Float32 } x - X component of the rotation vector
- * @param { ?Float64 } y - Y component of the rotation vector
+ * @param { ?Float32 } y - Y component of the rotation vector
  * @param { ?Float32 } z - Z component of the rotation vector
  * @param { ?Float32 } angle - Rotation angle in degrees
  * @param { ?Length } centerX - X coordinate of the rotation center point
