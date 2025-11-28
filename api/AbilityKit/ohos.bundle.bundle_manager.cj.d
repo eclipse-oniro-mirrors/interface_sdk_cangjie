@@ -1379,16 +1379,7 @@ public enum LaunchType {
     since: "22",
     syscap: "SystemCapability.BundleManager.BundleFramework.Core"
 ]
-public enum ExtensionAbilityType {
-    /**
-     * Indicates extension info with type of form.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.BundleManager.BundleFramework.Core"
-    ]
-    Form
-    | 
+public enum ExtensionAbilityType { 
     /**
      * Indicates extension info with type of work schedule.
      */
