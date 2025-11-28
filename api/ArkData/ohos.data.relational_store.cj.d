@@ -21,6 +21,7 @@ package ohos.data.relational_store
 import ohos.app.ability.ui_ability.UIAbilityContext
 import ohos.callback_invoke.Callback0Argument
 import ohos.labels.*
+import std.collection.Map
 
 /**
  * Manages relational database configurations.
