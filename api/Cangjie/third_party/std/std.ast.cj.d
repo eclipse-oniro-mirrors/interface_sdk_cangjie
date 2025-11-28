@@ -2433,160 +2433,6 @@ public class ThrowExpr <: Expr {
 }
 
 /**
- * @description Represents a `perform` expression in the AST, used with effects.
- */
-@!APILevel[
-    since: "22"
-]
-public class PerformExpr <: Expr {
-    /**
-     * @description Initializes a `PerformExpr` from a set of tokens.
-     * @param inputs The tokens to parse.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public init(inputs: Tokens)
-
-    /**
-     * @description Initializes an empty `PerformExpr`.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public init()
-
-    /**
-     * @description The `perform` keyword token.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public mut prop keyword: Token
-
-    /**
-     * @description The expression to be performed.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public mut prop expr: Expr
-
-    /**
-     * @description Converts the perform expression to its token representation.
-     * @returns A `Tokens` object representing this expression.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func toTokens(): Tokens
-
-    /**
-     * @description Traverses this perform expression node with a visitor.
-     * @param v The visitor to use for traversal.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func traverse(v: Visitor): Unit
-}
-
-/**
- * @description Represents a `resume` expression in the AST, used with effects.
- */
-@!APILevel[
-    since: "22"
-]
-public class ResumeExpr <: Expr {
-    /**
-     * @description Initializes a `ResumeExpr` from a set of tokens.
-     * @param inputs The tokens to parse.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public init(inputs: Tokens)
-
-    /**
-     * @description Initializes an empty `ResumeExpr`.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public init()
-
-    /**
-     * @description The `resume` keyword token.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public mut prop keywordR : Token
-
-    /**
-     * @description The optional `with` keyword token.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public mut prop keywordW : Option<Token>
-
-    /**
-     * @description The optional expression to resume with.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public mut prop withExpr: Option<Expr>
-
-    /**
-     * @description The optional `throwing` keyword token.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public mut prop keywordT : Option<Token>
-
-    /**
-     * @description The optional expression to resume by throwing.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public mut prop throwingExpr: Option<Expr>
-
-    /**
-     * @description Converts the resume expression to its token representation.
-     * @returns A `Tokens` object representing this expression.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func toTokens(): Tokens
-
-    /**
-     * @description Traverses this resume expression node with a visitor.
-     * @param v The visitor to use for traversal.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func traverse(v: Visitor): Unit
-}
-
-/**
  * @description Represents an assignment expression in the AST.
  */
 @!APILevel[
@@ -4384,16 +4230,7 @@ public class IncOrDecExpr <: Expr {
 }
 
 /**
- * @description Represents a handler in a `try-handle` expression.
- */
-@!APILevel[
-    since: "22"
-]
-public class Handler {
-}
-
-/**
- * @description Represents a `try-catch-finally` or `try-handle` expression in the AST.
+ * @description Represents a `try-catch-finally` expression in the AST.
  */
 @!APILevel[
     since: "22"
@@ -4469,14 +4306,6 @@ public class TryExpr <: Expr {
         since: "22"
     ]
     public mut prop catchBlocks: ArrayList<Block>
-
-    /**
-     * @description A list of handlers for `try-handle` expressions.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public mut prop handlers: ArrayList<Handler>
 
     /**
      * @description The `finally` keyword token.
@@ -6736,77 +6565,6 @@ public class ExceptTypePattern <: Pattern {
 }
 
 /**
- * @description Represents a pattern with a command type constraint.
- */
-@!APILevel[
-    since: "22"
-]
-public class CommandTypePattern <: Pattern {
-    /**
-     * @description Initializes an empty `CommandTypePattern`.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public init()
-
-    /**
-     * @description Initializes a `CommandTypePattern` from a set of tokens.
-     * @param inputs The tokens to parse.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public init(inputs: Tokens)
-
-    /**
-     * @description The inner pattern.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public mut prop pattern: Pattern
-
-    /**
-     * @description The colon token `:`.
-     * @throws ASTException if there is an AST-related error.
-     */
-    @!APILevel[
-        since: "22",
-        throwexception: true
-    ]
-    public mut prop colon: Token
-
-    /**
-     * @description A list of command types for the constraint.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public mut prop types: ArrayList<TypeNode>
-
-    /**
-     * @description Converts the pattern to its token representation.
-     * @returns A `Tokens` object representing this pattern.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func toTokens(): Tokens
-
-    /**
-     * @description Traverses this pattern node with a visitor.
-     * @param v The visitor to use for traversal.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public func traverse(v: Visitor): Unit
-}
-
-/**
  * @description Represents a pattern with an explicit type annotation, e.g., `x: Int`.
  */
 @!APILevel[
@@ -8415,34 +8173,6 @@ public enum TokenKind <: ToString {
         since: "22"
     ]
     ILLEGAL |
-    /**
-     * @description The `handle` keyword for effect handlers.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    HANDLE |
-    /**
-     * @description The `perform` keyword for effects.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    PERFORM |
-    /**
-     * @description The `resume` keyword for effect handlers.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    RESUME |
-    /**
-     * @description The `throwing` keyword for effect handlers.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    THROWING |
     ...
 
     /**
