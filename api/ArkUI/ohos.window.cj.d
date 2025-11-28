@@ -161,7 +161,7 @@ public class Configuration {
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
-    public var displayID: Int64 = -1
+    public var displayId: Int64 = -1
 
 /**
  * Indicates Parent window id.
@@ -170,7 +170,7 @@ public class Configuration {
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
-    public var parentID: Int64 = -1
+    public var parentId: Int64 = -1
 
 /**
  * Configuration constructor.
@@ -614,15 +614,6 @@ public enum WindowType {
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
     TypeApp
-    | 
-/**
- * System alert.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.WindowManager.WindowManager.Core"
-]
-    TypeSystemAlert
     | 
 /**
  * Float.

@@ -565,56 +565,6 @@ public class ObservedArrayList<T> <: ObservedComplexAbstract & CollectionEx<T> {
     public init(initValue: Array<T>)
 
 /**
- * Reads value of the sync'ed AppStorage/LocalStorage property.
- *
- * @returns { ArrayList<T> } The current ArrayList value.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    public func get(): ArrayList<T>
-
-/**
- * Updates the value of value of the sync'ed AppStorage/LocalStorage property.
- * Sets new value, must be of type T, can be None or null.
- * `let link : SubscribedAbstractProperty =AppStorage.Link("foo")`
- * then `link.set("Hello")` will set the value of "foo" property in AppStorage.
- *
- * @param { ArrayList<T> } newValue - The new ArrayList value to set.
- * @returns { Unit }
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    public func set(newValue: ArrayList<T>): Unit
-
-/**
- * Sets the current ArrayList value from another Array object. Enable observers to receive updated information whenever state variables change.
- *
- * @param { Array<T> } newValue - The new Array value to set.
- * @returns { Unit }
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    public func set(newValue: Array<T>): Unit
-
-/**
- * Sets the current ArrayList value from another ObservedComplexAbstract object. Enable observers to receive updated information whenever state variables change.
- *
- * @param { ObservedComplexAbstract } newValue - The new ObservedComplexAbstract value to set.
- * @returns { Unit }
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
-    public func set(newValue: ObservedComplexAbstract): Unit
-
-/**
  * Gets the element at the specified index in the observed array list. And record the dependency elements that need to be updated.
  *
  * @param { Int64 } index - The zero-based index of the element to get.
