@@ -6048,13 +6048,6 @@ public class SpawnException <: Exception {
 ]
 public class StackOverflowError <: Error {
     /**
-     * @description Constructs a new StackOverflowError.
-     */
-    @!APILevel[
-        since: "22"
-    ]
-    public init()
-    /**
      * @description Prints the stack trace to the standard error stream.
      */
     @!APILevel[
