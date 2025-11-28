@@ -18,6 +18,7 @@
 package ohos.bluetooth.base_profile
 
 import ohos.bluetooth.constant.ProfileConnectionState
+import ohos.callback_invoke.{CallbackObject, Callback1Argument}
 import ohos.labels.APILevel
 
 /**
