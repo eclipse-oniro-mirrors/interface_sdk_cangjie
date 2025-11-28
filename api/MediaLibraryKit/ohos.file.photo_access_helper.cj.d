@@ -646,7 +646,6 @@ public class MediaAssetChangeRequest <: MediaChangeRequest {
  */
 @!APILevel[
     since: "22",
-    permission: "ohos.permission.INTERACT_ACROSS_LOCAL_ACCOUNTS",
     syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core",
     throwexception: true
 ]

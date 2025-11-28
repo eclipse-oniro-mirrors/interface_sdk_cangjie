@@ -28,15 +28,6 @@ import ohos.labels.APILevel
 ]
 public class DeviceInfo {
     /**
-      * Obtains the hardware profile represented by a string.
-      */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.Startup.SystemInfo"
-    ]
-    public static prop hardwareProfile: String
-
-    /**
       * Obtains the device type represented by a string, which can be phone (or default for phones), wearable,
       * liteWearable, tablet, tv, car, or smartVision.
       */
