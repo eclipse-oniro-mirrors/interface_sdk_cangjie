@@ -26,7 +26,7 @@ import ohos.labels.APILevel
     since: "22",
     syscap: "SystemCapability.Ability.AbilityBase"
 ]
-public enum Params {
+public class Params {
     /**
      * Indicates the ability in this want can back to the current top ability even though they are not in the same
      * mission stack.

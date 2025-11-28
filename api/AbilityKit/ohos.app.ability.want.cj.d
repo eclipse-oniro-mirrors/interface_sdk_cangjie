@@ -210,7 +210,7 @@ public class Want {
      * "".
      * @param { Array<String> } [entities] - Additional category information (such as browser and video player) of the
      * ability. The default value is an empty array.
-     * @param { String } [wantType] - MIME type, that is, the type of the file to open. The default value is "".
+     * @param { String } [dataType] - MIME type, that is, the type of the file to open. The default value is "".
      * @param { HashMap<String, WantValueType> } [parameters] - Map of parameters in the Want object. The default value
      * is an empty map.
      * @param { HashMap<String, Int32> } [fds] - Want file descriptor (FD), which is used to identify the Want file
@@ -231,7 +231,7 @@ public class Want {
         uri!: String = "",
         action!: String = "",
         entities!: Array<String> = [],
-        wantType!: String = "",
+        dataType!: String = "",
         parameters!: HashMap<String, WantValueType> = HashMap<String, WantValueType>(),
         fds!: HashMap<String, Int32> = HashMap<String, Int32>()
     )
