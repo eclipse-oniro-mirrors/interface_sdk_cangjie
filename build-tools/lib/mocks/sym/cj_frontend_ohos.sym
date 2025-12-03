@@ -2178,6 +2178,7 @@ FfiPromptShowDialog;
 FfiPromptShowDialogWithOption;
 FfiPromptShowToast;
 FfiPromptShowToastWithOption;
+FfiPromptShowToastWithOptionV2;
 FfiRadioSetResponseRegion;
 FfiRadioSetResponseRegionArray;
 FfiTextSetResponseRegion;
