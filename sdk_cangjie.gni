@@ -70,7 +70,7 @@ template("cj_ohos_sdk_shared_lib") {
     _mock_t_out = get_label_info(deps[0], "target_out_dir")
     _mock_so_target = "${_mock_t_out}/libohos.mock.so"
     _source_dir = "${invoker.target_root_out_dir}/obj/interface/sdk_cangjie/cangjie_sdk/api/lib/${platform}"
-    
+
     args = [
       "--copy-cjo-dir",
       rebase_path(_source_dir, root_build_dir),

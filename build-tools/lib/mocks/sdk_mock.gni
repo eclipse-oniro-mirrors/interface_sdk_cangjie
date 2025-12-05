@@ -31,7 +31,7 @@ template("mock_sdk_target") {
         "--input=${_inputpath_}",
         "--output=${_outcpath_abs_}",
       ]
-      outputs = [_outcpath_]
+      outputs = [ _outcpath_ ]
     }
 
     all_deps += [ ":gen_src_${_sourcename_}" ]
@@ -39,18 +39,17 @@ template("mock_sdk_target") {
   }
 
   ohos_shared_library(target_name) {
-    forward_variables_from(invoker, [
-      "subsystem_name",
-      "part_name",
-      "output_extension",
-    ])
+    forward_variables_from(invoker,
+                           [
+                             "subsystem_name",
+                             "part_name",
+                             "output_extension",
+                           ])
     sources = all_sources
     if (defined(invoker.c_sources)) {
       sources += invoker.c_sources
     }
     deps = all_deps
-    deps += [
-      "//interface/sdk_cangjie/build-tools/lib/mocks:mock_stub"
-    ]
+    deps += [ "//interface/sdk_cangjie/build-tools/lib/mocks:mock_stub" ]
   }
 }
