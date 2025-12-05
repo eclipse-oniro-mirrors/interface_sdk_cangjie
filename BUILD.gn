@@ -62,7 +62,6 @@ sdk_packages_api_libs = [
   "startup_cangjie_wrapper:copy_sdk_startup_cangjie_libs",
   "notification_cangjie_wrapper:copy_sdk_notification_cangjie_libs",
 ]
-not_needed([ "sdk_packages_api_libs" ])
 
 if (sdk_build_cangjie_previewer == true) {
   group("sdk_cangjie_previewer_windows") {
@@ -201,13 +200,9 @@ ohos_copy("sdk_compiler_modules") {
 
 cj_ohos_sdk_copy("sdk_api") {
   out_relative_dir = "cangjie_sdk/api"
-  deps = [
-    ":sdk_ohos_aarch64_libs",
-  ]
+  deps = [ ":sdk_ohos_aarch64_libs" ]
   if (host_cpu == "x64") {
-    deps += [
-      ":sdk_ohos_x86_64_libs",
-    ]
+    deps += [ ":sdk_ohos_x86_64_libs" ]
   }
   if (is_mingw) {
     deps += [
