@@ -87,14 +87,12 @@ if (sdk_build_cangjie_previewer == true) {
 # collect cangjie header files
 cj_ohos_sdk_header_copy("sdk_header_ohos_aarch64_api") {
   source_dir = "api"
-  extension = "cj.d"
   exculde_dirs = [ "third_party" ]
   out_relative_dir = "cangjie_sdk/api/modules/linux_ohos_aarch64_cjnative/ohos"
 }
 
 cj_ohos_sdk_header_copy("sdk_header_ohos_aarch64_kit") {
   source_dir = "kits"
-  extension = "cj.d"
   out_relative_dir = "cangjie_sdk/api/modules/linux_ohos_aarch64_cjnative/kit"
 }
 
