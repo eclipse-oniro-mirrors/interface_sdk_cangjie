@@ -23,12 +23,11 @@ template("cj_ohos_sdk_header_copy") {
                          [
                            "source_dir",
                            "out_relative_dir",
-                           "extension",
                            "exculde_dirs",
                          ])
 
   action_with_pydeps(target_name) {
-    script = "//interface/sdk_cangjie/build-tools/script/copy_files.py"
+    script = "//interface/sdk_cangjie/build-tools/script/copy_cangjie_headers.py"
     depfile = "${target_gen_dir}/${target_name}.d"
     inputs = [ source_dir ]
     args = [
@@ -36,13 +35,11 @@ template("cj_ohos_sdk_header_copy") {
       rebase_path("${source_dir}", root_build_dir),
       "--output",
       rebase_path("${target_out_dir}/${out_relative_dir}", root_build_dir),
+      "--depfile",
+      rebase_path(depfile, root_build_dir),
+      "--stamp",
+      rebase_path("$target_gen_dir/$target_name.stamp", root_build_dir),
     ]
-    if (defined(extension)) {
-      args += [
-        "--extension",
-        extension,
-      ]
-    }
     if (defined(exculde_dirs)) {
       args += [
         "--exclude-dirs",
