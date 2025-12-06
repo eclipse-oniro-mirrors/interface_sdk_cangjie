@@ -341,7 +341,7 @@ public class WindowProperties {
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
-    public var brightness: Float64
+    public var brightness: Float32
 
 /**
  * Whether keep screen on.
@@ -384,12 +384,12 @@ public class WindowProperties {
  *
  * @param { Rect } windowRect - The position and size of the window.
  * @param { Rect } drawableRect - The position relative to the window and size of drawable area.
- * @param { WindowType } winType - Window type.
+ * @param { WindowType } windowType - Window type.
  * @param { Bool } isFullScreen - Whether the window is displayed in full screen mode. The default value is false.
  * @param { Bool } isLayoutFullScreen - Whether the window layout is in full screen mode(whether the window is immersive). The default value is false.
  * @param { Bool } focusable - Whether the window can gain focus. The default value is true.
  * @param { Bool } touchable - Whether the window is touchable. The default value is false.
- * @param { Float64 } brightness - Brightness value of window.
+ * @param { Float32 } brightness - Brightness value of window.
  * @param { Bool } isKeepScreenOn - Whether keep screen on.
  * @param { Bool } isPrivacyMode - Whether make window in privacy mode or not.
  * @param { Bool } isTransparent - Whether is transparent or not.
@@ -402,12 +402,12 @@ public class WindowProperties {
     public init(
         windowRect!: Rect,
         drawableRect!: Rect,
-        winType!: WindowType,
+        windowType!: WindowType,
         isFullScreen!: Bool,
         isLayoutFullScreen!: Bool,
         focusable!: Bool,
         touchable!: Bool,
-        brightness!: Float64,
+        brightness!: Float32,
         isKeepScreenOn!: Bool,
         isPrivacyMode!: Bool,
         isTransparent!: Bool,
@@ -615,6 +615,15 @@ public enum WindowType {
 ]
     TypeApp
     | 
+/**
+* Main.
+*/
+@!APILevel[
+    since: "22",
+    syscap: "SystemCapability.WindowManager.WindowManager.Core"
+]
+    TypeMain
+    |
 /**
  * Float.
  * Require "ohos.permission.SYSTEM_FLOAT_WINDOW" permission

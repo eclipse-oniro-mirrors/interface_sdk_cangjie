@@ -1009,14 +1009,6 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponent<T> {
-    protected init(id: Int64)
-
-    protected init()
-
-    protected open func initial(): Unit
-
-    protected open func update(): Unit
-
 /**
  * Sets the scrollbar state.
  *
@@ -1029,8 +1021,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func scrollBar(barState: ?BarState): T
-
-    protected func scrollBarInner(barState: BarState): T
 
 /**
  * Sets the scrollbar color.
@@ -1045,8 +1035,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func scrollBarColor(color: ?ResourceColor): T
-
-    protected func scrollBarColorInner(color: ?ResourceColor): T
 
 /**
  * Sets the scrollbar width.
@@ -1063,8 +1051,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 ]
     public func scrollBarWidth(value: ?Length): T
 
-    protected func scrollBarWidthInner(value: ?Length): T
-
 /**
  * Sets the nested scrolling options. You can set the nested scrolling mode in the forward and backward directions
  * to implement scrolling linkage with the parent component.
@@ -1079,8 +1065,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 ]
     public func nestedScroll(value: ?NestedScrollOptions): T
 
-    protected func nestedScrollInner(value: ?NestedScrollOptions): T
-
 /**
  * Sets whether to support scroll gestures. When this attribute is set to false,
  * scrolling by finger or mouse is not supported, but the scroll controller API is not affected.
@@ -1093,8 +1077,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func enableScrollInteraction(value: ?Bool): T
-
-    protected func enableScrollInteractionInner(value: ?Bool): T
 
 /**
  * Sets the friction coefficient. It applies only to gestures in the scrolling area, and
@@ -1111,8 +1093,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 ]
     public func friction(value: ?Float64): T
 
-    protected func frictionInner(value: ?Float64): T
-
 /**
  * Sets the friction coefficient. It applies only to gestures in the scrolling area, and
  * it affects only indirectly the scroll chaining during the inertial scrolling process.
@@ -1128,8 +1108,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 ]
     public func friction(value: ?AppResource): T
 
-    protected func frictionInner(value: ?AppResource): T
-
 /**
  * Triggered when the scrollable component reaches the start position.
  *
@@ -1141,8 +1119,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func onReachStart(event: ?() -> Unit): T
-
-    protected func onReachStartInner(event: () -> Unit): T
 
 /**
  * Triggered when the scrollable component reaches the end position.
@@ -1156,8 +1132,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 ]
     public func onReachEnd(event: ?() -> Unit): T
 
-    protected func onReachEndInner(event: () -> Unit): T
-
 /**
  * Triggered when the scrollable component starts scrolling initiated by the user's finger dragging the component or its scrollbar.
  *
@@ -1169,8 +1143,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func onScrollStart(event: ?() -> Unit): T
-
-    protected func onScrollStartInner(event: () -> Unit): T
 
 /**
  * Called when scrolling has stopped.
@@ -1188,8 +1160,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
 ]
     public func onScrollStop(event: ?() -> Unit): T
 
-    protected func onScrollStopInner(event: () -> Unit): T
-
 /**
  * Sets the maximum initial velocity at the start of the fling animation that occurs after gesture-driven scrolling ends.
  *
@@ -1204,8 +1174,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func flingSpeedLimit(speedLimit: ?Float64): T
-
-    protected func flingSpeedLimitInner(speedLimit: Float64): T
 
 /**
  * Called when setting whether to enable fading Edge effect.
@@ -1310,8 +1278,6 @@ public abstract class ScrollableCommonMethodComponent<T> <: CommonMethodComponen
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public func onDidScroll(handler: ?OnScrollCallBack): T
-
-    protected func onDidScrollInner(handler: OnScrollCallBack): T
 }
 
 /**

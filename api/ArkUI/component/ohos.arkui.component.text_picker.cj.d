@@ -26,7 +26,7 @@ public class TextPicker <: CommonMethodComponent<TextPicker> & TextPickerAttribu
 /**
  * Defines the TextPicker constructor.
  *
- * @param { Array<String> } range - Data selection range of the picker.
+ * @param { ?Array<String> } range - Data selection range of the picker.
  * @param { ?UInt32 } [selected] - Index of the default selected item in the array.
  * @param { ?String } [value] - Value of the default item in the range.
  */
@@ -35,7 +35,7 @@ public class TextPicker <: CommonMethodComponent<TextPicker> & TextPickerAttribu
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
     public init(
-        range!: Array<String>,
+        range!: ?Array<String>,
         selected!: ?UInt32 = Option.None,
         value!: ?String = Option.None
     )
