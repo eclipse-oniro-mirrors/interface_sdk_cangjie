@@ -5,17 +5,6 @@ import ohos.arkui.component.alert_dialog.*
 import ohos.arkui.component.common.{AnimateParam, vp2pxInner, px2vpInner, fp2pxInner, lpx2pxInner, px2fpInner,
     px2lpxInner, parseAnimateParam}
 import ohos.arkui.component.native_struct.*
-import ohos.arkui.ui_context.animator.*
-public import ohos.arkui.ui_context.animator.{AnimatorFill, AnimatorDirection, AnimatorOptions, AnimatorResult}
-import ohos.arkui.ui_context.font.*
-public import ohos.arkui.ui_context.font.{FontInfo, Font}
-public import ohos.arkui.ui_context.measure.{MeasureOptions, SizeOptions, MeasureUtils}
-import ohos.arkui.ui_context.prompt_action.*
-public import ohos.arkui.ui_context.prompt_action.{ShowDialogCallBack, ShowActionMenuCallBack, ButtonInfo, ToastShowMode,
-    EdgeColors, HoverModeAreaType, KeyboardAvoidMode, BaseDialogOptions, CustomDialogOptions, ShowDialogOptions,
-    ActionMenuOptions, ShowToastOptions, PromptAction}
-import ohos.arkui.ui_context.router.*
-public import ohos.arkui.ui_context.router.{RouterMode, RouterState, Router}
 import ohos.base.*
 import ohos.business_exception.*
 import ohos.ffi.*

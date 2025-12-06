@@ -140,13 +140,13 @@ public class LazyForEach<T> <: UINodeBase {
  * Constructs a LazyForEach component.
  *
  * @param { IDataSource<T> } dataSource - LazyForEach data source, need to implement the IDataSource interface.
- * @param { ItemGenFuncType<T> } itemGenerator - Sub-component generator function, create a sub-component for each data in the array.
- * @param { KeyGenFuncType<T> } [keyGenerator] - Key generator function, used to generate a unique and fixed key for each data.
+ * @param { ItemGeneratorFunc<T> } itemGenerator - Sub-component generator function, create a sub-component for each data in the array.
+ * @param { KeyGeneratorFunc<T> } [keyGenerator] - Key generator function, used to generate a unique and fixed key for each data.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public init(dataSource: IDataSource<T>, itemGenerator!: ItemGenFuncType<T>,
-        keyGenerator!: ?KeyGenFuncType<T> = None)
+    public init(dataSource: IDataSource<T>, itemGenerator!: ItemGeneratorFunc<T>,
+        keyGenerator!: ?KeyGeneratorFunc<T> = None)
 }

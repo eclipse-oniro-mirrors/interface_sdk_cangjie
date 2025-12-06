@@ -4,7 +4,7 @@ import ohos.arkui.component.common.*
 import ohos.arkui.component.native_struct.*
 import ohos.arkui.component.path_2d.*
 import ohos.arkui.component.util.*
-import ohos.arkui.ui_context.font.Font as FontApi
+import ohos.arkui.ui_context.Font as FontApi
 import ohos.base.*
 import ohos.ffi.*
 import ohos.labels.APILevel
@@ -539,7 +539,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func strokeText(text: String, x: Float64, y: Float64, maxWidth!: Option<Float64> = None): Unit
+    public func strokeText(text: String, x: Float64, y: Float64, maxWidth!: Option<Float64> = Option.None): Unit
 
 /**
  * Measure the size of a specified text.
@@ -1196,7 +1196,7 @@ public class CanvasRenderingContext2D <: RemoteDataLite {
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public func toDataUrl(imageType!: ?String = None, quality!: ?Float64 = None): String
+    public func toDataURL(imageType!: ?String = None, quality!: ?Float64 = None): String
 
 /**
  * Creates a new, empty ImageData object of the specified size.

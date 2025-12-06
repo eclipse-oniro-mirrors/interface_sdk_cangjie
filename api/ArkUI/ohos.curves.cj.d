@@ -170,14 +170,14 @@ public class Curves {
  * Implements initialization for the interpolation curve,
  * which is used to create an interpolation curve based on the input parameter.
  *
- * @param { ?Curve } [curve] - Curve type. Default value: Curve.Linear.
+ * @param { Curve } [curve] - Curve type. Default value: Curve.Linear.
  * @returns { ICurve }
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-    public static func initCurve(curve!: ?Curve = Curve.Linear): ICurve
+    public static func initCurve(curve!: Curve = Curve.Linear): ICurve
 
 /**
  * Creates a custom curve.

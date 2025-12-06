@@ -196,7 +196,7 @@ public class FoldCreaseRegion {
     since: "22",
     syscap: "SystemCapability.Window.SessionManager"
 ]
-    public let displayId: Int64
+    public let displayId: UInt32
 
 /**
  * Crease Region.
@@ -210,7 +210,7 @@ public class FoldCreaseRegion {
 /**
  * FoldCreaseRegion constructor.
  *
- * @param { Int64 } displayId - The display ID is used to identify the screen where the crease is located.
+ * @param { UInt32 } displayId - The display ID is used to identify the screen where the crease is located.
  * @param { Array<Rect> } creaseRects - Crease Region.
  */
 @!APILevel[
@@ -218,7 +218,7 @@ public class FoldCreaseRegion {
     syscap: "SystemCapability.Window.SessionManager"
 ]
     public init(
-        displayId!: Int64,
+        displayId!: UInt32,
         creaseRects!: Array<Rect>
     )
 }
@@ -345,7 +345,7 @@ public enum DisplayState {
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
-    StateDozeSuspended
+    StateDozeSuspend
     |
 /**
  * VR node.
@@ -354,7 +354,7 @@ public enum DisplayState {
     since: "22",
     syscap: "SystemCapability.WindowManager.WindowManager.Core"
 ]
-    StateVR
+    StateVr
     |
 /**
  * Screen on and not update.
