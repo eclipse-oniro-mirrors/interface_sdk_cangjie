@@ -3,7 +3,9 @@ package ohos.arkui.ui_context
 import ohos.arkui.component.action_sheet.*
 import ohos.arkui.component.alert_dialog.*
 import ohos.arkui.component.common.{AnimateParam, vp2pxInner, px2vpInner, fp2pxInner, lpx2pxInner, px2fpInner,
-    px2lpxInner, parseAnimateParam}
+    px2lpxInner, parseAnimateParam, ExpectedFrameRateRange, FontWeight, TextAlign, FontStyle, TextOverflow, 
+    TextCase, WordBreak, Rectangle, DialogAlignment, Offset, TransitionEffect, BorderRadiuses, EdgeWidths, 
+    EdgeStyles, ShadowOptions, BlurStyle, Alignment, ShadowType}
 import ohos.arkui.component.native_struct.*
 import ohos.base.*
 import ohos.business_exception.*
