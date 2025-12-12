@@ -125,3 +125,4 @@ ARKTS_StringCopy;
 ARKTS_Throw;
 ARKTS_UpdateStackInfo;
 CJ_MRT_ARKTS_CreateEngineStub;
+ARKTS_RequireArkModule;
