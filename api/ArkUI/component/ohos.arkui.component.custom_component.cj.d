@@ -83,44 +83,44 @@ public func bind<T1, T2, T3>(
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public abstract class CustomView <: RemoteView & Observer {
-/**
- * Get the LocalStorage instance of current page.
- *
- * @returns { LocalStorage } The LocalStorage instance of the current page.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Get the LocalStorage instance of current page.
+     *
+     * @returns { LocalStorage } The LocalStorage instance of the current page.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public func getLocalStorage(): LocalStorage
 
 
-/**
- * Customize the pop-up content constructor and it is migrated from class CustomComponent.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Customize the pop-up content constructor and it is migrated from class CustomComponent.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public func build(): Unit
 
-/**
- * Called when processing information about to be deleted.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Called when processing information about to be deleted.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public func aboutToBeDeleted(): Unit
 
-/**
- * Get current UIContext and it is migrated from class CustomComponent.
- *
- * @returns { UIContext } The UIContext that the custom component belongs to.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Get current UIContext and it is migrated from class CustomComponent.
+     *
+     * @returns { UIContext } The UIContext that the custom component belongs to.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public func getUIContext(): UIContext
 }

@@ -14,16 +14,16 @@ import ohos.labels.APILevel
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public class Ellipse <: CommonShapeMethodComponent<Ellipse> & EllipseAttribute {
-/**
- * Create an ellipse.
- *
- * @param { ?Length } [width] - Set width.
- * @param { ?Length } [height] - Set Height.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Create an ellipse.
+     *
+     * @param { ?Length } [width] - Set width.
+     * @param { ?Length } [height] - Set Height.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public init(width!: ?Length = None, height!: ?Length = None)
 }
 

@@ -15,30 +15,30 @@ import ohos.resource.*
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public class MenuItemGroup <: CommonMethodComponent<MenuItemGroup> & MenuItemGroupAttribute {
-/**
- * Creates the MenuItemGroup component.
- *
- * @param { ?ResourceStr } [header] - Defines the header display info.
- * @param { ?ResourceStr } [footer] - Defines the footer display info.
- * @param { () -> Unit } [child] - The child component of menu item group.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Creates the MenuItemGroup component.
+     *
+     * @param { ?ResourceStr } [header] - Defines the header display info.
+     * @param { ?ResourceStr } [footer] - Defines the footer display info.
+     * @param { () -> Unit } [child] - The child component of menu item group.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public init(header!: ?ResourceStr = None, footer!: ?ResourceStr = None, child!: () -> Unit = {=>})
 
-/**
- * Creates the MenuItemGroup component.
- *
- * @param { ?CustomBuilder } header - Defines the header display info.
- * @param { ?CustomBuilder } footer - Defines the footer display info.
- * @param { () -> Unit } [child] - The child component of menu item group.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Creates the MenuItemGroup component.
+     *
+     * @param { ?CustomBuilder } header - Defines the header display info.
+     * @param { ?CustomBuilder } footer - Defines the footer display info.
+     * @param { () -> Unit } [child] - The child component of menu item group.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public init(header!: ?CustomBuilder, footer!: ?CustomBuilder, child!: () -> Unit = {=>})
 }
 

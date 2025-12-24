@@ -14,41 +14,41 @@ import ohos.labels.APILevel
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public class Path <: CommonShapeMethodComponent<Path> & PathAttribute {
-/**
- * Create a path.
- *
- * @param { ?ResourceStr } [commands] - Commands option.
+    /**
+     * Create a path.
+     *
+     * @param { ?ResourceStr } [commands] - Commands option.
 
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public init(commands!: ?ResourceStr = None)
 
-/**
- * Create a path.
- *
- * @param { ?Length } width - Width option.
- * @param { ?Length } height - Height option.
- * @param { ?ResourceStr } [commands] - Commands option.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Create a path.
+     *
+     * @param { ?Length } width - Width option.
+     * @param { ?Length } height - Height option.
+     * @param { ?ResourceStr } [commands] - Commands option.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public init(width!: ?Length, height!: ?Length, commands!: ?ResourceStr = None)
 
-/**
- * Called when the command string drawn by the path is set.
- *
- * @param { ?ResourceStr } value - The command string to draw the path.
- * @returns { This } The path Component.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Called when the command string drawn by the path is set.
+     *
+     * @param { ?ResourceStr } value - The command string to draw the path.
+     * @returns { This } The path Component.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public func commands(value: ?ResourceStr): This
 }
 
@@ -60,15 +60,15 @@ public class Path <: CommonShapeMethodComponent<Path> & PathAttribute {
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 sealed interface PathAttribute <: CommonShapeMethod<PathAttribute> {
-/**
- * Called when the command string drawn by the path is set.
- *
- * @param { ?ResourceStr } value - The command string to draw the path.
- * @returns { PathAttribute } The path attribute.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Called when the command string drawn by the path is set.
+     *
+     * @param { ?ResourceStr } value - The command string to draw the path.
+     * @returns { PathAttribute } The path attribute.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     func commands(value: ?ResourceStr): PathAttribute
 }
