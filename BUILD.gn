@@ -62,7 +62,6 @@ sdk_packages_api_libs = [
   "startup_cangjie_wrapper:copy_sdk_startup_cangjie_libs",
   "notification_cangjie_wrapper:copy_sdk_notification_cangjie_libs",
 ]
-not_needed([ "sdk_packages_api_libs" ])
 
 if (sdk_build_cangjie_previewer == true) {
   group("sdk_cangjie_previewer_windows") {
@@ -88,14 +87,12 @@ if (sdk_build_cangjie_previewer == true) {
 # collect cangjie header files
 cj_ohos_sdk_header_copy("sdk_header_ohos_aarch64_api") {
   source_dir = "api"
-  extension = "cj.d"
   exculde_dirs = [ "third_party" ]
   out_relative_dir = "cangjie_sdk/api/modules/linux_ohos_aarch64_cjnative/ohos"
 }
 
 cj_ohos_sdk_header_copy("sdk_header_ohos_aarch64_kit") {
   source_dir = "kits"
-  extension = "cj.d"
   out_relative_dir = "cangjie_sdk/api/modules/linux_ohos_aarch64_cjnative/kit"
 }
 
@@ -201,13 +198,9 @@ ohos_copy("sdk_compiler_modules") {
 
 cj_ohos_sdk_copy("sdk_api") {
   out_relative_dir = "cangjie_sdk/api"
-  deps = [
-    ":sdk_ohos_aarch64_libs",
-  ]
+  deps = [ ":sdk_ohos_aarch64_libs" ]
   if (host_cpu == "x64") {
-    deps += [
-      ":sdk_ohos_x86_64_libs",
-    ]
+    deps += [ ":sdk_ohos_x86_64_libs" ]
   }
   if (is_mingw) {
     deps += [

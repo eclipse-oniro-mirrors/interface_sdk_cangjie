@@ -20,42 +20,13 @@ package ohos.file.fileuri
 import ohos.labels.APILevel
 
 /**
- * URI Represents a Uniform Resource Identifier (URI) reference.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.FileManagement.AppFileService"
-]
-public open class Uri <: ToString {
-    /**
-     * Gets/Sets the path portion of the URI.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.FileManagement.AppFileService"
-    ]
-    public open prop path: String
-
-    /**
-     * Converts this URI into an encoded string.
-     *
-     * @returns { String } URI in a serialized string.
-     */
-    @!APILevel[
-        since: "22",
-        syscap: "SystemCapability.FileManagement.AppFileService"
-    ]
-    public open func toString(): String
-}
-
-/**
  * FileUri represents the uri of the file.
  */
 @!APILevel[
     since: "22",
     syscap: "SystemCapability.FileManagement.AppFileService"
 ]
-public class FileUri <: Uri {
+public class FileUri {
     /**
      * Constructor for obtaining the instance of the FileUri class.
      *

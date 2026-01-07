@@ -3318,6 +3318,127 @@ public enum Endian {
 }
 
 /**
+ * Enum representing the possible states of a thread.
+ * Implements ToString for human-readable representation.
+ */
+@!APILevel[
+    since: "23"
+]
+public enum ThreadState <: ToString {
+
+    /**
+     * Thread is in a ready state, waiting to be scheduled for execution.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    Ready | 
+    
+    /**
+     * Thread is currently running and executing its task.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    Running | 
+    
+    /**
+     * Thread is in a pending state, waiting to be resumed.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    Pending | 
+    
+    /**
+     * Thread has terminated and is no longer running.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    Terminated 
+
+    /**
+     * Converts the enum value to its string representation
+     * @return String representation of the thread state
+     */
+     @!APILevel[
+        since: "23"
+    ]
+    public func toString(): String
+}
+
+/**
+ * Class representing a snapshot of a thread's state at a point in time.
+ * Provides functionality for retrieving and printing thread information.
+ */
+public class ThreadSnapshot <: ToString {
+
+    /**
+     * Unique identifier of the thread.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public let id: Int64
+
+    /**
+     * Name of the thread.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public let name: String
+
+    /**
+     * Stack trace information of the thread.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public let stackTrace: Array<StackTraceElement>
+
+    /**
+     * Current state of the thread.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public let state: ThreadState
+
+    /**
+     * Converts the thread snapshot information to a string representation
+     * 
+     * @return Returns a formatted string containing thread ID, name, state and stack trace information
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public func toString(): String
+
+    /**
+     * Retrieves snapshots of all currently active threads.
+     *
+     * @return Array of ThreadSnapshot objects
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public static func dumpAllThreads(): Array<ThreadSnapshot> 
+
+    /**
+     * Retrieves a snapshot of the current thread.
+     *
+     * @return ThreadSnapshot of the current thread
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public static func dumpCurrentThread(): ThreadSnapshot
+
+}
+
+/**
  * @description Interface for types that support equality comparison.
  */
 @!APILevel[
@@ -6062,7 +6183,7 @@ public class StackOverflowError <: Error {
 @!APILevel[
     since: "22"
 ]
-public open class StackTraceElement {
+public open class StackTraceElement <: ToString {
     /**
      * @description The fully qualified name of the class containing the execution point represented by this stack trace element.
      */
@@ -6106,6 +6227,16 @@ public open class StackTraceElement {
         since: "22"
     ]
     public init(declaringClass: String, methodName: String, fileName: String, lineNumber: Int64)
+
+    /**
+     * Converts the call point information to a string representation
+     *
+     * @return Returns a formatted string containing class name, method name, file name and line number information.
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public func toString(): String
 }
 
 /**
@@ -7258,6 +7389,19 @@ public class Thread {
         since: "22"
     ]
     public static func handleUncaughtExceptionBy(exHandler: (Thread, Exception) -> Unit): Unit
+
+    /**
+     * Get thread state
+     *
+     * Returns the current thread's state by querying the underlying CJ thread.
+     * Returns Terminated if thread handle is invalid.
+     *
+     * @return ThreadState Current thread state
+     */
+    @!APILevel[
+        since: "23"
+    ]
+    public prop state: ThreadState
 }
 
 /**
