@@ -32,9 +32,6 @@ import std.collection.*
     syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core"
 ]
 public open class AbsAlbum {
-    
-    protected init(id: Int64)
-
     /**
      * Album type
      */
@@ -157,9 +154,6 @@ public class Album <: AbsAlbum {
     syscap: "SystemCapability.FileManagement.PhotoAccessHelper.Core"
 ]
 public open class FetchResult {
-    
-    protected init(id: Int64)
-
     /**
      * Obtains the total number of objects in the fetch result.
      * @returns { Int32 } Total number of objects.

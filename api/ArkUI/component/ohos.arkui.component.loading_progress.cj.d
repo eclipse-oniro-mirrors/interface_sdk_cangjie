@@ -14,25 +14,25 @@ import ohos.labels.APILevel
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public class LoadingProgress <: CommonMethodComponent<LoadingProgress> & LoadingProgressAttribute {
-/**
- * Initializes a LoadingProgress component.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Initializes a LoadingProgress component.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public init()
 
-/**
- * Load the color of the progress bar.
- *
- * @param { ?ResourceColor } value - Sets the foreground color of the loading progress bar.
- * @returns { This } Returns the LoadingProgress instance.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Load the color of the progress bar.
+     *
+     * @param { ?ResourceColor } value - Sets the foreground color of the loading progress bar.
+     * @returns { This } Returns the LoadingProgress instance.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     public func color(value: ?ResourceColor): This
 }
 
@@ -44,15 +44,15 @@ public class LoadingProgress <: CommonMethodComponent<LoadingProgress> & Loading
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 sealed interface LoadingProgressAttribute <: CommonMethod<LoadingProgressAttribute> {
-/**
- * Load the color of the progress bar.
- *
- * @param { ?ResourceColor } value - Sets the foreground color of the loading progress bar.
- * @returns { LoadingProgressAttribute } Returns the loading progress attribute.
- */
-@!APILevel[
-    since: "22",
-    syscap: "SystemCapability.ArkUI.ArkUI.Full"
-]
+    /**
+     * Load the color of the progress bar.
+     *
+     * @param { ?ResourceColor } value - Sets the foreground color of the loading progress bar.
+     * @returns { LoadingProgressAttribute } Returns the loading progress attribute.
+     */
+    @!APILevel[
+        since: "22",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
     func color(value: ?ResourceColor): LoadingProgressAttribute
 }

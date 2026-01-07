@@ -1888,7 +1888,7 @@ public class GattPermissions {
         since: "22",
         syscap: "SystemCapability.Communication.Bluetooth.Core"
     ]
-    public init (
+    public init(
         read!: Bool = true,
         readEncrypted!: Bool = false,
         readEncryptedMitm!: Bool = false,
