@@ -32,7 +32,7 @@
     },
     "build": {
       "sub_component": [],
-      "inner_api": [],
+      "inner_kits": [],
       "test": []
     }
   }
