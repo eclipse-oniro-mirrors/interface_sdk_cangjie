@@ -114,6 +114,21 @@ cj_ohos_sdk_shared_lib("sdk_ohos_aarch64_libs") {
   target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
 }
 
+if (sdk_build_cangjie_ohos_arm == true) {
+  cj_ohos_sdk_shared_lib("sdk_ohos_arm_libs") {
+    platform = cangjie_sdk_platform.ohos_arm
+    toolchain = cangjie_sdk_toolchain.ohos_arm
+    external_deps = []
+    foreach(lib, sdk_packages_api_libs) {
+      external_deps += [ "${lib}(${cangjie_sdk_toolchain.ohos_arm})" ]
+    }
+    target_root_out_dir = get_label_info(external_deps[0], "root_out_dir")
+  }
+} else {
+  group("sdk_ohos_arm_libs") {
+  }
+}
+
 cj_ohos_sdk_shared_lib("sdk_ohos_x86_64_libs") {
   platform = cangjie_sdk_platform.ohos_x86_64
   toolchain = cangjie_sdk_toolchain.ohos_x86_64
@@ -183,6 +198,10 @@ action_with_pydeps("sdk_build_tools_copy") {
     rebase_path("${target_out_dir}/cangjie_sdk/build-tools", root_build_dir),
   ]
 
+  if (sdk_build_cangjie_ohos_arm == true) {
+    args += [ "--support-ohos-arm" ]
+  }
+
   outputs = [ "${target_out_dir}/cangjie_sdk/build-tools" ]
 }
 
@@ -206,6 +225,7 @@ cj_ohos_sdk_copy("sdk_api") {
     deps += [
       ":sdk_cangjie_previewer_windows",
       ":sdk_header_ohos_aarch64",
+      ":sdk_ohos_arm_libs",
       ":sdk_windows_x86_64_macro",
     ]
   } else if (host_os == "mac") {
@@ -214,11 +234,17 @@ cj_ohos_sdk_copy("sdk_api") {
       ":sdk_header_ohos_aarch64",
     ]
     if (host_cpu == "arm64") {
-      deps += [ ":sdk_darwin_aarch64_macro" ]
+      deps += [
+        ":sdk_darwin_aarch64_macro",
+        ":sdk_ohos_arm_libs",
+      ]
     } else if (host_cpu == "x64") {
       deps += [ ":sdk_darwin_x86_64_macro" ]
     }
   } else if (is_linux) {
-    deps += [ ":sdk_linux_x86_64_macro" ]
+    deps += [
+      ":sdk_linux_x86_64_macro",
+      ":sdk_ohos_arm_libs",
+    ]
   }
 }
