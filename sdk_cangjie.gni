@@ -16,6 +16,7 @@ import("//build/templates/cangjie/cjc_toolchain.gni")
 
 declare_args() {
   sdk_build_cangjie_previewer = false
+  sdk_build_cangjie_ohos_arm = false
 }
 
 template("cj_ohos_sdk_header_copy") {
@@ -27,7 +28,8 @@ template("cj_ohos_sdk_header_copy") {
                          ])
 
   action_with_pydeps(target_name) {
-    script = "//interface/sdk_cangjie/build-tools/script/copy_cangjie_headers.py"
+    script =
+        "//interface/sdk_cangjie/build-tools/script/copy_cangjie_headers.py"
     depfile = "${target_gen_dir}/${target_name}.d"
     inputs = [ source_dir ]
     args = [

@@ -75,6 +75,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", required=True, help="Source directory")
     parser.add_argument("--destination", required=True, help="Destination directory")
+    parser.add_argument("--support-ohos-arm", action='store_true', help="Enable support for OHOS ARM architecture")
 
     args = parser.parse_args()
 
@@ -91,6 +92,13 @@ def main():
     # 删除cangjie/include目录
     include_dir = os.path.join(args.destination, "include")
     remove_directory_safely(include_dir)
+
+    if args.support_ohos_arm:
+        # 删除cangjie/lib/linux_ohos_arm_cjnative/libcangjie-std*.a
+        remove_files_safely(os.path.join(args.destination, "lib", "linux_ohos_arm_cjnative", "libcangjie-std*.a"))
+    else:
+        remove_directory_safely(os.path.join(args.destination, "lib", "linux_ohos_arm_cjnative"))
+        remove_directory_safely(os.path.join(args.destination, "runtime/lib", "linux_ohos_arm_cjnative"))
 
     # 删除cangjie/lib/linux_ohos_aarch64_cjnative 和 cangjie/lib/linux_ohos_x86_64_cjnative/目录下
     # libcangjie-std*.a 和 libboundscheck-static.a
