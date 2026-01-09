@@ -17,6 +17,7 @@ import("sdk_cangjie.gni")
 
 sdk_packages_api_libs = [
   "cangjie_ark_interop:copy_cangjie_ark_interop_libs",
+  "cangjie_ark_interop:copy_cangjie_ark_interop_libs_kit",
   "hiviewdfx_cangjie_wrapper:copy_sdk_hiviewdfx_cangjie_libs",
   "hiviewdfx_cangjie_wrapper:copy_sdk_hiviewdfx_cangjie_libs_kit",
   "arkui_cangjie_wrapper:copy_sdk_arkui_cangjie_libs",
