@@ -4942,7 +4942,8 @@ public enum GestureMode {
         since: "22",
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
-    Sequence |
+    Sequence
+    |
     /**
      * Simultaneous recognition. Registration gestures participate in recognition. Everything can be triggered.
      */
