@@ -99,6 +99,7 @@ def main():
     else:
         remove_directory_safely(os.path.join(args.destination, "lib", "linux_ohos_arm_cjnative"))
         remove_directory_safely(os.path.join(args.destination, "runtime/lib", "linux_ohos_arm_cjnative"))
+        remove_directory_safely(os.path.join(args.destination, "modules", "linux_ohos_arm_cjnative"))
 
     # 删除cangjie/lib/linux_ohos_aarch64_cjnative 和 cangjie/lib/linux_ohos_x86_64_cjnative/目录下
     # libcangjie-std*.a 和 libboundscheck-static.a
