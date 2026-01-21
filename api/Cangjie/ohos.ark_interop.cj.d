@@ -3799,9 +3799,9 @@ public class JSContext {
     public func requireSystemNativeModule(moduleName: String, prefix!: ?String = None): JSValue
 
     /**
-     * Load an ArkTS module, returns the module's JSValue, returns undefined if module not exist.
+     * Load an ArkTS module, which means ArkTS source file in hap\har\hsp or napi module or system api module. The returns is a module's JSValue, returns undefined if module not exist.
      *
-     * @param { String } src - ArkTS module specifier, support ArkTS source files in hap\har\hsp, napi module, system api modules.
+     * @param { String } path - ArkTS module specifier, which is relative path of ArkTS source file in hap\har\hsp, or shared library name of napi module or system library name of system api module.
      * @throws { BusinessException } 34300002 - Outside error occurred.
      * @throws { BusinessException } 34300003 - Accessing reference is beyond reach.
      * @throws { BusinessException } 34300004 - Thread mismatch.
@@ -3814,7 +3814,7 @@ public class JSContext {
         since: "23",
         throwexception: true
     ]
-    public func requireArkModule(src: String): JSValue
+    public func requireArkModule(path: String): JSValue
 }
 
 /**
