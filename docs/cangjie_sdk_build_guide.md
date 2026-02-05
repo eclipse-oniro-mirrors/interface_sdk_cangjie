@@ -8,7 +8,7 @@
 
 - **构建仓颉构建工具链整体流程：**
 
-  1. 仓颉编译器、仓颉工具预构建后，归档到OpenHarmony华为云仓库([cangjie_sdk](https://repo.huaweicloud.com/harmonyos/compiler/cangjie/))。仓颉运行时、仓颉标准库在构建SDK时由源码构建。
+  1. 仓颉编译器、仓颉工具预构建后，归档到OpenHarmony华为云仓库([cangjie_sdk](https://repo.huaweicloud.com/openharmony/compiler/cangjie/))。仓颉运行时、仓颉标准库在构建SDK时由源码构建。
   2. 在预下载阶段，通过`bash build/prebuilts_download.sh`从华为云下载对应版本和平台的仓颉编译器、仓颉工具，并解压到`ohos/prebuilts/cangjie_sdk`目录下。
   3. 构建ohos-sdk仓颉包时，首先会直接从prebuilts/cangjie_sdk拷贝并压缩对应平台的仓颉编译器、仓颉工具到SDK中，其次再利用仓颉编译器从源码构建仓颉运行时和仓颉标准库，将其构建产物打包到SDK中（注意：当前仓颉运行时库还是采用预构建方式，构建SDK时采用直接拷贝预下载的运行库二进制）。
 
