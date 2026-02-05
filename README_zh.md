@@ -115,7 +115,7 @@ cangjie
 │   ├── lib                                 # 仓颉标准库静态库存放目录
 │   ├── modules                             # 仓颉标准库头文件以及cjo存放目录
 │   ├── runtime                             # 仓颉运行时动态库存放目录（包括仓颉运行时库和仓颉标准库）                                              
-│   ├── third_party                         # 仓颉依赖的三方库以及三方工具（mingw 和llvm工具）
+│   ├── third_party                         # 仓颉依赖的三方库以及三方工具
 │   └── tools                               # 仓颉工具
 └── oh-uni-package.json
 ```
