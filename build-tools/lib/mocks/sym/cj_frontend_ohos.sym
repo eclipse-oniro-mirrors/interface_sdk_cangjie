@@ -140,6 +140,7 @@ FFIGetResourceSymbolId;
 FFIGetResourceUInt32;
 FFIGetResourceVectorString;
 FFIGetResourceVectorUInt32;
+FFIGetResourceColorString;
 FFIOHOSAceFrameworkBindContentCover;
 FFIOHOSAceFrameworkBindContentCoverV2;
 FFIOHOSAceFrameworkBlendColor;
