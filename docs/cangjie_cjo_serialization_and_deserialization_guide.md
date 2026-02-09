@@ -1,7 +1,7 @@
 # 仓颉CJO序列化和反序列化指导
 
 ## 准备工作
-**Flatbuffers编译器`flatc`**：可以从Flatbuffers的[GitHub releases页面](https://github.com/google/flatbuffers/releases)下载适合你操作系统的`flatc`可执行文件，也可以直接从ohos预下载目录`prebuilts/cangjie_sdk/build-tools/flatc`获取。
+**flatbuffers编译器`flatc`**：可以直接从ohos预下载目录`prebuilts/cangjie_sdk/build-tools/flatc`获取。
 
 ## JSON转换为cjo
 使用`flatc`命令将JSON文件转换为Flatbuffer二进制文件。在命令行中执行以下命令：

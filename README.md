@@ -118,7 +118,7 @@ cangjie
 │   ├── lib                                 # Cangjie standard library static library storage directory
 │   ├── modules                             # Cangjie standard library header files and cjo storage directory
 │   ├── runtime                             # Cangjie runtime dynamic library storage directory (including Cangjie runtime library and Cangjie standard library)                                              
-│   ├── third_party                         # Third-party libraries and tools that Cangjie depends on (mingw and llvm tools)
+│   ├── third_party                         # Third-party libraries and tools that Cangjie depends on
 │   └── tools                               # Cangjie tools
 └── oh-uni-package.json
 ```
