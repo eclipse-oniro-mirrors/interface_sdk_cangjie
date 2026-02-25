@@ -11,24 +11,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-CJ_CreateHttp;
-CJ_CreateHttpResponseCache;
-CJ_DestroyRequest;
-CJ_HttpResponseCacheDelete;
-CJ_HttpResponseCacheFlush;
-CJ_OffDataEnd;
-CJ_OffOneDataEnd;
-CJ_OffDataReceive;
-CJ_OffOneDataReceive;
-CJ_OffDataReceiveProgress;
-CJ_OffDataSendProgress;
-CJ_OffHeadersReceive;
-CJ_OnDataEnd;
-CJ_OnDataReceive;
-CJ_OnDataReceiveProgress;
-CJ_OnDataSendProgress;
-CJ_OnHeadersReceive;
-CJ_SendRequest;
-FFiOHOSNetHttpFreeCString;
-FFiOHOSNetHttpFreeCArrUI8;
-FFiOHOSNetHttpFreeCArrString;
+FfiOHOSFilePickerModalPicker;
