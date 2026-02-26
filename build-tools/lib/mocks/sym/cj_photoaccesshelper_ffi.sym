@@ -58,6 +58,7 @@ FfiPhotoAccessHelperRegisterChange;
 FfiPhotoAccessHelperRelease;
 FfiPhotoAccessHelperShowAssetsCreationDialog;
 FfiPhotoAccessHelperStartPhotoPicker;
+FfiPhotoAccessHelperStartPhotoPickerV2;
 FfiPhotoAccessHelperUnRegisterChange;
 FfiPhotoAlbumCommitModify;
 FfiPhotoAlbumGetAlbumName;
