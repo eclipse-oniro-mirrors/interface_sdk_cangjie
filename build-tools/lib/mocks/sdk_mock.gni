@@ -19,23 +19,26 @@ template("mock_sdk_target") {
   all_sources = []
 
   foreach(source, invoker.sources) {
-    _sourcename_ = get_path_info(source, "name")
-    _inputpath_ = rebase_path(source)
-    _outcpath_ = "$target_gen_dir/${_sourcename_}.c"
-    _outcpath_abs_ = rebase_path(_outcpath_)
+    _sourcename = get_path_info(source, "name")
+    _outcpath = "$target_gen_dir/${_sourcename}.c"
 
-    action("gen_src_${_sourcename_}") {
+    action_with_pydeps("gen_src_${_sourcename}") {
       sources = [ source ]
       script = "//interface/sdk_cangjie/build-tools/lib/mocks/generate_mock.py"
+      depfile = "${target_gen_dir}/${target_name}.d"
       args = [
-        "--input=${_inputpath_}",
-        "--output=${_outcpath_abs_}",
+        "--input",
+        rebase_path(source),
+        "--output",
+        rebase_path(_outcpath),
+        "--depfile",
+        rebase_path(depfile, root_build_dir),
       ]
-      outputs = [ _outcpath_ ]
+      outputs = [ _outcpath ]
     }
 
-    all_deps += [ ":gen_src_${_sourcename_}" ]
-    all_sources += [ _outcpath_ ]
+    all_deps += [ ":gen_src_${_sourcename}" ]
+    all_sources += [ _outcpath ]
   }
 
   ohos_shared_library(target_name) {
@@ -50,6 +53,5 @@ template("mock_sdk_target") {
       sources += invoker.c_sources
     }
     deps = all_deps
-    deps += [ "//interface/sdk_cangjie/build-tools/lib/mocks:mock_stub" ]
   }
 }

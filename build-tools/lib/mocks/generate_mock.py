@@ -13,33 +13,52 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import sys
+import os
 import argparse
+from pathlib import Path
+
+build_path = (Path(__file__).resolve().parents[5] / "build")
+if build_path not in sys.path:
+    sys.path.insert(0, str(build_path))
+from scripts.util import build_utils  # noqa: E402
+
+STUB_FUNCTION_TEMPLATE = '''
+void {}() {{  }}
+'''
 
 
 def get_identifier(src):
     id_str = src[0:len(src) - 1]
     if not id_str.isidentifier():
-        raise "invalid identifier: " + id_str
+        raise ValueError(f"Invalid C identifier: {id_str}")
     return id_str
 
 
 def gen_mock_source(args):
-    outtxt = "extern void* OHOSFFICallMockFunc(const char* funcName);\n"
+    contents = []
+    if not os.path.exists(args.input):
+        raise FileNotFoundError(f"Input file not found: {args.input}")
+
     with open(args.input, "r") as f:
         for line in f.readlines():
             line = line.strip()
-            if (line.startswith("#")):
+            if not line or line.startswith("#"):
                 continue
             if not line.endswith(";"):
                 continue
             funcName = get_identifier(line)
-            outtxt += "void* " + funcName + "() {return OHOSFFICallMockFunc(\"" + funcName + "\");}\n"
+            contents.append(STUB_FUNCTION_TEMPLATE.format(funcName))
     with open(args.output, "w") as f:
-        f.write(outtxt)
+        f.write('\n'.join(contents))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, help="a text file lists library exports")
     parser.add_argument("--output", required=True, help="output source path")
-    options = parser.parse_args()
-    gen_mock_source(options)
+    parser.add_argument("--depfile", required=True)
+    args = parser.parse_args()
+    depfiles = [args.input]
+    gen_mock_source(args)
+
+    build_utils.write_depfile(args.depfile, args.output, depfiles)
