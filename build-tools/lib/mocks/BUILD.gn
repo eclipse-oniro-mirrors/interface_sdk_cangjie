@@ -64,6 +64,7 @@ if (build_ohos_sdk) {
     "cj_frontend_ohos.sym",
     "cj_geolocationmanager_ffi.sym",
     "cj_hiappevent_ffi.sym",
+    "cj_hilog_ffi.sym",
     "cj_hitracemeter_ffi.sym",
     "cj_huks_ffi.sym",
     "cj_i18n_ffi.sym",
