@@ -17,10 +17,13 @@ import os
 import sys
 import argparse
 import shutil
-import subprocess
 from pathlib import Path
 from typing import List, Optional
-from collect_dir_sources import get_sources
+
+build_path = Path(__file__).resolve().parents[4] / "build"
+if build_path not in sys.path:
+    sys.path.insert(0, str(build_path))
+from scripts.util import build_utils  # noqa: E402
 
 
 def find_cjo_files(src_dir: Path) -> List[Path]:
@@ -66,65 +69,13 @@ def copy_files(src_files: List[Path], dest_dir: Path, mock: Optional[Path] = Non
     return copied
 
 
-def write_depfile(depfile: Path, inputs: List[Path], outputs: List[Path]):
-    try:
-        depfile.parent.mkdir(parents=True, exist_ok=True)
-        # Write a simple depfile: one line per output: inputs...
-        with depfile.open('w', encoding='utf-8') as f:
-            for out in outputs:
-                # join inputs with spaces; escape spaces in paths
-                in_list = ' '.join(str(p).replace(' ', '\\ ') for p in inputs)
-                f.write(f"{out}: {in_list}\n")
-    except Exception as e:
-        print(f'WARN: failed to write depfile {depfile}: {e}', file=sys.stderr)
-
-
-def convert_cjo_to_json(flatc, input, output_path, fbs):
-    child = subprocess.Popen([flatc, "-t", "--raw-binary", "-o", output_path, fbs, "--", input], stdout=subprocess.PIPE)
-    code = child.wait()
-    if code != 0:
-        raise Exception("failed to flatc -t --raw-binary -o [output-path] [fbs] -- [input]")
-
-
-def convert_json_to_cjo(flatc, input, output_path, fbs):
-    child = subprocess.Popen([flatc, "--no-warnings", "-b", "-o", output_path, fbs, input], stdout=subprocess.PIPE)
-    code = child.wait()
-    if code != 0:
-        raise Exception("failed to flatc -b -o [output-path] [fbs] [input]")
-    stem = os.path.splitext(os.path.basename(input))[0]
-    module_name = "ohos"
-    if stem.startswith("kit"):
-        module_name = "kit"
-    cjo_output_path = f"{output_path}/{module_name}"
-    if not os.path.exists(cjo_output_path):
-        os.makedirs(cjo_output_path)
-    shutil.move(f'{output_path}/{stem}.bin', f'{cjo_output_path}/{stem}.cjo')
-
-
 def parse_args(args):
     parser = argparse.ArgumentParser(description='Convert between .cjo and json and copy results')
-    parser.add_argument('--flatc', help='flatc path')
-    parser.add_argument('--fbs', help='schema.fbs path')
-    parser.add_argument('--input-dir', help='cjo or json path')
     parser.add_argument('--copy-cjo-dir', help='copy cjo source dir')
     parser.add_argument('--output-dir', help='output path')
     parser.add_argument('--mock', help='mock so')
     parser.add_argument('--depfile', help='可选：写入 depfile，格式为 "<output>: <inputs...>" 每行一条')
     return parser.parse_args(args)
-
-
-def _ensure_dir(path: str) -> None:
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-
-def _process_jsons(options) -> None:
-    if not options.input_dir or not options.output_dir:
-        return
-    _ensure_dir(options.output_dir)
-    json_path_list = get_sources(options.input_dir, options.input_dir, "json")
-    for json in json_path_list:
-        convert_json_to_cjo(options.flatc, f"{options.input_dir}/{json}", options.output_dir, options.fbs)
 
 
 def _process_copy_cjo(options) -> None:
@@ -138,16 +89,19 @@ def _process_copy_cjo(options) -> None:
     cjo_files = find_cjo_files(src)
     if not cjo_files:
         if options.depfile:
-            write_depfile(Path(options.depfile), [], [])
+            build_utils.write_depfile(options.depfile, options.mock, [], add_pydeps=False)
         return
     copied = copy_files(cjo_files, dst, mock)
+    inputs_cjo_files: List[str] = [str(f) for f in cjo_files]
     if options.depfile:
-        write_depfile(Path(options.depfile), cjo_files, copied)
+        build_utils.write_depfile(options.depfile,
+                                  str(copied[0]),
+                                  inputs_cjo_files,
+                                  add_pydeps=False)
 
 
 def main(argv):
     options = parse_args(argv)
-    _process_jsons(options)
     _process_copy_cjo(options)
 
 

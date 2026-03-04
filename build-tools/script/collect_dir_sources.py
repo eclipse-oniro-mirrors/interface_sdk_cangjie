@@ -17,8 +17,9 @@ import argparse
 import sys
 import os
 
-def get_sources(dir, relative, extension):
-    walk_nodes = os.walk(dir)
+
+def get_sources(source_dir, relative, extension):
+    walk_nodes = os.walk(source_dir)
     result = []
     for path, _, file_list in walk_nodes:
         for file_name in file_list:
@@ -26,6 +27,7 @@ def get_sources(dir, relative, extension):
                 file_path = os.path.join(path, file_name)
                 result.append(os.path.relpath(file_path, relative))
     return result
+
 
 def main():
     parser = argparse.ArgumentParser()

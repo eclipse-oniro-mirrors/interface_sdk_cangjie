@@ -20,7 +20,7 @@ import shutil
 from collect_dir_sources import get_sources
 from pathlib import Path
 
-build_path = (Path(__file__).resolve().parents[4] / "build")
+build_path = Path(__file__).resolve().parents[4] / "build"
 if build_path not in sys.path:
     sys.path.insert(0, str(build_path))
 from scripts.util import build_utils  # noqa: E402
