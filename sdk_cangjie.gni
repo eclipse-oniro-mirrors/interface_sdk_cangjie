@@ -77,6 +77,8 @@ template("cj_ohos_sdk_shared_lib") {
       rebase_path(_mock_so_target, root_build_dir),
       "--output-dir",
       rebase_path(_output_dir, root_build_dir),
+      "--depfile",
+      rebase_path(depfile, root_build_dir),
     ]
 
     outputs = [ _output_dir ]

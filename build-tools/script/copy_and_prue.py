@@ -63,7 +63,7 @@ def remove_files_in_subdirs(base_dir, patterns):
     :param patterns: 文件模式列表
     """
     if os.path.exists(base_dir):
-        for root, dirs, files in os.walk(base_dir):
+        for root, _, _ in os.walk(base_dir):
             # 跳过根目录本身，只处理子目录
             if root != base_dir:
                 for pattern in patterns:
@@ -88,7 +88,7 @@ def main():
     else:
         print(f"Source directory does not exist: {args.source}")
         return 1
-    
+
     # 删除cangjie/include目录
     include_dir = os.path.join(args.destination, "include")
     remove_directory_safely(include_dir)
@@ -111,7 +111,7 @@ def main():
         "libcangjie-std*.a",
         "libboundscheck-static.a"
     ]
-    
+
     for arch_dir in arch_dirs:
         remove_specific_files(arch_dir, file_patterns)
 
