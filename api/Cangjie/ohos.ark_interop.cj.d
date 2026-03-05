@@ -3357,6 +3357,20 @@ public class JSContext {
     public func getNapiEnv(): napi_env
 
     /**
+     * Create a new handle scope, ensuring that no js memory leaks occur when the callback function is executed in the scope.
+     *
+     * @param { () -> T } callback - The task to to be executed in the scope.
+     * @throws { BusinessException } 34300003 - Accessing reference is beyond reach.
+     * @throws { BusinessException } 34300004 - Thread mismatch.
+     * @returns { T } The result of the callback.
+     */
+    @!APILevel[
+        since: "24",
+        throwexception: true
+    ]
+    public func newScope<T>(callback: () -> T): T
+
+    /**
      * Create an ArkTS undefined.
      *
      * @throws { BusinessException } 34300003 - Accessing reference is beyond reach.
