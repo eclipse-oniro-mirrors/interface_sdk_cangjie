@@ -13,4 +13,3 @@
 
 FfiOHOSHiLogIsLoggable;
 FfiOHOSIsPrivateSwitchOn;
-FfiOHOSHiLogPrint;
