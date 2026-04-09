@@ -356,6 +356,15 @@ public class LengthMetrics <: Length {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public prop unitType: LengthUnit
+
+    /**
+     * Defines the auto option means to adapt to the length.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public static let AUTO: Length = LengthMetrics(0.0, unit: LengthUnit.Auto)
 }
 
 /**
