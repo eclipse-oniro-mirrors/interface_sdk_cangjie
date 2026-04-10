@@ -1015,6 +1015,57 @@ extend ToastShowMode <: Equatable<ToastShowMode> {
 }
 
 /**
+ * Define the display mode of all kind of dialog.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum LevelMode {
+    /**
+     * Display above all page levels.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Overlay
+    |
+    /**
+     * Display within the current page.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Embedded
+    | ...
+}
+
+extend LevelMode <: Equatable<LevelMode> {
+    /**
+     * Compares this LevelMode with another for equality.
+     * @param { LevelMode } - The LevelMode to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    /**
+     * Compares this LevelMode with another for equality.
+     * @param { LevelMode } - The LevelMode to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    public operator func ==(other: LevelMode): Bool
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: LevelMode): Bool
+}
+
+/**
  * Provides a EdgeColor component.
  */
 @!APILevel[
@@ -1909,6 +1960,615 @@ public class ShowToastOptions {
 }
 
 /**
+ * Dialog base options
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public open class BaseDialogConfig {
+    /**
+     * Mask Region of dialog. The size can't exceed the main window.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop maskRect: ?Rectangle
+
+    /**
+     * Defines the dialog alignment of the screen.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop alignment: ?DialogAlignment
+
+    /**
+     * Defines the dialog offset.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop offset: ?Offset
+
+    /**
+     * Whether it is a modal dialog
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop isModal: ?Bool
+
+    /**
+     * Whether to display in the sub window.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop showInSubWindow: ?Bool
+
+    /**
+     * Allows users to click the mask layer to exit.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop autoCancel: ?Bool
+
+    /**
+     * Defines custom dialog maskColor
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop maskColor: ?ResourceColor
+
+    /**
+     * Transition parameters of opening/closing custom dialog.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop transition: ?TransitionEffect
+
+    /**
+     * Callback function when the dialog appears.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop onDidAppear: ?() -> Unit
+
+    /**
+     * Callback function when the dialog disappears.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop onDidDisappear: ?() -> Unit
+
+    /**
+     * Callback function before the dialog openAnimation starts.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop onWillAppear: ?() -> Unit
+
+    /**
+     * Callback function before the dialog closeAnimation starts.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop onWillDisappear: ?() -> Unit
+
+    /**
+     * Obtains the avoidance mode of the virtual keyboard.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop keyboardAvoidMode: ?KeyboardAvoidMode
+
+    /**
+     * Defines whether to respond to the hover mode.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop enableHoverMode: ?Bool
+
+    /**
+     * Defines the dialog's display area in hover mode.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop hoverModeArea: ?HoverModeAreaType
+
+    /**
+     * Defines the dialog's display layer mode.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public mut prop levelMode: ?LevelMode
+
+    /**
+     * BaseDialogConfig constructor
+     *
+     * @param { ?Rectangle } [maskRect]
+     * @param { ?DialogAlignment } [alignment]
+     * @param { ?Offset } [offset]
+     * @param { ?Bool } [isModal]
+     * @param { ?Bool } [showInSubWindow]
+     * @param { ?Bool } [autoCancel]
+     * @param { ?ResourceColor } [maskColor]
+     * @param { ?TransitionEffect } [transition]
+     * @param { ?() -> Unit } [onDidAppear]
+     * @param { ?() -> Unit } [onDidDisappear]
+     * @param { ?() -> Unit } [onWillAppear]
+     * @param { ?() -> Unit } [onWillDisappear]
+     * @param { ?KeyboardAvoidMode } [keyboardAvoidMode]
+     * @param { ?Bool } [enableHoverMode]
+     * @param { ?HoverModeAreaType } [hoverModeArea]
+     * @param { ?LevelMode } [levelMode]
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(
+        maskRect!: ?Rectangle = Option.None,
+        alignment!: ?DialogAlignment = Option.None,
+        offset!: ?Offset = Option.None,
+        isModal!: ?Bool = Option.None,
+        showInSubWindow!: ?Bool = Option.None,
+        autoCancel!: ?Bool = Option.None,
+        maskColor!: ?ResourceColor = Option.None,
+        transition!: ?TransitionEffect = Option.None,
+        onDidAppear!: ?() -> Unit = Option.None,
+        onDidDisappear!: ?() -> Unit = Option.None,
+        onWillAppear!: ?() -> Unit = Option.None,
+        onWillDisappear!: ?() -> Unit = Option.None,
+        keyboardAvoidMode!: ?KeyboardAvoidMode = Option.None,
+        enableHoverMode!: ?Bool = Option.None,
+        hoverModeArea!: ?HoverModeAreaType = Option.None,
+        levelMode!: ?LevelMode = Option.None
+    )
+}
+
+/**
+ * Dialog's custom content options.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class CustomDialogConfig <: BaseDialogConfig {
+    /**
+     * Allow developer custom dialog's content.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var builder: () -> Unit
+
+    /**
+     * Defines the custom dialog's background color.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var backgroundColor: ?ResourceColor
+
+    /**
+     * Defines the custom dialog's corner radius.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var cornerRadius: ?BorderRadiuses
+
+    /**
+     * Defines the custom dialog's border width.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var borderWidth: ?EdgeWidths
+
+    /**
+     * Defines the custom dialog's border color.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var borderColor: ?EdgeColors
+
+    /**
+     * Defines the custom dialog's border style.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var borderStyle: ?EdgeStyles
+
+    /**
+     * Defines the dialog's width.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var width: ?Length
+
+    /**
+     * Defines the dialog's height.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var height: ?Length
+
+    /**
+     * Defines the dialog's shadow.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var shadow: ?ShadowOptions
+
+    /**
+     * Defines the dialog's background blur Style.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var backgroundBlurStyle: ?BlurStyle
+
+    /**
+     * Dialog constructor.
+     *
+     * @param { ?() -> Unit } builder
+     * @param { ?Rectangle } [maskRect]
+     * @param { ?DialogAlignment } [alignment]
+     * @param { ?Offset } [offset]
+     * @param { ?Bool } [isModal]
+     * @param { ?Bool } [showInSubWindow]
+     * @param { ?Bool } [autoCancel]
+     * @param { ?ResourceColor } [maskColor]
+     * @param { ?TransitionEffect } [transition]
+     * @param { ?() -> Unit } [onDidAppear]
+     * @param { ?() -> Unit } [onDidDisappear]
+     * @param { ?() -> Unit } [onWillAppear]
+     * @param { ?() -> Unit } [onWillDisappear]
+     * @param { ?KeyboardAvoidMode } [keyboardAvoidMode]
+     * @param { ?Bool } [enableHoverMode]
+     * @param { ?HoverModeAreaType } [hoverModeArea]
+     * @param { ?LevelMode } [levelMode]
+     * @param { ?ResourceColor } [backgroundColor]
+     * @param { ?BorderRadiuses } [cornerRadius]
+     * @param { ?EdgeWidths } [borderWidth]
+     * @param { ?EdgeColors } [borderColor]
+     * @param { ?EdgeStyles } [borderStyle]
+     * @param { ?Length } [width]
+     * @param { ?Length } [height]
+     * @param { ?ShadowOptions } [shadow]
+     * @param { ?BlurStyle } [backgroundBlurStyle]
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(
+        builder!: () -> Unit,
+        maskRect!: ?Rectangle = Option.None,
+        alignment!: ?DialogAlignment = Option.None,
+        offset!: ?Offset = Option.None,
+        isModal!: ?Bool = Option.None,
+        showInSubWindow!: ?Bool = Option.None,
+        autoCancel!: ?Bool = Option.None,
+        maskColor!: ?ResourceColor = Option.None,
+        transition!: ?TransitionEffect = Option.None,
+        onDidAppear!: ?() -> Unit = Option.None,
+        onDidDisappear!: ?() -> Unit = Option.None,
+        onWillAppear!: ?() -> Unit = Option.None,
+        onWillDisappear!: ?() -> Unit = Option.None,
+        keyboardAvoidMode!: ?KeyboardAvoidMode = Option.None,
+        enableHoverMode!: ?Bool = Option.None,
+        hoverModeArea!: ?HoverModeAreaType = Option.None,
+        levelMode!: ?LevelMode = Option.None,
+        backgroundColor!: ?ResourceColor = Option.None,
+        cornerRadius!: ?BorderRadiuses = Option.None,
+        borderWidth!: ?EdgeWidths = Option.None,
+        borderColor!: ?EdgeColors = Option.None,
+        borderStyle!: ?EdgeStyles = Option.None,
+        width!: ?Length = Option.None,
+        height!: ?Length = Option.None,
+        shadow!: ?ShadowOptions = Option.None,
+        backgroundBlurStyle!: ?BlurStyle = Option.None
+    )
+}
+
+/**
+ * Dialog's show options.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class ShowDialogConfig {
+    /**
+     * Title of the text to display.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var title: ?ResourceStr
+
+    /**
+     * Text body.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var message: ?ResourceStr
+
+    /**
+     * Array of buttons in the dialog box.
+     * More than one buttons are supported.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var buttons: ?Array<ButtonInfo>
+
+    /**
+     * Defines the dialog alignment of the screen.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var alignment: ?DialogAlignment
+
+    /**
+     * Defines the dialog offset.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var offset: ?Offset
+
+    /**
+     * Mask Region of dialog. The size can't exceed the main window.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var maskRect: ?Rectangle
+
+    /**
+     * Whether to display in the sub window.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var showInSubWindow: ?Bool
+
+    /**
+     * Whether it is a modal dialog.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var isModal: ?Bool
+
+    /**
+     * Defines the dialog's background color.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var backgroundColor: ?ResourceColor
+
+    /**
+     * Defines the dialog's background blur Style.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var backgroundBlurStyle: ?BlurStyle
+
+    /**
+     * Defines the dialog's shadow option.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var shadow: ?ShadowOptions
+
+    /**
+     * Defines whether to respond to the hover mode.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var enableHoverMode: ?Bool
+
+    /**
+     * Defines the dialog's display area in hover mode.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var hoverModeArea: ?HoverModeAreaType
+
+    /**
+     * Defines the dialog's display layer mode.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var levelMode: ?LevelMode
+
+    /**
+     * Dialog's show options constructor.
+     *
+     * @param { ?ResourceStr } [title]
+     * @param { ?ResourceStr } [message]
+     * @param { ?Array<ButtonInfo> } [buttons]
+     * @param { ?DialogAlignment } [alignment]
+     * @param { ?Offset } [offset]
+     * @param { ?Rectangle } [maskRect]
+     * @param { ?Bool } [showInSubWindow]
+     * @param { ?Bool } [isModal]
+     * @param { ?ResourceColor } [backgroundColor]
+     * @param { ?BlurStyle } [backgroundBlurStyle]
+     * @param { ?ShadowOptions } [shadow]
+     * @param { ?Bool } [enableHoverMode]
+     * @param { ?HoverModeAreaType } [hoverModeArea]
+     * @param { ?LevelMode } [levelMode]
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(
+        title!: ?ResourceStr = Option.None,
+        message!: ?ResourceStr = Option.None,
+        buttons!: ?Array<ButtonInfo> = Option.None,
+        alignment!: ?DialogAlignment = Option.None,
+        offset!: ?Offset = Option.None,
+        maskRect!: ?Rectangle = Option.None,
+        showInSubWindow!: ?Bool = Option.None,
+        isModal!: ?Bool = Option.None,
+        backgroundColor!: ?ResourceColor = Option.None,
+        backgroundBlurStyle!: ?BlurStyle = Option.None,
+        shadow!: ?ShadowOptions = Option.None,
+        enableHoverMode!: ?Bool = Option.None,
+        hoverModeArea!: ?HoverModeAreaType = Option.None,
+        levelMode!: ?LevelMode = Option.None
+    )
+}
+
+/**
+ * Menu's Action options.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class ActionMenuConfig {
+    /**
+     * Title of the text to display.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var title: ?ResourceStr
+
+    /**
+     * Array of buttons in the dialog box.
+     * One to six buttons are supported.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var buttons: ?Array<ButtonInfo>
+
+    /**
+     * Whether to display in the sub window.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var showInSubWindow: ?Bool
+
+    /**
+     * Whether it is a modal dialog.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var isModal: ?Bool
+
+    /**
+     * Defines the dialog's display layer mode.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var levelMode: ?LevelMode
+
+    /**
+     * Menu's Action options constructor.
+     *
+     * @param { ?ResourceStr } [title]
+     * @param { ?Array<ButtonInfo> } [buttons]
+     * @param { ?Bool } [showInSubWindow]
+     * @param { ?Bool } [isModal]
+     * @param { ?LevelMode } [levelMode]
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(
+        title!: ?ResourceStr = Option.None,
+        buttons!: ?Array<ButtonInfo> = Option.None,
+        showInSubWindow!: ?Bool = Option.None,
+        isModal!: ?Bool = Option.None,
+        levelMode!: ?LevelMode = Option.None
+    )
+}
+
+/**
  * class PromptAction.
  */
 @!APILevel[
@@ -1928,6 +2588,18 @@ public class PromptAction {
     workerthread: true
     ]
     public func openCustomDialog(options: CustomDialogOptions, callBack: (Int32) -> Unit): Unit
+
+    /**
+     * Open the custom dialog.
+     *
+     * @param { CustomDialogConfig } options - Options.
+     * @param { (Int32) -> Unit } callback
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func openCustomDialog(options: CustomDialogConfig, callback: (Int32) -> Unit): Unit
 
     /**
      * Close the custom dialog.
@@ -1965,6 +2637,18 @@ public class PromptAction {
     public func showDialog(option: ShowDialogOptions, callback!: ShowDialogCallBack = defaultCallback)
 
     /**
+     * Shows a dialog box in the given settings. This API uses an asynchronous callback to return the result.
+     *
+     * @param { ShowDialogConfig } option - Dialog box options.
+     * @param { ShowDialogCallBack } [callback] - Callback used to return the dialog box response result.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func showDialog(option: ShowDialogConfig, callback!: ShowDialogCallBack = defaultCallback)
+
+    /**
      * Shows an action menu in the given settings. This API uses an asynchronous callback to return the result.
      *
      * @param { ActionMenuOptions } option - Action menu options.
@@ -1979,6 +2663,19 @@ public class PromptAction {
     workerthread: true
     ]
     public func showActionMenu(option: ActionMenuOptions, callback!: ShowActionMenuCallBack = defaultCallback)
+
+    /**
+     * Shows an action menu in the given settings. This API uses an asynchronous callback to return the result.
+     *
+     * @param { ActionMenuConfig } option - Action menu options.
+     * @param { ShowActionMenuCallBack } [callback] - Callback used to return the action menu
+     * response result.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func showActionMenu(option: ActionMenuConfig, callback!: ShowActionMenuCallBack = defaultCallback)
 }
 
 /**
