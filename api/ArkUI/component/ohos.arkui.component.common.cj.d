@@ -1132,8 +1132,6 @@ public open class MultiShadowOptions {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public var offsetY: ?Length
-
-    protected init(radius: ?Length, offsetX: ?Length, offsetY: ?Length)
 }
 
 /**

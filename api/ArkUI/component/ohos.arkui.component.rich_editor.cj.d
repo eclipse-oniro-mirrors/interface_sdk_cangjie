@@ -1411,8 +1411,6 @@ public class RichEditorParagraphStyle {
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
 public open class RichEditorBaseController <: RemoteDataLite {
-    protected init(id: Int64)
-
     /**
      * Get caret offset from controller.
      *
