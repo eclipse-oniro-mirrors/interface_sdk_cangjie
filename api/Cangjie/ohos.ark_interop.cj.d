@@ -134,7 +134,7 @@ public class JSArrayBuffer <: JSHeapObject {
 
     /**
      * Read binding memory to Array<UInt32>.
-     * 
+     *
      * @throws { BusinessException } 34300002 - Outside error occurred.
      * @throws { BusinessException } 34300003 - Accessing reference is beyond reach.
      * @throws { BusinessException } 34300004 - Thread mismatch.
@@ -176,7 +176,7 @@ public class JSArrayBuffer <: JSHeapObject {
 
     /**
      * Read binding memory to Array<Int64>.
-     * 
+     *
      * @throws { BusinessException } 34300002 - Outside error occurred.
      * @throws { BusinessException } 34300003 - Accessing reference is beyond reach.
      * @throws { BusinessException } 34300004 - Thread mismatch.
@@ -2204,6 +2204,20 @@ public class JSModule {
     public static func registerModule(register: ModuleRegister): Unit
 
     /**
+     * Register the API to be exported to ArkTS.
+     *
+     * @param { String } name - The corresponding Cangjie module name.
+     * @param { ModuleRegister } register - A function that can return an ArkTS class (constructor).
+     * @throws { BusinessException } 34300003 - Accessing reference is beyond reach.
+     * @throws { BusinessException } 34300004 - Thread mismatch.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        throwexception: true
+    ]
+    public static func registerModule(name: String, register: ModuleRegister): Unit
+
+    /**
      * Register a class to be exported to ArkTS.
      *
      * @param { String } name - Export name.
@@ -2239,7 +2253,7 @@ public class JSModule {
 
 /**
  * A callback encapsulation object. JSPromise aims to provide consistent encapsulation for callbacks, significantly
- * enhancing its usability by combining the syntactic sugar of async and await. The lifecycle of JSPromise exceeds the 
+ * enhancing its usability by combining the syntactic sugar of async and await. The lifecycle of JSPromise exceeds the
  * referenced ArkTS object.
  */
 @!APILevel[
@@ -2310,7 +2324,7 @@ public class JSPromiseCapability {
 
     /**
      * Convert JSPromiseCapability to JSValue.
-     * 
+     *
      * @throws { BusinessException } 34300003 - Accessing reference is beyond reach.
      * @throws { BusinessException } 34300004 - Thread mismatch.
      * @returns { JSValue } ArkTS unified type.
@@ -3302,8 +3316,8 @@ public type napi_env = CPointer<Unit>
 public type napi_value = CPointer<Unit>
 
 /**
- * A single-thread ArkTS interop context. JSContext has a one-to-one correspondence with the ArkTS runtime. 
- * Its main purpose is to create JSValues and safe references and manage the lifecycle of Cangjie objects 
+ * A single-thread ArkTS interop context. JSContext has a one-to-one correspondence with the ArkTS runtime.
+ * Its main purpose is to create JSValues and safe references and manage the lifecycle of Cangjie objects
  * referenced by ArkTS.
  */
 @!APILevel[
@@ -4186,7 +4200,7 @@ public class Utf16String <: ToString & Equatable<Utf16String> & Hashable & JSKey
     public func dispose(): Unit
 
     /**
-     * Check whether ths string content is accessible. The string content can be manually released using 
+     * Check whether ths string content is accessible. The string content can be manually released using
      * dispose method. Continuing to access it after release will throw an exception.
      */
     @!APILevel[
