@@ -17,8 +17,8 @@ import os
 import sys
 import argparse
 import shutil
-from collect_dir_sources import get_sources
 from pathlib import Path
+from collect_dir_sources import get_sources
 
 build_path = Path(__file__).resolve().parents[4] / "build"
 if build_path not in sys.path:
@@ -26,17 +26,17 @@ if build_path not in sys.path:
 from scripts.util import build_utils  # noqa: E402
 
 
-def is_f_in_exclude_dir(f, exclude_dirs):
+def _is_f_in_exclude_dir(f, exclude_dirs):
     for e in exclude_dirs:
         if e in f:
             return True
     return False
 
 
-def copy_files_endswith(input_path, output_path, exclude_dirs, deps, extension: str):
+def _copy_files_endswith(input_path, output_path, exclude_dirs, deps, extension: str):
     files = get_sources(input_path, input_path, extension)
     for f in files:
-        if not is_f_in_exclude_dir(f, exclude_dirs):
+        if not _is_f_in_exclude_dir(f, exclude_dirs):
             shutil.copy(f"{input_path}/{f}", f"{output_path}")
             deps.append(f"{input_path}/{f}")
     return
@@ -61,7 +61,7 @@ def main(argv):
     if options.exclude_dirs:
         exclude_dirs = options.exclude_dirs.split(',')
     deps = []
-    copy_files_endswith(options.input, options.output, exclude_dirs, deps, extension="cj.d")
+    _copy_files_endswith(options.input, options.output, exclude_dirs, deps, extension="cj.d")
 
     build_utils.write_depfile(options.depfile,
                               options.stamp,

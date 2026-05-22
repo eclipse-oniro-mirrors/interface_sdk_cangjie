@@ -18,7 +18,7 @@ import os
 import argparse
 from pathlib import Path
 
-build_path = (Path(__file__).resolve().parents[5] / "build")
+build_path = Path(__file__).resolve().parents[5] / "build"
 if build_path not in sys.path:
     sys.path.insert(0, str(build_path))
 from scripts.util import build_utils  # noqa: E402
@@ -28,28 +28,28 @@ void {}() {{  }}
 '''
 
 
-def get_identifier(src):
+def _get_identifier(src):
     id_str = src[0:len(src) - 1]
     if not id_str.isidentifier():
         raise ValueError(f"Invalid C identifier: {id_str}")
     return id_str
 
 
-def gen_mock_source(args):
+def _gen_mock_source(options):
     contents = []
-    if not os.path.exists(args.input):
-        raise FileNotFoundError(f"Input file not found: {args.input}")
+    if not os.path.exists(options.input):
+        raise FileNotFoundError(f"Input file not found: {options.input}")
 
-    with open(args.input, "r") as f:
+    with open(options.input, "r") as f:
         for line in f.readlines():
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
             if not line.endswith(";"):
                 continue
-            funcName = get_identifier(line)
+            funcName = _get_identifier(line)
             contents.append(STUB_FUNCTION_TEMPLATE.format(funcName))
-    with open(args.output, "w") as f:
+    with open(options.output, "w") as f:
         f.write('\n'.join(contents))
 
 if __name__ == "__main__":
@@ -57,8 +57,8 @@ if __name__ == "__main__":
     parser.add_argument("--input", required=True, help="a text file lists library exports")
     parser.add_argument("--output", required=True, help="output source path")
     parser.add_argument("--depfile", required=True)
-    args = parser.parse_args()
-    depfiles = [args.input]
-    gen_mock_source(args)
+    options = parser.parse_args()
+    depfiles = [options.input]
+    _gen_mock_source(options)
 
-    build_utils.write_depfile(args.depfile, args.output, depfiles)
+    build_utils.write_depfile(options.depfile, options.output, depfiles)

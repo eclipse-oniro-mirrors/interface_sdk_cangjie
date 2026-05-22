@@ -31,7 +31,7 @@ def remove_files_safely(pattern):
     for file in files:
         try:
             os.remove(file)
-        except OSError as e:
+        except OSError:
             pass
 
 
