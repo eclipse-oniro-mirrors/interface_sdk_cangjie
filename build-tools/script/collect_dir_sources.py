@@ -19,6 +19,16 @@ import os
 
 
 def get_sources(source_dir, relative, extension):
+    """遍历源目录，收集指定扩展名的文件相对路径列表
+
+    Args:
+        source_dir: 要遍历的源目录路径
+        relative: 计算相对路径的基准路径
+        extension: 目标文件扩展名，如 '.h'
+
+    Returns:
+        匹配扩展名的文件相对于 relative 的路径列表
+    """
     walk_nodes = os.walk(source_dir)
     result = []
     for path, _, file_list in walk_nodes:
@@ -27,18 +37,3 @@ def get_sources(source_dir, relative, extension):
                 file_path = os.path.join(path, file_name)
                 result.append(os.path.relpath(file_path, relative))
     return result
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--source_dir', required=True)
-    parser.add_argument('--relate_dir', required=True)
-    parser.add_argument("--extension", default="cj")
-    args = parser.parse_args()
-    extension = ".{}".format(args.extension)
-    result = get_sources(args.source_dir, args.relate_dir, extension)
-    print(result)
-    return 0
-
-if __name__ == '__main__':
-    sys.exit(main())

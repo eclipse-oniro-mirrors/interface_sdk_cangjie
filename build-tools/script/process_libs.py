@@ -26,7 +26,7 @@ if build_path not in sys.path:
 from scripts.util import build_utils  # noqa: E402
 
 
-def find_cjo_files(src_dir: Path) -> List[Path]:
+def _find_cjo_files(src_dir: Path) -> List[Path]:
     files: List[Path] = []
     for root, _, filenames in os.walk(src_dir):
         for fn in filenames:
@@ -35,7 +35,7 @@ def find_cjo_files(src_dir: Path) -> List[Path]:
     return files
 
 
-def target_subdir_for_name(name: str) -> str:
+def _target_subdir_for_name(name: str) -> str:
     if name.startswith('ohos'):
         return 'ohos'
     if name.startswith('kit'):
@@ -43,7 +43,7 @@ def target_subdir_for_name(name: str) -> str:
     return 'other'
 
 
-def copy_files(src_files: List[Path], dest_dir: Path, mock: Optional[Path] = None) -> List[Path]:
+def _copy_files(src_files: List[Path], dest_dir: Path, mock: Optional[Path] = None) -> List[Path]:
     """Copy .cjo files into categorized subdirs and optionally copy a mock .so next to each.
 
     Returns the list of copied target paths.
@@ -53,7 +53,7 @@ def copy_files(src_files: List[Path], dest_dir: Path, mock: Optional[Path] = Non
         basename = src.name
         package_name = basename.split(".cjo")[0]
         mock_so_name = f"lib{package_name}.so"
-        sub = target_subdir_for_name(basename)
+        sub = _target_subdir_for_name(basename)
         dst_folder = dest_dir / sub
         dst_folder.mkdir(parents=True, exist_ok=True)
         dst = dst_folder / basename
@@ -86,12 +86,12 @@ def _process_copy_cjo(options) -> None:
     mock = Path(options.mock) if options.mock else None
     if src == dst:
         return
-    cjo_files = find_cjo_files(src)
+    cjo_files = _find_cjo_files(src)
     if not cjo_files:
         if options.depfile:
             build_utils.write_depfile(options.depfile, options.mock, [], add_pydeps=False)
         return
-    copied = copy_files(cjo_files, dst, mock)
+    copied = _copy_files(cjo_files, dst, mock)
     inputs_cjo_files: List[str] = [str(f) for f in cjo_files]
     if options.depfile:
         build_utils.write_depfile(options.depfile,
