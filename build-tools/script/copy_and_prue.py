@@ -72,6 +72,9 @@ def remove_files_in_subdirs(base_dir, patterns):
 
 
 def main():
+    """
+    拷贝并删除指定目录下的特定文件和目录
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", required=True, help="Source directory")
     parser.add_argument("--destination", required=True, help="Destination directory")

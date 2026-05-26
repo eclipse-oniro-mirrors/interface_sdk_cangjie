@@ -69,7 +69,7 @@ def _copy_files(src_files: List[Path], dest_dir: Path, mock: Optional[Path] = No
     return copied
 
 
-def parse_args(args):
+def _parse_args(args):
     parser = argparse.ArgumentParser(description='Convert between .cjo and json and copy results')
     parser.add_argument('--copy-cjo-dir', help='copy cjo source dir')
     parser.add_argument('--output-dir', help='output path')
@@ -101,7 +101,10 @@ def _process_copy_cjo(options) -> None:
 
 
 def main(argv):
-    options = parse_args(argv)
+    """
+    Convert between .cjo and json and copy results
+    """
+    options = _parse_args(argv)
     _process_copy_cjo(options)
 
 

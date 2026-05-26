@@ -39,10 +39,9 @@ def _copy_files_endswith(input_path, output_path, exclude_dirs, deps, extension:
         if not _is_f_in_exclude_dir(f, exclude_dirs):
             shutil.copy(f"{input_path}/{f}", f"{output_path}")
             deps.append(f"{input_path}/{f}")
-    return
 
 
-def parse_args(args):
+def _parse_args(args):
     parser = argparse.ArgumentParser(description='Copy files or trees, optionally filtering by extension')
     parser.add_argument('--input', help='input path')
     parser.add_argument('--output', help='output path')
@@ -54,7 +53,10 @@ def parse_args(args):
 
 
 def main(argv):
-    options = parse_args(argv)
+    """
+    Copy files or trees, optionally filtering by extension
+    """
+    options = _parse_args(argv)
     if not os.path.exists(options.output):
         os.makedirs(options.output)
     exclude_dirs = []

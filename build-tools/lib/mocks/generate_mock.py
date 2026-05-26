@@ -57,8 +57,8 @@ if __name__ == "__main__":
     parser.add_argument("--input", required=True, help="a text file lists library exports")
     parser.add_argument("--output", required=True, help="output source path")
     parser.add_argument("--depfile", required=True)
-    options = parser.parse_args()
-    depfiles = [options.input]
-    _gen_mock_source(options)
+    args = parser.parse_args()
+    depfiles = [args.input]
+    _gen_mock_source(args)
 
-    build_utils.write_depfile(options.depfile, options.output, depfiles)
+    build_utils.write_depfile(args.depfile, args.output, depfiles)
