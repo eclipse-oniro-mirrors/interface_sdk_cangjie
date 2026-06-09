@@ -377,4 +377,60 @@ public class DeviceInfo {
         syscap: "SystemCapability.Startup.SystemInfo"
     ]
     public static prop distributionOSApiName: String
+
+    /**
+     * Obtains the SDK Minor API version.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
+    public static prop sdkMinorApiVersion: Int32
+
+    /**
+     * Obtains the SDK Patch API version.
+     */
+    @!APILevel[
+        since: "26.0.0",
+        syscap: "SystemCapability.Startup.SystemInfo"
+    ]
+    public static prop sdkPatchApiVersion: Int32
 }
+
+/**
+ * Checks whether the specified API version is available on the current device.
+ *
+ * This function provides compatibility checking across different OpenHarmony/Distribution
+ * OS versions. It automatically selects the appropriate version checking
+ * method based on the input format and API version range.
+ *
+ * @param { Int32 } version - The API version to check. Accepts multiple formats:
+ *     - Number format (e.g., 13): Represents OpenHarmony SDK API version (API 26- only)
+ * @returns { Bool } Returns `true` if the specified API version is available on the
+ *     current device, `false` otherwise.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.Startup.SystemInfo"
+]
+public func apiAvailable(version: Int32): Bool
+
+/**
+ * Checks whether the specified API version is available on the current device.
+ *
+ * This function provides compatibility checking across different OpenHarmony/Distribution
+ * OS versions. It automatically selects the appropriate version checking
+ * method based on the input format and API version range.
+ *
+ * @param { String } version - The API version to check. Accepts multiple formats:
+ *     - String format with dots (e.g., "26.0.0", "5.0.1"):
+ *     - For API 26+ (version >= 26.0.0): Represents both OpenHarmony and Distribution OS API versions
+ *     - For API 26- (version < 26.0.0): Represents Distribution OS API version
+ * @returns { Bool } Returns `true` if the specified API version is available on the
+ *     current device, `false` otherwise.
+ */
+@!APILevel[
+    since: "26.0.0",
+    syscap: "SystemCapability.Startup.SystemInfo"
+]
+public func apiAvailable(version: String): Bool
