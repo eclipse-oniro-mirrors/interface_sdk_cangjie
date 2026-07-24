@@ -792,7 +792,5 @@ public class BorderColor {
         since: "22",
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
-    public init(color!: ?ResourceColor = Color.Black) {
-        this.resourceColor = color
-    }
+    public init(color!: ?ResourceColor = Color.Black)
 }
