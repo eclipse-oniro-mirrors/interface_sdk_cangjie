@@ -2349,3 +2349,4 @@ FfiOHOSAceFrameworkNativeViewSetJsViewName;
 FfiOHOSAceProfilerGetViewElementName;
 FfiOHOSAceFrameworkLayoutInspectorPushStateChangeRecord;
 FfiOHOSAceFrameworkRegisterProfilerStatusNotify;
+FfiOHOSAceFrameworkPathCreateWithSizeEx;
