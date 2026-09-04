@@ -203,6 +203,10 @@ action_with_pydeps("sdk_build_tools_copy") {
     args += [ "--support-ohos-arm" ]
   }
 
+  if (sdk_build_cangjie_lto == true) {
+    args += [ "--support-lto" ]
+  }
+
   outputs = [ "${target_out_dir}/cangjie_sdk/build-tools" ]
 }
 

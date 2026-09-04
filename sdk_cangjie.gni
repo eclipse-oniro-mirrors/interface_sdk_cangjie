@@ -17,6 +17,7 @@ import("//build/templates/cangjie/cjc_toolchain.gni")
 declare_args() {
   sdk_build_cangjie_previewer = false
   sdk_build_cangjie_ohos_arm = false
+  sdk_build_cangjie_lto = false
 }
 
 template("cj_ohos_sdk_header_copy") {
