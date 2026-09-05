@@ -71,78 +71,115 @@ def remove_files_in_subdirs(base_dir, patterns):
                     remove_files_safely(full_pattern)
 
 
-def main():
-    """
-    拷贝并删除指定目录下的特定文件和目录
-    """
+def parse_args():
+    """解析命令行参数"""
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", required=True, help="Source directory")
     parser.add_argument("--destination", required=True, help="Destination directory")
     parser.add_argument("--support-ohos-arm", action='store_true', help="Enable support for OHOS ARM architecture")
     parser.add_argument("--support-lto", action='store_true', help="Enable support for LTO, keep static libraries for LTO linking")
+    return parser.parse_args()
 
-    args = parser.parse_args()
 
-    if os.path.exists(args.destination):
-        shutil.rmtree(args.destination)
-    os.makedirs(os.path.dirname(args.destination), exist_ok=True)
+def copy_sdk(source, destination):
+    """
+    拷贝源SDK目录到目标目录，目标目录已存在时先清空
+    :param source: 源目录路径
+    :param destination: 目标目录路径
+    :return: 拷贝成功返回True，源目录不存在返回False
+    """
+    if os.path.exists(destination):
+        shutil.rmtree(destination)
+    os.makedirs(os.path.dirname(destination), exist_ok=True)
 
-    if os.path.exists(args.source):
-        shutil.copytree(args.source, args.destination, symlinks=True, dirs_exist_ok=True)
+    if not os.path.exists(source):
+        print(f"Source directory does not exist: {source}")
+        return False
+
+    shutil.copytree(source, destination, symlinks=True, dirs_exist_ok=True)
+    return True
+
+
+def prune_ohos_arm(destination, support_ohos_arm):
+    """
+    裁剪OHOS ARM架构相关内容
+    :param destination: 目标目录路径
+    :param support_ohos_arm: 是否支持OHOS ARM架构
+    """
+    if support_ohos_arm:
+        # 删除cangjie/lib/linux_ohos_arm_cjnative/libcangjie-std*.a
+        remove_files_safely(os.path.join(destination, "lib", "linux_ohos_arm_cjnative", "libcangjie-std*.a"))
     else:
-        print(f"Source directory does not exist: {args.source}")
+        remove_directory_safely(os.path.join(destination, "lib", "linux_ohos_arm_cjnative"))
+        remove_directory_safely(os.path.join(destination, "runtime/lib", "linux_ohos_arm_cjnative"))
+        remove_directory_safely(os.path.join(destination, "modules", "linux_ohos_arm_cjnative"))
+
+
+def prune_non_lto_static_libs(destination):
+    """
+    裁剪非LTO场景下不需要的静态库，支持LTO时这些库用于LTO链接，不删除
+    :param destination: 目标目录路径
+    """
+    # 删除cangjie/lib/linux_ohos_aarch64_cjnative 和 cangjie/lib/linux_ohos_x86_64_cjnative/目录下
+    # libcangjie-std*.a 和 libboundscheck-static.a
+    arch_dirs = [
+        os.path.join(destination, "lib", "linux_ohos_aarch64_cjnative"),
+        os.path.join(destination, "lib", "linux_ohos_x86_64_cjnative")
+    ]
+    file_patterns = [
+        "libcangjie-std*.a",
+        "libboundscheck-static.a"
+    ]
+
+    for arch_dir in arch_dirs:
+        remove_specific_files(arch_dir, file_patterns)
+
+    # 删除cangjie/lib 子目录下的特定文件
+    lib_patterns = [
+        "libcangjie-dynamicLoader-opensslFFI.a",
+        "libcangjie-ast-support.a",
+        "libcangjie-aio.a",
+        "libboundscheck.*",
+    ]
+    remove_files_in_subdirs(os.path.join(destination, "lib"), lib_patterns)
+
+    # 删除cangjie/runtime/lib 子目录下的特定文件
+    runtime_lib_patterns = [
+        "libcangjie-dynamicLoader-opensslFFI*",
+        "libcangjie-demangle.a",
+    ]
+    remove_files_in_subdirs(os.path.join(destination, "runtime/lib"), runtime_lib_patterns)
+
+
+def move_dtsparser_to_config(destination):
+    """
+    如果存在cangjie/tools/dtsparser，则将其移动到cangjie/tools/config
+    :param destination: 目标目录路径
+    """
+    dtsparser_dir = os.path.join(destination, "tools", "dtsparser")
+    config_dir = os.path.join(destination, "tools", "config")
+    move_directory_safely(dtsparser_dir, config_dir)
+
+
+def main():
+    """
+    拷贝并裁剪SDK目录
+    """
+    args = parse_args()
+
+    if not copy_sdk(args.source, args.destination):
         return 1
 
     # 删除cangjie/include目录
-    include_dir = os.path.join(args.destination, "include")
-    remove_directory_safely(include_dir)
+    remove_directory_safely(os.path.join(args.destination, "include"))
 
-    if args.support_ohos_arm:
-        # 删除cangjie/lib/linux_ohos_arm_cjnative/libcangjie-std*.a
-        remove_files_safely(os.path.join(args.destination, "lib", "linux_ohos_arm_cjnative", "libcangjie-std*.a"))
-    else:
-        remove_directory_safely(os.path.join(args.destination, "lib", "linux_ohos_arm_cjnative"))
-        remove_directory_safely(os.path.join(args.destination, "runtime/lib", "linux_ohos_arm_cjnative"))
-        remove_directory_safely(os.path.join(args.destination, "modules", "linux_ohos_arm_cjnative"))
+    prune_ohos_arm(args.destination, args.support_ohos_arm)
 
     # 不支持LTO时，删除静态库；支持LTO时，保留这些静态库用于LTO链接
     if not args.support_lto:
-        # 删除cangjie/lib/linux_ohos_aarch64_cjnative 和 cangjie/lib/linux_ohos_x86_64_cjnative/目录下
-        # libcangjie-std*.a 和 libboundscheck-static.a
-        arch_dirs = [
-            os.path.join(args.destination, "lib", "linux_ohos_aarch64_cjnative"),
-            os.path.join(args.destination, "lib", "linux_ohos_x86_64_cjnative")
-        ]
-        file_patterns = [
-            "libcangjie-std*.a",
-            "libboundscheck-static.a"
-        ]
+        prune_non_lto_static_libs(args.destination)
 
-        for arch_dir in arch_dirs:
-            remove_specific_files(arch_dir, file_patterns)
-
-        # 删除cangjie/lib 子目录下的特定文件
-        lib_dir = os.path.join(args.destination, "lib")
-        lib_patterns = [
-            "libcangjie-dynamicLoader-opensslFFI.a",
-            "libcangjie-ast-support.a",
-            "libcangjie-aio.a",
-            "libboundscheck.*",
-        ]
-        remove_files_in_subdirs(lib_dir, lib_patterns)
-
-        # 删除cangjie/runtime/lib 子目录下的特定文件
-        runtime_lib_dir = os.path.join(args.destination, "runtime/lib")
-        runtime_lib_patterns = [
-            "libcangjie-dynamicLoader-opensslFFI*",
-            "libcangjie-demangle.a",
-        ]
-        remove_files_in_subdirs(runtime_lib_dir, runtime_lib_patterns)
-
-    # 如果存在cangjie/tools/dtsparser，则将其移动到cangjie/tools/config
-    dtsparser_dir = os.path.join(args.destination, "tools", "dtsparser")
-    config_dir = os.path.join(args.destination, "tools", "config")
-    move_directory_safely(dtsparser_dir, config_dir)
+    move_dtsparser_to_config(args.destination)
 
     return 0
 
