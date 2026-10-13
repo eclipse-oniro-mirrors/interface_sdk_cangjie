@@ -226,6 +226,39 @@ public class List <: ScrollableCommonMethodComponent<List> & ListAttribute {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public func onScrollFrameBegin(event: ?(Float64, ScrollState) -> OnScrollFrameBeginHandlerResult): This
+
+    /**
+     * Sets the effect used when the scroll boundary is reached.
+     *
+     * @param { ?EdgeEffect } edgeEffect - Effect used when the scroll boundary is reached. The spring and shadow
+     *     effects are supported.
+     *     Default value: EdgeEffect.Spring.
+     * @param { ?EdgeEffectOptions } options - Whether to enable the scroll effect when the component content is smaller
+     *     than the component itself. The value EdgeEffectOptions(true) means to enable the scroll effect, and
+     *     EdgeEffectOptions(false) means the opposite. Default value: EdgeEffectOptions(false).
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func edgeEffect(edgeEffect: ?EdgeEffect, options!: ?EdgeEffectOptions): This
+
+    /**
+     * Sets the scroll snap alignment effect for list items when scrolling ends.
+     * Scroll snap alignment is supported only for lists with uniform item heights; otherwise, the result may be 
+     * inaccurate. During the alignment animation, the scroll operation source type reported by the onWillScroll 
+     * event is ScrollSource.Fling.
+     *
+     * @param { ?ScrollSnapAlign } value - Alignment mode of the scroll snap position. Default value:
+     *     ScrollSnapAlign.None.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func scrollSnapAlign(value: ?ScrollSnapAlign): This
 }
 
 /**
@@ -394,4 +427,337 @@ sealed interface ListAttribute <: ScrollableCommonMethod<ListAttribute> {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func onScrollFrameBegin(event: ?(Float64, ScrollState) -> OnScrollFrameBeginHandlerResult): ListAttribute
+
+    /**
+     * Sets the effect used when the scroll boundary is reached.
+     *
+     * @param { ?EdgeEffect } edgeEffect - Effect used when the scroll boundary is reached. The spring and shadow
+     *     effects are supported.
+     *     Default value: EdgeEffect.Spring.
+     * @param { ?EdgeEffectOptions } options - Whether to enable the scroll effect when the component content is smaller
+     *     than the component itself. The value EdgeEffectOptions(true) means to enable the scroll effect, and
+     *     EdgeEffectOptions(false) means the opposite. Default value: EdgeEffectOptions(false).
+     * @returns { ListAttribute }
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func edgeEffect(edgeEffect: ?EdgeEffect, options!: ?EdgeEffectOptions): ListAttribute
+
+    /**
+     * Sets the scroll snap alignment effect for list items when scrolling ends.
+     * This API is available only when the heights of list items are the same. During the alignment animation,
+     * the scroll operation source type reported by the onWillScroll event is ScrollSource.Fling.
+     *
+     * @param { ?ScrollSnapAlign } value - Alignment mode of the scroll snap position. Default value:
+     *     ScrollSnapAlign.None.
+     * @returns { ListAttribute } The attribute of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func scrollSnapAlign(value: ?ScrollSnapAlign): ListAttribute
+}
+
+/**
+ * Enumerates the areas of ListItemGroup.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum ListItemGroupArea {
+    /**
+     * Area other than the ListItem, header, and footer areas in ListItemGroup.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    None
+    |
+    /**
+     * ListItem area in ListItemGroup.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    InListItemArea
+    |
+    /**
+     * Header area in ListItemGroup.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    InHeaderArea
+    |
+    /**
+     * Footer area in ListItemGroup.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    InFooterArea
+    | ...
+}
+
+extend ListItemGroupArea <: Equatable<ListItemGroupArea> {
+    /**
+     * Compares this ListItemGroupArea with another for equality.
+     *
+     * @param { ListItemGroupArea } other - The ListItemGroupArea to compare with.
+     * @returns { Bool } True if both areas are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: ListItemGroupArea): Bool
+
+    /**
+     * Compares this ListItemGroupArea with another for inequality.
+     *
+     * @param { ListItemGroupArea } other - The ListItemGroupArea to compare with.
+     * @returns { Bool } True if both areas are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: ListItemGroupArea): Bool
+}
+
+/**
+ * Describes the details of the child components in the visible area of a list.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class VisibleListContentInfo {
+    /**
+     * Index of the list item or list item group in the list display area.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var index: Int32
+
+    /**
+     * Position of the top or bottom edge of the viewport in the list item group to which the edge is located, if
+     *     applicable.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var itemGroupArea: ?ListItemGroupArea
+
+    /**
+     * Index of the starting or ending list item in the list item group to which the top or bottom edge of the viewport
+     *     is located.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var itemIndexInGroup: ?Int32
+
+    /**
+     * VisibleListContentInfo constructor.
+     *
+     * @param { Int32 } index - Index of the list item or list item group in the list display area.
+     * @param { ?ListItemGroupArea } [itemGroupArea] - Position of the top or bottom edge of the viewport in the list
+     *     item group to which the edge is located, if applicable.
+     * @param { ?Int32 } [itemIndexInGroup] - Index of the starting or ending list item in the list item group to which
+     *     the top or bottom edge of the viewport is located.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(
+        index: Int32,
+        itemGroupArea!: ?ListItemGroupArea = Option<ListItemGroupArea>.None,
+        itemIndexInGroup!: ?Int32 = None
+    )
+}
+
+/**
+ * Defines the scroll controller for the List component.
+ * A List component is bound to a ListScroller on a one-to-one basis.
+ * ListScroller inherits from Scroller and has all methods of Scroller.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class ListScroller <: Scroller {
+    /**
+     * ListScroller constructor.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init()
+
+    /**
+     * Obtains the size of a list item in a list item group and its position relative to the list.
+     *
+     * The value of index must be the index of a child component visible in the display area.
+     * The child component for which index is set must be a list item group.
+     * The value of indexInGroup must be the index of a list item in the list item group visible in the display area.
+     * When index or indexInGroup is set to an invalid value, the returned size and position are both 0.
+     *
+     * @param { Int32 } index - Index of the list item group in the list.
+     * @param { Int32 } indexInGroup - Index of the list item in the list item group.
+     * @returns { RectResult } Size of the list item in the list item group and its position relative to the list. Unit:
+     *     vp.
+     * @throws { BusinessException } 100004 - Controller not bound to a component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full",
+        throwexception: true
+    ]
+    public func getItemRectInGroup(index: Int32, indexInGroup: Int32): RectResult
+
+    /**
+     * Scrolls to the specified list item in the specified list item group.
+     *
+     * If the value set for index is a negative value or greater than the maximum index of the items in the container,
+     *     the value is deemed abnormal, and no scrolling will be performed.
+     * If the value set for indexInGroup is a negative value or greater than the maximum index of the items in the list
+     *     item group, the value is deemed abnormal, and no scrolling will be performed.
+     *
+     * @param { Int32 } index - Index of the target list item group in the current container.
+     * @param { Int32 } indexInGroup - Index of the target list item in the list item group specified by index.
+     * @param { ?Bool } [smooth] - Whether the scroll animation is enabled. Default value: false. When smooth is set to
+     *     true, all passed items are loaded and counted in layout calculation. This may result in performance issues if
+     *     a large number of items are involved.
+     * @param { ?ScrollAlign } [align] - How the list item to scroll to is aligned with the container. Default value:
+     *     ScrollAlign.Start.
+     * @throws { BusinessException } 100004 - Controller not bound to a component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full",
+        throwexception: true
+    ]
+    public func scrollToItemInGroup(
+        index: Int32,
+        indexInGroup: Int32,
+        smooth!: ?Bool = None,
+        align!: ?ScrollAlign = None
+    ): Unit
+
+    /**
+     * Collapses all list items in the Expanded state and sets a callback.
+     *
+     * @param { ?() -> Unit } [onFinish] - The callback invoked when all list items in the Expanded state are
+     *     collapsed.
+     * @throws { BusinessException } 100004 - Controller not bound to a component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full",
+        throwexception: true
+    ]
+    public func closeAllSwipeActions(onFinish!: ?() -> Unit = None): Unit
+
+    /**
+     * Obtains the index information of the child component at the specified coordinates.
+     *
+     * @param { Float64 } x - The x-coordinate. Unit: vp.
+     * @param { Float64 } y - The y-coordinate. Unit: vp.
+     * @returns { VisibleListContentInfo } The visible list content info.
+     * @throws { BusinessException } 100004 - Controller not bound to a component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full",
+        throwexception: true
+    ]
+    public func getVisibleListContentInfo(x: Float64, y: Float64): VisibleListContentInfo
+}
+
+/**
+ * Enumerates the alignment modes of list items when scrolling ends.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum ScrollSnapAlign {
+    /**
+     * No alignment. This is the default value.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    None
+    |
+    /**
+     * The first item in the view is aligned at the start of the list.
+     * When the list hits the end, the items at the end must be completely displayed,
+     * and the items at the start may not be aligned.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Start
+    |
+    /**
+     * The middle items in the view are aligned in the center of the list.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Center
+    |
+    /**
+     * The last item in the view is aligned at the end of the list.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    End
+    | ...
+}
+
+extend ScrollSnapAlign <: Equatable<ScrollSnapAlign> {
+    /**
+     * Compares this ScrollSnapAlign with another for equality.
+     *
+     * @param { ScrollSnapAlign } other - The ScrollSnapAlign to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: ScrollSnapAlign): Bool
+    /**
+     * Compares this ScrollSnapAlign with another for inequality.
+     *
+     * @param { ScrollSnapAlign } other - The ScrollSnapAlign to compare with.
+     * @returns { Bool } True if both modes are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: ScrollSnapAlign): Bool
 }

@@ -51,6 +51,40 @@ public class Radio <: CommonMethodComponent<Radio> & RadioAttribute {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public func onChange(callback: ?(Bool) -> Unit): This
+
+    /**
+     * Create a radio box with the specified indicator type and optional custom indicator builder.
+     *
+     * @param { ?String } value - Current value of the radio box.
+     * @param { ?String } group - Group name of the radio box.
+     * @param { RadioIndicatorType } indicatorType - Indicator type of the radio button.
+     * @param { ?() -> Unit } [indicatorBuilder] - Custom component to indicate that the radio button is selected.
+     *     This custom component is center aligned with the radio button.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(value!: ?String, group!: ?String, indicatorType!: RadioIndicatorType,
+        indicatorBuilder!: ?() -> Unit = Option<() -> Unit>.None)
+
+    /**
+     * Sets the style of the radio button in selected or deselected state.
+     *
+     * @param { ?ResourceColor } [checkedBackgroundColor] - Color of the background when the radio button is selected.
+     * @param { ?ResourceColor } [uncheckedBorderColor] - Color of the border when the radio button is deselected.
+     * @param { ?ResourceColor } [indicatorColor] - Color of the indicator when the radio button is selected.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func radioStyle(
+        checkedBackgroundColor!: ?ResourceColor = None,
+        uncheckedBorderColor!: ?ResourceColor = None,
+        indicatorColor!: ?ResourceColor = None
+    ): This
 }
 
 /**
@@ -84,4 +118,85 @@ sealed interface RadioAttribute <: CommonMethod<RadioAttribute> {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func onChange(callback: ?(Bool) -> Unit): RadioAttribute
+
+    /**
+     * Sets the style of the radio button in selected or deselected state.
+     *
+     * @param { ?ResourceColor } checkedBackgroundColor - Color of the background when the radio button is selected.
+     * @param { ?ResourceColor } uncheckedBorderColor - Color of the border when the radio button is deselected.
+     * @param { ?ResourceColor } indicatorColor - Color of the indicator when the radio button is selected.
+     * @returns { RadioAttribute } The attribute of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func radioStyle(
+        checkedBackgroundColor!: ?ResourceColor,
+        uncheckedBorderColor!: ?ResourceColor,
+        indicatorColor!: ?ResourceColor
+    ): RadioAttribute
+}
+
+/**
+ * Enumerates the radio indicator types.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum RadioIndicatorType {
+    /**
+     * Default tick icon.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Tick
+    |
+    /**
+     * Default dot icon.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Dot
+    |
+    /**
+     * Custom component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Custom
+    | ...
+}
+
+extend RadioIndicatorType <: Equatable<RadioIndicatorType> {
+    /**
+     * Compares this RadioIndicatorType with another for equality.
+     *
+     * @param { RadioIndicatorType } other - The RadioIndicatorType to compare with.
+     * @returns { Bool } True if both types are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: RadioIndicatorType): Bool
+
+    /**
+     * Compares this RadioIndicatorType with another for inequality.
+     *
+     * @param { RadioIndicatorType } other - The RadioIndicatorType to compare with.
+     * @returns { Bool } True if both types are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: RadioIndicatorType): Bool
 }

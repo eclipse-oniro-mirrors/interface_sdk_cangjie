@@ -111,6 +111,27 @@ public class CheckboxGroup <: CommonMethodComponent<CheckboxGroup> & CheckboxGro
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public func onChange(callback: ?OnCheckboxGroupChangeCallback): This
+
+    /**
+     * Sets the check mark style of the check box.
+     *
+     * @param { ?ResourceColor } [strokeColor] - Color of the internal icon. If not set, the theme default color is used.
+     * @param { ?Length } [size] - Size of the internal icon, in vp. The default size is the same as the width of the
+     *     check box component. Percentage values are not supported. If an invalid value is set, the default value is
+     *     used.
+     * @param { ?Length } [strokeWidth] - Thickness of the internal icon, in vp. Percentage values are not supported. If
+     *     an invalid value is set, the default value is used. Default value: 2.vp.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func mark(
+        strokeColor!: ?ResourceColor = None,
+        size!: ?Length = None,
+        strokeWidth!: ?Length = None
+    ): This
 }
 
 /**
@@ -156,4 +177,25 @@ sealed interface CheckboxGroupAttribute <: CommonMethod<CheckboxGroupAttribute> 
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func onChange(callback: ?OnCheckboxGroupChangeCallback): CheckboxGroupAttribute
+
+    /**
+     * Sets the check mark style of the check box.
+     *
+     * @param { ?ResourceColor } strokeColor - Color of the internal icon. If not set, the theme default color is used.
+     * @param { ?Length } size - Size of the internal icon, in vp. The default size is the same as the width of the
+     *     check box component. Percentage values are not supported. If an invalid value is set, the default value is
+     *     used.
+     * @param { ?Length } strokeWidth - Thickness of the internal icon, in vp. Percentage values are not supported. If
+     *     an invalid value is set, the default value is used. Default value: 2.vp.
+     * @returns { CheckboxGroupAttribute } The attribute of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func mark(
+        strokeColor!: ?ResourceColor,
+        size!: ?Length,
+        strokeWidth!: ?Length
+    ): CheckboxGroupAttribute
 }
