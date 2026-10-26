@@ -196,6 +196,33 @@ public class Color <: ResourceColor {
     public static let Transparent: Color = Color(0, 0, 0, alpha: 0.0)
 
     /**
+     * Grey.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public static let Grey: Color = Color(0xff808080)
+
+    /**
+     * Orange.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public static let Orange: Color = Color(0xffffa500)
+
+    /**
+     * Yellow.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public static let Yellow: Color = Color(0xffffff00)
+
+    /**
      * Constructor of Color.
      *
      * @param { UInt8 } red - Red component of color
