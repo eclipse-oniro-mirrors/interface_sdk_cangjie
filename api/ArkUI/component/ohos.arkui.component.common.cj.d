@@ -12182,6 +12182,41 @@ public class EdgeWidths {
 }
 
 /**
+ * Defines the resizable image options.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class ResizableOptions {
+    /**
+     * Edge widths in different directions of a component.
+     * NOTE: This attribute takes effect only when both bottom and right are greater than 0.
+     * When top is set, the top part of the image is stretched while the pixel values of the image remain unchanged.
+     * When right is set, the right part of the image is stretched while the pixel values of the image remain unchanged.
+     * When bottom is set, the bottom part of the image is stretched while the pixel values of the image remain unchanged.
+     * When left is set, the left part of the image is stretched while the pixel values of the image remain unchanged.
+     * The default width of each direction is 0. The default unit is vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var slice: ?EdgeWidths
+
+    /**
+     * ResizableOptions constructor.
+     *
+     * @param { ?EdgeWidths } slice - Edge widths in different directions of a component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(slice!: ?EdgeWidths)
+}
+
+/**
  * Overlay module options.
  * Base class for overlay-related configuration options.
  */
@@ -14350,4 +14385,454 @@ public interface CommonMethod<T> {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func dragPreview(value: String): T
+
+    /**
+     * Sets the background image resizable.
+     *
+     * @param { ?ResizableOptions } value - Indicates the resizable options.
+     * @returns { T } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func backgroundImageResizable(value: ?ResizableOptions): T
+
+    /**
+     * Sets the hit test mode for a component. If hitTestBehavior is not set, the component defaults to
+     * HitTestMode.Default.
+     *
+     * @param { ?HitTestMode } value - Hit test mode for a component.
+     * @returns { T } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func hitTestBehavior(value: ?HitTestMode): T
+
+    /**
+     * Sets the hover effect for the component. When no hover effect is specified, the component uses the default
+     * HoverEffect.Auto effect. For components with hover effects applied, the hover effect is hidden when the mouse
+     * hovers and presses down on the component, and restored when the mouse button is released.
+     *
+     * @param { ?HoverEffect } value - Hover effect of the component.
+     * @returns { T } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func hoverEffect(value: ?HoverEffect): T
+
+    /**
+     * Allows the current component to customize the hit test and control child component behavior during the test by
+     * setting a callback.
+     * NOTE: The array of child node information only includes information about named nodes, that is, nodes for
+     * which the id attribute is explicitly set.
+     *
+     * @param { ?(Array<TouchTestInfo>) -> TouchResult } callback - Touch event information. The value is an array of
+     *   child node information.
+     * @returns { T } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func onChildTouchTest(callback: ?(Array<TouchTestInfo>) -> TouchResult): T
+}
+
+/**
+ * Event dispatch strategy.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum TouchTestStrategy {
+    /**
+     * Custom dispatch has no effect; the system dispatches events based on the hit status of the current node.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Default
+    |
+    /**
+     * The event is dispatched to a specified child node, and the system determines whether to dispatch events to other sibling nodes.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    ForwardCompetition
+    |
+    /**
+     * The event is dispatched to a specified child node, and the system will not dispatch events to other sibling nodes.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Forward
+    | ...
+}
+
+extend TouchTestStrategy <: Equatable<TouchTestStrategy> {
+    /**
+     * Compares this TouchTestStrategy with another for equality.
+     *
+     * @param { TouchTestStrategy } other - The TouchTestStrategy to compare with.
+     * @returns { Bool } True if both strategies are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: TouchTestStrategy): Bool
+    /**
+     * Compares this TouchTestStrategy with another for inequality.
+     *
+     * @param { TouchTestStrategy } other - The TouchTestStrategy to compare with.
+     * @returns { Bool } True if both strategies are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: TouchTestStrategy): Bool
+}
+
+/**
+ * Sets the response logic and node blocking rules for the hit test.
+ * NOTE: When multiple nodes in a Stack component have overlapping touch areas, if the touch point hits a child component of the topmost node,
+ * only the topmost node will undergo hit testing by default.
+ * In this case, touch testing for lower-layer nodes can only be triggered by setting the hitTestBehavior of the topmost node to HitTestMode.Transparent.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum HitTestMode {
+    /**
+     * Default hit test mode. The node itself and its child nodes respond to the hit test, but block the hit test of sibling nodes.
+     * It does not affect the hit test of ancestor nodes.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Default
+    |
+    /**
+     * The node itself responds to the hit test and blocks the hit test of child nodes, sibling nodes, and ancestor nodes.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Block
+    |
+    /**
+     * Both the node itself and its child nodes respond to the hit test and do not block the hit test of sibling nodes and ancestor nodes.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Transparent
+    |
+    /**
+     * The node itself does not respond to the hit test and does not block the hit test of child nodes, sibling nodes, and ancestor nodes.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    None
+    |
+    /**
+     * The node itself and its child nodes respond to the hit test, preventing all sibling nodes and parent nodes with lower priority from participating in the hit test.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    BlockHierarchy
+    |
+    /**
+     * The node itself does not respond to the hit test, and all its descendants (children, grandchildren, and more) also do not respond to the hit test.
+     * It does not affect the hit test of ancestor nodes.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    BlockDescendants
+    | ...
+}
+
+extend HitTestMode <: Equatable<HitTestMode> {
+    /**
+     * Compares this HitTestMode with another for equality.
+     *
+     * @param { HitTestMode } other - The HitTestMode to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: HitTestMode): Bool
+    /**
+     * Compares this HitTestMode with another for inequality.
+     *
+     * @param { HitTestMode } other - The HitTestMode to compare with.
+     * @returns { Bool } True if both modes are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: HitTestMode): Bool
+}
+
+/**
+ * Sets the hover effect of the component.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum HoverEffect {
+    /**
+     * Default hover effect.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Auto
+    |
+    /**
+     * Zoom-in and zoom-out effect.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Scale
+    |
+    /**
+     * Background fade-in and fade-out effect.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Highlight
+    |
+    /**
+     * No effect.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    None
+    | ...
+}
+
+extend HoverEffect <: Equatable<HoverEffect> {
+    /**
+     * Compares this HoverEffect with another for equality.
+     *
+     * @param { HoverEffect } other - The HoverEffect to compare with.
+     * @returns { Bool } True if both effects are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: HoverEffect): Bool
+    /**
+     * Compares this HoverEffect with another for inequality.
+     *
+     * @param { HoverEffect } other - The HoverEffect to compare with.
+     * @returns { Bool } True if both effects are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: HoverEffect): Bool
+}
+
+/**
+ * Defines the custom event dispatch result. You can influence event dispatch by returning specific results.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class TouchResult {
+    /**
+     * Event dispatch strategy.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var strategy: TouchTestStrategy
+
+    /**
+     * Unique ID of the child component.
+     * If strategy is set to TouchTestStrategy.Default, id is optional.
+     * If strategy is set to TouchTestStrategy.ForwardCompetition or TouchTestStrategy.Forward, id is mandatory.
+     * If id is not returned, the strategy TouchTestStrategy.Default is used.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var id: ?String
+
+    /**
+     * TouchResult constructor.
+     *
+     * @param { TouchTestStrategy } strategy - Event dispatch strategy.
+     * @param { ?String } [id] - Unique ID of the child component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public init(strategy: TouchTestStrategy, id!: ?String = None)
+}
+
+/**
+ * Describes the position, width, and height of a component.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class ComponentRect {
+    /**
+     * X-coordinate, in vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var x: Float64
+
+    /**
+     * Y-coordinate, in vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var y: Float64
+
+    /**
+     * Content width, in vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var width: Float64
+
+    /**
+     * Content height, in vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var height: Float64
+}
+
+/**
+ * Provides information about the coordinate system, ID, and size of the component where the current touch point is located.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class TouchTestInfo {
+    /**
+     * X-coordinate of the touch point relative to the upper left corner of the window. Unit: vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var windowX: Float64
+
+    /**
+     * Y-coordinate of the touch point relative to the upper left corner of the window. Unit: vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var windowY: Float64
+
+    /**
+     * X-coordinate of the touch point relative to the upper left corner of the parent component. Unit: vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var parentX: Float64
+
+    /**
+     * Y-coordinate of the touch point relative to the upper left corner of the parent component. Unit: vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var parentY: Float64
+
+    /**
+     * X-coordinate of the touch point relative to the upper left corner of the child component. Unit: vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var x: Float64
+
+    /**
+     * Y-coordinate of the touch point relative to the upper left corner of the child component. Unit: vp.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var y: Float64
+
+    /**
+     * Position, width, and height of the child component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var rect: ComponentRect
+
+    /**
+     * Unique ID of the child component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var id: String
 }
