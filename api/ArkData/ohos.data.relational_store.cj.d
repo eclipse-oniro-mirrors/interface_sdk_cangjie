@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Copyright (c) 2025 - 2026 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -427,6 +427,34 @@ public class RdbPredicates {
     syscap: "SystemCapability.DistributedDataManager.RelationalStore.Core"
 ]
 public class RdbStore {
+    /**
+     * Set RdbStore version. The version number must be an integer greater than 0.
+     * Obtains the RdbStore version.
+     *
+     * @throws { BusinessError } 801 - Capability not supported.
+     * @throws { BusinessError } 14800000 - Inner error. Possible causes: 1. The SQL statement fails to be executed;
+     * 2. The internal state is abnormal; 3. There is an API that is incorrectly used; 4. A system error,
+     * such as null pointer, insufficient memory, unexpected restart of the data service, I/O error, IPC exception.
+     * @throws { BusinessError } 14800014 - The target instance is already closed.
+     * @throws { BusinessError } 14800015 - The database does not respond.
+     * @throws { BusinessError } 14800021 - SQLite: Generic error.
+     * @throws { BusinessError } 14800023 - SQLite: Access permission denied.
+     * @throws { BusinessError } 14800024 - SQLite: The database file is locked.
+     * @throws { BusinessError } 14800025 - SQLite: A table in the database is locked.
+     * @throws { BusinessError } 14800026 - SQLite: The database is out of memory.
+     * @throws { BusinessError } 14800027 - SQLite: Attempt to write a readonly database.
+     * @throws { BusinessError } 14800028 - SQLite: Some kind of disk I/O error occurred.
+     * @throws { BusinessError } 14800029 - SQLite: The database is full.
+     * @throws { BusinessError } 14800030 - SQLite: Unable to open the database file.
+     * @syscap SystemCapability.DistributedDataManager.RelationalStore.Core
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.DistributedDataManager.RelationalStore.Core"
+    ]
+    public mut prop version: Int32
+
+
     /**
      * Inserts a row of data into the target table.
      *
