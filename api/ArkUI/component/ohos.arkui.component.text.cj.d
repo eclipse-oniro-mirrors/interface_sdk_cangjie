@@ -276,6 +276,22 @@ public class Text <: CommonMethodComponent<Text> & TextAttribute {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public func textCase(value: ?TextCase): This
+
+    /**
+     * Sets the text style, covering the font size, font width, font family, and font style.
+     *
+     * @param { ?Length } size - Font size.
+     * @param { ?FontWeight } weight - Font weight.
+     * @param { ?ResourceStr } family - Font family.
+     * @param { ?FontStyle } style - Font style.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func font(size!: ?Length = None, weight!: ?FontWeight = None, family!: ?ResourceStr = None,
+        style!: ?FontStyle = None): This
 }
 
 /**
@@ -484,4 +500,19 @@ sealed interface TextAttribute <: CommonMethod<TextAttribute> {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func textCase(value: ?TextCase): TextAttribute
+
+    /**
+     * Sets the text style, covering the font size, font width, font family, and font style.
+     *
+     * @param { ?Length } size - Font size.
+     * @param { ?FontWeight } weight - Font weight.
+     * @param { ?ResourceStr } family - Font family.
+     * @param { ?FontStyle } style - Font style.
+     * @returns { TextAttribute } Returns the text attribute.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func font(size!: ?Length, weight!: ?FontWeight, family!: ?ResourceStr, style!: ?FontStyle ): TextAttribute
 }

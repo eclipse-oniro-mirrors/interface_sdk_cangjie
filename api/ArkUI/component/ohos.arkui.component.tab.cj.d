@@ -130,6 +130,100 @@ public class Tabs <: CommonMethodComponent<Tabs> & TabsAttribute {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public func onChange(event: ?Callback<Int32, Unit>): This
+
+    /**
+     * Sets the divider between the TabBar and TabContent components.
+     *
+     * @param { ?Length } strokeWidth - Width of the divider. It cannot be set in percentage.
+     *  Default value: 0.0, Unit: vp, Value range: [0, +∞).
+     * @param { ?ResourceColor } color - Color of the divider. Default value: #33182431.
+     * @param { ?Length } startMargin - Distance between the divider and the top of the sidebar.
+     *  It cannot be set in percentage. Default value: 0.0, Unit: vp, Value range: [0, +∞).
+     * @param { ?Length } endMargin - Distance between the divider and the bottom of the sidebar.
+     *  It cannot be set in percentage. Default value: 0.0, Unit: vp, Value range: [0, +∞).
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func divider(strokeWidth!: ?Length, color!: ?ResourceColor = None,
+        startMargin!: ?Length = None, endMargin!: ?Length = None): This
+
+    /**
+     * Sets the edge effect used when the boundary of the scrolling area is reached.
+     *
+     * @param { ?EdgeEffect } edgeEffect - Effect used when the boundary of the scrolling area is reached.
+     *  Default value: EdgeEffect.Spring
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func edgeEffect(edgeEffect: ?EdgeEffect): This
+
+    /**
+     * Triggered when the transition animation starts. If animationDuration is
+     * set to 0 and scrollable is set to false, this callback is not triggered.
+     *
+     * @param { ?(Int32, Int32, TabsAnimationEvent) -> Unit } handler - Callback triggered when the transition animation starts.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func onAnimationStart(handler: ?(Int32, Int32, TabsAnimationEvent) -> Unit): This
+
+    /**
+     * Triggered when a new page is about to be displayed.
+     *
+     * This event is triggered when any of the following occurs:
+     *
+     * 1. When the user swipes through the TabContent to switch to a new page.
+     *
+     * 2. When TabsController.changeIndex is called to switch to a new page.
+     *
+     * 3. When the index attribute is changed to switch to a new page.
+     *
+     * 4. When the user taps a tab on the tab bar to switch to a new page.
+     *
+     * 5. When the user presses the left or
+     *     right arrow key on the keyboard to switch to a new page while the tab bar has focus.
+     *
+     * @param { ?(Int32, Int32) -> Bool } handler - Callback triggered when a new page is about to be displayed.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func onContentWillChange(handler: ?(Int32, Int32) -> Bool): This
+
+    /**
+     * Triggered on a frame-by-frame basis during swipe gestures for tab switching.
+     *
+     * @param { ?(Int32, TabsAnimationEvent) -> Unit } handler - Triggered on a frame-by-frame basis during swipe gestures for tab switching.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func onGestureSwipe(handler: ?(Int32, TabsAnimationEvent) -> Unit): This
+
+    /**
+     * Triggered when a tab is clicked.
+     *
+     * @param { ?(Int32) -> Unit } event - Index of the clicked tab. The index starts from 0.
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func onTabBarClick(event: ?(Int32) -> Unit): This
 }
 
 /**
@@ -350,6 +444,100 @@ sealed interface TabsAttribute <: CommonMethod<TabsAttribute> {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func onChange(event: ?Callback<Int32, Unit>): TabsAttribute
+
+    /**
+     * Sets the divider between the TabBar and TabContent components.
+     *
+     * @param { ?Length } strokeWidth - Width of the divider. It cannot be set in percentage.
+     *  Default value: 0.0, Unit: vp, Value range: [0, +∞).
+     * @param { ?ResourceColor } color - Color of the divider. Default value: #33182431.
+     * @param { ?Length } startMargin - Distance between the divider and the top of the sidebar.
+     *  It cannot be set in percentage. Default value: 0.0, Unit: vp, Value range: [0, +∞).
+     * @param { ?Length } endMargin - Distance between the divider and the bottom of the sidebar.
+     *  It cannot be set in percentage. Default value: 0.0, Unit: vp, Value range: [0, +∞).
+     * @returns { TabsAttribute } Returns the tabs attribute.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func divider(strokeWidth!: ?Length, color!: ?ResourceColor, startMargin!: ?Length,
+        endMargin!: ?Length): TabsAttribute
+
+    /**
+     * Sets the edge effect used when the boundary of the scrolling area is reached.
+     *
+     * @param { ?EdgeEffect } edgeEffect - Effect used when the boundary of the scrolling area is reached.
+     * Default value: EdgeEffect.Spring
+     * @returns { TabsAttribute } Returns the tabs attribute.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func edgeEffect(edgeEffect: ?EdgeEffect): TabsAttribute
+
+    /**
+     * Triggered when the transition animation starts. If animationDuration is
+     * set to 0 and scrollable is set to false, this callback is not triggered.
+     *
+     * @param { ?(Int32, Int32, TabsAnimationEvent) -> Unit } handler - Callback triggered when the transition animation starts.
+     * @returns { TabsAttribute } Returns the tabs attribute.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func onAnimationStart(handler: ?(Int32, Int32, TabsAnimationEvent) -> Unit): TabsAttribute
+
+    /**
+     * Triggered when a new page is about to be displayed.
+     *
+     * This event is triggered when any of the following occurs:
+     *
+     * 1. When the user swipes through the TabContent to switch to a new page.
+     *
+     * 2. When TabsController.changeIndex is called to switch to a new page.
+     *
+     * 3. When the index attribute is changed to switch to a new page.
+     *
+     * 4. When the user taps a tab on the tab bar to switch to a new page.
+     *
+     * 5. When the user presses the left or
+     *     right arrow key on the keyboard to switch to a new page while the tab bar has focus.
+     *
+     * @param { ?(Int32, Int32) -> Bool } handler - Callback triggered when a new page is about to be displayed.
+     * @returns { TabsAttribute } Returns the tabs attribute.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func onContentWillChange(handler: ?(Int32, Int32) -> Bool): TabsAttribute
+
+    /**
+     * Triggered on a frame-by-frame basis during swipe gestures for tab switching.
+     *
+     * @param { ?(Int32, TabsAnimationEvent) -> Unit } handler - Triggered on a frame-by-frame basis during swipe gestures for tab switching.
+     * @returns { TabsAttribute } Returns the tabs attribute.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func onGestureSwipe(handler: ?(Int32, TabsAnimationEvent) -> Unit): TabsAttribute
+
+    /**
+     * Triggered when a tab is clicked.
+     *
+     * @param { ?(Int32) -> Unit } event - Index of the clicked tab. The index starts from 0.
+     * @returns { TabsAttribute } Returns the tabs attribute.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func onTabBarClick(event: ?(Int32) -> Unit): TabsAttribute
 }
 
 /**
@@ -406,4 +594,46 @@ sealed interface TabContentAttribute <: CommonMethod<TabContentAttribute> {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func tabBar(content: ?CustomBuilder): TabContentAttribute
+}
+
+/**
+ * Describes the animation information of the Tabs component.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public class TabsAnimationEvent {
+    /**
+     * Offset of the currently displayed element relative to the start position of the Tabs component along the main axis.
+     * Unit: vp.
+     * Default value: 0.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var currentOffset: Float32
+
+    /**
+     * Offset of the target element relative to the start position of the Tabs component along the main axis.
+     * Unit: vp.
+     * Default value: 0.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var targetOffset: Float32
+
+    /**
+     * Hands-off velocity at the beginning of the animation. Unit: vp/s.
+     *
+     * Default value: 0.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public var velocity: Float32
 }

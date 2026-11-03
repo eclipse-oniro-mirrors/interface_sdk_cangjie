@@ -15402,3 +15402,141 @@ public class GestureEvent <: BaseEvent {
     ]
     public var tapLocation: ?EventLocationInfo
 }
+
+/**
+ * The position of ellipsis.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum EllipsisMode {
+    /**
+     * An ellipsis is used at the start of the line of text. This applies to single-line text scenarios.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Start
+    |
+    /**
+     * An ellipsis is used at the center of the line of text. This applies to single-line text scenarios.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Center
+    |
+    /**
+     * An ellipsis is used at the end of the line of text. This applies to single-line and multi-line text scenarios.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    End
+    |
+    /**
+     * An ellipsis is used at the start of the line of text. This applies to single-line and multi-line text scenarios.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    MultilineStart
+    |
+    /**
+     * An ellipsis is used at the center of the line of text. This applies to single-line and multi-line text scenarios.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    MultilineCenter
+    | ...
+}
+
+extend EllipsisMode <: Equatable<EllipsisMode> {
+    /**
+     * Compares this EllipsisMode with another for equality.
+     * @param { EllipsisMode } other - The EllipsisMode to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: EllipsisMode): Bool
+    /**
+     * Compares this EllipsisMode with another for inequality.
+     * @param { EllipsisMode } other - The EllipsisMode to compare with.
+     * @returns { Bool } True if both modes are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: EllipsisMode): Bool
+}
+
+/**
+ * Describes the dynamic range of the image to be displayed.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.ArkUI.ArkUI.Full"
+]
+public enum DynamicRangeMode {
+    /**
+     * Unrestricted dynamic range, which allows for the maximum brightening of an image.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    High 
+    |
+    /**
+     * Restricted dynamic range, which brightens an image within certain constraints.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Constraint 
+    |
+    /**
+     * Standard dynamic range, which does not brighten an image.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    Standard
+    | ...
+}
+
+extend DynamicRangeMode <: Equatable<DynamicRangeMode> {
+    /**
+     * Compares this DynamicRangeMode with another for equality.
+     * @param { DynamicRangeMode } other - The DynamicRangeMode to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func ==(other: DynamicRangeMode): Bool
+    /**
+     * Compares this DynamicRangeMode with another for inequality.
+     * @param { DynamicRangeMode } other - The DynamicRangeMode to compare with.
+     * @returns { Bool } True if both modes are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public operator func !=(other: DynamicRangeMode): Bool
+}
