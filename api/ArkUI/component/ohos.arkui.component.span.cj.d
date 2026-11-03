@@ -159,4 +159,16 @@ public class Span <: BaseSpan {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public func onClick(event: ?(ClickEvent) -> Unit): This
+
+    /**
+     * Sets the line height for the text.
+     *
+     * @param { ?Length } value - Line height of the text. If the value is of the number type, the unit is fp.
+     * @returns { This } Returns Span component instance itself.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func lineHeight(value: ?Length): This
 }
