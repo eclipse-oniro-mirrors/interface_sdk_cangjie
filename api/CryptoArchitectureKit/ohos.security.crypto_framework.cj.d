@@ -97,7 +97,7 @@ public class Cipher {
     /**
      * Finish the crypto operation, encrypt or decrypt the input data, and then feed back the output data.
      * Data cannot be updated after the crypto operation is finished.
-     *
+     * @returns { DataBlob } the data returned by the function.
      * @param { DataBlob } data - indicates the data to be finally encrypted or decrypted.
      * @throws { BusinessException } 17620001 - memory operation failed.
      * @throws { BusinessException } 17620002 - failed to convert parameters between cj and c.
