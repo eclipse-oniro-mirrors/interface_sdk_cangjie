@@ -49,6 +49,7 @@ if (build_ohos_sdk) {
     "cj_bluetooth_hfp_ffi.sym",
     "cj_bundle_manager_ffi.sym",
     "cj_camera_ffi.sym",
+    "cj_camera_picker_ffi.sym",
     "cj_color_manager_ffi.sym",
     "cj_common_event_manager_ffi.sym",
     "cj_context_ffi.sym",
