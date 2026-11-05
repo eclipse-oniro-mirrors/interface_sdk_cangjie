@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Copyright (c) 2025 - 2026 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -22,7 +22,7 @@ import ohos.business_exception.*
 import ohos.callback_invoke.*
 import ohos.graphics.color_space_manager.ColorSpace
 import ohos.labels.*
-import ohos.labels.APILevel
+import ohos.multimedia.image.*
 
 /**
  * Creates a CameraManager instance.
@@ -118,7 +118,6 @@ public enum ExposureMode {
     | ...
 }
 
-
 extend ExposureMode <: ToString {
 
     /**
@@ -131,7 +130,6 @@ extend ExposureMode <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend ExposureMode <: Equatable<ExposureMode> {
     
@@ -393,7 +391,6 @@ public enum FlashMode {
     | ...
 }
 
-
 extend FlashMode <: ToString {
     
     /**
@@ -406,7 +403,6 @@ extend FlashMode <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend FlashMode <: Equatable<FlashMode> {
     
@@ -544,7 +540,6 @@ public enum FocusState {
     | ...
 }
 
-
 extend FocusState <: ToString {
     
     /**
@@ -557,7 +552,6 @@ extend FocusState <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend FocusState <: Equatable<FocusState> {
     
@@ -634,7 +628,6 @@ public enum FocusMode {
     | ...
 }
 
-
 extend FocusMode <: ToString {
     
     /**
@@ -647,7 +640,6 @@ extend FocusMode <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend FocusMode <: Equatable<FocusMode> {
     
@@ -832,7 +824,6 @@ public enum VideoStabilizationMode {
     | ...
 }
 
-
 extend VideoStabilizationMode <: ToString {
     
     /**
@@ -845,7 +836,6 @@ extend VideoStabilizationMode <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend VideoStabilizationMode <: Equatable<VideoStabilizationMode> {
     
@@ -966,7 +956,6 @@ public enum SmoothZoomMode {
     Normal | ...
 }
 
-
 extend SmoothZoomMode <: ToString {
     
     /**
@@ -979,7 +968,6 @@ extend SmoothZoomMode <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend SmoothZoomMode <: Equatable<SmoothZoomMode> {
     
@@ -1130,6 +1118,20 @@ public class Rect {
         syscap: "SystemCapability.Multimedia.Camera.Core"
     ]
     public var height: Float64
+
+    /**
+     * Rect constructor.
+     *
+     * @param { Float64 } topLeftX - X coordinator of top left point.
+     * @param { Float64 } topLeftY - Y coordinator of top left point.
+     * @param { Float64 } width - Width of this rectangle.
+     * @param { Float64 } height - Height of this rectangle.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public init(topLeftX: Float64, topLeftY: Float64, width: Float64, height: Float64)
 }
 
 /**
@@ -1172,7 +1174,6 @@ public enum TorchMode {
     | ...
 }
 
-
 extend TorchMode <: ToString {
     
     /**
@@ -1185,7 +1186,6 @@ extend TorchMode <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend TorchMode <: Equatable<TorchMode> {
     
@@ -1262,7 +1262,6 @@ public enum ImageRotation {
     | ...
 }
 
-
 extend ImageRotation <: ToString {
     
     /**
@@ -1275,7 +1274,6 @@ extend ImageRotation <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend ImageRotation <: Equatable<ImageRotation> {
     
@@ -1352,7 +1350,6 @@ public enum CameraStatus {
     | ...
 }
 
-
 extend CameraStatus <: ToString {
     
     /**
@@ -1365,7 +1362,6 @@ extend CameraStatus <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend CameraStatus <: Equatable<CameraStatus> {
     
@@ -1546,7 +1542,6 @@ public enum MetadataObjectType {
     FaceDetection | ...
 }
 
-
 extend MetadataObjectType <: ToString {
     
     /**
@@ -1559,7 +1554,6 @@ extend MetadataObjectType <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend MetadataObjectType <: Equatable<MetadataObjectType> {
     
@@ -1671,7 +1665,6 @@ public enum FoldStatus {
     | ...
 }
 
-
 extend FoldStatus <: ToString {
     
     /**
@@ -1684,7 +1677,6 @@ extend FoldStatus <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend FoldStatus <: Equatable<FoldStatus> {
     
@@ -1778,7 +1770,6 @@ public enum ConnectionType {
     | ...
 }
 
-
 extend ConnectionType <: ToString {
     
     /**
@@ -1791,7 +1782,6 @@ extend ConnectionType <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend ConnectionType <: Equatable<ConnectionType> {
     
@@ -1887,7 +1877,6 @@ public enum CameraFormat {
     | ...
 }
 
-
 extend CameraFormat <: ToString {
     
     /**
@@ -1900,7 +1889,6 @@ extend CameraFormat <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend CameraFormat <: Equatable<CameraFormat> {
     
@@ -2168,7 +2156,6 @@ public enum CameraEvents {
     | ...
 }
 
-
 extend CameraEvents <: Equatable<CameraEvents> {
     
     /**
@@ -2234,7 +2221,6 @@ public enum CameraPosition {
     | ...
 }
 
-
 extend CameraPosition <: ToString {
     
     /**
@@ -2247,7 +2233,6 @@ extend CameraPosition <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend CameraPosition <: Equatable<CameraPosition> {
     
@@ -2334,7 +2319,6 @@ public enum CameraType {
     | ...
 }
 
-
 extend CameraType <: ToString {
     
     /**
@@ -2347,7 +2331,6 @@ extend CameraType <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend CameraType <: Equatable<CameraType> {
     
@@ -2414,7 +2397,6 @@ public enum SceneMode {
     | ...
 }
 
-
 extend SceneMode <: ToString {
     
     /**
@@ -2427,7 +2409,6 @@ extend SceneMode <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend SceneMode <: Equatable<SceneMode> {
     
@@ -2494,7 +2475,6 @@ public enum QualityLevel {
     | ...
 }
 
-
 extend QualityLevel <: ToString {
     
     /**
@@ -2507,7 +2487,6 @@ extend QualityLevel <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend QualityLevel <: Equatable<QualityLevel> {
     
@@ -2679,7 +2658,6 @@ public enum VideoCodecType {
     | ...
 }
 
-
 extend VideoCodecType <: ToString {
     
     /**
@@ -2692,7 +2670,6 @@ extend VideoCodecType <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend VideoCodecType <: Equatable<VideoCodecType> {
     
@@ -2869,7 +2846,6 @@ public enum PreconfigType {
     | ...
 }
 
-
 extend PreconfigType <: ToString {
     
     /**
@@ -2882,7 +2858,6 @@ extend PreconfigType <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend PreconfigType <: Equatable<PreconfigType> {
     
@@ -2949,7 +2924,6 @@ public enum PreconfigRatio {
     | ...
 }
 
-
 extend PreconfigRatio <: ToString {
     
     /**
@@ -2962,7 +2936,6 @@ extend PreconfigRatio <: ToString {
     ]
     public func toString(): String
 }
-
 
 extend PreconfigRatio <: Equatable<PreconfigRatio> {
     
@@ -3456,6 +3429,23 @@ public class CameraManager {
         throwexception: true
     ]
     public func setTorchMode(mode: TorchMode): Unit
+
+    /**
+     * Creates a **MetadataOutput** instance. This API returns the result synchronously.
+     *
+     * @param { Array<MetadataObjectType> } metadataObjectTypes - Metadata object types, which are obtained through
+     *     **getSupportedOutputCapability**.
+     * @returns { MetadataOutput } **MetadataOutput** instance created. If the operation fails, an error code defined in
+     *     **CameraErrorCode** is returned.
+     * @throws { BusinessException } 7400101 - Parameter missing or parameter type incorrect.
+     * @throws { BusinessException } 7400201 - Camera service fatal error.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core",
+        throwexception: true
+    ]
+    public func createMetadataOutput(metadataObjectTypes: Array<MetadataObjectType>): MetadataOutput
 }
 
 /**
@@ -4312,6 +4302,30 @@ public class PhotoOutput <: CameraOutput {
         workerthread: true
     ]
     public func release(): Unit
+
+    /**
+     * Subscribes photo available event callback.
+     *
+     * @param { Callback1Argument<Photo> } callback - Callback used to get the Photo.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func onPhotoAvailable(callback: Callback1Argument<Photo>): Unit
+
+    /**
+     * Unsubscribes photo available event callback.
+     *
+     * @param { ?Callback1Argument<Photo> } [callback] - Callback used to get the Photo. If this parameter is not
+     *     specified, all **onPhotoAvailable** callbacks are unsubscribed.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func offPhotoAvailable(callback!: ?Callback1Argument<Photo> = None): Unit
+
 }
 
 /**
@@ -4629,4 +4643,211 @@ public class VideoOutput <: CameraOutput {
         workerthread: true
     ]
     public func release(): Unit
+}
+
+/**
+ * Photo defines a full-quality image object.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Multimedia.Camera.Core"
+]
+public class Photo {
+    /**
+     * Full-quality image.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public mut prop mainImage: ImageType
+}
+
+/**
+ * Defines the image container type, which is used to obtain full-quality images or uncompressed images (YUV).
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Multimedia.Camera.Core"
+]
+public enum ImageType {
+    /**
+     * Image container type that obtains full-quality images.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    ImageValue(Image)
+    | ...
+}
+
+extend ImageType <: ToString {
+
+    /**
+     * Converts the ImageType to its string representation.
+     * @returns { String } A string representation of the ImageType.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func toString(): String
+}
+
+extend ImageType <: Equatable<ImageType> {
+
+    /**
+     * Compares this ImageType with another for equality.
+     * @param { ImageType } other - The ImageType to compare with.
+     * @returns { Bool } True if both modes are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public operator func ==(other: ImageType): Bool
+
+    /**
+     * Compares this ImageType with another for inequality.
+     * @param { ImageType } other - The ImageType to compare with.
+     * @returns { Bool } True if both modes are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public operator func !=(other: ImageType): Bool
+}
+
+/**
+ * Describes the camera metadata, which is the data source of **CameraInput**. The metadata is obtained through
+ * **MetadataOutput.onMetadataObjectsAvailable**.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Multimedia.Camera.Core"
+]
+public open class MetadataObject {
+    /**
+     * Metadata object type.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public prop metadataObjectType: MetadataObjectType
+
+    /**
+     * Timestamp, in ns.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public prop timestamp: Int64
+
+    /**
+     * Metadata rectangle.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public prop boundingBox: Rect
+}
+
+/**
+ * MetadataOutput implements metadata streams. It inherits from **CameraOutput**.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Multimedia.Camera.Core"
+]
+public class MetadataOutput <: CameraOutput {
+    /**
+     * Starts to output metadata. This API uses an asynchronous callback to return the result.
+     *
+     * @param { AsyncCallback<Unit> } callback - Callback used to return the result. If the metadata output starts
+     *     successfully, **err** is **undefined**; otherwise, **err** is an error object with an error code defined in
+     *     **CameraErrorCode**.
+     * @throws { BusinessException } 7400103 - Session not config.
+     * @throws { BusinessException } 7400201 - Camera service fatal error.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core",
+        throwexception: true
+    ]
+    public func start(callback: AsyncCallback<Unit>): Unit
+
+    /**
+     * Stops outputting metadata. This API uses an asynchronous callback to return the result.
+     *
+     * @param { AsyncCallback<Unit> } callback - Callback used to return the result. If the metadata output stops
+     *     successfully, **err** is **undefined**; otherwise, **err** is an error object.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func stop(callback: AsyncCallback<Unit>): Unit
+
+    /**
+     * Releases output resources.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func release(): Unit
+
+    /**
+     * Subscribes to metadata objects available event callback.
+     *
+     * @param { Callback1Argument<Array<MetadataObject>> } callback - Callback used to get the available metadata
+     *     objects.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func onMetadataObjectsAvailable(callback: Callback1Argument<Array<MetadataObject>>): Unit
+
+    /**
+     * Unsubscribes from metadata objects available event callback.
+     *
+     * @param { ?Callback1Argument<Array<MetadataObject>> } [callback] - Callback used to get the available metadata
+     *     objects. If this parameter is not specified, all **onMetadataObjectsAvailable** callbacks are
+     *     unsubscribed.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func offMetadataObjectsAvailable(callback!: ?Callback1Argument<Array<MetadataObject>> = None): Unit
+
+    /**
+     * Subscribes to error events.
+     *
+     * @param { Callback0Argument } callback - Callback used to get the metadata output errors.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func onError(callback: Callback0Argument): Unit
+
+    /**
+     * Unsubscribes from error events.
+     *
+     * @param { ?Callback0Argument } [callback] - Callback used to get the metadata output errors. If this parameter
+     *     is not specified, all **onError** callbacks are unsubscribed.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Multimedia.Camera.Core"
+    ]
+    public func offError(callback!: ?Callback0Argument = None): Unit
+
 }
