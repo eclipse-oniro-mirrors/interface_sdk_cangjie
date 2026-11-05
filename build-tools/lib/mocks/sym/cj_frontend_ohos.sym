@@ -2366,3 +2366,4 @@ FfiOHOSAceFrameworkLineCreateEx;
 FfiOHOSAceFrameworkCircleCreateEx;
 FfiOHOSAceFrameworkEllipseCreateEx;
 FfiOHOSAceFrameworkRectCreateEx;
+FfiOHOSAceFrameworkDataPanelResetShadowColors;
