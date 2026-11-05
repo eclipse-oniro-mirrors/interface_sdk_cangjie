@@ -13,8 +13,10 @@
 
 FfiWifiAddCandidateConfig;
 FfiWifiConnectToCandidateConfig;
+FfiWifiConnectToCandidateConfigWithSettings;
 FfiWifiCreateGroup;
 FfiWifiGetCandidateConfigs;
+FfiWifiGetCandidateConfigsV2;
 FfiWifiGetCountryCode;
 FfiWifiGetCurrentGroup;
 FfiWifiGetIpInfo;
@@ -35,6 +37,7 @@ FfiWifiP2pConnect;
 FfiWifiRemoveCandidateConfig;
 FfiWifiRemoveGroup;
 FfiWifiStartDiscoverDevices;
+FfiWifiStartScan;
 FfiWifiStopDiscoverDevices;
 FfiWifiWifiOff;
 FfiWifiWifiOn;
