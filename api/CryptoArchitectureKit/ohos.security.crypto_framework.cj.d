@@ -1237,38 +1237,6 @@ public class AsyKeyGenerator {
     ]
     public func convertPemKey(callback: AsyncCallback<KeyPair>, pubKey!: Option<String> = None, priKey!: Option<String> = None): Unit
 
-    /**
-     * Converts data into an asymmetric key pair. Encrypted private keys are supported. The private key password is
-     * synchronously passed to decrypt the private key. This API uses an asynchronous callback to return the result.
-     *
-     * Note:
-     * 1. When convertPemKey() is used to convert an external string into an asymmetric key object defined by the
-     * Crypto framework, the public key must comply with the ASN.1 syntax, X.509 specifications, and PEM encoding
-     * format, and the private key must comply with the ASN.1 syntax, PKCS #8 specifications, and PEM encoding format.
-     * 2. In convertPemKey(), you can pass in either pubKey or priKey, or both of them. If one of them is passed in,
-     * the returned KeyPair instance contains only the key converted from the data you passed in.
-     * 3. When convertPemKey is used to convert an external string into an asymmetric key object defined by the Crypto
-     * framework, the system does not verify whether the specifications of the generated key object are the same as
-     * the key specifications specified for the asymmetric key generator.
-     * 4. If password is passed in, it can be used to decrypt the encrypted private key.
-     *
-     * @param { String } password - Password used to decrypt the private key.
-     * @param { AsyncCallback<KeyPair> } callback - Callback used to return the result. If the operation is
-     *     successful, **data** is the key pair obtained.
-     * @param { ?String } [pubKey] - Public key material to convert. If no public key needs to be converted, set
-     *     this parameter to **None**.
-     * @param { ?String } [priKey] - Private key material to convert. If no private key needs to be converted,
-     *     set this parameter to **None**. Note: The public key and private key materials cannot be both None or empty
-     *     strings.
-     * @throws { BusinessException } 17620001 - Memory operation failed.
-     * @throws { BusinessException } 17630001 - Crypto operation error.
-     */
-    @!APILevel[
-        since: "26.1.0",
-        syscap: "SystemCapability.Security.CryptoFramework.Key.AsymKey",
-        throwexception: true
-    ]
-    public func convertPemKey(password: String, callback: AsyncCallback<KeyPair>, pubKey!: Option<String> = None, priKey!: Option<String> = None): Unit
 }
 
 /**
