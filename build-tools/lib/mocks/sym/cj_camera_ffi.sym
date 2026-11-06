@@ -74,6 +74,7 @@ FfiCameraMetadataOutputOffError;
 FfiCameraMetadataOutputOffMetadataObjectsAvailable;
 FfiCameraMetadataOutputOnError;
 FfiCameraMetadataOutputOnMetadataObjectsAvailable;
+FfiCameraMetadataOutputOnMetadataObjectsAvailableV2;
 FfiCameraMetadataOutputRelease;
 FfiCameraMetadataOutputStart;
 FfiCameraMetadataOutputStop;
