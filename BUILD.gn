@@ -62,6 +62,7 @@ sdk_packages_api_libs = [
   "bundlemanager_cangjie_wrapper:copy_sdk_bundlemanager_cangjie_libs",
   "startup_cangjie_wrapper:copy_sdk_startup_cangjie_libs",
   "notification_cangjie_wrapper:copy_sdk_notification_cangjie_libs",
+  "notification_cangjie_wrapper:copy_sdk_notification_cangjie_libs_kit",
 ]
 
 if (sdk_build_cangjie_previewer == true) {
