@@ -17,5 +17,7 @@
 
 package kit.TelephonyKit
 public import ohos.telephony.call.*
+public import ohos.telephony.radio.*
+public import ohos.telephony.sim.*
 
 
