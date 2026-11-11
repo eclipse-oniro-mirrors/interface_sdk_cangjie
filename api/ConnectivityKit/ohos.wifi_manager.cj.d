@@ -1641,6 +1641,15 @@ public class WifiDeviceConfig {
     public mut prop bssid: ?String
 
     /**
+     * Wi-Fi bssid type.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Communication.WiFi.STA"
+    ]
+    public mut prop bssidType: ?DeviceAddressType
+
+    /**
      * Wi-Fi key: maximum length is 64.
      */
     @!APILevel[
