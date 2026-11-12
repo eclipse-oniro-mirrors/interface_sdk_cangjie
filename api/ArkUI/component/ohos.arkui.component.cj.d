@@ -83,4 +83,4 @@ public import ohos.arkui.component.toggle.*
 public import ohos.arkui.component.util.*
 public import ohos.arkui.component.video.*
 public import ohos.arkui.component.web.*
-
+public import ohos.arkui.component.column_split.*

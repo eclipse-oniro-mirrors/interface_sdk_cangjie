@@ -667,6 +667,23 @@ public class Scroll <: ScrollableCommonMethodComponent<Scroll> & ScrollAttribute
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     public func onScrollEdge(event: ?OnScrollEdgeCallback): This
+
+    /**
+     * Sets the effect used when the scroll boundary is reached.
+     *
+     * @param { ?EdgeEffect } edgeEffect - Effect used when the scroll boundary is reached. The spring and shadow
+     *     effects are supported.
+     *     Default value: EdgeEffect.None.
+     * @param { ?EdgeEffectOptions } [options] - Whether to enable the scroll effect when the component content is smaller
+     *     than the component itself. The value EdgeEffectOptions(true) means to enable the scroll effect, and
+     *     EdgeEffectOptions(false) means the opposite. Default value: EdgeEffectOptions(true).
+     * @returns { This } The instance of the component.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    public func edgeEffect(edgeEffect: ?EdgeEffect, options!: ?EdgeEffectOptions = None): This
 }
 
 /**
@@ -686,7 +703,7 @@ public class Scroll <: ScrollableCommonMethodComponent<Scroll> & ScrollAttribute
     since: "22",
     syscap: "SystemCapability.ArkUI.ArkUI.Full"
 ]
-public class Scroller {
+public open class Scroller {
     /**
      * A constructor used to create a Scroller object.
      */
@@ -999,6 +1016,23 @@ sealed interface ScrollAttribute <: ScrollableCommonMethod<ScrollAttribute> {
         syscap: "SystemCapability.ArkUI.ArkUI.Full"
     ]
     func onScrollEdge(event: ?OnScrollEdgeCallback): ScrollAttribute
+
+    /**
+     * Sets the effect used when the scroll boundary is reached.
+     *
+     * @param { ?EdgeEffect } edgeEffect - Effect used when the scroll boundary is reached. The spring and shadow
+     *     effects are supported.
+     *     Default value: EdgeEffect.None.
+     * @param { ?EdgeEffectOptions } options - Whether to enable the scroll effect when the component content is smaller
+     *     than the component itself. The value EdgeEffectOptions(true) means to enable the scroll effect, and
+     *     EdgeEffectOptions(false) means the opposite. Default value: EdgeEffectOptions(true).
+     * @returns { ScrollAttribute }
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.ArkUI.ArkUI.Full"
+    ]
+    func edgeEffect(edgeEffect: ?EdgeEffect, options!: ?EdgeEffectOptions): ScrollAttribute
 }
 
 /**
