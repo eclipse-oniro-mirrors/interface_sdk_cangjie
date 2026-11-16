@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025 Huawei Device Co., Ltd.
+ * Copyright (c) 2025 - 2026 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -47,6 +47,24 @@ public func createGattServer(): GattServer
     throwexception: true
 ]
 public func createGattClientDevice(deviceId: String): GattClientDevice
+
+/**
+ * Obtains the list of devices in the connected status.
+ *
+ * @returns { Array<String> } Returns the list of device addresses.
+ * @throws { BusinessException } 201 - Permission denied.
+ * @throws { BusinessException } 801 - Capability not supported.
+ * @throws { BusinessException } 2900001 - Service stopped.
+ * @throws { BusinessException } 2900003 - Bluetooth disabled.
+ * @throws { BusinessException } 2900099 - Operation failed.
+ */
+@!APILevel[
+    since: "26.1.0",
+    permission: "ohos.permission.ACCESS_BLUETOOTH",
+    syscap: "SystemCapability.Communication.Bluetooth.Core",
+    throwexception: true
+]
+public func getConnectedBLEDevices(): Array<String>
 
 /**
  * Starts scanning for specified BLE devices with filters.
@@ -137,7 +155,7 @@ public func stopAdvertising(): Unit
  * invoke the API stopAdvertising with ID.
  *
  * @param { AdvertisingParams } advertisingParams - Indicates the param for BLE advertising.
- * @returns { UInt32 }the callback of advertise ID.
+ * @returns { UInt32 } the callback of advertise ID.
  * @throws { BusinessException } 201 - Permission denied.
  * @throws { BusinessException } 801 - Capability not supported.
  * @throws { BusinessException } 2900001 - Service stopped.
@@ -589,12 +607,12 @@ public class GattServer {
      * Removes a specified service from the list of GATT services provided by this device.
      *
      * @param { String } serviceUUID - Indicates the UUID of the service to remove.
-     * @throws { BusinessException} 201 - Permission denied.
-     * @throws { BusinessException} 801 - Capability not supported.
-     * @throws { BusinessException} 2900001 - Service stopped.
-     * @throws { BusinessException} 2900003 - Bluetooth disabled.
-     * @throws { BusinessException} 2900004 - Profile not supported.
-     * @throws { BusinessException} 2900099 - Operation failed.
+     * @throws { BusinessException } 201 - Permission denied.
+     * @throws { BusinessException } 801 - Capability not supported.
+     * @throws { BusinessException } 2900001 - Service stopped.
+     * @throws { BusinessException } 2900003 - Bluetooth disabled.
+     * @throws { BusinessException } 2900004 - Profile not supported.
+     * @throws { BusinessException } 2900099 - Operation failed.
      */
     @!APILevel[
         since: "22",
