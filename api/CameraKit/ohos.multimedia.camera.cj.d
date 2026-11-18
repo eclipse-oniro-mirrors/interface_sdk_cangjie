@@ -4795,10 +4795,14 @@ public class MetadataOutput <: CameraOutput {
 
     /**
      * Releases output resources.
+     *
+     * @throws { BusinessException } 7400201 - Camera service fatal error.
      */
     @!APILevel[
         since: "26.1.0",
-        syscap: "SystemCapability.Multimedia.Camera.Core"
+        syscap: "SystemCapability.Multimedia.Camera.Core",
+        throwexception: true,
+        workerthread: true
     ]
     public func release(): Unit
 
