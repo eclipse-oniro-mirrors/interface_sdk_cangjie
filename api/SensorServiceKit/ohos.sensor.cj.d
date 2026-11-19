@@ -17,6 +17,7 @@
 
 package ohos.sensor
 
+import ohos.business_exception.AsyncCallback
 import ohos.callback_invoke.{CallbackObject, Callback1Argument}
 import ohos.labels.*
 
@@ -1409,3 +1410,346 @@ public func getSensorList(): Array<Sensor>
     workerthread: true
 ]
 public func getSingleSensor(sensorType: SensorId): Sensor
+
+/**
+ * Describes a geomagnetic response object.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor"
+]
+public class GeomagneticResponse {
+    /**
+     * North component of the geomagnetic field, in nT.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop x: Float32
+
+    /**
+     * East component of the geomagnetic field, in nT.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop y: Float32
+
+    /**
+     * Vertical component of the geomagnetic field, in nT.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop z: Float32
+
+    /**
+     * Magnetic dip, also called magnetic inclination, which is the angle measured from the horizontal plane to the magnetic field vector, in degrees.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop geomagneticDip: Float32
+
+    /**
+     * Magnetic declination, which is the angle between true north (geographic north) and the magnetic north (the
+     * horizontal component of the field), in degrees.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop deflectionAngle: Float32
+
+    /**
+     * Horizontal intensity of the magnetic field vector field, in nT.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop levelIntensity: Float32
+
+    /**
+     * Total intensity of the magnetic field vector, in nT.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop totalIntensity: Float32
+}
+
+/**
+ * Describes the geographical location.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor"
+]
+public class LocationOptions {
+    /**
+     * Latitude, in degrees.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop latitude: Float32
+
+    /**
+     * Longitude, in degrees.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop longitude: Float32
+
+    /**
+     * Altitude, in m.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop altitude: Float32
+
+    /**
+     * A constructor used to create a LocationOptions.
+     *
+     * @param { Float32 } latitude - Latitude, in degrees.
+     * @param { Float32 } longitude - Longitude, in degrees.
+     * @param { Float32 } altitude - Altitude, in m.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public init(
+        latitude: Float32,
+        longitude: Float32,
+        altitude: Float32
+    )
+}
+
+/**
+ * Obtains the geomagnetic field of a geographic location at a certain time. This API uses an asynchronous callback to
+ * return the result.
+ *
+ * @param { LocationOptions } locationOptions - Geographic location, including the longitude, latitude, and altitude.
+ * @param { Int64 } timeMillis - Time when the magnetic declination is obtained. The value is a Unix timestamp, in ms.
+ * @param { AsyncCallback<GeomagneticResponse> } callback - Callback used to return the geomagnetic field.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getGeomagneticInfo(locationOptions: LocationOptions, timeMillis: Int64, callback: AsyncCallback<GeomagneticResponse>): Unit
+
+/**
+ * Obtains the altitude based on the atmospheric pressure. This API uses an asynchronous callback to return the result.
+ *
+ * @param { Float32 } seaPressure - Sea-level atmospheric pressure, in hPa.
+ * @param { Float32 } currentPressure - Specified atmospheric pressure, in hPa.
+ * @param { AsyncCallback<Float32> } callback - Callback used to return the altitude, in meters.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getDeviceAltitude(seaPressure: Float32, currentPressure: Float32, callback: AsyncCallback<Float32>): Unit
+
+/**
+ * Obtains the magnetic dip based on the inclination matrix. This API uses an asynchronous callback to return the
+ * result.
+ *
+ * @param { Array<Float32> } inclinationMatrix - Inclination matrix.
+ * @param { AsyncCallback<Float32> } callback - Callback used to return the magnetic dip, in radians.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getInclination(inclinationMatrix: Array<Float32>, callback: AsyncCallback<Float32>): Unit
+
+/**
+ * Obtains the angle change between two rotation matrices. This API uses an asynchronous callback to return the result.
+ *
+ * @param { Array<Float32> } currentRotationMatrix - Current rotation matrix.
+ * @param { Array<Float32> } preRotationMatrix - The other rotation matrix.
+ * @param { AsyncCallback<Array<Float32>> } callback - Callback used to return the angle change around the z, x,
+ *     and y axes, in degrees.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getAngleVariation(currentRotationMatrix: Array<Float32>, preRotationMatrix: Array<Float32>, callback: AsyncCallback<Array<Float32>>): Unit
+
+/**
+ * Obtains the rotation matrix from a rotation vector. This API uses an asynchronous callback to return the result.
+ *
+ * @param { Array<Float32> } rotationVector - Rotation vector.
+ * @param { AsyncCallback<Array<Float32>> } callback - Callback used to return the rotation matrix.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getRotationMatrix(rotationVector: Array<Float32>, callback: AsyncCallback<Array<Float32>>): Unit
+
+/**
+ * Describes the coordinate options.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor"
+]
+public class CoordinatesOptions {
+    /**
+     * X coordinate direction.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop x: Int32
+
+    /**
+     * Y coordinate direction.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop y: Int32
+
+    /**
+     * A constructor used to create a CoordinatesOptions.
+     *
+     * @param { Int32 } x - X coordinate direction.
+     * @param { Int32 } y - Y coordinate direction.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public init(
+        x: Int32,
+        y: Int32
+    )
+}
+
+/**
+ * Transforms a rotation vector based on the coordinate system. This API uses an asynchronous callback to return the
+ * result.
+ *
+ * @param { Array<Float32> } inRotationVector - Rotation vector.
+ * @param { CoordinatesOptions } coordinates - Rotation vector to transform.
+ * @param { AsyncCallback<Array<Float32>> } callback - Callback used to return the rotation vector after being
+ *     transformed.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func transformRotationMatrix(inRotationVector: Array<Float32>, coordinates: CoordinatesOptions, callback: AsyncCallback<Array<Float32>>): Unit
+
+/**
+ * Obtains the quaternion from a rotation vector. This API uses an asynchronous callback to return the result.
+ *
+ * @param { Array<Float32> } rotationVector - Rotation vector.
+ * @param { AsyncCallback<Array<Float32>> } callback - Callback used to return the quaternion.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getQuaternion(rotationVector: Array<Float32>, callback: AsyncCallback<Array<Float32>>): Unit
+
+/**
+ * Obtains the device direction based on the rotation matrix. This API uses an asynchronous callback to return the
+ * result.
+ *
+ * @param { Array<Float32> } rotationMatrix - Rotation matrix.
+ * @param { AsyncCallback<Array<Float32>> } callback - Callback used to return the rotation angle around the z, x,
+ *     and y axes, in degrees.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getOrientation(rotationMatrix: Array<Float32>, callback: AsyncCallback<Array<Float32>>): Unit
+
+/**
+ * Describes the response for setting the rotation matrix.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor"
+]
+public class RotationMatrixResponse {
+    /**
+     * Rotation matrix.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop rotation: Array<Float32>
+
+    /**
+     * Inclination matrix.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Sensors.Sensor"
+    ]
+    public mut prop inclination: Array<Float32>
+}
+
+/**
+ * Obtains the rotation matrix based on a gravity vector and geomagnetic vector. This API uses an asynchronous callback
+ * to return the result.
+ *
+ * @param { Array<Float32> } gravity - Gravity vector.
+ * @param { Array<Float32> } geomagnetic - Geomagnetic vector.
+ * @param { AsyncCallback<RotationMatrixResponse> } callback - Callback used to return the rotation matrix.
+ * @throws { BusinessException } 14500101 - Service exception. Possible causes: 1. Sensor hdf service exception;
+ *     <br> 2. Sensor service ipc exception;3. Sensor data channel exception.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Sensors.Sensor",
+    throwexception: true
+]
+public func getRotationMatrix(gravity: Array<Float32>, geomagnetic: Array<Float32>, callback: AsyncCallback<RotationMatrixResponse>): Unit

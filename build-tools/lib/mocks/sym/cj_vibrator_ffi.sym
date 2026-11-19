@@ -17,3 +17,4 @@ FfiVibratorSupportEffect;
 FfiVibratorStartVibrationTimeEnhanced;
 FfiVibratorStartVibrationFileEnhanced;
 FfiVibratorGetVibratorInfo;
+FfiVibratorIsHdHapticSupported;
