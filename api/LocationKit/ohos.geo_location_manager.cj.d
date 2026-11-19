@@ -19,7 +19,7 @@ package ohos.geo_location_manager
 
 import ohos.business_exception.*
 import ohos.callback_invoke.*
-import ohos.labels.APILevel
+import ohos.labels.{ APILevel, PermissionValue }
 
 /**
  * Provides interfaces for acquiring location information, managing location switches,
@@ -553,6 +553,87 @@ public class SingleLocationRequest {
 }
 
 /**
+ * Satellite status information.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Gnss"
+]
+public class SatelliteStatusInfo {
+    /**
+     * Number of satellites.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop satellitesNumber: Int32
+
+    /**
+     * Satellite ID array.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop satelliteIds: Array<Int32>
+
+    /**
+     * Carrier to noise density array.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop carrierToNoiseDensitys: Array<Float64>
+
+    /**
+     * Satellite altitude array.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop altitudes: Array<Float64>
+
+    /**
+     * Satellite azimuth array.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop azimuths: Array<Float64>
+
+    /**
+     * Satellite carrier frequency array.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop carrierFrequencies: Array<Float64>
+
+    /**
+     * Satellite constellation type array.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop satelliteConstellation: ?Array<SatelliteConstellationCategory>
+
+    /**
+     * Satellite additional information array.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public mut prop satelliteAdditionalInfo: ?Array<Int32>
+}
+
+/**
  * Configuring parameters in location requests.
  */
 @!APILevel[
@@ -819,6 +900,124 @@ extend LocationError <: Equatable<LocationError> {
         syscap: "SystemCapability.Location.Location.Core"
     ]
     public operator func !=(other: LocationError): Bool
+}
+
+/**
+ * Enum for satellite constellation category.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Gnss"
+]
+public enum SatelliteConstellationCategory {
+    /**
+     * Invalid value.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategoryUnknown
+    |
+    /**
+     * GPS.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategoryGps
+    |
+    /**
+     * SBAS.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategorySbas
+    |
+    /**
+     * GLONASS.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategoryGlonass
+    |
+    /**
+     * QZSS.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategoryQzss
+    |
+    /**
+     * BEIDOU.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategoryBeidou
+    |
+    /**
+     * GALILEO.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategoryGalileo
+    |
+    /**
+     * IRNSS.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    ConstellationCategoryIrnss
+    | ...
+}
+
+extend SatelliteConstellationCategory <: ToString {
+    /**
+     * Converts the SatelliteConstellationCategory to its string representation.
+     * @returns { String } A string representation of the SatelliteConstellationCategory.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public func toString(): String
+}
+
+extend SatelliteConstellationCategory <: Equatable<SatelliteConstellationCategory> {
+    /**
+     * Compares this SatelliteConstellationCategory with another for equality.
+     * @param { SatelliteConstellationCategory } other - The SatelliteConstellationCategory to compare with.
+     * @returns { Bool } True if both values are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public operator func ==(other: SatelliteConstellationCategory): Bool
+
+    /**
+     * Compares this SatelliteConstellationCategory with another for inequality.
+     * @param { SatelliteConstellationCategory } other - The SatelliteConstellationCategory to compare with.
+     * @returns { Bool } True if both values are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Gnss"
+    ]
+    public operator func !=(other: SatelliteConstellationCategory): Bool
 }
 
 /**
@@ -1245,6 +1444,82 @@ public func onLocationEnabledChange(callback: Callback1Argument<Bool>): Unit
     throwexception: true
 ]
 public func offLocationEnabledChange(callback!: ?Callback1Argument<Bool> = None): Unit
+
+/**
+ * Subscribe satellite status changed.
+ *
+ * @param { Callback1Argument<SatelliteStatusInfo> } callback - Indicates the callback for reporting the satellite status.
+ * @throws { BusinessException } 201 - Permission verification failed. The application does not have the
+ *     permission required to call the API.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.onSatelliteStatusChange} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ * @throws { BusinessException } 3301100 - The location switch is off.
+ */
+@!APILevel[
+    since: "26.1.0",
+    permission: "ohos.permission.APPROXIMATELY_LOCATION",
+    syscap: "SystemCapability.Location.Location.Gnss",
+    throwexception: true
+]
+public func onSatelliteStatusChange(callback: Callback1Argument<SatelliteStatusInfo>): Unit
+
+/**
+ * Unsubscribe satellite status changed.
+ *
+ * @param { ?Callback1Argument<SatelliteStatusInfo> } [callback] - Indicates the callback for reporting the satellite status.
+ * @throws { BusinessException } 201 - Permission verification failed. The application does not have the
+ *     permission required to call the API.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.offSatelliteStatusChange} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ * @throws { BusinessException } 3301100 - The location switch is off.
+ */
+@!APILevel[
+    since: "26.1.0",
+    permission: "ohos.permission.APPROXIMATELY_LOCATION",
+    syscap: "SystemCapability.Location.Location.Gnss",
+    throwexception: true
+]
+public func offSatelliteStatusChange(callback!: ?Callback1Argument<SatelliteStatusInfo> = None): Unit
+
+/**
+ * Subscribe nmea message changed.
+ *
+ * @param { Callback1Argument<String> } callback - Indicates the callback for reporting the nmea message.
+ * @throws { BusinessException } 201 - Permission verification failed. The application does not have the
+ *     permission required to call the API.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.onNmeaMessage} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ * @throws { BusinessException } 3301100 - The location switch is off.
+ */
+@!APILevel[
+    since: "26.1.0",
+    permission: "ohos.permission.LOCATION" & "ohos.permission.APPROXIMATELY_LOCATION",
+    syscap: "SystemCapability.Location.Location.Gnss",
+    throwexception: true
+]
+public func onNmeaMessage(callback: Callback1Argument<String>): Unit
+
+/**
+ * Unsubscribe nmea message changed.
+ *
+ * @param { ?Callback1Argument<String> } [callback] - Indicates the callback for reporting the nmea message.
+ * @throws { BusinessException } 201 - Permission verification failed. The application does not have the
+ *     permission required to call the API.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.offNmeaMessage} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ * @throws { BusinessException } 3301100 - The location switch is off.
+ */
+@!APILevel[
+    since: "26.1.0",
+    permission: "ohos.permission.LOCATION" & "ohos.permission.APPROXIMATELY_LOCATION",
+    syscap: "SystemCapability.Location.Location.Gnss",
+    throwexception: true
+]
+public func offNmeaMessage(callback!: ?Callback1Argument<String> = None): Unit
 
 /**
  * Registering the callback function for listening to country code changes.
