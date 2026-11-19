@@ -24,3 +24,4 @@ public import ohos.system_date_time.*
 public import ohos.battery_info.*
 
 
+public import ohos.pasteboard.*
