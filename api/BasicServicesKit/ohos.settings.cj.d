@@ -212,7 +212,7 @@ public enum Display <: ToString {
      * Indicates the value of AutoScreenBrightnessMode when automatic screen brightness adjustment is used.
      */
     @!APILevel[
-        since: "22",
+        since: "26.1.0",
         syscap: "SystemCapability.Applications.Settings.Core"
     ]
     AutoScreenBrightnessMode
@@ -221,7 +221,7 @@ public enum Display <: ToString {
      * Indicates the value of ManualScreenBrightnessMode when manual screen brightness adjustment is used.
      */
     @!APILevel[
-        since: "22",
+        since: "26.1.0",
         syscap: "SystemCapability.Applications.Settings.Core"
     ]
     ManualScreenBrightnessMode
