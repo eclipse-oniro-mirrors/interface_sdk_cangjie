@@ -1926,7 +1926,10 @@ extend AsyKeySpecItem <: Equatable<AsyKeySpecItem> {
     public operator func !=(other: AsyKeySpecItem): Bool
 }
 
-
+/**
+ * Describes the value of a key parameter. The value can be of different types, such as BigInt, Int32,
+ * String, and Array<UInt8>.
+ */
 @!APILevel[
     since: "26.1.0",
     syscap: "SystemCapability.Security.CryptoFramework"
