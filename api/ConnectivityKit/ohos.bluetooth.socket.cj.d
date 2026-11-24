@@ -20,8 +20,6 @@ package ohos.bluetooth.socket
 import ohos.business_exception.AsyncCallback
 import ohos.labels.APILevel
 
-import std.deriving.Derive
-
 /**
  * Creates a Bluetooth server listening socket.
  *
