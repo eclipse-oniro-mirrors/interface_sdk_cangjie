@@ -634,6 +634,358 @@ public class SatelliteStatusInfo {
 }
 
 /**
+ * Configuring parameters in reverse geocode requests.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geocoder"
+]
+public class ReverseGeoCodeRequest {
+    /**
+     * Indicates the language area information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop locale: ?String
+
+    /**
+     * Indicates the country information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop country: ?String
+
+    /**
+     * Latitude for reverse geocoding query.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop latitude: Float64
+
+    /**
+     * Longitude for reverse geocoding query.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop longitude: Float64
+
+    /**
+     * Indicates the maximum number of addresses returned by reverse geocoding query.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop maxItems: ?Int32
+
+    /**
+     * ReverseGeoCodeRequest Constructor.
+     *
+     * @param { Float64 } latitude - Latitude for reverse geocoding query.
+     * @param { Float64 } longitude - Longitude for reverse geocoding query.
+     * @param { ?String } [locale] - Indicates the language area information. If this parameter is not specified,
+     *     the system language is used.
+     * @param { ?String } [country] - Indicates the country information. If this parameter is not specified,
+     *     the system region is used.
+     * @param { ?Int32 } [maxItems] - The maximum number of addresses returned by reverse geocoding query.
+     *     The default value is 1.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public init(latitude: Float64, longitude: Float64, locale!: ?String = None, country!: ?String = None,
+        maxItems!: ?Int32 = None)
+}
+
+/**
+ * Configuring parameters in geocode requests.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geocoder"
+]
+public class GeoCodeRequest {
+    /**
+     * Indicates the language area information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop locale: ?String
+
+    /**
+     * Indicates the country information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop country: ?String
+
+    /**
+     * Address information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop description: String
+
+    /**
+     * Indicates the maximum number of geocode query results.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop maxItems: ?Int32
+
+    /**
+     * Indicates the minimum latitude for geocoding query results.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop minLatitude: ?Float64
+
+    /**
+     * Indicates the minimum longitude for geocoding query results.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop minLongitude: ?Float64
+
+    /**
+     * Indicates the maximum latitude for geocoding query results.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop maxLatitude: ?Float64
+
+    /**
+     * Indicates the maximum longitude for geocoding query results.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop maxLongitude: ?Float64
+
+    /**
+     * GeoCodeRequest Constructor.
+     *
+     * @param { String } description - Address information.
+     * @param { ?String } [locale] - Indicates the language area information. If this parameter is not specified,
+     *     the system language is used.
+     * @param { ?String } [country] - Indicates the country information. If this parameter is not specified,
+     *     the system region is used.
+     * @param { ?Int32 } [maxItems] - The maximum number of geocode query results. The default value is 1.
+     * @param { ?Float64 } [minLatitude] - The minimum latitude for geocoding query results. The default value is -90.0.
+     * @param { ?Float64 } [minLongitude] - The minimum longitude for geocoding query results. The default value is -180.0.
+     * @param { ?Float64 } [maxLatitude] - The maximum latitude for geocoding query results. The default value is 90.0.
+     * @param { ?Float64 } [maxLongitude] - The maximum longitude for geocoding query results. The default value is 180.0.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public init(description: String, locale!: ?String = None, country!: ?String = None, maxItems!: ?Int32 = None,
+        minLatitude!: ?Float64 = None, minLongitude!: ?Float64 = None, maxLatitude!: ?Float64 = None,
+        maxLongitude!: ?Float64 = None)
+}
+
+/**
+ * Data struct describes geographic locations.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geocoder"
+]
+public class GeoAddress {
+    /**
+     * Indicates latitude information.
+     * A positive value indicates north latitude,
+     * and a negative value indicates south latitude.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop latitude: ?Float64
+
+    /**
+     * Indicates longitude information.
+     * A positive value indicates east longitude,
+     * and a negative value indicates west longitude.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop longitude: ?Float64
+
+    /**
+     * Indicates language used for the location description.
+     * zh indicates Chinese, and en indicates English.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop locale: ?String
+
+    /**
+     * Indicates detailed address information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop placeName: ?String
+
+    /**
+     * Indicates country code.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop countryCode: ?String
+
+    /**
+     * Indicates country name.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop countryName: ?String
+
+    /**
+     * Indicates administrative region name.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop administrativeArea: ?String
+
+    /**
+     * Indicates sub-administrative region name.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop subAdministrativeArea: ?String
+
+    /**
+     * Indicates locality information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop locality: ?String
+
+    /**
+     * Indicates sub-locality information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop subLocality: ?String
+
+    /**
+     * Indicates road name.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop roadName: ?String
+
+    /**
+     * Indicates auxiliary road information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop subRoadName: ?String
+
+    /**
+     * Indicates house information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop premises: ?String
+
+    /**
+     * Indicates postal code.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop postalCode: ?String
+
+    /**
+     * Indicates phone number.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop phoneNumber: ?String
+
+    /**
+     * Indicates website URL.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop addressUrl: ?String
+
+    /**
+     * Indicates additional information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop descriptions: ?Array<String>
+
+    /**
+     * Indicates the amount of additional descriptive information.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geocoder"
+    ]
+    public mut prop descriptionsSize: ?Int32
+}
+
+/**
  * Configuring parameters in location requests.
  */
 @!APILevel[
@@ -808,6 +1160,70 @@ extend ScenarioValueType <: Equatable<ScenarioValueType> {
         syscap: "SystemCapability.Location.Location.Core"
     ]
     public operator func !=(other: ScenarioValueType): Bool
+}
+
+/**
+ * Enum for coordinate system type.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geofence"
+]
+public enum CoordinateSystemType {
+    /**
+     * WGS84 coordinates system.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geofence"
+    ]
+    Wgs84
+    |
+    /**
+     * GCJ-02 coordinates system.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geofence"
+    ]
+    Gcj02
+    | ...
+}
+
+extend CoordinateSystemType <: ToString {
+    /**
+     * Converts the CoordinateSystemType to its string representation.
+     * @returns { String } A string representation of the CoordinateSystemType.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geofence"
+    ]
+    public func toString(): String
+}
+
+extend CoordinateSystemType <: Equatable<CoordinateSystemType> {
+    /**
+     * Compares this CoordinateSystemType with another for equality.
+     * @param { CoordinateSystemType } other - The CoordinateSystemType to compare with.
+     * @returns { Bool } True if both values are equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geofence"
+    ]
+    public operator func ==(other: CoordinateSystemType): Bool
+
+    /**
+     * Compares this CoordinateSystemType with another for inequality.
+     * @param { CoordinateSystemType } other - The CoordinateSystemType to compare with.
+     * @returns { Bool } True if both values are not equal, false otherwise.
+     */
+    @!APILevel[
+        since: "26.1.0",
+        syscap: "SystemCapability.Location.Location.Geofence"
+    ]
+    public operator func !=(other: CoordinateSystemType): Bool
 }
 
 /**
@@ -1574,6 +1990,56 @@ public func offCountryCodeChange(callback!: ?Callback1Argument<CountryCode> = No
 public func getLastLocation(): Location
 
 /**
+ * Obtain address info from location.
+ *
+ * @param { ReverseGeoCodeRequest } request - Indicates the reverse geocode query parameters.
+ * @param { AsyncCallback<Array<GeoAddress>> } callback - Indicates the callback for reporting the address info.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.getAddressesFromLocation} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ * @throws { BusinessException } 3301300 - Reverse geocoding query failed.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geocoder",
+    throwexception: true
+]
+public func getAddressesFromLocation(request: ReverseGeoCodeRequest, callback: AsyncCallback<Array<GeoAddress>>): Unit
+
+/**
+ * Obtain latitude and longitude info from location address.
+ *
+ * @param { GeoCodeRequest } request - Indicates the geocode query parameters.
+ * @param { AsyncCallback<Array<GeoAddress>> } callback - Indicates the callback for reporting the
+ *     latitude and longitude result.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.getAddressesFromLocationName} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ * @throws { BusinessException } 3301400 - Geocoding query failed.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geocoder",
+    throwexception: true
+]
+public func getAddressesFromLocationName(request: GeoCodeRequest, callback: AsyncCallback<Array<GeoAddress>>): Unit
+
+/**
+ * Obtain geocoding service status.
+ *
+ * @returns { Bool } Returns true if geocoding service is available, returns false otherwise.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.isGeocoderAvailable} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geocoder",
+    throwexception: true
+]
+public func isGeocoderAvailable(): Bool
+
+/**
  * Send extended commands to location subsystem.
  *
  * @param { LocationCommand } command - Indicates the extended command message body.
@@ -1607,3 +2073,18 @@ public func sendCommand(command: LocationCommand, callback: AsyncCallback<Unit>)
     throwexception: true
 ]
 public func getCountryCode(callback: AsyncCallback<CountryCode>): Unit
+
+/**
+ * Obtains the coordinate system types supported by geofence.
+ *
+ * @returns { Array<CoordinateSystemType> } Return the coordinate system types supported by geofence.
+ * @throws { BusinessException } 801 - Capability not supported. Failed to call
+ *     ${geoLocationManager.getGeofenceSupportedCoordTypes} due to limited device capabilities.
+ * @throws { BusinessException } 3301000 - The location service is unavailable.
+ */
+@!APILevel[
+    since: "26.1.0",
+    syscap: "SystemCapability.Location.Location.Geofence",
+    throwexception: true
+]
+public func getGeofenceSupportedCoordTypes(): Array<CoordinateSystemType>
