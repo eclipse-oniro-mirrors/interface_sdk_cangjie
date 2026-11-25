@@ -17,6 +17,7 @@
 
 package kit.ConnectivityKit
 public import ohos.bluetooth.*
+public import ohos.bluetooth.access.*
 public import ohos.bluetooth.base_profile.*
 public import ohos.bluetooth.ble.*
 public import ohos.bluetooth.constant.*
