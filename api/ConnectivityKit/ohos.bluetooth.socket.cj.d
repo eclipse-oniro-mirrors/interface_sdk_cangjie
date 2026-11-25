@@ -17,6 +17,7 @@
 
 package ohos.bluetooth.socket
 
+import ohos.business_exception.AsyncCallback
 import ohos.labels.APILevel
 
 /**
